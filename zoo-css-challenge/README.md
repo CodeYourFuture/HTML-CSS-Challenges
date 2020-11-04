@@ -10,7 +10,7 @@ Give this section a white background.
 
 Add a paragraph to this section with the following text:
 
- ‘The zoo is open every day of the year and features three major biomes: the Tropic Zone, Temperate Territory, and the Polar Circle. From tropical birds, to snow leopards, grizzly bears, and one of the nation’s largest colonies of Antarctic penguins, there are animals to enjoy in every season.’
+‘The zoo is open every day of the year and features three major biomes: the Tropic Zone, Temperate Territory, and the Polar Circle. From tropical birds, to snow leopards, grizzly bears, and one of the nation’s largest colonies of Antarctic penguins, there are animals to enjoy in every season.’
 
 ## 2) Bears:
 
@@ -46,7 +46,7 @@ Give the paragraph a maximum width of 700 pixels, and keep in the middle by adju
 
 ## 7) Learning
 
-The buttons are a little hard to read. We’d like the buttons to have larger text, and also to change colour when you hover over them. 
+The buttons are a little hard to read. We’d like the buttons to have larger text, and also to change colour when you hover over them.
 
 We don’t like the hard corners here. Can you give the container in the section some rounded corners?
 
@@ -62,9 +62,8 @@ Make sure all the links open in a new tab.
 
 The badge that says ‘Opening 2021’ we’d like to be on the top right instead of the bottom right.
 
-When a user hovers over the badge, add a transition so the change in colour  is smoother.
+When a user hovers over the badge, add a transition so the change in colour is smoother.
 
 ## 10) New section
 
 If you have time, add a new section for your favorite animal.
-

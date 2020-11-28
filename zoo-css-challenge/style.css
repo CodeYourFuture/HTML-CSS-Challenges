@@ -30,7 +30,27 @@ section {
 }
 
 img {
-  border: 5px solid #8075ff;
+  border: 5px solid #111111;
+  align-content: center;  /*image aligned*/
+}
+.img1{
+  border-color: #56e39f;/*image color changed */
+}
+.img2{
+  border-color: #e356a4; /*image color changed */
+}
+.img3{
+  border-color: #5be356; /*image color changed */
+  height:inherit;
+}
+
+
+
+
+
+#logo{
+  border: none; /* border removed*/
+
 }
 
 h1,
@@ -54,6 +74,10 @@ h2 {
 h3 {
   font-size: 150%;
 }
+.pandabears{
+  margin-bottom:  40px;
+  
+}
 
 button {
   display: inline-block;
@@ -76,6 +100,8 @@ footer {
 }
 
 .introduction {
+  background-color: #f8f0fb;
+  
 }
 
 #badge {

@@ -74,6 +74,7 @@ h2 {
 
 h3 {
   font-size: 150%;
+  
 }
 .pandabears{
   margin-bottom:  40px;
@@ -145,12 +146,16 @@ footer {
 }
 
 .giraffe {
-  background-color: #465775;
-  color: #56e39f;
+  background-color: #483C46;/* changed background colour*/
+  color: #BEEE62; /* changed section titles */
 }
 
+
 .giraffe h2 {
-  color: #ef6f6c;
+  color:  #F4743B;/* heading color changed*/
+}
+#text-wdth{
+  font-size:25px;/* paragraph size made bigger*/
 }
 
 .card {

@@ -215,6 +215,8 @@ footer {
 /*Membership*/
 
 .membership {
+  margin-left: 200px; /* marging added to center text*/
+  max-width: 700px;  /* max width added*/
   text-align: center;
   background-color: #fffffc;
 }

@@ -179,7 +179,7 @@ footer {
   display: inline-block;
   background-color: white;
   padding: 20px;
-  margin: 10px;
+  /* margin: 10px; */
   width: 30%;
   border: 1px solid black;
   border-bottom-left-radius: 18px;
@@ -274,9 +274,13 @@ footer {
 }
 
 /*Programs*/
+/* 
+.programs{
+  display: flex ;
+} */
 
 .programs .card {
   
-  display: block;
+  display: inline-block;/* boxes stacked next to each other*/
   
 }

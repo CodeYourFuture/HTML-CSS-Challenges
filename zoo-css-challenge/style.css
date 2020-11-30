@@ -60,7 +60,7 @@ h4,
 h5 {
   /*Purple*/
   color: #262230;/* changed heading color*/
-  margin-bottom: 1em;
+  margin-bottom: 1em; /* heading changed to black*/
 }
 
 h1 {
@@ -69,6 +69,7 @@ h1 {
 
 h2 {
   font-size: 175%;
+  color: white;
 }
 
 h3 {

@@ -35,13 +35,17 @@ img {
 }
 .img1{
   border-color: #56e39f;/*image color changed */
+  vertical-align: top;
 }
 .img2{
   border-color: #e356a4; /*image color changed */
+  vertical-align: top;
 }
 .img3{
   border-color: #5be356; /*image color changed */
+
   height:inherit;
+  vertical-align: top;
 }
 
 
@@ -259,10 +263,11 @@ footer {
 /*Membership*/
 
 .membership {
-  margin-left: 200px; /* marging added to center text*/
+  /* margin-left: 200px; marging added to center text */
   max-width: 700px;  /* max width added*/
   text-align: center;
   background-color: #fffffc;
+  margin: 0% auto;
 }
 
 .membership h2 {
@@ -274,10 +279,7 @@ footer {
 }
 
 /*Programs*/
-/* 
-.programs{
-  display: flex ;
-} */
+
 
 .programs .card {
   

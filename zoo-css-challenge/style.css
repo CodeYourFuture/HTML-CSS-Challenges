@@ -84,6 +84,7 @@ h3 {
 }
 
 button {
+  font-size: 15px;
   display: inline-block;
   border-radius: 3px;
   cursor: pointer;
@@ -206,6 +207,14 @@ footer {
   padding: 50px;
   max-width: 400px;
 }
+.btn1:hover{ /* button class added to style button hover*/
+  transition: 3s;
+  background-color: #56e39f;
+  }
+  .btn2:hover{   /* button class added to style button hover*/
+background-color: #9ae60e;
+transition: 3s;
+  }
 
 .education-container h3,
 .education-container p {

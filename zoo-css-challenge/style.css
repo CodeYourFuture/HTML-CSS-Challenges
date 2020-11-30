@@ -68,16 +68,18 @@ h1 {
 }
 
 h2 {
+  
   font-size: 175%;
-  color: white;
+  color: rgb(19, 16, 16);
 }
+
 
 h3 {
   font-size: 150%;
   
 }
 .pandabears{
-  margin-bottom:  40px;
+  margin-bottom:  40px;/* margin added*/
   
 }
 
@@ -146,17 +148,22 @@ footer {
 }
 
 .giraffe {
-  background-color: #483C46;/* changed background colour*/
+  background-color: #483C46; /* changed background colour*/
   color: #BEEE62; /* changed section titles */
 }
 
 
 .giraffe h2 {
-  color:  #F4743B;/* heading color changed*/
+  color:  #F4743B; /* heading color changed*/
 }
+.news{
+  text-align: center; /* News heading centered*/
+}
+
 #text-wdth{
-  font-size:25px;/* paragraph size made bigger*/
+  font-size:20px; /* paragraph size made bigger 20px*/
 }
+
 
 .card {
   display: inline-block;

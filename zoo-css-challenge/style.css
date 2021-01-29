@@ -33,10 +33,6 @@ img {
   border: 5px solid #8075ff;
 }
 
-.image-container {
-  vertical-align: top;
-}
-
 #border-red {
   border: 5px solid red;
 }
@@ -136,6 +132,11 @@ footer {
 .tigers {
   background-color: #0b3c49;
   color: #f0e100;
+}
+
+.tigers h2 {
+  color: #BC8FE5;
+  
 }
 
 .giraffe {

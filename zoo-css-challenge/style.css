@@ -33,6 +33,14 @@ img {
   border: 5px solid #8075ff;
 }
 
+#border-red {
+  border: 5px solid red;
+}
+
+#border-yellow {
+  border: 5px solid yellow;
+}
+
 #logo {
   border: none;
 }

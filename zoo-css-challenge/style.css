@@ -37,6 +37,10 @@ img {
   border: none;
 }
 
+p {
+  margin-bottom: 3em;
+}
+
 h1,
 h2,
 h3,

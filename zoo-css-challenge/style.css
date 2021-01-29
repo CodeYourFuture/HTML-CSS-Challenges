@@ -166,7 +166,7 @@ footer {
   background-color: white;
   padding: 20px;
   margin: 10px;
-  width: 30%;
+  width: 25%;
   border: 1px solid black;
   border-radius: 10px;
 }
@@ -242,4 +242,14 @@ button:hover {
 
 .programs .card {
   display: block;
+  float: left;
 }
+
+.programs h3 {
+  margin-top: 300px;
+}
+
+
+
+
+

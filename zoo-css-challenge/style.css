@@ -33,6 +33,10 @@ img {
   border: 5px solid #8075ff;
 }
 
+#logo {
+  border: none;
+}
+
 h1,
 h2,
 h3,

@@ -155,9 +155,12 @@ footer {
 
 .giraffe p {
   color: #BEEE62;
-  font-size: 125%;
+  
 }
 
+.giraffe p:first-of-type {
+  font-size: 125%;
+}
 .news h2 {
   text-align: center;
 }

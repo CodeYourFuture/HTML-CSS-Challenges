@@ -214,7 +214,7 @@ button {
   font-size: 125%;
 }
 
-button:hover {
+button:hover, #black:hover, #brown:hover {
   background-color: red;
 }
 
@@ -255,6 +255,14 @@ button:hover {
 .zebras p {
   font-size: 125%;
   line-height: 1.5em;
+}
+
+#black {
+  background-color: black;
+}
+
+#brown {
+  background-color: brown;
 }
 
 

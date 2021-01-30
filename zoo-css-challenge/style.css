@@ -7,6 +7,9 @@ header {
   color: #ffffff;
   width: 100%;
   padding: 20px;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
 }
 
 nav {
@@ -93,6 +96,7 @@ footer {
 
 .introduction {
   background-color: white;
+  margin-top: 100px;
 }
 
 #badge {
@@ -109,6 +113,7 @@ footer {
   justify-content: center;
   align-content: center;
   flex-direction: column;
+  z-index: 2;
 }
 
 #badge:hover {
@@ -124,11 +129,15 @@ footer {
 .image-container img {
   vertical-align: top;
   border: 5px solid #747c92;
+  object-fit: scale-down;
+  margin: 20px;
+  width: 350px;
+  height: 350px;
+  border-radius: 5%;
+  padding: 10px;
 }
 
-.image-container img:first-of-type {
-  vertical-align: top;
-}
+
 
 .tigers {
   background-color: #0b3c49;
@@ -263,8 +272,3 @@ button:hover, #black:hover, #brown:hover {
 #brown {
   background-color: brown;
 }
-
-
-
-
-

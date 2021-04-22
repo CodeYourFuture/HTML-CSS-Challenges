@@ -7,6 +7,9 @@ header {
   color: #ffffff;
   width: 100%;
   padding: 20px;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
 }
 
 nav {
@@ -31,6 +34,22 @@ section {
 
 img {
   border: 5px solid #8075ff;
+}
+
+#border-red {
+  border: 5px solid red;
+}
+
+#border-yellow {
+  border: 5px solid yellow;
+}
+
+#logo {
+  border: none;
+}
+
+p {
+  margin-bottom: 3em;
 }
 
 h1,
@@ -69,13 +88,14 @@ button {
 footer {
   background-color: #211a1d;
   color: #ffffff;
-  width: 100%;
   padding: 20px;
   display: flex;
   justify-content: space-between;
 }
 
 .introduction {
+  background-color: white;
+  margin-top: 100px;
 }
 
 #badge {
@@ -85,17 +105,19 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
+  z-index: 2;
 }
 
 #badge:hover {
   background-color: yellow;
+  transition: background-color 2s ease-out;
 }
 
 #badge p {
@@ -106,35 +128,60 @@ footer {
 .image-container img {
   vertical-align: top;
   border: 5px solid #747c92;
+  object-fit: scale-down;
+  margin: 20px;
+  width: 350px;
+  height: 350px;
+  border-radius: 5%;
+  padding: 10px;
 }
 
-.image-container img:first-of-type {
-  vertical-align: bottom;
-}
+
 
 .tigers {
   background-color: #0b3c49;
   color: #f0e100;
 }
 
+.tigers h2 {
+  color: #BC8FE5;
+  
+}
+
 .giraffe {
-  background-color: #465775;
+  background-color: #483C46;
   color: #56e39f;
 }
 
 .giraffe h2 {
-  color: #ef6f6c;
+  color: #F4743B;
+}
+
+.giraffe h3 {
+  color: #BC8FE5;
+}
+
+.giraffe p {
+  color: #BEEE62;
+}
+
+.giraffe p:first-of-type {
+  font-size: 125%;
+}
+.news h2 {
+  text-align: center;
 }
 
 .card {
-  display: inline-block;
+  display: block;
   background-color: white;
   padding: 20px;
   margin: 10px;
-  width: 30%;
+  width: 25%;
   border: 1px solid black;
   border-radius: 10px;
 }
+
 
 .card h4 {
   margin-bottom: 1em;
@@ -166,11 +213,20 @@ footer {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  border-radius: 10px;
 }
 
 .education-container h3,
 .education-container p {
   margin-bottom: 1em;
+}
+
+button {
+  font-size: 125%;
+}
+
+button:hover, #black:hover, #brown:hover {
+  background-color: red;
 }
 
 /*Membership*/
@@ -188,8 +244,30 @@ footer {
   color: #ff7f11;
 }
 
+.membership p {
+  width: 700px;
+  margin: 2em auto;
+}
+
+
 /*Programs*/
 
 .programs .card {
-  display: block;
+  display: inline-block;
+  
+}
+
+/*Zebras*/
+
+.zebras p {
+  font-size: 125%;
+  line-height: 1.5em;
+}
+
+#black {
+  background-color: black;
+}
+
+#brown {
+  background-color: brown;
 }

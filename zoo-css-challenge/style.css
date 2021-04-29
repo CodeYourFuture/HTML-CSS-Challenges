@@ -30,7 +30,31 @@ section {
 }
 
 img {
-  border: 5px solid #8075ff;
+  border: 5px solid #111111;
+  align-content: center;  /*image aligned*/
+}
+.img1{
+  border-color: #56e39f;/*image color changed */
+  vertical-align: top;
+}
+.img2{
+  border-color: #e356a4; /*image color changed */
+  vertical-align: top;
+}
+.img3{
+  border-color: #5be356; /*image color changed */
+
+  height:inherit;
+  vertical-align: top;
+}
+
+
+
+
+
+#logo{
+  border: none; /* border removed*/
+
 }
 
 h1,
@@ -39,8 +63,8 @@ h3,
 h4,
 h5 {
   /*Purple*/
-  color: #6320ee;
-  margin-bottom: 1em;
+  color: #262230;/* changed heading color*/
+  margin-bottom: 1em; /* heading changed to black*/
 }
 
 h1 {
@@ -48,14 +72,23 @@ h1 {
 }
 
 h2 {
+  
   font-size: 175%;
+  color: rgb(19, 16, 16);
 }
+
 
 h3 {
   font-size: 150%;
+  
+}
+.pandabears{
+  margin-bottom:  40px;/* margin added*/
+  
 }
 
 button {
+  font-size: 15px;
   display: inline-block;
   border-radius: 3px;
   cursor: pointer;
@@ -67,15 +100,18 @@ button {
 }
 
 footer {
-  background-color: #211a1d;
-  color: #ffffff;
+  background-color: #ccc5c8;
+  color: #302d2d;
   width: 100%;
   padding: 20px;
   display: flex;
   justify-content: space-between;
+  border-radius: 10px;
 }
 
 .introduction {
+  background-color: #f8f0fb;
+  
 }
 
 #badge {
@@ -84,7 +120,8 @@ footer {
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  position: fixed;
+  position: absolute; /* bage moved to top right*/
+  top: 160px;/* top by 160px*/
   bottom: 20px;
   right: 20px;
 
@@ -95,6 +132,7 @@ footer {
 }
 
 #badge:hover {
+  transition: 2s;
   background-color: yellow;
 }
 
@@ -118,29 +156,48 @@ footer {
 }
 
 .giraffe {
-  background-color: #465775;
-  color: #56e39f;
+  background-color: #483C46; /* changed background colour*/
+  color: #BEEE62; /* changed section titles */
 }
+
 
 .giraffe h2 {
-  color: #ef6f6c;
+  color:  #F4743B; /* heading color changed*/
+}
+.news{
+  
+  text-align: center; /* News heading centered*/
 }
 
+#text-wdth{
+  font-size:20px; /* paragraph size made bigger 20px*/
+}
+
+.wolves{
+  text-decoration: solid;
+  font-size: 15px;
+  background-color: #7162a7;
+}
 .card {
+  
   display: inline-block;
   background-color: white;
   padding: 20px;
-  margin: 10px;
+  /* margin: 10px; */
   width: 30%;
   border: 1px solid black;
-  border-radius: 10px;
+  border-bottom-left-radius: 18px;
+  border-top-right-radius: 18px;
+  
 }
 
 .card h4 {
-  margin-bottom: 1em;
+  color: royalblue;
+  margin-bottom: auto;
 }
 
 .card a {
+  color:red;
   text-decoration: underline;
   font-weight: bold;
 }
@@ -159,14 +216,44 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 100px 5%;
+  padding: 100px 10%;
 }
 
 .education-container {
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(194, 187, 187, 0.75);
+  border-radius: 15px;
   padding: 50px;
   max-width: 400px;
 }
+.btn1:hover{   /* button class added to style button hover*/
+  background-color: #e60eb0;
+  transition: 2s;
+    }
+.btn2:hover{   /* button class added to style button hover*/
+     background-color: #e60e0e;
+     transition: 2s;
+          }
+.btn3:hover{ /* button class added to style button hover*/
+  transition: 2s;
+  background-color: #56e39f;
+  }
+.btn4:hover{   /* button class added to style button hover*/
+  background-color: #9ae60e;
+  transition: 2s;
+  }
+.btn5:hover{   /* button class added to style button hover*/
+     background-color: #e7e8ee;
+    transition: 2s;
+      }
+  .btn6:hover{   /* button class added to style button hover*/
+    background-color: #eeae0b;
+    transition: 2s;
+   }
+  .btn7:hover{   /* button class added to style button hover*/
+    background-color: #f702f7;
+   transition: 2s;
+     }
+                 
 
 .education-container h3,
 .education-container p {
@@ -176,8 +263,11 @@ footer {
 /*Membership*/
 
 .membership {
+  /* margin-left: 200px; marging added to center text */
+  max-width: 700px;  /* max width added*/
   text-align: center;
   background-color: #fffffc;
+  margin: 0% auto;
 }
 
 .membership h2 {
@@ -190,6 +280,9 @@ footer {
 
 /*Programs*/
 
+
 .programs .card {
-  display: block;
+  
+  display: inline-block;/* boxes stacked next to each other*/
+  
 }

@@ -114,7 +114,15 @@ footer {
 
 .image-container img {
   vertical-align: top;
+}
+.bear1{
   border: 5px solid #747c92;
+}
+.bear2{
+  border: 5px solid green;
+}
+.bear3{
+  border: 5px solid red;
 }
 
 .image-container img:first-of-type {

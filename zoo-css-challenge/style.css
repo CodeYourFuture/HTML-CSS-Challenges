@@ -1,5 +1,11 @@
 * {
   font-family: sans-serif;
+  letter-spacing: 0.3px;
+  line-height: 1.3rem;
+}
+
+#logo {
+  border: none;
 }
 
 header {
@@ -103,6 +109,7 @@ footer {
   font-size: 125%;
 }
 
+/* Bears pics for borders */
 .image-container img {
   vertical-align: top;
   border: 5px solid #747c92;

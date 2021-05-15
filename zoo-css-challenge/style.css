@@ -9,6 +9,10 @@ header {
   padding: 20px;
 }
 
+#para1{
+  color: #211a1d;
+  letter-spacing: 5em;
+}
 nav {
   display: inline-block;
   width: 100%;
@@ -31,6 +35,10 @@ section {
 
 img {
   border: 5px solid #8075ff;
+}
+
+#logo{
+  border: none;
 }
 
 h1,
@@ -76,6 +84,7 @@ footer {
 }
 
 .introduction {
+  background-color: white;
 }
 
 #badge {

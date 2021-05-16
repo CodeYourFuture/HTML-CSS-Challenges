@@ -64,7 +64,9 @@ h3 {
   font-size: 150%;
 }
 
+/* 6) Increase button size */
 button {
+  font-size: 1.3rem;
   display: inline-block;
   border-radius: 3px;
   cursor: pointer;
@@ -73,6 +75,11 @@ button {
   background-color: #372772;
   border: 2px solid black;
   color: #fff;
+}
+
+/* 6) Change color when hovered/focus */
+button:hover {
+  background-color: #ff3f00;
 }
 
 footer {
@@ -94,17 +101,19 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  /* 9) Change bottom right to top right */
+  top: 20px;
   right: 20px;
-
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
 }
 
+/* 9) Added transition for badge */
 #badge:hover {
   background-color: yellow;
+  transition: 0.5s;
 }
 
 #badge p {
@@ -198,10 +207,12 @@ footer {
   padding: 100px 5%;
 }
 
+/* 6) Round corners to container */
 .education-container {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  border-radius: 5px;
 }
 
 .education-container h3,
@@ -211,9 +222,12 @@ footer {
 
 /*Membership*/
 
+/* 7) Change max width and margin */
 .membership {
   text-align: center;
   background-color: #fffffc;
+  max-width: 700px;
+  margin: auto;
 }
 
 .membership h2 {
@@ -226,6 +240,7 @@ footer {
 
 /*Programs*/
 
-.programs .card {
-  display: block;
+/* 8) Stack cards horizontally */
+.programmes-container {
+  display: flex;
 }

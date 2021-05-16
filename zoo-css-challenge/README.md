@@ -18,25 +18,25 @@ You are encouraged to use Google to help you find the answers to these problems.
 
 ## 2) Bears:
 
-All the images of bears have the same border colour, can all these images be given a different border colour?
+<!-- All the images of bears have the same border colour, can all these images be given a different border colour? -->
 
-The images of the bears are also misaligned. Can all these images be vertically aligned to the top of the container.
+<!-- The images of the bears are also misaligned. Can all these images be vertically aligned to the top of the container. -->
 
 ## 3) Tigers
 
-The purple headings are hard to read on dark backgrounds, change them to a lighter colour. Make sure it passes the WCAG AA standards for contrast. You can use this tool to help: https://webaim.org/resources/contrastchecker/
+<!-- The purple headings are hard to read on dark backgrounds, change them to a lighter colour. Make sure it passes the WCAG AA standards for contrast. You can use this tool to help: https://webaim.org/resources/contrastchecker/ -->
 
-Change the heading of this section to ‘Tiger Facts’, remove the subheading, and change the ordered list to an unordered list.
+<!-- Change the heading of this section to ‘Tiger Facts’, remove the subheading, and change the ordered list to an unordered list. -->
 
 ## 4) Giraffes
 
-Change the background colour to #483C46, the section titles to #F4743B, and the paragraph color to #BEEE62.
+<!-- Change the background colour to #483C46, the section titles to #F4743B, and the paragraph color to #BEEE62. -->
 
-Make the first paragraph have a larger font size.
+<!-- Make the first paragraph have a larger font size. -->
 
 ## 5) News
 
-Can the title of this section be centred in the middle of this page?
+<!-- Can the title of this section be centred in the middle of this page? -->
 
 Add another news item with the title with today's date, and the title of ‘Which big cat are you?’
 

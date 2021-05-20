@@ -9,6 +9,10 @@ header {
   padding: 20px;
 }
 
+#logo {
+  border: none;
+}
+
 nav {
   display: inline-block;
   width: 100%;
@@ -76,16 +80,22 @@ footer {
 }
 
 .introduction {
+  background-color: #fff;
+}
+
+.introduction p {
+  line-height: 2rem;
 }
 
 #badge {
   height: 120px;
   width: 120px;
+  transition: background-color 0.5s ease;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 
   display: flex;
@@ -109,21 +119,61 @@ footer {
 }
 
 .image-container img:first-of-type {
-  vertical-align: bottom;
+  vertical-align: top;
 }
+
+#left-img{
+  border-color: #54B392;
+}
+
+#middle-img {
+  border-color: #0C3C49;
+}
+
+#right-img {
+  border-color: #6221EE;
+}
+
+/* tiger section */
 
 .tigers {
   background-color: #0b3c49;
   color: #f0e100;
 }
 
+.tigers h2 {
+  color: #F8F0FB;
+}
+/* End of tiger section */
+/*
+/*
+/*
+/*
+/* giraffe section */
 .giraffe {
-  background-color: #465775;
+  background-color: #483c46;
   color: #56e39f;
 }
 
-.giraffe h2 {
-  color: #ef6f6c;
+.giraffe-headings {
+  color: #f4743b;
+}
+
+.giraffe-larger-paragraph {
+  color: #beee62;
+  font-size: 20px;
+}
+
+.giraffe-paragraph {
+  color: #beee62;
+}
+/* End of giraffe section */
+/*
+/*
+/*
+/* news section */
+.news h2 {
+  text-align: center;
 }
 
 .card {
@@ -150,6 +200,7 @@ footer {
   display: inline-block;
   margin-bottom: 10px;
 }
+/* end of news section */
 
 /*Education*/
 
@@ -166,11 +217,21 @@ footer {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  border-radius: 1.5rem;
 }
 
 .education-container h3,
 .education-container p {
   margin-bottom: 1em;
+}
+
+.education-container button {
+  font-size: 20px;
+}
+
+.education-container button:hover {
+  color: #372772;
+  background-color: #fff;
 }
 
 /*Membership*/
@@ -188,8 +249,15 @@ footer {
   color: #ff7f11;
 }
 
+.membership p{
+  max-width: 700px;
+  margin: 0 25%;
+
+}
+
 /*Programs*/
 
 .programs .card {
   display: block;
 }
+

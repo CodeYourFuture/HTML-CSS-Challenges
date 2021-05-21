@@ -257,7 +257,7 @@ footer {
 
 /*Programs*/
 
-.programs .card {
-  display: block;
+.program-cards {
+  display: flex;
 }
 

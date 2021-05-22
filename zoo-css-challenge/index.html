@@ -21,6 +21,9 @@
  	<main>
  		<section class="introduction">
  			<h1>Birmingham Zoo</h1>
+			 <p>The zoo is open every day of the year and features three major biomes: the Tropic Zone, Temperate Territory, and the
+			Polar Circle. From tropical birds, to snow leopards, grizzly bears, and one of the nation’s largest colonies of
+			Antarctic penguins, there are animals to enjoy in every season.</p>
  		</section>
 
  		<div id="badge">
@@ -36,24 +39,27 @@
 					alt="Grizzly Bear"
 					width="200"
 					height="300"
+					id="left-img"
 				>
 				<img src="https://placebear.com/400/300"
 					alt="Grizzly Bear"
 					width="400"
 					height="300"
+					id="middle-img"
 				>
 				<img src="https://placebear.com/200/400"
 					alt="Grizzly Bear"
 					width="200"
 					height="400"
+					id="right-img"
 				>
 			</div>
 		</section>
 
 		<section class="tigers">
-			<h2>Tiger</h2>
-			<h3>Top 5 Tiger Facts</h3>
-			<ol>
+			<h2>Tiger Facts</h2>
+			
+			<ul>
 				<li>Tigers are the largest cat species in the world reaching up to 3.3 meters in length and weighing up to 670 pounds!
 				<li>Tigers are easily recognizable with their dark vertical stripes and reddish/orange fur.
 				<li>The Bengal tiger is the most common tiger.
@@ -63,32 +69,39 @@
 		</section>
 
 		<section class="giraffe">
-			<h2>Giraffe</h2>
+			<h2 class="giraffe-headings">Giraffe</h2>
 
-			<p>Giraffes are the world's tallest mammals, thanks to their towering legs and long necks. A giraffe's legs alone are taller than many humans—about 6 feet . These long legs allow giraffes to run as fast as 35 miles an hour over short distances and cruise comfortably at 10 miles an hour over longer distances.</p>
+			<p class="giraffe-larger-paragraph">Giraffes are the world's tallest mammals, thanks to their towering legs and long necks. A giraffe's legs alone are taller than many humans—about 6 feet . These long legs allow giraffes to run as fast as 35 miles an hour over short distances and cruise comfortably at 10 miles an hour over longer distances.</p>
 
-			<h3>Behavior</h3>
+			<h3 class="giraffe-headings">Behavior</h3>
 
-			<p>Typically, these fascinating animals roam the open grasslands in small groups of about half a dozen.</p>
+			<p class="giraffe-paragraph">Typically, these fascinating animals roam the open grasslands in small groups of about half a dozen.</p>
 
-			<p>Bulls sometimes battle one another by butting their long necks and heads. Such contests aren't usually dangerous and end when one animal submits and walks away.</p>
+			<p class="giraffe-paragraph">Bulls sometimes battle one another by butting their long necks and heads. Such contests aren't usually dangerous and end when one animal submits and walks away.</p>
 
-			<h3>Height and Size</h3>
+			<h3 class="giraffe-headings">Height and Size</h3>
 
-			<p>Giraffes use their height to good advantage and browse on leaves and buds in treetops that few other animals can reach (acacias are a favorite). Even the giraffe's tongue is long! The 21-inch tongue helps them pluck tasty morsels from branches. Giraffes eat most of the time and, like cows, regurgitate food and chew it as cud. A giraffe eats hundreds of pounds of leaves each week and must travel miles to find enough food.</p>
+			<p class="giraffe-paragraph">Giraffes use their height to good advantage and browse on leaves and buds in treetops that few other animals can reach (acacias are a favorite). Even the giraffe's tongue is long! The 21-inch tongue helps them pluck tasty morsels from branches. Giraffes eat most of the time and, like cows, regurgitate food and chew it as cud. A giraffe eats hundreds of pounds of leaves each week and must travel miles to find enough food.</p>
 		</section>
 
 		<section class="news">
 			<h2>News</h2>
-			<div class="card">
-				<time>2010-04-16</time>
-				<h4>Helping wild turtles in Seychelles</h4>
-				<a>Find out More</a>
-			</div>
-			<div class="card">
-				<time>2010-04-12</time>
-				<h4>Learning about the rainforest</h4>
-				<a>Find out More</a>
+			<div class="news__card__middle">
+				<div class="card">
+					<time>2010-04-16</time>
+					<h4>Helping wild turtles in Seychelles</h4>
+					<a>Find out More</a>
+				</div>
+				<div class="card">
+					<time>2010-04-12</time>
+					<h4>Learning about the rainforest</h4>
+					<a>Find out More</a>
+				</div>
+				<div class="card">
+					<time>2021-05-20</time>
+					<h4>What big cat are you?</h4>
+					<a>Find out More</a>
+				</div>
 			</div>
 		</section>
 
@@ -108,24 +121,50 @@
 
 		<section class="programs">
 			<h2>Programs</h2>
-			<div class="card">
-				<h4>Children and Family Programs</h4>
-				<a>Find out More</a>
-			</div>
-			<div class="card">
-				<h4>Adult Programs</h4>
-				<a>Find out More</a>
-			</div>
-			<div class="card">
-				<h4>Youth and young adults</h4>
-				<a>Find out More</a>
-			</div>
+
+				<div class="program-cards">
+					<div class="card">
+						<h4>Children and Family Programs</h4>
+						<a>Find out More</a>
+					</div>
+					<div class="card">
+						<h4>Adult Programs</h4>
+						<a>Find out More</a>
+					</div>
+					<div class="card">
+						<h4>Youth and young adults</h4>
+						<a>Find out More</a>
+					</div>
+				</div>
 			<h3>Useful Links</h3>
 			<p>
 			</p>
-			<a href="https://www.w3schools.com">w3schools.com</a>
+			<a href="https://www.w3schools.com" target="_blank">w3schools.com</a>
 			<a href="https://www.nationalgeographic.com/" target="_blank">National Geographic</a>
-			<a href="http://www.wikipedia.org" target="_top">Wikipedia</a>
+			<a href="http://www.wikipedia.org" target="_blank">Wikipedia</a>
+		</section>
+
+		<section class="favourite_animal">
+
+			<h2>Favorite Animal</h2>
+			<div class="lion__img">
+				<img src="./images/keyur-nandaniya-vu0gvM5he8o-unsplash.jpg" alt="Lion stood in the wilderness with a sunset background">
+			</div>
+			<p>The lion (Panthera leo) is a large felid of the genus Panthera. It has a muscular, deep-chested body, short, rounded
+			head, round ears, and a hairy tuft at the end of its tail. The adult male lions have a prominent
+			mane. With a typical head-to-body length of 184 to 208 cm (72 to 82 in) they are larger than females at 160 to 184 cm
+			(63 to 72 in). It is a social species, forming groups called prides. A lion pride consists of a few adult males, related
+			females and cubs. Groups of female lions usually hunt together, preying mostly on large ungulates. The lion is an apex
+			and keystone predator; although some lions scavenge when opportunities occur and have been known to hunt humans, the
+			species typically does not.</p>
+
+			<p>Typically, the lion inhabits grasslands and savannas, but is absent in dense forests. It is usually more diurnal than
+			other wild cats, but when persecuted, it adapts to being active at night and at twilight. During the Neolithic period,
+			the lion ranged throughout Africa, Southeast Europe, and Western and South Asia, but it has been reduced to fragmented
+			populations in sub-Saharan Africa and one population in western India. It has been listed as Vulnerable on the IUCN Red
+			List since 1996 because populations in African countries have declined by about 43% since the early 1990s. Lion
+			populations are untenable outside designated protected areas. Although the cause of the decline is not fully understood,
+			habitat loss and conflicts with humans are the greatest causes for concern.</p>
 		</section>
 
  	</main>

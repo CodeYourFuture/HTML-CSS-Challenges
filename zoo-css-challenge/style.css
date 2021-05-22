@@ -59,6 +59,10 @@ h3 {
   font-size: 150%;
 }
 
+p, li {
+  line-height: 2rem;
+}
+
 button {
   display: inline-block;
   border-radius: 3px;
@@ -83,9 +87,6 @@ footer {
   background-color: #fff;
 }
 
-.introduction p {
-  line-height: 2rem;
-}
 
 #badge {
   height: 120px;
@@ -113,9 +114,15 @@ footer {
   font-size: 125%;
 }
 
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
 .image-container img {
   vertical-align: top;
   border: 5px solid #747c92;
+  margin: 5px;
 }
 
 .image-container img:first-of-type {
@@ -172,6 +179,10 @@ footer {
 /*
 /*
 /* news section */
+
+.news__card__middle {
+  display: flex;
+}
 .news h2 {
   text-align: center;
 }
@@ -261,3 +272,26 @@ footer {
   display: flex;
 }
 
+/* Favourite animal */
+
+.favourite_animal {
+  background-color: #fff;
+}
+
+.favourite_animal h2 {
+  color: #483c46;
+  text-align: center;
+}
+
+
+.lion__img img {
+  float: right;
+  width: 400px;
+  margin: 6px;
+  border: 6px solid #747c92;
+}
+
+.favourite_animal p{
+  text-align: justify;
+  font-size: 16px;
+}

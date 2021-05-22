@@ -88,7 +88,7 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 
   display: flex;
@@ -99,6 +99,7 @@ footer {
 
 #badge:hover {
   background-color: yellow;
+  transition: 0.4s ease;
 }
 
 #badge p {
@@ -182,6 +183,15 @@ footer {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  border-radius: 10px;
+}
+
+.educationbtn {
+  font-size: 20px;
+}
+
+.educationbtn:hover {
+  color: #f0e100;
 }
 
 .education-container h3,
@@ -196,6 +206,11 @@ footer {
   background-color: #fffffc;
 }
 
+.membership p {
+  width: 700px;
+  margin: auto;
+}
+
 .membership h2 {
   color: #ff3f00;
 }
@@ -207,5 +222,6 @@ footer {
 /*Programs*/
 
 .programs .card {
-  display: block;
+  /* display: block; */
+  width: 25%;
 }

@@ -31,7 +31,6 @@ section {
 
 img {
   border: 5px solid #8075ff;
-  
 }
 
 h1,
@@ -67,12 +66,11 @@ button {
   color: #fff;
   font-size: x-large;
 }
-button:hover{
+button:hover {
   background-color: #f00e2c;
 }
-button:focus{
-
-  background-color:blue;
+button:focus {
+  background-color: blue;
 }
 
 footer {
@@ -124,7 +122,7 @@ footer {
   border: 5px solid #ec2c36;
   /*vertical-align: bottom;*/
 }
-.image-container img:last-of-type{
+.image-container img:last-of-type {
   border: 5px solid #2cec45;
   /*vertical-align: bottom;*/
 }
@@ -134,23 +132,19 @@ footer {
 }
 
 .giraffe {
-  background-color: #483C46;
+  background-color: #483c46;
   color: #56e39f;
 }
 
-.giraffe h2,h3{ 
-  
-  
-  color: #F4743B;
-
+.giraffe h2,
+h3 {
+  color: #f4743b;
 }
-.giraffe p{
-
-  color:#BEEE62
+.giraffe p {
+  color: #beee62;
 }
-.giraffe p:first-of-type{
-
-  font-size: large;
+.giraffe p:first-of-type {
+  font-size: larger;
 }
 .card {
   display: inline-block;
@@ -190,6 +184,7 @@ footer {
 
 .education-container {
   background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 10px;
   padding: 50px;
   max-width: 400px;
 }
@@ -213,21 +208,21 @@ footer {
 .membership strong {
   color: #ff7f11;
 }
-.membership p{
+.membership p {
   max-width: 700px;
   padding-bottom: 30px;
-  margin:auto;
+  margin: auto;
 }
 
-.programs .card{
-  display:inline-block;
+#cards_container {
+  display: flex;
+  justify-content: space-between;
 }
 
-
-#logo{
-  border:none
+#logo {
+  border: none;
 }
 
-.news h2{
+.news h2 {
   text-align: center;
 }

@@ -1,5 +1,6 @@
 * {
   font-family: sans-serif;
+  word-spacing: 1px;
 }
 
 header {
@@ -30,7 +31,7 @@ section {
 }
 
 img {
-  border: 5px solid #8075ff;
+  
 }
 
 h1,
@@ -64,6 +65,14 @@ button {
   background-color: #372772;
   border: 2px solid black;
   color: #fff;
+  font-size: larger;
+}
+
+button:hover {
+  background-color: #e27474;
+}
+button:focus {
+  background-color: #274e72;
 }
 
 footer {
@@ -76,7 +85,9 @@ footer {
 }
 
 .introduction {
+  background-color: #ffffff;
 }
+
 
 #badge {
   height: 120px;
@@ -85,7 +96,7 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 
   display: flex;
@@ -95,7 +106,9 @@ footer {
 }
 
 #badge:hover {
+  transition: background-color 2s ease;
   background-color: yellow;
+  
 }
 
 #badge p {
@@ -108,22 +121,42 @@ footer {
   border: 5px solid #747c92;
 }
 
-.image-container img:first-of-type {
-  vertical-align: bottom;
+.image-container img:nth-of-type(1) {
+  border: 5px solid #0044ff;
+}
+
+.image-container img:nth-of-type(2) {
+  border: 5px solid #ffe602;
+}
+
+.image-container img:nth-of-type(3) {
+  border: 5px solid #ff0202;
+}
+.favorite {
+  background-color: #82c8db;
 }
 
 .tigers {
   background-color: #0b3c49;
   color: #f0e100;
+  line-height: 1.5;
 }
-
+.tigers h2 {
+  color: #9EEAFF;
+}
 .giraffe {
-  background-color: #465775;
-  color: #56e39f;
+  background-color: #483C46;
+  color: #BEEE62;
+}
+.giraffe p:first-of-type {
+  font-size:larger;
 }
 
-.giraffe h2 {
-  color: #ef6f6c;
+.giraffe h2,h3 {
+  color: #F4743B;
+}
+.news h2 {
+  text-align: center;
 }
 
 .card {
@@ -165,6 +198,7 @@ footer {
 .education-container {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
+  border-radius: 8px;
   max-width: 400px;
 }
 
@@ -183,13 +217,21 @@ footer {
 .membership h2 {
   color: #ff3f00;
 }
-
+.membership p {
+  max-width: 700px;
+  margin: auto;
+  padding: 15px;
+}
 .membership strong {
   color: #ff7f11;
 }
 
 /*Programs*/
-
+.programs-card {
+  display: flex;
+  align-content: space-around;
+  
+}
 .programs .card {
   display: block;
 }

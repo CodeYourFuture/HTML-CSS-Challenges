@@ -1,5 +1,6 @@
 * {
   font-family: sans-serif;
+  word-spacing: 2px;
 }
 
 header {
@@ -30,7 +31,7 @@ section {
 }
 
 img {
-  border: 5px solid #8075ff;
+  border: none;
 }
 
 h1,
@@ -76,6 +77,7 @@ footer {
 }
 
 .introduction {
+  background-color: white;
 }
 
 #badge {
@@ -85,9 +87,10 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
-
+  transition: 3s;
+  opacity: 0.6;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -96,6 +99,7 @@ footer {
 
 #badge:hover {
   background-color: yellow;
+  opacity: 1;
 }
 
 #badge p {
@@ -109,7 +113,13 @@ footer {
 }
 
 .image-container img:first-of-type {
-  vertical-align: bottom;
+  vertical-align: top;
+  border: 5px solid greenyellow;
+}
+
+.image-container img:last-of-type {
+  border: 5px solid red;
+  height: 300px;
 }
 
 .tigers {
@@ -117,21 +127,44 @@ footer {
   color: #f0e100;
 }
 
-.giraffe {
-  background-color: #465775;
-  color: #56e39f;
+.tigers h2 {
+  color: #f0e100;
 }
 
-.giraffe h2 {
-  color: #ef6f6c;
+.giraffe {
+  background-color: #483c46;
+  color: #beee62;
+}
+
+.giraffe h2,
+h3 {
+  color: #f4743b;
+}
+
+.giraffe p:first-of-type {
+  font-size: 1.5em;
+}
+
+.my-animal {
+  background-color: seagreen;
+  font-size: 1.5em;
+}
+
+.news > h2 {
+  text-align: center;
+}
+
+.card-time {
+  display: flex;
+  justify-content: space-around;
 }
 
 .card {
-  display: inline-block;
+  display: block;
   background-color: white;
   padding: 20px;
   margin: 10px;
-  width: 30%;
+  width: 20%;
   border: 1px solid black;
   border-radius: 10px;
 }
@@ -166,6 +199,19 @@ footer {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  border-radius: 10px;
+}
+
+.education-container button {
+  font-size: 2em;
+}
+
+.education-container button:hover {
+  background-color: chartreuse;
+}
+
+.education-container button:active {
+  background-color: crimson;
 }
 
 .education-container h3,
@@ -180,6 +226,11 @@ footer {
   background-color: #fffffc;
 }
 
+.membership > p {
+  width: 700px;
+  margin-left: 23%;
+}
+
 .membership h2 {
   color: #ff3f00;
 }
@@ -189,7 +240,9 @@ footer {
 }
 
 /*Programs*/
-
+.cards {
+  display: flex;
+}
 .programs .card {
   display: block;
 }

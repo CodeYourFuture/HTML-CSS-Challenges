@@ -228,6 +228,10 @@ footer {
 
 /*Programs*/
 
+.programs {
+  text-align: center;
+}
+
 .programs .card {
-  display: block;
+  display: inline-block;
 }

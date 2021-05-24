@@ -144,6 +144,14 @@ footer {
   color: #BEEE62;
 }
 
+.giraffe p:nth-of-type(1) {
+  font-size: 1.3em;
+}
+
+.news {
+  text-align: center;
+}
+
 .card {
   display: inline-block;
   background-color: white;

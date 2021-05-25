@@ -151,12 +151,16 @@ footer {
 }
 /*Giraffes Section Style*/
 .giraffe {
-  background-color: #465775;
-  color: #56e39f;
+  background-color: #483C46;
+  color: #BEEE62;
 }
 
-.giraffe h2 {
-  color: #ef6f6c;
+.giraffe h2, h3 {
+  color: #F4743B;
+}
+
+.giraffe p:first-of-type {
+  font-size: 1.25em;
 }
 
 .card {

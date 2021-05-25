@@ -149,6 +149,7 @@ footer {
 .tigers ul li {
   line-height: 1.75em;
 }
+
 /*Giraffes Section Style*/
 .giraffe {
   background-color: #483C46;
@@ -163,7 +164,17 @@ footer {
   font-size: 1.25em;
 }
 
+/*Card Styles*/
+.news-container{
+  display: flex;
+}
+
+.news h2 {
+  text-align: center;
+}
+
 .card {
+
   display: inline-block;
   background-color: white;
   padding: 20px;
@@ -171,6 +182,7 @@ footer {
   width: 30%;
   border: 1px solid black;
   border-radius: 10px;
+  flex-wrap: nowrap;
 }
 
 .card h4 {

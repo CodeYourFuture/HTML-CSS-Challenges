@@ -25,7 +25,7 @@ header ul li {
 }
 
 section {
-  padding: 5%;
+  padding: 15%;
   background-color: #f8f0fb;
 }
 
@@ -75,6 +75,7 @@ footer {
   justify-content: space-between;
 }
 
+/*Intro Styles*/
 .introduction {
   background-color: #fff;
   padding: 10px;
@@ -123,10 +124,15 @@ footer {
 .image-container img {
   vertical-align: top;
   border: 5px solid #747c92;
+  margin-bottom: 0.5em;
 }
 
-.image-container img:first-of-type {
-  vertical-align: bottom;
+.bears img:first-child {
+  border: 5px solid #284F77;
+}
+
+.bears img:last-child {
+  border: 5px solid #005757;
 }
 
 .tigers {

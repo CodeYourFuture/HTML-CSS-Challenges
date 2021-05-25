@@ -170,6 +170,16 @@ footer {
   font-size: 1.25em;
 }
 
+/*Elephants Section Style*/
+.elephants {
+  background-color: #ffcc99;
+  color: #004242;
+  line-height: 1.25em;
+}
+
+.elephants h2, h3{
+  color: #751d00;
+}
 /*Card Styles*/
 .news-container{
   display: flex;

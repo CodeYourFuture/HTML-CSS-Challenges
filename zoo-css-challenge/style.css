@@ -246,7 +246,14 @@ footer {
 }
 
 /*Programs*/
+.programs-container {
+  display: flex;
+}
+
+.programs h2 {
+  text-align: center;
+}
 
 .programs .card {
-  display: block;
+  flex-wrap: nowrap;
 }

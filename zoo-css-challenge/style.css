@@ -180,6 +180,12 @@ footer {
 .elephants h2, h3{
   color: #751d00;
 }
+
+.elephants img {
+  margin-left: 25%;
+  margin-top: 10%;
+}
+
 /*Card Styles*/
 .news-container{
   display: flex;

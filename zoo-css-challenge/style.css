@@ -5,7 +5,7 @@
 header {
   background-color: #211a1d;
   color: #ffffff;
-  width: 100%;
+  width: 98%;
   padding: 20px;
 }
 
@@ -74,7 +74,7 @@ button:hover {
 footer {
   background-color: #211a1d;
   color: #ffffff;
-  width: 100%;
+  width: 98%;
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -108,7 +108,7 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 25px;
   right: 20px;
 
   display: flex;
@@ -119,6 +119,7 @@ footer {
 
 #badge:hover {
   background-color: yellow;
+  transition: 0.8s;
 }
 
 #badge p {

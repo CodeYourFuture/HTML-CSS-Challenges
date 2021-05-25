@@ -76,6 +76,23 @@ footer {
 }
 
 .introduction {
+  background-color: #fff;
+  padding: 10px;
+  line-height: 2em;
+  word-spacing: 0.05em;
+}
+
+.introduction h1 {
+  text-align: center;
+}
+
+.introduction p {
+  margin: 0 auto;
+  width: 90%;
+}
+
+#logo {
+  border: none;
 }
 
 #badge {

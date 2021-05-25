@@ -2,13 +2,19 @@
   font-family: sans-serif;
 }
 
+body{
+  margin:0px;
+}
+
 header {
   background-color: #211a1d;
   color: #ffffff;
-  width: 100%;
+  width: inherit;
   padding: 20px;
 }
-
+#logo{
+  border:none;
+}
 nav {
   display: inline-block;
   width: 100%;
@@ -30,7 +36,7 @@ section {
 }
 
 img {
-  border: 5px solid #8075ff;
+  border: 5px solid #8953F3;
 }
 
 h1,
@@ -39,7 +45,7 @@ h3,
 h4,
 h5 {
   /*Purple*/
-  color: #6320ee;
+  color: #8953F3;
   margin-bottom: 1em;
 }
 
@@ -53,6 +59,10 @@ h2 {
 
 h3 {
   font-size: 150%;
+}
+
+p{
+  line-height:27px;
 }
 
 button {
@@ -69,13 +79,14 @@ button {
 footer {
   background-color: #211a1d;
   color: #ffffff;
-  width: 100%;
+  width: inherit;
   padding: 20px;
   display: flex;
   justify-content: space-between;
 }
 
 .introduction {
+  background:#ffffff;
 }
 
 #badge {
@@ -85,7 +96,7 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 
   display: flex;
@@ -96,6 +107,7 @@ footer {
 
 #badge:hover {
   background-color: yellow;
+  transition: all .5s linear;
 }
 
 #badge p {
@@ -105,11 +117,7 @@ footer {
 
 .image-container img {
   vertical-align: top;
-  border: 5px solid #747c92;
-}
-
-.image-container img:first-of-type {
-  vertical-align: bottom;
+  border: 5px solid #8953F3;
 }
 
 .tigers {
@@ -118,12 +126,25 @@ footer {
 }
 
 .giraffe {
-  background-color: #465775;
+  background-color: #483C46;
   color: #56e39f;
 }
 
 .giraffe h2 {
-  color: #ef6f6c;
+  color: #F4743B;
+}
+
+.giraffe p:first-of-type{
+  font-size:20px;
+}
+
+.giraffe p{
+  color:#BEEE62;
+}
+
+/*News*/
+.news h2{
+  text-align:center;
 }
 
 .card {
@@ -166,6 +187,7 @@ footer {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  border-radius:10px;
 }
 
 .education-container h3,
@@ -173,6 +195,13 @@ footer {
   margin-bottom: 1em;
 }
 
+.education-container button{
+  font-size:30px;
+}
+
+.education-container button:hover, .education-container button:focus{
+  background-color:#8360ff;
+}
 /*Membership*/
 
 .membership {
@@ -184,12 +213,27 @@ footer {
   color: #ff3f00;
 }
 
+.membership p{
+  max-width:700px;
+  margin:40px 220px;
+}
+
 .membership strong {
   color: #ff7f11;
 }
 
 /*Programs*/
-
+.program-cards{
+  display:flex;
+  flex-wrap:wrap;
+}
 .programs .card {
-  display: block;
+  display:block;
+}
+
+@media (max-width:450px){
+  .membership p{
+    width:100%;
+    margin:20px 100px;
+  }
 }

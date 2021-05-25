@@ -191,7 +191,8 @@ footer {
   flex-basis:100%
 }
 
-.card h4 {
+.card h3 {
+  font-size: 1rem;
   margin-bottom: 1em;
 }
 
@@ -201,9 +202,9 @@ footer {
 }
 
 .card time {
-  opacity: 0.5;
   display: inline-block;
   margin-bottom: 10px;
+  opacity: 0.8;
 }
 
 /*Education*/
@@ -225,7 +226,7 @@ footer {
   margin: auto;
 }
 
-.education-container h3,
+.education-container h2,
 .education-container p {
   margin-bottom: 1em;
 }
@@ -244,7 +245,7 @@ footer {
   margin:20px  auto;
 }
 .membership strong {
-  color: #ff7f11;
+  color: #b1590d
 }
 
 /*Programs*/

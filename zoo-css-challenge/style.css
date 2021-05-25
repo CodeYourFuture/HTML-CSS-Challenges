@@ -156,6 +156,7 @@ footer {
 
 .pandas img {
   border-radius: 10%;
+  object-fit: contain;
 }
 
 .giraffe {

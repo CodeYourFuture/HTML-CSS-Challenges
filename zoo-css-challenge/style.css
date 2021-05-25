@@ -32,6 +32,8 @@ section {
 
 img {
   border: none;
+  max-width: 100%;
+  height: auto;
 }
 
 h1,
@@ -133,13 +135,27 @@ footer {
   border: 5px solid #4b3699;
 }
 
-.tigers {
+.tigers, .pandas {
   background-color: #0b3c49;
   color: #f0e100;
 }
 
-.tigers h2 {
+.tigers h2, .pandas h2 {
   color: #fff;
+}
+
+.pandas {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pandas-container {
+  margin-right: 1rem;
+  font-size: 1.2em;
+}
+
+.pandas img {
+  border-radius: 10%;
 }
 
 .giraffe {
@@ -235,4 +251,10 @@ footer {
 
 .programs .card {
   display: inline-block;
+}
+
+@media screen and (max-width: 950px) {
+  .pandas {
+    display: block;
+  }
 }

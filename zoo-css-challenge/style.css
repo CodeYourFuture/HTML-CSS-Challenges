@@ -199,7 +199,7 @@ footer {
 }
 
 .card time {
-  opacity: 0.5;
+  opacity: 1;
   display: inline-block;
   margin-bottom: 10px;
 }
@@ -236,11 +236,12 @@ footer {
 }
 
 .membership h2 {
-  color: #ff3f00;
+  color: #ff1e00;
 }
 
 .membership strong {
-  color: #ff7f11;
+  color: #3700ff;
+  font-weight: 600;
 }
 
 /*Programs*/

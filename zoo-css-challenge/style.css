@@ -159,6 +159,16 @@ footer {
 .giraffe p:first-of-type {
   font-size: large;
 }
+.eagle {
+  background-color: rgb(173, 205, 247);
+  display: flex;
+  flex-direction: column;
+}
+.eagle img {
+  border-radius: 12px;
+  width: 70vw;
+  align-self: center;
+}
 
 .news h2:first-child {
   text-align: center;

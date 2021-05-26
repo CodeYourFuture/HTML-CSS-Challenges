@@ -40,7 +40,7 @@ h3,
 h4,
 h5 {
   /*Purple*/
-  color: #fdf9d6;
+  color: #6320ee;
   margin-bottom: 1em;
 }
 
@@ -123,14 +123,23 @@ footer {
   background-color: #0b3c49;
   color: #f0e100;
 }
+.tigers h2 {
+  color: #fdf9d6;
+}
 
 .giraffe {
-  background-color: #465775;
+  background-color: #483c46;
   color: #56e39f;
 }
 
 .giraffe h2 {
-  color: #ef6f6c;
+  color: #f4743b;
+}
+.giraffe h3 {
+  color: #f4743b;
+}
+.giraffe p {
+  color: #beee62;
 }
 
 .card {

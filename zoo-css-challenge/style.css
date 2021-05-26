@@ -225,6 +225,10 @@ footer {
 }
 
 /*Programs*/
+.programs-container {
+  display: flex;
+  justify-content: space-around;
+}
 
 .programs .card {
   display: block;

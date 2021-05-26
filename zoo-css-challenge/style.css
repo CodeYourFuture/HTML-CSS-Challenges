@@ -233,3 +233,25 @@ footer {
 .programs .card {
   display: block;
 }
+.fav-animal {
+  background-color: #e7f7f4;
+  border-radius: 5px;
+  border: #211a1d 4px solid;
+  margin-bottom: 20px;
+}
+.fav-animal-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: #211a1d 4px solid;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.fav-animal h2 {
+  color: #0062a3;
+}
+.dog-reasons {
+  padding-left: 20px;
+  margin: 20px;
+}

@@ -58,13 +58,22 @@ h3 {
 
 button {
   display: inline-block;
-  border-radius: 3px;
+  border-radius: 10px;
   cursor: pointer;
   padding: 10px 20px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
   background-color: #372772;
   border: 2px solid black;
   color: #fff;
+  font-size: 1.3em;
+}
+
+button:hover {
+  background-color: #03fa2c;
+  color: #483c46;
+}
+button:focus {
+  background-color: #fa0355;
 }
 
 footer {
@@ -184,6 +193,7 @@ footer {
   background-size: cover;
   background-position: center;
   padding: 100px 5%;
+  border-radius: 20px;
 }
 
 .education-container {

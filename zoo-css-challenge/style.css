@@ -87,10 +87,11 @@ footer {
   height: 120px;
   width: 120px;
   background-color: #bbb;
+  transition: 1s ease-out;
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 
   display: flex;
@@ -129,14 +130,14 @@ footer {
 
 .giraffe {
   background-color: #483c46;
-  color: #56e39f;
+  /* color: #56e39f; */
 }
 
-.giraffe h2,
-h3 {
-  color: #483c46;
+.giraffe h2 {
+  color: #f4743b;
 }
 
+.giraffe h3,
 .giraffe p {
   color: #beee62;
 }
@@ -147,7 +148,10 @@ h3 {
 .news h2 {
   text-align: center;
 }
-
+.news-cards {
+  display: flex;
+  flex-direction: row;
+}
 .card {
   display: inline-block;
   background-color: white;
@@ -173,6 +177,10 @@ h3 {
   margin-bottom: 10px;
 }
 
+.links-card a {
+  width: 48px;
+  height: 48px;
+}
 /*Education*/
 
 .education {
@@ -225,6 +233,24 @@ h3 {
 
 /*Programs*/
 
-/* .programs .card {
+.programs-cards {
   display: flex;
-} */
+  justify-content: space-between;
+}
+.fav-animals h3 {
+  text-align: center;
+}
+section .fav-animals {
+  border: #0a0807 solid 1px;
+  border-radius: 15px;
+  background-color: #fffffc;
+  width: 200px;
+  margin: 50px 50px 50px 0px;
+  max-width: 100%;
+}
+.animals {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  margin-top: 20px;
+}

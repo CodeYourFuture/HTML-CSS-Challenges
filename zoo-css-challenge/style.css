@@ -1,28 +1,9 @@
+
+/* General styles */
 * {
   font-family: sans-serif;
   line-height: 1.6;
-}
-
-header {
-  background-color: #211a1d;
-  color: #ffffff;
-  width: 100%;
-  padding: 20px;
-}
-
-nav {
-  display: inline-block;
-  width: 100%;
-}
-
-header ul {
-  margin: 20px 0 0 0;
-  padding: 0;
-}
-
-header ul li {
-  display: inline-block;
-  margin-right: 10px;
+  overflow: auto;
 }
 
 section {
@@ -79,6 +60,30 @@ button:hover {
   border: 2px solid #372772;
 }
 
+/* Header and navigation bar */
+header {
+  background-color: #211a1d;
+  color: #ffffff;
+  width: 100%;
+  padding: 20px;
+  margin: 0;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+header ul {
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+
+header ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
 footer {
   background-color: #211a1d;
   color: #ffffff;
@@ -101,8 +106,7 @@ footer {
   position: fixed;
   top: 20px;
   right: 20px;
-  transition: background-color 0.7s ;
-
+  transition: all 0.7s;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -254,6 +258,8 @@ footer {
 .programs .card {
   display: inline-block;
 }
+
+/* Media queries */
 
 @media screen and (max-width: 950px) {
   .pandas {

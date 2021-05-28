@@ -31,6 +31,8 @@ section {
 
 img {
   border: 5px solid #8075ff;
+  width: auto;
+  height: auto;
 }
 
 h1,
@@ -184,6 +186,8 @@ footer {
 .elephants img {
   margin-left: 25%;
   margin-top: 10%;
+  width: auto;
+  height: auto;
 }
 
 /*Card Styles*/
@@ -273,4 +277,17 @@ footer {
 
 .programs .card {
   flex-wrap: nowrap;
+}
+
+@media only screen and (max-width: 300px) {
+  .bear-img {
+    max-width: 200px;
+    height: auto;
+  }
+
+  .elephant-img {
+    max-width: 150px;
+    height: auto;
+    float: left;
+  }
 }

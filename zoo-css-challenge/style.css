@@ -30,7 +30,7 @@ section {
   background-color: #f8f0fb;
 }
 
-img {
+#logo {
   border: none;
 }
 
@@ -164,7 +164,7 @@ h3 {
   background-color: white;
   padding: 20px;
   margin: 10px;
-  width: 20%;
+  width: calc(calc(100% / 3) - 65px);
   border: 1px solid black;
   border-radius: 10px;
 }
@@ -240,9 +240,8 @@ h3 {
 }
 
 /*Programs*/
+
 .cards {
   display: flex;
-}
-.programs .card {
-  display: block;
+  justify-content: space-evenly;
 }

@@ -1,5 +1,6 @@
 * {
   font-family: sans-serif;
+  line-height: 2.5;
 }
 
 header {
@@ -84,7 +85,7 @@ footer {
 
 .introduction {
   background-color: white;
-  line-height: 2.5;
+ 
 }
 
 #badge {

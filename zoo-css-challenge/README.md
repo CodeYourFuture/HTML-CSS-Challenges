@@ -8,13 +8,13 @@ You are encouraged to use Google to help you find the answers to these problems.
 
 ## 1) Introduction
 
-First of all, we don’t want the logo to have a purple border. The logo has an ID of logo, make sure this has no border.
+F̶i̶r̶s̶t̶ o̶f̶ a̶l̶l̶,̶ w̶e̶ d̶o̶n̶’̶t̶ w̶a̶n̶t̶ t̶h̶e̶ l̶o̶g̶o̶ t̶o̶ h̶a̶v̶e̶ a̶ p̶u̶r̶p̶l̶e̶ b̶o̶r̶d̶e̶r̶.̶ T̶h̶e̶ l̶o̶g̶o̶ h̶a̶s̶ a̶n̶ I̶D̶ o̶f̶ l̶o̶g̶o̶,̶ m̶a̶k̶e̶ s̶u̶r̶e̶ t̶h̶i̶s̶ h̶a̶s̶ n̶o̶ b̶o̶r̶d̶e̶r̶.̶
 
-The first section has a class name of ‘introduction’. Give this section a white background. Add a paragraph to this section with the following text:
+The first section has a class name of ‘introduction’. G̶i̶v̶e̶ t̶h̶i̶s̶ s̶e̶c̶t̶i̶o̶n̶ a̶ w̶h̶i̶t̶e̶ b̶a̶c̶k̶g̶r̶o̶u̶n̶d̶.̶ Add a paragraph to this section with the following text:
 
 ‘The zoo is open every day of the year and features three major biomes: the Tropic Zone, Temperate Territory, and the Polar Circle. From tropical birds, to snow leopards, grizzly bears, and one of the nation’s largest colonies of Antarctic penguins, there are animals to enjoy in every season.’
 
-Most of the text on the page is very close together. Increase the amount of space of the text so that there's more breathing space.
+Most of the text on the page is very close together. Increase the amount of space of the text so that there's more breathing space. 
 
 ## 2) Bears:
 

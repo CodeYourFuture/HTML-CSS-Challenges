@@ -1,5 +1,7 @@
 * {
   font-family: sans-serif;
+  line-height: 2; /* is there a better way to do this? */
+  letter-spacing: 3px; /* this made it look a bit weird */
 }
 
 header {
@@ -8,6 +10,13 @@ header {
   width: 100%;
   padding: 20px;
 }
+
+#logo {
+  border-width: 0;
+}
+
+
+
 
 nav {
   display: inline-block;
@@ -76,6 +85,7 @@ footer {
 }
 
 .introduction {
+  background:#fff;
 }
 
 #badge {

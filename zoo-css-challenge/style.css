@@ -28,7 +28,7 @@ section {
   padding: 5%;
   background-color: #f8f0fb;
 }
-
+p {word-spacing: 5px;}
 img {
   border: 5px solid #F08080
 }

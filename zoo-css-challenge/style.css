@@ -184,6 +184,11 @@ h3{color: #F4743B;}
 .membership {
   text-align: center;
   background-color: #fffffc;
+  max-width: 700px;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  margin-right: 200px;
+  margin-left: 80px;
 }
 
 .membership h2 {

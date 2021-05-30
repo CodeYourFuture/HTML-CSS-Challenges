@@ -28,11 +28,11 @@ section {
   padding: 5%;
   background-color: #f8f0fb;
 }
-
+/*
 img {
   border: 5px solid #8075ff;
 }
-
+*/
 h1,
 h2,
 h3,
@@ -76,7 +76,9 @@ footer {
 }
 
 .introduction {
+  background-color: #fff
 }
+
 
 #badge {
   height: 120px;
@@ -109,23 +111,35 @@ footer {
 }
 
 .image-container img:first-of-type {
-  vertical-align: bottom;
+  vertical-align: top;
+  border-color:#56e39f;
+}
+.image-container img:last-of-type{
+border-color:#ff3f00
 }
 
 .tigers {
-  background-color: #0b3c49;
+  background-color: #45490bef;
   color: #f0e100;
 }
 
 .giraffe {
-  background-color: #465775;
+  background-color:  #483C46;
   color: #56e39f;
 }
 
 .giraffe h2 {
-  color: #ef6f6c;
+  color: #F4743B;
 }
-
+.giraffe p {
+  color:  #BEEE62;
+}
+.giraffe p:first-child{
+font-size: 10px;
+}
+.news h2 {
+  text-align: center;
+}
 .card {
   display: inline-block;
   background-color: white;
@@ -152,7 +166,9 @@ footer {
 }
 
 /*Education*/
-
+button:hover {
+  color: green;
+}
 .education {
   height: 500px;
   background-image: url("https://source.unsplash.com/1200x900/?tiger");
@@ -174,7 +190,10 @@ footer {
 }
 
 /*Membership*/
-
+.membership p:first-child { 
+ width: 0px;
+ margin: 1rem 1rem 0.5rem 1.5rem;
+}
 .membership {
   text-align: center;
   background-color: #fffffc;

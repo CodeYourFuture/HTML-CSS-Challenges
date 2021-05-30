@@ -69,7 +69,7 @@ button {
   color: #fff;
   font-size: 150%;
 }
-
+button:hover{background-color: #008000;}
 footer {
   background-color: #211a1d;
   color: #ffffff;

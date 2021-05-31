@@ -140,6 +140,15 @@ footer {
 .giraffe p:first-of-type {
   font-size: 20px;
 }
+
+.news h2 {
+  text-align: center;
+}
+.news-box {
+  display: flex;
+  justify-content: space-between;
+}
+
 .card {
   display: inline-block;
   background-color: white;

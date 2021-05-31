@@ -1,5 +1,14 @@
 * {
   font-family: sans-serif;
+
+  /* 4) Giraffes: Set font size in the universal selector to 
+        ensure the default size is 16px regardless of browser setting */
+  font-size: 16px;
+
+  /* 1) Introduction: Increase all word spacing (horizontally) and line height (vertically) 
+        on page to give the text breathing space */
+  word-spacing: 2px;
+  line-height: 25px;
 }
 
 header {
@@ -7,6 +16,12 @@ header {
   color: #ffffff;
   width: 100%;
   padding: 20px;
+}
+
+#logo {
+  /* 1) Introduction: Alternatively, as no further border styling is applied here I believe "border: none;" 
+        could have be used, but I played it safe :) */
+  border-width: 0px;
 }
 
 nav {
@@ -55,6 +70,12 @@ h3 {
   font-size: 150%;
 }
 
+/* 3) Tigers: Targets the descendent of .tigers class selector, h2, setting the colour of the heading 
+      to a lighter purple which complies with WCAG AA standards, new contrast ratio is 4.52:1 */
+.tigers h2 {
+  color: #a48fff;
+}
+
 button {
   display: inline-block;
   border-radius: 3px;
@@ -64,6 +85,19 @@ button {
   background-color: #372772;
   border: 2px solid black;
   color: #fff;
+
+  /* 6) Learning: Increased font size from 1rem (16px) to 1.25rem (20px) */
+  font-size: 1.25rem;
+}
+
+/* 6) Learning: Used the focus and hover pseudo-classes to create 
+      a new rule for the button selector that changes the background and border colours 
+      when focused or hovered over, also slows the transition effect making it smoother :) */
+button:focus,
+button:hover {
+  background-color: #6320ee;
+  border-color: #6320ee;
+  transition: 0.8s;
 }
 
 footer {
@@ -76,6 +110,7 @@ footer {
 }
 
 .introduction {
+  background-color: #fff;
 }
 
 #badge {
@@ -105,11 +140,26 @@ footer {
 
 .image-container img {
   vertical-align: top;
-  border: 5px solid #747c92;
+  border: 5px solid;
 }
 
+/* 2) Bears: Used the following 3, previously created "X-of-type" 
+      pseudo selector rules and set independent border colours around the images
+      and made the images align at the top of their containers */
 .image-container img:first-of-type {
-  vertical-align: bottom;
+  vertical-align: top;
+  border-color: #6320ee;
+}
+/* 2 */
+.image-container img:nth-of-type(2) {
+  vertical-align: top;
+  border-color: #f4743b;
+}
+
+/* 3 */
+.image-container img:last-of-type {
+  vertical-align: top;
+  border-color: #ffff00;
 }
 
 .tigers {
@@ -117,13 +167,37 @@ footer {
   color: #f0e100;
 }
 
+/* 4) Giraffes: Changed the background colour using the class selector .giraffe */
 .giraffe {
-  background-color: #465775;
-  color: #56e39f;
+  background-color: #483c46;
 }
 
-.giraffe h2 {
-  color: #ef6f6c;
+/* 4) Giraffes: Set background colour of the paragraphs using the .giraffe class selector 
+      and its descendent p. Alternatively, I believe this change could have been made in the 
+      .giraffe selector rule but I felt it was better to be specific and target the p elements  */
+.giraffe p {
+  color: #beee62;
+}
+
+/* 4) Giraffes: Selected the first P element using its containers class selector
+      and the 'first-of-type' pseudo selector then set the font size to 
+      1.25rem (20px), 4px larger than default */
+.giraffe p:first-of-type {
+  font-size: 1.25rem;
+}
+
+/* 4) Giraffes: Use the descendent selector of class selector .giraffe, h2, h3, h4 
+      to set title text colour */
+.giraffe h2,
+.giraffe h3,
+.giraffe h4 {
+  color: #f4743b;
+}
+
+/* 5) News: Aligned title in the center of the section using the .news class selector and its 
+      descendent selector h2 */
+.news h2 {
+  text-align: center;
 }
 
 .card {
@@ -166,6 +240,10 @@ footer {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+
+  /* 6) Learning: Rounded the container corners, adding a round of 10px which is 
+        consistent with the rounded corners in the News section, .card class selector rule */
+  border-radius: 10px;
 }
 
 .education-container h3,
@@ -186,6 +264,19 @@ footer {
 
 .membership strong {
   color: #ff7f11;
+}
+
+/* 7) Membership: Targets the .membership class selectors descendant, p with a new
+      rule that sets the width of the p selector, centers the text and adjusts 
+      the vertical margin to improve the button / paragraph spacing */
+.membership p {
+  width: 700px;
+
+  /*  7) Membership: Set margin at 2rem (32px) as this maintains a gap equal
+      to two lines of text top and bottom ensuring a consistent look next to button,
+      then set the margin value to auto, allowing the browser to set the left and right 
+      margins automatically, centering the text */
+  margin: 2rem auto;
 }
 
 /*Programs*/

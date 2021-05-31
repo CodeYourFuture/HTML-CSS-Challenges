@@ -227,3 +227,8 @@ footer {
 .programs .card {
   display: block;
 }
+
+.programs-box {
+  display: flex;
+  justify-content: space-around;
+}

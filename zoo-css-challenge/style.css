@@ -20,7 +20,7 @@ header {
 
 #logo {
   /* 1) Introduction: Alternatively, as no further border styling is applied here I believe "border: none;" 
-        could have be used, but I played it safe :) */
+        could have be used, but I played it safe and set the border width to 0 :) */
   border-width: 0px;
 }
 
@@ -70,12 +70,6 @@ h3 {
   font-size: 150%;
 }
 
-/* 3) Tigers: Targets the descendent of .tigers class selector, h2, setting the colour of the heading 
-      to a lighter purple which complies with WCAG AA standards, new contrast ratio is 4.52:1 */
-.tigers h2 {
-  color: #a48fff;
-}
-
 button {
   display: inline-block;
   border-radius: 3px;
@@ -109,9 +103,13 @@ footer {
   justify-content: space-between;
 }
 
+/*Introduction*/
+
 .introduction {
   background-color: #fff;
 }
+
+/*Badge*/
 
 #badge {
   height: 120px;
@@ -122,7 +120,6 @@ footer {
   position: fixed;
   bottom: 20px;
   right: 20px;
-
   display: flex;
   justify-content: center;
   align-content: center;
@@ -137,6 +134,8 @@ footer {
   text-align: center;
   font-size: 125%;
 }
+
+/*Bears*/
 
 .image-container img {
   vertical-align: top;
@@ -162,10 +161,20 @@ footer {
   border-color: #ffff00;
 }
 
+/*Tigers*/
+
 .tigers {
   background-color: #0b3c49;
   color: #f0e100;
 }
+
+/* 3) Tigers: Targets the descendent of .tigers class selector, h2, setting the colour of the heading 
+      to a lighter purple which complies with WCAG AA standards, new contrast ratio is 4.52:1 */
+.tigers h2 {
+  color: #a48fff;
+}
+
+/*Giraffes*/
 
 /* 4) Giraffes: Changed the background colour using the class selector .giraffe */
 .giraffe {
@@ -193,6 +202,8 @@ footer {
 .giraffe h4 {
   color: #f4743b;
 }
+
+/*News*/
 
 /* 5) News: Aligned title in the center of the section using the .news class selector and its 
       descendent selector h2 */

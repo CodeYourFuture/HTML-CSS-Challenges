@@ -1,11 +1,12 @@
 * {
   font-family: sans-serif;
+  line-height: 150%;
 }
 
 header {
   background-color: #211a1d;
   color: #ffffff;
-  width: 100%;
+  width: 97%;
   padding: 20px;
 }
 
@@ -27,10 +28,6 @@ header ul li {
 section {
   padding: 5%;
   background-color: #f8f0fb;
-}
-
-img {
-  border: 5px solid #8075ff;
 }
 
 h1,
@@ -76,6 +73,7 @@ footer {
 }
 
 .introduction {
+  background-color: white;
 }
 
 #badge {

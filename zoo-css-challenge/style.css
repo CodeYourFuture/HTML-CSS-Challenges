@@ -75,7 +75,7 @@ button:focus {
 footer {
   background-color: #211a1d;
   color: #ffffff;
-  width: 100%;
+  width: 97%;
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -148,6 +148,28 @@ footer {
 
 .giraffe p:first-of-type {
   font-size: 20px;
+}
+
+.husky {
+  height: 500px;
+  background-image: url("/img/White\ Siberian\ Husky.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 5%;
+}
+
+.siberian-husky {
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 20px;
+  padding: 50px;
+  max-width: 400px;
+}
+
+.siberian-husky h2,
+.siberian-husky h3,
+.siberian-husky p {
+  margin-bottom: 1em;
 }
 
 .news h2 {

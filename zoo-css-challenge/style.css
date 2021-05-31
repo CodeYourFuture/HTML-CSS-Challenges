@@ -36,7 +36,7 @@ h3,
 h4,
 h5 {
   /*Purple*/
-  color: #f5d833;
+  color: #c7a406;
   margin-bottom: 1em;
 }
 
@@ -121,14 +121,25 @@ footer {
 }
 
 .giraffe {
-  background-color: #465775;
+  background-color: #483c46;
   color: #56e39f;
 }
 
 .giraffe h2 {
-  color: #ef6f6c;
+  color: #f4743b;
 }
 
+.giraffe h3 {
+  color: #f4743b;
+}
+
+.giraffe p {
+  color: #beee62;
+}
+
+.giraffe p:first-of-type {
+  font-size: 20px;
+}
 .card {
   display: inline-block;
   background-color: white;

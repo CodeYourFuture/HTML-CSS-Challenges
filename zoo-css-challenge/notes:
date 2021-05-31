@@ -1,0 +1,5 @@
+notes:
+changing borders on bear images - could i add ids to each of the bear images and style them that way or would a better way be 
+to use a css selector like 'first-of-type' within the class of image-container?
+
+membership margin: have set it to 100px left but possibly best to use rem??

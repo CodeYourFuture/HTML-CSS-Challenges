@@ -1,7 +1,6 @@
 * {
   font-family: sans-serif;
   line-height: 2; /* is there a better way to do this? */
- 
 }
 
 header {
@@ -127,6 +126,13 @@ footer {
   border: 5px solid #747c92;
 }
 
+.image-container img:first-of-type {
+  border: 5px solid #f0e100;
+}
+
+.image-container img:last-of-type {
+  border: 5px solid #ef6f6c;
+}
 
 .tigers {
   background-color: #0b3c49;

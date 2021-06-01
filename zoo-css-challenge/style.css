@@ -1,7 +1,7 @@
 * {
   font-family: sans-serif;
   line-height: 2; /* is there a better way to do this? */
-  letter-spacing: 3px; /* this made it look a bit weird */
+ 
 }
 
 header {

@@ -1,5 +1,7 @@
 * {
   font-family: sans-serif;
+  letter-spacing: 3px;
+  font-size: 1.2em;
 }
 
 header {
@@ -7,6 +9,10 @@ header {
   color: #ffffff;
   width: 100%;
   padding: 20px;
+}
+
+#logo {
+  border: none;
 }
 
 nav {
@@ -55,6 +61,10 @@ h3 {
   font-size: 150%;
 }
 
+p {
+  line-height: 40px;
+}
+
 button {
   display: inline-block;
   border-radius: 3px;
@@ -64,6 +74,8 @@ button {
   background-color: #372772;
   border: 2px solid black;
   color: #fff;
+  font-size: 1.6em;
+  border-radius: 1em;
 }
 
 footer {
@@ -76,18 +88,20 @@ footer {
 }
 
 .introduction {
+  background-color: #fffffc;
 }
 
 #badge {
-  height: 120px;
-  width: 120px;
+  height: 150px;
+  width: 150px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 
+  font-size: 0.9em;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -95,6 +109,7 @@ footer {
 }
 
 #badge:hover {
+  transition: 0.8s;
   background-color: yellow;
 }
 
@@ -105,11 +120,21 @@ footer {
 
 .image-container img {
   vertical-align: top;
-  border: 5px solid #747c92;
 }
 
 .image-container img:first-of-type {
-  vertical-align: bottom;
+  vertical-align: top;
+  border: 5px solid #747c92;
+}
+
+.image-container img:nth-of-type(2) {
+  vertical-align: top;
+  border: 5px solid #465b96;
+}
+
+.image-container img:nth-of-type(3) {
+  vertical-align: top;
+  border: 5px solid #747c92;
 }
 
 .tigers {
@@ -117,13 +142,30 @@ footer {
   color: #f0e100;
 }
 
+.tigers-h2 {
+  color: white;
+}
+
 .giraffe {
-  background-color: #465775;
-  color: #56e39f;
+  background-color: #483c46;
+  color: #beee62;
 }
 
 .giraffe h2 {
   color: #ef6f6c;
+}
+
+.giraffe h3 {
+  color: #f4743b;
+}
+
+.giraffe p:first-of-type {
+  font-size: 1.4em;
+  line-height: 1.1em;
+}
+
+.news h2 {
+  text-align: center;
 }
 
 .card {
@@ -132,6 +174,7 @@ footer {
   padding: 20px;
   margin: 10px;
   width: 30%;
+
   border: 1px solid black;
   border-radius: 10px;
 }
@@ -154,7 +197,7 @@ footer {
 /*Education*/
 
 .education {
-  height: 500px;
+  height: 900px;
   background-image: url("https://source.unsplash.com/1200x900/?tiger");
   background-repeat: no-repeat;
   background-size: cover;
@@ -175,9 +218,21 @@ footer {
 
 /*Membership*/
 
+/* Is there a better way to get the text here in the center rather than using margins ...? */
+
 .membership {
-  text-align: center;
+  display: grid;
   background-color: #fffffc;
+  border-top: 20%;
+  margin-left: 30%;
+  margin-right: 30%;
+  justify-content: center;
+  text-justify: distribute;
+  text-align: center;
+}
+
+.membership p {
+  max-width: 700px;
 }
 
 .membership h2 {
@@ -190,6 +245,15 @@ footer {
 
 /*Programs*/
 
+.programs-container {
+  display: inline-flex;
+  flex-wrap: nowrap;
+}
+
 .programs .card {
-  display: block;
+}
+.programs-container a {
+  color: black;
+
+  align-self: flex-end;
 }

@@ -29,8 +29,12 @@ section {
   background-color: #f8f0fb;
 }
 
+.introduction {
+  background-color: white;
+}
+
 img {
-  border: 5px solid #8075ff;
+  border: none;
 }
 
 h1,
@@ -86,6 +90,7 @@ footer {
   display: inline-block;
   position: fixed;
   bottom: 20px;
+  top: 20px;
   right: 20px;
 
   display: flex;
@@ -95,7 +100,7 @@ footer {
 }
 
 #badge:hover {
-  background-color: yellow;
+  background-color: pink;
 }
 
 #badge p {
@@ -103,9 +108,18 @@ footer {
   font-size: 125%;
 }
 
+
 .image-container img {
   vertical-align: top;
   border: 5px solid #747c92;
+  height: 250px;
+  width: 270px;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .image-container img:first-of-type {
@@ -116,7 +130,10 @@ footer {
   background-color: #0b3c49;
   color: #f0e100;
 }
+ .tigers h2{
+ color: #BC8FE5;
 
+}
 .giraffe {
   background-color: #465775;
   color: #56e39f;
@@ -191,5 +208,19 @@ footer {
 /*Programs*/
 
 .programs .card {
-  display: block;
+  .program {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+.card {
+  width: 270px;
+  height: 100px;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }

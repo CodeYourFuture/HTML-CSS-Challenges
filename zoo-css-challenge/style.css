@@ -1,5 +1,6 @@
 * {
   font-family: sans-serif;
+  line-height:25px;
 }
 
 header {
@@ -8,6 +9,8 @@ header {
   width: 100%;
   padding: 20px;
 }
+
+#logo {border:none;}
 
 nav {
   display: inline-block;
@@ -55,9 +58,13 @@ h3 {
   font-size: 150%;
 }
 
+p {max-width: 700px;
+   margin: 25% ;}
+
 button {
+  font-size: larger;
   display: inline-block;
-  border-radius: 3px;
+  border-radius:20px;
   cursor: pointer;
   padding: 10px 20px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
@@ -65,6 +72,8 @@ button {
   border: 2px solid black;
   color: #fff;
 }
+
+button:hover {background-color: #cac3e2;}
 
 footer {
   background-color: #211a1d;
@@ -75,8 +84,7 @@ footer {
   justify-content: space-between;
 }
 
-.introduction {
-}
+.introduction {background-color: white;}
 
 #badge {
   height: 120px;
@@ -105,26 +113,39 @@ footer {
 
 .image-container img {
   vertical-align: top;
-  border: 5px solid #747c92;
+  width: 150px;
+  height:200px;
 }
+
+#bear1 {border: 3px solid #56e39f }
+#bear2 {border: 3px solid #6320ee }
+#bear3 {border: 3px solid #0b3c49 }
 
 .image-container img:first-of-type {
   vertical-align: bottom;
 }
+
+
 
 .tigers {
   background-color: #0b3c49;
   color: #f0e100;
 }
 
+.tigers h2 {color: #E9E9F1;}
+
 .giraffe {
-  background-color: #465775;
-  color: #56e39f;
+  background-color: #483C46;
+  color: #BEEE62;
 }
 
 .giraffe h2 {
-  color: #ef6f6c;
+  color: #F4743B;
 }
+
+.giraffe P:first-of-type {font-size: larger;}
+
+.news h2 {text-align: center;}
 
 .card {
   display: inline-block;

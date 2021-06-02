@@ -1,6 +1,8 @@
 * {
   font-family: sans-serif;
   line-height: 1.6;
+  word-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 header {
@@ -110,7 +112,7 @@ footer {
 }
 
 .image-container img:first-of-type {
-  vertical-align: bottom;
+  vertical-align: top;
 }
 
 .tigers {

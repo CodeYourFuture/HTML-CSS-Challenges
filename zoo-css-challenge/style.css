@@ -29,8 +29,6 @@ section {
   background-color: #f8f0fb;
 }
 
-
-
 h1,
 h2,
 h3,
@@ -74,9 +72,9 @@ footer {
 }
 
 .introduction {
-  background-color:white;
+  background-color: white;
   line-height: 1.5rem;
-  font-size:1.5em;
+  font-size: 1.5em;
   letter-spacing: normal;
 }
 
@@ -111,10 +109,9 @@ footer {
 }
 
 .image-container img:first-of-type {
-  vertical-align: bottom;
   border: 5px solid purple;
 }
-.image-container img:last-of-type{
+.image-container img:last-of-type {
   border: 5px solid goldenrod;
 }
 .tigers {

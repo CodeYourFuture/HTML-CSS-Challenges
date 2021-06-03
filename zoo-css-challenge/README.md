@@ -10,15 +10,15 @@ You are encouraged to use Google to help you find the answers to these problems.
 
 F̶i̶r̶s̶t̶ o̶f̶ a̶l̶l̶,̶ w̶e̶ d̶o̶n̶’̶t̶ w̶a̶n̶t̶ t̶h̶e̶ l̶o̶g̶o̶ t̶o̶ h̶a̶v̶e̶ a̶ p̶u̶r̶p̶l̶e̶ b̶o̶r̶d̶e̶r̶.̶ T̶h̶e̶ l̶o̶g̶o̶ h̶a̶s̶ a̶n̶ I̶D̶ o̶f̶ l̶o̶g̶o̶,̶ m̶a̶k̶e̶ s̶u̶r̶e̶ t̶h̶i̶s̶ h̶a̶s̶ n̶o̶ b̶o̶r̶d̶e̶r̶.̶
 
-The first section has a class name of ‘introduction’. G̶i̶v̶e̶ t̶h̶i̶s̶ s̶e̶c̶t̶i̶o̶n̶ a̶ w̶h̶i̶t̶e̶ b̶a̶c̶k̶g̶r̶o̶u̶n̶d̶.̶ Add a paragraph to this section with the following text:
+The first section has a class name of ‘introduction’. G̶i̶v̶e̶ t̶h̶i̶s̶ s̶e̶c̶t̶i̶o̶n̶ a̶ w̶h̶i̶t̶e̶ b̶a̶c̶k̶g̶r̶o̶u̶n̶d̶.̶ A̶d̶d̶ a̶ p̶a̶r̶a̶g̶r̶a̶p̶h̶ t̶o̶ t̶h̶i̶s̶ s̶e̶c̶t̶i̶o̶n̶ w̶i̶t̶h̶ t̶h̶e̶ f̶o̶l̶l̶o̶w̶i̶n̶g̶ t̶e̶x̶t̶:̶
 
 ‘The zoo is open every day of the year and features three major biomes: the Tropic Zone, Temperate Territory, and the Polar Circle. From tropical birds, to snow leopards, grizzly bears, and one of the nation’s largest colonies of Antarctic penguins, there are animals to enjoy in every season.’
 
-Most of the text on the page is very close together. Increase the amount of space of the text so that there's more breathing space. 
+Most of the text on the page is very close together. I̶n̶c̶r̶e̶a̶s̶e̶ t̶h̶e̶ a̶m̶o̶u̶n̶t̶ o̶f̶ s̶p̶a̶c̶e̶ o̶f̶ t̶h̶e̶ t̶e̶x̶t̶ s̶o̶ t̶h̶a̶t̶ t̶h̶e̶r̶e̶'̶s̶ m̶o̶r̶e̶ b̶r̶e̶a̶t̶h̶i̶n̶g̶ s̶p̶a̶c̶e̶. 
 
 ## 2) Bears:
 
-All the images of bears have the same border colour, can all these images be given a different border colour? 
+A̶l̶l̶ t̶h̶e̶ i̶m̶a̶g̶e̶s̶ o̶f̶ b̶e̶a̶r̶s̶ h̶a̶v̶e̶ t̶h̶e̶ s̶a̶m̶e̶ b̶o̶r̶d̶e̶r̶ c̶o̶l̶o̶u̶r̶,̶ c̶a̶n̶ a̶l̶l̶ t̶h̶e̶s̶e̶ i̶m̶a̶g̶e̶s̶ b̶e̶ g̶i̶v̶e̶n̶ a̶ d̶i̶f̶f̶e̶r̶e̶n̶t̶ b̶o̶r̶d̶e̶r̶ c̶o̶l̶o̶u̶r̶?̶ 
 
 T̶h̶e̶ i̶m̶a̶g̶e̶s̶ o̶f̶ t̶h̶e̶ b̶e̶a̶r̶s̶ a̶r̶e̶ a̶l̶s̶o̶ m̶i̶s̶a̶l̶i̶g̶n̶e̶d̶.̶ C̶a̶n̶ a̶l̶l̶ t̶h̶e̶s̶e̶ i̶m̶a̶g̶e̶s̶ b̶e̶ v̶e̶r̶t̶i̶c̶a̶l̶l̶y̶ a̶l̶i̶g̶n̶e̶d̶ t̶o̶ t̶h̶e̶ t̶o̶p̶ o̶f̶ t̶h̶e̶ c̶o̶n̶t̶a̶i̶n̶e̶r̶.̶
 

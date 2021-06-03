@@ -136,6 +136,10 @@ footer {
 .giraffe p:first-of-type{
   font-size: 1.4em;
 }
+/* News Section */
+.news{
+  text-align:center;
+}
 .card {
   display: inline-block;
   background-color: white;

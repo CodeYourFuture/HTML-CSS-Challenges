@@ -32,13 +32,26 @@ section {
 }
 
 #bear1 {
-  border-width: 10px;
+  border: solid;
+  border-width: 5px;
   border-color: red;
 }
-/*img {
+
+#bear2 {
+  border:solid;
+  border-color: blue;
+  border-width: 5px;
+}
+
+#bear3 {
+  border:solid;
+  border-color: rgb(0, 255, 13);
+  border-width: 5px;
+}
+img {
   border: 5px solid #8075ff;
 }
-*/
+
 #logo {
   border-width: 0px;
 }
@@ -124,6 +137,14 @@ footer {
 .tigers {
   background-color: #0b3c49;
   color: #f0e100;
+}
+
+.tigers h2 {
+  color: #fffffd;
+}
+
+.tigers h3 {
+  color: #ffffff;
 }
 
 .giraffe {

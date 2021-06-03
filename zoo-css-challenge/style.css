@@ -76,16 +76,19 @@ footer {
 }
 
 .introduction {
+  background-color:white;
+  line-height: 2em;
 }
 
 #badge {
+  
   height: 120px;
   width: 120px;
-  background-color: #bbb;
+  background-color: rgb(238, 240, 108);
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 
   display: flex;
@@ -105,20 +108,26 @@ footer {
 
 .image-container img {
   vertical-align: top;
-  border: 5px solid #747c92;
 }
 
-.image-container img:first-of-type {
-  vertical-align: bottom;
+.image-container .bear1 {
+  border: 5px solid #890add;
 }
 
+.image-container .bear2 {
+  border: 5px solid #f7df0a;
+}
+
+.image-container .bear3{
+  border: 5px solid #890add;
+}
 .tigers {
-  background-color: #0b3c49;
-  color: #f0e100;
+  background-color: #f1e684;
+  color: #36362b;
 }
 
 .giraffe {
-  background-color: #465775;
+  background-color: #483C46;
   color: #56e39f;
 }
 
@@ -126,12 +135,28 @@ footer {
   color: #ef6f6c;
 }
 
+p:first-of-type{
+  font-size:1.2rem;
+}
+
+.giraffe h3 {
+  color:#F4743B;
+}
+
+.giraffe p {
+  color:#BEEE62;
+}
+
+.news h2{
+  text-align: center;
+}
+
 .card {
   display: inline-block;
   background-color: white;
   padding: 20px;
   margin: 10px;
-  width: 30%;
+  width: 27%;
   border: 1px solid black;
   border-radius: 10px;
 }
@@ -153,6 +178,7 @@ footer {
 
 /*Education*/
 
+
 .education {
   height: 500px;
   background-image: url("https://source.unsplash.com/1200x900/?tiger");
@@ -166,11 +192,21 @@ footer {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  border-radius: 10px;
 }
 
 .education-container h3,
 .education-container p {
   margin-bottom: 1em;
+}
+.education-container button {
+  font-size: 1em;
+}
+.education-container button:hover {
+  background-color: #c911ee;
+}
+.education-container button:focus {
+  background-color: #f8a814;
 }
 
 /*Membership*/
@@ -187,9 +223,13 @@ footer {
 .membership strong {
   color: #ff7f11;
 }
+.membership p {
+  max-width:700px;
+  margin: 30px 280px 30px 280px;
+}
 
 /*Programs*/
 
 .programs .card {
-  display: block;
+  display:inline-block;
 }

@@ -29,9 +29,9 @@ section {
   background-color: #f8f0fb;
 }
 
-img {
+/* img {
   border: 5px solid #8075ff;
-}
+} */
 
 h1,
 h2,
@@ -76,6 +76,11 @@ footer {
 }
 
 .introduction {
+  background: #fff;
+}
+
+.introduction p{
+  word-spacing: 5px;
 }
 
 #badge {
@@ -85,17 +90,21 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
+  transition-duration: 1000ms ;
+  transition-timing-function: ease-in-out;
+
 }
 
 #badge:hover {
   background-color: yellow;
+
 }
 
 #badge p {
@@ -108,8 +117,11 @@ footer {
   border: 5px solid #747c92;
 }
 
-.image-container img:first-of-type {
-  vertical-align: bottom;
+.image-container .img1 {
+  border: 5px solid #1947c7;
+}
+.image-container .img3 {
+  border: 5px solid #57c200;
 }
 
 .tigers {
@@ -117,13 +129,29 @@ footer {
   color: #f0e100;
 }
 
-.giraffe {
-  background-color: #465775;
-  color: #56e39f;
+.tigers h2{
+  color: #EDEDED;
 }
 
-.giraffe h2 {
-  color: #ef6f6c;
+
+
+.giraffe {
+  background-color: #483C46;
+  color: #BEEE62;
+}
+
+.giraffe .first-p {
+  font-size: 20px;
+}
+
+.giraffe .gir-h2, .gir-h3 {
+  color: #F4743B;
+}
+
+
+
+.news h2{
+  text-align: center;
 }
 
 .card {
@@ -131,7 +159,7 @@ footer {
   background-color: white;
   padding: 20px;
   margin: 10px;
-  width: 30%;
+  width: 28%;
   border: 1px solid black;
   border-radius: 10px;
 }
@@ -151,6 +179,9 @@ footer {
   margin-bottom: 10px;
 }
 
+
+
+
 /*Education*/
 
 .education {
@@ -168,15 +199,33 @@ footer {
   max-width: 400px;
 }
 
+.education-container button{
+  font-size: 20px;
+  border-radius: 15px;
+}
+
+.education-container button:hover{
+  background-color: #F4743B;
+}
+
+.education-container button:focus{
+  background-color: #F4743B;
+}
+
+
 .education-container h3,
 .education-container p {
   margin-bottom: 1em;
 }
 
+
+
 /*Membership*/
 
 .membership {
   text-align: center;
+  margin: 0 auto;
+  width: 700px;
   background-color: #fffffc;
 }
 
@@ -188,8 +237,10 @@ footer {
   color: #ff7f11;
 }
 
+
+
 /*Programs*/
 
 .programs .card {
-  display: block;
+  display: inline-block;
 }

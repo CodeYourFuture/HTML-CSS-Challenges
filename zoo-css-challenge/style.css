@@ -3,7 +3,12 @@
 * {
   font-family: sans-serif;
   line-height: 1.6;
-  overflow: auto;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 section {
@@ -257,6 +262,12 @@ footer {
 
 .programs .card {
   display: inline-block;
+}
+
+/* Footer */
+
+footer {
+  width: auto;
 }
 
 /* Media queries */

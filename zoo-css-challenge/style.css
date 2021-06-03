@@ -53,6 +53,7 @@ h2 {
 
 h3 {
   font-size: 150%;
+  color:#F4743B;
 }
 
 button {
@@ -118,8 +119,8 @@ footer {
 }
 
 .giraffe {
-  background-color: #465775;
-  color: #56e39f;
+  background-color: #0b3c49;
+  color: #BEEE62;
 }
 
 .giraffe h2 {

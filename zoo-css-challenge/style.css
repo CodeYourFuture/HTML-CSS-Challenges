@@ -180,12 +180,23 @@ footer {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  border-radius: 3%;
 }
-
+.education button{
+  font-size: 1.2em;
+}
+.education button:hover{
+  background-color: rgb(101, 2, 114);
+}
+.education button:focus{
+  background-color: rgb(101, 2, 114);
+}
 .education-container h3,
 .education-container p {
   margin-bottom: 1em;
+  color:#372772;
 }
+
 
 /*Membership*/
 

@@ -35,7 +35,7 @@ h3,
 h4,
 h5 {
   /*Purple*/
-  color: #6320ee;
+  color: #60ee;
   margin-bottom: 1em;
 }
 
@@ -117,6 +117,9 @@ footer {
 .tigers {
   background-color: #0b3c49;
   color: #f0e100;
+}
+.tigers h2,h3{
+  color: #f8f0fb;
 }
 
 .giraffe {

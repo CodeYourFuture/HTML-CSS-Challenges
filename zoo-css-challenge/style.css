@@ -90,9 +90,10 @@ footer {
   background-color: #FFFFFF;
   border-radius: 50%;
   display: inline-block;
-  position: fixed;
+  position: absolute;
   bottom: 20px;
   right: 20px;
+  transition-duration: 0.4s;
 
   display: flex;
   justify-content: center;

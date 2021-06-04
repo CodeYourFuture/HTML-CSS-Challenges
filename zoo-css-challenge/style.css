@@ -50,7 +50,7 @@ h1 {
 }
 
 h2 {
-  color: #E5E3F2;
+  color: #F4743B;
   font-size: 175%;
 }
 
@@ -127,6 +127,10 @@ footer {
   color: #f0e100;
 }
 
+.tigers h2 {
+  color: #E5E3F2;
+}
+
 .giraffe {
   background-color: #483C46;
   color: #BEEE62;
@@ -138,6 +142,10 @@ footer {
 
 .giraffe p:first-of-type{
   font-size: larger;
+}
+
+.news h2{
+  text-align: center;
 }
 
 .card {

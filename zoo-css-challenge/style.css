@@ -8,7 +8,9 @@ header {
   width: 100%;
   padding: 20px;
 }
-
+#logo{
+  border:none;
+}
 nav {
   display: inline-block;
   width: 100%;
@@ -76,6 +78,8 @@ footer {
 }
 
 .introduction {
+  background-color:#fff ;
+  line-height: 1.5;
 }
 
 #badge {
@@ -105,25 +109,44 @@ footer {
 
 .image-container img {
   vertical-align: top;
-  border: 5px solid #747c92;
+  border: 5px solid #3660d3;
 }
 
+.image-container img:nth-child(2) {
+  vertical-align: top;
+  border: 5px solid #dd2626;
+}
 .image-container img:first-of-type {
-  vertical-align: bottom;
+  vertical-align: top;
+  border: 5px solid #abdf88;
+
+
 }
 
 .tigers {
   background-color: #0b3c49;
   color: #f0e100;
 }
+.tigers h2, h3{
+  color:#F9CDCD !important;
+}
 
 .giraffe {
-  background-color: #465775;
+  background-color: #483C46;
   color: #56e39f;
+}
+.giraffe p:nth-child(1){
+font-size:larger ;
+
 }
 
 .giraffe h2 {
-  color: #ef6f6c;
+  color: #BEEE62;
+}
+.news h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {

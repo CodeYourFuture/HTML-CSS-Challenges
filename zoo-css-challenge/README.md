@@ -24,7 +24,7 @@ The images of the bears are also misaligned. Can all these images be vertically 
 
 ## 3) Tigers
 
-The purple headings are hard to read on dark backgrounds, change them to a lighter colour. Make sure it passes the WCAG AA standards for contrast. You can use this tool to help: https://webaim.org/resources/contrastchecker/
+The purple headings are hard to read on dark backgrounds, change them to a lighter colour. Make sure it passes the WCAG AA standards for contrast. You can use this tool to help: 	
 
 Change the heading of this section to ‘Tiger Facts’, remove the subheading, and change the ordered list to an unordered list.
 

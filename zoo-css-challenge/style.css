@@ -1,12 +1,18 @@
 * {
   font-family: sans-serif;
 }
-
+body{
+  word-spacing: 10px;
+ 
+}
 header {
   background-color: #211a1d;
   color: #ffffff;
   width: 100%;
   padding: 20px;
+}
+#logo{
+  borders-style:none;
 }
 
 nav {
@@ -29,9 +35,7 @@ section {
   background-color: #f8f0fb;
 }
 
-img {
-  border: 5px solid #8075ff;
-}
+
 
 h1,
 h2,
@@ -39,7 +43,7 @@ h3,
 h4,
 h5 {
   /*Purple*/
-  color: #6320ee;
+  color: ee2222#e66d6d;
   margin-bottom: 1em;
 }
 
@@ -64,6 +68,15 @@ button {
   background-color: #372772;
   border: 2px solid black;
   color: #fff;
+  
+  
+}
+.education button{
+  font-size: 1.1rem;
+  border-radius: 7px;
+}
+ .education-container>button:hover{
+  background-color:#705d83;
 }
 
 footer {
@@ -76,6 +89,7 @@ footer {
 }
 
 .introduction {
+  background-color:#f8f0fb;
 }
 
 #badge {
@@ -85,7 +99,7 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 
   display: flex;
@@ -96,6 +110,7 @@ footer {
 
 #badge:hover {
   background-color: yellow;
+  transition: 2s
 }
 
 #badge p {
@@ -103,10 +118,37 @@ footer {
   font-size: 125%;
 }
 
-.image-container img {
-  vertical-align: top;
-  border: 5px solid #747c92;
+.image-container {
+  display: flex;
+  flex-direction: row;
+ 
+  
+  
 }
+.image-container img:nth-child(1) {
+  border: 5px solid #b0bbdd;
+  
+}
+
+.image-container img:nth-child(2) {
+  border: 5px solid #7d798d;
+}
+
+.image-container img:nth-child(3) {
+  border: 5px solid #4b3699;
+}
+
+/*
+#left-bear{
+  border: 5px solid rgb(201, 74, 24);
+}
+#middle-bear{
+  border:#677ae4;
+
+}
+#right-bear{
+  border:#2e0cf0;
+}*/
 
 .image-container img:first-of-type {
   vertical-align: bottom;
@@ -118,12 +160,18 @@ footer {
 }
 
 .giraffe {
-  background-color: #465775;
-  color: #56e39f;
+  background-color: #483C46;
+  color: #BEEE62;
+}
+.giraffe>p:first-of-type { 
+  font-size:1.5rem;
+}
+.giraffe>h2:nth-of-type(1){
+  text-align: center;
 }
 
 .giraffe h2 {
-  color: #ef6f6c;
+  color:#F4743B;
 }
 
 .card {
@@ -176,8 +224,9 @@ footer {
 /*Membership*/
 
 .membership {
-  text-align: center;
+  text-align: auto;
   background-color: #fffffc;
+  max-width:700px;
 }
 
 .membership h2 {
@@ -190,6 +239,6 @@ footer {
 
 /*Programs*/
 
-.programs .card {
-  display: block;
+#programs  {
+  display: flex;
 }

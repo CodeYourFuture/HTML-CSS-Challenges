@@ -1,5 +1,7 @@
 * {
   font-family: sans-serif;
+  word-spacing: 5px;
+  line-height: 25px;
 }
 
 header {
@@ -30,7 +32,7 @@ section {
 }
 
 img {
-  border: 5px solid #8075ff;
+  border: none;
 }
 
 h1,
@@ -76,6 +78,7 @@ footer {
 }
 
 .introduction {
+  background-color: white;
 }
 
 #badge {
@@ -109,7 +112,12 @@ footer {
 }
 
 .image-container img:first-of-type {
-  vertical-align: bottom;
+  vertical-align: top;
+  border-color: bisque;
+}
+
+.image-container img:last-of-type{
+  border-color: rgb(83, 61, 33);
 }
 
 .tigers {

@@ -221,6 +221,11 @@ footer {
   color: #ff3f00;
 }
 
+.membership p{
+  max-width: 700px;
+  margin: 10px 10px;
+}
+
 .membership strong {
   color: #ff7f11;
 }

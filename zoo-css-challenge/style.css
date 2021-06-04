@@ -147,6 +147,21 @@ footer {
   font-size: larger;
 }
 
+.horse{
+  background-color: beige;
+  color: rgb(116, 11, 11);
+}
+
+.horse h3{
+  color: brown;
+}
+.image-horse{
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  float: left;
+}
+
 .news h2{
   text-align: center;
 }

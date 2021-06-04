@@ -204,5 +204,5 @@ footer {
 /*Programs*/
 
 .programs .card {
-  display: block;
+  display: inline-grid;
 }

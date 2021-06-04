@@ -185,7 +185,7 @@ footer {
 /* .giraffe:first-child p {
   font-size: 18px;
 } */
-.news div {
+.news + .card {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -193,6 +193,7 @@ footer {
 }
 .news h2 {
   text-align: center;
+  
 }
 .card {
   display: inline-block;
@@ -202,6 +203,7 @@ footer {
   width: 30%;
   border: 1px solid black;
   border-radius: 10px;
+  
 }
 
 .card h4 {
@@ -264,7 +266,7 @@ footer {
 .programs {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  /* justify-content: ; */
+  justify-content: ;
 }
 
 .programs h2 {
@@ -276,6 +278,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
  
 }
 

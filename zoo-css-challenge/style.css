@@ -26,11 +26,11 @@ header ul li {
 
 section {
   padding: 5%;
-  background-color: #f8f0fb;
+  background-color: #fbf5f0;
 }
 
 img {
-  border: 5px solid #8075ff;
+  border: 0px solid #8075ff;
 }
 
 h1,
@@ -57,13 +57,22 @@ h3 {
 
 button {
   display: inline-block;
-  border-radius: 3px;
+  border-radius: 10px;
   cursor: pointer;
   padding: 10px 20px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
   background-color: #372772;
   border: 2px solid black;
   color: #fff;
+  font-size: 2em;
+}
+
+button:hover {
+  background-color: aqua;
+}
+
+button:focus {
+  background-color: rgb(11, 11, 24);
 }
 
 footer {
@@ -76,6 +85,8 @@ footer {
 }
 
 .introduction {
+  background-color: #ffffff;
+  justify-content: content-distribution;
 }
 
 #badge {
@@ -109,21 +120,25 @@ footer {
 }
 
 .image-container img:first-of-type {
-  vertical-align: bottom;
+  vertical-align: top;
 }
 
 .tigers {
-  background-color: #0b3c49;
+  background-color: #597997;
   color: #f0e100;
 }
 
 .giraffe {
-  background-color: #465775;
+  background-color: #483c46;
   color: #56e39f;
 }
 
 .giraffe h2 {
-  color: #ef6f6c;
+  color: #f4743b;
+}
+
+.giraffe p {
+  color: #beee62;
 }
 
 .card {
@@ -182,6 +197,11 @@ footer {
 
 .membership h2 {
   color: #ff3f00;
+}
+
+.membership p {
+  max-width: 700px;
+  margin-left: 500px;
 }
 
 .membership strong {

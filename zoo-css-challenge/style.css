@@ -111,6 +111,8 @@ footer {
 
 /*Badge*/
 
+/* 9) Badge: As the position property was set to fixed, by replacing the 
+      "bottom" property with "top" the badge moved to the desired position. */
 #badge {
   height: 120px;
   width: 120px;
@@ -118,7 +120,7 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
   display: flex;
   justify-content: center;
@@ -126,8 +128,11 @@ footer {
   flex-direction: column;
 }
 
+/* 9) Programs: Added a transition time of 0.8 seconds with ease-in to smooth out 
+      colour change on hover */
 #badge:hover {
   background-color: yellow;
+  transition: ease-in 0.8s;
 }
 
 #badge p {

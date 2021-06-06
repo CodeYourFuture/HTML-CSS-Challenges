@@ -208,6 +208,32 @@ footer {
   color: #f4743b;
 }
 
+/*Labradors*/
+
+/* 10) New Section: Custom styling for the new section */
+.image-container-lab img {
+  vertical-align: top;
+  border: 5px groove;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.image-container-lab img:first-of-type {
+  vertical-align: top;
+  border-color: #16ca16;
+}
+/* 2 */
+.image-container-lab img:nth-of-type(2) {
+  vertical-align: top;
+  border-color: #0d2fca;
+}
+
+/* 3 */
+.image-container-lab img:last-of-type {
+  vertical-align: top;
+  border-color: #e90c1e;
+}
+
 /*News*/
 
 /* 5) News: Aligned title in the center of the section using the .news class selector and its 

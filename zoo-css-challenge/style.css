@@ -64,7 +64,16 @@ button {
   background-color: #372772;
   border: 2px solid black;
   color: #fff;
+  font-size: 17px;
+  transition: 0.3s;
 }
+
+/* change colour when you hover*/
+.button:hover {background-color: #3e8e41}
+
+/*button:hover {
+  background-color: #ff3f00;
+}*/
 
 footer {
   background-color: #211a1d;
@@ -75,8 +84,8 @@ footer {
   justify-content: space-between;
 }
 
-.introduction {
-}
+
+
 
 #badge {
   height: 120px;
@@ -108,28 +117,65 @@ footer {
   border: 5px solid #747c92;
 }
 
+/*2) Bears */
+/* images vertically aligned to the top of the container*/
 .image-container img:first-of-type {
-  vertical-align: bottom;
+  vertical-align: top;
+  border: 5px solid #617fd3;
 }
+
+.image-container img:nth-of-type(2) {
+  vertical-align: top;
+  border: 5px solid #6b0579;
+}
+
+.image-container img:nth-of-type(3) {
+  vertical-align: top;
+  border: 5px solid #e2500c;
+}
+
+
+/* End 2*/
+
 
 .tigers {
   background-color: #0b3c49;
   color: #f0e100;
 }
 
+/* 3) Tigers */
+.tigers h2, h3{
+  color:#FFD500 ;
+}
+
+/* End 3) Tigers */
+
+/* 4) Giraffes*/
 .giraffe {
-  background-color: #465775;
-  color: #56e39f;
+  background-color: #483C46;
+  color: #BEEE62;
 }
 
 .giraffe h2 {
-  color: #ef6f6c;
+  color: #F4743B;
 }
+.giraffe p:first-of-type{
+  font-size:20px;
+}
+
+/* End 4) Giraffes*/
+
+/* 5) News */ 
+.news h2{
+  text-align: center;
+}
+
+/* End 5) News */ 
 
 .card {
   display: inline-block;
   background-color: white;
-  padding: 20px;
+  padding: 10px;
   margin: 10px;
   width: 30%;
   border: 1px solid black;
@@ -166,7 +212,10 @@ footer {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  /*rounded corners */
+  border-radius: 10px;
 }
+
 
 .education-container h3,
 .education-container p {
@@ -188,8 +237,33 @@ footer {
   color: #ff7f11;
 }
 
+/* 7) Membership*/
+.membership p{
+  max-width: 700px;
+  margin-left: 26%;
+}
+
 /*Programs*/
 
 .programs .card {
   display: block;
 }
+
+/* 1) Introduction */
+/*  logo border none  */
+#logo{
+  border-style: none;
+}
+
+/*  give .introduction a background-color */
+.introduction{
+  background-color: #ffffff;
+}
+
+/*Increase the amount of space of the text */
+p, li{
+  line-height: 1.5;
+}
+
+/* End 1 */
+ 

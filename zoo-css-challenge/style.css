@@ -222,13 +222,12 @@ footer {
   vertical-align: top;
   border-color: #16ca16;
 }
-/* 2 */
+
 .image-container-lab img:nth-of-type(2) {
   vertical-align: top;
   border-color: #0d2fca;
 }
 
-/* 3 */
 .image-container-lab img:last-of-type {
   vertical-align: top;
   border-color: #e90c1e;

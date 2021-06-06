@@ -292,6 +292,22 @@ footer {
 
 /*Programs*/
 
+/* 8) Programs: I containerised the card and link elements then set the display attribute 
+      value to flex with a direction of column this allowed the contents of each container 
+      to be manipulated separately with separate flex-box values. This ensured the heading 
+      (H2) and useful links remained un-effected */
+.programs {
+  display: flex;
+  flex-direction: column;
+}
+
 .programs .card {
   display: block;
+}
+
+/* 8) Programs: By using a class selector set within the card container element I was then 
+      able to set flex-box to position the elements in a row configuration */
+.progCardContainer {
+  display: flex;
+  flex-direction: row;
 }

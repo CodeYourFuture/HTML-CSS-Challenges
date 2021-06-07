@@ -1,34 +1,28 @@
 * {
   font-family: sans-serif;
 }
-
 header {
   background-color: #211a1d;
   color: #ffffff;
   width: 100%;
   padding: 20px;
 }
-
 nav {
   display: inline-block;
   width: 100%;
 }
-
 header ul {
   margin: 20px 0 0 0;
   padding: 0;
 }
-
 header ul li {
   display: inline-block;
   margin-right: 10px;
 }
-
 section {
   padding: 5%;
   background-color: #f8f0fb;
 }
-
 img {
   border: 5px solid #8075ff;
 }
@@ -42,19 +36,15 @@ h5 {
   color: #6320ee;
   margin-bottom: 1em;
 }
-
 h1 {
   font-size: 250%;
 }
-
 h2 {
   font-size: 175%;
 }
-
 h3 {
   font-size: 150%;
 }
-
 button {
   display: inline-block;
   border-radius: 3px;
@@ -65,7 +55,6 @@ button {
   border: 2px solid black;
   color: #fff;
 }
-
 footer {
   background-color: #211a1d;
   color: #ffffff;
@@ -74,10 +63,13 @@ footer {
   display: flex;
   justify-content: space-between;
 }
-
-.introduction {
+#logo{
+  border-style: none;
 }
-
+.introduction {
+  background-color: white;
+  line-height: 5em;
+}
 #badge {
   height: 120px;
   width: 120px;
@@ -85,7 +77,7 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 
   display: flex;
@@ -93,37 +85,69 @@ footer {
   align-content: center;
   flex-direction: column;
 }
-
 #badge:hover {
   background-color: yellow;
 }
-
 #badge p {
   text-align: center;
   font-size: 125%;
 }
+.image-container{
 
+}
 .image-container img {
   vertical-align: top;
-  border: 5px solid #747c92;
+  border: 2px ;
+  border-style: solid ;
 }
-
 .image-container img:first-of-type {
-  vertical-align: bottom;
+  vertical-align: top;
 }
+/*
+.firstbear{
+  border: .2rem solid rgb(10, 119, 95)
+  padding: 1px;
+}
+.secondbear{
+  border: 10px solid;
+  padding: 1px;}
+.thirdbear{
+  border: 10px solid;
+  padding: 1px;}*/
 
 .tigers {
   background-color: #0b3c49;
   color: #f0e100;
 }
-
+.tigers h2 {
+  color: #ffffff;
+}
+/*
+.tigers h3 {
+  color: #ce92ff;
+}
+*/
 .giraffe {
-  background-color: #465775;
+  background-color: #483C46;
   color: #56e39f;
 }
 
 .giraffe h2 {
-  color: #ef6f6c;
+  color:  #F4743B;
+}
+.giraffe h3 {
+    color:  #F4743B;
+}
+.giraffe p{
+  color:  #BEEE62;
+}
+.news h2{
+  text-align: center;
+}
+.news-box{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .card {
@@ -172,7 +196,17 @@ footer {
 .education-container p {
   margin-bottom: 1em;
 }
-
+.education-container button{
+  font-size: medium;
+  border-radius: 1rem;
+}
+.education-container button:hover{
+ color: rgb(227, 230, 95);
+}
+.education-container button:focus{
+  color:red;
+  font-size: large;
+}
 /*Membership*/
 
 .membership {
@@ -183,13 +217,26 @@ footer {
 .membership h2 {
   color: #ff3f00;
 }
+.membership p {
+  color: #000000;
+  width: 700px;
+  margin: auto;
 
+}
 .membership strong {
   color: #ff7f11;
 }
-
+.membership button{
+  margin: 1rem;
+}
 /*Programs*/
 
 .programs .card {
   display: block;
+}
+.programs .pro-box{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  text-align: center;
 }

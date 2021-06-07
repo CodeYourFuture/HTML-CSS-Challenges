@@ -92,12 +92,11 @@ footer {
   text-align: center;
   font-size: 125%;
 }
-
-}
 .image-container img {
   vertical-align: top;
   border: 2px ;
   border-style: solid ;
+  height: 300px;
 }
 .image-container img:first-of-type {
   vertical-align: top;

@@ -82,3 +82,21 @@ footer {
   text-align: center;
   font-size: 2em;
 }
+
+@media screen and (max-width:400px){
+    header {
+        width: 100%;
+    }
+    .main {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:900px){
+    header {
+        width: 100%;
+    }
+    .main {
+        width: 100%;
+    }
+}

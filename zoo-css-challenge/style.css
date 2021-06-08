@@ -148,11 +148,11 @@ footer {
 .news h2 {text-align: center;}
 
 .card {
-  display: inline-block;
+  display:inline-block;
   background-color: white;
   padding: 20px;
   margin: 10px;
-  width: 30%;
+  width: 20%;
   border: 1px solid black;
   border-radius: 10px;
 }
@@ -212,5 +212,8 @@ footer {
 /*Programs*/
 
 .programs .card {
-  display: block;
+    display: inline-block;
 }
+
+
+

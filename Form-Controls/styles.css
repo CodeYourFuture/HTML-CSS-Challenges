@@ -1,0 +1,37 @@
+*{
+margin:auto;
+    box-sizing: border-box;
+}
+main{
+font-size:1rem;
+    width:100%;
+    background-color:rgb(189, 178, 178);
+margin:auto;
+}
+body{
+    margin:auto;
+
+}
+header,footer{
+
+    text-align:center;
+}
+input,label{
+padding:5px;
+    margin:20px;
+}
+h1{
+    font-size:3rem;
+}
+form{
+
+    display:flex;
+    flex-direction: column;
+    flex-shrink: inherit;
+}
+.multiple-choice,fieldset{
+
+    display:flex;
+    flex-direction: row;
+    flex-shrink: inherit;
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,15 +9,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+    <form>
+      <!-- write your html here-->
+      <!-- try writing out the requirements first-->
+
+
+           <label class="form-label" for="first-name-2">First name</label>
+        <input class="form-control" id="first-name-2" name="first-name-2" type="text">
+        
+        <label class="form-label" for="last-name-2">Last name</label>
+        <input class="form-control" id="last-name-2" name="last-name-2" type="text">
+    
+
+      <label for="email">Enter your email:</label>
+
+      <input type="email" id="email" pattern=".+@globex.com" size="30" required>
+    
+        <!-- <fieldset>
+
+          <legend>
+           
+          </legend> -->
+ <h3 class="heading-medium">Choose Shirt Color</h3>
+          <div class="multiple-choice">
+            <input id="radio-1" type="radio" name="radio-group" value="Northern Ireland">
+            <label for="radio-1">Gray</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-2" type="radio" name="radio-group" value="Isle of Man or the Channel Islands">
+            <label for="radio-2">Brown</label>
+          </div>
+
+          <div class="multiple-choice">
+            <input id="radio-3" type="radio" name="radio-group" value="I am a British citizen living abroad">
+            <label for="radio-3">Black</label>
+          </div>
+
+        <!-- </fieldset> -->
+      
+
+      <label for="start">Choose Delivery Date:</label>
+
+      <input type="date" id="start" name="trip-start" value="2021-06-10" min="2021-06-10" max="2021-07-10">
+
+
+    </form>
 
   </main>
   <footer>

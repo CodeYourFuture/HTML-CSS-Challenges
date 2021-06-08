@@ -46,10 +46,10 @@
           <fieldset>
             <legend>Color</legend>
             <input type="radio" id="choice-one" name="choice" value="green" />
-            <input type="color" value="#07FC03" />
+            <!--input type="color" value="#07FC03" /-->
             <label for="choice-one">Green</label>
             <input type="radio" id="choice-two" name="choice" value="red" />
-            <input type="color" value="#FF0516" />
+            <!--input type="color" value="#FF0516" /-->
             <label for="choice-two">Red</label>
             <input
               type="radio"
@@ -57,7 +57,7 @@
               name="choice"
               value="purple"
             />
-            <input type="color" value="#CE3BC2" />
+            <!--input type="color" value="#CE3BC2" /-->
             <label for="choice-three">Purple</label>
           </fieldset>
 
@@ -65,17 +65,16 @@
             <legend>Delivery date</legend>
             <input
               type="date"
-              id="Delivery"
-              name="Deliverydate"
+              id="delivery"
+              name="delivery"
               value="2021-06-01"
               min="2021-06-01"
               max="2021-06-30"
               required
             />
+            <label for="delivery">Choose Date</label>
           </fieldset>
-          <button class="submit" type="submit" >
-            Confirm Order
-          </button>
+          <button class="submit" type="submit">Confirm Order</button>
         </form>
       </div>
     </main>

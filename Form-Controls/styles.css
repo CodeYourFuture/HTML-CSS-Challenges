@@ -1,0 +1,189 @@
+
+:root{
+    --text-color:#1d0808;
+    --border-color:#706868;
+    --primary-color:#0e2441;
+}
+/*general styles*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f5ecec;
+    line-height: 1.3em;
+    font-family: 'Lato', sans-serif;
+    color: rgb(31, 27, 27);
+    height: 100vh;
+}
+p{
+    width:600px;
+    max-width:80%;
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+/*header section styles*/
+header .title{
+    
+        text-align: center;
+        color:var(--text-color);
+        font-size: 1.4em;
+        padding: 1.2em 0 0.5em;
+        width: 70%;
+        margin: 0 auto;
+        border-bottom: 1px solid rgb(226, 212, 212);
+}
+/*main section styles*/
+.container{
+width:1100px;
+max-width: 90%;
+margin: 0 auto;
+padding: 1em;
+}
+.container .description{
+font-size: 0.8em;
+font-weight:800 ;
+text-align:center ;
+margin: 0 auto;
+padding-bottom: 1.1em;
+}
+/*form styles starts here*/
+ .wrapper{
+display: grid;
+grid-template-columns:1fr;
+width:300px;
+max-width: 100%;
+height:100%;
+justify-items: start;
+align-items:start;
+margin: 0 auto;
+
+}
+.wrapper .brand{
+    text-align: center;
+    margin: 0.5em auto 0;
+   
+}
+.wrapper .logo{
+    margin-top: 1em;
+min-width:48px;
+max-height:48px;
+background-color: lightgray;
+padding: 0.5em;
+border-radius: 0.5em;
+color: var(--text-color);
+font-weight: 600;
+ 
+
+}
+.wrapper .logo:hover{
+    background-color: var(--primary-color);
+    color: whitesmoke;
+    
+}
+
+.form-control{
+margin-bottom: 1.2em;
+display: flex;
+flex-flow:column wrap;
+justify-content: center;
+width: 100%;
+position: relative;
+}
+.form-control.intro label{
+    display: flex;
+    font-size: 0.75em;
+    color: var(--text-color);
+}
+.intro input{
+    border: none;
+    border-bottom: 1px solid var(--border-color);
+    min-height: 1.7em;
+    width: 100%;
+    outline: none;
+    background-color: rgba(245, 245, 245,0.6);
+}
+ .input-focus{
+    position: absolute;
+    height:2px;
+    top:8em;
+    bottom:0;
+    left:50%;
+    width: 0;
+}
+ input:focus ~ .input-focus{
+    width: 100%;
+    background-color: var(--primary-color);
+    transition: all 3s ease-in;
+    left:0;
+}
+
+.form-control input::placeholder{
+    color: transparent;
+}
+.form-control fieldset{
+border:none;
+}
+
+ .form-control.radio-buttons{
+    background-color:rgba(235, 220, 220, 0.7);
+    padding: 0.6em;
+    border-radius: 3px;
+}
+.radio-buttons legend{
+ margin: 1em 0;
+ font-size: 0.9em;
+ font-weight: 600;
+}
+
+.radio-buttons label{
+    display: block;
+    font-weight: 600;
+    font-size: 0.8em;
+    color: var(--text-color);
+}
+.radio-buttons label input[type="radio"]{
+    margin:0.6em  1.5em;    
+}
+.form-control.delivery_info label{
+margin: 1em 0;
+ font-size: 0.9em;
+ font-weight: 600;
+}
+/*submit*/
+.button{
+    display: block;
+    margin: 0 auto;
+}
+.btn{
+color: var(--text-color);
+min-width: 48px;
+min-height:48px;
+padding: 0 1.1em;
+border: solid 1px var(--border-color);
+border-radius: 8px;
+}
+.btn:hover{
+    background-color: var(--primary-color);
+    color: whitesmoke;
+    border-radius: 75%;
+}
+.footer{
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+.footer .description{
+    font-size: 0.8em;
+    color: var(--border-color);
+
+}
+footer h2{
+color: var(--text-color);
+font-size: 1.1em;
+margin-bottom: 0.5em;
+padding-bottom: 0.5em;
+}

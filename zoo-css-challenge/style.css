@@ -30,6 +30,10 @@ header ul li {
   margin-right: 10px;
 }
 
+.introduction {
+  background-color:#ffffff
+}
+
 section {
   padding: 5%;
   background-color: #f8f0fb;
@@ -89,7 +93,7 @@ footer {
 }
 
 .introduction {
-  background-color:#f8f0fb;
+  background-color: #ffffff;;
 }
 
 #badge {

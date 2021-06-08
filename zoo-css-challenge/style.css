@@ -71,8 +71,12 @@ button:hover {
   background-color: #372772;
   border: 2px solid black;
   color: #fff;
-  font-size: 150%;
-}
+  font-size: 1.25rem;
+  }
+  #container
+  {
+    text-align: center;
+  }
 
 footer {
   background-color: #211a1d;
@@ -150,26 +154,18 @@ footer {
   display: inline-block;
   background-color: white;
   padding: 20px;
-  margin: 10px;
+  margin: 5px;
   width: 30%;
   border: 1px solid black;
   border-radius: 10px;
   
 }
 
-.card h4 {
-  margin-bottom: 1em;
-}
-
-.card a {
-  text-decoration: underline;
-  font-weight: bold;
-}
-
 .card time {
   opacity: 0.5;
   display: inline-block;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 /*Education*/
@@ -196,14 +192,13 @@ footer {
 
 /*Membership*/
 
-.membership {
+.membership p{
   text-align: center;
   background-color: #fffffc;
+  width: 700px;
+  margin: 2rem auto;
 }
-p{
-  max-width: 700px;
-  text-align: center;
-}
+
 .membership h2 {
   color: #ff3f00;
 }
@@ -214,8 +209,17 @@ p{
 
 /*Programs*/
 
-.programs .card {
-  display: flexbox;
- min-width: none;
- text-align: center;
+.programs {
+  display: flex;
+  flex-direction: column;
 }
+.programs .card {
+  display: block;
+}
+
+.Container {
+  display: flex;
+  flex-direction: row;
+}
+
+  

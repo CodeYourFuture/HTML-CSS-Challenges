@@ -1,6 +1,10 @@
 * {
   font-family: sans-serif;
 }
+body{
+  color: black;
+  letter-spacing: 1.1px;
+}
 
 header {
   background-color: #211a1d;
@@ -8,7 +12,10 @@ header {
   width: 100%;
   padding: 20px;
 }
+/*logo border change*/
+#logo{
 
+}
 nav {
   display: inline-block;
   width: 100%;
@@ -28,10 +35,11 @@ section {
   padding: 5%;
   background-color: #f8f0fb;
 }
-
-img {
-  border: 5px solid #8075ff;
+.introduction{
+  background: #ffffff;
 }
+
+
 
 h1,
 h2,
@@ -57,7 +65,7 @@ h3 {
 
 button {
   display: inline-block;
-  border-radius: 3px;
+  border-radius: 5px;
   cursor: pointer;
   padding: 10px 20px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
@@ -75,8 +83,7 @@ footer {
   justify-content: space-between;
 }
 
-.introduction {
-}
+
 
 #badge {
   height: 120px;
@@ -85,9 +92,9 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 10px;
   right: 20px;
-
+  transition:background-color 0.6s ease-in;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -102,14 +109,12 @@ footer {
   text-align: center;
   font-size: 125%;
 }
-
 .image-container img {
-  vertical-align: top;
-  border: 5px solid #747c92;
+  border: 3px solid rgb(136, 127, 116);
 }
+.image-container > * {
+  vertical-align: top;
 
-.image-container img:first-of-type {
-  vertical-align: bottom;
 }
 
 .tigers {
@@ -117,15 +122,28 @@ footer {
   color: #f0e100;
 }
 
+.tigers h2,h3{
+  color: #F3EDF3;
+}
+
 .giraffe {
-  background-color: #465775;
+  background-color: #483C46;
   color: #56e39f;
 }
 
 .giraffe h2 {
-  color: #ef6f6c;
+  color: #F4743B;
 }
-
+.giraffe p{
+  color:#BEEE62 ;
+}
+.giraffe p:first-of-type{
+  font-size: larger;
+}
+/*news section*/
+.news h2{
+  text-align: center;
+}
 .card {
   display: inline-block;
   background-color: white;
@@ -163,7 +181,7 @@ footer {
 }
 
 .education-container {
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(179, 160, 160, 0.75);
   padding: 50px;
   max-width: 400px;
 }
@@ -172,12 +190,56 @@ footer {
 .education-container p {
   margin-bottom: 1em;
 }
+.education-container button{
+  font-size: 20px;
+}
+.education-container button:hover{
+  color:#d3ad45 ;
+  background-color: #3e3a3f;
+}
+.education-container button:focus{
+  color:#3a3935 ;
+  background-color: #ec7d1b;
+}
+/*Fav Animal*/
+.Favourite_Animal{
+  margin-top: 20px;
+  padding: 20px;
+  max-width: 100%;
+  height: 600px;
+  background-image: url("https://images.unsplash.com/photo-1508817628294-5a453fa0b8fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+}
 
+.Favourite_Animal p{
+  color: #fff;
+  
+}
+.fan_animal p{
+  font-size: 1rem;
+}
+.fan_animal button{
+  color:#4A3912 ;
+  background-color: #ecd082;
+  font-size: 20px;
+}
+.fan_animal button:hover{
+  color:#1b1504 ;
+  background-color: #d2bfd6;
+}
 /*Membership*/
 
 .membership {
   text-align: center;
   background-color: #fffffc;
+}
+.membership p{
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .membership h2 {
@@ -187,9 +249,18 @@ footer {
 .membership strong {
   color: #ff7f11;
 }
-
+.membership button{
+  font-size: 20px;
+}
+.membership button:hover{
+  color:#E7D298;
+  background-color: #3e3a3f;
+}
 /*Programs*/
 
 .programs .card {
-  display: block;
+  float: left;
+  width: 250px;
+  padding: 20px;
+  
 }

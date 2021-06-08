@@ -5,7 +5,7 @@ margin:auto;
 
 }
 *:focus{
-    background-color: khaki;
+    background-color:#FFBF47
 
 }
 main{
@@ -18,15 +18,16 @@ main{
 header,footer{
     text-align:center;
 }
-input,label{    
-    padding:5px;
-    margin:20px;
-}
+
 h1{
     font-size:3rem;
 }
+h2{
+    font-size: 2rem;
+    margin:10px;
+}
 form{
-      font-size: 1.5rem;
+    font-size: 1.8rem;
     display:flex;
     flex-direction: column;
     flex-wrap:wrap;
@@ -36,9 +37,45 @@ form{
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
+      font-size: x-large;
 }
 
 button{
     margin:10px 10px 10px 10px;
     padding:10px;
+    font-size: larger;
+}
+input[type=text],input[type=email]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    color: white;}
+
+label{
+    margin-left: 8px;
+    margin-top:80px;
+    }
+input[type=radio]{
+
+    width:1.5rem;
+    height:1.5rem;
+    }
+
+.fieldset label:nth-child(3){
+    color:brown;
+    }
+div label:nth-child(5){
+    color:rgb(24, 46, 241);
+}
+
+@media screen and (min-width:900px){
+    main{
+   
+    background-color:rgba(189, 178, 178, 0.082);
+   
+    }
+    form{
+    font-size: 2.5rem;
+    
+}
 }

@@ -1,28 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <!-- write your html here-->
+      <!-- try writing out the requirements first-->
+      <div class="main">
+        <form>
+          <label for="fname">First Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Enter your first name here "
+          />
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+          <label for="lname">Last Name</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Enter your last name here"
+          />
 
+          <label for="email"><b>Email</b></label>
+          <input
+            type="text"
+            placeholder="Enter Email"
+            pattern=".+@example.com"
+            size="30"
+            name="email"
+            required
+          />
+
+          <fieldset>
+            <legend>Color</legend>
+            <input type="radio" id="choice-one" name="choice" value="green" />
+            <input type="color" value="#07FC03" />
+            <label for="choice-one">Green</label>
+            <input type="radio" id="choice-two" name="choice" value="red" />
+            <input type="color" value="#FF0516" />
+            <label for="choice-two">Red</label>
+            <input
+              type="radio"
+              id="choice-three"
+              name="choice"
+              value="purple"
+            />
+            <input type="color" value="#CE3BC2" />
+            <label for="choice-three">Purple</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Delivery date</legend>
+            <input
+              type="date"
+              id="Delivery"
+              name="Deliverydate"
+              value="2021-06-01"
+              min="2021-06-01"
+              max="2021-06-30"
+              required
+            />
+          </fieldset>
+          <button class="submit" type="submit" >
+            Confirm Order
+          </button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <h2>By NW-Class4/Mya Skylar</h2>
+    </footer>
+  </body>
 </html>

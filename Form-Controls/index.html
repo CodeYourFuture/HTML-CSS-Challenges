@@ -15,56 +15,62 @@
     <h1>Product Pick</h1>
   </header>
   <main>
-    <form>
-      <!-- write your html here-->
-      <!-- try writing out the requirements first-->
+    <section>
+
+      <h2>Confirm you details</h2>
+      <form method="Get">
+        <!-- write your html here-->
+        <!-- try writing out the requirements first-->
 
 
-           <label class="form-label" for="first-name-2">First name</label>
-        <input class="form-control" id="first-name-2" name="first-name-2" type="text">
+        <label class="custome-rname" for="first-name">First name</label>
+        <input type="text" id="first-name" name="fname" required minlength="2" maxlength="10" size="12">
+
+
+        <label class="last-name" for="last-name">Last name</label>
+        <input type="text" id="last-name" name="lname" required minlength="2" maxlength="10" size="12">
+
+
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" size="30" required>
+
+
+
+        <fieldset>
+          <legend>Choose available color</legend>
+          <div class="fieldset-1">
+            <input type="radio" id="black" name="color" required>
+            <label for="black">Black</label>
+          </div>
+    
+
+
+ <div class="fieldset-1">
+            <input type="radio" id="black" name="color" required>
+            <label for="black">Brown</label>
+          </div>
+           <div class="fieldset-1">
+            <input type="radio" id="black" name="color" required>
+            <label for="black">white</label>
+          </div>
+
+
+        </fieldset>
         
-        <label class="form-label" for="last-name-2">Last name</label>
-        <input class="form-control" id="last-name-2" name="last-name-2" type="text">
-    
 
-      <label for="email">Enter your email:</label>
-
-      <input type="email" id="email" pattern=".+@globex.com" size="30" required>
-    
-        <!-- <fieldset>
-
-          <legend>
-           
-          </legend> -->
- <h3 class="heading-medium">Choose Shirt Color</h3>
-          <div class="multiple-choice">
-            <input id="radio-1" type="radio" name="radio-group" value="Northern Ireland">
-            <label for="radio-1">Gray</label>
-          </div>
-          <div class="multiple-choice">
-            <input id="radio-2" type="radio" name="radio-group" value="Isle of Man or the Channel Islands">
-            <label for="radio-2">Brown</label>
-          </div>
-
-          <div class="multiple-choice">
-            <input id="radio-3" type="radio" name="radio-group" value="I am a British citizen living abroad">
-            <label for="radio-3">Black</label>
-          </div>
-
-        <!-- </fieldset> -->
-      
-
-      <label for="start">Choose Delivery Date:</label>
-
-      <input type="date" id="start" name="trip-start" value="2021-06-10" min="2021-06-10" max="2021-07-10">
+        <label for="Delivery">Choose Delivery Date:</label>
+        <input type="date" id="Delivery" name="delivery-date" value="2021-06-10" min="2021-06-10" max="2021-07-10"
+          required>
 
 
-    </form>
+        <button>Submit</button>
+      </form>
 
+    </section>
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Anza Azam</h2>
   </footer>
 </body>
 

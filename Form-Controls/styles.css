@@ -1,37 +1,44 @@
 *{
 margin:auto;
     box-sizing: border-box;
+  
+
+}
+*:focus{
+    background-color: khaki;
+
 }
 main{
-font-size:1rem;
+    font-size:1rem;
     width:100%;
     background-color:rgb(189, 178, 178);
-margin:auto;
-}
-body{
     margin:auto;
-
 }
-header,footer{
 
+header,footer{
     text-align:center;
 }
-input,label{
-padding:5px;
+input,label{    
+    padding:5px;
     margin:20px;
 }
 h1{
     font-size:3rem;
 }
 form{
-
+      font-size: 1.5rem;
     display:flex;
     flex-direction: column;
-    flex-shrink: inherit;
+    flex-wrap:wrap;
+    width:100%;
 }
-.multiple-choice,fieldset{
-
+.fieldset{
     display:flex;
-    flex-direction: row;
-    flex-shrink: inherit;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+button{
+    margin:10px 10px 10px 10px;
+    padding:10px;
 }

@@ -66,3 +66,39 @@ select {
 footer h2 {
   font-size: 0.5rem;
 }
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 2rem;
+  }
+
+  /* --FORM-- */
+
+  .form-container {
+    padding-left: 30px;
+  }
+  input {
+    font-size: 3rem;
+  }
+
+  select {
+    font-size: 2.15rem;
+    padding: 0.3em;
+  }
+
+  #delivdate {
+    font-size: 2.65rem;
+  }
+
+  .submit-btn {
+    font-size: 1.5rem;
+    padding: 15px 40px;
+    margin-top: 20px;
+  }
+
+  /* --FOOTER-- */
+
+  footer h2 {
+    font-size: 0.9rem;
+  }
+}

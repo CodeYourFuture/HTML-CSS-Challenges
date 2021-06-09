@@ -116,12 +116,11 @@ footer {
 
 .image-container{
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: row;
+ 
 
 }
 .image-container img {
-  justify-content: space-evenly;
   vertical-align: top;
   border: 5px solid;
  

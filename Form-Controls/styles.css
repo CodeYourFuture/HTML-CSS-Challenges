@@ -1,0 +1,18 @@
+html {
+    background-color: darkgray;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    border: 1px solid maroon;
+    font-weight: normal;
+    background-color: maroon;
+    border-radius: 5px;
+}
+h2{
+    text-align: center;
+    border: 1px solid maroon;
+    font-weight: small;
+    background-color: maroon;
+    border-radius: 5px; 
+}

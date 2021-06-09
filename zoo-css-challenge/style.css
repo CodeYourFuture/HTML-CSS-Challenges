@@ -1,5 +1,6 @@
 * {
   font-family: sans-serif;
+  line-height: 2em;
 }
 
 header {
@@ -30,7 +31,7 @@ section {
 }
 
 img {
-  border: 5px solid #8075ff;
+  border: none;
 }
 
 h1,
@@ -57,13 +58,22 @@ h3 {
 
 button {
   display: inline-block;
-  border-radius: 3px;
+  border-radius: 10px;
   cursor: pointer;
   padding: 10px 20px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
   background-color: #372772;
   border: 2px solid black;
   color: #fff;
+  font-size: 1.3em;
+}
+
+button:hover {
+  background-color: #03fa2c;
+  color: #483c46;
+}
+button:focus {
+  background-color: #fa0355;
 }
 
 footer {
@@ -76,6 +86,7 @@ footer {
 }
 
 .introduction {
+  background-color: white;
 }
 
 #badge {
@@ -85,13 +96,13 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
-
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
+  transition: 0.3s;
 }
 
 #badge:hover {
@@ -105,25 +116,46 @@ footer {
 
 .image-container img {
   vertical-align: top;
-  border: 5px solid #747c92;
+  border: 5px solid #e905c3;
 }
 
 .image-container img:first-of-type {
-  vertical-align: bottom;
+  vertical-align: top;
+  border: 5px solid #f30e06;
+}
+.image-container img:last-of-type {
+  vertical-align: top;
+  border: 5px solid #03fa2c;
 }
 
 .tigers {
   background-color: #0b3c49;
   color: #f0e100;
 }
+.tigers h2 {
+  color: #fdf9d6;
+}
 
 .giraffe {
-  background-color: #465775;
+  background-color: #483c46;
   color: #56e39f;
 }
 
 .giraffe h2 {
-  color: #ef6f6c;
+  color: #f4743b;
+}
+.giraffe h3 {
+  color: #f4743b;
+}
+.giraffe p {
+  color: #beee62;
+}
+.news h2 {
+  text-align: center;
+}
+.card-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .card {
@@ -131,7 +163,8 @@ footer {
   background-color: white;
   padding: 20px;
   margin: 10px;
-  width: 30%;
+  width: 25%;
+
   border: 1px solid black;
   border-radius: 10px;
 }
@@ -160,6 +193,7 @@ footer {
   background-size: cover;
   background-position: center;
   padding: 100px 5%;
+  border-radius: 20px;
 }
 
 .education-container {
@@ -178,6 +212,8 @@ footer {
 .membership {
   text-align: center;
   background-color: #fffffc;
+  max-width: 700px;
+  margin-left: 10vw;
 }
 
 .membership h2 {
@@ -189,7 +225,33 @@ footer {
 }
 
 /*Programs*/
+.programs-container {
+  display: flex;
+  justify-content: space-around;
+}
 
 .programs .card {
   display: block;
+}
+.fav-animal {
+  background-color: #e7f7f4;
+  border-radius: 5px;
+  border: #211a1d 4px solid;
+  margin-bottom: 20px;
+}
+.fav-animal-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: #211a1d 4px solid;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.fav-animal h2 {
+  color: #0062a3;
+}
+.dog-reasons {
+  padding-left: 20px;
+  margin: 20px;
 }

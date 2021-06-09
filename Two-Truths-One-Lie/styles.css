@@ -1,0 +1,33 @@
+/* HTML/CSS W2 Project
+* Work in pairs
+* Mark up your content with semantic html
+* Lay out your page using flexbox and grid
+* Test your work with Devtools.
+* You can get pictures and choose custom size in the download at
+* https://www.pexels.com/ 
+* If you want to use a different font, get them from
+* https://fonts.google.com/
+*/
+
+/* Testing your work 
+== check your CSS
+* uses grid
+* uses flexbox
+* uses at least one media query
+
+== check your HTML
+* uses semantic HTML
+* has a Lighthouse Access score of 100 <-- 
+* works on desktop and mobile
+* works when you size the text up by 200%
+
+== check your design
+* follows the example
+* you can choose your own colours and fonts if you like
+* write your names at the bottom
+* take a screenshot at laptop and Moto G4 device sizes in Devtools
+*/
+
+body {
+  font: 100% "Poppins", sans-serif;
+}

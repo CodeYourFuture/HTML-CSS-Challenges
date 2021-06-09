@@ -1,0 +1,69 @@
+/**
+ * Add your custom styles below
+ * 
+ * Remember: 
+ * - Be organised, use comments and separate your styles into meaningful chunks
+ *    for example: General styles, Navigation styles, Hero styles, Footer etc.
+ * 
+ */
+
+ @import'https://fonts.googleapis.com/css?family=Alegreya:400,700';
+* {
+  margin:20px;
+ font-family: 'cyrillic','greek','Alegreya',serif ;}
+
+header{
+  text-align:center;
+  width:auto;
+  top:0;
+ padding:110px;
+ font-size:20px; 
+ background:url("https://www.um.edu.mt/__data/assets/image/0019/334540/varieties/banner.jpg");
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size:cover;
+}
+
+ h1{
+   top:0;
+  margin:5px;
+   color:rgb(0, 0, 8);
+}
+h2{
+  font-size:30px;
+  color:#006400;
+}
+
+p{
+word-spacing:normal;
+text-align:left;
+text-indent:20px;
+  
+}
+
+img{
+ float: right;
+  width:500px;
+  margin:10px;
+}
+.flex-container {
+  display: flex;
+}
+
+a{/* start css code link*/
+  color:#330066;
+  
+}
+a:hover {color:#ff0000;}
+
+footer{/* bottom page */
+  font-style:italic;
+  maxwidth:600px
+    margin:0 auto 50px auto;
+  text-align:left;
+  background-color:silver;
+}
+span{
+  display: inline-block;
+    text-align: right;
+}

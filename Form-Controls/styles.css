@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/**************** GENERAL STYLES ************/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: var(--Blue);
+  font-family: 'Poppins', sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  align-items: center;
+  width: 90vw;
+  height: 100vh;
+  margin: auto;
+}
+
+:root {
+  --Blue: hsl(192, 35%, 32%);
+  --Green: hsl(154, 57%, 25%);
+  --Greyish: hsl(0, 0%, 59%); 
+  --White: hsl(0, 0%, 100%);
+}
+/**************** HEADER STYLES ************/
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color:var(--White);
+  margin: 3rem 0 1rem;
+}
+h1 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+header p {
+  font-size: 1rem;
+  text-align: center;
+}
+/**************** MAIN STYLES ************/
+form {
+  background-color: var(--White);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0.5rem;
+  margin: 2rem 0;
+
+}
+input {
+  border: 1px solid var(--Greyish);
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 0.5rem 0 1rem;
+}
+input:focus {
+  outline: none;
+  border:1px solid rgb(129, 194, 33);
+}
+input:invalid, fieldset:invalid {
+  border:2px solid red;
+}
+fieldset {
+  border: 1px solid var(--Greyish);
+  border-radius: 5px;
+  margin-bottom: 1rem;
+ 
+}
+fieldset legend {
+  margin-left: 0.5rem;
+}
+fieldset label {
+  margin-right: 1rem
+}
+form button {
+  background-color: var(--Green);
+  border: none;
+  border-radius: 2rem;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.5rem auto;
+  padding:0.5rem 4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color .4s ease;
+}
+form button:hover {
+  background-color: hsl(154, 59%, 51%);
+}
+/**************** FOOTER STYLES ************/
+footer h2 {
+  color: var(--White);
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 400;
+
+}
+/**************** MEDIA SIZE STYLES ************/
+@media screen and (min-width:1024px) {
+  html {
+    font-size: 24px;
+  }
+  body {
+    grid-template-columns: 1fr 2fr;
+  }
+  footer {
+    grid-column: 1/3;
+  }
+}

@@ -7,6 +7,8 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap" rel="stylesheet"> 
+
 </head>
 <body>
   <header>
@@ -15,13 +17,40 @@
   <main>
   <form>
     <!-- write your html here-->
+  <label for="username">Username</label>
+  <input id="username" type="text" minlength="3" maxlength="8" placeholder="Your Username" required>
+  <label for="email">Email address</label>
+  <input id="email" type="email" placeholder="Your Email Address" required>
+  <fieldset class="color-pick">
+    <h2>Choose color</h2>
+      <div>
+        <input id="white" type="radio" name="color" value="white">
+        <label for="white">White</label>
+      </div>
+      <div>
+        <input id="black" type="radio" name="color" value="black">
+        <label for="black">Black</label>
+      </div>
+      <div>
+        <input id="purple" type="radio" name="color" value="purple">
+        <label for="purple">Purple</label>
+      </div>
+  </fieldset>
+
+  <fieldset class="date">
+    <label for="start">Select a delivery date</label>
+    <input type="date" min="2021-06-10" max="2021-07-10">
+    <!-- <input type="date" id="start" name="setTodaysDate"> -->
+
+  </fieldset>
+  <button class="btn"><a href="#">Submit</a></button>
     <!-- try writing out the requirements first-->
   </form>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Gulnihal Naldoken</h2>
   </footer>
 </body>
 

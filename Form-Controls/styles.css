@@ -1,0 +1,116 @@
+body {
+    font-family: 'Karla', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-color: aliceblue;
+    margin: 0;
+    line-height: 40px;
+    /* border: 3px solid red; */
+}
+header {
+    background-color: white;
+}
+h1 {
+    color: #0064BC;
+    text-align: center;
+}   
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 90vw;
+    margin-left: 30px;
+}
+
+label {
+    font-size: 18px;
+    letter-spacing: 2px;
+    color:grey;
+    font-weight: bold;
+}
+
+input {
+    width: 150px;
+    padding: 3px;
+}
+
+.color-pick {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.color-pick h2 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: grey;
+}
+input #white, #black, #purple {
+    width: 20px;
+}
+.color-pick label {
+    color: black;
+}
+
+fieldset {
+    box-shadow: 2px 2px 1px gray;
+    background-color:white;
+}
+
+.btn {
+    margin: 50px auto;
+    width: 80px;
+    padding: 10px;
+    background-color: #0064BC;
+    border:none;
+    border-radius: 5px;
+}
+
+.btn a {
+    text-decoration: none;
+    color:white;
+}
+
+.btn a:hover {
+    
+}
+
+.date {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: 50px;
+    width: 100vw;;
+    background-color: #BCE0FF;
+    font-size: 12px;
+    float: right;
+}
+
+footer h2 {
+    float:right;
+    margin-right: 20px;
+    font-style: italic;
+}
+
+@media screen and (min-width: 700px) {
+    .color-pick {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .date {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    label {
+        font-size: 20px;
+    }
+     input {
+        width: 240px
+     }
+}

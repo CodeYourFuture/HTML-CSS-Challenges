@@ -21,13 +21,32 @@
     <!-- email area -->
     <!--3 radio buttons with field set -->
     <!-- date with min and max value -->
-    
+    <h1>Select Your Thsirt</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, beatae.</p>
+    <form action="">
+      <label for="name">NAME</label>
+      <input type="text" name="name" id="name" minlength="3" required>
+      <label for="email">email</label>
+      <!-- <input type="email" name="email" id="email" required> -->
+      <fieldset>
+        <legend>Color</legend>
+        <input id="red" type="radio" name="color" value="red" >
+        <label for="red">Red</label>
+        <input id="green" type="radio" name="color" value="green"required>
+        <label for="green">Green</label>
+        <input id="blue" type="radio" name="color" value="blue">
+        <label for="blue">Blue</label>
+      </fieldset>
+      <label for="date">Date</label>
+      <input type="date" name="date" id="date" min="2021-06-09" max="2021-12-12" placeholder="09/06/2021" required>
+      <button type="submit">Submit</button>
+    </form>
   </form>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Musa Yuksel</h2>
   </footer>
 </body>
 

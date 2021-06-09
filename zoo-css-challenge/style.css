@@ -134,7 +134,7 @@ footer {
 
 .giraffe {
   background-color: #483C46;
-  color: #56e39f;
+  color: #BEEE62;
 }
 .giraffe p:nth-child(1){
 font-size:larger ;
@@ -142,7 +142,7 @@ font-size:larger ;
 }
 
 .giraffe h2 {
-  color: #BEEE62;
+  color: #F4743B;
 }
 .news h2{
   display: flex;
@@ -199,7 +199,8 @@ font-size:larger ;
   margin-bottom: 1em;
 }
 .education-container button{
-  font-size: 2rem;
+ 
+  font-size: larger;
 
 }
 .education-container button:hover{

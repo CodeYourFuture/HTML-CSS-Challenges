@@ -11,25 +11,25 @@
 <body>
   <header>
     <h1>Product Pick</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, beatae.</p>
   </header>
   <main>
   <form>
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
     <!-- h1 tag for page and p tag for explanatiion -->
-    <!-- in the form- text area with min attr -->
-    <!-- email area -->
-    <!--3 radio buttons with field set -->
-    <!-- date with min and max value -->
-    <h1>Select Your Thsirt</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, beatae.</p>
     <form action="">
-      <label for="name">NAME</label>
-      <input type="text" name="name" id="name" minlength="3" required>
-      <label for="email">email</label>
-      <!-- <input type="email" name="email" id="email" required> -->
+      <!-- in the form- text area with min attr -->
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" minlength="3" required
+      oninvalid="this.setCustomValidity('Please Enter valid name')" >
+      <!-- email area -->
+      <label for="email">Email Address</label>
+      <input type="email" name="email" id="email" placeholder="email@email.com" required
+      oninvalid="this.setCustomValidity('Please Enter valid email')" >
+      <!--3 radio buttons with field set -->
       <fieldset>
-        <legend>Color</legend>
+        <legend>Favorite Color</legend>
         <input id="red" type="radio" name="color" value="red" >
         <label for="red">Red</label>
         <input id="green" type="radio" name="color" value="green"required>
@@ -37,8 +37,9 @@
         <input id="blue" type="radio" name="color" value="blue">
         <label for="blue">Blue</label>
       </fieldset>
+      <!-- date with min and max value -->
       <label for="date">Date</label>
-      <input type="date" name="date" id="date" min="2021-06-09" max="2021-12-12" placeholder="09/06/2021" required>
+      <input type="date" name="date" id="date" min="2021-06-09" max="2021-07-09" placeholder="12/12/2020" required>
       <button type="submit">Submit</button>
     </form>
   </form>

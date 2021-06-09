@@ -10,7 +10,11 @@
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>Delivery Options</h1>
+      <p>
+        Enter your personal details, choose your preferred t-shirt color and
+        delivery date.
+      </p>
     </header>
     <main>
       <form>
@@ -20,46 +24,76 @@
             2. -- Email --
             3. --color option--
             4. --delivery date-- within next 4 weeks -->
-        <label for="fullname">Full name:</label>
-        <input
-          type="text"
-          id="fullname"
-          name="fullname"
-          required
-          pattern="[A-Z a-z]{4,30}"
-          placeholder="Firstname and Surname"
-        />
-        <label for="email">Email:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          required
-          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-          placeholder="Enter a valid email address"
-        />
-        <label for="color">Choose a color</label>
-        <select name="color" id="color" required>
-          <option value="" selected disabled>
-            -- Choose a t-shirt color --
-          </option>
-          <option value="">Black</option>
-          <option value="">Blue</option>
-          <option value="">White</option>
-          <option value="">Red</option>
-        </select>
+        <div class="form-container">
+          <div class="labels"></div>
+          <label for="firstname">First Name:</label>
+          <div class="data-fields">
+            <input
+              type="text"
+              id="firstname"
+              name="firstname"
+              required
+              pattern="[A-Z a-z]{4,15}"
+              placeholder="First Name"
+            />
+          </div>
+          <div class="labels">
+            <label for="lastname">Last Name:</label>
+          </div>
+          <div class="data-fields">
+            <input
+              type="text"
+              id="lastname"
+              name="lastname"
+              required
+              pattern="[A-Z a-z]{4,20}"
+              placeholder="Last Name"
+            />
+          </div>
+          <div class="labels">
+            <label for="email">Email:</label>
+          </div>
+          <div class="data-fields">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              placeholder="Enter a valid email address"
+            />
+          </div>
+          <div class="labels">
+            <label for="color">Choose a color</label>
+          </div>
+          <div class="data-fields">
+            <select name="color" id="color" required>
+              <option value="" selected disabled>
+                -- Choose a t-shirt color --
+              </option>
+              <option value="">Black</option>
+              <option value="">Blue</option>
+              <option value="">White</option>
+              <option value="">Red</option>
+            </select>
+          </div>
+          <div class="labels">
+            <label for="delivdate">Delivery date</label>
+          </div>
+          <div class="data-fields">
+            <input
+              type="date"
+              id="delivdate"
+              name="delivdate"
+              value="2021-06-09"
+              min="2021-06-09"
+              max="2021-07-08"
+              required
+            />
+          </div>
 
-        <label for="delivdate">Delivery date</label>
-        <input
-          type="date"
-          id="delivdate"
-          name="delivdate"
-          value="2021-06-09"
-          min="2021-06-09"
-          max="2021-07-08"
-        />
-
-        <button type="submit">Submit</button>
+          <button type="submit">Submit</button>
+        </div>
       </form>
     </main>
     <footer>

@@ -3,6 +3,8 @@ body {
   font-size: 24px;
 }
 
+/* --HEADER-- */
+
 h1 {
   text-align: center;
 }
@@ -10,6 +12,8 @@ h1 {
 header p {
   text-align: center;
 }
+
+/* --FORM-- */
 
 .form-container {
   box-sizing: border-box;
@@ -34,10 +38,6 @@ select {
   padding: 0.2em;
 }
 
-.black option {
-  background-color: black;
-}
-
 #delivdate {
   font-size: 1.3rem;
   padding: 0.2em;
@@ -60,6 +60,8 @@ select {
   color: rgb(255, 255, 255);
   transition: 0.4s;
 }
+
+/* --FOOTER-- */
 
 footer h2 {
   font-size: 0.5rem;

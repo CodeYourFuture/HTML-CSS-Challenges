@@ -1,0 +1,264 @@
+* {
+  font-family: sans-serif;
+  margin:10px;
+}
+
+body{
+  background-color: rgb(224, 221, 221);
+}
+
+header {
+  background-image:url("https://conservewildcats.org/wp-content/uploads/sites/5/2017/02/panthera_Header-1.jpg");
+  color: #f7f899;
+  width: 100%;
+  padding: 20px;
+}
+
+#logo{
+  border-style:none;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+header ul {
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+
+header ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+section {
+  padding: 5%;
+  background-color: white;
+}
+p{
+   word-spacing: 5px;
+  line-height: 1.8;
+ 
+}
+
+img {
+  border: 5px solid #8075ff;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  /*Purple*/
+  color: #6320ee;
+  margin-bottom: 1em;
+}
+
+h1 {
+  font-size: 250%;
+}
+
+h2 {
+  font-size: 175%;
+}
+
+h3 {
+  font-size: 150%;
+}
+
+a:hover{
+    color: #f80808;
+}
+
+button {
+  display: inline-block;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 10px 20px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+  background-color: #372772;
+  border: 2px solid black;
+  color: #fff;
+}
+
+footer {
+  background-image:url("https://www.tierpark-berlin.de/fileadmin/_processed_/1/4/csm_RZ_TPB_Zuarbeit_Webseite_Header_150121_f12eda5bbf.jpg");
+  color: #f7f899;;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+#badge {
+  height: 120px;
+  width: 120px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  justify-content:center;
+  align-content: center;
+  flex-direction: column;
+ 
+}
+
+#badge:hover {
+  opacity: 1;
+  transition-duration: 1000ms ;
+  transition-timing-function: ease-in-out;
+  color:green;
+   background-color: yellow;
+}
+
+#badge p {
+  text-align: center;
+  font-size: 125%;
+   word-spacing: 5px;
+  line-height: 1.5;
+  text-indent: 10px;
+}
+
+.image-container img.one {
+  vertical-align:top;
+  border: 5px solid blue;
+}
+.image-container img.Tow {
+  vertical-align: top;
+  border: 5px solid red;
+}
+.image-container img.Three {
+  vertical-align: top;
+  border: 5px solid green;
+}
+
+.image-container img:first-of-type {
+  vertical-align: top;
+}
+
+.tigers {
+  background-color: #0b3c49;
+  color: #f0e100;
+}
+.tigers h2 {
+  color:#FFB6C1;
+}
+
+.giraffe {
+  background-color: #483C46;
+  color: #BEEE62;
+}
+
+.giraffe h2,h3 {
+  color: #F4743B;
+}
+
+.flamingo{
+    background-color: #f5c296;
+}
+.flamingo h2 {color: #913cf3;}
+.flamingo-img{
+    
+  vertical-align:middle;
+  border: 5px solid rgb(226, 129, 3);
+  border-radius:20%;
+  margin: 30px;
+}
+
+.card {
+  display: inline-block;
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  width: 30%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.news h2{
+   text-align: center;
+}
+.card h4 {
+  margin-bottom: 1em;
+}
+
+.card a {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.card time {
+  opacity: 0.5;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/*Education*/
+
+.education {
+  height: 500px;
+  background-image: url("https://source.unsplash.com/1200x900/?tiger");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 5%;
+}
+
+.education-container {
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 50px;
+  max-width: 400px;
+  border-radius:50px;
+}
+
+.education-container h3,
+.education-container p {
+  margin-bottom: 1em;
+}
+
+.education-container button{
+  font-size:20px;
+}
+.education-container button:hover{
+  background-color:red;
+}
+.education-container button:focus{
+  background-color:green;
+}
+/*Membership*/
+
+.membership {
+  text-align: center;
+  background-color: #fffffc;
+}
+.membership p{
+  width:700px;
+  margin:auto;
+}
+
+.membership h2 {
+  color: #ff3f00;
+}
+
+.membership strong {
+  color: #ff7f11;
+}
+
+/*Programs*/
+
+.programs .card {
+  display: block;
+}
+
+.flex-container {
+  display: flex;
+}
+

@@ -1,6 +1,6 @@
 * {
   font-family: sans-serif;
-  text-indent: 100px;
+  
  
   
 }
@@ -33,7 +33,7 @@ section {
 }
 
 img {
-  border: 5px solid #none;
+  border: 5px solid black;
 }
 
 h1,
@@ -43,22 +43,22 @@ h4,
 h5 {
   /*Purple*/
   color: #6320ee;
-  margin-bottom: 1em;
+  margin-bottom: 10px;
 }
 
 h1 {
-  font-size: 250%;
+  font-size: 1rem;
 }
 
 h2 {
-  font-size: 175%;
-  color: white;
+  font-size: 1rem;
+  color: rgb(209, 66, 22);
   text-align: center;
 }
 
 h3 {
-  font-size: 150%;
-  color: rgb(235, 15, 33);
+  font-size: 1rem;
+  color: rgb(235, 15, 206);
   text-align: center;
 }
 
@@ -150,22 +150,26 @@ footer {
   font-size: #F4743B;
 }
 
-.card {
-  display: inline-block;
-  background-color: white;
-  padding: 20px;
+.box>.container {
+  display: flex;
+  flex-direction: row;
+   background-color: rgb(15, 223, 136);
+   padding: 20px;
   margin: 5px;
-  width: 30%;
   border: 1px solid black;
   border-radius: 10px;
   
 }
 
-.card time {
-  opacity: 0.5;
-  display: inline-block;
-  margin-bottom: 10px;
+.box {
   text-align: center;
+  background-color: white;
+  padding: 20px;
+  margin: 5px;
+  width: 30%;
+  border: 1px solid black;
+  border-radius: 10px; 
+
 }
 
 /*Education*/
@@ -177,18 +181,22 @@ footer {
   background-size: cover;
   background-position: center;
   padding: 100px 5%;
+  text-align: center;
 }
 
-.education-container {
-  background-color: rgba(255, 255, 255, 0.75);
+.container {
+  background-color: rgba(20, 214, 62, 0.75);
   padding: 50px;
   max-width: 400px;
+  text-align: center;
+  margin-bottom: 1em;
+  background-position: center;
+  width: 700px;
+  margin: 2rem auto;
+  
 }
 
-.education-container h3,
-.education-container p {
-  margin-bottom: 1em;
-}
+
 
 /*Membership*/
 
@@ -210,16 +218,25 @@ footer {
 /*Programs*/
 
 .programs {
-  display: flex;
-  flex-direction: column;
+ 
+  text-align: center;
 }
-.programs .card {
-  display: block;
-}
-
-.Container {
+.programs>.container {
   display: flex;
   flex-direction: row;
+  background-color: blue;
 }
+.card {
+  text-align: center;
+  display: block;
+  background-color: white;
+  padding: 20px;
+  margin: 5px;
+  width: 30%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+
 
   

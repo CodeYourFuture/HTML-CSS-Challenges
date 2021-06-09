@@ -33,7 +33,7 @@
               id="firstname"
               name="firstname"
               required
-              pattern="[A-Z a-z]{4,15}"
+              pattern="[A-Z a-z]{2,}"
               placeholder="First Name"
             />
           </div>
@@ -46,7 +46,7 @@
               id="lastname"
               name="lastname"
               required
-              pattern="[A-Z a-z]{4,20}"
+              pattern="[A-Z a-z]{2,}"
               placeholder="Last Name"
             />
           </div>
@@ -60,7 +60,7 @@
               name="email"
               required
               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-              placeholder="Enter a valid email address"
+              placeholder="Enter a valid email"
             />
           </div>
           <div class="labels">
@@ -71,10 +71,10 @@
               <option value="" selected disabled>
                 -- Choose a t-shirt color --
               </option>
-              <option value="">Black</option>
-              <option value="">Blue</option>
-              <option value="">White</option>
-              <option value="">Red</option>
+              <option value="Black" class="black">Black</option>
+              <option value="Blue" class="blue">Blue</option>
+              <option value="White" class="white">White</option>
+              <option value="Red" class="red">Red</option>
             </select>
           </div>
           <div class="labels">
@@ -85,14 +85,15 @@
               type="date"
               id="delivdate"
               name="delivdate"
-              value="2021-06-09"
+              value="YYYY-MM-DD"
               min="2021-06-09"
               max="2021-07-08"
               required
             />
           </div>
-
-          <button type="submit">Submit</button>
+          <div class="form-btn">
+            <button class="submit-btn" type="submit">Submit</button>
+          </div>
         </div>
       </form>
     </main>

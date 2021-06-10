@@ -10,46 +10,56 @@
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <div class="head-wrap">
+        <h1>Product Pick</h1>
+      </div>
     </header>
     <main>
       <form>
         <!-- write your html here-->
         <!-- try writing out the requirements first-->
 
-        <!-- Collect customer name data, and validate it. But what is a valid name? -->
-        <label for="cm-name">Name</label>
-        <input type="text" id="cm-name" name="cm-name" required />
+        <label for="1st-name">First Name</label>
+        <input
+          type="text"
+          id="1st-name"
+          name="1st-name"
+          required
+          minlength="2"
+        />
 
-        <!-- What is the customer's email? make sure it's valid, look for consistent pattern. -->
+        <label for="2nd-name">Last Name</label>
+        <input
+          type="text"
+          id="2nd-name"
+          name="2nd-name"
+          required
+          minlength="2"
+        />
+
         <label for="email">Email</label>
-        <input type="text" id="email" name="email" required />
+        <input type="email" id="email" name="email" required />
 
-        <!--  What colour should this t-shirt be? I must give three options. How will I make sure they don't pick other colours? -->
-        <fieldset required>
-          <legend>Colour</legend>
+        <!-- Dropdown -->
+        <label for="colour">Colour</label>
+        <select name="colour" id="colour" required>
+          <option value="" selected></option>
+          <option value="green">Green</option>
+          <option value="yellow">Yellow</option>
+          <option value="white">White</option>
+        </select>
 
-          <input id="green" type="radio" name="colour" value="green" />
-          <label for="green">Green</label>
-
-          <input id="yellow" type="radio" name="colour" value="yellow" />
-          <label for="yellow">Yellow</label>
-
-          <input id="white" type="radio" name="colour" value="white" />
-          <label for="white">White</label>
-        </fieldset>
-
-        <!--  When do they want the t-shirt to be delivered? I must collect a date and make sure that date is in the next four weeks. How will I do this? How will I make sure there are no mistakes about the date? -->
-        <label for="date">delivery date</label>
-        <input type="date" id="date" name="date" required />
+        <label for="date">Delivery date</label>
+        <input type="date" id="date" name="date" required max="2021-07-10" />
 
         <button>Submit</button>
-        <!--  All fields are required. Do not write a form action for this project. -->
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By MAHA MALIK</h2>
+      <div class="head-wrap">
+        <h2>By Maha Malik</h2>
+      </div>
     </footer>
   </body>
 </html>

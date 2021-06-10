@@ -199,6 +199,15 @@ footer {
 .education-container p {
   margin-bottom: 1em;
 }
+.education-container button {
+  font-size: 30px;
+}
+.education-container button:hover {
+  background-color: #e40b5e;
+}
+.education-container button:focus {
+  background-color: #e4ce0b;
+}
 
 /*Membership*/
 

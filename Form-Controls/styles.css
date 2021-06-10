@@ -1,16 +1,17 @@
 body {
     font-family: 'Karla', sans-serif;
     -webkit-font-smoothing: antialiased;
-    background-color: aliceblue;
+    background-color: #f5f5f5;
     margin: 0;
     line-height: 40px;
     /* border: 3px solid red; */
 }
 header {
-    background-color: white;
+    background-color: #25743A;
+    top: 0;
 }
 h1 {
-    color: #0064BC;
+    color: white;
     text-align: center;
 }   
 form {
@@ -24,7 +25,7 @@ form {
 label {
     font-size: 18px;
     letter-spacing: 2px;
-    color:grey;
+    color: #A21A10;
     font-weight: bold;
 }
 
@@ -43,25 +44,26 @@ input {
 .color-pick h2 {
     font-size: 18px;
     letter-spacing: 2px;
-    color: grey;
+    color: #1F1F1F;
 }
 input #white, #black, #purple {
     width: 20px;
 }
 .color-pick label {
-    color: black;
+    color: #1F1F1F;
 }
 
 fieldset {
+    border:none;
     box-shadow: 2px 2px 1px gray;
-    background-color:white;
+    background-color: white;
 }
 
 .btn {
     margin: 50px auto;
     width: 80px;
     padding: 10px;
-    background-color: #0064BC;
+    background-color: #25743A;
     border:none;
     border-radius: 5px;
 }
@@ -71,22 +73,27 @@ fieldset {
     color:white;
 }
 
-.btn a:hover {
-    
+.btn:hover {
+    background-color: #fdd55d;    
 }
-
+.btn a:hover {
+    color: black;
+}
 .date {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
 }
-
+.date label {
+    color: #1F1F1F;
+}
 footer {
     margin-top: 50px;
     width: 100vw;;
-    background-color: #BCE0FF;
+    background-color: #fdd55d;
     font-size: 12px;
     float: right;
+    bottom: 0;
 }
 
 footer h2 {
@@ -105,8 +112,11 @@ footer h2 {
     .date {
         flex-direction: row;
         justify-content: flex-start;
+        /* padding-right: 10px; */
     }
-
+    fieldset {
+        width: 80vw;
+    }
     label {
         font-size: 20px;
     }

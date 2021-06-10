@@ -52,7 +52,7 @@ G̶i̶v̶e̶ t̶h̶e̶ p̶a̶r̶a̶g̶r̶a̶p̶h̶ a̶ m̶a̶x̶i̶m̶u̶m̶ w̶
 
 ## 8) Programs
 
-The cards are stacked on top of each other which looks like a poor use of space. Change these so that they display horizontally across the screen.
+The cards are stacked on top of each other which looks like a poor use of space. C̶h̶a̶n̶g̶e̶ t̶h̶e̶s̶e̶ s̶o̶ t̶h̶a̶t̶ t̶h̶e̶y̶ d̶i̶s̶p̶l̶a̶y̶ h̶o̶r̶i̶z̶o̶n̶t̶a̶l̶l̶y̶ a̶c̶r̶o̶s̶s̶ t̶h̶e̶ s̶c̶r̶e̶e̶n̶.̶
 
 M̶a̶k̶e̶ s̶u̶r̶e̶ a̶l̶l̶ t̶h̶e̶ l̶i̶n̶k̶s̶ o̶p̶e̶n̶ i̶n̶ a̶ n̶e̶w̶ t̶a̶b̶.̶
 
@@ -64,4 +64,4 @@ W̶h̶e̶n̶ a̶ u̶s̶e̶r̶ h̶o̶v̶e̶r̶s̶ o̶v̶e̶r̶ t̶h̶e̶ b̶a̶d�
 
 ## 10) New section
 
-If you have time, add a new section for your favorite animal.
+If you have time, a̶d̶d̶ a̶ n̶e̶w̶ s̶e̶c̶t̶i̶o̶n̶ f̶o̶r̶ y̶o̶u̶r̶ f̶a̶v̶o̶r̶i̶t̶e̶ a̶n̶i̶m̶a̶l̶.̶

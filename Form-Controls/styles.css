@@ -1,0 +1,16 @@
+
+
+
+fieldset {
+  background-color: #eeeeee;
+}
+
+legend {
+  background-color: gray;
+  color: white;
+  padding: 5px 10px;
+}
+
+.form {
+  margin: 10px 5px;
+}

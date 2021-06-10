@@ -1,15 +1,13 @@
 * {
   font-family: sans-serif;
 }
+
+/*Header */
 header {
   background-color: #211a1d;
   color: #ffffff;
   width: 100%;
   padding: 20px;
-}
-nav {
-  display: inline-block;
-  width: 100%;
 }
 header ul {
   margin: 20px 0 0 0;
@@ -26,7 +24,10 @@ section {
 img {
   border: 5px solid #8075ff;
 }
-
+nav {
+  display: inline-block;
+  width: 100%;
+}
 h1,
 h2,
 h3,
@@ -46,8 +47,6 @@ h3 {
   font-size: 150%;
 }
 
-
-}
 #logo{
   border-style: none;
 }
@@ -60,6 +59,8 @@ h3 {
 .introduction p{
   line-height: 5em;
 }
+
+/* Badge */ 
 #badge {
   height: 120px;
   width: 120px;
@@ -272,7 +273,7 @@ button {
   background-color: #372772;
   border: 2px solid black;
   color: #fff;
-
+}
 /* Footer */
 
 footer {
@@ -282,3 +283,4 @@ footer {
   padding: 20px;
   display: flex;
   justify-content: space-between;
+}

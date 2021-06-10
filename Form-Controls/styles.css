@@ -73,12 +73,12 @@ fieldset {
     color:white;
 }
 
-.btn:hover {
+/* .btn:hover {
     background-color: #fdd55d;    
 }
 .btn a:hover {
     color: black;
-}
+} */
 .date {
     margin-top: 20px;
     display: flex;

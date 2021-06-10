@@ -84,7 +84,7 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 
   display: flex;
@@ -95,6 +95,7 @@ footer {
 
 #badge:hover {
   background-color: yellow;
+  transition: ease-in 1s;
 }
 
 #badge p {
@@ -104,7 +105,7 @@ footer {
 
 .image-container img {
   vertical-align: top;
-  border: 5px solid #0041f5;
+  border: 5px solid #425a9b;
 }
 
 .image-container img:first-of-type {
@@ -113,12 +114,12 @@ footer {
 
 .image-container img:first-of-type {
   vertical-align: bottom;
-  border-color: #ff3f00;
+  border-color: #86bbec;
 }
 
 .image-container img:last-of-type {
   vertical-align: bottom;
-  border-color: aqua;
+  border-color: rgb(56, 134, 224);
 }
 .tigers {
   background-color: #0b3c49;
@@ -201,7 +202,8 @@ footer {
 /*Programs*/
 
 .programs .card {
-  display: block;
+  display: inline-block;
+  width: 27%;
 }
 
 .news {
@@ -209,5 +211,5 @@ footer {
 }
 
 #button:hover {
-  background-color: rgb(144, 196, 24);
+  background-color: rgb(98, 146, 250);
 }

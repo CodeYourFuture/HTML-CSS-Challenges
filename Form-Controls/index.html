@@ -6,22 +6,59 @@
   <title>My form exercise</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Product Pick</h1>
+    <div class="banner-ctn">
+      <img id="logo" src="img/emote_flower.png" alt="silhouette of yoga woman sat on lotus flower logo" width="200">
+    </div>
+    <h1>DKS Merch Store</h1>
   </header>
   <main>
   <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
+    <!-- Customer username -->
+    <div class="user">
+      <label for="username">Name</label>
+      <input id="username" type="text" minlength="3" maxlength="12" placeholder="Username" required>
+  </div>
+    <!-- Email -->
+  <div class="emails"> 
+    <label for="email">Email</label>
+    <input id="email" type="email" placeholder="email@example.com" required>
+  </div> 
+    <!-- Colour -->
+    <fieldset>
+      <h2>Choose your colour</h2>
+        <div class="options">
+          <img src="img/tshirt.png" alt="tshirt design">
+        </div>
+        <div class="inputs">
+          <input id="grey" type="radio" name="color" value="grey">
+          <label for="grey">Grey</label>
+
+          <input id="white" type="radio" name="color" value="white">
+          <label for="white">White</label>
+
+          <input id="black" type="radio" name="color" value="black">
+          <label for="black">Black</label>
+        </div>
+    </fieldset>
+    <!-- Delivery Date -->
+    <fieldset class="dDate">
+      <label for="delivery">Select a delivery date</label>
+      <input id="delivery" type="date" name="delivery-date" value="2021-06-10" min="2021-07-08">
+      <button class="btn"><a href="#">Submit</a></button>
+    </fieldset>
+    
   </form>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Dharma Guadeloupe</h2>
   </footer>
 </body>
 

@@ -115,13 +115,11 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-
+  top: 20px;
+  left: 20px;
   display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
+  justify-content: left;
+  align-content: flex-start;
 }
 
 #badge:hover {
@@ -162,12 +160,9 @@ footer {
   color: #BEEE62;
 }
 
-.giraffe p:first-of-type {
-  font-size: 125%;
-}
 
 #bigText {
-  font-size: 10px;
+  font-size: 150%;
 }
 
 .card {
@@ -197,6 +192,11 @@ footer {
 
 .news {
   text-align: center;
+}
+
+#card-flex {
+  display: flex;
+  flex-direction: row;
 }
 
 /*Education*/

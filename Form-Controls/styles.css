@@ -1,0 +1,77 @@
+
+
+/* General Styles */
+
+* {
+    letter-spacing: 0.5px;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 500;
+}
+
+/* Form styles */
+
+fieldset {
+  background-color: #eeeeee;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 3px 0 5px, -3px 0 5px;
+}
+
+legend {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 5px 10px;
+  font-size: 1.3rem;
+  border: 1px solid #f9f9f9;
+  border-radius: 5px;
+}
+
+.form {
+  margin: 10px 5px;
+  line-height: 2;
+}
+
+label {
+    display: block;
+}
+
+input, select {
+    outline: none;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    border-color: #f9f9f9;
+    background-color: #dcf3fd;
+    padding: 0.8rem;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    transition: background 700ms;
+}
+
+.form input:focus, .form select:focus {
+    background-color: #ffffff;
+}
+
+#submit {
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    background-color: black;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+#submit:hover {
+    background-color: #141414;
+}
+

@@ -1,28 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
-
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
-
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <section>
+        <form method="POST">
+          <!-- write your html here-->
+          <!-- try writing out the requirements first-->
+          <fieldset>
+            <legend>T-Shirt Order</legend>
+            <div class="form name">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="name"
+                minlength="2"
+                required
+              />
+            </div>
+            <div class="form email">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="email"
+                min-length="2"
+                required
+              />
+            </div>
+            <div class="form color">
+              <label for="color">Color</label> 
+              <select name="color" id="color" required>
+                <option value="" selected disabled hidden>Choose here</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="black">Black</option>
+              </select>
+            </div>
+            <div class="form date">
+              <label for="date">Delivery date</label>
+              <input
+                type="date"
+                name="date"
+                id="date"
+                min="2021-06-12"
+                max="2021-07-12"
+                required
+              />
+            </div>
+            <div class="submit">
+              <button id="submit" type="submit">Submit</button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <h2>By Omer</h2>
+    </footer>
+  </body>
 </html>

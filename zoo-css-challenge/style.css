@@ -89,7 +89,7 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  bottom: 400px;
   right: 20px;
 
   display: flex;
@@ -220,7 +220,13 @@ footer {
   padding: 200px;
 }
 /*Programs*/
-
-.programs .card {
-  display: block;
+.programs .cards {
+  display: flex;
+  align-items: flex-start;
+}
+.usefulLinks {
+  text-align: center;
+}
+.programText {
+  text-align: center;
 }

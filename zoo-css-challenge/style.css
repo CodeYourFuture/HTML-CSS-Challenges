@@ -224,7 +224,11 @@ footer {
 .membership strong {
   color: #ff7f11;
 }
-
+.membership p {
+  max-width: 700px;
+  margin-right: 200px;
+  margin-left: 250px;
+}
 /*Programs*/
 
 .programs .card {

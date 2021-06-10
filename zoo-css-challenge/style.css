@@ -154,10 +154,11 @@ footer {
 
 .card {
   display: inline-block;
+  justify-content: space-around;
   background-color: white;
-  padding: 20px;
+  padding: 15px;
   margin: 10px;
-  width: 30%;
+  width: 25%;
   border: 1px solid black;
   border-radius: 10px;
   text-align: center;
@@ -231,6 +232,24 @@ footer {
 }
 /*Programs*/
 
-.programs .card {
+.programs .bottles {
   display: block;
+}
+.bottles {
+  display: flex;
+  justify-content: space-around;
+  align-content: stretch;
+  
+}
+.bottle {
+  display: inline-block;
+  background-color: white;
+  padding: 10px;
+  margin: 10px auto;
+  width: 25%;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 15px;
+}
 }

@@ -1,28 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="head-wrap">
+        <h1>Product Pick</h1>
+      </div>
+    </header>
+    <main>
+      <form>
+        <!-- write your html here-->
+        <!-- try writing out the requirements first-->
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+        <label for="1st-name">First Name</label>
+        <input
+          type="text"
+          id="1st-name"
+          name="1st-name"
+          required
+          minlength="2"
+        />
 
+        <label for="2nd-name">Last Name</label>
+        <input
+          type="text"
+          id="2nd-name"
+          name="2nd-name"
+          required
+          minlength="2"
+        />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <!-- Dropdown -->
+        <label for="colour">Colour</label>
+        <select name="colour" id="colour" required>
+          <option value="" selected></option>
+          <option value="green">Green</option>
+          <option value="yellow">Yellow</option>
+          <option value="white">White</option>
+        </select>
+
+        <label for="date">Delivery date</label>
+        <input type="date" id="date" name="date" required max="2021-07-10" />
+
+        <button>Submit</button>
+      </form>
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <div class="head-wrap">
+        <h2>By Maha Malik</h2>
+      </div>
+    </footer>
+  </body>
 </html>

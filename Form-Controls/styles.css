@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url("images/pexels-liza-summer-6347888.jpg");
+  background-size: cover;
+  height: auto;
+  background-repeat: no-repeat;
+}
+header {
+  width: 100%;
+  text-align: center;
+}
+form {
+  text-align: center;
+  margin: 0 auto;
+  width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
+form li {
+  margin-top: 1em;
+}
+input {
+  width: 150px;
+  height: 25px;
+  text-align: center;
+  border-radius: 2px;
+  border: rgb(105, 103, 117) solid 1px;
+}
+
+fieldset {
+  border: solid 1px rgb(46, 45, 45);
+
+  margin-top: 20px;
+}
+
+#deli {
+  width: 155px;
+  text-align: left;
+  margin-top: 10px;
+}
+label {
+  display: inline-block;
+  width: 120px;
+  text-align: right;
+}
+
+button {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  color: white;
+  background-color: rgb(10, 10, 9);
+  border: rgb(10, 10, 9) solid 1px;
+  border-radius: 5px;
+  height: 35px;
+}
+
+footer {
+  margin-bottom: 0%;
+  padding-top: 400px;
+  text-align: center;
+}
+footer h2 {
+  color: rgb(202, 7, 7);
+  font-family: "Courier New", Courier, monospace;
+}
+@media screen and(min-width: 200px) and (max-width: 600px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  main {
+    max-width: 100vw;
+  }
+}

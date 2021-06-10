@@ -1,28 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
-
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
-
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="order form" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <form>
+        <!-- write your html here-->
+        <!-- try writing out the requirements first-->
+        <ul>
+          <li>
+            <label for="first-name">First Name:</label>
+            <input
+              id="first-name"
+              type="text"
+              name="first-name"
+              required
+              minlength="2"
+              maxlength=""
+              pattern="[A-Za-z] {}"
+            />
+          </li>
+          <li>
+            <label for="last-names">Last Name:</label>
+            <input
+              type="text"
+              name="last-names"
+              id="last-names"
+              required
+              minlength="2"
+              maxlength=""
+              pattern="[A-Za-z] {}"
+            />
+          </li>
+          <li>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" />
+          </li>
+        </ul>
+        <fieldset class="size-color">
+          <legend>Select Size and Color</legend>
+          <label for="size">Select Size:</label>
+          <select name="size" id="size" required>
+            <option value=""></option>
+            <option value="XS">Extra Small</option>
+            <option value="S">Small</option>
+            <option value="M">Medium</option>
+            <option value="L">Large</option>
+            <option value="XL">XLarge</option>
+          </select>
+          <label for="color">Select Color:</label>
+          <select name="color" id="color" size="1">
+            <option value=""></option>
+            <option value="white">White</option>
+            <option value="cream">Cream</option>
+            <option value="magnolia">Magnolia</option>
+            <option value="red">Red</option>
+            <option value="black">black</option>
+          </select>
+          
+            <label id= "deli"for="delivery">Select Delivery Date:</label>
+            <input type="date" name="delivery-date" id="delivery" min="2021-06-10" max="2021-07-08" required>
+            </input>
+        
+        </fieldset>
+        <button type="submit">Submit order</button>
+      </form>
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <h2>By Seyed Sharifi</h2>
+    </footer>
+  </body>
 </html>

@@ -22,9 +22,9 @@
   <label for="email">Email address</label>
   <input id="email" type="email" placeholder="Your Email Address" required>
   <fieldset class="color-pick">
-    <h2>Choose color</h2>
+    <legend>Choose color</legend>
       <div>
-        <input id="white" type="radio" name="color" value="white">
+        <input id="white" type="radio" name="color" value="white" required>
         <label for="white">White</label>
       </div>
       <div>
@@ -36,17 +36,11 @@
         <label for="purple">Purple</label>
       </div>
   </fieldset>
-
-  <fieldset class="date">
-    <label for="date">Select a delivery date</label>
-    <input id="date" type="date" min="2021-06-10" max="2021-07-10">
-    <!-- <input type="date" id="start" name="setTodaysDate"> -->
-
-  </fieldset>
-  <button class="btn"><a href="#">Submit</a></button>
+  <label for="date">Select a delivery date</label>
+  <input id="date" type="date" min="2021-06-10" max="2021-07-10" required>
+  <button class="btn" type="submit">Submit</button>
     <!-- try writing out the requirements first-->
   </form>
-
   </main>
   <footer>
     <!-- change to your name-->

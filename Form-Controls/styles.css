@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* text-align: center; */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.title {
+    margin: 20px 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+main {
+    /* border: 1px solid black; */
+    padding: 1px;
+    margin: 40px;
+    height: 50vh;
+}
+
+form {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+    height: 40vh;
+}
+
+form input  {
+    width: 100%;
+    margin: 15px 0px;
+}
+
+form label {
+    border: 1px solid black;
+    margin: 5px;
+}

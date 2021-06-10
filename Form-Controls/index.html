@@ -8,20 +8,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
   <header>
-    <h1>Product Pick</h1>
+
+    <h1 class="title">Product Pick</h1>
+
   </header>
+
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+
+    <form>
+      <!-- write your html here-->
+      <!-- try writing out the requirements first-->
+
+      <label for="name">Your Name</label>
+      <input id="name" type="text" minlength="2" name="name" placeholder="Full name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" type="text" name="email" placeholder="e.g oneilmalik@gmail.com" required>
+
+      <fieldset>
+
+        <label for="color">Shirt Colour</label>
+        <select name="color" id="color">
+          <option value="yellow">Yellow</option>
+          <option value="pink">Pink</option>
+          <option value="Orange">Orange</option>
+        </select>
+        
+        <!-- <legend>Colours of Shirt</legend>
+
+        <label for="color">Black</label>
+        <input id="color" type="radio" name="color" value="Black" required>
+
+        <label for="color">Grey</label>
+        <input id="color" type="radio" name="color" value="Grey" required>
+
+        <label for="color">Maroon</label>
+        <input id="color" type="radio" name="color" value="Maroon" required> -->
+
+      </fieldset>
+
+      <label for="date">Arrival date</label>
+      <input id="date" type="date" min="2021-06-11" max="2021-07-11" name="date">
+
+      <button>Submit</button>
+
+    </form>
 
   </main>
+
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Oneil Malik</h2>
   </footer>
 </body>
 

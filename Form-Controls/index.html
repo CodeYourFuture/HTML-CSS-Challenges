@@ -7,6 +7,8 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap" rel="stylesheet"> 
+
 </head>
 <body>
   <header>
@@ -15,13 +17,34 @@
   <main>
   <form>
     <!-- write your html here-->
+  <label for="username">Username</label>
+  <input id="username" type="text" minlength="3" maxlength="8" placeholder="Your Username" required>
+  <label for="email">Email address</label>
+  <input id="email" type="email" placeholder="Your Email Address" required>
+  <fieldset class="color-pick">
+    <legend>Choose color</legend>
+      <div>
+        <input id="white" type="radio" name="color" value="white" required>
+        <label for="white">White</label>
+      </div>
+      <div>
+        <input id="black" type="radio" name="color" value="black">
+        <label for="black">Black</label>
+      </div>
+      <div>
+        <input id="purple" type="radio" name="color" value="purple">
+        <label for="purple">Purple</label>
+      </div>
+  </fieldset>
+  <label for="date">Select a delivery date</label>
+  <input id="date" type="date" min="2021-06-10" max="2021-07-10" required>
+  <button class="btn" type="submit">Submit</button>
     <!-- try writing out the requirements first-->
   </form>
-
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Gulnihal Naldoken</h2>
   </footer>
 </body>
 

@@ -221,4 +221,12 @@ footer {
 
 .programs .card {
   display: inline-block;
+  width:29%;
+}
+/* 10 New Section */
+.myFavAnimal{
+  text-align: center;
+}
+.myFavAnimal img{
+  height: 30rem;
 }

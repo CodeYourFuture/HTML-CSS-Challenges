@@ -1,28 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Picking a T-Shirt</h1>
+    </header>
+    <main>
+      <form>
+        <!-- write your html here-->
+        <!-- try writing out the requirements first-->
+        <label for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          minlength="3"
+          required
+          oninvalid="this.setCustomValidity('Please enter a valid name.')"
+        />
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+        <label for="email">Email Address</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="username@email.com"
+          required
+          oninvalid="this.setCustomValidity('Please enter a valid email address.')"
+        />
 
+        <fieldset>
+          <legend>What colour should this t-shirt be?</legend>
+          <input id="black" type="radio" name="color" value="black" />
+          <label for="black">Black</label>
+          <input id="red" type="radio" name="color" value="red" required />
+          <label for="red">Red</label>
+          <input id="yellow" type="radio" name="color" value="yellow" />
+          <label for="yellow">Yellow</label>
+        </fieldset>
+
+        <label for="date">Delivery Date</label>
+        <input
+          type="date"
+          name="date"
+          id="date"
+          min="2021-06-10"
+          max="2021-07-08"
+          placeholder="2021-01-01"
+          required
+          oninvalid="this.setCustomValidity('Please enter a date within the next 4 weeks.')"
+        />
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <h2>By Azan Shaikh</h2>
+    </footer>
+  </body>
 </html>

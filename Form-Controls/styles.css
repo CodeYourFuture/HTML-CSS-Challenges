@@ -40,6 +40,15 @@ input:not(fieldset input) {
     padding: 3px;
 }
 
+input:focus, fieldset:focus {
+  outline: none;
+  border: 2px solid rgb(129, 194, 33);
+}
+input:invalid {
+  border:2px solid gray;
+  transition: color;
+}
+
 .color-pick {
     margin-top: 20px;
     display: flex;
@@ -53,7 +62,7 @@ input:not(fieldset input) {
 }
 
 fieldset {
-    border:none;
+    /* border:none; */
     box-shadow: 2px 2px 1px gray;
     background-color: white;
 }
@@ -66,13 +75,15 @@ fieldset {
     border:none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.btn {
     text-decoration: none;
     color:white;
+    letter-spacing: 2px;
+    font-size: 16px;
 }
-
+.btn:hover {
+    background-color: #fdd55d;
+    color:black;
+}
 footer {
     margin-top: 100px;
     width: 100vw;

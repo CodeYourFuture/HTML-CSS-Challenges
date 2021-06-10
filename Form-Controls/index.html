@@ -1,28 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <form>
+        <!-- write your html here-->
+        <!-- try writing out the requirements first-->
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+        <!-- Collect customer name data, and validate it. But what is a valid name? -->
+        <label for="cm-name">Name</label>
+        <input type="text" id="cm-name" name="cm-name" required />
 
+        <!-- What is the customer's email? make sure it's valid, look for consistent pattern. -->
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" required />
+
+        <!--  What colour should this t-shirt be? I must give three options. How will I make sure they don't pick other colours? -->
+        <fieldset required>
+          <legend>Colour</legend>
+
+          <input id="green" type="radio" name="colour" value="green" />
+          <label for="green">Green</label>
+
+          <input id="yellow" type="radio" name="colour" value="yellow" />
+          <label for="yellow">Yellow</label>
+
+          <input id="white" type="radio" name="colour" value="white" />
+          <label for="white">White</label>
+        </fieldset>
+
+        <!--  When do they want the t-shirt to be delivered? I must collect a date and make sure that date is in the next four weeks. How will I do this? How will I make sure there are no mistakes about the date? -->
+        <label for="date">delivery date</label>
+        <input type="date" id="date" name="date" required />
+
+        <button>Submit</button>
+        <!--  All fields are required. Do not write a form action for this project. -->
+      </form>
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <h2>By MAHA MALIK</h2>
+    </footer>
+  </body>
 </html>

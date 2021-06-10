@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: 'Karla', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -19,18 +24,19 @@ form {
     flex-direction: column;
     justify-content: flex-start;
     width: 90vw;
-    margin-left: 30px;
+    margin: 0 auto;
+    /* margin-left: 30px; */
 }
 
-label {
+label, legend {
     font-size: 18px;
     letter-spacing: 2px;
     color: #A21A10;
     font-weight: bold;
 }
 
-input {
-    width: 150px;
+input:not(fieldset input) {
+    width: 50%;
     padding: 3px;
 }
 
@@ -41,14 +47,7 @@ input {
     justify-content: space-around;
 }
 
-.color-pick h2 {
-    font-size: 18px;
-    letter-spacing: 2px;
-    color: #1F1F1F;
-}
-input #white, #black, #purple {
-    width: 20px;
-}
+
 .color-pick label {
     color: #1F1F1F;
 }
@@ -66,30 +65,17 @@ fieldset {
     background-color: #25743A;
     border:none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
-.btn a {
+.btn {
     text-decoration: none;
     color:white;
 }
 
-/* .btn:hover {
-    background-color: #fdd55d;    
-}
-.btn a:hover {
-    color: black;
-} */
-.date {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-}
-.date label {
-    color: #1F1F1F;
-}
 footer {
-    margin-top: 50px;
-    width: 100vw;;
+    margin-top: 100px;
+    width: 100vw;
     background-color: #fdd55d;
     font-size: 12px;
     float: right;
@@ -109,18 +95,13 @@ footer h2 {
         align-items: center;
     }
 
-    .date {
-        flex-direction: row;
-        justify-content: flex-start;
-        /* padding-right: 10px; */
-    }
     fieldset {
         width: 80vw;
     }
     label {
         font-size: 20px;
     }
-     input {
-        width: 240px
+     input:not(fieldset input) {
+        width: 50%;
      }
 }

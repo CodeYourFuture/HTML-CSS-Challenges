@@ -135,13 +135,22 @@ footer {
 }
 
 .giraffe {
-  background-color: #465775;
+  background-color: #483c46 /* #465775*/;
   color: #56e39f;
 }
 
 .giraffe h2 {
-  color: #ef6f6c;
+  color: #f4743b /*#ef6f6c*/;
 }
+#strong {
+  font-size: 20px;
+}
+.giraffe p {
+  color: #beee62;
+}
+/*.news h2 {
+  text-align: center;
+}*/
 
 .card {
   display: inline-block;
@@ -151,6 +160,7 @@ footer {
   width: 30%;
   border: 1px solid black;
   border-radius: 10px;
+  text-align: center;
 }
 
 .card h4 {

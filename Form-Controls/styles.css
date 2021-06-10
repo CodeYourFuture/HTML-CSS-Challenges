@@ -1,0 +1,150 @@
+body {
+    background-color: #387780;
+    font-family: 'Roboto', sans-serif;
+}
+
+form {
+    background-color: #DBD4D3;
+    padding: 12px;
+    margin-top: 4rem;
+}
+
+legend {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 2rem;
+}
+
+h1, h2 {
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 40px;
+    margin-top: 4rem;
+}
+h2 a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.personal-details {
+    margin-top: 50px;
+}
+.personal-details label {
+    font-size: 18px;
+}
+
+label {
+    display: flex;
+    margin: 10px 0;
+}
+
+input[type=text], [type=email], [type=date] {
+    width: 80%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(64, 66, 67);
+    border-radius: 15px;
+    font-size: 18px;
+}
+input:focus {
+    background: #aadce4;
+
+}
+
+p {
+    text-align: center;
+    margin: 60px 30px 20px 30px;
+    font-size: 20px;
+}
+
+.colour-top {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.colour-top label {
+    margin:0 20px;
+}
+
+
+.dates-delivery {
+    display: flex;
+    flex-direction: column;
+}
+.dates-delivery label {
+    font-size: 18px;
+}
+.dates-delivery input {
+    font-size: px;
+}
+
+.submit-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-btn input {
+    border: none;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #030591;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.submit-btn input:hover {
+    background-color: #387780;
+}
+
+@media screen and (min-width: 600px) {
+    form {
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    legend {
+        font-size: 30px;
+    }
+    h1, h2 {
+        font-size: 45px;
+    }
+    .personal-details label {
+        font-size: 25px;
+    }
+    p {
+        margin: 60px 30px 20px 30px;
+        font-size: 25px;
+    }
+    .colour-top {
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+    }   
+    .dates-delivery label {
+        font-size: 25px;
+    }
+    .submit-btn input {
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 1000px) {
+    form {
+        width: 600px;
+        height: 860px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    legend {
+        font-size: 40px;
+    }
+    input[type=text], [type=email], [type=date] {
+        font-size: 20px;
+    }
+}
+
+
+

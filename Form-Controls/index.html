@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My form exercise</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+  <main>
+  <form>
+ 
+ 
+      <legend>T-Shirt Order</legend>
+
+      <div class="personal-details">
+        <label for="Fname">First Name</label>
+        <input type="text" id="Fname" name="Fname" placeholder="First Name" pattern="[A-Za-z]{3,15}"  required>
+
+        <label for="Sname">Surname</label>
+        <input type="text" id="Sname" name="Sname" placeholder="Surname" pattern="[A-Za-z]{3,15}"  required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Email adress" required>
+      </div>
+
+     
+        <p>Please pick a t-shirt colour for your order</p>
+      <div class="colour-top">
+        <label for="choice-1">Red
+        <input id="choice-1" type="radio" name="colour" value="red" required>
+        </label>
+        
+        <label for="choice-2">Blue
+        <input id="choice-2" type="radio" name="colour" value="blue">
+        </label>
+
+        <label for="choice-3">Pink
+        <input id="choice-3" type="radio" name="colour" value="pink">
+        </label>
+      </div>
+
+      
+        <p>Please pick an order delivery date for in the next four weeks</p>
+      <div class="dates-delivery">
+        <label for="date">Delivery dates</label>
+        <input type="date" id="date" name="delivery-date" value="2020-06-14" min="2021-06-21" max="2021-07-12" required>
+      </div>
+
+      <div class="submit-btn">
+        <input type="Submit">
+      </div>
+  
+  </form>
+
+  </main>
+  <footer>
+    <!-- change to your name-->
+    <h2><a rel="website" href="https://github.com/Sharm-Dev" target="_blank">Sharm-Dev on Github</a></h2>
+  </footer>
+</body>
+
+</html>

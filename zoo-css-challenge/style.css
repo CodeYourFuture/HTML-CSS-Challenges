@@ -65,8 +65,8 @@ button {
   font-size: larger;
   border-radius: 9em;
 }
-:hover button {
-  color: rgb(155, 139, 153);
+.education-container > button:hover  {
+  color: #BEEE62;
 }
 footer {
   background-color: #211a1d;

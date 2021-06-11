@@ -1,28 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
-
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
-
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Delivery Options</h1>
+      <p>
+        Enter your personal details, choose your preferred t-shirt color and
+        delivery date.
+      </p>
+    </header>
+    <main>
+      <form>
+        <!-- write your html here-->
+        <!-- Requirements --
+                1. -- Full Name -- accepted characters (a-z) (A-Z) (space) (max-length - min-length) (required)
+                2. -- Email --
+                3. --color option--
+                4. --delivery date-- within next 4 weeks -->
+        <div class="form-container">
+          <div class="labels"></div>
+          <label for="firstname">First Name:</label>
+          <div class="data-fields">
+            <input
+              type="text"
+              id="firstname"
+              name="firstname"
+              required
+              pattern="[A-Z a-z]{2,}"
+              placeholder="First Name"
+            />
+          </div>
+          <div class="labels">
+            <label for="lastname">Last Name:</label>
+          </div>
+          <div class="data-fields">
+            <input
+              type="text"
+              id="lastname"
+              name="lastname"
+              required
+              pattern="[A-Z a-z]{2,}"
+              placeholder="Last Name"
+            />
+          </div>
+          <div class="labels">
+            <label for="email">Email:</label>
+          </div>
+          <div class="data-fields">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              placeholder="Enter a valid email"
+            />
+          </div>
+          <div class="labels">
+            <label for="color">Choose a color</label>
+          </div>
+          <div class="data-fields">
+            <select name="color" id="color" required>
+              <option value="" selected disabled>
+                -- Choose a t-shirt color --
+              </option>
+              <option value="Black" class="black">Black</option>
+              <option value="Blue" class="blue">Blue</option>
+              <option value="White" class="white">White</option>
+              <option value="Red" class="red">Red</option>
+            </select>
+          </div>
+          <div class="labels">
+            <label for="delivdate">Delivery date</label>
+          </div>
+          <div class="data-fields">
+            <input
+              type="date"
+              id="delivdate"
+              name="delivdate"
+              value="YYYY-MM-DD"
+              min="2021-06-09"
+              max="2021-07-08"
+              required
+            />
+          </div>
+          <div class="form-btn">
+            <button class="submit-btn" type="submit">Submit</button>
+          </div>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <h2>By HOMEWORK SOLUTION</h2>
+    </footer>
+  </body>
 </html>

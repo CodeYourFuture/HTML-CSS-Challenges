@@ -13,15 +13,30 @@
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
     <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+    <form class="form" method="GET" action=""><br>
+      <label for="name">Your full name:</label><br>
+      <input type="text" name="fullname" id="name" required><br>&nbsp;<br>
+      <label for="email">Your e-mail:</label><br>
+      <input type="email" name="email" id="email" required><br>&nbsp;<br>
+      <label for="colour">Available colours:</label><br>
+      <select name="colour" id="colour" required><br>
+        <option value="Green">Green</option>
+        <option value="Black">Black</option>
+        <option value="Blue">Blue</option>
+        <option value="white">White</option>
+      </select><br>&nbsp;<br>
+      <label for="date">Delivery date:</label><br>
+      <input type="date" id="date" name="date" required><br>&nbsp;<br>
+      <label for="time">Delivery time:</label><br>
+      <input type="time" id="time" name="time" required><br><br>&nbsp;<br>
+      <button type="submit" class="submit-button">Submit</button>
+    </form>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>Amanda Nwadukwe</h2>
   </footer>
 </body>
 

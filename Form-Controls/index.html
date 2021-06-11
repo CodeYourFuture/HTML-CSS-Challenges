@@ -12,52 +12,68 @@
   <header>
     <h1>Product Pick</h1>
   </header>
+  &nbsp;
+
   <main>
-  <form action="" method="GET">
-    <!-- 
-      **Labels are needed**
-      1.Name -- Minlength  required
-      2.Email -- @  required
-      3.color option   required
-      4.Delivery Date -- date-- min/max required
-    -->
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-    <label for="FName">First Name</label>
-    <input type="text" id="FName" name="First Name" minlength="2" maxlength="15" required>
-    <label for="LName">Last Name</label>
-    <input type="text" id="LName" name="Last Name" minlength="2" maxlength="15" required>
+    <form action="" method="GET">
+      <section class="Customer-detials">
+        <fieldset>
+          <legend>Customer Detials</legend>
+            <label for="FName">First Name</label>
+            <input type="text" id="FName" name="First Name" minlength="2" maxlength="15" required>
+            <label for="LName">Last Name</label>
+            <input type="text" id="LName" name="Last Name" minlength="2" maxlength="15" required>
+            <label for="Email">Email</label>
+            <input type="email" id="Email" required>
+        </fieldset>
+      </section>
 
-    <label for="Email">Email</label>
-    <input type="email" id="Email" required>
+        &nbsp;
 
-    <fieldset>
-      <legend> Choose your Favorite Color</legend>
-     
-        <label for="Green">Moslty Green <br/></label>
-        <input  type="color" id="yellow" value="yellow" name="Green" disabled>
-        <input  type="radio" id="Green" value="Green" name="Green">
-    
-      <br/>
-      <label for="lightblue"></label>
-      <input type="color" id="lightblue" name="lightblue" value="lightblue" disabled>
-      <input type="radio" id="lightblue" name="lightblue" value="lightblue" >
-    
+      <section class="Sizes-Section">    
+        <fieldset>
+          <legend> T-shirt Size </legend>
+            <input type="radio" name="T-Size" id="Small">
+            <label for="Small">Small(S)</label>
+            <input type="radio" name="T-Size" id="Mediam">
+            <label for="Mediam">Mediam(M)</label>
+            <input type="radio" name="T-Size" id="Large">
+            <label for="Large">Large(L)</label>
+        </fieldset>
+      </section>
 
+        &nbsp;
 
+      <section class="Colors-Section">
+        <fieldset>
+          <legend> Choose your Favorite Color</legend>
+            <label for="Green">Moslty Green </label><br/>
+            <input  type="color" id="Green" value="yellow" name="colors" disabled>
+            <input  type="radio" id="Green" value="Green" name="colors" required>
+                <br/>
+            <label for="lightblue">lightblue</label><br/>
+            <input type="color" id="lightblue" name="colors" value="lightblue"disabled >
+            <input type="radio" id="lightblue" name="colors" value="lightblue" required >
+                <br/>
+            <label for="Black">lightblue</label><br/>
+            <input type="color" id="Black" name="colors" value="lightblue" disabled>
+            <input type="radio" id="Black" name="colors" value="Black" required >
+        </fieldset>
+        &nbsp;
+      </section>
 
-    </fieldset>
+      &nbsp;
 
-
-    <button type="submit">Check the Customer</button>
-
-
-  </form>
+        <button type="submit">Check the Customer</button>
+    </form>
 
   </main>
+
+  &nbsp;
+
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h4>By Khadar M Dagal</h4>
   </footer>
 </body>
 

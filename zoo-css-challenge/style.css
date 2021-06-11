@@ -42,6 +42,9 @@ h5 {
   color: #6320ee;
   margin-bottom: 1em;
 }
+p {
+   line-height: 2;
+}
 
 h1 {
   font-size: 250%;
@@ -49,10 +52,7 @@ h1 {
 
 h2 {
   font-size: 175%;
-}
-
-h3 {
-  font-size: 150%;
+  color: #0000FF;
 }
 
 button {
@@ -76,18 +76,22 @@ footer {
 }
 
 .introduction {
+  background-color: white;
 }
 
+#logo{
+  border-style:none; 
+}
 #badge {
-  height: 120px;
-  width: 120px;
+  height: 100px;
+  width: 100px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
-
+  transition: width 2s, height 2s;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -96,6 +100,8 @@ footer {
 
 #badge:hover {
   background-color: yellow;
+  height: 150px;
+  width: 150px;
 }
 
 #badge p {
@@ -107,25 +113,38 @@ footer {
   vertical-align: top;
   border: 5px solid #747c92;
 }
-
-.image-container img:first-of-type {
-  vertical-align: bottom;
+#img1{
+  border-color: red;
 }
-
+#img2{
+  border-color: yellow;
+}
+#img3{
+  border-color: blue;
+}
 .tigers {
   background-color: #0b3c49;
   color: #f0e100;
 }
 
 .giraffe {
-  background-color: #465775;
-  color: #56e39f;
+  background-color: #483C46;
+  
 }
 
-.giraffe h2 {
-  color: #ef6f6c;
+.giraffe h2, h3 {
+  color: #F4743B;
+}
+.giraffe p {
+  color: #BEEE62;
+}
+.giraffe p:first-of-type{
+  font-size: 30px; 
 }
 
+.news{
+  text-align: center;
+}
 .card {
   display: inline-block;
   background-color: white;
@@ -172,7 +191,16 @@ footer {
 .education-container p {
   margin-bottom: 1em;
 }
-
+.education-container button{
+  font-size: 30px;
+  border-radius: 10px;
+}
+.education-container button:hover{
+  background-color: #934423;
+}
+.education-container button:focus{
+  background-color: gray;
+}
 /*Membership*/
 
 .membership {
@@ -183,13 +211,30 @@ footer {
 .membership h2 {
   color: #ff3f00;
 }
-
+.membership p{
+    max-width: 700px;
+    margin: auto;
+}
 .membership strong {
   color: #ff7f11;
+}
+.membership button{
+  font-size: 20px;
+  border-radius: 5px;
+}
+.membership button:hover{
+  background-color: red;
+}
+.membership button:focus{
+  background-color: black;
 }
 
 /*Programs*/
 
-.programs .card {
-  display: block;
+.programs .card{
+  display: inline-block;
+}
+.programs .all-cards{
+  display: flex;
+  flex-direction: row;
 }

@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    background-color: aliceblue;
+    margin: 10px;
+}
+
+.container {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 3px 7px hsl(0deg 0% 0% / 52%); 
+    
+}
+
+input {
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 10px;
+    padding: 5px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: #eee;
+}
+input:focus, fieldset:focus {
+    outline: none;
+    border-color: royalblue;
+    background-color: rgb(170, 235, 240);
+    
+}
+
+input:invalid, fieldset:invalid {
+    border-color: red;
+}
+fieldset {
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #957878;
+
+}
+
+button:hover {
+    background-color: blanchedalmond;
+    border: 1px solid #e72323;
+    transition: all 0.4s ease;
+
+    
+
+}

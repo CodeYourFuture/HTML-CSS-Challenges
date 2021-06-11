@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap");
+
+body {
+  background-color: black;
+  margin: auto;
+  width: 100%;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+header {
+  background-color: yellow;
+  text-align: center;
+  padding: 5px 5px;
+  box-shadow: 10px 0px 30px red;
+}
+
+form {
+  color: yellow;
+  margin: 10% auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input {
+  padding: 10px;
+  border: 3px solid yellow;
+  border-radius: 10px;
+  font-size: 15px;
+}
+label {
+  text-align: left;
+}
+input:focus {
+  outline: none;
+  box-shadow: 0px 0px 30px rgb(20, 3, 252);
+}
+
+fieldset {
+  border: 2px solid yellow;
+  border-radius: 5px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+form button {
+  background-color: yellow;
+  border-radius: 100px;
+  border: none;
+  text-transform: uppercase;
+  color: black;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+  margin: 5% auto;
+  padding: 20px 40px;
+  transition: background-color 1s ease;
+}
+
+form button:hover {
+  background-color: rgb(3, 161, 3);
+  box-shadow: 0px 0px 30px rgb(20, 3, 252);
+}
+
+footer {
+  background-color: yellow;
+  text-align: center;
+  padding: 5px 5px;
+  box-shadow: 10px 0px 30px red;
+}
+
+/********** Responsive Styles **********/
+
+/********** Just added these to play around with important queries are 700px and 1000px **********/
+
+@media screen and (max-width: 400px) {
+  form {
+    margin: 5% 10%;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  main {
+    font-size: 23px;
+  }
+  form {
+    margin: 10% 5%;
+    padding: 10px 50px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  main {
+    font-size: 23px;
+  }
+  form {
+    margin: 10% 10%;
+    padding: 10px 150px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  form {
+    margin: 10% 15%;
+    padding: 10px 150px;
+  }
+}

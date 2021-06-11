@@ -1,3 +1,8 @@
+
+:root {
+    --mixColor: linear-gradient(145deg, rgb(2, 221, 221), rgb(235, 66, 66));
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -9,34 +14,101 @@ body {
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
+    background: rgb(27, 99, 99);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .title {
-    margin: 20px 10px;
+    margin: 50px 10px;
     padding: 10px;
-    border: 1px solid black;
+    background: var(--mixColor);
+    border-radius: 5px;
+    box-shadow: 0px 12px 25px rgb(22, 22, 22);
+    color: white;
 }
 
-main {
-    /* border: 1px solid black; */
-    padding: 1px;
-    margin: 40px;
-    height: 50vh;
-}
 
 form {
     border: 1px solid black;
     padding: 20px;
-    margin: 10px;
-    height: 40vh;
+    margin: 40px 10px;
+    border-radius: 5px;
+    height: 25rem;
+    background: linear-gradient(145deg, rgb(2, 221, 221), rgb(235, 66, 66));
+    box-shadow: 5px 10px 30px black;
+    text-transform: uppercase;
 }
 
-form input  {
-    width: 100%;
-    margin: 15px 0px;
-}
-
-form label {
+form label, input  {
+    width: 95%;
+    height: 20px;
+    margin: 5px 0px;
+    /* padding-left: 6px; */
+    padding: 10px;
     border: 1px solid black;
-    margin: 5px;
+    border-radius: 7px;
+    border: none;
+    font-size: 1.2rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+form div {
+    margin-bottom: 30px;
+}
+
+.selection fieldset, .date {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    display: flex;
+    /* flex-direction: column; */
+    border: none;
+}
+
+#date {
+    width: 310px;
+}
+
+
+#color {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 7px;
+    width: 200px;
+}
+
+form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    border: none;
+    /* box-shadow: 2px 4px 20px black; */
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    /* background: var(--mixColor); */
+}
+
+form button:hover {
+    /* background: rgb(63, 62, 62); */
+    background: var(--mixColor);
+    transition: .3s;
+    box-shadow: 5px 5px 10px black;
+    color: white;
+    font-size: 21px;
+}
+
+footer {
+    margin: 50px 0px;
+    padding: 10px;
+    background: var(--mixColor);
+    border-radius: 5px;
+    box-shadow: 5px 12px 30px black;
+    color: white;
 }

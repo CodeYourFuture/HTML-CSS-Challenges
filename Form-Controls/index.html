@@ -23,14 +23,18 @@
       <!-- write your html here-->
       <!-- try writing out the requirements first-->
 
+      <div class="name">
       <label for="name">Your Name</label>
       <input id="name" type="text" minlength="2" name="name" placeholder="Full name" required>
+    </div>
 
+    <div class="email">
       <label for="email">Your Email</label>
       <input type="email" type="text" name="email" placeholder="e.g oneilmalik@gmail.com" required>
-
+    </div>
+    
+    <div class="selection">
       <fieldset>
-
         <label for="color">Shirt Colour</label>
         <select name="color" id="color">
           <option value="yellow">Yellow</option>
@@ -51,8 +55,12 @@
 
       </fieldset>
 
+    </div>
+
+    <div class="date">
       <label for="date">Arrival date</label>
       <input id="date" type="date" min="2021-06-11" max="2021-07-11" name="date">
+    </div>  
 
       <button>Submit</button>
 

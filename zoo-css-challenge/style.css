@@ -151,6 +151,11 @@ footer {
 /*.news h2 {
   text-align: center;
 }*/
+.Leopard h2{
+  color: #e4ce0b;
+  font-size: 40px;
+
+}
 
 .card {
   display: inline-block;

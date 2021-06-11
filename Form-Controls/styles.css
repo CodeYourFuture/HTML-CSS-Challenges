@@ -19,15 +19,13 @@ body {
 }
 
 .form-container {
+  display: flex;
+  flex-direction: column;
   background-color: #ade8f4;
   margin: 2rem auto;
   width: 500px;
-  /* Form outline */
   padding: 1em;
   border: 5px solid rgb(28, 10, 109);
-
-  /* background-color: #fff; */
-
   border-radius: 5px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
@@ -43,6 +41,10 @@ input {
   outline: none;
 }
 
+input:focus {
+  border: 2px solid red;
+}
+
 .form-inputs {
   padding: 1rem;
   font-size: 1.5rem;
@@ -55,9 +57,12 @@ form .label {
 
 button {
   font-weight: 600;
+  width: 40%;
   border: 2px solid black;
   border-radius: 5px;
   padding: 0.5rem;
+  margin: 2rem;
+  align-self: center;
   outline: none;
 }
 
@@ -71,4 +76,14 @@ button:hover {
 footer h2 {
   text-align: center;
   margin: 1rem;
+}
+
+/* ********** MEDIA QUERY ********** */
+
+@media (max-width: 550px) {
+  .form-container {
+    margin: 2rem auto;
+    width: 350px;
+    padding: 1em;
+  }
 }

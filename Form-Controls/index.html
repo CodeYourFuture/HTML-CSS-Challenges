@@ -13,9 +13,45 @@
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
+  <form action="" method="GET">
+    <!-- 
+      **Labels are needed**
+      1.Name -- Minlength  required
+      2.Email -- @  required
+      3.color option   required
+      4.Delivery Date -- date-- min/max required
+    -->
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
+    <label for="FName">First Name</label>
+    <input type="text" id="FName" name="First Name" minlength="2" maxlength="15" required>
+    <label for="LName">Last Name</label>
+    <input type="text" id="LName" name="Last Name" minlength="2" maxlength="15" required>
+
+    <label for="Email">Email</label>
+    <input type="email" id="Email" required>
+
+    <fieldset>
+      <legend> Choose your Favorite Color</legend>
+     
+        <label for="Green">Moslty Green <br/></label>
+        <input  type="color" id="yellow" value="yellow" name="Green" disabled>
+        <input  type="radio" id="Green" value="Green" name="Green">
+    
+      <br/>
+      <label for="lightblue"></label>
+      <input type="color" id="lightblue" name="lightblue" value="lightblue" disabled>
+      <input type="radio" id="lightblue" name="lightblue" value="lightblue" >
+    
+
+
+
+    </fieldset>
+
+
+    <button type="submit">Check the Customer</button>
+
+
   </form>
 
   </main>

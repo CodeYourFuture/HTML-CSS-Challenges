@@ -1,7 +1,16 @@
 * {
   font-family: sans-serif;
+  /* 1) space out text */
+  letter-spacing: 0.3px;
+  line-height: 1.3rem;
 }
 
+/* 1) remove purple border logo */
+#logo {
+  border: none;
+}
+
+/* 1) add white background */
 header {
   background-color: #211a1d;
   color: #ffffff;
@@ -39,7 +48,7 @@ h3,
 h4,
 h5 {
   /*Purple*/
-  color: #6320ee;
+  color: ##d1d1d1;
   margin-bottom: 1em;
 }
 
@@ -55,7 +64,9 @@ h3 {
   font-size: 150%;
 }
 
+/* 6) Increase button size */
 button {
+  font-size: 1.3rem;
   display: inline-block;
   border-radius: 3px;
   cursor: pointer;
@@ -64,6 +75,11 @@ button {
   background-color: #372772;
   border: 2px solid black;
   color: #fff;
+}
+
+/* 6) Change color when hovered/focus */
+button:hover {
+  background-color: #ff3f00;
 }
 
 footer {
@@ -85,17 +101,19 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  /* 9) Change bottom right to top right */
+  top: 20px;
   right: 20px;
-
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
 }
 
+/* 9) Added transition for badge */
 #badge:hover {
   background-color: yellow;
+  transition: 0.5s;
 }
 
 #badge p {
@@ -103,13 +121,18 @@ footer {
   font-size: 125%;
 }
 
+/* 2) Removed img vertical-align bottom from css */
 .image-container img {
   vertical-align: top;
-  border: 5px solid #747c92;
 }
 
-.image-container img:first-of-type {
-  vertical-align: bottom;
+/* 2) Give bear pics different coloured borders */
+.image-container img:nth-of-type(2) {
+  border: 5px solid yellow;
+}
+
+.image-container img:last-of-type {
+  border: 5px solid orange;
 }
 
 .tigers {
@@ -117,13 +140,25 @@ footer {
   color: #f0e100;
 }
 
-.giraffe {
-  background-color: #465775;
-  color: #56e39f;
+/* 3) Change contrast to tiger heading */
+.tigers h3 {
+  color: #f4743b;
 }
 
+/* 4) Change background and paragraph color */
+.giraffe {
+  background-color: #483c46;
+  color: #beee62;
+}
+
+/* 4) Change section title color */
 .giraffe h2 {
-  color: #ef6f6c;
+  color: #f4743b;
+}
+
+/* 4) Increase font size of first paragraph */
+.giraffe p:first-of-type {
+  font-size: 1.2rem;
 }
 
 .card {
@@ -145,6 +180,16 @@ footer {
   font-weight: bold;
 }
 
+/* 5) center the news heading */
+.news h2 {
+  text-align: center;
+}
+
+/* add extra card and flex containers */
+.card-container {
+  display: flex;
+}
+
 .card time {
   opacity: 0.5;
   display: inline-block;
@@ -162,10 +207,12 @@ footer {
   padding: 100px 5%;
 }
 
+/* 6) Round corners to container */
 .education-container {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  border-radius: 5px;
 }
 
 .education-container h3,
@@ -175,9 +222,12 @@ footer {
 
 /*Membership*/
 
+/* 7) Change max width and margin */
 .membership {
   text-align: center;
   background-color: #fffffc;
+  max-width: 700px;
+  margin: auto;
 }
 
 .membership h2 {
@@ -190,6 +240,7 @@ footer {
 
 /*Programs*/
 
-.programs .card {
-  display: block;
+/* 8) Stack cards horizontally */
+.programmes-container {
+  display: flex;
 }

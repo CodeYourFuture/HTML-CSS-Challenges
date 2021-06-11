@@ -1,28 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <form>
+        <!-- write your html here-->
+        <main class="form-container">
+          <form>
+            <section class="form-inputs">
+            <h1 id="title-section">Form Info</h1>
+            <p id="description">Please take a moment to fill in form:</p>
+          </section>
+          <section class="form-inputs"></div>
+            <label for="name">Name:</label>
+            <input type="name" id="name" name="user_name" minlength="2" maxlength="18"  required>
+          </section>
+          <section class="form-inputs"></div>
+            <label for="mail">E-mail:</label>
+            <input type="email" id="mail" name="user_email" required />
+          </section>
+          <section class="form-inputs">
+            <label for="cars">Choose a colour:</label>
+              <select id="colours" name="colours">
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+                <option value="Green">Green</option>
+              </select>
+          </section>
+          <section class="form-inputs">
+            <label for="start">Delivery date:</label>
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+      <input type="date" id="start" name="trip-start"
+       value="2021-06-10"
+       min="2021-06-10" max="2021-06-24">
+          </section>
+          <button>Submit</button>
+          </form>
+        </main>
+        <!-- try writing out the requirements first-->
+        <!-- 
+        1. What is the customer's name? I must collect this data, and validate
+        it. But what is a valid name? I must decide something. 
 
+        2. What is the customer's email? I must make sure the email is valid. Email addresses
+        have a consistent pattern.
+        
+        3. What colour should this t-shirt be? I must give three options. How will I make sure they don't pick other colours?
+
+        4. When do they want the t-shirt to be delivered? I must collect a date
+        and make sure that date is in the next four weeks. How will I do this?
+        How will I make sure there are no mistakes about the date? -->
+      </form>
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <h2>By Terry Calderbank</h2>
+    </footer>
+  </body>
 </html>

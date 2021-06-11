@@ -1,0 +1,265 @@
+:root {
+  --standard-gap-Y: 15vh;
+  --standard-gap-X: 10vw;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  color: rgb(0, 0, 0);
+  background-color: #f7f5f1;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  border-bottom: 1px solid #8e8d8a9c;
+  background-color: #faf0e2;
+  width: 100%;
+  height: 150px;
+  z-index: 1;
+}
+
+header img {
+  max-height: 100px;
+  padding-top: 25px;
+}
+
+nav {
+  text-align: end;
+}
+
+.hidden_nav {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  position: absolute;
+  left: 0;
+  display: none;
+  z-index: -1;
+}
+
+.header_label {
+  display: none;
+}
+
+#toggle {
+  display: none;
+}
+
+.pre_main_nav_hidden {
+  display: none;
+}
+
+.header_right p {
+  display: flex;
+  text-align: end;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 0.8rem;
+  line-height: 1.7rem;
+  padding-left: 10vw;
+  padding-right: 5vw;
+  color: #bd1206;
+}
+
+main {
+  box-sizing: content-box;
+  padding-top: 200px;
+  padding-left: var(--standard-gap-X);
+  padding-right: var(--standard-gap-X);
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+main h1 {
+  color: #bd1206;
+}
+
+main h1,
+p {
+  text-align: left;
+}
+
+.large_img_hidden {
+  display: none;
+}
+/*------------------------------------------- Form Starts Here .................................................*/
+
+.form_wrapper {
+  background-color: #faf0e2;
+  border: 2px solid #8e8d8a;
+  width: 80vw;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  box-shadow: 1.5vw 1.3vh #e9807480;
+  padding-left: 2vw;
+}
+
+.form_wrapper h2 {
+  text-align: left;
+  color: black;
+  font-weight: 600;
+  /*padding-left: 15%;*/
+}
+
+.form_element {
+  display: flex;
+  flex-direction: column;
+  width: 55vw;
+
+  /*padding-left: 15%;*/
+  padding-top: 2vh;
+}
+
+.form_element input,
+select {
+  display: block;
+  width: 100%;
+  padding-left: 1vw;
+  height: 60px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  border: 1px solid black;
+  margin-bottom: 1.25rem;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  background-color: #f3b0a998;
+  color: rgb(0, 0, 0);
+}
+
+input:focus {
+  background-color: #8e8d8a;
+  color: white;
+  border: 3px solid #f3b0a998;
+}
+
+.form_element label {
+  display: none;
+}
+
+#visible_labels {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #bd1206;
+  padding-bottom: 1vh;
+}
+
+.form_element .submit_button {
+  width: 40%;
+  min-width: 100px;
+  background-color: #e85a4f;
+  margin-top: 2vh;
+}
+
+.submit_button:hover {
+  /* this may be wrong sytax */
+  transform: scale(1.3);
+  transition: transform 0.4s;
+  cursor: pointer;
+  color: #e85a4f;
+  background-color: #8e8d8a86;
+  border: #e85a4f 2px solid;
+}
+
+/*------------------------------------------- Form Ends Here .................................................*/
+
+main img {
+  width: 75vw;
+  max-width: 400px;
+  padding-top: var(--standard-gap-Y);
+}
+
+aside img {
+  width: 35vw;
+  max-width: 150px;
+}
+
+aside {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 2;
+  gap: 30px;
+  box-sizing: content-box;
+  justify-content: center;
+  padding-top: 250px;
+  padding-left: var(--standard-gap-X);
+  padding-right: var(--standard-gap-X);
+  padding-top: var(--standard-gap-Y);
+}
+
+footer {
+  margin-top: var(--standard-gap-Y);
+  background-color: #faf0e2;
+  border-top: 1px solid #8e8d8a;
+  display: grid;
+  padding-bottom: 3vh;
+}
+
+.short_contact {
+  display: none;
+}
+
+.long_contact {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 1.5rem;
+  font-size: 1.4rem;
+}
+
+.long_contact span {
+  color: #bd1206;
+  font-weight: bolder;
+  padding-right: 1vw;
+}
+
+footer p {
+  line-height: 0.5em;
+  padding-left: 2vw;
+}
+
+footer h3 {
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  .header_label {
+    display: block;
+    cursor: pointer;
+    font-size: 40px;
+    padding-right: 5vw;
+    padding-top: 20px;
+  }
+
+  .hidden_nav {
+    display: none;
+  }
+
+  .nav-a {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid #bd1206;
+    background-color: #757572;
+    color: white;
+    font-size: 2rem;
+    padding-top: 2vh;
+    padding-bottom: 3vh;
+  }
+
+  #toggle:checked + .hidden_nav {
+    display: block;
+    padding-top: 75px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 500px;
+  }
+}

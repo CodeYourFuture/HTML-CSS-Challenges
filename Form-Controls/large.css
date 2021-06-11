@@ -1,0 +1,217 @@
+:root {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+body {
+  font-size: 1rem;
+}
+
+.header_right {
+  width: 70%;
+  padding-right: 5vw;
+  display: grid;
+  margin-top: 0;
+  font-style: italic;
+  font-size: 1em;
+  justify-items: end;
+  align-items: center;
+}
+
+.header_right p {
+  font-size: 2rem;
+}
+
+.nav_element_main_nav {
+  color: white;
+  width: 100vw;
+  justify-content: center;
+
+  height: 30vh;
+  align-items: center;
+  display: flex;
+}
+
+.pre_main_nav_hidden {
+  display: flex;
+  flex-grow: 1;
+  position: absolute;
+  margin-top: calc(150px + 10vh);
+  width: 90vw;
+  margin-left: 2vw;
+  height: 10vh;
+  align-content: flex-end;
+  justify-content: space-around;
+}
+
+.nav-b.nav-b.is-main {
+  display: flex;
+  color: black;
+  background-color: #e98074;
+  font-weight: 600;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+  height: 5vw;
+  min-height: 70px;
+  width: 17vw;
+  border: 2px solid #8e8d8a9c;
+  align-content: center;
+  justify-content: center;
+  padding-top: 8%;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.nav-b.completed {
+  animation: blink 1s linear 0s 1 alternate;
+}
+
+@keyframes blink {
+  0% {
+    color: #fff;
+    text-shadow: 0 0 1rem #fff;
+  }
+}
+
+.nav-b.is-main:hover {
+  /* this may be wrong sytax */
+  transform: scale(1.3);
+  transition: transform 0.4s;
+  cursor: pointer;
+  color: #e85a4f;
+  background-color: #8e8d8a86;
+  border: #e85a4f 2px solid;
+}
+
+/*------------------------ Main start ---------------------------- */
+
+main {
+  display: auto;
+  padding-top: 0px;
+}
+
+.main_heading {
+  display: flex;
+  margin: 0px;
+  font-size: 1.6rem;
+  line-height: 2em;
+  padding-top: 5vh;
+}
+
+main img {
+  padding-top: 0;
+  width: 20vw;
+  min-width: 300px;
+  max-width: 350px;
+  height: 100%;
+  max-height: 350px;
+}
+
+.main_img {
+  display: none;
+}
+
+.large_img_hidden {
+  display: flex;
+  padding-right: 8vw;
+  padding-top: 18vh;
+  padding-bottom: 15vh;
+}
+
+.main_heading_text_container h1 {
+  display: grid;
+  text-align: end;
+  justify-content: end;
+  padding-top: 10vh;
+}
+
+.main_heading_text_container p {
+  display: grid;
+  text-align: end;
+  justify-content: end;
+}
+
+.form_wrapper {
+  display: grid;
+  font-size: 1.8rem;
+  padding-top: 5vh;
+}
+
+.form_element input,
+select {
+  font-size: 1.5rem;
+  border: 1.5px black solid;
+}
+
+#visible_labels {
+  font-size: 1.7rem;
+}
+
+/*
+.main_img {
+  display: grid;
+  flex: 0 0 30%; /* I use this flex to set size as 30vw and then use flex in other div and set to 1 for remaining width */
+/* flex-shrink: 0;
+  padding-top: 0px;
+  padding-right: 5vw;
+  max-height: 390px;
+  align-self: center;
+  justify-self: center;
+  /*contain:content;*/
+/*display: none;
+}
+*/
+
+/* -------------------------- Main End ----------------------------- */
+
+aside {
+  gap: 5vw;
+  justify-content: space-between;
+}
+
+aside img {
+  width: 15vw;
+  max-width: 250px;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2rem;
+}
+
+.short_contact_wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.short_contact {
+  display: flex;
+  color: white;
+  font-weight: bold;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  padding-right: 2vw;
+  background-color: #7c7b79;
+  border: 1px solid #e85a4f;
+  border-radius: 0.3rem;
+}
+
+.long_contact {
+  display: none;
+}
+
+footer h3 {
+  order: 2;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+  justify-content: center;
+}
+
+footer p {
+  order: 1;
+  flex-direction: column;
+}

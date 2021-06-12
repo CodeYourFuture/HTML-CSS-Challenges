@@ -2,6 +2,15 @@
   font-family: sans-serif;
 }
 
+body {
+	letter-spacing: 0.3px;
+}
+
+p {
+
+	line-height: 30px;
+}
+
 header {
   background-color: #211a1d;
   color: #ffffff;

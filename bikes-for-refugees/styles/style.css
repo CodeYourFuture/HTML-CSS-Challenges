@@ -1,0 +1,204 @@
+/**
+ * Base styles to use at the start of the class
+ *
+ * Module: HTML/CSS
+ * Lesson: 1,2
+ * Class: Scotland 2017
+ */
+
+
+ html,
+ body {
+   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+   font-size: 20px;
+   background-color: rgb(247, 249, 252);
+ }
+
+ 
+ /* Navigation */
+ 
+ .navbar-brand > img {
+   max-height: 40px;
+   width: auto;
+ }
+ 
+ .navbar-light .navbar-toggler {
+   border: 0;
+   right: 0;
+ }
+ 
+ .navbar-light .navbar-nav .nav-link {
+   color: #292b2c;
+   font-weight: 600;
+   text-transform: uppercase;
+   /* Challenge: can you make the navigation links orange on hover? */
+ }
+  .navbar-light .navbar-nav .nav-link:hover{
+   color: orange!important;
+ }
+ 
+ 
+ /* Buttons */ 
+ button {
+   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+   border-radius:10px;
+ }
+ 
+ .Donat_bike{
+   background-color:#c05326;
+ }
+ 
+ .Volunteer-button{
+   background-color:white;
+   color:#c05326;
+     border-color:black;
+   border-width:2px;
+   border-style:solid;
+ }
+ 
+ button:hover{
+   background-color:#ff5326;
+   color:black;
+ }
+ /* Alert */
+ 
+ .alert {
+   position: relative;
+   margin-bottom: 3em;
+   padding-top: 1.5em;
+   padding-bottom: 1.5em;
+   border: 1px solid #dccdc6;
+   border-radius: 0;
+   font-size: 0.85rem;
+   line-height: 1.3em;
+   background: transparent;
+   color: #292b2c;
+ }
+ 
+ .alert:before {
+   content: "";
+   position: absolute;
+   left: -1px;
+   top: 0;
+   height: 100%;
+   width: 1px;
+   background: #c05326;
+ }
+ 
+ /* Jumbotron */
+
+ .jumbotron {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background:url("../images/header-bike.jpg");
+  border-radius: 0;
+  color: #fff;
+}
+ 
+ /* Headings */
+ 
+ .heading-underline {
+   position: relative;
+   margin-bottom: 2em;
+   padding-bottom: 0.5em;
+   border-bottom: 1px solid #dccdc6;
+   font-size: 1rem;
+   font-weight: 600;
+   text-transform: uppercase;
+ }
+ 
+ .heading-underline:before {
+   content: "";
+   position: absolute;
+   bottom: -1px;
+   left: 0;
+   width: 25%;
+   height: 1px;
+   max-width: 100px;
+   background: #c05326;
+ }
+ 
+ /* Article */
+ .flex-container {
+   display: flex;
+   justify-content: space-between;
+ }
+ .sidebar-flex{
+     display: flex;
+     flex-direction: column;
+     align-content: space-between;
+ }
+ .article {
+     font-size: medium;
+   border: 2px solid #ccc;
+   display: flex;
+   justify-content: space-between;
+   align-content: space-between;
+   height: 150px;
+    padding: 10px;
+    margin: 10px;
+ }
+ 
+ 
+ .article__image {
+   object-fit: contain;
+   width: 5rem;
+ }
+ 
+ .article__title {
+   padding-top:20px;
+   margin-bottom: 0.5em;
+   font-size: 1rem;
+   font-weight: 700;
+   
+ }
+ 
+ .article__read-more a {
+   font-size: 0.85em;
+   font-weight: 700;
+   text-decoration: uppercase;
+ }
+ 
+ .article__read-more a:hover,
+ .article__read-more a:focus {
+   text-decoration: none;
+ }
+ 
+ .article__read-more .fa {
+   margin-right: 0.5em;
+   color: #c05326;
+ }
+ 
+ .article__read-more:last-child {
+   margin-bottom: 1;
+ }
+ 
+ /* Footer */
+ 
+ .footer {
+   margin-top: 2em;
+ }
+ 
+ .footer p {
+   border-top: 1px solid #dccdc6;
+   padding-top: 2em;
+   padding-bottom: 2em;
+ }
+ 
+ /* Media queries */
+ 
+ @media screen and (min-width: 992px) {
+   .navbar-brand > img {
+     max-height: 80px;
+   }
+ }
+ 
+ /*  */
+ @media screen and (min-width: 320px) {
+   p,h1,h3{
+     font-size:0.5rem;
+   }
+   
+ }
+ 

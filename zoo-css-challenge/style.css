@@ -5,7 +5,7 @@
 header {
   background-color: #211a1d;
   color: #ffffff;
-  width: 100%;
+  width: 98%;
   padding: 20px;
 }
 
@@ -25,12 +25,14 @@ header ul li {
 }
 
 section {
-  padding: 5%;
+  padding: 15%;
   background-color: #f8f0fb;
 }
 
 img {
   border: 5px solid #8075ff;
+  width: auto;
+  height: auto;
 }
 
 h1,
@@ -64,18 +66,41 @@ button {
   background-color: #372772;
   border: 2px solid black;
   color: #fff;
+  font-size: 1.25em;
+}
+
+button:hover {
+  background-color: #005757;
 }
 
 footer {
   background-color: #211a1d;
   color: #ffffff;
-  width: 100%;
+  width: 98%;
   padding: 20px;
   display: flex;
   justify-content: space-between;
 }
 
+/*Intro Styles*/
 .introduction {
+  background-color: #fff;
+  padding: 10px;
+  line-height: 2em;
+  word-spacing: 0.05em;
+}
+
+.introduction h1 {
+  text-align: center;
+}
+
+.introduction p {
+  margin: 0 auto;
+  width: 90%;
+}
+
+#logo {
+  border: none;
 }
 
 #badge {
@@ -85,7 +110,7 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 25px;
   right: 20px;
 
   display: flex;
@@ -96,6 +121,7 @@ footer {
 
 #badge:hover {
   background-color: yellow;
+  transition: 0.8s;
 }
 
 #badge p {
@@ -103,30 +129,78 @@ footer {
   font-size: 125%;
 }
 
+/*Bears Section Styles*/
 .image-container img {
   vertical-align: top;
   border: 5px solid #747c92;
+  margin-bottom: 0.5em;
 }
 
-.image-container img:first-of-type {
-  vertical-align: bottom;
+.bears img:first-child {
+  border: 5px solid #284F77;
 }
 
+.bears img:last-child {
+  border: 5px solid #005757;
+}
+
+/*Tigers Section Style*/
 .tigers {
   background-color: #0b3c49;
-  color: #f0e100;
+  color: #FFC78F;
 }
 
+.tigers h2 {
+  color: #DEBDFF;
+}
+
+.tigers ul li {
+  line-height: 1.75em;
+}
+
+/*Giraffes Section Style*/
 .giraffe {
-  background-color: #465775;
-  color: #56e39f;
+  background-color: #483C46;
+  color: #BEEE62;
 }
 
-.giraffe h2 {
-  color: #ef6f6c;
+.giraffe h2, h3 {
+  color: #F4743B;
+}
+
+.giraffe p:first-of-type {
+  font-size: 1.25em;
+}
+
+/*Elephants Section Style*/
+.elephants {
+  background-color: #ffcc99;
+  color: #004242;
+  line-height: 1.25em;
+}
+
+.elephants h2, h3{
+  color: #751d00;
+}
+
+.elephants img {
+  margin-left: 25%;
+  margin-top: 10%;
+  width: auto;
+  height: auto;
+}
+
+/*Card Styles*/
+.news-container{
+  display: flex;
+}
+
+.news h2 {
+  text-align: center;
 }
 
 .card {
+
   display: inline-block;
   background-color: white;
   padding: 20px;
@@ -134,6 +208,7 @@ footer {
   width: 30%;
   border: 1px solid black;
   border-radius: 10px;
+  flex-wrap: nowrap;
 }
 
 .card h4 {
@@ -166,6 +241,7 @@ footer {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  border-radius: 2%;
 }
 
 .education-container h3,
@@ -178,6 +254,8 @@ footer {
 .membership {
   text-align: center;
   background-color: #fffffc;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .membership h2 {
@@ -189,7 +267,27 @@ footer {
 }
 
 /*Programs*/
+.programs-container {
+  display: flex;
+}
+
+.programs h2 {
+  text-align: center;
+}
 
 .programs .card {
-  display: block;
+  flex-wrap: nowrap;
+}
+
+@media only screen and (max-width: 300px) {
+  .bear-img {
+    max-width: 200px;
+    height: auto;
+  }
+
+  .elephant-img {
+    max-width: 150px;
+    height: auto;
+    float: left;
+  }
 }

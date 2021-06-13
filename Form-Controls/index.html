@@ -12,16 +12,67 @@
   <header>
     <h1>Product Pick</h1>
   </header>
+  &nbsp;
+
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+    <form action="" method="GET">
+      <section class="Customer-detials">
+        <fieldset>
+          <legend>Customer Detials</legend>
+            <label for="FName">First Name</label>
+            <input type="text" id="FName" name="First Name" minlength="2" maxlength="15" required>
+            <br/> 
+            <label for="LName">Last Name</label>
+            <input type="text" id="LName" name="Last Name" minlength="2" maxlength="15" required>
+            <br/>
+            <label for="Email">Email</label>
+            <input type="email" id="Email" required>
+        </fieldset>
+      </section>
+
+        &nbsp;
+
+      <section class="Sizes-Section">    
+        <fieldset>
+          <legend> T-shirt Size </legend>
+            <input type="radio" name="T-Size" id="Small">
+            <label for="Small">Small(S)</label>
+            <input type="radio" name="T-Size" id="Mediam">
+            <label for="Mediam">Mediam(M)</label>
+            <input type="radio" name="T-Size" id="Large">
+            <label for="Large">Large(L)</label>
+        </fieldset>
+      </section>
+
+        &nbsp;
+
+      <section class="Colors-Section">
+        <fieldset>
+          <legend> Choose your Favorite Color</legend>
+            <label for="Green">Moslty Green </label><br/>
+            <input  type="radio" id="Green" value="Green" name="colors" required>
+                <br/>
+            <label for="lightblue">lightblue</label><br/>
+            <input type="radio" id="lightblue" name="colors" value="lightblue" required >
+                <br/>
+            <label for="Black">lightblue</label><br/>
+            <input type="radio" id="Black" name="colors" value="Black" required >
+        </fieldset>
+        &nbsp;
+      </section>
+
+      &nbsp;
+
+        <button type="submit">Check the Customer</button>
+    </form>
 
   </main>
+
+  &nbsp;
+
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Khadar M Dagal</h2>
   </footer>
 </body>
 

@@ -2,6 +2,10 @@
   font-family: sans-serif;
 }
 
+#logo{
+  width: 150px;
+  height: auto;
+}
 header {
   background-color: #211a1d;
   color: #ffffff;
@@ -9,26 +13,32 @@ header {
   padding: 20px;
 }
 
+
+.main{
+  width: 100%;
+  height: 400px;
+  background-image: url(https://media.istockphoto.com/vectors/wildlife-african-animals-background-vector-id584247564?k=6&m=584247564&s=612x612&w=0&h=hTXCJiPEwzHB4HVYJF0cMz_w7nUQG47fd8E_n1Amokc=);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 1px solid red;
+}
+
 nav {
   display: inline-block;
   width: 100%;
 }
-
 header ul {
   margin: 20px 0 0 0;
   padding: 0;
 }
-
 header ul li {
   display: inline-block;
   margin-right: 10px;
 }
-
 section {
   padding: 5%;
   background-color: #f8f0fb;
 }
-
 img {
   border: 5px solid #8075ff;
 }
@@ -42,42 +52,31 @@ h5 {
   color: #6320ee;
   margin-bottom: 1em;
 }
-
 h1 {
   font-size: 250%;
 }
-
 h2 {
   font-size: 175%;
 }
-
 h3 {
   font-size: 150%;
 }
 
-button {
-  display: inline-block;
-  border-radius: 3px;
-  cursor: pointer;
-  padding: 10px 20px;
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
-  background-color: #372772;
-  border: 2px solid black;
-  color: #fff;
-}
-
-footer {
-  background-color: #211a1d;
-  color: #ffffff;
-  width: 100%;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
+#logo{
+  border-style: none;
 }
 
 .introduction {
+  background-color: white;
+  
+  border-style: none;
+}
+.introduction p{
+  line-height: 5em;
+  position: relative;
 }
 
+/* Badge Icon */
 #badge {
   height: 120px;
   width: 120px;
@@ -85,13 +84,14 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
-
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
+  opacity: 0.8;
+  transition: 0.3s;
 }
 
 #badge:hover {
@@ -103,27 +103,91 @@ footer {
   font-size: 125%;
 }
 
+/* IMG container */
 .image-container img {
   vertical-align: top;
-  border: 5px solid #747c92;
+  border: 2px ;
+  border-style: solid ;
+  height: 300px;
+}
+.image-container img:first-of-type {
+  vertical-align: top;
 }
 
-.image-container img:first-of-type {
-  vertical-align: bottom;
+/*
+.firstbear{
+  border: .2rem solid rgb(10, 119, 95)
+  padding: 1px;
 }
+.secondbear{
+  border: 10px solid;
+  padding: 1px;}
+.thirdbear{
+  border: 10px solid;
+  padding: 1px;}*/
 
 .tigers {
   background-color: #0b3c49;
   color: #f0e100;
 }
-
+.tigers h2 {
+  color: #ffffff;
+}
+/*
+.tigers h3 {
+  color: #ce92ff;
+}
+*/
 .giraffe {
-  background-color: #465775;
+  background-color: #483C46;
   color: #56e39f;
 }
 
 .giraffe h2 {
-  color: #ef6f6c;
+  color:  #F4743B;
+}
+.giraffe h3 {
+    color:  #F4743B;
+}
+.giraffe p{
+  color:  #62eeee;
+}
+.giraffe p:first-of-type {
+  font-size: larger;
+}
+
+/* Spider Section */
+
+.spider{
+  display: inline-block;
+  background-color: #23122c;
+  color: #fd8f11;
+}
+.spider h2{
+  color:  #F4743B;
+}
+.spider h3{
+  color:  #F4743B;
+}
+.spider p{
+  color:  #f1f8e5;
+}
+.spiderimg{
+  height: 20%;
+  width: 20%;
+  float: right;
+  position: relative;
+  border-width: 0;
+}
+/* News Section */
+
+.news h2{
+  text-align: center;
+}
+.news-box{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .card {
@@ -172,7 +236,17 @@ footer {
 .education-container p {
   margin-bottom: 1em;
 }
-
+.education-container button{
+  font-size: medium;
+  border-radius: 1rem;
+}
+.education-container button:hover{
+ color: rgb(227, 230, 95);
+}
+.education-container button:focus{
+  color:red;
+  font-size: large;
+}
 /*Membership*/
 
 .membership {
@@ -183,13 +257,228 @@ footer {
 .membership h2 {
   color: #ff3f00;
 }
+.membership p {
+  color: #000000;
+  width: 700px;
+  margin: auto;
 
+}
 .membership strong {
   color: #ff7f11;
 }
-
+.membership button{
+  margin: 1rem;
+}
 /*Programs*/
 
 .programs .card {
   display: block;
 }
+.programs .pro-box{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  text-align: center;
+}
+
+/* Button 2019 */
+button {
+  display: inline-block;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 10px 20px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+  background-color: #372772;
+  border: 2px solid black;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background-color: #211a1d;
+  color: #ffffff;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/**
+ * Base styles to use at the start of the class
+ *
+ * Module: HTML/CSS
+ * Lesson: 1,2
+ * Class: Scotland 2017
+ */
+
+ html,
+
+ body {
+   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+ }
+ 
+ .my-4{
+   background-color: #000000;
+ }
+ .donate-key{
+   color: white;
+   background-color: #c05326;
+   padding: .7rem;
+ 
+ }
+ .volunteer-key{
+   color: #c05326;
+   padding: .7rem;
+ }
+ button {
+   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+   border: 0;
+   border-radius: 5px;
+ }
+ button:hover{
+   background-color: #934423;
+ }
+ button:focus{
+   background-color: #934423;
+ }
+ .volunteer-key:hover{
+   color: white;
+ }
+ /* Navigation */
+ 
+ .navbar-brand > img {
+   max-height: 40px;
+   width: auto;
+ }
+ 
+ .navbar-light .navbar-toggler {
+   border: 0;
+   right: 0;
+ }
+ 
+ .navbar-light .navbar-nav .nav-link {
+   color: #292b2c;
+   font-weight: 600;
+   text-transform: uppercase;
+   padding: 20px;
+   /* Challenge: can you make the navigation links orange on hover? */
+ }
+ 
+ /* Buttons */
+ 
+ /* INSERT BUTTON STYLES HERE */
+ 
+ /* Alert */
+ 
+ .alert {
+   position: relative;
+   margin-bottom: 3em;
+   padding-top: 1.5em;
+   padding-bottom: 1.5em;
+   border: 1px solid #dccdc6;
+   border-radius: 0;
+   font-size: 0.85rem;
+   line-height: 1.3em;
+   background: transparent;
+   color: #292b2c;
+ }
+ 
+ .alert:before {
+   content: "";
+   position: absolute;
+   left: -1px;
+   top: 0;
+   height: 100%;
+   width: 1px;
+   background: #c05326;
+ }
+ 
+ /* Jumbotron */
+ 
+ .jumbotron {
+   background-image: url("../images/header-bike.jpg");
+   border-radius: 0;
+   color: #fff;
+ }
+ 
+ /* Headings */
+ 
+ .heading-underline {
+   position: relative;
+   margin-bottom: 2em;
+   padding-bottom: 0.5em;
+   border-bottom: 1px solid #dccdc6;
+   font-size: 1rem;
+   font-weight: 600;
+   text-transform: uppercase;
+ }
+ 
+ .heading-underline:before {
+   content: "";
+   position: absolute;
+   bottom: -1px;
+   left: 0;
+   width: 25%;
+   height: 1px;
+   max-width: 100px;
+   background: #c05326;
+ }
+ 
+ /* Article */
+ 
+ .article {
+   margin-bottom: 2em;
+ }
+ 
+ .article__image {
+   object-fit: contain;
+   width: 5rem;
+ }
+ 
+ .article__title {
+   margin-bottom: 0.5em;
+   font-size: 1rem;
+   font-weight: 700;
+ }
+ 
+ .article__read-more a {
+   font-size: 0.85em;
+   font-weight: 700;
+   text-decoration: uppercase;
+ }
+ 
+ .article__read-more a:hover,
+ .article__read-more a:focus {
+   text-decoration: none;
+ }
+ 
+ .article__read-more .fa {
+   margin-right: 0.5em;
+   color: #c05326;
+ }
+ 
+ .article__read-more:last-child {
+   margin-bottom: 0;
+ }
+ 
+ /* Footer */
+ 
+ .footer {
+   margin-top: 2em;
+ }
+ 
+ .footer p {
+   border-top: 1px solid #dccdc6;
+   padding-top: 2em;
+   padding-bottom: 2em;
+ }
+ 
+ /* Media queries */
+ 
+ @media screen and (min-width: 992px) {
+   .navbar-brand > img {
+     max-height: 80px;
+   }
+ }
+ 

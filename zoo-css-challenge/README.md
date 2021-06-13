@@ -2,7 +2,7 @@
 
 You have been hired by a zoo to build a website.
 
-I’ve done the first part but it is full of mistakes. It’s your job to fix them. The client has sent over a list of alterations and recommendations that they want to fix the site with. 
+I’ve done the first part but it is full of mistakes. It’s your job to fix them. The client has sent over a list of alterations and recommendations that they want to fix the site with.
 
 You are encouraged to use Google to help you find the answers to these problems.
 
@@ -30,7 +30,7 @@ Change the heading of this section to ‘Tiger Facts’, remove the subheading, 
 
 ## 4) Giraffes
 
-Change the background colour to #483C46, the section titles to #F4743B, and the paragraph color to #BEEE62.
+Change the background colour to #483C46, the section titles to #f4743b, h3, and the paragraph color to #BEEE62.
 
 Make the first paragraph have a larger font size.
 

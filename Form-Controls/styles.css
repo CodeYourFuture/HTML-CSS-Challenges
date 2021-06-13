@@ -1,46 +1,30 @@
-body{
+body {
     background-color: rgb(238, 247, 242);
     width: 100%;
-}
-
+    }
 header {
     width: 50%;
     border: solid 1px green;
     border-radius: 5px;
     text-align: center;
-}
-
-legend{
+    }
+legend {
     background-color: lightgreen;
     border: solid 1px rgb(114, 114, 129);
     transform: rotate(-3deg);
-}
+    }
 form {
     width: 48%;
     border: solid 1px green;
     border-radius: 5px;
     padding: 10px;
-}
-
-input{
-    margin: 8px;
-}
-
+    }
 button {
     border-radius: 10px;
     background-color: rgb(233, 227, 230);
-}
-
-button:hover{
-    font-weight: bold;
-    background-color: rgb(160, 231, 166);
-    color: rgb(68, 11, 201);
-}
-
+    }
 footer {
     width: 50%;
     border: solid 1px green;
     border-radius: 5px;
-}
-
-
+    }

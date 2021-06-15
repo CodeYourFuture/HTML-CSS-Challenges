@@ -141,7 +141,7 @@ footer {
   color: #ef6f6c;
 }
 
-p:first-of-type{
+.giraffe p:first-of-type{
   font-size:1.2rem;
 }
 
@@ -231,7 +231,7 @@ p:first-of-type{
 }
 .membership p {
   max-width:700px;
-  margin: 30px 280px 30px 280px;
+  margin: auto;
 }
 
 /*Programs*/

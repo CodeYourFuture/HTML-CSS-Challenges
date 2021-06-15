@@ -205,7 +205,7 @@ section {
 .giraffe p {
   color: #BEEE62;
 }
-.giraffe .first {
+.giraffe :nth-child(2) {
   font-size: 20px;
 }
 

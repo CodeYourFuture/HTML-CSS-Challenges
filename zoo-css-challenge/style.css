@@ -26,12 +26,14 @@ h2 {
   font-size: 175%;
 }
 
-h3 {
+body h3 {
   font-size: 150%;
+  color: #6331c7;
 }
 p {
   word-spacing: 2px;
 }
+
 
 /*header*/
 
@@ -166,11 +168,25 @@ section {
 
 .rhino {
   background-color: rgba(160, 189, 160);
+  background-image: url("./img/rhino.jpg");
+  background-repeat: no-repeat;
+  background-size: 74rem 50rem;
 }
 .rhino p,
 .rhino li {
-  color: #534b02;
+  color: #0e0c01;
   font-weight: 600;
+}
+.rhino p {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 1rem;
+  border-radius: 10px;
+}
+.rhino ol {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 40%;
+  padding: 1.5rem;
+  border-radius: 10px;
 }
 
 /*giraffe*/

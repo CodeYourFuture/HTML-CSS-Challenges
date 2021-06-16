@@ -125,6 +125,7 @@ footer {
   background-color: #0b3c49;
   color: #f0e100;
 }
+
 .tigers h2 {
   color: #f8f0fb;
 }
@@ -141,10 +142,22 @@ footer {
 .giraffe h2 {
   color: #ef6f6c;
 }
+
 .giraffe h3{
   color: #F4743B;
 }
+
+.sloth {
+  background-color: #0b3c49;
+  color: #f0e100;
+}
+
+.sloth h2 {
+  color: #f8f0fb; 
+}
+
 /*News*/
+
  .news h2 {
    text-align: center;
  }

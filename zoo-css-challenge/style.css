@@ -148,7 +148,7 @@ footer {
  .news h2 {
    text-align: center;
  }
- 
+
 .card {
   display: inline-block;
   background-color: white;
@@ -189,12 +189,21 @@ footer {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  border-radius: 8px;
 }
 
 .education-container h3,
 .education-container p {
   margin-bottom: 1em;
 }
+
+ .education-container button {
+  font-size: 120%;
+ }
+ 
+ .education-container button:focus, button:hover {
+  background-color: #ff5252;
+ }
 
 /*Membership*/
 

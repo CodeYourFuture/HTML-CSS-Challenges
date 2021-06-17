@@ -6,6 +6,7 @@
   <title>My form exercise</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,9 +14,39 @@
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
+  <form action="">
+    <label for="name" >
+      Name
+    </label>
+    <input type="text" name="name" id="name" minlength="2" required>
+    <label for="email" >Email</label>
+    <input type="email" name="email" id="email"  placeholder="please enter your email" required >
+    <fieldset>
+      <legend>
+        Colors
+      </legend>
+      <label for="green" >
+        Green
+      </label>
+      <input type="radio" name="colors" id="green" required>
+      <label for="red" >
+        Red
+      </label>
+      <input type="radio" name="colors" id="red">
+
+      <label for="blue" >
+        Blue
+      </label>
+      <input type="radio" name="colors" id="blue">
+
+
+
+    </fieldset>
+    <label for="date">Date</label>
+    <input type="date" name="date" id="date" min="2021-06-16" max="2021-07-16" required >
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
+    <button type="submit"> submit</button>
   </form>
 
   </main>

@@ -29,9 +29,6 @@ section {
   background-color: #f8f0fb;
 }
 
-img {
-  border: 5px solid #8075ff;
-}
 
 h1,
 h2,
@@ -39,7 +36,7 @@ h3,
 h4,
 h5 {
   /*Purple*/
-  color: #6320ee;
+  color: #4F4F9C;
   margin-bottom: 1em;
 }
 
@@ -57,7 +54,9 @@ h3 {
 
 button {
   display: inline-block;
-  border-radius: 3px;
+  border-radius: 30px;
+  font-size: 30px;
+  height: 100PX;
   cursor: pointer;
   padding: 10px 20px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
@@ -65,6 +64,9 @@ button {
   border: 2px solid black;
   color: #fff;
 }
+button:hover{
+  background-color:rgb(79, 218, 243);
+  border-color: yellowgreen;}
 
 footer {
   background-color: #211a1d;
@@ -76,6 +78,8 @@ footer {
 }
 
 .introduction {
+  background-color: white;
+  line-height: 30px;
 }
 
 #badge {
@@ -85,7 +89,7 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 
   display: flex;
@@ -96,6 +100,7 @@ footer {
 
 #badge:hover {
   background-color: yellow;
+  transition: 2s;
 }
 
 #badge p {
@@ -103,14 +108,22 @@ footer {
   font-size: 125%;
 }
 
+.bears{
+  width: 100%;
+}
 .image-container img {
   vertical-align: top;
+  width: 30%;
   border: 5px solid #747c92;
+  flex-wrap: wrap;
+
 }
 
 .image-container img:first-of-type {
   vertical-align: bottom;
+  border-color: red;
 }
+
 
 .tigers {
   background-color: #0b3c49;
@@ -118,20 +131,25 @@ footer {
 }
 
 .giraffe {
-  background-color: #465775;
-  color: #56e39f;
+  background-color:#483c46;
+  color: #BEEE62;
 }
+.p-giraffe{font-size: 30px;
+background-color: transparent;}
+
 
 .giraffe h2 {
-  color: #ef6f6c;
+  color: #3d3a52;
 }
+
+.news{text-align: center;}
 
 .card {
   display: inline-block;
   background-color: white;
   padding: 20px;
   margin: 10px;
-  width: 30%;
+  width: 25%;
   border: 1px solid black;
   border-radius: 10px;
 }
@@ -147,7 +165,6 @@ footer {
 
 .card time {
   opacity: 0.5;
-  display: inline-block;
   margin-bottom: 10px;
 }
 
@@ -167,6 +184,7 @@ footer {
   padding: 50px;
   max-width: 400px;
 }
+
 
 .education-container h3,
 .education-container p {
@@ -190,6 +208,7 @@ footer {
 
 /*Programs*/
 
-.programs .card {
-  display: block;
+.programs {
+  text-align: center;
 }
+

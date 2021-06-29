@@ -1,0 +1,214 @@
+* {
+  font-family: sans-serif;
+}
+
+header {
+  background-color: #211a1d;
+  color: #ffffff;
+  width: 100%;
+  padding: 20px;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+header ul {
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+
+header ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+section {
+  padding: 5%;
+  background-color: #f8f0fb;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  /*Purple*/
+  color: #4F4F9C;
+  margin-bottom: 1em;
+}
+
+h1 {
+  font-size: 250%;
+}
+
+h2 {
+  font-size: 175%;
+}
+
+h3 {
+  font-size: 150%;
+}
+
+button {
+  display: inline-block;
+  border-radius: 30px;
+  font-size: 30px;
+  height: 100PX;
+  cursor: pointer;
+  padding: 10px 20px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+  background-color: #372772;
+  border: 2px solid black;
+  color: #fff;
+}
+button:hover{
+  background-color:rgb(79, 218, 243);
+  border-color: yellowgreen;}
+
+footer {
+  background-color: #211a1d;
+  color: #ffffff;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.introduction {
+  background-color: white;
+  line-height: 30px;
+}
+
+#badge {
+  height: 120px;
+  width: 120px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+#badge:hover {
+  background-color: yellow;
+  transition: 2s;
+}
+
+#badge p {
+  text-align: center;
+  font-size: 125%;
+}
+
+.bears{
+  width: 100%;
+}
+.image-container img {
+  vertical-align: top;
+  width: 30%;
+  border: 5px solid #747c92;
+  flex-wrap: wrap;
+
+}
+
+.image-container img:first-of-type {
+  vertical-align: bottom;
+  border-color: red;
+}
+
+
+.tigers {
+  background-color: #0b3c49;
+  color: #f0e100;
+}
+
+.giraffe {
+  background-color:#483c46;
+  color: #BEEE62;
+}
+.p-giraffe{font-size: 30px;
+background-color: transparent;}
+
+
+.giraffe h2 {
+  color: #3d3a52;
+}
+
+.news{text-align: center;}
+
+.card {
+  display: inline-block;
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  width: 25%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.card h4 {
+  margin-bottom: 1em;
+}
+
+.card a {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.card time {
+  opacity: 0.5;
+  margin-bottom: 10px;
+}
+
+/*Education*/
+
+.education {
+  height: 500px;
+  background-image: url("https://source.unsplash.com/1200x900/?tiger");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 5%;
+}
+
+.education-container {
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 50px;
+  max-width: 400px;
+}
+
+
+.education-container h3,
+.education-container p {
+  margin-bottom: 1em;
+}
+
+/*Membership*/
+
+.membership {
+  text-align: center;
+  background-color: #fffffc;
+}
+
+.membership h2 {
+  color: #ff3f00;
+}
+
+.membership strong {
+  color: #ff7f11;
+}
+
+/*Programs*/
+
+.programs {
+  text-align: center;
+}
+

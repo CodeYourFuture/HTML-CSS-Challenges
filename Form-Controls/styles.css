@@ -1,0 +1,81 @@
+/*Universal Styles*/
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  text-align: center;
+  border: 2px dashed #6600cc;
+}
+
+h2 {
+  text-align: center;
+}
+
+label {
+  font-size: 1.2em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  padding: 0.3em;
+  color: #6600cc;
+  background-color: #fdfcdc;
+  border-radius: 15%;
+}
+
+.btn:hover {
+  background-color: #fed9b7;
+}
+
+input:focus {
+  background-color: #cfe1b9;
+}
+
+input:invalid {
+  border: 1px red solid;
+}
+
+input:valid {
+  border:2px green solid;
+}
+/*Header Styles*/
+.banner-ctn {
+  display: flex;
+  justify-content: center;
+  background-color: #fdfcdc ;
+}
+
+/*Form Styles*/
+.user, .emails {
+  background-color: #dee2ff;
+  padding: 1em;
+}
+
+.inputs {
+  padding: 1em;
+}
+
+form {
+  background-color: #feeafa;
+}
+
+.dDate {
+  background-color: #cbc0d3;
+}
+
+@media screen and (min-width: 450px) {
+  .options {
+    display: flex;
+    justify-content: center;
+  }
+
+  .inputs {
+    display: flex;
+    justify-content: center;
+  }
+}

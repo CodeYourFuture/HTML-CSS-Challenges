@@ -46,6 +46,7 @@ h5 {
 
 h1 {
   font-size: 250%;
+  color: purple;
 }
 
 h2 {
@@ -97,7 +98,7 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 
   display: flex;
@@ -107,6 +108,7 @@ footer {
 }
 
 #badge:hover {
+  transition-duration: 0.8s;
   background-color: yellow;
 }
 
@@ -153,6 +155,7 @@ footer {
 
 .card h4 {
   margin-bottom: 1em;
+  color: #211a1d;
 }
 
 .card a {

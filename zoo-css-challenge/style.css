@@ -1,7 +1,13 @@
 * {
   font-family: sans-serif;
 }
+#logo{
+  border:none;
+}
+.introduction{
+ background: #ffffff; 
 
+}
 header {
   background-color: #211a1d;
   color: #ffffff;
@@ -39,10 +45,13 @@ h3,
 h4,
 h5 {
   /*Purple*/
-  color: #6320ee;
+  color: #113955;
   margin-bottom: 1em;
 }
-
+p{
+  line-height:1.5em ;
+  word-spacing:0.2em ;
+}
 h1 {
   font-size: 250%;
 }
@@ -54,7 +63,14 @@ h2 {
 h3 {
   font-size: 150%;
 }
-
+.news {
+  text-align: center;
+}
+.all-cards{
+  display:inline-flex;
+  flex-direction: row;
+  width: 100%;
+}
 button {
   display: inline-block;
   border-radius: 3px;
@@ -64,6 +80,10 @@ button {
   background-color: #372772;
   border: 2px solid black;
   color: #fff;
+  font-size: 1em ;
+}
+button:hover , button:focus{
+  color: #F4743B;
 }
 
 footer {
@@ -75,8 +95,6 @@ footer {
   justify-content: space-between;
 }
 
-.introduction {
-}
 
 #badge {
   height: 120px;
@@ -85,17 +103,20 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
+  transition:  background-color 2s;
+
 }
 
 #badge:hover {
   background-color: yellow;
+  
 }
 
 #badge p {
@@ -109,22 +130,30 @@ footer {
 }
 
 .image-container img:first-of-type {
-  vertical-align: bottom;
+  vertical-align: top;
 }
 
 .tigers {
-  background-color: #0b3c49;
-  color: #f0e100;
+  background-color: #A7D0DC;
+  color: #696420;
+  word-spacing: 0.2em;
 }
 
 .giraffe {
-  background-color: #465775;
+  background-color: #483C46;
   color: #56e39f;
 }
 
 .giraffe h2 {
-  color: #ef6f6c;
+  color:  #F4743B;
 }
+.giraffe h3 {
+  color:  #F4743B;
+}
+.giraffe p {
+  color:  #BEEE62;
+}
+
 
 .card {
   display: inline-block;
@@ -166,6 +195,7 @@ footer {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  border-radius:0.5em ;
 }
 
 .education-container h3,
@@ -187,9 +217,18 @@ footer {
 .membership strong {
   color: #ff7f11;
 }
+.membership p {
+  max-width: 700px;
+  margin: auto;
+
+}
 
 /*Programs*/
+.programs h2{
+  text-align: center;
+} 
 
 .programs .card {
-  display: block;
+  display: inline-block;
+  margin:0;
 }

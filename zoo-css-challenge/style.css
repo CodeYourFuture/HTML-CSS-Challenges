@@ -1,5 +1,6 @@
 * {
   font-family: sans-serif;
+  line-height: 2.5;
 }
 
 header {
@@ -39,7 +40,7 @@ h3,
 h4,
 h5 {
   /*Purple*/
-  color: #6320ee;
+  color: #a8b398;
   margin-bottom: 1em;
 }
 
@@ -57,13 +58,20 @@ h3 {
 
 button {
   display: inline-block;
-  border-radius: 3px;
+  border-radius: 15px;
   cursor: pointer;
   padding: 10px 20px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
   background-color: #372772;
   border: 2px solid black;
   color: #fff;
+  font-size: x-large;
+}
+button:hover {
+  background-color: #f00e2c;
+}
+button:focus {
+  background-color: blue;
 }
 
 footer {
@@ -76,6 +84,8 @@ footer {
 }
 
 .introduction {
+  background-color: white;
+ 
 }
 
 #badge {
@@ -85,7 +95,7 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 
   display: flex;
@@ -96,6 +106,7 @@ footer {
 
 #badge:hover {
   background-color: yellow;
+  transition-duration: 3s;
 }
 
 #badge p {
@@ -109,23 +120,33 @@ footer {
 }
 
 .image-container img:first-of-type {
-  vertical-align: bottom;
+  border: 5px solid #ec2c36;
+  /*vertical-align: bottom;*/
 }
-
+.image-container img:last-of-type {
+  border: 5px solid #2cec45;
+  /*vertical-align: bottom;*/
+}
 .tigers {
   background-color: #0b3c49;
   color: #f0e100;
 }
 
 .giraffe {
-  background-color: #465775;
+  background-color: #483c46;
   color: #56e39f;
 }
 
-.giraffe h2 {
-  color: #ef6f6c;
+.giraffe h2,
+h3 {
+  color: #f4743b;
 }
-
+.giraffe p {
+  color: #beee62;
+}
+.giraffe p:first-of-type {
+  font-size: larger;
+}
 .card {
   display: inline-block;
   background-color: white;
@@ -164,6 +185,7 @@ footer {
 
 .education-container {
   background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 10px;
   padding: 50px;
   max-width: 400px;
 }
@@ -187,9 +209,21 @@ footer {
 .membership strong {
   color: #ff7f11;
 }
+.membership p {
+  max-width: 700px;
+  padding-bottom: 30px;
+  margin: auto;
+}
 
-/*Programs*/
+#cards_container {
+  display: flex;
+  justify-content: space-between;
+}
 
-.programs .card {
-  display: block;
+#logo {
+  border: none;
+}
+
+.news h2 {
+  text-align: center;
 }

@@ -115,13 +115,21 @@ p {
   font-size: 125%;
 }
 
+/*bears*/
 .image-container img {
   vertical-align: top;
-  border: 5px solid #747c92;
 }
 
 .image-container img:first-of-type {
-  vertical-align: bottom;
+  border: 5px solid #8d9262;
+}
+
+.image-container img:nth-of-type(2) {
+  border: 5px solid red;
+}
+
+.image-container img:nth-of-type(3) {
+  border: 5px solid blue;
 }
 
 .tigers {

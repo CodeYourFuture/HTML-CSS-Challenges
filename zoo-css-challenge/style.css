@@ -1,5 +1,6 @@
 * {
   font-family: sans-serif;
+  letter-spacing: 0.2em;
 }
 
 header {
@@ -7,6 +8,14 @@ header {
   color: #ffffff;
   width: 100%;
   padding: 20px;
+}
+
+#logo {
+  border-style: none;
+}
+
+.introduction {
+  background-color: white;
 }
 
 nav {
@@ -31,6 +40,16 @@ section {
 
 img {
   border: 5px solid #8075ff;
+}
+
+#bear-picture-1 {
+  border-color: red;
+}
+#bear-picture-2 {
+  border-color: blue;
+}
+#bear-picture-3 {
+  border-color: orange;
 }
 
 h1,
@@ -109,21 +128,32 @@ footer {
 }
 
 .image-container img:first-of-type {
-  vertical-align: bottom;
+  vertical-align: top;
 }
 
 .tigers {
-  background-color: #0b3c49;
-  color: #f0e100;
+  background-color: #522518;
+  color: #b6ff7a;
+}
+.tiger-header {
+  color: #ff893a;
 }
 
 .giraffe {
-  background-color: #465775;
+  background-color: #483C46;
   color: #56e39f;
 }
 
 .giraffe h2 {
-  color: #ef6f6c;
+  color: #F4743B;
+}
+
+.giraffe p {
+  color: #BEEE62;
+}
+
+#giraffe-first-paragraph {
+  font-size: large;
 }
 
 .card {
@@ -164,6 +194,7 @@ footer {
 
 .education-container {
   background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 1em;
   padding: 50px;
   max-width: 400px;
 }
@@ -173,11 +204,21 @@ footer {
   margin-bottom: 1em;
 }
 
+.education button {
+  font-size: large;
+  background-color: #372772;
+}
+.education button:hover {
+  background-color: #150b3b;
+}
+
 /*Membership*/
 
 .membership {
   text-align: center;
   background-color: #fffffc;
+  max-width: 700px;
+  margin: auto;
 }
 
 .membership h2 {
@@ -191,5 +232,8 @@ footer {
 /*Programs*/
 
 .programs .card {
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 10em;
 }
+

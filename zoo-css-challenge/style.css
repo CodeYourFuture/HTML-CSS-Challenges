@@ -75,7 +75,19 @@ footer {
   justify-content: space-between;
 }
 
+
+/*introduction*/
+#logo {
+  border: none;
+}
+
 .introduction {
+  background: white;
+}
+
+p {
+  letter-spacing: 2px;
+  line-height: 1.2;
 }
 
 #badge {

@@ -200,17 +200,35 @@ p {
   background-size: cover;
   background-position: center;
   padding: 100px 5%;
+  border-radius: 8px;
 }
 
 .education-container {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  border-radius: 8px;
 }
 
 .education-container h3,
 .education-container p {
   margin-bottom: 1em;
+}
+
+#edu-button {
+  font-size: 17px;
+  border-radius: 8px;
+}
+
+#edu-button:hover {
+  font-size: 19px;
+  background-color: yellow;
+  color: black;
+}
+
+#edu-button:focus {
+  background-color: yellow;
+  color: black;
 }
 
 /*Membership*/

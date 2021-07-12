@@ -132,9 +132,15 @@ p {
   border: 5px solid blue;
 }
 
+/*tigers*/
+
 .tigers {
   background-color: #0b3c49;
   color: #f0e100;
+}
+
+.tigers h2 {
+  color: #B1EA48;
 }
 
 .giraffe {

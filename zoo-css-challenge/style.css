@@ -27,15 +27,10 @@ header ul li {
 section {
   padding: 5%;
   background-color: #f8f0fb;
-}
-
-img {
-  border: 5px solid #8075ff;
+  word-spacing: 0.2cm;
 }
 
 h1,
-h2,
-h3,
 h4,
 h5 {
   /*Purple*/
@@ -48,10 +43,12 @@ h1 {
 }
 
 h2 {
+  color: #bbb;
   font-size: 175%;
 }
 
 h3 {
+  color: #bbb;
   font-size: 150%;
 }
 
@@ -76,6 +73,7 @@ footer {
 }
 
 .introduction {
+  background-color: white;
 }
 
 #badge {
@@ -85,7 +83,7 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 
   display: flex;
@@ -96,20 +94,35 @@ footer {
 
 #badge:hover {
   background-color: yellow;
+  transition: ease;
 }
 
 #badge p {
   text-align: center;
   font-size: 125%;
 }
-
+.bears h2{
+  color: black;
+}
+.bear0{
+  border: 5px solid;
+  border-color: red;
+}
+.bear1{
+  border: 5px solid;
+  border-color: blue;
+}
+.bear2{
+  border: 5px solid;
+  border-color: olive;
+}
 .image-container img {
   vertical-align: top;
-  border: 5px solid #747c92;
+  
 }
 
 .image-container img:first-of-type {
-  vertical-align: bottom;
+  vertical-align: top;
 }
 
 .tigers {
@@ -118,14 +131,18 @@ footer {
 }
 
 .giraffe {
-  background-color: #465775;
-  color: #56e39f;
+  background-color:#483C46;
+  color:#BEEE62;
 }
-
+.FirstParagraph{
+  font-size: 1.4em;
+}
 .giraffe h2 {
-  color: #ef6f6c;
+  color: #F4743B;
 }
-
+.giraffe h3{
+  color: #F4743B;
+}
 .card {
   display: inline-block;
   background-color: white;
@@ -135,7 +152,10 @@ footer {
   border: 1px solid black;
   border-radius: 10px;
 }
-
+.news h2{
+  text-align: center;
+  color: #6320ee;
+}
 .card h4 {
   margin-bottom: 1em;
 }
@@ -168,15 +188,26 @@ footer {
   max-width: 400px;
 }
 
-.education-container h3,
-.education-container p {
-  margin-bottom: 1em;
+.education-container h3{
+  color: black;
 }
-
+.education-container p{
+  margin-bottom: 1em;
+  }
+  .education button:hover{
+    Find them here;
+    font-size: 0.5cm;
+    color:hotpink;
+  }
+.education-container button{
+  border-radius: 10px;
+}
 /*Membership*/
 
 .membership {
-  text-align: center;
+  width: 700px;
+  margin: 210px;
+  text-align:justify;
   background-color: #fffffc;
 }
 
@@ -190,6 +221,11 @@ footer {
 
 /*Programs*/
 
-.programs .card {
-  display: block;
+.programs .card{
+  color: black;
+  display: inline block;
+  margin: 10px;
+  }
+.programs h2, h3{
+  color: black;
 }

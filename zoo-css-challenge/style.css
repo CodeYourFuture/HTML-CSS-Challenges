@@ -145,15 +145,24 @@ border-color: yellowgreen;
 }
 
 .giraffe {
-  background-color: #465775;
+  background-color: #483C46;
   color: #56e39f;
   line-height: 1.5;
 }
 
-.giraffe h2 {
-  color: #ef6f6c;
+.giraffe h2 , h3 {
+  color: #F4743B;
+  background-color: #483C46
+  
 }
 
+.giraffe p {
+  color: #BEEE62;
+}
+
+#giraffe-para {
+  font-size: 135%;
+}
 .card {
   display: inline-block;
   background-color: white;

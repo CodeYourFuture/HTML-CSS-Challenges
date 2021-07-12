@@ -9,6 +9,10 @@ header {
   padding: 20px;
 }
 
+#logo {
+  border: none;
+}
+
 nav {
   display: inline-block;
   width: 100%;
@@ -33,6 +37,10 @@ img {
   border: 5px solid #8075ff;
 }
 
+p {
+  letter-spacing: 0.1rem;
+}
+
 h1,
 h2,
 h3,
@@ -41,6 +49,7 @@ h5 {
   /*Purple*/
   color: #6320ee;
   margin-bottom: 1em;
+  letter-spacing: 0.1rem;
 }
 
 h1 {
@@ -76,6 +85,7 @@ footer {
 }
 
 .introduction {
+  background-color: #fff;
 }
 
 #badge {
@@ -85,7 +95,7 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 
   display: flex;
@@ -96,6 +106,7 @@ footer {
 
 #badge:hover {
   background-color: yellow;
+  transition: 1.5s;
 }
 
 #badge p {
@@ -103,13 +114,29 @@ footer {
   font-size: 125%;
 }
 
+/* .image-container {
+  width: 100%;
+} */
+
 .image-container img {
   vertical-align: top;
   border: 5px solid #747c92;
 }
 
+#grizzly-one {
+  border: 5px solid #c98936;
+}
+
+#grizzly-two {
+  border: 5px solid #36c94f;
+}
+
+#grizzly-three {
+  border: 5px solid #bd36c9;
+}
+
 .image-container img:first-of-type {
-  vertical-align: bottom;
+  vertical-align: top;
 }
 
 .tigers {
@@ -117,13 +144,29 @@ footer {
   color: #f0e100;
 }
 
+.tiger-headings {
+  color: #57DBD7;
+}
+
 .giraffe {
-  background-color: #465775;
+  background-color: #483C46;
   color: #56e39f;
 }
 
 .giraffe h2 {
-  color: #ef6f6c;
+  color: #F4743B;
+}
+
+.giraffe p {
+  color: #BEEE62
+}
+
+.giraffe-larger-font {
+  font-size: 1.5rem;
+}
+
+.news h2 {
+  text-align: center;
 }
 
 .card {
@@ -151,6 +194,14 @@ footer {
   margin-bottom: 10px;
 }
 
+button:hover, button:focus {
+  background-color: #f0e100;
+}
+
+button {
+  font-size: larger;
+}
+
 /*Education*/
 
 .education {
@@ -166,6 +217,7 @@ footer {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  border-radius: 5%;
 }
 
 .education-container h3,
@@ -180,6 +232,11 @@ footer {
   background-color: #fffffc;
 }
 
+.membership p {
+  max-width: 700px;
+  margin: auto;
+}
+
 .membership h2 {
   color: #ff3f00;
 }
@@ -191,5 +248,5 @@ footer {
 /*Programs*/
 
 .programs .card {
-  display: block;
+  display: inline-block;
 }

@@ -143,13 +143,22 @@ p {
   color: #B1EA48;
 }
 
+/*giraffes*/
+
 .giraffe {
-  background-color: #465775;
-  color: #56e39f;
+  background-color: #483C46;
 }
 
-.giraffe h2 {
-  color: #ef6f6c;
+.giraffe h2, h3 {
+  color: #F4743B;
+}
+
+.giraffe p {
+  color: #BEEE62;
+}
+
+.giraffe p:first-of-type {
+  font-size: 18px;
 }
 
 .card {

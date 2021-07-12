@@ -30,7 +30,7 @@ section {
 }
 
 img {
-  border: 5px solid #8075ff;
+ border: 5px solid #8075ff;
 }
 
 h1,
@@ -76,8 +76,13 @@ footer {
 }
 
 .introduction {
+  background-color: white;
 }
 
+
+#logo {
+  border: none;
+}
 #badge {
   height: 120px;
   width: 120px;
@@ -112,14 +117,20 @@ footer {
   vertical-align: bottom;
 }
 
+.zoo-info {
+  line-height: 1.5;
+}
+
 .tigers {
   background-color: #0b3c49;
   color: #f0e100;
+  line-height: 1.5;
 }
 
 .giraffe {
   background-color: #465775;
   color: #56e39f;
+  line-height: 1.5;
 }
 
 .giraffe h2 {

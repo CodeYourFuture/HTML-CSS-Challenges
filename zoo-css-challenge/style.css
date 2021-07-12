@@ -5,7 +5,7 @@
 header {
   background-color: #211a1d;
   color: #ffffff;
-  width: 100%;
+  max-width: 100%;
   padding: 20px;
 }
 
@@ -69,7 +69,7 @@ button {
 footer {
   background-color: #211a1d;
   color: #ffffff;
-  width: 100%;
+  max-width: 100%;
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -77,12 +77,19 @@ footer {
 
 
 /*introduction*/
+
 #logo {
   border: none;
 }
 
 .introduction {
   background: white;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.introduction h1 {
+  text-align: center;
 }
 
 p {
@@ -107,6 +114,7 @@ p {
   align-content: center;
   flex-direction: column;
   transition: 1s;
+  opacity: 0.9;
 }
 
 #badge:hover {
@@ -120,8 +128,10 @@ p {
 }
 
 /*bears*/
+
 .image-container img {
   vertical-align: top;
+  margin: 8px;
 }
 
 .image-container img:first-of-type {
@@ -145,6 +155,7 @@ p {
 
 .tigers h2 {
   color: #B1EA48;
+  text-align: center;
 }
 
 /*giraffes*/
@@ -155,6 +166,7 @@ p {
 
 .giraffe h2, h3 {
   color: #F4743B;
+  text-align: center;
 }
 
 .giraffe p {
@@ -171,11 +183,14 @@ p {
   background-color: teal;
 }
 
-.penguin li {
-  font-size: 18px;
-  color: #F1F39B;
+.penguin li, .tigers li {
+  font-size: 18px; 
   letter-spacing: 2px;
   line-height: 1.5;
+}
+
+.penguin li {
+  color: #F1F39B;
 }
 
 .penguin h2 {
@@ -184,7 +199,8 @@ p {
 }
 
 /*news*/
-.news h2 {
+
+.news h2, .bears h2 {
   text-align: center;
 }
 
@@ -193,7 +209,7 @@ p {
   background-color: white;
   padding: 20px;
   margin: 10px;
-  width: 30%;
+  width: 28%;
   border: 1px solid black;
   border-radius: 10px;
 }
@@ -275,4 +291,27 @@ p {
 
 .programs .card {
   display: inline-block;
+}
+
+.programs h2 {
+  text-align: center;
+}
+
+.programs ul {
+  text-align: center;
+}
+
+.programs ul li {
+  display: inline-block;
+  position: center;
+  margin-right: 20px;
+}
+
+.programs ul li a:hover, :focus {
+  color: red;
+  transition: 0.8s;
+}
+
+.programs ul li a {
+  transition: 0.8s;
 }

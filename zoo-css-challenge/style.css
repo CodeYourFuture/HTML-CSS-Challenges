@@ -1,13 +1,8 @@
 * {
   font-family: sans-serif;
 }
-#logo{
-  border:none;
-}
-.introduction{
- background: #ffffff; 
 
-}
+
 header {
   background-color: #211a1d;
   color: #ffffff;
@@ -95,6 +90,9 @@ footer {
   justify-content: space-between;
 }
 
+#logo{
+  border:none;
+}
 
 #badge {
   height: 120px;
@@ -124,6 +122,10 @@ footer {
   font-size: 125%;
 }
 
+.introduction{
+ background: #ffffff; 
+
+}
 .image-container img {
   vertical-align: top;
   border: 5px solid #747c92;

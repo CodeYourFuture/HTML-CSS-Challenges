@@ -161,6 +161,11 @@ p {
   font-size: 18px;
 }
 
+/*news*/
+.news h2 {
+  text-align: center;
+}
+
 .card {
   display: inline-block;
   background-color: white;

@@ -139,6 +139,19 @@ footer {
   color: #ff893a;
 }
 
+.wolves h2 {
+  /*color: #f8f0fb;  <--- old color, I was using*/
+  color: rgb(222, 184, 135);
+}
+.wolves {
+  color: rgb(222, 184, 135);
+  background-color: rgb(48, 56, 65);
+}
+.wolves img {
+  border-radius: 1em;
+  border-color: rgb(20, 20, 46);
+}
+
 .giraffe {
   background-color: #483C46;
   color: #56e39f;

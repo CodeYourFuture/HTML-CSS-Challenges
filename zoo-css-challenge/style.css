@@ -193,6 +193,15 @@ border-color: yellowgreen;
   margin-bottom: 10px;
 }
 
+.btn:hover, btn:focus {
+  font-size: 100%;
+background:#56e39f;
+}
+
+.btn {
+  font-size: 100%;
+}
+
 /*Education*/
 
 .education {
@@ -208,11 +217,13 @@ border-color: yellowgreen;
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  border-radius: 4px;
 }
 
 .education-container h3,
 .education-container p {
   margin-bottom: 1em;
+  border-radius: 2px;
 }
 
 /*Membership*/

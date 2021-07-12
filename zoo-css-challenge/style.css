@@ -1,7 +1,9 @@
 * {
   font-family: sans-serif;
 }
-
+#logo {
+  border: 0;
+}
 header {
   background-color: #211a1d;
   color: #ffffff;
@@ -49,10 +51,12 @@ h1 {
 
 h2 {
   font-size: 175%;
+  color:#ec4fb8;
 }
 
 h3 {
   font-size: 150%;
+  color:#F4743B;
 }
 
 button {
@@ -62,10 +66,14 @@ button {
   padding: 10px 20px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
   background-color: #372772;
-  border: 2px solid black;
+  border: 2px solid rgb(145, 91, 91);
   color: #fff;
+  font-size: larger;
 }
-
+button:hover {
+  background-color: #4CAF50; 
+  color: white;
+}
 footer {
   background-color: #211a1d;
   color: #ffffff;
@@ -75,7 +83,10 @@ footer {
   justify-content: space-between;
 }
 
-.introduction {
+.introduction{
+  background-color: #ffffff;
+  line-height: 1.5em;
+  word-spacing: 0.2;
 }
 
 #badge {
@@ -85,13 +96,14 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
+  transition: background-color 2s;
 }
 
 #badge:hover {
@@ -105,11 +117,34 @@ footer {
 
 .image-container img {
   vertical-align: top;
-  border: 5px solid #747c92;
+
 }
 
 .image-container img:first-of-type {
-  vertical-align: bottom;
+  vertical-align: top;
+  
+}
+#img1{
+  border-color:olivedrab;
+  border-style: solid;
+  border-width: 5px;
+}
+
+.news{
+  text-align: center;
+  
+}
+
+
+  #img2{
+    border-color:blue;
+    border-style: solid;
+    border-width: 5px; 
+ }
+#img3{
+  border-color:crimson;
+  border-style: solid;
+  border-width: 5px; 
 }
 
 .tigers {
@@ -118,8 +153,9 @@ footer {
 }
 
 .giraffe {
-  background-color: #465775;
-  color: #56e39f;
+  background-color: #483c46;
+  color: #BEEE62;
+  font-size:120%;
 }
 
 .giraffe h2 {
@@ -160,12 +196,14 @@ footer {
   background-size: cover;
   background-position: center;
   padding: 100px 5%;
+  
 }
 
 .education-container {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  border-radius: 40px;
 }
 
 .education-container h3,
@@ -178,8 +216,9 @@ footer {
 .membership {
   text-align: center;
   background-color: #fffffc;
+  max-width: 700px;
+  margin-left: 250px;
 }
-
 .membership h2 {
   color: #ff3f00;
 }
@@ -189,7 +228,15 @@ footer {
 }
 
 /*Programs*/
-
-.programs .card {
-  display: block;
+.programs h2{
+  text-align: center;
 }
+.programs .card {
+  display: inline-block;
+  margin: 0;
+  }
+
+
+
+
+

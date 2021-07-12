@@ -75,6 +75,7 @@ footer {
   justify-content: space-between;
 }
 
+
 .introduction {
   background-color: white;
 }
@@ -163,12 +164,16 @@ border-color: yellowgreen;
 #giraffe-para {
   font-size: 135%;
 }
+#news-title {
+  text-align: center;
+}
+
 .card {
   display: inline-block;
   background-color: white;
   padding: 20px;
   margin: 10px;
-  width: 30%;
+  width: 28%;
   border: 1px solid black;
   border-radius: 10px;
 }

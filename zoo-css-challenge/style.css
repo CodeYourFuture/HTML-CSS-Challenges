@@ -39,7 +39,7 @@ h3,
 h4,
 h5 {
   /*Purple*/
-  color: #6320ee;
+  color:#6320ee;
   margin-bottom: 1em;
 }
 
@@ -110,16 +110,33 @@ footer {
 
 .image-container img {
   vertical-align: top;
-  border: 5px solid #747c92;
+  border: 5px solid 
 }
 
 .image-container img:first-of-type {
-  vertical-align: bottom;
+  vertical-align: top;
 }
 
+#two-bears {
+  border-color: tomato;
+}
+
+#bear-face {
+border-color: yellow;
+}
+
+#solo-bear {
+border-color: yellowgreen;
+}
+ 
 .zoo-info {
   line-height: 1.5;
 }
+
+#tiger-title{
+  color:#BDBDFF;
+}
+
 
 .tigers {
   background-color: #0b3c49;

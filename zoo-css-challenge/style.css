@@ -1,5 +1,7 @@
 * {
   font-family: sans-serif;
+  line-height: 25px;
+  font-size: 18px;
 }
 
 header {
@@ -30,7 +32,7 @@ section {
 }
 
 img {
-  border: 5px solid #8075ff;
+  border: none;
 }
 
 h1,
@@ -81,13 +83,13 @@ footer {
 #badge {
   height: 120px;
   width: 120px;
-  background-color: #bbb;
+  background-color: #fff;
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 13px;
   right: 20px;
-
+  transition: background-color 1.5s ease;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -105,27 +107,55 @@ footer {
 
 .image-container img {
   vertical-align: top;
-  border: 5px solid #747c92;
+  border: 5px solid;
+  border-radius: 5px;
 }
 
-.image-container img:first-of-type {
-  vertical-align: bottom;
+.image-1 {
+  color: #ff3f00;
+}
+
+.image-2 {
+  color: green;
+}
+
+.image-3 {
+  color: blue;
 }
 
 .tigers {
-  background-color: #0b3c49;
-  color: #f0e100;
+  background-color: #0f549f;
+  color: #fdfd86;
+}
+
+.tigers h2 {
+  color: white;
+}
+
+.tigers h3 {
+  color: #fff;
 }
 
 .giraffe {
-  background-color: #465775;
-  color: #56e39f;
+  background-color: #483c46;
+  color: #beee62;
 }
 
 .giraffe h2 {
-  color: #ef6f6c;
+  color: #f4743b;
 }
 
+.giraffe h3 {
+  color: #f4743b;
+}
+
+#p-giraffe {
+  font-size: 22px;
+}
+
+.news {
+  text-align: center;
+}
 .card {
   display: inline-block;
   background-color: white;
@@ -154,6 +184,7 @@ footer {
 /*Education*/
 
 .education {
+  border-radius: 5px;
   height: 500px;
   background-image: url("https://source.unsplash.com/1200x900/?tiger");
   background-repeat: no-repeat;
@@ -163,6 +194,7 @@ footer {
 }
 
 .education-container {
+  border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
@@ -171,6 +203,11 @@ footer {
 .education-container h3,
 .education-container p {
   margin-bottom: 1em;
+}
+
+#button:hover {
+  font-size: 25px;
+  background-color: #f4743b;
 }
 
 /*Membership*/
@@ -183,6 +220,11 @@ footer {
 .membership h2 {
   color: #ff3f00;
 }
+.membership p {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .membership strong {
   color: #ff7f11;
@@ -190,6 +232,10 @@ footer {
 
 /*Programs*/
 
-.programs .card {
-  display: block;
+.programs.card {
+  display: inline-block;
+}
+
+.programs {
+  text-align: center;
 }

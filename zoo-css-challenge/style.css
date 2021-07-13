@@ -1,5 +1,11 @@
 * {
+  box-sizing: border-box;
   font-family: sans-serif;
+  margin: 0;
+}
+
+body {
+  text-align: center;
 }
 
 header {
@@ -25,46 +31,72 @@ header ul li {
 }
 
 section {
-  padding: 5%;
+  padding: 3%;
   background-color: #f8f0fb;
 }
 
-img {
-  border: 5px solid #8075ff;
+ul {
+  margin-top: 4rem;
 }
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+/******* typography *******/
 
 h1,
-h2,
-h3,
+h2, 
+h3, 
 h4,
 h5 {
-  /*Purple*/
-  color: #6320ee;
-  margin-bottom: 1em;
+  color: #405ba7;
+  margin-bottom: 0.5em;
 }
 
+
 h1 {
-  font-size: 250%;
+  font-size: 5rem;
 }
 
 h2 {
-  font-size: 175%;
+  font-size: 2.5rem;
 }
 
 h3 {
   font-size: 150%;
 }
 
+p {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+/******* Buttons *******/
+
 button {
   display: inline-block;
-  border-radius: 3px;
+  border-radius: 5px;
   cursor: pointer;
   padding: 10px 20px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
-  background-color: #372772;
+  background-color: #694ec9;
   border: 2px solid black;
   color: #fff;
+  font-size: large;
+
+  transition-property: background-color;
+  transition-duration: 1s;
 }
+
+button:hover,
+button:focus {
+  background-color: #8fa3d8;
+}
+
+/******* Footer *******/
 
 footer {
   background-color: #211a1d;
@@ -75,27 +107,29 @@ footer {
   justify-content: space-between;
 }
 
-.introduction {
-}
+/******* badge *******/
 
 #badge {
   height: 120px;
   width: 120px;
-  background-color: #bbb;
+  background-color: rgb(74, 241, 96);
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
+
+  transition-property: background-color;
+  transition-duration: 1s;
 }
 
 #badge:hover {
-  background-color: yellow;
+  background-color: rgb(148, 240, 240);
 }
 
 #badge p {
@@ -103,28 +137,113 @@ footer {
   font-size: 125%;
 }
 
-.image-container img {
-  vertical-align: top;
-  border: 5px solid #747c92;
+/******* Intro Section *******/
+
+.introduction {
+  background-color: #fff;
+  font-weight: bold;
+  font-size: large;
 }
 
-.image-container img:first-of-type {
-  vertical-align: bottom;
+/******* Bear Section *******/
+
+.bears h2 {
+  color: #5a2f33;
 }
+
+.bears p {
+  margin-bottom: 2em;
+  font-weight: bold;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-around;
+  height: 20rem;
+}
+
+.image-container img {
+  flex: 0 1 20%;
+}
+
+
+
+.image-container .bear-img-1 {
+  border: 5px solid #8fa3d8;
+}
+
+.image-container .bear-img-2 {
+  border: 5px solid  #e2ff3d;
+}
+
+.image-container .bear-img-3 {
+  border: 5px solid #a0b4ec;
+}
+
+
+
+/******* Tiger Section *******/
 
 .tigers {
   background-color: #0b3c49;
-  color: #f0e100;
+  color: #fff;
 }
 
+.tigers h2 {
+  color: #e2ff3d;
+}
+
+.tigers ul {
+  text-align: left;
+  margin: 0 auto;
+}
+
+/******* Giraffe Section *******/
+
 .giraffe {
-  background-color: #465775;
+  background-color: #483c46;
   color: #56e39f;
 }
 
 .giraffe h2 {
-  color: #ef6f6c;
+  color: #f4743b;
 }
+
+.giraffe h3 {
+  color: #f4743b
+}
+
+.giraffe p {
+  color: #beee62;
+}
+
+.giraffe p:first-of-type {
+  font-size: large;
+}
+
+/******* lions section *******/
+
+.lions {
+  background-color: #1b1515;
+  color: #fff;
+}
+
+.lions h2 {
+ color: #e2ff3d;
+}
+
+.lions ul {
+  text-align: left;
+  margin: 0 auto;
+}
+
+/******* News Section *******/
+
+.news h2 {
+  text-align: center;
+}
+
+
 
 .card {
   display: inline-block;
@@ -166,6 +285,8 @@ footer {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  border-radius: 10px;
+  margin: 0 auto;
 }
 
 .education-container h3,
@@ -173,11 +294,21 @@ footer {
   margin-bottom: 1em;
 }
 
+.education-container h3 {
+  color: #405ba7 ;
+}
+
 /*Membership*/
 
 .membership {
   text-align: center;
   background-color: #fffffc;
+}
+
+.membership p {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 2em;
 }
 
 .membership h2 {
@@ -192,4 +323,12 @@ footer {
 
 .programs .card {
   display: block;
+}
+
+.programs h2, h3 {
+ text-align: center;
+}
+
+.useful-links{
+  margin-top: 1em;
 }

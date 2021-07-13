@@ -62,6 +62,11 @@ button {
   background-color: #372772;
   border: 2px solid black;
   color: #fff;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: #3b0000;
 }
 
 footer {
@@ -84,7 +89,7 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 
   display: flex;
@@ -95,6 +100,8 @@ footer {
 
 #badge:hover {
   background-color: yellow;
+  -webkit-transition: color 1s linear, background-color 0.5s linear 0.2s;
+  transition: color 1s linear, background-color 0.5s linear 0.2s;
 }
 
 #badge p {
@@ -181,6 +188,8 @@ footer {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  border-radius: 50%;
+
 }
 
 .education-container h3,
@@ -188,15 +197,25 @@ footer {
   margin-bottom: 1em;
 }
 
+
+
 /*Membership*/
 
 .membership {
   text-align: center;
   background-color: #fffffc;
+  
 }
 
 .membership h2 {
   color: #ff3f00;
+}
+
+.membership p {
+  max-width: 700px;
+  margin-top: 40px;
+  margin-left: 460px;
+  margin-bottom: 40px;
 }
 
 .membership strong {
@@ -206,5 +225,11 @@ footer {
 /*Programs*/
 
 .programs .card {
-  display: block;
+  display: inline-block;
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+  width: 30%;
+  border: 1px solid black;
+  border-radius: 10px;
 }

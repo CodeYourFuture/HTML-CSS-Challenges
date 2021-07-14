@@ -145,6 +145,15 @@ footer {
   color: #F4743B;
 }
 
+.panda {
+  background-color: #5B1CCE;
+  color: #D0F906;
+}
+
+.panda h2{
+  color: #FDD3D5;
+}
+
 .news h2 {
   text-align: center;
 }

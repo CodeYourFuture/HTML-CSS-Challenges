@@ -1,5 +1,6 @@
 * {
   font-family: sans-serif;
+  letter-spacing: 0.1em;
 }
 
 header {
@@ -30,7 +31,7 @@ section {
 }
 
 img {
-  border: 5px solid #8075ff;
+ /* border: 5px solid #8075ff;*/
 }
 
 h1,
@@ -49,10 +50,12 @@ h1 {
 
 h2 {
   font-size: 175%;
+  color:#D7CEE9;
 }
 
 h3 {
   font-size: 150%;
+  color:#D7CEE9;
 }
 
 button {
@@ -81,7 +84,8 @@ footer {
 #badge {
   height: 120px;
   width: 120px;
-  background-color: #bbb;
+  /* Introduction Section has a white background */
+  background-color: #fff; 
   border-radius: 50%;
   display: inline-block;
   position: fixed;
@@ -103,29 +107,47 @@ footer {
   font-size: 125%;
 }
 
-.image-container img {
+.image-containerBear1 img {
   vertical-align: top;
-  border: 5px solid #747c92;
+  border: 5px solid #CBB89A;
 }
+
+.image-containerBear2 img {
+  vertical-align: top;
+  border: 5px solid #B9BCB6;
+}
+
+.image-containerBear3 img {
+  vertical-align: top;
+  border: 5px solid #728f9f;
+}
+
 
 .image-container img:first-of-type {
   vertical-align: bottom;
 }
-
-.tigers {
-  background-color: #0b3c49;
-  color: #f0e100;
+tigers {
+  background-color:#401D62;
+  color: #C2C2DB;
 }
 
 .giraffe {
-  background-color: #465775;
-  color: #56e39f;
+  background-color: #483C46;
+  color: #BEEE62;
 }
 
 .giraffe h2 {
-  color: #ef6f6c;
+  color: #F4743B;
+}
+/* Make the first paragraph on Giraffe large */
+#one{
+
+  font-size: 2.5em;
 }
 
+.news{
+  text-align: center;
+}
 .card {
   display: inline-block;
   background-color: white;
@@ -166,6 +188,8 @@ footer {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  /* Give the container rounded corners */
+  border-radius: 2em;
 }
 
 .education-container h3,
@@ -173,15 +197,37 @@ footer {
   margin-bottom: 1em;
 }
 
+.education-container button {
+  margin-bottom: 1em;
+  font-size: 1.2em;
+  border-radius: 2em;
+}
+
+.education-container button:hover {
+background-color: aqua;
+}
+
+.education-container button:focus{
+  background-color:aqua;
+}
 /*Membership*/
 
 .membership {
   text-align: center;
+  
   background-color: #fffffc;
 }
 
 .membership h2 {
   color: #ff3f00;
+}
+
+.membership p {
+  max-width: 700px;
+  /* to make Paragraph center by adjusting the margin */
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .membership strong {
@@ -191,5 +237,5 @@ footer {
 /*Programs*/
 
 .programs .card {
-  display: block;
+  display: inline-block;
 }

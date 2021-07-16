@@ -26,11 +26,13 @@ header ul li {
 
 section {
   padding: 5%;
-  background-color: #f8f0fb;
+  background-color: #ffffff;
+  letter-spacing: 0.1em;
 }
 
 img {
-  border: 5px solid #8075ff;
+  border: 0px solid #8075ff;
+
 }
 
 h1,
@@ -39,7 +41,7 @@ h3,
 h4,
 h5 {
   /*Purple*/
-  color: #6320ee;
+  color: #F4743B;
   margin-bottom: 1em;
 }
 
@@ -57,15 +59,22 @@ h3 {
 
 button {
   display: inline-block;
-  border-radius: 3px;
+  border-radius: 12px;
   cursor: pointer;
   padding: 10px 20px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
-  background-color: #372772;
+  background-color: #6a57af;
   border: 2px solid black;
   color: #fff;
+  font-size: 18px;
+  transition-duration: 0.4s;
 }
 
+button:hover {
+  background-color: #0f0618; 
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
 footer {
   background-color: #211a1d;
   color: #ffffff;
@@ -75,8 +84,7 @@ footer {
   justify-content: space-between;
 }
 
-.introduction {
-}
+
 
 #badge {
   height: 120px;
@@ -85,7 +93,7 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  bottom: 600px;
   right: 20px;
 
   display: flex;
@@ -96,6 +104,8 @@ footer {
 
 #badge:hover {
   background-color: yellow;
+  transition-duration: 0.5s;
+
 }
 
 #badge p {
@@ -109,7 +119,7 @@ footer {
 }
 
 .image-container img:first-of-type {
-  vertical-align: bottom;
+  vertical-align: top;
 }
 
 .tigers {
@@ -118,14 +128,16 @@ footer {
 }
 
 .giraffe {
-  background-color: #465775;
-  color: #56e39f;
+  background-color: #483C46;
+  color: #BEEE62;
 }
 
 .giraffe h2 {
-  color: #ef6f6c;
+  color: #F4743B;
 }
-
+.news {
+  text-align: center;
+}
 .card {
   display: inline-block;
   background-color: white;
@@ -178,6 +190,8 @@ footer {
 .membership {
   text-align: center;
   background-color: #fffffc;
+  max-width: 700px;
+  margin:0 auto;
 }
 
 .membership h2 {
@@ -191,5 +205,6 @@ footer {
 /*Programs*/
 
 .programs .card {
-  display: block;
+  display: table-cell;
+  border-spacing: 10px;
 }

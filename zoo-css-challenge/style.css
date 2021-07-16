@@ -29,18 +29,11 @@ section {
   background-color: #f8f0fb;
 }
 
-/*
-img {
-  border: 5px solid #8075ff;
-}
-*/
-
 h1,
 h2,
 h3,
 h4,
 h5 {
-  /*Purple*/
   color: #6320ee;
   margin-bottom: 1em;
 }
@@ -112,11 +105,6 @@ footer {
   vertical-align: top;
   border: 5px solid rgb(80, 17, 17);
 }
-
-/*image-container img:first-of-type {
-  vertical-align: bottom;
-}
-*/
 
 .tigers {
   background-color: #0b3c49;

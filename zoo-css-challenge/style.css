@@ -1,6 +1,7 @@
 * {
   font-family: sans-serif;
   letter-spacing: 0.1em;
+  
 }
 
 header {
@@ -42,20 +43,22 @@ h5 {
   /*Purple*/
   color: #6320ee;
   margin-bottom: 1em;
+ 
 }
 
 h1 {
   font-size: 250%;
+  color: #000066;
 }
 
 h2 {
   font-size: 175%;
-  color:#D7CEE9;
+  color:#0000A8;
 }
 
 h3 {
   font-size: 150%;
-  color:#D7CEE9;
+  color:#000085;
 }
 
 button {
@@ -89,7 +92,7 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 
   display: flex;
@@ -97,9 +100,12 @@ footer {
   align-content: center;
   flex-direction: column;
 }
-
+/* transition in colour is smooth */
 #badge:hover {
   background-color: yellow;
+  -webkit-transition: background-color 100ms linear;
+  -ms-transition: background-color 100ms linear;
+  transition: background-color 100ms linear;
 }
 
 #badge p {
@@ -110,16 +116,18 @@ footer {
 .image-containerBear1 img {
   vertical-align: top;
   border: 5px solid #CBB89A;
+  /*float:center;*/
 }
 
 .image-containerBear2 img {
   vertical-align: top;
-  border: 5px solid #B9BCB6;
+  border: 5px solid #c78418;
+  /*float:center;*/
 }
-
 .image-containerBear3 img {
   vertical-align: top;
   border: 5px solid #728f9f;
+ /* float:center;*/
 }
 
 
@@ -133,27 +141,32 @@ tigers {
 
 .giraffe {
   background-color: #483C46;
-  color: #BEEE62;
+  color: #F4743B;
 }
 
 .giraffe h2 {
   color: #F4743B;
 }
-/* Make the first paragraph on Giraffe large */
-#one{
 
-  font-size: 2.5em;
+.giraffe p {
+  color:#BEEE62;
+}
+/* Make the first paragraph on Giraffe large */
+#one.giraffe{
+  font-size: 20px;
 }
 
 .news{
   text-align: center;
 }
 .card {
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   background-color: white;
-  padding: 20px;
-  margin: 10px;
-  width: 30%;
+  /*padding: 20px; */
+ /* margin: auto;*/
+  /*width: 30%;*/
   border: 1px solid black;
   border-radius: 10px;
 }
@@ -168,9 +181,9 @@ tigers {
 }
 
 .card time {
-  opacity: 0.5;
-  display: inline-block;
-  margin-bottom: 10px;
+  opacity: 1;
+  display: flex;
+   margin-bottom: 1em;
 }
 
 /*Education*/

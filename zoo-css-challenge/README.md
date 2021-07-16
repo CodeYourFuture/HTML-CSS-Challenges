@@ -30,7 +30,7 @@ Change the heading of this section to ‘Tiger Facts’, remove the subheading, 
 
 ## 4) Giraffes
 
-Change the background colour to #483C46, the section titles to #F4743B, and the paragraph color to #BEEE62.  --COME BACK
+Change the background colour to #483C46, the section titles to #F4743B, and the paragraph color to #BEEE62.  --DONE
 
 Make the first paragraph have a larger font size. --DONE
 
@@ -54,13 +54,13 @@ Give the paragraph a maximum width of 700 pixels, and keep in the middle by adju
 
 The cards are stacked on top of each other which looks like a poor use of space. Change these so that they display horizontally across the screen.  --COME BACK
 
-Make sure all the links open in a new tab.
+Make sure all the links open in a new tab. --DONE
 
 ## 9) Badge
 
-The badge that says ‘Opening 2021’ we’d like to be on the top right instead of the bottom right.
+The badge that says ‘Opening 2021’ we’d like to be on the top right instead of the bottom right.  -- DONE
 
-When a user hovers over the badge, add a transition so the change in colour is smoother.
+When a user hovers over the badge, add a transition so the change in colour is smoother. --DONE
 
 ## 10) New section
 

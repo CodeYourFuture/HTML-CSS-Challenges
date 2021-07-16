@@ -5,15 +5,18 @@
 header {
   background-color: #211a1d;
   color: #ffffff;
-  width: 100%;
-  padding: 20px;
+  width: 0;
+  padding: 0;
+  border-style: none;
 }
 
 nav {
   display: inline-block;
   width: 100%;
 }
-
+#logo {
+  border: none;
+}
 header ul {
   margin: 20px 0 0 0;
   padding: 0;
@@ -31,6 +34,14 @@ section {
 
 img {
   border: 5px solid #8075ff;
+}
+.news {
+  text-align: center;
+}
+.news h3 {
+  opacity: 0.5;
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
 h1,
@@ -64,8 +75,13 @@ button {
   background-color: #372772;
   border: 2px solid black;
   color: #fff;
+  border-radius: 30px;
 }
 
+.btn:hover,
+.btn:focus {
+  background: #ef7f52;
+}
 footer {
   background-color: #211a1d;
   color: #ffffff;
@@ -76,6 +92,7 @@ footer {
 }
 
 .introduction {
+  background-color: #ffffff;
 }
 
 #badge {
@@ -85,7 +102,7 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 
   display: flex;
@@ -106,49 +123,50 @@ footer {
 .image-container img {
   vertical-align: top;
   border: 5px solid #747c92;
+  border-color: brown;
 }
-
+/*
 .image-container img:first-of-type {
   vertical-align: bottom;
+  border-color: chocolate;
+}*/
+.bears img {
+  vertical-align: top;
+  border-color: chocolate;
 }
-
+#bear1 {
+  border-color: darkorchid;
+}
+#bear2 {
+  border-color: darkturquoise;
+}
+#bear3 {
+  border-color: forestgreen;
+}
 .tigers {
   background-color: #0b3c49;
   color: #f0e100;
 }
-
+.tigers h2 {
+  color: #d1bef9;
+}
 .giraffe {
-  background-color: #465775;
+  background-color: #483c46;
+
   color: #56e39f;
 }
 
 .giraffe h2 {
-  color: #ef6f6c;
+  color: #f4743b;
 }
-
-.card {
-  display: inline-block;
-  background-color: white;
-  padding: 20px;
-  margin: 10px;
-  width: 30%;
-  border: 1px solid black;
-  border-radius: 10px;
+.giraffe p {
+  color: #beee62;
 }
-
-.card h4 {
-  margin-bottom: 1em;
+.giraffe p:first-of-type {
+  font-size: 1.25em;
 }
-
-.card a {
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-.card time {
-  opacity: 0.5;
-  display: inline-block;
-  margin-bottom: 10px;
+.giraffe h3 {
+  color: #56e39f;
 }
 
 /*Education*/
@@ -178,6 +196,8 @@ footer {
 .membership {
   text-align: center;
   background-color: #fffffc;
+  width: 700px;
+  margin: 1.23em;
 }
 
 .membership h2 {
@@ -188,8 +208,34 @@ footer {
   color: #ff7f11;
 }
 
-/*Programs*/
+/*programs*/
 
-.programs .card {
-  display: block;
+.programs {
+  display: inline-block;
+  width: 100%;
+}
+
+.card {
+  display: inline-block;
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+  width: 30%;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 1.5em;
+}
+
+.card h4 {
+  margin-bottom: 1em;
+}
+
+.card a {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.card time {
+  opacity: 0.5;
+  margin-bottom: 10px;
 }

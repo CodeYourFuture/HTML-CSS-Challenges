@@ -165,6 +165,14 @@ footer {
   font-size: 1.5rem;
 }
 
+.my-favourite-animal {
+  background-color: rebeccapurple;
+  color: #36c94f;
+}
+
+#h2-eagle-headings, #h3-eagle-headings {
+  color: darkgreen;
+}
 .news h2 {
   text-align: center;
 }

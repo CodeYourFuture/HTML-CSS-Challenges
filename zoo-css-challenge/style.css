@@ -157,11 +157,17 @@ footer {
   border: 3px solid #FE9003;
 }
 
-.image-container img {
-  vertical-align: top;
-  border: 5px solid #747c92;
-  margin:30px;
+
+/* I used CSS flexbox to align the images of the bears vertically to the top of the container. */
+.image-container {
+  display:flex;
+  justify-content: space-between;
 }
+
+.image-container img {
+  border: 5px solid #747c92;
+}
+
 
 /* ------------------------------------tiger facts section ------------------------------- */
 
@@ -193,11 +199,15 @@ footer {
   text-align: center;
 }
 
+/* I used CSS flexbox in order to display the cards (for news and program sections) horizontally across the screen. */
+.card-container {
+  display:flex;
+  justify-content: space-between;
+}
+
 .card {
-  display: inline-block;
   background-color: white;
   padding: 20px;
-  margin: 10px;
   width: 27%;
   border: 1px solid black;
   border-radius: 10px;
@@ -263,8 +273,3 @@ footer {
   color: #ff7f11;
 }
 
-/* ------------------------------------programs section ------------------------------- */
-
-.programs .card {
-  display: inline-block;
-}

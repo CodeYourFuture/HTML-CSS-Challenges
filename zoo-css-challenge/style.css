@@ -2,6 +2,8 @@
   font-family: sans-serif;
   letter-spacing: 0.1rem;
   line-height: 1.5rem;
+  box-sizing: border-box;
+
 }
 
 header {
@@ -11,9 +13,11 @@ header {
   padding: 20px;
 }
 
-nav {
-  display: inline-block;
-  width: 100%;
+nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  
 }
 
 header ul {
@@ -104,11 +108,15 @@ footer {
 }
 
 .image-container img {
-  vertical-align: top;
-  
+ vertical-align: top;
+ 
+}
+.bear-image{
+  margin: 2em;
 }
 #bear-img1 {
   border: 5px solid #747c92;
+  
 }
 #bear-img2{
   border: 5px solid #cdcf51;
@@ -142,9 +150,9 @@ footer {
   background-color: white;
   vertical-align: top;
   padding: 20px;
-  margin: 10px;
   width: 25%;
-  height: 10rem;
+  margin:2rem;
+  height: 12rem;
   border: 1px solid black;
   border-radius: 10px;
 }
@@ -218,3 +226,4 @@ button:hover {
   height: 10rem;
   vertical-align: top;
 }
+

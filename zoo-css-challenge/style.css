@@ -2,7 +2,6 @@
   font-family: sans-serif;
 }
 
-
 header {
   background-color: #211a1d;
   color: #ffffff;
@@ -30,23 +29,20 @@ section {
   background-color: #f8f0fb;
 }
 section:last-of-type img {
-  float:right;
-  margin-top:-330px;
-  width:800px; 
+  float: right;
+  margin-top: -330px;
+  width: 800px;
   height: 400px;
   border: 0;
-  
 }
 
-section:last-of-type div{
-  
-  height:200px;
+section:last-of-type div {
+  height: 200px;
 }
 
-section:last-of-type{
+section:last-of-type {
   background: skyblue;
 }
-
 
 img {
   border: 5px solid #8075ff;
@@ -61,9 +57,9 @@ h5 {
   color: #113955;
   margin-bottom: 1em;
 }
-p{
-  line-height:1.5em ;
-  word-spacing:0.2em ;
+p {
+  line-height: 1.5em;
+  word-spacing: 0.2em;
 }
 h1 {
   font-size: 250%;
@@ -86,10 +82,11 @@ button {
   background-color: #372772;
   border: 2px solid black;
   color: #fff;
-  font-size: 1em ;
+  font-size: 1em;
 }
-button:hover , button:focus{
-  color: #F4743B;
+button:hover,
+button:focus {
+  color: #f4743b;
 }
 
 footer {
@@ -101,8 +98,8 @@ footer {
   justify-content: space-between;
 }
 
-#logo{
-  border:none;
+#logo {
+  border: none;
 }
 
 #badge {
@@ -119,34 +116,30 @@ footer {
   justify-content: center;
   align-content: center;
   flex-direction: column;
-  transition:  background-color 2s;
-
+  transition: background-color 2s;
 }
 
 #badge:hover {
   background-color: yellow;
-  
 }
 
 #badge p {
   text-align: center;
   font-size: 125%;
 }
-#panda{
-  width:800px;
-  text-align:justify;
+#panda {
+  width: 800px;
+  text-align: justify;
 }
 .news {
   text-align: center;
 }
-.all-cards{
-  display:inline-flex;
-  flex-direction: row;
+.all-cards {
+  display: flex;
   width: 100%;
 }
-.introduction{
- background: #ffffff; 
-
+.introduction {
+  background: #ffffff;
 }
 .image-container img {
   vertical-align: top;
@@ -158,28 +151,27 @@ footer {
 }
 
 .tigers {
-  background-color: #A7D0DC;
+  background-color: #a7d0dc;
   color: #696420;
   word-spacing: 0.2em;
 }
 
 .giraffe {
-  background-color: #483C46;
+  background-color: #483c46;
   color: #56e39f;
 }
 
 .giraffe h2 {
-  color:  #F4743B;
+  color: #f4743b;
 }
 .giraffe h3 {
-  color:  #F4743B;
+  color: #f4743b;
 }
 .giraffe p {
-  color:  #BEEE62;
+  color: #beee62;
 }
-.giraffe  :nth-child(2) {
+.giraffe :nth-child(2) {
   font-size: 1.2em;
-  
 }
 
 .card {
@@ -222,7 +214,7 @@ footer {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
-  border-radius:0.5em ;
+  border-radius: 0.5em;
 }
 
 .education-container h3,
@@ -247,15 +239,14 @@ footer {
 .membership p {
   max-width: 700px;
   margin: auto;
-
 }
 
 /*Programs*/
-.programs h2{
+.programs h2 {
   text-align: center;
-} 
+}
 
 .programs .card {
   display: inline-block;
-  margin:0;
+  margin: 0;
 }

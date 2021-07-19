@@ -204,7 +204,9 @@ footer {
 
 /*Programs*/
 
-.programs .card {
-  display: table-cell;
+.programs  .container {
+  display: flex;
+  flex-direction: row;
   border-spacing: 10px;
 }
+

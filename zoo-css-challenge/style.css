@@ -204,7 +204,7 @@ footer {
 
 /*Programs*/
 
-.programs  .container {
+.programs  .p-container {
   display: flex;
   flex-direction: row;
   border-spacing: 10px;

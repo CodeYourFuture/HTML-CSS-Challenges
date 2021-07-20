@@ -52,7 +52,9 @@ h1 {
 h2 {
   font-size: 175%;
 }
-
+.bears h2 {
+  color: #211a1d;
+}
 h3 {
   font-size: 150%;
   color: #f4743b;
@@ -115,6 +117,10 @@ footer {
 #badge p {
   text-align: center;
   font-size: 125%;
+}
+.image-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .image-container img {

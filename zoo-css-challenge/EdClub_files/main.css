@@ -1,0 +1,242 @@
+body, html{
+	margin: 0;
+	padding:0;
+}
+#stage {
+	overflow: hidden;
+	width: 300px;
+	height: 600px;
+	cursor: pointer;
+	margin: 0 auto;
+	background-color: #fff;
+}
+.scenes {
+	position: absolute;
+	width: 300px;
+	height: 600px;
+	overflow: hidden;
+	z-index: 1;
+}
+/* General ****************************************************/
+.border {
+	position: absolute;
+	background-size: 100% auto;
+	width: 298px;
+	height: 598px;
+	top: 0px;
+	left: 0px;
+	border: #57493f solid 1px;
+	z-index: 1;
+}
+.logo_container,.logo_mask {
+	position: absolute;
+	background-color: #fff;
+	background-size: 100% auto;
+	width: 114px;
+	height: 79px;
+	top: 0px;
+	left: 100px;
+	overflow: hidden;
+}
+.logo {
+	position: absolute;
+	background-image: url("../images/logo.png");
+	background-size: 100% auto;
+	width: 114px;
+	height: 79px;
+	top: 0px;
+	right: 0px;
+}
+.txt_collection_container {
+	position: absolute;
+	background-size: 100% auto;
+	width: 80px;
+	height: 48px;
+	top: 522px;
+	left: 25px;
+	overflow: hidden;
+}
+.txt_collection {
+	position: absolute;
+	background-image: url("../images/txt_collection.png");
+	background-size: 100% auto;
+	width: 80px;
+	height: 48px;
+	top: 0px;
+	left: 0px;
+}
+.button_container {
+	position: absolute;
+	background-color: #b9dcd3;
+	background-size: 100% auto;
+	width: 146px;
+	height: 36px;
+	top: 534px;
+	left: 124px;
+	overflow: hidden;
+}
+.button {
+	position: absolute;
+	background-image: url("../images/button.png");
+	background-size: 100% auto;
+	width: 144px;
+	height: 34px;
+	top: 1px;
+	left: 1px;
+}
+/* Scene 00 ****************************************************/
+svg {
+	position: absolute;
+	display: block;
+	width: 300px;
+	height: 250px;
+	margin: auto;
+	top: 197px;
+	fill: #fff;
+	overflow: visible;
+}
+.white-bg-top {
+	position: absolute;
+	display: block;
+	background-color: white;
+	width: 300px;
+	height: 197px;
+	top: 0;
+}
+.white-bg-bottom {
+	position: absolute;
+	display: block;
+	background-color: white;
+	width: 300px;
+	height: 153px;
+	bottom: 0;
+}
+.img_00_1 {
+	position: absolute;
+	background-image: url("../images/img_00_1.jpg");
+	background-size: 100% auto;
+	width: 300px;
+	height: 250px;
+	top: 197px;
+	left: 0px;
+}
+.img_00_2 {
+	position: absolute;
+	background-image: url("../images/img_00_2.png");
+	background-size: 100% auto;
+	width: 228px;
+	height: 130px;
+	top: 269px;
+	left: 58px;
+}
+.txt_00_container {
+	position: absolute;
+	background-size: 100% auto;
+	width: 189px;
+	height: 102px;
+	top: 148px;
+	left:  53px;
+	overflow: hidden;
+}
+.txt_00 {
+	position: absolute;
+	background-image: url("../images/txt_00.png");
+	background-size: 100% auto;
+	width: 100%;
+	max-width: 189px;
+	height: 102px;
+	top: 0px;
+	left: 0px;
+}
+.txt_00_1_container {
+	position: absolute;
+	background-size: 100% auto;
+	width: 242px;
+	height: 131px;
+	top: 119px;
+	left:  26px;
+	overflow: hidden;
+}
+.txt_00_1 {
+	position: absolute;
+	background-image: url("../images/txt_00_1.png");
+	background-size: 100% auto;
+	width: 242px;
+	height: 131px;
+	top: 0px;
+	left: 0px;
+}
+/* Scene 01 ****************************************************/
+.img_01_1 {
+	position: absolute;
+	background-image: url("../images/img_01_1.jpg");
+	background-size: 100% auto;
+	width: 300px;
+	height: 250px;
+	top: 197px;
+	left: 0px;
+}
+.img_01_2 {
+	position: absolute;
+	background-image: url("../images/img_01_2.png");
+	background-size: 100% auto;
+	width: 193px;
+	height: 210px;
+	top: 215px;
+	left: 90px;
+}
+.txt_01_container {
+	position: absolute;
+	background-size: 100% auto;
+	width: 96px;
+	height: 116px; 
+	top: 322px;
+	left: 20px;
+	overflow: hidden;
+}
+.txt_01 {
+	position: absolute;
+	background-image: url("../images/txt_01.png");
+	background-size: 100% auto;
+	width: 96px;
+	height: 116px;
+	top: 0px;
+	left: 0px;
+}
+/* Scene 02 ****************************************************/
+.img_02_1 {
+	position: absolute;
+	background-image: url("../images/img_02_1.jpg");
+	background-size: 100% auto;
+	width: 300px;
+	height: 250px;
+	top: 197px;
+	left: 0px;
+}
+.img_02_2 {
+	position: absolute;
+	background-image: url("../images/img_02_2.png");
+	background-size: 100% auto;
+	width: 172px;
+	height: 165px;
+	top: 274px;
+	left: 17px;
+}
+.txt_02_container {
+	position: absolute;
+	background-size: 100% auto;
+	width: 148px;
+	height: 61px;
+	top: 451px;
+	left: 76px;
+	overflow: hidden;
+}
+.txt_02 {
+	position: absolute;
+	background-image: url("../images/txt_02.png");
+	background-size: 100% auto;
+	width: 148px;
+	height: 61px;
+	top: 0px;
+	left: 0px;
+}

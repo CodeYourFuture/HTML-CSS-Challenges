@@ -169,6 +169,32 @@ p.first-giraffe {
   font-size: 20px;
 }
 
+/*My Favorite Animal*/
+
+.favorite-animal {
+  /*khaki*/
+  background-color: #f0e68c;
+  font-size: 18px;
+}
+
+.favorite-animal ul li {
+  list-style-type: square;
+  line-height: 1.8;
+}
+
+.favorite-animal img {
+  display: inline-block;
+  width: 30%;
+  border: none;
+  float: right;
+}
+
+.favorite-animal::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .news h2 {
   text-align: center;
 }
@@ -244,8 +270,4 @@ p.first-giraffe {
 
 .programs .card-container {
   display: flex;
-}
-
-.card {
-  flex: 1;
 }

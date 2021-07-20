@@ -2,6 +2,9 @@
   font-family: sans-serif;
 }
 
+#logo{
+  border: none;
+}
 header {
   background-color: #211a1d;
   color: #ffffff;
@@ -33,13 +36,17 @@ img {
   border: 5px solid #8075ff;
 }
 
+.image-container img:first-of-type {
+  vertical-align:top;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5 {
   /*Purple*/
-  color: #6320ee;
+  color:#B8B8FF;
   margin-bottom: 1em;
 }
 
@@ -55,15 +62,41 @@ h3 {
   font-size: 150%;
 }
 
+.bears{
+  vertical-align: top;
+}
+
+.bears img:nth-child(1) {
+  border-color: red;
+}
+
+.bears img:nth-child(2) {
+  border-color: yellow;
+}
+
+.bears img:nth-child(3) {
+  border-color: green;
+}
+
 button {
+  font-size: 1.2em;
   display: inline-block;
-  border-radius: 3px;
+  border-radius: 30px;
   cursor: pointer;
   padding: 10px 20px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
   background-color: #372772;
   border: 2px solid black;
   color: #fff;
+}
+
+button:hover{
+color: crimson;
+}
+
+button:focus {
+  outline: 20px solid rgb(177, 151, 104);
+  border-radius: 40px;
 }
 
 footer {
@@ -76,7 +109,12 @@ footer {
 }
 
 .introduction {
+  background-color: white;
+  letter-spacing: 0.2em;
+  
 }
+
+
 
 #badge {
   height: 120px;
@@ -118,12 +156,21 @@ footer {
 }
 
 .giraffe {
-  background-color: #465775;
+  background-color:#483C46;
   color: #56e39f;
 }
 
 .giraffe h2 {
   color: #ef6f6c;
+  color:#F4743B;S
+}
+
+.giraffe p{
+  color:#BEEE62;
+}
+
+.giraffe p:nth-child(1) {
+  font-size: 5px;
 }
 
 .card {
@@ -188,8 +235,25 @@ footer {
   color: #ff7f11;
 }
 
+.membership p{
+  max-width: 700px;
+  margin: 0px 1px 20px 130px;
+}
+
+.news .card{
+  border: 1px solid red; 
+  width: 25%;
+}
+
+.news h2{
+  border: 1px solid red; 
+  display:flex;
+  justify-content:center;
+}
+
 /*Programs*/
 
 .programs .card {
-  display: block;
+  flex-direction: row;
+  width: 26.1%;
 }

@@ -141,6 +141,7 @@ footer {
 }
 .news h2 {
   text-align: center;
+  color: #211a1d;
 }
 
 .card {
@@ -167,6 +168,11 @@ footer {
   opacity: 0.5;
   display: inline-block;
   margin-bottom: 10px;
+}
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 /*Education*/

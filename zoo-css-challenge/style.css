@@ -173,8 +173,17 @@ footer {
 #h2-eagle-headings, #h3-eagle-headings {
   color: darkgreen;
 }
+
+.news {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .news h2 {
+  display: inline;
   text-align: center;
+  width: 100%;
 }
 
 .card {
@@ -182,7 +191,7 @@ footer {
   background-color: white;
   padding: 20px;
   margin: 10px;
-  width: 30%;
+  width: 25%;
   border: 1px solid black;
   border-radius: 10px;
 }
@@ -254,6 +263,24 @@ button {
 }
 
 /*Programs*/
+
+.programs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.programs h2 {
+  display: inline;
+  text-align: center;
+  width: 100%;
+}
+
+.programs h3 {
+  display: inline;
+  text-align: center;
+  width: 100%;
+}
 
 .programs .card {
   display: inline-block;

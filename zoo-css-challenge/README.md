@@ -48,7 +48,8 @@ We don’t like the hard corners here. Can you give the container in the section
 
 ## 7) Membership
 
-Give the paragraph a maximum width of 700 pixels, and keep in the middle by adjusting the margin.
+Give the paragraph a maximum width of 700 pixels, 
+and keep in the middle by adjusting the margin.
 
 ## 8) Programs
 

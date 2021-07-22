@@ -108,7 +108,7 @@ footer {
   display: flex;
   justify-content: center;
   align-content: center;
-  flex-direction: column;
+  flex-direction: column-reverse;
   transition: background-color 2s;
 }
 
@@ -223,7 +223,15 @@ footer {
   padding: 50px;
   max-width: 400px;
   border-radius: 90px;
-
+  /* button a:hover{
+    color: #ee2d0b; */
+  }
+  .education-container
+  button:hover{
+  color: #ee2d0b;
+  font-size: 10px;
+ 
+  
 }
 
 .education-container h3,

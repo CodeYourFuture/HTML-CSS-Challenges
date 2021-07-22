@@ -126,7 +126,10 @@ footer {
   background-color: #0b3c49;
   color: #f0e100;
 }
-
+.pandas {
+  background-color: #000000;
+  color: #ffffff;
+}
 .giraffe {
   background-color: #483C46;
   color: #BEEE62;

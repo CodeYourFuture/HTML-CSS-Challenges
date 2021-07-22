@@ -194,6 +194,14 @@ border-color: yellowgreen;
   margin-bottom: 10px;
 }
 
+.flex-con {
+display:flex;
+flex-wrap:wrap;
+justify-content: space-around;
+
+}
+
+
 .btn:hover, btn:focus {
   font-size: 100%;
 background:#56e39f;

@@ -117,20 +117,22 @@ footer {
 
 
 #badge {
+  transition: all .8s ease;
   height: 120px;
   width: 120px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
-
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
 }
+
+
 
 #badge:hover {
   background-color: yellow;
@@ -236,7 +238,7 @@ footer {
 }
 
 .membership p{
-  max-width: 700px;
+  max-width: 90%;
   margin: 0px 1px 20px 130px;
 }
 
@@ -246,7 +248,7 @@ footer {
 }
 
 .news h2{
-  border: 1px solid red; 
+  /* border: 1px solid red; */ 
   display:flex;
   justify-content:center;
 }

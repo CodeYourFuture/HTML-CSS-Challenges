@@ -129,8 +129,13 @@ h3 {
   color: #f4743b;
 }
 
-.news h2 {
+.newsSection h2 {
   text-align: center;
+}
+
+.news {
+  display: flex;
+  flex-direction: row;
 }
 
 .card {
@@ -200,9 +205,18 @@ h3 {
 
 /*Programs*/
 
-.programs .card {
+/* .programs .card {
   display: inline-block;
   vertical-align: top;
+} */
+
+.programsSection h2 {
+  text-align: center;
+}
+
+.programs {
+  display: flex;
+  flex-direction: row;
 }
 
 p {

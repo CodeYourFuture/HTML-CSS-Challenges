@@ -3,7 +3,7 @@
 }
 
 header {
-  background-color: #211a1d;
+  background-color: #1a1819;
   color: #ffffff;
   width: 100%;
   padding: 20px;
@@ -95,7 +95,7 @@ footer {
   width: 100%;
   padding: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 #logo {
@@ -111,7 +111,6 @@ footer {
   position: fixed;
   top: 20px;
   right: 20px;
-
   display: flex;
   justify-content: center;
   align-content: center;
@@ -141,13 +140,10 @@ footer {
 .introduction {
   background: #ffffff;
 }
-.image-container img {
-  vertical-align: top;
+.image-container {
   border: 5px solid #747c92;
-}
-
-.image-container img:first-of-type {
-  vertical-align: top;
+  display: flex;
+  justify-content: space-around;
 }
 
 .tigers {

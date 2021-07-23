@@ -1,6 +1,6 @@
 * {
   font-family: sans-serif;
-  line-height: 25px;
+  line-height: 32px;
   font-size: 18px;
 }
 
@@ -31,7 +31,7 @@ section {
   background-color: #f8f0fb;
 }
 
-img {
+img #logo {
   border: none;
 }
 
@@ -78,6 +78,7 @@ footer {
 }
 
 .introduction {
+  background-color: #fff;
 }
 
 #badge {

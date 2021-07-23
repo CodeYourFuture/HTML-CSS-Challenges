@@ -217,7 +217,16 @@ button:hover {
 .membership strong {
   color: #ff7f11;
 }
-
+/* Human */
+.human{
+  display: flex;
+  background-color: rgb(204, 165, 178);
+ 
+}
+.human img{
+  width: 35%;
+  border-radius: 2em;
+}
 /*Programs*/
 
 .programs .card {

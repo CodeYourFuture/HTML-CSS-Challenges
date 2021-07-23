@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	</head>
  <body>
  	<header>
@@ -21,6 +22,7 @@
  	<main>
  		<section class="introduction">
  			<h1>Birmingham Zoo</h1>
+			 <p>The zoo is open every day of the year and features three major biomes: the Tropic Zone, Temperate Territory, and the Polar Circle. From tropical birds, to snow leopards, grizzly bears, and one of the nation’s largest colonies of Antarctic penguins, there are animals to enjoy in every season.</p>
  		</section>
 
  		<div id="badge">
@@ -32,17 +34,22 @@
 			<p>Did you know that a bear's closest relative is the seal? Or that bears can smell over 2,000 times better than humans?</p>
 			<div class="image-container">
 				<img
+					id="Grizzly1"
 					src="https://placebear.com/200/300"
 					alt="Grizzly Bear"
 					width="200"
 					height="300"
 				>
-				<img src="https://placebear.com/400/300"
+				<img 
+					id="Grizzly2"
+					src="https://placebear.com/400/300"
 					alt="Grizzly Bear"
 					width="400"
 					height="300"
 				>
-				<img src="https://placebear.com/200/400"
+				<img 
+					id="Grizzly3"
+					src="https://placebear.com/200/400"
 					alt="Grizzly Bear"
 					width="200"
 					height="400"
@@ -51,21 +58,22 @@
 		</section>
 
 		<section class="tigers">
-			<h2>Tiger</h2>
-			<h3>Top 5 Tiger Facts</h3>
-			<ol>
+			<h2>Tiger facts 
+			</h2>
+			
+			<ul>
 				<li>Tigers are the largest cat species in the world reaching up to 3.3 meters in length and weighing up to 670 pounds!
 				<li>Tigers are easily recognizable with their dark vertical stripes and reddish/orange fur.
 				<li>The Bengal tiger is the most common tiger.
 				<li>Tigers live between 20-26 years in the wild.
 				<li>Unlike most other cats, tigers are great swimmers and actually like the water.
-			</ol>
+			</ul>
 		</section>
 
 		<section class="giraffe">
 			<h2>Giraffe</h2>
 
-			<p>Giraffes are the world's tallest mammals, thanks to their towering legs and long necks. A giraffe's legs alone are taller than many humans—about 6 feet . These long legs allow giraffes to run as fast as 35 miles an hour over short distances and cruise comfortably at 10 miles an hour over longer distances.</p>
+			<p class="largerParagraph">Giraffes are the world's tallest mammals, thanks to their towering legs and long necks. A giraffe's legs alone are taller than many humans—about 6 feet . These long legs allow giraffes to run as fast as 35 miles an hour over short distances and cruise comfortably at 10 miles an hour over longer distances.</p>
 
 			<h3>Behavior</h3>
 
@@ -78,8 +86,9 @@
 			<p>Giraffes use their height to good advantage and browse on leaves and buds in treetops that few other animals can reach (acacias are a favorite). Even the giraffe's tongue is long! The 21-inch tongue helps them pluck tasty morsels from branches. Giraffes eat most of the time and, like cows, regurgitate food and chew it as cud. A giraffe eats hundreds of pounds of leaves each week and must travel miles to find enough food.</p>
 		</section>
 
-		<section class="news">
+		<section class="newsSection">
 			<h2>News</h2>
+			<div class="news">
 			<div class="card">
 				<time>2010-04-16</time>
 				<h4>Helping wild turtles in Seychelles</h4>
@@ -88,6 +97,12 @@
 			<div class="card">
 				<time>2010-04-12</time>
 				<h4>Learning about the rainforest</h4>
+				<a>Find out More</a>
+			</div>
+
+			<div class="card">
+				<time>2021 07 14</time>
+				<h4>Which big cat are you?</h4>
 				<a>Find out More</a>
 			</div>
 		</section>
@@ -106,26 +121,33 @@
 			<button>Learn More</button>
 		</section>
 
-		<section class="programs">
+		<section class="programsSection">
+			
 			<h2>Programs</h2>
+			
+			<div class="programs">
 			<div class="card">
 				<h4>Children and Family Programs</h4>
-				<a>Find out More</a>
+				<a href="programs.html" target="_blank">Find out More</a>
 			</div>
 			<div class="card">
 				<h4>Adult Programs</h4>
-				<a>Find out More</a>
+				<a href="programs.html" target="_blank">Find out More</a>
 			</div>
 			<div class="card">
 				<h4>Youth and young adults</h4>
-				<a>Find out More</a>
+				<a href="programs.html" target="_blank">Find out More</a>
 			</div>
+		</div>
+		 
+
 			<h3>Useful Links</h3>
 			<p>
 			</p>
 			<a href="https://www.w3schools.com">w3schools.com</a>
 			<a href="https://www.nationalgeographic.com/" target="_blank">National Geographic</a>
 			<a href="http://www.wikipedia.org" target="_top">Wikipedia</a>
+		
 		</section>
 
  	</main>

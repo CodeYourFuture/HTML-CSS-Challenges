@@ -65,3 +65,4 @@ When a user hovers over the badge, add a transition so the change in colour is s
 ## 10) New section
 
 If you have time, add a new section for your favorite animal.
+ 

@@ -50,8 +50,9 @@ h1 {
 }
 
 h2 {
-  font-size: 175%;
-  color:#ec4fb8;
+font-size: 175%;
+color:#ec4fb8;
+text-align: center;
 }
 
 h3 {
@@ -80,7 +81,8 @@ footer {
   width: 100%;
   padding: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  margin-top: 50px;
 }
 
 .introduction{
@@ -115,8 +117,10 @@ footer {
   font-size: 125%;
 }
 
-.image-container img {
-  vertical-align: top;
+.image-container  {
+  display: flex;
+  justify-content: space-evenly;
+
 
 }
 
@@ -130,13 +134,16 @@ footer {
   border-width: 5px;
 }
 
-.news{
-  text-align: center;
+#news{
+  display: flex;
+  justify-content: space-around;
   
 }
 
-
-  #img2{
+#news .card{
+display: flex;
+}
+#img2{
     border-color:blue;
     border-style: solid;
     border-width: 5px; 
@@ -163,13 +170,15 @@ footer {
 }
 
 .card {
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
   background-color: white;
   padding: 20px;
-  margin: 10px;
+   margin: 10px;
   width: 30%;
   border: 1px solid black;
   border-radius: 10px;
+  
 }
 
 .card h4 {
@@ -227,14 +236,24 @@ footer {
   color: #ff7f11;
 }
 
-/*Programs*/
-.programs h2{
-  text-align: center;
+.programs{
+  display: flex;
 }
+.programheading{
+  text-align: center;
+  font-size: 200%;
+  color:#ec4fb8;
+}
+
 .programs .card {
-  display: inline-block;
-  margin: 0;
-  }
+  display: flex;
+  
+}
+#useful {
+display: flex;
+justify-content: space-around;
+
+}
 
 
 

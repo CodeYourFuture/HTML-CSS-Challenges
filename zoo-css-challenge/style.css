@@ -116,13 +116,23 @@ footer {
   border: 5px solid;
   border-color: olive;
 }
-.image-container img {
-  vertical-align: top;
-  
-}
 
-.image-container img:first-of-type {
+/*----------------------------------=====---------------------------*/
+/*.image-container img {
+  vertical-align: top;*/
+  
+/*}*/
+
+/*.image-container img:first-of-type {
   vertical-align: top;
+}*/
+/*-----------------------------------=====-----------------------------*/
+.image-container{
+  display: flex;
+  align-items: space-around;
+  justify-content: center;
+  padding: 20px;
+
 }
 
 .tigers {
@@ -145,6 +155,7 @@ footer {
 }
 .card {
   display: inline-block;
+  justify-content: center;
   background-color: white;
   padding: 20px;
   margin: 10px;
@@ -152,9 +163,12 @@ footer {
   border: 1px solid black;
   border-radius: 10px;
 }
+
+}
 .news h2{
   text-align: center;
   color: #6320ee;
+  justify-content: center;
 }
 .card h4 {
   margin-bottom: 1em;
@@ -202,6 +216,7 @@ footer {
 .education-container button{
   border-radius: 10px;
 }
+
 /*Membership*/
 
 .membership {

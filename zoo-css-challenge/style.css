@@ -153,18 +153,20 @@ footer {
 .tigers {
   background-color: #2f6772;
   color: #f0e100;
-  font-size:120%;
+  font-size:150%;
 }
 
 .giraffe {
   background-color: #483c46;
   color: #BEEE62;
-  font-size:200%;
+  font-size:130%; 
 }
-
+ p: first-child {
+  font-size:300%;
+} 
 .giraffe h2 {
   color: #ef6f6c;
-  font-size:200%;
+  font-size:250%;
 }
 
 
@@ -209,7 +211,7 @@ footer {
   padding: 50px;
   max-width: 400px;
   border-radius: 90px;
-   font-size: 10px; 
+   font-size: 20px; 
   }
   .education-container 
   button:hover{

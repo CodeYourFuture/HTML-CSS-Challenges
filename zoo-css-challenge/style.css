@@ -129,6 +129,31 @@ p {
 
 /*bears*/
 
+.bears {
+  display: flex;
+  flex-direction: column;
+  order: 1,3,2;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  order: 2;
+}
+
+.bears h2 {
+  display: flex;
+  order: 1;
+  justify-content: center;
+}
+
+.bears p {
+  display: flex;
+  order: 3;
+  justify-content: center;
+}
+
 .image-container img {
   vertical-align: top;
   margin: 8px;

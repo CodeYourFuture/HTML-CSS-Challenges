@@ -54,11 +54,13 @@ h1 {
 h2 {
   font-size: 175%;
   color:#ec4fb8;
+  text-align: center;
 }
 
 h3 {
   font-size: 150%;
   color:#F4743B;
+  text-align: center;
 }
 
 button {
@@ -128,21 +130,40 @@ background-color:white ;
 
   #img1{
     border: 5px solid #0eb0dd;
+    
   }
   
-  .news{
-    text-align: center;
+  #news{
+    display:flex;
+    justify-content: space-evenly;
+    
   }
+
+  .card{
+    text-align: center;
+    display:flex;
+    width:90%;
+    justify-content: space-evenly;
+    vertical-align: center;
+  }
+
 
   #img2{
     border: 5px solid yellow;
   }
   
-  #img3{
+  #img3 {
     border: 5px solid orangered;
+    
   }
+     
+  .image-container {
+       display:flex;
+       justify-content:space-evenly;
+  }
+                    
 
-.tigers {
+  .tigers {
    background-color: #0b3c49;
   color: #f0e100;
 }
@@ -158,13 +179,19 @@ background-color:white ;
 }
 
 .card {
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
   background-color: white;
   padding: 20px;
   margin: 10px;
-  width: 30%;
+  /*width: 30%;*/
   border: 1px solid black;
   border-radius: 10px;
+}
+
+.news{
+   text-align:center;
+   
 }
 
 .card h4 {
@@ -224,10 +251,17 @@ background-color:white ;
 }
 
 /*Programs*/
-.programs h2{
+.programs {
+  display:flex;
   text-align: center;
 }
  .programs .card {
-  display: inline-block;
-  margin: 0;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+
+#useful{
+  display: flex;
+  justify-content: space-around;
 }

@@ -131,29 +131,15 @@ footer {
   border: 5px 
   border-color:blue;
   border-style: solid; 
-  border-width: 5px; */
+  border-width: 5px; 
 }
 
 .image-container img:first-of-type {
   vertical-align: bottom;
   border: 5px solid #e92207;
-
-/* #bear-img2{ 
-  border: 5px 
-  border-color:blue;
-  border-style: solid;
-  border-width: 5px;; */
 }
 
-
-/* #bear-img3{ 
-  border: 5px solid #1b10b1;
-
-.image-container img:first-of-type {
-  vertical-align: middle;
-  border:5px rgb(245, 18, 18);*/
-
-  #img2{
+#img2{
     border-color:rgb(44, 23, 23);
     border-style: solid;
     border-width: 5px; 
@@ -173,7 +159,7 @@ footer {
 .giraffe {
   background-color: #483c46;
   color: #BEEE62;
-  font-size:120%;
+  font-size:200%;
 }
 
 .giraffe h2 {
@@ -223,7 +209,7 @@ footer {
   padding: 50px;
   max-width: 400px;
   border-radius: 90px;
-   font-size: 30px; 
+   font-size: 10px; 
   }
   .education-container 
   button:hover{

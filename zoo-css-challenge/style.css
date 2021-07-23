@@ -187,7 +187,11 @@ footer {
   background-size: cover;
   background-position: center;
   padding: 100px 5%;
-  border-radius: 10px;
+  
+}
+
+.education button {
+  border-radius: 8px;
 }
 
 .education-container {

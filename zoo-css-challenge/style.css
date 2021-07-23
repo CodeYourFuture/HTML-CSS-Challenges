@@ -125,6 +125,14 @@ footer {
   border: 5px solid ;
   border-color: orange;
 }
+/*Added flexbox for image container*/
+.image-container{
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  
+}
+/*
 .image-container img {
   vertical-align: top;
   
@@ -132,7 +140,7 @@ footer {
 
 .image-container img:first-of-type {
   vertical-align: top;
-}
+}*/
 
 .tigers {
   background-color: #0b3c49;
@@ -151,10 +159,17 @@ footer {
 .largeParagraph{
   font-size: 1.3rem;
 }
-.news h2{
+
+
+
+h2{
+  display: flex;
   color: #372772;
   text-align: center;
+  justify-content: center;
 }
+
+
 .card {
   display: inline-block;
   background-color: white;
@@ -179,6 +194,7 @@ footer {
   display: inline-block;
   margin-bottom: 10px;
 }
+
 
 /*Education*/
 

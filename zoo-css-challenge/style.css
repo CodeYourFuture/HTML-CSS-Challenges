@@ -3,28 +3,37 @@
 }
 
 header {
+  display: flex;
+  flex-direction: column;
   background-color: #211a1d;
   color: #ffffff;
   width: 100%;
   padding: 20px;
 }
 
+header img {
+  height: 44px;
+  width: 225px;
+}
+
 nav {
-  display: inline-block;
+  display: flex;
   width: 100%;
 }
 
 header ul {
+  display: flex;
   margin: 20px 0 0 0;
   padding: 0;
 }
 
 header ul li {
-  display: inline-block;
+  display: flex;
   margin-right: 10px;
 }
 
 section {
+  display: flex;
   padding: 5%;
   background-color: #f8f0fb;
 }
@@ -83,10 +92,17 @@ footer {
   padding: 20px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .introduction {
+  display: flex;
+  flex-direction: column;
   background: rgba(255, 255, 255, 0.75);
+}
+
+.introduction h1 {
+  margin-bottom: 10px;
 }
 
 #badge {
@@ -98,7 +114,7 @@ footer {
   position: fixed;
   top: 20px;
   right: 20px;
-
+  transition: background-color 5s;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -112,6 +128,11 @@ footer {
 #badge p {
   text-align: center;
   font-size: 125%;
+}
+
+.bears {
+  display: flex;
+  flex-direction: column;
 }
 
 .image-container img {
@@ -131,6 +152,8 @@ footer {
 }
 
 .tigers {
+  display: flex;
+  flex-direction: column;
   background-color: #0b3c49;
   color: #f0e100;
 }
@@ -145,6 +168,8 @@ li {
 }
 
 .giraffe {
+  display: flex;
+  flex-direction: column;
   background-color: #483c46;
   color: #beee62;
 }
@@ -158,12 +183,24 @@ h3 {
   font-size: 1.1em;
 }
 
+.news {
+  display: flex;
+  flex-direction: column;
+}
+
 .news h2 {
   text-align: center;
 }
 
+.card-arrange {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: row;
+}
+
 .card {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   background-color: white;
   padding: 20px;
   margin: 10px;
@@ -183,13 +220,16 @@ h3 {
 
 .card time {
   opacity: 0.5;
-  display: inline-block;
+  display: flex;
   margin-bottom: 10px;
 }
 
 /*Education*/
 
 .education {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 500px;
   background-image: url("https://source.unsplash.com/1200x900/?tiger");
   background-repeat: no-repeat;
@@ -199,8 +239,11 @@ h3 {
 }
 
 .education-container {
+  display: flex;
+  flex-direction: column;
   background-color: rgba(255, 255, 255, 0.75);
-  padding: 50px;
+  padding: 10px 50px 50px 50px;
+  height: 40%;
   max-width: 400px;
   border-radius: 10px;
 }
@@ -225,6 +268,9 @@ h3 {
 /*Membership*/
 
 .membership {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   background-color: #fffffc;
 }
@@ -243,10 +289,42 @@ h3 {
 
 .membership button {
   margin-top: 10px;
+  width: 200px;
 }
 
 /*Programs*/
 
+.programs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+
+.program-cards {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  margin: 0px;
+}
+
 .programs .card {
-  display: inline-block;
+  display: flex;
+  align-items: flex-start;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 50px;
+}
+
+.link-items {
+  display: flex;
+  flex-direction: row;
+}
+
+.link-items a {
+  margin: 0px 20px;
 }

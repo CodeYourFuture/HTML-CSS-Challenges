@@ -19,7 +19,8 @@ header {
 }
 
 nav {
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
   width: 100%;
 }
 
@@ -75,7 +76,7 @@ h3 {
 }
 
 button {
-  display: inline-block;
+  display: flex;
   border-radius: 3px;
   cursor: pointer;
   padding: 10px 20px;
@@ -146,6 +147,7 @@ footer {
   background-color: rgb(48, 56, 65);
 }
 .wolves img {
+  width: 80%;
   border-radius: 1em;
   border-color: rgb(20, 20, 46);
 }
@@ -168,7 +170,8 @@ footer {
 }
 
 .card {
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
   background-color: white;
   padding: 20px;
   margin: 10px;
@@ -242,9 +245,21 @@ footer {
 
 /*Programs*/
 
-.programs .card {
-  display: inline-block;
-  vertical-align: middle;
-  max-width: 10em;
+
+.programs .programs-cards {
+  display: flex;
+  flex-direction: row;
+}
+.programs h2 {
+  display: flex;
+  justify-content: center;
 }
 
+.news .news-cards {
+  display: flex;
+  flex-direction: row;
+}
+.news h2 {
+  display: flex;
+  justify-content: center;
+}

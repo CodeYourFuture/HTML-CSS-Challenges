@@ -3,7 +3,7 @@
 }
 
 header {
-  background-color: #211a1d;
+  background-color: #1a1819;
   color: #ffffff;
   width: 100%;
   padding: 20px;
@@ -28,6 +28,21 @@ section {
   padding: 5%;
   background-color: #f8f0fb;
 }
+section:last-of-type img {
+  float: right;
+  margin-top: -330px;
+  width: 800px;
+  height: 400px;
+  border: 0;
+}
+
+section:last-of-type div {
+  height: 200px;
+}
+
+section:last-of-type {
+  background: skyblue;
+}
 
 img {
   border: 5px solid #8075ff;
@@ -39,10 +54,13 @@ h3,
 h4,
 h5 {
   /*Purple*/
-  color: #6320ee;
+  color: #113955;
   margin-bottom: 1em;
 }
-
+p {
+  line-height: 1.5em;
+  word-spacing: 0.2em;
+}
 h1 {
   font-size: 250%;
 }
@@ -64,6 +82,11 @@ button {
   background-color: #372772;
   border: 2px solid black;
   color: #fff;
+  font-size: 1em;
+}
+button:hover,
+button:focus {
+  color: #f4743b;
 }
 
 footer {
@@ -72,10 +95,11 @@ footer {
   width: 100%;
   padding: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
-.introduction {
+#logo {
+  border: none;
 }
 
 #badge {
@@ -85,13 +109,13 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
-
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
+  transition: background-color 2s;
 }
 
 #badge:hover {
@@ -102,28 +126,48 @@ footer {
   text-align: center;
   font-size: 125%;
 }
-
-.image-container img {
-  vertical-align: top;
-  border: 5px solid #747c92;
+#panda {
+  width: 800px;
+  text-align: justify;
 }
-
-.image-container img:first-of-type {
-  vertical-align: bottom;
+.news {
+  text-align: center;
+}
+.all-cards {
+  display: flex;
+  width: 100%;
+}
+.introduction {
+  background: #ffffff;
+}
+.image-container {
+  border: 5px solid #747c92;
+  display: flex;
+  justify-content: space-around;
 }
 
 .tigers {
-  background-color: #0b3c49;
-  color: #f0e100;
+  background-color: #a7d0dc;
+  color: #696420;
+  word-spacing: 0.2em;
 }
 
 .giraffe {
-  background-color: #465775;
+  background-color: #483c46;
   color: #56e39f;
 }
 
 .giraffe h2 {
-  color: #ef6f6c;
+  color: #f4743b;
+}
+.giraffe h3 {
+  color: #f4743b;
+}
+.giraffe p {
+  color: #beee62;
+}
+.giraffe :nth-child(2) {
+  font-size: 1.2em;
 }
 
 .card {
@@ -166,6 +210,7 @@ footer {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  border-radius: 0.5em;
 }
 
 .education-container h3,
@@ -187,9 +232,17 @@ footer {
 .membership strong {
   color: #ff7f11;
 }
+.membership p {
+  max-width: 700px;
+  margin: auto;
+}
 
 /*Programs*/
+.programs h2 {
+  text-align: center;
+}
 
 .programs .card {
-  display: block;
+  display: inline-block;
+  margin: 0;
 }

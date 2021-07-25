@@ -128,6 +128,16 @@ footer {
 .tigers h2 {
   color:rgba(255, 255, 255, 0.75)
 }
+
+.birds {
+  background-color: #0b3c49;
+  color: #f000bc;
+}
+
+.birds h2 {
+  color:rgba(117, 112, 112, 0.75)
+}
+
 .giraffe {
   background-color: #483C46;
   color: #56e39f;

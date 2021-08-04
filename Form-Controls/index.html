@@ -16,7 +16,7 @@
   <main>
   <form>
      <label for="name">Full Name</label>
-      <input type="text" id="name" name="name" required>
+      <input type="text" minlength="3" maxlength="12" id="name" name="name" required>
 <br><br>
       <label for="email">Enter your email</label>
       <input type="email" id="email" name="name">
@@ -31,7 +31,7 @@
 <br>
 <br>
 <label for="delivery">Choose your delivery date</label>
-<input type="date" id="delivery" name="delivery">
+<input type="date" id="delivery" name="delivery" min="2021-08-05" max="2021-09-05" defaultValue="2021-08-05">
 
 <!-- 
 <label for="dates">Delivery date</label>

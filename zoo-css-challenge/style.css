@@ -29,8 +29,16 @@ section {
   background-color: #f8f0fb;
 }
 
+header #logo {
+  border: none;
+}
+
+.introduction{
+  background-color: white;
+}
+
 img {
-  border: 5px solid #8075ff;
+  border: none ;
 }
 
 h1,
@@ -55,6 +63,10 @@ h3 {
   font-size: 150%;
 }
 
+p {
+  line-height: 24px;
+}
+
 button {
   display: inline-block;
   border-radius: 3px;
@@ -76,6 +88,7 @@ footer {
 }
 
 .introduction {
+  background-color: #fff;
 }
 
 #badge {
@@ -85,7 +98,8 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  /*bottom: 20px;*/
+  top: 20px;
   right: 20px;
 
   display: flex;
@@ -106,8 +120,16 @@ footer {
 .image-container img {
   vertical-align: top;
   border: 5px solid #747c92;
+  height: 250px;
+  width: 270px;
+
 }
 
+.image-container{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
 .image-container img:first-of-type {
   vertical-align: bottom;
 }
@@ -187,9 +209,89 @@ footer {
 .membership strong {
   color: #ff7f11;
 }
+.membership p {
+  max-width: 700px;
+  margin:20px  auto;
+}
 
 /*Programs*/
 
-.programs .card {
+.program {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.card{
   display: block;
+/*width: 270px;
+height: 100px;*/
+}
+
+.section{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;  
+}
+
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px 0;
+  overflow: hidden;
+}
+.links a{
+  color: #0000EE;
+  display: block;
+  font-size: 24px;
+  text-decoration: none;
+  position: relative;
+
+}
+.links a::after {
+  content: '';
+  background-color: #2c405e;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -20px;
+  left: 0;
+  transition: transform .4s ease;
+}
+.links a:hover::after{
+  transform: translateY(-14px);
+}
+
+@media screen and ( max-width :950px) {
+
+  .image-container{
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .image-container img {
+    margin-top: 24px;
+  }
+
+}
+@media screen and (max-width: 650px){
+  .links {
+    flex-direction: column;
+    text-align: center;
+  }
+  .links a {
+    margin-bottom: 15px;
+  }
+  .links a::after {
+    display: none;
+  }
 }

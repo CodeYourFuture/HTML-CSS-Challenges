@@ -1,5 +1,7 @@
 * {
   font-family: sans-serif;
+  word-spacing: 5px;
+  line-height: 20px;
 }
 
 header {
@@ -26,11 +28,12 @@ header ul li {
 
 section {
   padding: 5%;
-  background-color: #f8f0fb;
+  background-color: #483c46;
+  color: #f4743b;
 }
 
 img {
-  border: 5px solid #8075ff;
+  /* border: 5px solid #eeeef3; */
 }
 
 h1,
@@ -39,8 +42,16 @@ h3,
 h4,
 h5 {
   /*Purple*/
-  color: #6320ee;
+  color: #f4743b;
   margin-bottom: 1em;
+}
+p {
+  color: #beee62;
+}
+
+.para {
+  font-size: 150%;
+  line-height: 30px;
 }
 
 h1 {
@@ -49,21 +60,30 @@ h1 {
 
 h2 {
   font-size: 175%;
+  color: #f4743b;
+}
+.news {
+  text-align: center;
 }
 
 h3 {
   font-size: 150%;
+  color: #f4743b;
 }
 
 button {
   display: inline-block;
-  border-radius: 3px;
+  border-radius: 25px;
   cursor: pointer;
   padding: 10px 20px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
   background-color: #372772;
   border: 2px solid black;
   color: #fff;
+  font-size: 120%;
+}
+button:hover {
+  background-color: rgb(196, 129, 28);
 }
 
 footer {
@@ -76,6 +96,10 @@ footer {
 }
 
 .introduction {
+  background-color: #483c46;
+
+  justify-content: space-between;
+  padding: 50px;
 }
 
 #badge {
@@ -85,7 +109,7 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 
   display: flex;
@@ -105,11 +129,11 @@ footer {
 
 .image-container img {
   vertical-align: top;
-  border: 5px solid #747c92;
+  border: 5px solid #be2ba6;
 }
 
 .image-container img:first-of-type {
-  vertical-align: bottom;
+  vertical-align: top;
 }
 
 .tigers {
@@ -118,12 +142,12 @@ footer {
 }
 
 .giraffe {
-  background-color: #465775;
+  background-color: #483c46;
   color: #56e39f;
 }
 
 .giraffe h2 {
-  color: #ef6f6c;
+  color: #f4743b;
 }
 
 .card {
@@ -179,7 +203,13 @@ footer {
   text-align: center;
   background-color: #fffffc;
 }
-
+.memberships {
+  max-width: 700px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 350px;
+  margin-right: 350px;
+}
 .membership h2 {
   color: #ff3f00;
 }
@@ -191,5 +221,6 @@ footer {
 /*Programs*/
 
 .programs .card {
-  display: block;
+  flex-direction: row;
+  justify-content: space-evenly;
 }

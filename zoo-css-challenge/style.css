@@ -29,9 +29,9 @@ section {
   background-color: #f8f0fb;
 }
 
-img {
+/* img {
   border: 5px solid #8075ff;
-}
+} */
 
 h1,
 h2,
@@ -43,6 +43,9 @@ h5 {
   margin-bottom: 1em;
 }
 
+#facts {
+  color: #D1D1D1;
+}
 h1 {
   font-size: 250%;
 }
@@ -76,6 +79,8 @@ footer {
 }
 
 .introduction {
+  background-color: #fff;
+  line-height: 30px;
 }
 
 #badge {
@@ -105,7 +110,7 @@ footer {
 
 .image-container img {
   vertical-align: top;
-  border: 5px solid #747c92;
+  border: 5px solid black;
 }
 
 .image-container img:first-of-type {
@@ -118,12 +123,17 @@ footer {
 }
 
 .giraffe {
-  background-color: #465775;
-  color: #56e39f;
+  background-color: #483C46;
+  color: #BEEE62;
 }
 
 .giraffe h2 {
-  color: #ef6f6c;
+  color: #F4743B;
+  
+}
+.giraffe h3 {
+  color: #F4743B;
+  
 }
 
 .card {

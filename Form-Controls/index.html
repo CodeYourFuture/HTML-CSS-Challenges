@@ -1,28 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
-
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
-
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="T-shirts order form" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="heading">Product Pick</h1>
+    </header>
+    <main>
+      <form class="order-form">
+        <!-- write your html here-->
+        <!-- try writing out the requirements first-->
+        <label class="customer-name-label" for="name">Name</label>
+        <input
+        class="customer-name"
+          type="text"
+          id="name"
+          name="name"
+          required
+          pattern="[a-zA-Z]"
+          placeholder="Type your full name"
+        /><br />
+        <label class="customer-email-label" for="email">Email</label>
+        <input
+        class="customer-email"
+          id="email"
+          type="text"
+          name="email"
+          required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          placeholder="Type your email"
+        /><br />
+        <fieldset class="colour-selection" required>
+          <legend>Please select a colour</legend>
+          <input id="white" name="colour" type="radio" />
+          <label for="white">White</label>
+          <input id="black" type="radio" name="colour" />
+          <label for="black">Black</label>
+          <input id="blue" type="radio" name="colour" />
+          <label for="blue">Blue</label>
+        </fieldset>
+        <label class="order-date-label" for="date">Please select a delivery date</label><br />
+        <input class="order-date" type="date" id="date" name="date" required min="2021-09-30" max="2021-10-28" required /><br />
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <footer class="footer">
+      <!-- change to your name-->
+      <h2>Jasvir Kaur</h2>
+    </footer>
+  </body>
 </html>

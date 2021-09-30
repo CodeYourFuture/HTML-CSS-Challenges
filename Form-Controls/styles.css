@@ -1,0 +1,35 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url("https://images.unsplash.com/photo-1561053720-76cd73ff22c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80");
+    background-size: cover;
+}
+
+.heading {
+    margin-top: 0;
+    text-align: center;
+    background-color: white;
+}
+
+.order-form {
+    padding: 2%;
+    margin: auto;
+    width: 40%;
+    background-color: rgb(233, 212, 145);
+    text-align: center;
+    line-height: 1.6;
+    border-radius: 5%;
+    font-size: 1.2rem;
+}
+
+fieldset {
+    width: 50%;
+    margin: auto;
+    display: flex;
+}
+
+.footer {
+    text-align: center;
+    background-color: white;
+    width: 15%;
+    margin: auto;
+}

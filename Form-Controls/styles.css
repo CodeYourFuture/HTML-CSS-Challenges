@@ -1,24 +1,33 @@
 * {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  background: rgb(100,38,245);
-  background: linear-gradient(160deg, rgba(100,38,245,1) 0%, rgba(79,177,225,1) 80%, rgba(2,0,36,1) 100%);
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(
+    160deg,
+    rgba(100, 38, 245, 1) 0%,
+    rgba(79, 177, 225, 1) 80%,
+    rgba(2, 0, 36, 1) 100%
+  );
+  background-repeat: no-repeat;
   display: grid;
   justify-content: center;
-  grid-template-columns: 100%;
-  overflow-y: hidden;
+  overflow-x: hidden;
   box-sizing: border-box;
-
 }
 
-.header-cont, .form-input-cont, footer {
+.header-cont,
+.form-input-cont,
+footer {
   display: flex;
   justify-content: center;
 }
+/* 
+.main-body {
+  overflow-y: hidden;
+} */
 
 .product-form {
   background-color: white;
@@ -34,9 +43,17 @@ body {
   color: white;
 }
 
+fieldset {
+  border: 0;
+}
+
 .form-input-cont {
   flex-direction: column;
   padding-bottom: 2em;
+}
+
+.form-labels {
+  padding-top: 2em;
 }
 
 .form-input {
@@ -48,24 +65,22 @@ body {
 }
 
 .form-input:focus {
-  border-bottom: 0.3em solid rgba(79,177,225,1);
+  border-bottom: 0.3em solid rgba(79, 177, 225, 1);
   outline: none;
 }
 
-.submit-btn-cont {
-  text-align: center;
-}
-
 .submit-btn {
+  display: block;
+  margin: 0 auto;
   padding: 0.8em;
-  background-color: rgba(79,177,225,1);
+  background-color: rgba(79, 177, 225, 1);
   color: white;
   border: none;
   border-radius: 0.5em;
   font-size: 1em;
   font-weight: 700;
-  width: 30%;
-  border: 2px solid rgba(79,177,225,1);
+  /* width: 30%; */
+  border: 2px solid rgba(79, 177, 225, 1);
 }
 
 .submit-btn:hover {
@@ -73,16 +88,30 @@ body {
   border: 2px solid rgba(40, 24, 181, 0.25);
 }
 
-.bg-tshirt-image {
-  background-image: url("/t-shirts.png");
-  background-repeat: repeat;
+.bg-tshirt-cont {
+  height: 10vh;
+  overflow: hidden;
   position: absolute;
-  right: -15em;
-  bottom: -25em;
+  top: 0;
+  right: 0;
+  width: 60vw;
+  height: 100vh;
+  z-index: -10;
+}
+
+.bg-tshirt-image {
+  background-image: url("./t-shirts.png");
+  background-repeat: repeat;
+  position: relative;
+  top: 0;
+  left: 0;
   width: 60vw;
   height: 200vh;
-  z-index: -10;
   transform: rotate(35deg);
+}
+
+.hidden {
+  overflow: hidden;
 }
 
 @media only screen and (min-width: 768px) {

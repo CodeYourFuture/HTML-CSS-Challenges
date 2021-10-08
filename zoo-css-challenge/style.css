@@ -2,6 +2,10 @@
   font-family: sans-serif;
 }
 
+main {
+  line-height: 2rem;
+}
+
 header {
   background-color: #211a1d;
   color: #ffffff;
@@ -29,8 +33,8 @@ section {
   background-color: #f8f0fb;
 }
 
-img {
-  border: 5px solid #8075ff;
+#logo {
+  border: none;
 }
 
 h1,
@@ -39,7 +43,7 @@ h3,
 h4,
 h5 {
   /*Purple*/
-  color: #6320ee;
+  color: #3E0BA2;
   margin-bottom: 1em;
 }
 
@@ -64,6 +68,17 @@ button {
   background-color: #372772;
   border: 2px solid black;
   color: #fff;
+  font-size: 1.2rem;
+}
+
+button:hover {
+   color: rgb(51, 27, 27);
+   background-color: #b5a4f0;
+}
+
+button:focus {
+   color: rgb(25, 136, 211);
+   background-color: #eeba11;
 }
 
 footer {
@@ -76,6 +91,7 @@ footer {
 }
 
 .introduction {
+  background-color: white;
 }
 
 #badge {
@@ -85,13 +101,13 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
-
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
+  transition: 2s ease-in-out;
 }
 
 #badge:hover {
@@ -103,27 +119,59 @@ footer {
   font-size: 125%;
 }
 
-.image-container img {
-  vertical-align: top;
-  border: 5px solid #747c92;
+.image-container {
+ display: flex;
+ justify-content: space-evenly;
 }
 
 .image-container img:first-of-type {
-  vertical-align: bottom;
+  border: 4px solid yellow;
+}
+
+.image-container img:nth-child(2) {
+  border: 4px solid blue;
+}
+
+.image-container img:last-of-type {
+  border: 4px solid orange;
 }
 
 .tigers {
-  background-color: #0b3c49;
-  color: #f0e100;
+  background-color: rgb(134, 132, 132);
+  color: #17111a;
 }
 
 .giraffe {
-  background-color: #465775;
+  background-color: #483C46,;
   color: #56e39f;
 }
 
 .giraffe h2 {
-  color: #ef6f6c;
+  color: #F4743B;
+}
+
+.giraffe p:first-of-type {
+  color: #BEEE62;
+  font-size: 1.5rem;
+}
+
+/* Eagle section */
+
+.eagle {
+  background-color: #5f5c5d;
+  color: #f5f8f6;
+  width: 70%;
+  margin: auto;
+  border-radius: 5%;
+}
+
+.eagle img {
+  width: 50%;
+  height: auto;
+}
+
+.news h2 {
+  text-align: center;
 }
 
 .card {
@@ -166,6 +214,7 @@ footer {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  border-radius: 5%;
 }
 
 .education-container h3,
@@ -184,6 +233,11 @@ footer {
   color: #ff3f00;
 }
 
+.membership p {
+  max-width: 700px;
+  margin: auto;
+}
+
 .membership strong {
   color: #ff7f11;
 }
@@ -191,5 +245,6 @@ footer {
 /*Programs*/
 
 .programs .card {
-  display: block;
+  width: 25%;
+  margin-left: 2%;
 }

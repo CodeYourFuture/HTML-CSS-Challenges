@@ -1,0 +1,143 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url("https://images.unsplash.com/photo-1561053720-76cd73ff22c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80");
+    background-size: cover;
+}
+
+.heading {
+    margin-top: 0;
+    text-align: center;
+    background-color: white;
+}
+
+input:focus {
+    background-color: rgb(145, 201, 238);
+}
+
+fieldset {
+    width: 50%;
+    margin: auto;
+    display: flex;
+}
+
+/* input[type='radio']:checked {
+    background-color: #ff0000;
+    content: '';
+} */
+
+.order-form {
+    padding: 2%;
+    margin: auto;
+    width: 40%;
+    background-color: rgb(233, 212, 145);
+    text-align: center;
+    line-height: 3;
+    border-radius: 5%;
+    font-size: 1.2rem;
+}
+
+ label, input, button {
+        padding: 2%;
+        font-size: 1.2rem;
+    } 
+
+.footer {
+    text-align: center;
+    background-color: white;
+    width: 15%;
+    margin: auto;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 480px) {
+    body {
+        background-image: none;
+    }
+
+    .heading {
+        margin-top: 0;
+        text-align: center;
+        background-color: black;
+        color: white;
+    }
+
+    .order-form {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 95%;
+        background-color: rgb(231, 167, 138);
+        text-align: center;
+        line-height: 1.6;
+        border-radius: 5%;
+        font-size: 1.3rem;
+    }
+
+    fieldset {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    label, input, button {
+        width: 70%;
+        margin: auto;
+        padding: 2%;
+        font-size: 1.2rem;
+    } 
+
+    .footer {
+        text-align: center;
+        background-color: black;
+        color: white;
+        width: 50%;
+        margin: auto;
+        font-size: 1rem;
+    }
+    
+}
+
+@media only screen 
+and (min-device-width : 481px)
+and (max-device-width : 700px ) 
+{
+    .heading {
+        margin-top: 0;
+        text-align: center;
+        background-color: white;
+    }
+
+    .order-form {
+        padding: 2%;
+        margin: auto;
+        width: 70%;
+        background-color: rgb(233, 212, 145);
+        text-align: center;
+        line-height: 2;
+        border-radius: 5%;
+        font-size: 1.2rem;
+    }
+
+    fieldset {
+        width: 70%;
+        margin: auto;
+        display: flex;
+    }
+
+    label, input, button {
+        width: 70%;
+        margin: auto;
+        padding: 1%;
+        font-size: 1rem;
+    } 
+
+    .footer {
+        text-align: center;
+        background-color: white;
+        width: 50%;
+        margin: auto;
+    }
+}
+

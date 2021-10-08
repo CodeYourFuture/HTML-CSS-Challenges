@@ -30,4 +30,44 @@
 
 body {
   font: 100% "Poppins", sans-serif;
+  background-color: rgb(181, 197, 152);
+}
+
+header, footer {
+  text-align: center;
+  padding: 5%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 35% 35%;
+  justify-content: space-evenly; 
+}
+
+section {
+  background-color: rgb(248, 248, 227);
+}
+
+img {
+  width: 30%;
+  height: auto;
+  padding: 2%;
+}
+
+.img-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+footer p {
+  font-weight: 800;
+}
+
+@media screen and (max-width: 493px) {
+  .container {
+    display: grid;
+    grid-template-columns: 80%;
+    row-gap: 2rem;
+  }
 }

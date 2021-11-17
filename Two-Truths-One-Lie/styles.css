@@ -27,7 +27,78 @@
 * write your names at the bottom
 * take a screenshot at laptop and Moto G4 device sizes in Devtools
 */
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap');
+
 
 body {
-  font: 100% "Poppins", sans-serif;
+  /* font: 100% "Poppins", sans-serif; */
+  font-family: 'Grechen Fuemen', cursive;
+  font-weight: 700;
+  font-size: large;
+  margin: auto;
+  padding: 0;
+  background-color: rgb(160, 197, 202);
+  box-sizing: border-box;
+
+}
+
+header{
+  text-align: center;
+}
+
+img{
+  width: 200px;
+  height: 200px;
+}
+.cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+  padding: 2rem;
+  position: relative;
+
+}
+.top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.name {
+  margin-top: 4rem;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+}
+
+p{
+  font-weight: 600;
+  font-size: medium;
+  font-style: italic;
+}
+
+.list{
+  margin-left:7rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  .cards{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .list{
+    margin-left: 0;
+  }
+  footer {
+    position: static;
+    bottom: 0;
+    left: 50%;
+  }
 }

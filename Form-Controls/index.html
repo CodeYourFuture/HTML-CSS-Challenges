@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,21 +9,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
+<body>
+  <div class="container">
+
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <form class="form">
+        <!-- write your html here-->
+        <!-- try writing out the requirements first-->
+        <fieldset>
+          <legend>Please Fill the Form!</legend>
+          <div>
+            <label for="name">Username</label>
+            <input id="name" type="text" name="name" placeholder="Username"  minlength="3" required />
+          </div><br />
+          <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" placeholder="Email" required />
+          </div>
+          <!-- <label for="colours">Choose a colour:</label>
+          <select name="colours" id="colours  ">
+            <option value="blue">Blue</option>
+            <option value="red">Red</option>
+            <option value="yellow">Yellow</option>
+          </select> -->
+          <p>What colour Would you like ?</p>
+          <div>
+            <input type="radio" name="t-shirt" id="red"  value="red" checked />
+            <label for="red">Red</label>
+          </div>
+          <div>
+            <input type="radio" name="t-shirt" id="yellow" value="yellow" />
+            <label for="yellow">Yellow</label>
+          </div>
+          <div>
+            <input type="radio" name="t-shirt" id="blue" value="blue" />
+            <label for="blue">Blue</label>
+          </div>
+          <div><br />
+            <label for="collection">Collection date:</label>
+            <input type="date" id="collection" name="collection" min="2021-09-20" max="2021-10-20"
+              defaultValue="2021-09-18">
+          </div>
+          <div class="submit">
+            <input id="btn" type="submit" value="Click here to place order">
+          </div>
+        </fieldset>
+  
+  
+      </form>
+  
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <h2>By Yunus FIRAT</h2>
+    </footer>
+  </div>
+  
 </body>
 
 </html>

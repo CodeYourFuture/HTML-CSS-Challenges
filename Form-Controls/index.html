@@ -1,28 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Product Pick</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header-cont">
+      <h1 class="heading">Product Pick</h1>
+    </header>
+    <main class="main-body">
+      <form class="product-form">
+        <fieldset class="form-input-cont name-input-cont">
+          <legend>Personal and product details</legend>
+          <label class="form-labels" for="name">Name</label>
+          <input
+            class="form-input name-input"
+            type="text"
+            id="name"
+            name="name"
+            minlength="2"
+            required
+          />
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+          <label class="form-labels" for="email">Email</label>
+          <input
+            class="form-input email-input"
+            type="email"
+            id="email"
+            name="email"
+            required
+          />
 
+          <label class="form-labels" for="colour">Colour</label>
+          <select
+            class="form-input colour-input"
+            id="colour"
+            name="colour"
+            required
+          >
+            <option disabled>Select colour</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+          </select>
+
+          <label class="form-labels" for="date">Date</label>
+          <input
+            class="form-input date-input"
+            type="date"
+            id="date"
+            name="date"
+            min="2021-10-01"
+            max="2021-10-29"
+            required
+          />
+        </fieldset>
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+      <div class="bg-tshirt-cont">
+        <div class="bg-tshirt-image"></div>
+      </div>
+    </main>
+    <footer>
+      <h2>By Tanika Robinson</h2>
+    </footer>
+  </body>
 </html>

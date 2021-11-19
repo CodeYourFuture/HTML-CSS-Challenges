@@ -3,25 +3,54 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
+  <title>Product Pick</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Product Pick</h1>
+  <header class="header-cont">
+    <h1 class="heading">Product Pick</h1>
   </header>
-  <main>
-  <form>
+  <main class="main-body">
+  <form class="product-form">
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
+      <div class="form-input-cont name-input-cont">
+        <label for="name">Name</label>
+        <input class="form-input name-input" type="text" id="name" name="name"  minlength="2" required/>
+      </div>
+      <div class="form-input-cont email-input-cont">
+        <label for="email">Email</label>
+        <input class="form-input email-input" type="email" id="email" name="email" required />
+      </div>
+      <div class=" form-input-cont colour-input-cont">
+        <label for="colour">Colour</label>
+        <select class="form-input colour-input" id="colour" name="colour" required>
+          <option disabled>Select colour</option>
+          <option value="red">Red</option>
+          <option value="green">Green</option>
+          <option value="blue">Blue</option>
+        </select>
+      </div>
+      <div class="form-input-cont date-input-cont"> 
+        <label for="date">Date</label>
+        <input class="form-input date-input" type="date" id="date" name="date" min="2021-10-01" max="2021-10-29" required />
+      </div>
+      <div class="submit-btn-cont">
+        <button class="submit-btn" type="submit">Submit</button>
+      </div>
   </form>
-
+  <div class="bg-tshirt-image">
+  </div>
+  
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Tanika Robinson</h2>
   </footer>
 </body>
 

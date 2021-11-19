@@ -20,8 +20,9 @@ Writing that out as a series of questions to ask yourself:
 
 1. What is the customer's name? I must collect this data, and validate it. But what is a valid name? I must decide something.
 2. What is the customer's email? I must make sure the email is valid. Email addresses have a consistent pattern.
-3. What colour should this t-shirt be? I must give three options. How will I make sure they don't pick other colours?
-4. When do they want the t-shirt to be delivered? I must collect a date and make sure that date is in the next four weeks. How will I do this? How will I make sure there are no mistakes about the date?
+3. What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours?
+4. What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL
+5. When do they want the t-shirt to be delivered? I must collect a date and make sure that date is in the next four weeks. How will I do this? How will I make sure there are no mistakes about the date?
 
 All fields are required.
 Do not write a form action for this project.
@@ -35,16 +36,16 @@ Let's write out our testable criteria:
 ### HTML
 
 - [ ] My form is semantic html.
-- [ ] My Lighthouse Accessibility score is 100.
 - [ ] All inputs have associated labels.
+- [ ] My Lighthouse Accessibility score is 100.
 - [ ] I require a valid name. I have defined a valid name as a text string of two characters or more.
 - [ ] I require a valid email.
-- [ ] I require one colour from a defined set of three colours.
+- [ ] I require one colour from a defined set of 3 colours.
+- [ ] I require one size from a defined set of 6 sizes.
 - [ ] I require one date from a constrained date range.
 
 ### CSS
 
-- [ ] My form is usable at phone and desktop screen sizes.
 - [ ] I show which element is focused.
 - [ ] My Lighthouse Accessibility score is 100.
 

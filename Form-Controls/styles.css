@@ -1,0 +1,26 @@
+body {
+    width: vw; 
+    height: vh;
+    padding: 10% 30%;
+    background-color:khaki;
+}
+
+form {
+    background-color: white;
+    border: solid 2px grey;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+}
+
+form input,
+form select,
+form fieldset {
+    margin-bottom:10px;
+    padding: 5px;
+}
+
+
+
+

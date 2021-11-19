@@ -15,6 +15,32 @@
   <main>
   <form>
     <!-- write your html here-->
+    <label for="firstname">First Name</label>
+    <input type="text" id="firstname" name="firstname" minlength="2" required/>
+    <label for="lastname">Last Name</label>
+    <input type="text" id="lastname" name="lastname" minlength="1" required/>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required />
+    <fieldset>
+      <legend>Shirt Color</legend>
+      <input type="radio" name="color" value="red" id="red"/>
+      <label for="red">Red</label>
+      <input type="radio" name="color" value="blue" id="blue"/>
+      <label for="blue">Blue</label>
+      <input type="radio" name="color" value="white" id="white"/>
+      <label for="white">White</label>
+    </fieldset>
+    <label for="size">Size</label>
+    <select name="size" id="size">
+      <option value="xs">XS</option>
+      <option value="s">S</option>
+      <option value="m" selected>M</option>
+      <option value="l">L</option>
+      <option value="xl">XL</option>
+      <option value="xxl">XXL</option>
+    </select>
+    <label for="deliverydate">Delivery Date</label>
+    <input type="date" name="deliverydate" id="deliverydate" min="2021-11-19" max="2021-12-17" />
     <!-- try writing out the requirements first-->
   </form>
 

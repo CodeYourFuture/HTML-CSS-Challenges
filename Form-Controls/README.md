@@ -37,7 +37,7 @@ Let's write out our testable criteria:
 
 - [x] My form is semantic html.
 - [x] All inputs have associated labels.
-- [] My Lighthouse Accessibility score is 100.
+- [x] My Lighthouse Accessibility score is 100. (Checked with WAVE tool since Lighthouse is only for online webpages)
 - [x] I require a valid name. I have defined a valid name as a text string of two characters or more.
 - [x] I require a valid email.
 - [x] I require one colour from a defined set of 3 colours.
@@ -47,7 +47,7 @@ Let's write out our testable criteria:
 ### CSS
 
 - [x] I show which element is focused.
-- [ ] My Lighthouse Accessibility score is 100.
+- [x] My Lighthouse Accessibility score is 100.
 
 ## Extension Task
 

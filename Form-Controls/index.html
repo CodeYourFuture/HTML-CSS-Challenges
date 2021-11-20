@@ -15,23 +15,24 @@
   <main>
   <form>
 
-   <label for=“name”>Enter your Name:</label>
-   <input type="text" name="name" id="customer_name" maxlength="32" pattern="[a-zA-Z'-'\s]*">
+   <label for=“customer_name”>Enter your Name:</label>
+   <input id="customer_name" type="text" name="name" minlength="3" maxlength="36" required>
    <br>
   
-    <label for="email">Enter your Email:</label>
-    <input type="email" name="email" id="customer_email">
+    <label for="customer_email">Enter your Email:</label>
+    <input id="customer_email" type="email" required>
    <br>
-
-  <label for="form__colour">Pick t-shirt colour:</label>
-  <input type="radio" id="form__black" value="black" name="colour">
+<fieldset>
+  <legend>Pick t-shirt colour:</legend>
+  <input id="form__black" type="radio" value="black" name="colour">
   <label for="form__black">Black</label>
 
-  <input type="radio" id="form__blue" value="blue" name="colour">
+  <input id="form__blue" type="radio" value="blue" name="colour">
   <label for="form__blue">Blue</label>
 
-  <input type="radio" id="form__yellow" value="yellow" name="colour">
+  <input id="form__yellow" type="radio" value="yellow" name="colour">
   <label for="form__yellow">Yellow</label>
+</fieldset>
   <br>
 
     <label for="form__size">Pick size:</label>
@@ -43,9 +44,9 @@
   <option value="xl">XL</option>
   <option value="xxl">XXL</option>
 </select>
- <br>
-
-<label for=“date”>Delivery Date:</label>
+  <br>
+ 
+<label for=“start”>Delivery Date:</label>
 <input type="date" name="date" id="start" value="2021-11-20" minlength="2021-11-21" max-length="2021-12-18"> 
 <input type="submit" value="Submit">
   </form>

@@ -1,28 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <form>
+        <fieldset>
+          <legend>Customer Details</legend>
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+          <!-- name input -->
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" required="true" />
+          <br />
+          <br />
+          <!-- email input -->
+          <label for="email">Email:</label>
+          <input type="text" name="email" id="email" required="true" />
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Product Details</legend>
+          <!-- radio input for shirt colour -->
+          <p>T-Shirt color:</p>
+          <input type="radio" id="color" value="color" required name="color" />
+          <label for="color">Yellow</label>
 
+          <input type="radio" id="color" value="color" required name="color" />
+          <label for="color">Red</label>
+
+          <input type="radio" id="color" value="color" required name="color" />
+          <label for="color">Blue</label>
+          <br />
+          <!-- radio input for size -->
+          <p>Size:</p>
+
+          <input
+            type="radio"
+            id="extra__small"
+            value="XS"
+            required
+            name="size"
+          />
+          <label for="XS">XS</label>
+
+          <input type="radio" id="small" value="S" required name="size" />
+          <label for="S">S</label>
+
+          <input type="radio" id="Medium" value="medium" required name="size" />
+          <label for="M">M</label>
+
+          <input type="radio" id="large" value="L" required name="size" />
+          <label for="L">L</label>
+
+          <input
+            type="radio"
+            id="extra__large"
+            value="XL"
+            required
+            name="size"
+          />
+          <label for="XL">XL</label>
+
+          <input
+            type="radio"
+            id="extraextra__large"
+            value="XXL"
+            required
+            name="size"
+          />
+          <label for="XXL">XXL</label>
+        </fieldset>
+        <br />
+        <br />
+        <!-- Date -->
+        <fieldset>
+          <legend>Delivery Details</legend>
+          <label for="delievery__date">Delievery Date:</label>
+          <input
+            type="date"
+            id="delievery__date"
+            name="birthday"
+            min="2021-11-21"
+            max="2021-12-20"
+            required="true"
+          />
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <h2>By Shadab Safaee</h2>
+    </footer>
+  </body>
 </html>

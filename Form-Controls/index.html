@@ -14,8 +14,77 @@
   </header>
   <main>
   <form>
+
+
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
+
+  <fieldset>
+    <legend>Customer Details</legend>
+
+
+    <!-- name input -->
+    <!-- I require a valid name. I have defined a valid name as a text string of two characters or more. -->
+    <label for="customer-name">Name:</label>
+    <input type="text" name="name" id="customer-name" required=true minlength=2> 
+    
+
+    <!-- email input -->
+    <label for="customer-email">Email:</label>
+    <input type="email" required name='email' id="customer-email">
+
+  </fieldset>
+
+  <fieldset>
+    <legend>Product Details</legend>
+
+
+    <!-- radio input for shirt colour -->
+
+    <p>Colour:</p>
+    
+    <input type='radio' required name='shirt-colour' id='red-shirt'>
+    <label for="red-shirt">Red</label>
+
+    <input type='radio' required name='shirt-colour' id='green-shirt'>
+    <label for="green-shirt">Green</label>
+
+    <input type='radio' required name='shirt-colour' id='blue-shirt'>
+    <label for="blue-shirt">Blue</label>
+
+
+    <!-- radio input for size -->
+
+    <p>Size:</p>
+    
+    <input type='radio' required name='shirt-size' id='xs-shirt'>
+    <label for="xs-shirt">XS</label>
+
+    <input type='radio' required name='shirt-size' id='s-shirt'>
+    <label for="s-shirt">S</label>
+
+    <input type='radio' required name='shirt-size' id='m-shirt'>
+    <label for="m-shirt">M</label>
+
+    <input type='radio' required name='shirt-size' id='l-shirt'>
+    <label for="l-shirt">L</label>
+
+    <input type='radio' required name='shirt-size' id='xl-shirt'>
+    <label for="xl-shirt">XL</label>
+
+    <input type='radio' required name='shirt-size' id='xll-shirt'>
+    <label for="xll-shirt">XLL</label>
+
+  </fieldset>
+
+  <fieldset>
+    <legend>Delivery Details</legend>
+
+    <!-- date input within 4 weeks requirement -->
+    <label for="delivery-date">Date of Delivery:</label>
+    <input type="date" required min="2021-11-20" max="2021-12-18" id="delivery-date">
+
+  </fieldset>  
   </form>
 
   </main>

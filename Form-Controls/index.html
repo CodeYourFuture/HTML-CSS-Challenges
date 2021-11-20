@@ -1,28 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <form>
+        <!-- write your html here-->
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+        <!-- try writing out the requirements first-->
+        <label for="customer-name">Name:</label>
+        <input
+          type="text"
+          name="name"
+          id="customer-name"
+          minlength="2"
+          required="true"
+        />
 
+        <label for="customer-email">Email:</label>
+        <input type="email" name="email" id="customer-email" required="true" />
+
+        <p>T-shirt colour</p>
+        <input type="radio" id="red" value="red" name="customer-shirt" />
+        <label for="red">Red</label>
+
+        <input type="radio" id="blue" value="blue" name="customer-shirt" />
+        <label for="blue">Blue</label>
+
+        <input type="radio" id="yellow" value="yellow" name="customer-shirt" />
+        <label for="yellow">Yellow</label>
+
+        <p>What size do you want?</p>
+        <input type="radio" id="extra-small" value="XS" name="shirt-size" />
+        <label for="XS">XS</label>
+
+        <input type="radio" id="small" value="S" name="shirt-size" />
+        <label for="S">S</label>
+
+        <input type="radio" id="medium" value="M" name="shirt-size" />
+        <label for="M">M</label>
+
+        <input type="radio" id="large" value="L" name="shirt-size" />
+        <label for="L">L</label>
+
+        <input type="radio" id="extra-large" value="XL" name="shirt-size" />
+        <label for="XL">XL</label>
+
+        <input
+          type="radio"
+          id="extra-extra-large"
+          value="XXL"
+          name="shirt-size"
+        />
+        <label for="XXL">XXL</label>
+
+        <p></p>
+        <label for="delivery-date">Delivery date:</label>
+        <input
+          type="date"
+          id="delivery-date"
+          name="date"
+          value="2021-11-20"
+          min="2021-11-21"
+          max="2021-12-20"
+          required="true"
+        />
+      </form>
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <h2>By Harsheek Thanki</h2>
+    </footer>
+  </body>
 </html>

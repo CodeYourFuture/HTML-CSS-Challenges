@@ -1,0 +1,43 @@
+body {
+    width: vw; 
+    height: vh;
+    padding: 10% 30%;
+    background-image:url("./img/background.jpg");
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1, h2{
+    color: white;
+}
+form {
+    background-color:rgba(255, 255, 255, 0.91);
+    border: solid 2px grey;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5% 5%;
+}
+.personaldetails {
+    display: flex;
+    flex-direction: column;
+    padding-left:10px;
+}
+form input,
+form select,
+form fieldset {
+    margin-bottom:10px;
+    padding: 5px;
+    border: 1px solid grey;
+    font-size:large;
+}
+form button {
+    width: 33%; 
+    background-color: indigo;
+    color:white;
+    border: 1px solid pink;
+    padding: 5px; 
+    align-self: center;
+    font-weight: 700;
+    background-image:url("./img/background.jpg");
+    background-blend-mode: darken;
+    font-size: 1.2rem;
+}

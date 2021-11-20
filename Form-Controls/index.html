@@ -14,23 +14,40 @@
   </header>
   <main>
   <form>
-    <p></p>
-    <label>What is the customer's name?</label>
-    <input type="text" value="name" name="form_name">
-    <label>What is the customer's email?</label>
-    <input type="text" value="email" name="form_email">
-    
-    <p>What colour should the t-shirt be:</p>
 
-  <input type="checkbox" id="form__black" value="black" name="colour">
+   <label for=“name”>Enter your Name:</label>
+   <input type="text" name="name" id="customer_name" pattern="[a-zA-Z'-'\s]*">
+   <br>
+  
+    <label for="email">Enter your Email:</label>
+    <input type="email" name="email" id="customer_email">
+   <br>
+
+  <label for="form__colour">Pick t-shirt colour:</label>
+  <input type="radio" id="form__black" value="black" name="colour">
   <label for="form__black">Black</label>
 
-  <input type="checkbox" id="form__blue" value="blue" name="colour">
+  <input type="radio" id="form__blue" value="blue" name="colour">
   <label for="form__blue">Blue</label>
 
-  <input type="checkbox" id="form__yellow" value="yellow" name="colour">
+  <input type="radio" id="form__yellow" value="yellow" name="colour">
   <label for="form__yellow">Yellow</label>
- 
+  <br>
+
+    <label for="form__size">Pick size:</label>
+<select name="size" id="form__size">
+  <option value="xs">XS</option>
+  <option value="s">S</option>
+  <option value="m">M</option>
+  <option value="l">L</option>
+  <option value="xl">XL</option>
+  <option value="xxl">XXL</option>
+</select>
+ <br>
+
+<label for=“date”>Delivery Date:</label>
+<input type="text" name="date" id="date" required=@gmail.com>
+<input type="submit" value="Submit">
   </form>
 
   </main>

@@ -1,28 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <form id="customer">
+        <label for="name">Name</label>
+        <input
+          id="email"
+          type="text"
+          name="fname"
+          pattern="[a-z]{1,15}"
+          title="User can contain lowercase only"
+          required
+        />
+        <label for="email">Email</label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          required
+          pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+        />
+        <label for="color">Select size:</label>
+        <div class="color required">
+          <label for="color">Red</label>
+          <input type="radio" id="red" name="color" />
+        </div>
+        <div class="color">
+          <label for="khaki">Khaki</label>
+          <input type="radio" id="khaki" name="color" />
+        </div>
+        <div class="color">
+          <label for="beige">Beige</label>
+          <input type="radio" id="beige" name="color" />
+        </div>
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+        <label for="size">Choose size</label>
+        <select name="size" id="size" form="customer" required>
+          <option value="xs">XS</option>
+          <option value="s">S</option>
+          <option value="l">L</option>
+          <option value="xl">XL</option>
+          <option value="xxl">XXL</option>
+          <option value="xxxl">XXXL</option>
+        </select>
 
+        <label for="delivery">Delivery date:</label>
+
+        <input
+          type="date"
+          id="delivery"
+          name="delivery"
+          value="2018-07-22"
+          min="2021-11-11"
+          max="2021-12-11"
+          required
+        />
+      </form>
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <h2>Mahri</h2>
+    </footer>
+  </body>
 </html>

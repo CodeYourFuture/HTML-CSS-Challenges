@@ -1,0 +1,26 @@
+header,
+main,
+footer {
+  padding: 0 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#customer {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+select {
+  width: 350px;
+  margin: 10px 0;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+.color {
+  display: flex;
+}

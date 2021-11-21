@@ -1,28 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
-
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
-
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="content-body">
+      <header class="header">
+        <h1>Product Pick</h1>
+      </header>
+      <main>
+          <fieldset class="personal_details">
+            <legend>Personal Details</legend>
+            <div class="form__name">
+              <label for="form_name">Name:* </label>
+              <div class="fname_lname">
+                <input type="text" id="fname" name="fname" minlength="2" required />
+                <label for="fname">First Name</label>
+              </div>
+              <div class="fname_lname">
+                <input type="text" id="lname" name="lname" minlength="2" required />
+                <label for="lname">Last Name</label>
+              </div>
+            </div>
+            <div class="form__email">
+              <label for="form_email">Email:* </label>
+              <input type="email" name="email" id="form_email" required />
+            </div>
+          </fieldset>
+          <fieldset class="feature_details">
+            <legend>Product Details</legend>
+            <div class="feature_colour">
+              <h3>Choose a t-shirt colour:</h3>
+              <div class="feature_colours">
+                <input type="radio" name="colour" id="form_blue" />
+                <label for="form_blue">blue</label>
+                <input type="radio" name="colour" id="form_yellow" />
+                <label for="form_yellow">yellow</label>
+                <input type="radio" name="colour" id="form_red" />
+                <label for="form_red">red</label>
+              </div>
+            </div>
+            <div class="feature_size">
+              <label for="form_size">Size: </label>
+              <div class="feature_sizes">
+                <select name="size" id="form_size" required>
+                  <option value="xs">XS</option>
+                  <option value="s">S</option>
+                  <option value="m">M</option>
+                  <option value="l">L</option>
+                  <option value="xl">XL</option>
+                  <option value="xxl">XXL</option>
+                </select>
+              </div>
+            </div>
+              <label class="feature_delivery"
+                >Choose a date for delivery:
+                <input
+                  type="date"
+                  name="date"
+                  min="2021-11-20"
+                  max="2021-11-26"
+                  id="form_date"
+                  required
+                />
+              </label>
+            <input type="submit" value="Submit" required />
+          </fieldset>
+        </form>
+      </main>
+      <footer class="footer">
+        <!-- change to your name-->
+        <h2>By MARINA ALMEIDA</h2>
+      </footer>
+    </div>
+  </body>
 </html>

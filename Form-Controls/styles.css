@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid slategray;
+}
+
+.content-body {
+  border: 3px solid sienna;
+  width: 500px;
+  height: 100vh;
+}
+
+.header {
+  border: 2px solid steelblue;
+  text-align: center;
+  color: aliceblue;
+  background-color: #67c681;
+}
+
+.main {
+  border: 2px solid salmon;
+}
+
+input {
+  width: 50%;
+}
+
+.form__name {
+  border: 2px solid green;
+}
+
+.fname_lname {
+  border: 2px solid pink;
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0px;
+}
+
+.footer {
+  border: 2px solid slateblue;
+}

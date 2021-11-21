@@ -1,42 +1,107 @@
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 3px solid slategray;
+  margin: 0;
+  padding: 0;
 }
 
 .content-body {
-  border: 3px solid sienna;
   width: 500px;
-  height: 100vh;
+  margin: auto;
 }
 
+/* Personal Details */
+
 .header {
-  border: 2px solid steelblue;
   text-align: center;
   color: aliceblue;
   background-color: #67c681;
 }
 
-.main {
-  border: 2px solid salmon;
-}
-
-input {
-  width: 50%;
-}
-
 .form__name {
-  border: 2px solid green;
+  display: flex;
+  flex-direction: column;
+}
+
+label[for="form_name"],
+label[for="form_email"] {
+  font-size: 20px;
+}
+
+.fname_lname,
+.form__email {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
 }
 
 .fname_lname {
-  border: 2px solid pink;
-  display: flex;
-  flex-direction: column;
-  margin: 25px 0px;
+  color: grey;
 }
 
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 7px 2px;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+label[for="form_email"] {
+  margin-bottom: 20px;
+}
+
+/* Product Details */
+
+.feature_details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature_colour {
+  width: 60%;
+  text-align: center;
+}
+
+.feature_colours {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.feature_size {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.feature_sizes {
+  margin: 0 10px;
+}
+
+/* delivery date */
+
+.feature_delivery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="date"] {
+  margin: 20px 0;
+}
+
+input[type="submit"] {
+  background-color: #67c681;
+  padding: 10px 30px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer */
+
 .footer {
-  border: 2px solid slateblue;
+  text-align: center;
+  font-size: 10px;
+  color: grey;
 }

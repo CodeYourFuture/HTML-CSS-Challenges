@@ -1,4 +1,20 @@
 <!DOCTYPE html>
+<style>
+  .my-form {
+    background-color: coral;
+    width:50%;
+  }
+
+  * {
+      padding:2px;
+      margin:2px;
+    }
+
+    .field {
+    width: 60%;
+}  
+</style>
+
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -14,49 +30,51 @@
   </header>
   <main>
   <form>
-    <fieldset>
-      <legend>Information regarding T-shirt</legend>
-      <label for="form__name">Your name:</label>
-      <input type="text" required name="custName" id="form__custname" minlength="2">
+    <div class="my-form"> 
+      <fieldset class="field">
+        <legend>Information regarding T-shirt</legend>
+        <label for="form-name">Your name:</label>
+        <input type="text" name="custName" id="form-custname" required minlength="2">
+        <br/>
 
-      <label for="form__email">Your email address:</label>
-      <input type="email" required  name="enail" id="form__email">
-</fieldset>
- 
-    <fieldset>
+        <label for="form-email">Your email address:</label>
+        <input type="email" required name="enail" id="form-email" required>
+        <br/>
+      
+       <label for="form-colour">Choose the colour of the t-shirt:</label>
+          <input type=radio id="form-black-tshirt" value="black" name="tshirt-colour" required>
+          <label for="form-black-tshirt">Black</label>
+          <input type=radio id="form-white-tshirt" value="white" name="tshirt-colour">
+          <label for="form-white-tshirt">White</label>
+          <input type=radio id="form-red-tshirt" value="red" name="tshirt-colour">
+          <label for="form-red-tshirt">Red</label>
+        <br/>
+   
+      <label for="form-size">Choose the size of the t-shirt</label>
+        <select name="size" id="form-size" required>
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+            
+        </select>
+        <br/>
 
-      <label for="form__colour">Choose the colour of the t-shirt:</label>
-      <input type=radio id="form__black__tshirt"  value="black" name="tshirt-colour">
-      <label for="form__black__tshirt">Black</label>
-      <input type=radio id="form__white__tshirt"  value="white" name="tshirt-colour">
-      <label for="form_white__tshirt">White</label>
-      <input type=radio id="form__red__tshirt"  value="red" name="tshirt-colour">
-      <label for="form__black__tshirt">Red</label>
-     </fieldset>
-    <fieldset>
-  
-      <label for="form__size">Choose the size of the t-shirt</label>
-      <select name="size" id="form__size">
-        <option value="xs">XS</option>
-        <option value="s">S</option>
-        <option value="m">M</option>
-        <option value="l">L</option>
-        <option value="xl">XL</option>
-        <option value="xxl">XXL</option>
-      </select>
-    </fieldset>
+      <label for="form-thedate">Collection Date:</label>  
+         <input type="date" required name="collect-date" id="form-collect_date" required
+              min="2021-11-20" max="2021-12-17"> <!-- 4 weeks -->
+        <br/>      
 
-      <label for="form__thedate">Collection Date:</label>  
-      <input type="date"  required  name="collect__date" id="form__collect_date" 
-      min="2021-11-20" max="2021-12-17"> 
-
-      <input type="submit" value="Submit Now!">
-</form>
-
+        <input type="submit" value="Submit Now!">
+      </fieldset>
+  </form>
+</div>
   </main>
   <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+ 
+    <h2>By Delroy</h2>
   </footer>
 </body>
 

@@ -14,9 +14,44 @@
   </header>
   <main>
   <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+    <fieldset>
+      <legend>Information regarding T-shirt</legend>
+      <label for="form__name">Your name:</label>
+      <input type="text" required name="custName" id="form__custname" minlength="2">
+
+      <label for="form__email">Your email address:</label>
+      <input type="email" required  name="enail" id="form__email">
+</fieldset>
+ 
+    <fieldset>
+
+      <label for="form__colour">Choose the colour of the t-shirt:</label>
+      <input type=radio id="form__black__tshirt"  value="black" name="tshirt-colour">
+      <label for="form__black__tshirt">Black</label>
+      <input type=radio id="form__white__tshirt"  value="white" name="tshirt-colour">
+      <label for="form_white__tshirt">White</label>
+      <input type=radio id="form__red__tshirt"  value="red" name="tshirt-colour">
+      <label for="form__black__tshirt">Red</label>
+     </fieldset>
+    <fieldset>
+  
+      <label for="form__size">Choose the size of the t-shirt</label>
+      <select name="size" id="form__size">
+        <option value="xs">XS</option>
+        <option value="s">S</option>
+        <option value="m">M</option>
+        <option value="l">L</option>
+        <option value="xl">XL</option>
+        <option value="xxl">XXL</option>
+      </select>
+    </fieldset>
+
+      <label for="form__thedate">Collection Date:</label>  
+      <input type="date"  required  name="collect__date" id="form__collect_date" 
+      min="2021-11-20" max="2021-12-17"> 
+
+      <input type="submit" value="Submit Now!">
+</form>
 
   </main>
   <footer>

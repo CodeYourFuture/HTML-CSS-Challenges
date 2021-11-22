@@ -1,0 +1,8 @@
+#name {
+    width: 150px;
+    margin: 20px;
+}
+
+input:invalid {
+    border: 3px solid rgb(85, 95, 78);
+}

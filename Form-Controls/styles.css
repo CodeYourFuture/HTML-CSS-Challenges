@@ -1,0 +1,54 @@
+input, button, select, fieldset {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 5px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.customer-form {
+  background-color: #68e1b4;
+  width: 50%;
+  border: solid 1px grey;
+  padding: 10px;
+}
+
+input {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+input[type="date"], [type="select"] {
+  width: 10em;
+}
+
+input[type="radio"] {
+  background-color: #ffffff;
+}
+
+fieldset {
+  width: 19vw;
+}
+
+label {
+  color:#ffffff;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+select {
+  width: 12vw;
+}
+
+button {
+  align-self: flex-start;
+  margin-top: 4rem;
+  padding: 10px;
+  color: #68e1b4;
+  background-color: #ffffff;
+}

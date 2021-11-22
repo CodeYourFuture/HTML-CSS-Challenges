@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,20 +9,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+    <section class="customer-form">
+    <form id="order-details">
+
+      <label for="username">
+        Full Name:
+      </label>
+      <input type="text" id="username" name="username" placeholder="username" minlength="2" autofocus
+        aria-required="true" required>
+      <label for="mail">
+        E-mail:
+      </label>
+      <input type="email" id="mail" name="mail" placeholder="fullname@gmail.com" aria-required="true" required>
+      <fieldset>
+        <legend>Pick a color</legend>
+        <label for="blue">
+          Blue
+          <input id="blue" type="radio" name="color" value="blue" checked />
+        </label>
+        
+
+        <label for="yellow">
+          Yellow
+          <input id="yellow" type="radio" name="color" value="yellow" />
+        </label>
+        
+
+        <label for="pink">
+          Pink
+          <input id="pink" type="radio" name="color" value="pink" />
+        </label>
+        
+      </fieldset>
+      <label for="size">
+        Select Size
+      </label>
+      <select name="size" id="size">
+        <option value="xs" selected>XS</option>
+        <option value="small">Small</option>
+        <option value="">Medium</option>
+        <option value="">Large</option>
+        <option value="">Extra Large</option>
+        <option value="">Extra Extra Large</option>
+      </select>
+      <label for="delivery-date">
+        Select Delivery Date
+      </label>
+      <input id="delivery-date" name="delivery-date" type="date" min="2021-12-01" max="2022-01-01" aria-required="true"
+        required>
+      <button type="submit">Place order</button>
+
+    </form>
+  </section>
 
   </main>
   <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Selchuk Karakus</h2>
   </footer>
 </body>
 

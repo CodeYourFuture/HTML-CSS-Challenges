@@ -1,8 +1,63 @@
-#name {
-    width: 150px;
-    margin: 20px;
+body{
+    width: 400px;
+    height: 400px;
+    margin: 20px 50px;
+    background-image: url("images/pickawood-gf8e6XvG_3E-unsplash.jpg");
+    height: 55vh;
+    background-position: 100%; 
+    background-size: cover;
 }
+    
+
 
 input:invalid {
-    border: 3px solid rgb(85, 95, 78);
+    border: 2px solid rgb(129, 89, 240);
 }
+
+.personal-details {
+    display: flex;
+    flex-direction: column;
+    border: rgb(203, 179, 236) 2px solid;
+    background-color: rgb(226, 227, 236);
+    margin: 20px 5px;
+    font-size:large;
+    padding: 15px 20px; 
+}
+
+.color{
+    background-color: rgba(235, 233, 250, 0.911);
+    border: rgb(165, 144, 194) 2px solid;
+    margin: 20px 5px;
+    font-size:large;
+    padding: 15px 20px; 
+}
+
+#size {
+    margin: 20px 5px;
+    padding: 15px 20px; 
+}
+
+#delivery-time {
+    margin: 20px 5px;
+    font-size:large;
+    padding: 15px 20px; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(233, 236, 252);
+}
+    
+#button{
+    color:rgb(255, 255, 255);
+    font-size:large;
+    padding: 15px 20px; 
+    background-color:rgb(16, 10, 34);
+    font-size: 20px;  
+}
+
+label{
+    font-size: 20px;
+}
+

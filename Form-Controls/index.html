@@ -16,6 +16,56 @@
   <form>
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
+    
+
+    <fieldset class="personal-details">
+      <legend>Name and email</legend>
+      <label for="firstname">First name</label>
+      <input type="text" id="firstname" name="name" required=true minlength="2"><br>
+      <label for="lastname">Last name</label>
+      <input type="text" id="lastname" name="name" required=true minlength="2"><br>
+      <label for="email">Enter your email</label>
+      <input type="email" id="email" name="email" required=true>
+    </fieldset>
+
+    <fieldset class="color"> 
+      <legend>Color</legend>
+      <p>Choose a color of the t-shirt</p>
+    
+      <input type="radio" id="choose-color" value="red" name="color" required=true>
+      <label for="choose-color">Red</label>
+
+      <input type="radio" id="choose-color" value="green" name="color" required=true>
+      <label for="choose-color">Green</label>
+
+      <input type="radio" id="choose-color" value="blue" name="color" required=true>
+      <label for="choose-color">Blue</label>
+    </fieldset>
+    
+
+
+    
+    <label for="size"> Choose the size: </label>
+    <select name="size" id="size" required=true>
+      <option value="XS">XS</option>
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
+      <option value="XXL">XXL</option>
+    </select>
+    <br>
+    
+    
+    <label for="delivery-time">Choose a delivery date</label>
+    <input type="date" id="delivery-time" name="delivery-date" 
+    max="2021-12-18" required=true>
+
+
+    <br>
+    <input id="button"  type="submit" value="Book delivery">   
+
+
   </form>
 
   </main>

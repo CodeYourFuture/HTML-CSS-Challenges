@@ -14,13 +14,46 @@
   </header>
   <main>
   <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
+
+   <label for=“customer_name”>Name:</label>
+   <input id="customer_name" type="text" name="name" minlength="3" maxlength="36" required>
+   <br>
+  
+    <label for="customer_email">Email:</label>
+    <input id="customer_email" type="email" required>
+   <br>
+<fieldset>
+  <legend>Pick t-shirt colour:</legend>
+  <input id="form__black" type="radio" value="black" name="colour">
+  <label for="form__black">Black</label>
+
+  <input id="form__blue" type="radio" value="blue" name="colour">
+  <label for="form__blue">Blue</label>
+
+  <input id="form__yellow" type="radio" value="yellow" name="colour">
+  <label for="form__yellow">Yellow</label>
+</fieldset>
+  <br>
+
+    <label for="form__size">Pick size:</label>
+<select name="size" id="form__size">
+  <option value="xs">XS</option>
+  <option value="s">S</option>
+  <option value="m">M</option>
+  <option value="l">L</option>
+  <option value="xl">XL</option>
+  <option value="xxl">XXL</option>
+</select>
+  <br>
+ 
+<label for=“start”>Delivery Date:</label>
+<input type="date" name="date" id="start" value="2021-11-20" minlength="2021-11-21" max-length="2021-12-18"> 
+<input type="submit" value="Submit">
   </form>
 
   </main>
   <footer>
-    <!-- change to your name-->
+  <p>Teniola Ogunjinrin</p>
     <h2>By HOMEWORK SOLUTION</h2>
   </footer>
 </body>

@@ -1,0 +1,12 @@
+input{
+border-radius: 1rem;
+}
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+
+label {
+    margin: .1rem 0;
+}

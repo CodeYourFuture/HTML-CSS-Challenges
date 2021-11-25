@@ -1,28 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <div class="wrapper">
+      <form>
+        
+        <label for="form_customer"> Customer name: </label>
+        <input type="text" name="customer" id="form_customer" required />
+      
+    
+        <label class="email" for="email">Enter your email:</label>
+        <input type="email" name="email" id="email" required/>
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+        <p>Select color</p>
+        <div class="color-info">
+          <div class="pink">
+        <input type="radio" id="white" name="favcolor" value="Pink" required/>
+        <label for="pink">Pink</label>
+          </div>
+          <div class ="yellow">
+        <input type="radio" id="yellow" name="favcolor" value="Yellow" required/>
+        <label for="yellow">Yellow</label>
+        </div>
+        <div class="green">
+        <input type="radio" id="green" name="favcolor" value="Green" required/>
+        <label for="green">Green</label>
+        </div>
+        </div>
+    
+          <p>Select your size </p>
+          <div class="size-info">
+            <div class="xs">
+        <input type="radio" id="xs" name="size" value="XS" required/>
+        <label for="s">XS</label>
+        </div>
+        <div class="s">
+        <input type="radio" id="S" name="size" value="S" required/>
+        <label for="s">S</label>
+        </div>
+        <div class="m">
+        <input type="radio" id="m" name="size" value="M" required/>
+        <label for="m">M</label>
+        </div>
+        <div class="l">
+        <input type="radio" id="l" name="size" value="L" required/>
+        <label for ="l">L</label>
+        </div>
+        <div class="xl">
+        <input type="radio" id="xl" name="size" value="XL" required/>
+        <label for ="xl">XL</label>
+        </div>
+        <div class="xxl">
+        <input type="radio" id="xxl" name="size" value="XXL" required/>
+        <label for ="xl">XXL</label>
+        </div>
+        </div>
 
+        <label for="delivery-date"> Choose your delivery date:</label>
+  <input type="date" id="delivery-date" name="delivery-date" required>
+  <input type="submit" value="Submit" required>
+        <!-- try writing out the requirements first-->
+      </form>
+      </div>
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <h2>By Amarachi Okereke</h2>
+    </footer>
+  </body>
 </html>

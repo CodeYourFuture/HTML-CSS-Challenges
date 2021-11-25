@@ -14,6 +14,52 @@
   </header>
   <main>
   <form>
+    <fieldset>
+      <legend>Information</legend>
+    <!--Name-->
+    <label for=“form__name”>Full name:</label>
+      <input type=“text” name=“name” id=“form_name” minlength="2" required="true">
+    <!--Email-->
+    <label for=“form__email”>Email:</label>
+    <input type="email" id="email"  required>
+  </fieldset>
+  </br>
+    <!--Color-->
+
+     <!-- <label for="form-color" name="color" id="form_color" >Color:</label>   -->
+     <fieldset>
+        <p>Choose the color:</p>
+
+        <label for="form-Green" name="Green" id="form_-Green" >Green</label>
+        <input type="radio" id="form__Green" value="Green" name="T-shirts" checked>
+        
+        <label for="form-Blue" name="Blue" id="form-Red">Blue</label>
+        <input type="radio" id="form_blue" value="Blue" name="T-shirts">
+        
+        <label for="form-Red" name="Red" id="form-Red">Red</label>
+        <input type="radio" id="form__red" value="Red" name="T-shirts">
+        </br>
+     </fieldset>
+</br>
+  <fieldset>
+              <!--size-->
+      <label for="form_size">Size:</label>
+      <select name="Size" id="form_size">
+        <option value="xs">XS</option>
+        <option value="s">S </option>
+        <option value="m">M </option>
+        <option value="l">L </option>
+        <option value="xl">Xl</option>
+        <option value="xxl">XXL</option>
+      </select>
+    </fieldset>
+    </br> </br>
+      <Label for="delivery_date">Delivery date</Label>
+      <input type="date" id="delivery_date" name="delivery"  value="2021-07-22"
+      min="2021-01-01" max="2021-12-31" required>
+      
+       <input type="submit" value="submit">
+
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
   </form>
@@ -21,7 +67,7 @@
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2> ALI NURISIAHSIAHI</h2>
   </footer>
 </body>
 

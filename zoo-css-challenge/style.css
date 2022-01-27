@@ -5,13 +5,13 @@
 header {
   background-color: #211a1d;
   color: #ffffff;
-  width: 100%;
+  width: 97%;
   padding: 20px;
 }
 
 nav {
   display: inline-block;
-  width: 100%;
+  width: 90%;
 }
 
 header ul {
@@ -28,9 +28,8 @@ section {
   padding: 5%;
   background-color: #f8f0fb;
 }
-
-img {
-  border: 5px solid #8075ff;
+.introduction {
+  background-color: white;
 }
 
 h1,
@@ -40,7 +39,7 @@ h4,
 h5 {
   /*Purple*/
   color: #6320ee;
-  margin-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 h1 {
@@ -61,23 +60,36 @@ button {
   cursor: pointer;
   padding: 10px 20px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
-  background-color: #372772;
+  background-color: #722772;
   border: 2px solid black;
-  color: #fff;
+  color: rgb(255, 255, 255);
+}
+.education-container {
+  border-radius: 2rem ;
 }
 
 footer {
   background-color: #211a1d;
   color: #ffffff;
-  width: 100%;
+  width: 96%;
   padding: 20px;
   display: flex;
   justify-content: space-between;
 }
 
-.introduction {
-}
+#img1 {
+  border-color: yellow;
 
+}
+#img2 {
+  border-color: rgb(0, 132, 255);
+}
+#img3 {
+  border-color: rgb(255, 0, 191);
+}
+.image-container {
+  margin-top: 0px;
+}
 #badge {
   height: 120px;
   width: 120px;
@@ -85,7 +97,7 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 10px;
   right: 20px;
 
   display: flex;
@@ -96,6 +108,8 @@ footer {
 
 #badge:hover {
   background-color: yellow;
+  opacity: 0.6;
+  transition: 0.3s;
 }
 
 #badge p {
@@ -123,15 +137,20 @@ footer {
 }
 
 .giraffe h2 {
-  color: #ef6f6c;
+  color: #483C46;
 }
-
+.giraffe p {
+  color:  #BEEE62;
+}
+.giraffe h3 {
+  color:   #F4743B;
+}
 .card {
   display: inline-block;
   background-color: white;
   padding: 20px;
   margin: 10px;
-  width: 30%;
+  width: 20%;
   border: 1px solid black;
   border-radius: 10px;
 }
@@ -176,6 +195,8 @@ footer {
 /*Membership*/
 
 .membership {
+  max-width: 700px;
+  margin-left: 130px;
   text-align: center;
   background-color: #fffffc;
 }
@@ -191,5 +212,6 @@ footer {
 /*Programs*/
 
 .programs .card {
-  display: block;
+  display: inline-block;
+  margin: 10px;
 }

@@ -1,5 +1,6 @@
 * {
   font-family: sans-serif;
+
 }
 
 header {
@@ -67,6 +68,11 @@ h2 {
 h3 {
   font-size: 150%;
 }
+p,
+li{
+  line-height: 1.6em;
+  letter-spacing: 1px;
+}
 
 button {
   display: inline-block;
@@ -77,8 +83,12 @@ button {
   background-color: #372772;
   border: 2px solid black;
   color: #fff;
+  font-size: larger;
 }
 
+button:hover:focus{
+  color: #747c92;
+}
 footer {
   background-color: #211a1d;
   color: #ffffff;
@@ -100,13 +110,14 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
+  
 }
 
 #badge:hover {
@@ -121,14 +132,15 @@ footer {
 .image-container img {
   vertical-align: top;
   border: 5px solid #747c92;
+  margin: 10px;
 }
 
 .image-container img:first-of-type {
-  border-color: red;
-  vertical-align: bottom;
+  border-color: gray;
+  
 }
 .image-container img:nth-of-type(2){
-  border-color: green;
+  border-color: rgb(3, 24, 3);
 }
 .image-container img:nth-of-type(3){
   border-color: rgb(45, 62, 160);
@@ -138,7 +150,9 @@ footer {
   background-color: #0b3c49;
   color: #f0e100;
 }
-
+.tigers h2{
+  color: #747c92;
+}
 .giraffe {
   background-color: #483C46;
   color:#BEEE62;
@@ -146,7 +160,15 @@ footer {
 .giraffe h2 {
   color: #ef6f6c;
 }
-
+.giraffe h3{
+  color: #ef6f6c;
+}
+.giraffe p{
+  color: #BEEE62;
+}
+.giraffe:first-of-type{
+font-size: large;
+}
 .card {
   display: inline-block;
   background-color: white;
@@ -156,9 +178,12 @@ footer {
   border: 1px solid black;
   border-radius: 10px;
 }
-
+.new{
+  color: #BEEE62;
+}
 .card h4 {
   margin-bottom: 1em;
+  color: #211a1d;
 }
 
 .card a {
@@ -171,7 +196,11 @@ footer {
   display: inline-block;
   margin-bottom: 10px;
 }
-
+.programs .card{
+  padding: 5px;
+  display: inline-block;
+  box-sizing: border-box;
+}
 /*Education*/
 
 .education {
@@ -187,6 +216,7 @@ footer {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  border-radius: 80px;
 }
 
 .education-container h3,
@@ -202,9 +232,12 @@ footer {
 }
 
 .membership h2 {
-  color: #ff3f00;
+  color: #33221d;
 }
-
+.membership p{
+  max-width: 700px;
+  margin: o auto;
+}
 .membership strong {
   color: #ff7f11;
 }
@@ -212,5 +245,10 @@ footer {
 /*Programs*/
 
 .programs .card {
-  display: block;
+  display: inline-block;
+  color: #211a1d;
+  
+}
+.programs h2{
+  color: #211a1d;
 }

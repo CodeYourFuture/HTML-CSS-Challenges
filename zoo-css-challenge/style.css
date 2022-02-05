@@ -7,6 +7,7 @@ header {
   color: #ffffff;
   width: 100%;
   padding: 20px;
+  
 }
 
 nav {
@@ -30,8 +31,18 @@ section {
 }
 
 img {
-  border: 5px solid #8075ff;
+  border: solid;
+  border-color: white;
 }
+img {
+  border: 5px;
+  border-color:lightblue;
+}
+img {
+  border: 5px;
+  border-color: lightseagreen;
+}
+
 
 h1,
 h2,
@@ -39,6 +50,7 @@ h3,
 h4,
 h5 {
   /*Purple*/
+  
   color: #6320ee;
   margin-bottom: 1em;
 }
@@ -76,6 +88,8 @@ footer {
 }
 
 .introduction {
+  background-color: white;
+  
 }
 
 #badge {

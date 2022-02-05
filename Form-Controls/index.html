@@ -13,7 +13,28 @@
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
+  <form class="form" >
+    <!-- // name input  -->
+    <label for="name" class="form"> Name</label>
+    <input id="name" type="text" name="name" minlength="3" maxlength="10" required>
+
+<!-- email input  -->
+    <label for="email" class="form">Email that is required</label>
+    <input id="email" type="email" required>
+
+    <!-- t-shirt colour  -->
+     <label for="colours" class="form">T-shirt colour</label>
+     <select id="colours" name="colour">
+      <option value="red" selected>Red</option>
+      <option value="green">Green</option>
+      <option value="blue">Blue</option>
+
+      <!-- pick a week  -->
+
+      <label for="week" class="form">Week:</label>
+      <input type="date" id="week" name="week" min="2021-09-10" max="2021-10-10" required>
+
+   
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
   </form>
@@ -21,7 +42,7 @@
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Rahma Gulaid</h2>
   </footer>
 </body>
 

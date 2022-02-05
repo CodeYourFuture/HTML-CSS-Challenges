@@ -51,7 +51,7 @@ h4,
 h5 {
   /*Purple*/
   
-  color: #6320ee;
+  color: #8575a3;
   margin-bottom: 1em;
 }
 
@@ -60,6 +60,7 @@ h1 {
 }
 
 h2 {
+  color: rgb(173, 165, 165);
   font-size: 175%;
 }
 
@@ -132,10 +133,9 @@ footer {
 }
 
 .giraffe {
-  background-color: #465775;
-  color: #56e39f;
+  background-color: #483C46;
+  color:#BEEE62;
 }
-
 .giraffe h2 {
   color: #ef6f6c;
 }

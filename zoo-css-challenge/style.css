@@ -86,8 +86,8 @@ button {
   font-size: larger;
 }
 
-button:hover:focus{
-  color: #747c92;
+button:hover{
+  color: #42b93e;
 }
 footer {
   background-color: #211a1d;
@@ -156,6 +156,7 @@ footer {
 .giraffe {
   background-color: #483C46;
   color:#BEEE62;
+  
 }
 .giraffe h2 {
   color: #ef6f6c;
@@ -163,8 +164,11 @@ footer {
 .giraffe h3{
   color: #ef6f6c;
 }
-.giraffe p{
+.giraffe p1{
   color: #BEEE62;
+  font-size: 30px;
+  
+
 }
 .giraffe:first-of-type{
 font-size: large;
@@ -178,8 +182,9 @@ font-size: large;
   border: 1px solid black;
   border-radius: 10px;
 }
-.new{
-  color: #BEEE62;
+.news h2{
+ margin-left: 50%;
+ color: rgb(83, 99, 93);
 }
 .card h4 {
   margin-bottom: 1em;

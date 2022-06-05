@@ -15,13 +15,45 @@
   <main>
   <form>
     <!-- write your html here-->
+    <form>
+      <!-- Name -->
+      <label for="name" class="label-name">Name</label>
+      <input type="text" id="name" minlength="2" maxlength="100" required>
+      <!-- Email -->
+      <label for="email" class="label-email">Email</label>
+      <input type="email" name="email" id="email" required>
+      <!-- colours -->
+      <fieldset>
+        <legend>Choose Color</legend>
+        <input type="radio" name="color" id="grey">
+        <label for="grey">Grey</label>
+        <input type="radio" name="color" id="gold">
+        <label for="gold">Gold</label>
+        <input type="radio" name="color" id="black">
+        <label for="black">Black</label>
+      </fieldset>
+      <select name="size" id="size">
+        <option value="all">Select Size</option>
+        <option value="xs">XS</option>
+        <option value="s">S</option>
+        <option value="m">M</option>
+        <option value="l">L</option>
+        <option value="xl">XL</option>
+        <option value="xxl">XXL</option>
+      </select>
+      <label for="date">Delivery Date</label>
+      <input type="date" name="date" id="date" min="2022-07-01">  
+
+
+      <input type="submit" name="submit" id="submit">
+    </form>
     <!-- try writing out the requirements first-->
   </form>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Anthony Mogotlane</h2>
   </footer>
 </body>
 

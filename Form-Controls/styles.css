@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Italiana&family=Roboto:wght@300;400;700&family=Tiro+Gurmukhi&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;;
+    line-height: 1.6;
+    color: salmon;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 10px 10px;
+  border:none;
+  border-radius: 5px;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.15);
+  padding: 5px;
+}
+
+form {
+    margin: 20px;
+}
+
+h1, h2 {
+    margin: 20px;
+    font-family: Italiana, serif;
+    color: black;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+fieldset {
+    
+    border: none;
+}
+
+ fieldset , legend{ padding:0px; margin:0px;}

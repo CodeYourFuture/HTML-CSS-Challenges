@@ -1,0 +1,11 @@
+input[value="Turquoise"] {
+    accent-color: #0fc9e7;
+}
+
+input[value="Pink"] {
+    accent-color: #fe346e;
+}
+
+input[value="Green"] {
+    accent-color: #4ef037;
+}

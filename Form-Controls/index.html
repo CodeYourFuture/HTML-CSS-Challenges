@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,15 +9,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+    <form>
+      <!-- write your html here-->
+      <label for="name">First Name</label>
+      <input type="text"  id="name" value="" name="fname" placeholder="John"> <br>
+      <label for="surname">Last Name</label>
+      <input type="text" minlength="3" maxlength="15" id="name" value="" name="lname" placeholder="Smith"> <br>
+      <label for="email">Email</label>
+      <input type="text" id="email" value="" name="email" placeholder="johnsmith@gmail.com"> <br>
+      <label for="pasword">Password</label>
+      <input type="password" id="password" value="" name="password" minlength="5" maxlength="15" required="">
+      <br>
+
+      <label for="color">T-shirt colour</label><br>
+      <label for="t-col1">Turquoise</label>
+      <input type="radio" name="col" value="Turquoise">
+
+      <label for="t-col2">Pink</label>
+      <input type="radio" name="col" value="Pink">
+
+      <label for="t-col3">Green</label>
+      <input type="radio" name="col" value="Green"><br>
+
+
+      <label for="size">T-shirt Size</label>
+      <select name="T-size" id="size">
+        <option value="xs">XS</option>
+        <option value="s">S</option>
+        <option value="m">M</option>
+        <option value="l">L</option>
+        <option value="xl">XL</option>
+        <option value="xxl">XXL</option>
+      </select><br>
+
+      <label for="date">Delivery Date</label>
+      <input type="date"  id="D-date" value="2022-06-07" max="2022-07-08">
+      
+      <br>
+
+      <button>Submit</button>
+
+      <!-- try writing out the requirements first-->
+    </form>
 
   </main>
   <footer>

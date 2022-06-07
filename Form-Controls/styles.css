@@ -1,0 +1,105 @@
+/*general styling*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300&family=Praise&display=swap");
+html {
+    background-color: #DEE2F7;
+    font-size: 1rem;
+}
+@media (max-width: 980px) {
+    html {
+      font-size: 0.6rem;
+    }
+  }
+  @media (max-width: 460px) {
+    html {
+      font-size: 0.4rem;
+    }
+  }
+body {
+    font-family: "Noto Sans Display", sans-serif;
+    margin: auto;
+    color: #fff;
+    width: 50%;
+}
+h1 {
+    color: #000;
+    margin-left: 3rem;
+
+}
+form {
+    background-color: #332036;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 20px;
+}
+label, p {
+    font-weight: 900;
+    margin-left: 1rem;
+}
+input[type=text],input[type=email] {
+    width: 50%;
+    padding: 10px 20px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    background-color: #9AE5E6;
+    border-radius: 15px;
+    
+}
+
+::placeholder {
+    font-size: 1rem;
+    color: #000;
+}
+::-webkit-input-placeholder {
+    font-size: 1rem;
+    color: #000;
+}
+input[type=radio] {
+    width: 1.2rem;
+    height: 1.2rem;
+    
+}
+.red {
+    accent-color: red;  
+}
+.green {
+    accent-color: green;  
+}
+.blue {
+    accent-color: blue;  
+}
+input[type=date] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: ;
+    box-sizing: border-box;
+    background-color: #9AE5E6;
+    border-radius: 10px;
+
+}
+input[type=submit] {
+    width: 30%;
+    
+}
+input[type=submit], input[type=reset] {
+    background-color: #F46197;
+    border: none;
+    color: #000;
+    font-size: large;
+    font-weight: 500;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 2px 6px;
+    cursor: pointer
+    border: 10px solid #F46197;
+    border-radius: 10px;
+
+
+
+}
+ input:focus {
+     background-color: #DEBFBA;
+ }
+
+h2 {
+    color: #000;
+}

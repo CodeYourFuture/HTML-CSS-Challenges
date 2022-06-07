@@ -1,0 +1,54 @@
+body {
+    background-image: url(https://images.pexels.com/photos/4530799/pexels-photo-4530799.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+}
+label{
+    font-size: 20PX;
+}
+#shirtform {
+    text-align: center;
+}
+
+#Fname {
+    margin: 20px;
+}
+
+#Lname {
+    margin: 20px;
+}
+
+#email {
+    margin: 20px;
+}
+
+#password {
+    margin: 20px;
+}
+
+fieldset {
+    border: 0;
+    margin: 20px;
+}
+
+input[value="Turquoise"] {
+    accent-color: #0fc9e7;
+}
+
+input[value="Pink"] {
+    accent-color: #fe346e;
+}
+
+input[value="Green"] {
+    accent-color: #4ef037;
+}
+
+h2{
+    text-align: center;
+    margin: 80px;
+}

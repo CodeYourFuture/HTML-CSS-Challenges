@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,20 +9,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+    <form id="shirtform">
+      <!-- write your html here-->
+      <fieldset>
+        <label for="name">
+          First Name
+          <input type="text" id="Fname" value="" name="fname" placeholder="John" required=""> <br>
+        </label>
+
+        <label for="surname">
+          Last Name
+          <input type="text" minlength="3" maxlength="15" id="Lname" value="" name="lname" placeholder="Smith"
+            required=""> <br>
+        </label>
+
+        <label for="email">
+          Email
+          <input type="text" id="email" value="" name="email" placeholder="johnsmith@gmail.com" required=""> <br>
+        </label>
+
+        <label for="pasword">
+          Password
+          <input type="password" id="password" value="" name="password" minlength="5" maxlength="15" required="">
+          <br></label>
+      </fieldset>
+
+      <fieldset>
+        <label for="color">T-shirt colour</label><br>
+        <label for="t-col1">
+          Turquoise
+          <input type="radio" name="col" value="Turquoise">
+        </label>
+
+        <label for="t-col2">
+          Pink
+          <input type="radio" name="col" value="Pink">
+        </label>
+
+        <label for="t-col3">
+          Green
+          <input type="radio" name="col" value="Green">
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="size">T-shirt Size</label>
+        <select name="T-size" id="size">
+          <option value="xs">XS</option>
+          <option value="s">S</option>
+          <option value="m">M</option>
+          <option value="l">L</option>
+          <option value="xl">XL</option>
+          <option value="xxl">XXL</option>
+        </select><br>
+      </fieldset>
+
+      <fieldset>
+        <label for="date">
+          Delivery Date
+          <input type="date" id="D-date" value="2022-06-07" max="2022-07-08">
+          <br>
+        </label>
+      </fieldset>
+
+      <button>Submit</button>
+
+      <!-- try writing out the requirements first-->
+    </form>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Tersia Koetzee</h2>
   </footer>
 </body>
 

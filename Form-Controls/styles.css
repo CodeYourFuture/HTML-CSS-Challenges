@@ -12,9 +12,10 @@ body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 1.125rem;
-    font-weight: 300;;
+    font-weight: 400;
     line-height: 1.6;
-    color: salmon;
+    color:#d13b05;
+    font-weight: 400;
 }
 
 button,
@@ -30,18 +31,32 @@ textarea {
   padding: 5px;
 }
 
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
 form {
-    margin: 20px;
+    margin: 0 300;
+    
 }
 
 h1, h2 {
-    margin: 20px;
+    margin: 10px;
     font-family: Italiana, serif;
-    color: black;
+    color: #212121;
 }
 
 h1 {
     font-size: 50px;
+    padding-left: 20px;
+}
+
+h2{
+    text-align: end;
+    padding-right:80px;
 }
 
 fieldset {
@@ -50,3 +65,19 @@ fieldset {
 }
 
  fieldset , legend{ padding:0px; margin:0px;}
+
+ img {
+     /* padding: 0px 0px 0px 150px; */
+     width: 200px;
+     height:auto;
+     border-radius: 5px; 
+     box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.15);    
+ }
+
+ input[type=text], input[type=email]  {
+ width: 300px;
+ }
+
+ input[type=text]:focus, input[type=email]:focus {
+  background-color: rgb(126, 159, 170);
+}

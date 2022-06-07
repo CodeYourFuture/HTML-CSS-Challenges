@@ -3,29 +3,29 @@
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-    background-color: #3CBC8D;
-    color: white;
+    background-color: #FFF9E3;
+    color: rgb(10, 10, 10);
  }
  input[type=email] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-    background-color: #3CBC8D;
-    color: white;
+    background-color: #FFF9E3;
+    color: rgb(10, 10, 10);
  }
  input[type=radio] {
     box-sizing: border-box;
-    background-color: #3CBC8D;
-    color: white;
+    background-color: #FFF9E3;
+    color: rgb(10, 10, 10);
  }
  input[type=number] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-    background-color: #3CBC8D;
-    color: white;
+    background-color: #FFF9E3;
+    color: rgb(10, 10, 10);
  }
  input[type=text]:focus {
     border: 3px solid #555;
@@ -52,8 +52,8 @@
     padding: 16px 20px;
     border: none;
     border-radius: 4px;
-    background-color: #3CBC8D;
-    color: white;
+    background-color: #FFF9E3;
+    color: rgb(10, 10, 10);
   }
   input[type=button], input[type=submit] {
     background-color: #04AA6D;

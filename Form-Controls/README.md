@@ -15,7 +15,6 @@
 We are selling t-shirts. Write a form to collect the following data:
 
 Our customers already have accounts, so we know their addresses and charging details already. We don't need to collect that data. We want to confirm they are the right person, then get them to choose a colour and then pick a delivery date.
-
 Writing that out as a series of questions to ask yourself:
 
 1. What is the customer's name? I must collect this data, and validate it. But what is a valid name? I must decide something.
@@ -49,7 +48,7 @@ Let's write out our testable criteria:
 - [ ] I show which element is focused.
 - [ ] My Lighthouse Accessibility score is 100.
 
-## Extension Task
+ ## Extension Task
 
 If you have done all these things and you would like a really big challenge, run a further test and refactor your code.
 

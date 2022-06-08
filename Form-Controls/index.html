@@ -13,15 +13,50 @@
     <h1>Product Pick</h1>
   </header>
   <main>
+    
   <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
+ <fieldset><label for="username"   > Enter Your Username:<br>
+  <input class="input" type="text" required name="username" minlength="2" placeholder="Enter Username" ><br><br>
+  <label for="email" > Enter Your Email:</label><br>
+  <input class="input" type="email" required name="email" placeholder="Enter Email"></fieldset>
+    
+    
+  <fieldset>
+    <label>Pick a T-Shirt colour:</label><br>
+    <label for="green">
+    <input id="green" type="radio" name="colour" value="green" />
+    Green</label><br>
+    <label for="beige">
+    <input id="beige" type="radio" name="colour" value="beige" />
+    Beige</label><br>
+    <label for="black">
+    <input id="black" type="radio" name="colour" value="black" />
+    Black</label><br><br>
+  
+   <label for="sizes">Pick a T-Shirt size: </label>
+<select id="sizes" name="sizes">
+  <option value="">[Select one]</option>
+  <option value="XS" selected>XS</option>
+  <option value="S">S</option>
+  <option value="M">M</option>
+  <option value="L">L</option>
+  <option value="XL">XL</option>
+  <option value="XXL">XXL</option>
+  </select>
+       </fieldset>
+<fieldset>
+  <label for="start">Enter a date for delivery:
+<input class="date" type="date" name="begin" placeholder="dd-mm-yyyy" value="" min="2022-06-09" max="2022-07-06">
+</label>
+</fieldset>
+<button class="sub-button" type="submit" id="submit">Submit</button>   
+
   </form>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2> &copy; By NISHKA KISTEN</h2>
   </footer>
 </body>
 

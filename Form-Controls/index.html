@@ -7,21 +7,69 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
+  
 </head>
 <body>
   <header>
-    <h1>Product Pick</h1>
+    <h1>Product Pick : T-Shirt Order Form</h1>
   </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <main class="main">
+    
+  
+   <fieldset class="border">
+     <legend style="text-align: center">ORDER FORM</legend>
+    <form id="form">
+        <!-- write your html here-->
+      <!-- try writing out the requirements first-->
+
+      
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" minlength="2" maxlength="20" required /><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required /><br><br>
+      
+      
+      <h2>Please choose a color:</h2>
+      <div class="color-container">
+        <label for="red">Red</label>
+        <input type="radio" id="red" name="color" value="red" required><br>
+
+        <label for="blue">Blue</label>
+        <input type="radio" id="blue" name="color" value="blue" required><br>
+
+        <label for="green">Green</label>
+        <input type="radio" id="green" name="color" value="green" required>
+      </div>
+
+      <h2>Please choose a size:</h2>
+      <div class="size-container">
+        <label for="size">Size:</label>
+          <select id="size" name="size" value="size" required>
+            <option value="XS" for="size">XS</option>
+            <option value="S" for="size">S</option>
+            <option value="M" for="size">M</option>
+            <option value="L" for="size">L</option>
+            <option value="XL" for="size">XL</option>
+            <option value="XXL" for="size">XXL</option>
+          </select>
+      </div>
+
+      <h2>Choose a delivery date:</h2>
+      <div class="date-container">
+        <label for="date" name="date">Delivery Date:</label>
+        <span><input type="date" id="date" min="2022-06-07" max="2022-07-07" name="date" value="date" required/></span>
+      </div><br><br>
+
+      <button class="button">Submit</button>
+  
+    </form>
+  </fieldset>
 
   </main>
-  <footer>
+  <footer class="footer">
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Shafiek Davids</h2>
   </footer>
 </body>
 

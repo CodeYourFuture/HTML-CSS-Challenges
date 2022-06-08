@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    background-image: url(/images/t-shirt.webp);
+}
+
+header {
+    background-color: #46546f;
+    opacity: 0.8;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 45px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 35px;
+    text-align: center;
+}
+
+
+label {
+    font-size: 20px;
+
+}
+
+.button {
+    
+    font-size: 20px;
+    border:1px solid black;
+    margin-left: 130px;
+    
+}
+
+.size-container, .date-container, .color-container {
+    display: flex;
+    justify-content:center;
+}
+
+.footer {
+    margin-top: 80px;
+}

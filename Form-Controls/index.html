@@ -7,21 +7,119 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/31654f76c4.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
   <header>
-    <h1>Product Pick</h1>
+    <nav id="navbar">
+      <div class="container">
+        <h1 class="logo"><a href=index.html><i>Product Pick</i></a></h1>
+      <ul>
+        <li><a class="current" href="index.html">T-shirt</a></li>
+        <li><a href="#">Shipping</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      </div>
+    </nav>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+   <section class="left">
+    <form action="https://www.w3schools.com/howto/howto_css_fixed_footer.asp">
+      <!-- write your html here-->
+        <label for="name" class="name">Name</label>
+        <input type="text" placeholder="Advocate" maxlength="16" minlength="3" pattern= "[a-zA-Z'-'\s]*" required />
+          
+        <label for="name" class="name" >Surname</label>
+        <input type="text" placeholder="Maroga" maxlength="16" minlength="3" pattern= "[a-zA-Z'-'\s]*" required /></br></br>
+        
+        <label for="email">Email</label>
+        <input type="email" placeholder="advocatemaroga@gmail.com" maxlength="16" minlength="3" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" autocomplete="on" required ></br></br>
+  
+  
+        
+          <h3>T-shirt Size</h3>
+        <!-- <select required>
+          <input type="radio" id=" XS" name="size" value=" XS">
+          <label for="XS"> XS</label><br>
+          
+          <input type="radio" id="S" name="size" value="S">
+          <label for="S"> S</label><br>
+          
+          <input type="radio" id="M" name="size" value="M">
+          <label for="M"> M</label><br>
+          
+          <input type="radio" id="M" name="size" value="M">
+          <label for="M"> M</label><br>
+          
+          <input type="radio" id="M" name="size" value="M">
+          <label for="M"> M</label><br>
+          
+          <input type="radio" id="L" name="size" value="L">
+          <label for="L"> L</label><br>
+          
+          <input type="radio" id="XL" name="size" value="XL">
+          <label for="L"> XL</label><br>
+          
+          <input type="radio" id="XXL" name="size" value="XXL">
+          <label for="L"> XXL</label><br><br>
+          
+        </select>
+         -->
+  
+         <label for="size">Choose a Size:</label>
+  
+          <select id="size" required>
+            <option value="s">S</option>
+            <option value="xs">XS</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+          </select><br><br>
+        <label for="collect-date">Schedule delivery date</label>
+        <input type="date" max="2022/07/12" required /><br><br>
+        
+        <input type="submit" class="btn" value="Submit">
+        <input type="reset" name="reset" class="btn" value="Star Over">
+      <!-- try writing out the requirements first-->
+    </form>
+   </section>
+  
+  <section class="aside">
+    <p>Choose your favorite color:</p>
+    <form>
+      <input type="radio" id="white" name="color" value="white">
+      <label for="white">white</label><br>
+
+      <input type="radio" id="Watermelon" name="color" value="Watermelon">
+      <label for="Watermelon">Watermelon</label><br>
+
+      <input type="radio" id="Brick" name="color" value="Brick">
+      <label for="Brick"> Brick</label><br><br>
+
+      <input type="submit" class="btn" value="Submit">
+    </form><br>
+    <div class="img">
+      <p>Below are the available colors </p>
+      <div>
+        
+      </div>
+      <img src="./img/brick.png" alt="">
+      Brick
+      <img src="./img/watermelon.png" alt="">
+      watermelon
+      <img src="./img/white.png" alt="">
+      white
+    </div>
+   
+  </section>
 
   </main>
-  <footer>
+  <footer class="footer">
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2><a href="https://github.com/AdvocateM/HTML-CSS-Challenges2">By Advocate Maroga</a> <i class="fa fa-github" aria-hidden="true"></i>
+    </h2>
   </footer>
 </body>
 

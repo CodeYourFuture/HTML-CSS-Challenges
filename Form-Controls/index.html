@@ -9,19 +9,58 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
+  <div class="header">
+    <h1>The T-shirt Cartel</h1>
+  </div>
   <main>
-  <form>
+  <div class="form">
+
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
-  </form>
+    <!--contact details-->
+    <fieldset>
+    <legend>Order Form</legend> 
+    <div class="details">
+    <label for="details">Name:</label>
+    <input type="text" id="details" name="details" placeholder="enter name" minlength="3" required><br><br>
+    <label for="email">Enter your email:</label>
+    <input type="email" id="email" name="email" placeholder="please enter email" required ><br><br>
+   </div>
+   <div class="colour">
+    <!--choosing a colour-->
+     <!-- <p>Choose a colour:</p>  -->
+     <label for="t-shirt-color">Choose a colour:</label><br>
+    <input type="radio" id="black" name="colour" value="Black">
+    <label for="black">Black</label><br>
+    <input type="radio" id="blue" name="colour" value="Blue">
+    <label for="blue">Blue</label><br>
+    <input type="radio" id="white" name="colour" value="White">
+    <label for="white">White</label><br><br>
+  
+  <div class="size">
+    <!--Size selection-->
+    <label for="size" required>Size:</label>
+    <select name="sizelist" id="size">
+      <option value="xs">XS</option>
+      <option value="s">S</option>
+      <option value="m">M</option>
+      <option value="l">L</option>
+      <option value="xl">XL</option>
+      <option value="xxl">XXL</option>
+    </select><br><br>
+  </div>
+    <!--DATE SELECTION-->
+    <label for="date">Delivery Date:</label>
+    <input type="date" name="date" id="delivery-date" min="2022-06-06" max="2022-07-07"><br><br>
+    <button type="button" class="button">submit</button>
+  </div>
+</fieldset>
+</div>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+   <h2><span>Created By Walter Chifamba</a> | <span class="far fa-copyright"></span> 2022 All rights reserved.</span></h2> 
   </footer>
 </body>
 

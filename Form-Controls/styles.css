@@ -1,0 +1,57 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/Form-Controls/image/code.jpg");
+    /* background-repeat:no-repeat ;
+  background-size: 300px 100px; */
+}
+.header h1{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: blueviolet;
+
+}
+.form{
+    padding-bottom: 7px;
+}
+
+
+fieldset{
+    border-top: 1px solid blueviolet;
+}
+legend {
+    background-color:blueviolet;
+    color: black;
+    padding: 3px 6px;
+    font-family:Arial, Helvetica, sans-serif ;   
+} 
+footer{
+    background: blueviolet;
+    padding: 15px 23px;
+    color:black;
+    text-align: center;
+}
+footer span a{
+    color: crimson;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}   
+.button{
+    position: relative;
+    background-color: blue;
+    color: whitesmoke;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+    padding: 6px;
+    min-height: 25px;
+    min-width: 50px;
+}
+.button:hover{
+    background-color: blueviolet;
+    transition: 0.7s;
+}

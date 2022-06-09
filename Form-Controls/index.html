@@ -9,14 +9,16 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>T-shirt Product Pick</h1>
-  </header>
   <main>
-  <form>
+  <fieldset>
+   <legend "text-align: center">
+   T-shirt Product Pick
+   </legend>
+
+   <form style="text-align: center">
      <label for="name" id="name">Customer Name</label>
      <input
-     type="text"
+     type="text" required
      minlength="2"
      maxlength="15"
      required
@@ -72,13 +74,16 @@
       <label for="delivery-date">Select delivery date</label> <br />
       <input type="date" id="delivery-date" name="select date"
       min="2022-06-11" max="2022-07-01">
+      <br />
+      <br />
+      <button class="submit">Submit</button>
 
   </form>
-
+</fieldset>
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2 style="text-align: center">By Gelson Celestino</h2>
   </footer>
 </body>
 

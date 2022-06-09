@@ -1,28 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
   <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+    <fieldset>
+      <legend>Our service to you</legend>
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
-
+      <h1>T-shirts for sale</h1>
+      <div class="details">
+        <label for="name" id="name">First Name:</label><br/>
+        <input type="text" id="first name" name="first name" required placeholder="Enter your name"><br />
+        <label for="last name">Last name:</label><br>
+        <input type="text" id="last name" name="last name" required placeholder="Enter your surname"><br /><br />
+        <label for="email" id="email">Email address:</label><br>
+        <input type="email" required placeholder="Enter your email" /><br /><br />
+        <label for="T-shirt color-type">Select an option for color type</label> <br />
+        <input name="T-shirt color-type" type="radio" required />
+​        <label for="T-shirt color-type" id="T-shirt color-type">White</label><br />
+        <input name="T-shirt color-type" type="radio" required />
+​        <label for="T-shirt color-type" id="T-shirt color-type">Red</label><br />
+        <input name="T-shirt color-type" type="radio" required />
+​        <label for="T-shirt color-type" id="T-shirt color-type">Black</label><br /><br />
+        <label for="T-shirt size">Choose T-shirt size:</label> <br />
+         <select id="size" name="size">
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XL">XXL</option><br /></select><br /><br />
+            <label for="date">Delivery Date:</label>
+            <input type="date" name="date" id="date" min="2022-06-02" max="2022-07-02" required /><br /><br />
+            <div class="submit">
+            <button class="submit">Submit</button>
+          </fieldset>
+        </form>
+        <footer>
+          <h4>by Ntshumayelo Matho</h4>
+        </footer>
+    </body>
 </html>
+
+
+

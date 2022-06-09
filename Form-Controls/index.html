@@ -10,10 +10,56 @@
 </head>
 <body>
   <header>
-    <h1>Product Pick</h1>
+    <h1>T.shirt Form</h1>
   </header>
   <main>
   <form>
+
+    <label for="userName">Username:</label>
+    <input id="userName" type="text" name="userName" pattern="[a-z]{1,15}" title="Username should contain only lowercase letters. eg. nathan" required><br><br>
+
+    <label for="email">Email Address:</label>
+  <input id="email" type="email" required /><br><br>
+    
+    <fieldset required>
+      <legend>Choose T.shirt Color</legend>
+    
+      <input id="white" type="radio" name="t.shirt_color" value="white" />
+      <label for="white">White</label><br>
+    
+      <input id="black" type="radio" name="t.shirt_color" value="black" />
+      <label for="black">Black</label><br>
+    
+      <input id="red" type="radio" name="t.shirt_color" value="red" />
+      <label for="red">Red</label><br>
+    </fieldset><br>
+
+    <fieldset required>
+      <legend>Choose T.shirt Size</legend>
+    
+      <input id="x_small" type="radio" name="t.shirt_size" value="x_small" />
+      <label for="x_small"  >XM</label>
+    
+      <input id="small" type="radio" name="t.shirt_size" value="small" />
+      <label for="small"  >S</label>
+    
+      <input id="medium" type="radio" name="t.shirt_size" value="medium" />
+      <label for="medium">M</label><br>
+
+      <input id="large" type="radio" name="t.shirt_size" value="large" />
+      <label for="large">L</label>
+    
+      <input id="xlarge" type="radio" name="t.shirt_size" value="x_large" />
+      <label for="xlarge">XL</label>
+    
+      <input id="xx_large" type="radio" name="t.shirt_size" value="xx_large" />
+      <label for="xx_large">XXL</label>
+    </fieldset><br>
+
+    <label>Choose delivery date:</label>
+    <input type="date" id="pick_date" name="pick_date" max="2022-07-09" min="2022-06-09"  required><br><br>
+    
+    <button>Submit</button>
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
   </form>
@@ -21,7 +67,7 @@
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Xolani Mvana</h2>
   </footer>
 </body>
 

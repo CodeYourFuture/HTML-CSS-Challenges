@@ -7,22 +7,61 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
-</head>
+ </head>
+
 <body>
   <header>
-    <h1>Product Pick</h1>
+    <h1><span class="material-symbols-outlined"><img src="/images/shop-icon.svg" alt="two people with white t-shirt"/></span>Product Pick</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+    <form>
+        <label for="full-name" >Full Name</label>
+        <input id="full-name" type="text" minlength="2" maxlength="50" name="full-name" required>
 
+        <label for="email">Email address</label>
+        <input id="email" type="email" required />
+
+        <fieldset>
+          <legend>Select Colours</legend>  
+          
+          <label for="turquoise">Turquoise</label>
+          <input id="turquoise" type="radio" name="select-colours" value="turquoise" required>
+
+          <label for="grey">Grey</label>
+          <input id="grey" type="radio" name="select-colours" value="grey" required>
+
+          <label for="sambared">Samba Red</label>
+          <input id="sambared" type="radio" name="select-colours" value="samba-red" required>
+        </fieldset>
+
+        <label for="select-sizes">Select Sizes</label>
+        <select id="select-sizes"  name="select-sizes" required >
+          <option value="" >Please select</option>
+          <option value="XS" >XS</option>
+          <option value="S" >S</option>
+          <option value="M" >M</option>
+          <option value="L" >L</option>
+          <option value="XXL" >XXL</option>
+        </select>
+
+        <label for="start">Start date:</label>
+
+        <input type="date" id="start" name="order-date"
+        value=""
+        min="2022-06-06" max="2022-07-05" required>
+
+        <input type="submit" value="submit">
+
+      <!-- try writing out the requirements first-->
+    </form>
   </main>
+
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Chezlin Benson</h2>
   </footer>
 </body>
 
 </html>
+
+

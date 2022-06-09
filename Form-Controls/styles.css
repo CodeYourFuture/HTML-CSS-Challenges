@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&=Work+Sans:wght@400;700;900&display=swap');
+
+
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+ }
+
+body{
+
+    font-family: 'Inter', sans-serif;
+    color: #15161f;
+}
+
+header {
+    background-image: url(/images/form-header.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+    height: 300px;
+    line-height: 300px;
+    vertical-align: middle;
+    
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 70px;    
+    text-align: center;
+    color: #15161f; 
+    margin: 0;
+}
+
+
+img {
+   height: 1.5em;
+   color: #15161f; 
+   vertical-align: middle;
+}
+
+
+main {
+    position: relative;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 20px 10px;
+}
+
+form {
+    padding: 70px 70px;
+    height: 40%;
+}
+
+input[type=submit] {
+    background-color: #15161f;
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+    margin-left: 50px;
+    padding: 10px 20px;
+    font-weight: 300;
+}
+
+input[type=text]:focus, input[type=email]:focus {
+    background-color: #d5dbe8;
+}
+
+
+footer {
+    background-color: #15161f;
+    bottom: 0;   
+}
+
+h2 {
+    color: white;
+    font-family:  'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}

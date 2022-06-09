@@ -1,5 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Italiana&family=Roboto:wght@300;400;700&family=Tiro+Gurmukhi&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:wght@300;400;700&display=swap');
 
 *,
 *::before,
@@ -60,14 +60,16 @@ h2{
 }
 
 fieldset {
-    
     border: none;
 }
 
- fieldset , legend{ padding:0px; margin:0px;}
+ fieldset , legend {
+     padding:0px; 
+     margin:0px;
+}
 
  img {
-     /* padding: 0px 0px 0px 150px; */
+     
      width: 200px;
      height:auto;
      border-radius: 5px; 
@@ -78,8 +80,8 @@ fieldset {
  width: 300px;
  }
 
-  input[type=text]:focus, input[type=email]:focus {
-  background-color: rgb(126, 159, 170);
+input[type=text]:focus, input[type=email]:focus {
+    background-color: rgb(126, 159, 170);
   }
 
 input[type="submit"] {
@@ -90,13 +92,11 @@ input[type="submit"] {
 }
 
  input[type=radio] { 
-    filter: grayscale(1)
+    filter: grayscale(1);
 }
-
-/* footer styling */
 
 .decoration {
     background-image: url(geometric.jpg);
     background-size: cover;
-    height: 300px;
+    height: 500px;
 }

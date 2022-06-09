@@ -86,7 +86,7 @@ input[type=text]:focus, input[type=email]:focus {
 
 input[type="submit"] {
      color: white;
-     background-color:  rgb(126, 159, 170); 
+     background-color:  rgb(12 79 102 / 81%);
      padding: 10px 15px;
      margin-left: 20px;
 }

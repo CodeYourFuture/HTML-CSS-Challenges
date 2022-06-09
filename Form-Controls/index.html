@@ -36,35 +36,39 @@
 
     <fieldset required>
       <legend>Choose your colour t-shirt </legend> 
-      <input id="salmon" type="radio" name="colours" value="salmon"> 
+      <input id="salmon" type="radio" name="colours" value="salmon" required> 
       <label for="salmon"> salmon</label>
-      <input id="charcoal" type="radio" name="colours" value="charcoal"> 
+      <input id="charcoal" type="radio" name="colours" value="charcoal" required> 
       <label for="charcoal">charcoal</label>
-      <input id="white" type="radio" name="colours" value="white"> 
+      <input id="white" type="radio" name="colours" value="white" required> 
       <label for="white">white</label>
     </fieldset>
 
     <label for="custsize">Select Size required:</label>
-    <select id="custsize" name="custsize">
+    <select id="custsize" name="custsize" required>
+      <option value="">Please select</option>
       <option value="XS">XS</option>
       <option value="S">S</option>
       <option value="M">M</option>
-      <option value="L" selected>L</option>
+      <option value="L">L</option>
       <option value="XL">XL</option>
       <option value="XXL">XXL</option>
     </select>
  <br>
     <label for="delivery">Select Delivery Date:</label>
-    <input type="date" id="delivery" name="delivery" value="2022-06-06"
-       min="2022-06-06" max="2022-07-05">
-    
+    <input type="date" id="delivery" name="delivery" value="2022-06-11"
+      min="2022-06-11" max="2022-07-05" required>
+
+    <input type="submit" value="Submit">
   </form>
   <img src="tshirt.jpg" alt="lady with tshirt touching hair">
   </main>
   <footer>
     <!-- change to your name-->
     <h2>By Chandre De Wet</h2>
+    <div class="decoration"></div>
   </footer>
 </body>
 
 </html>
+

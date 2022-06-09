@@ -78,6 +78,25 @@ fieldset {
  width: 300px;
  }
 
- input[type=text]:focus, input[type=email]:focus {
+  input[type=text]:focus, input[type=email]:focus {
   background-color: rgb(126, 159, 170);
+  }
+
+input[type="submit"] {
+     color: white;
+     background-color:  rgb(126, 159, 170); 
+     padding: 10px 15px;
+     margin-left: 20px;
+}
+
+ input[type=radio] { 
+    filter: grayscale(1)
+}
+
+/* footer styling */
+
+.decoration {
+    background-image: url(geometric.jpg);
+    background-size: cover;
+    height: 300px;
 }

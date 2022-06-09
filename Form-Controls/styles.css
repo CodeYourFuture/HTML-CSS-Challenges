@@ -33,6 +33,14 @@ h1 {
     margin: 0;
 }
 
+
+img {
+   height: 1.5em;
+   color: #15161f; 
+   vertical-align: middle;
+}
+
+
 main {
     position: relative;
 }

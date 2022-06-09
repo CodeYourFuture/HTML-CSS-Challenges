@@ -13,54 +13,49 @@
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-      <label for="full-name" >Full Name</label>
-      <input id="full-name" type="text" minlength="2" maxlength="50" name="full-name">
+    <form>
+      <!-- write your html here-->
+        <label for="full-name" >Full Name</label>
+        <input id="full-name" type="text" minlength="2" maxlength="50" name="full-name" required>
 
-      <label for="email">Email address</label>
-      <input id="email" type="email" required />
+        <label for="email">Email address</label>
+        <input id="email" type="email" required />
 
-    <fieldset>
-      <legend>Select Colours</legend>  
-      
-      <label for="select-colours">Turquoise</label>
-      <input id="select-colours" type="radio" name="select-colours" value="turquoise">
+        <fieldset>
+          <legend>Select Colours</legend>  
+          
+          <label for="turquoise">Turquoise</label>
+          <input id="turquoise" type="radio" name="select-colours" value="turquoise" required>
 
-      <label for="select-colours">Grey</label>
-      <input id="select-colours" type="radio" name="select-colours" value="grey">
+          <label for="grey">Grey</label>
+          <input id="grey" type="radio" name="select-colours" value="grey" required>
 
-      <label for="select-colours">Samba Red</label>
-      <input id="select-colours" type="radio" name="select-colours" value="samba-red">
-    
-    </fieldset>
+          <label for="sambared">Samba Red</label>
+          <input id="sambared" type="radio" name="select-colours" value="samba-red" required>
+        </fieldset>
 
-    <label for="select-sizes">Select Sizes</label>
-      <select id="select-sizes"  name="select-sizes">
-        <option value="XS" selected>XS</option>
-        <option value="S" selected>S</option>
-        <option value="M" selected>M</option>
-        <option value="L" selected>L</option>
-        <option value="XXL" selected>XXL</option>
-      </select>
+        <label for="select-sizes">Select Sizes</label>
+        <select id="select-sizes"  name="select-sizes" required >
+          <option value="" >Please select</option>
+          <option value="XS" >XS</option>
+          <option value="S" >S</option>
+          <option value="M" >M</option>
+          <option value="L" >L</option>
+          <option value="XXL" >XXL</option>
+        </select>
 
-      <label for="start">Start date:</label>
+        <label for="start">Start date:</label>
 
-      <input type="date" id="start" name="order-date"
-       value="2022-06-06"
-       min="2022-06-06" max="2022-07-05">
-        
+        <input type="date" id="start" name="order-date"
+        value=""
+        min="2022-06-06" max="2022-07-05" required>
 
-      
+        <input type="submit" value="submit">
 
-
-    
-
-
-    <!-- try writing out the requirements first-->
-  </form>
-
+      <!-- try writing out the requirements first-->
+    </form>
   </main>
+
   <footer>
     <!-- change to your name-->
     <h2>By Chezlin Benson</h2>
@@ -69,32 +64,4 @@
 
 </html>
 
-<!-- We are selling t-shirts. Write a form to collect the following data:
 
-Our customers already have accounts, so we know their addresses and charging details already. We don't need to collect that data. We want to confirm they are the right person, then get them to choose a colour and then pick a delivery date.
-
-Writing that out as a series of questions to ask yourself:
-
-What is the customer's name? I must collect this data, and validate it. But what is a valid name? I must decide something.
-What is the customer's email? I must make sure the email is valid. Email addresses have a consistent pattern.
-What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours?
-What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL
-When do they want the t-shirt to be delivered? I must collect a date and make sure that date is in the next four weeks. How will I do this? How will I make sure there are no mistakes about the date?
-All fields are required. Do not write a form action for this project.
-
-Developers must test their work.
-Let's write out our testable criteria:
-
- I have used HTML and CSS only.
-HTML
- My form is semantic html.
- All inputs have associated labels.
- My Lighthouse Accessibility score is 100.
- I require a valid name. I have defined a valid name as a text string of two characters or more.
- I require a valid email.
- I require one colour from a defined set of 3 colours.
- I require one size from a defined set of 6 sizes.
- I require one date from a constrained date range.
-CSS
- I show which element is focused.
- My Lighthouse Accessibility score is 100. -->

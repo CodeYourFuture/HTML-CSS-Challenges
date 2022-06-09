@@ -1,6 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Merriweather:wght@700&family=Passion+One&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,700;1,800&family=Roboto:wght@400;700;900&family=Work+Sans:wght@400;700;900&display=swap');
 
 
+/* General Styling */
+
+html, body {
+    margin: 0;
+    padding: 0;
+ }
+
+body{
+
+    font-family: 'Inter', sans-serif;
+    color: #15161f;
+}
+
+/* Header Styling */
+
+
+header {
+    background-image: url(/images/form-header.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+    height: 300px;
+    line-height: 300px;
+    vertical-align: middle;
+    
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 70px;    
+    text-align: center;
+    color: #15161f; 
+    margin: 0;
+}
+
+main {
+    position: relative;
+}
+
+/* Form Styling */
+
 button,
 input,
 select,
@@ -10,30 +51,41 @@ textarea {
   margin: 20px 10px;
 }
 
-body{
-    margin: 0rem;
-    font-family: 'Inter', sans-serif;
-}
-
 form {
     padding: 70px 70px;
+    height: 40%;
 }
 
-.full-name {
-    padding: 40px 40px 40px 40px;
-    margin: 50px 50px 50px 50px;
-}
-
-h1 {
-    font-family:  'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 50px;
+input[type=submit] {
+    background-color: #15161f;
+    border-style: none;
+    border-radius: 5px;
+    color: white;
     margin-left: 50px;
+    padding: 10px 20px;
+    font-weight: 300;
+}
+
+input[type=text]:focus, input[type=email]:focus {
+    background-color: #d5dbe8;
+}
+
+
+
+
+/* Footer Styling */
+
+footer {
+    background-color: #15161f;
+    bottom: 0;   
 }
 
 h2 {
+    color: white;
     font-family:  'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 30px;
-    margin-left: 50px;  
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
 }

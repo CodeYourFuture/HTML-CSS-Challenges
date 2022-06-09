@@ -1,0 +1,14 @@
+
+body {
+    color:maroon;
+    background-image: ;
+}
+
+
+
+input:invalid + span::after {
+    content: '✖';
+  }
+  
+  input:valid+span::after {
+    content: '✓';

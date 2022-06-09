@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,20 +9,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+    <form>
+      <!-- write your html here-->
+
+      <fieldset id="client">
+        <label for="name">Name<input type="text" minlength="2" maxlength="20" id="name" placeholder="Name" name="fname"
+            required></label><br>
+        <label for="surname">Surname<input type="text" minlength="2" maxlength="20" id="name" placeholder="Surname"
+            name="lname" required></label><br>
+        <label for="email">Email<input type="text" id="email" placeholder="example@gmail.com" name="email"
+            required></label><br>
+        <label for="pasword">Password<input type="password" id="password" placeholder="password" name="password"
+            minlength="5" maxlength="20" required=""></label>
+      </fieldset><br>
+
+      <fieldset id="t-shirt">
+        <p>Please select for <strong>delivery or collection</strong> as well as color and size of the T-shirt</p><br>
+
+        <select name="size" id="size" placeholder="size" required>
+          <option value="xs">Extra Small</option>
+          <option value="s">Small</option>
+          <option value="m">Medium</option>
+          <option value="l">Large</option>
+          <option value="xl">Extra Large</option>
+          <option value="xxl">Double Extra Large</option>
+        </select><br><br>   
+
+        <label for="red">Red<input type="checkbox" id="red" value="red" name="red" required></label>
+        <label for="yellow">Yellow<input type="checkbox" id="yellow" value="yellow" name="yellow" required></label>
+        <label for="blue">Blue<input type="checkbox" id="blue" value="blue" name="blue" required></label> <br>
+
+        <p>This one's for you</p>
+
+        <label for="delivery">Delivery<input type="radio" id="action" value="delivery" name="action"
+          required></label>
+      <label for="collection">Collection<input type="radio" id="action" value="collection" name="action"
+          required></label><br>
+
+      </fieldset><br>
+
+
+      <fieldset id="selection">
+        <h3>Select a collection date</h3>
+        <p>Please select a date in 4 weeks from now to avoid any dissatisfaction</p>
+        <input type="date" id="date" placeholder="2014-02-09">
+        <!--value="current" max="four-weeks-from-now" -->
+        <button>Submit</button>
+      </fieldset>
+
+      <!-- try writing out the requirements first-->
+    </form>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Christopher Koetzee</h2>
   </footer>
 </body>
 

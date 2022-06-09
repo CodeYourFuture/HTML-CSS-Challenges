@@ -7,6 +7,8 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
 </head>
 <body>
   <header>
@@ -23,36 +25,37 @@
     <label for="email">Email:</label><br>
     <input type="email" id="email" name="email" placeholder="Enter a valid email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required autocomplete="off">
 
-    <p>Choose a Colour:</p>
+    <fieldset>
+     <legend>Choose a Colour:</legend>
     
-    <input type="radio" class="red" id="red" name="color" value="red">
-    <label for="red">Red</label><br>
+     <input type="radio" class="red" id="red" name="color" value="red">
+     <label for="red">Red</label><br>
     
-    <input type="radio" class="green" id="green" name="color" value="green">
-    <label for="green">Green</label><br>
+     <input type="radio" class="green" id="green" name="color" value="green">
+     <label for="green">Green</label><br>
     
-    <input type="radio" class="blue" id="blue" name="color" value="blue">
-    <label for="blue">Blue</label><br><br>
+     <input type="radio" class="blue" id="blue" name="color" value="blue">
+     <label for="blue">Blue</label><br><br>
+    </fieldset>
 
-
-    <p>Choose a Size:</p>
+    <fieldset>
+     <legend>Choose a Size:</legend>
     
-    <input type="radio" id="XS" name="size" value="XS">
-    <label for="XS">XS</label>
+     <input type="radio" id="XS" name="size" value="XS">
+     <label for="XS">XS</label><br>
+     <input type="radio" id="S" name="size" value="S">
+     <label for="S">S</label><br>
+     <input type="radio" id="M" name="size" value="M">
+     <label for="M">M</label><br>
+     <input type="radio" id="L" name="size" value="L">
+     <label for="L">L</label><br>
     
-    <input type="radio" id="S" name="size" value="S">
-    <label for="S">S</label>
+     <input type="radio" id="XL" name="size" value="XL">
+     <label for="XL">XL</label><br>
     
-    <input type="radio" id="M" name="size" value="M">
-    <label for="M">M</label>
-    <input type="radio" id="L" name="size" value="L">
-    <label for="L">L</label>
-    
-    <input type="radio" id="XL" name="size" value="XL">
-    <label for="XL">XL</label>
-    
-    <input type="radio" id="XXL" name="size" value="XXL">
-    <label for="XXL">XXL</label><br><br>
+     <input type="radio" id="XXL" name="size" value="XXL">
+     <label for="XXL">XXL</label><br><br>
+    </fieldset>
 
     <p>Choose a Delivery Date in next 4 weeks:</p>
     <label for="date">Enter a date:</label>
@@ -73,6 +76,7 @@
   <footer>
     <!-- change to your name-->
     <h2>By Catalina-Alexandra Jora</h2>
+    
   </footer>
 </body>
 

@@ -1,0 +1,32 @@
+/* Styling the header */
+h1 {
+    background-color: #211a1d;
+    color: #ffffff;
+    text-align: center;
+}
+/* Styling the body */
+body{
+    background-color: #333; 
+    color: #f4f4f4;
+    margin: auto;
+    padding: 20px;
+    width: 500px;
+}
+
+.details{
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    padding-right: 0px;
+    background: linear-gradient(135deg, #71b7e6, #9b59);
+    font-size: 15px;
+    font-family: Verdana;
+    color: white;
+}
+h4{
+    text-align: center;
+    color:aqua;
+}
+
+
+

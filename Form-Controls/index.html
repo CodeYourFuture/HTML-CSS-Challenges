@@ -19,12 +19,12 @@
     <p><strong>Biographical Data</strong></p>
     <div>
       <label for="name">First Name</label>
-      <input type="text" name="name" id="name" required placeholder="username">
+      <input type="text" name="name" id="name" required minlength="2" maxlength="10" placeholder="username">
     </div>
   
     <div>
       <label for="name">Last Name</label>
-      <input type="text" name="name" id="name" required placeholder="lastname">
+      <input type="text" name="name" id="name" required minlength="2" maxlength="10" placeholder="lastname">
     </div>
 
     <div>
@@ -37,57 +37,70 @@
       <input type="tel" name="phone" id="phone" required placeholder="phone">
     </div>
 
-    <p><strong>Choose your delivery date</strong></p>
+    <p><strong>Choose Your Delivery Date</strong></p>
     <div>
       <label for="date">Delivery Date</label>
       <input type="date" name="date" id="date" required placeholder="date">
     </div>
 
     <p><strong>Choose Your T-shirt Colour</strong></p>
-    <div>
-      <label for="black">Black</label>
-      <input type="checkbox" name="black" id="black" placeholder="black">
-    </div>
+
+    <fieldset>
+      <legend>My t-shirt choice</legend>
+
+        <div>
+        <input type="radio" name="black" id="black" placeholder="black">
+        <label for="black">Black</label>
+      </div>
 
     <div>
+      <input type="radio" name="grey" id="grey" placeholder="grey">
       <label for="grey">Grey</label>
-      <input type="checkbox" name="grey" id="grey" placeholder="grey">
-    </div>
+      </div>
 
     <div>
+      <input type="radio" name="white" id="white" placeholder="white">
       <label for="white">White</label>
-      <input type="checkbox" name="white" id="white" placeholder="white">
-    </div>
+          </div>
 
+  </fieldset>
+
+  
     <p><strong>Choose Your T-shirt Size</strong></p>
     <div>
+      <input type="checkbox" name="xs" id="xs" checked>
       <label for="xs">XS</label>
-      <input type="checkbox" name="xs" id="xs">
+      
     </div>
 
     <div>
+      <input type="checkbox" name="small" id="small" checked>
       <label for="small">S</label>
-      <input type="checkbox" name="small" id="small">
+      
     </div>
 
     <div>
+      <input type="checkbox" name="medium" id="medium" checked>
       <label for="medium">M</label>
-      <input type="checkbox" name="medium" id="medium">
+      
     </div>
 
     <div>
+      <input type="checkbox" name="large" id="large" checked>
       <label for="large">L</label>
-      <input type="checkbox" name="large" id="large">
+      
     </div>
 
     <div>
+      <input type="checkbox" name="extra large" id="extra large" checked>
       <label for="extra larges">XL</label>
-      <input type="checkbox" name="extra large" id="extra large">
+    
+      
     </div>
 
     <div>
       <label for="double xl">XXL</label>
-      <input type="double xl" name="double xl" id="double xl" placeholder="double xl">
+      <input type="double xl" name="double xl" id="double xl" checked>
     </div>
 
     <button type="submit">Submit</button>
@@ -99,7 +112,7 @@
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By BERENICE OGUNDELE</h2>
+    <h3><em>Created by BERENICE OGUNDELE</em></h3>
   </footer>
 </body>
 

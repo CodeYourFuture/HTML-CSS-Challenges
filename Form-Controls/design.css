@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+.container {
+    margin-left: 400px;
+    border: 1px solid;
+    width: 600px;
+    height: 700px;
+    border-color: blue;
+    border-width: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+form {margin-left: 120px;}
+h1 {
+    font-size: 25px;
+    color: brown;
+}
+h2 {
+    font-size: 15px;
+    color: red;
+}
+#customer {
+    font-style: italic;
+    font-size: 15px;
+    color: green;
+}
+
+input[type=submit]:hover {
+    background-color: #e70d0d;
+  }
+  
+input[type=submit] {
+    background-color: #6804aa;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+     }
+     
+input[type=date]:hover {
+    background-color: #c6e70d;
+  }

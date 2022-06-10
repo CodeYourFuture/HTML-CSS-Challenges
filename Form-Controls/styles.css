@@ -1,0 +1,43 @@
+
+body {
+    color:black;
+    background-image: url("tie-dye.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+input:focus {
+  background-color: yellowgreen;
+}
+
+#client:hover {
+  background-color: rgb(223, 17, 17);
+  transition: 3s;
+}
+
+#name {
+  margin: 1em;
+}
+#surname {
+  margin: 1em;
+}
+
+#email {
+  margin: 1em;
+}
+#password {
+  margin: 1em;
+}
+
+#t-shirt:hover {
+  background-color: yellow;
+  transition: 3s;
+}
+
+#selection:hover {
+  background-color: rgb(47, 19, 172);
+  transition: 3s;
+}
+

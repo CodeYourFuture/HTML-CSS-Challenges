@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>My form exercise</title>
-  <meta name="description" content="">
+  <meta name="description" content="Form Challenge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -12,16 +12,69 @@
   <header>
     <h1>Product Pick</h1>
   </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
-
+  <main>    
+        <form id="survey-form">
+          <div class="form-control">
+            <label for="name" id="name-label">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your full name" minlength="2" required/>
+          </div>
+          
+          <div class="form-control">
+          <label for="email" id="email-label">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required/>
+          </div>
+          
+          <div class="form-control">
+          <label for="role" id="label-role">Please choose a colour</label>
+          <select name="role" id="dropdown">
+            <option value="blue">Blue</option>
+            <option value="orange">Orange</option>
+            <option value="red">Red</option>
+          </select>
+          </div>
+      
+          <div class="form-control">
+            <label>Please choose a size?</label>
+            <label for="xs">
+              <input type="radio" name="size" value="xs">XS</input>
+            </label>
+            <label for="s">
+              <input type="radio" name="size" value="s">S</input>
+            </label>
+            <label for="m">
+              <input type="radio" name="size" value="m">M</input>
+            </label>
+            <label for="l">
+              <input type="radio" name="size" value="l">L</input>
+            </label>
+            <label for="xl">
+              <input type="radio" name="size" value="xl">XL</input>
+            </label>
+            <label for="xxl">
+              <input type="radio" name="size" value="xxl">XXL</input>
+            </label>
+          </div>
+      
+          <div class="form-control">
+            <label for="start">Pick a date</label>
+            <input type="date" id="start" name="trip-start" value="2022-06-10" min="2022-06-11" max="2022-07-08">
+          </div>
+      
+          <!-- <div class="form-control">
+            <label for="comment">
+              <p>Any guidelines for the delivery?</p>
+              <textarea name="comment" id="comment" placeholder="Any guidelines for the delivery?">
+            </textarea>
+          </div> -->
+      
+          <button id="submit" type="submit" value="submit">
+            Submit
+          </button>
+        </form>
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By KWANDA SILEKWA</h2>
   </footer>
 </body>
 

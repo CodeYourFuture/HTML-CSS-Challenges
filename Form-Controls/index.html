@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>My form exercise</title>
-  <meta name="description" content="">
+  <meta name="description" ckontent="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -13,15 +13,55 @@
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
+  <form class="form">
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
-  </form>
+  
+<label for="fname">First name</label><br>
+<input type="text" id="fname" required><br><br>
+
+<label for="lname">Last name</label><br>
+<input type="text" id="lname" required><br><br>
+
+
+<label for="email">Email</label><br>
+<input type="email" id="email" name="email" required><br><br>
+
+
+<label for="color">Choose a color</label><br>
+
+<label for="red">Red</label>
+<input type="radio" id="red" name="color">
+<label for="white">White</label>
+<input type="radio" id="white" name="color">
+<label for="black">Black</label>
+<input type="radio" id="black" name="color"><br><br>
+
+
+
+
+<label for="t-shirt size">T-shirt size</label><br>
+<select name="t-shirt size" id="t-shirt size" required>
+  <option value="xs">XS</option>
+  <option value="s">S</option>
+  <option value="m">M</option>
+  <option value="l">L</option>
+  <option value="xl">XL</option>
+  <option value="xxl">XXL</option>
+</select><br><br>
+<!--<input type=""><br><br>-->
+
+<label for="date">Date</label><br>
+<input type="date" id="date" name="date" required><br><br>
+
+<label for="submit"></label>
+<input type="submit" id="submit" name="submit">
+</form>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+     <!-- <h2>By HOMEWORK SOLUTION</h2>-->
   </footer>
 </body>
 

@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap');
+
+body {
+    font-family: Roboto, Open-Sans;
+    background-color: lightskyblue;
+    color:black;
+    margin: auto;
+    width:500px;
+}
+
+h1 {
+    text-align: center;
+    padding: 30px;
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+
+form {
+    background-color:#f6d8ac;
+    padding: 2rem 1.5rem;
+    border-radius: 10px
+  }
+
+.fieldset-auto-width {
+    display: inline-block;
+    }

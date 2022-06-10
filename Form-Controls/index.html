@@ -15,6 +15,53 @@
   <main>
   <form>
     <!-- write your html here-->
+    <label for="name"><strong>Name:</strong></label>
+    <input id="name" type="text" required/><br><br>
+
+    <label for="surname"><strong>Surname:</strong></label>
+    <input id="surname" type="text" required/><br><br>
+    
+    <label for="email"><strong>Enter your e-mail address:</strong></label>
+    <input id="email" type="email" required /><br><br>
+
+    <fieldset class="fieldset-auto-width">
+      <legend><strong>Choose the color of your t-shirt</strong></legend>
+      <label for="yellow">Yellow</label>
+      <input type="radio" id="yellow" name="color" value="yellow"/>
+
+      <label for="pink">Pink</label>
+      <input type="radio" id="pink" name="color" value="pink"/>
+
+      <label for="orange">Orange</label>
+      <input type="radio" id="orange" name="color" value="orange"/>
+    </fieldset><br><br>
+    
+    <fieldset class="fieldset-auto-width">
+      <legend><strong>Choose the size of your t-shirt</strong></legend>
+      <label for="XS">XS</label>
+      <input type="checkbox" id="XS" name="size" value="XS"/>
+
+      <label for="S">S</label>
+      <input type="checkbox" id="S" name="size" value="S"/>
+
+      <label for="M">M</label>
+      <input type="checkbox" id="M" name="size" value="M"/>
+
+      <label for="L">L</label>
+      <input type="checkbox" id="L" name="size" value="L"/>
+
+      <label for="XL">XL</label>
+      <input type="checkbox" id="XL" name="size" value="XL"/>
+
+      <label for="XXL">XXL</label>
+      <input type="checkbox" id="XXL" name="size" value="XXL"/>
+    </fieldset><br><br>
+    
+    <label for="delivery"><strong>Delivery date:</strong</label>
+    <input type="date" id="delivery" name="delivery-date" value="2022-06-09" min="2022-06-30" max="2022-07-30">
+    <br><br>
+
+    <button><strong>Submit</strong></button>
     <!-- try writing out the requirements first-->
   </form>
 

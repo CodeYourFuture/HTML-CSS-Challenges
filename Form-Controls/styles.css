@@ -1,3 +1,9 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 body {
 	background-color: #153643;
 	font-family: Verdana;
@@ -5,9 +11,13 @@ body {
     color: aquamarine;
 }
 
-input:focus {
+input[type=date]:focus, input[type=text]:focus, input[type=email]:focus, #dropdown:focus {
     background-color: aquamarine;
   }
+
+  input[type=radio] { 
+    filter: contrast(200);
+}
 
 form {
 	background-color: #cccccc;

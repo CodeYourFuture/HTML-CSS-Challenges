@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,48 +9,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
     <form>
-      <!-- Name -->
-      <label for="name" class="label-name">Name</label>
-      <input type="text" id="name" minlength="2" maxlength="100" required>
-      <!-- Email -->
-      <label for="email" class="label-email">Email</label>
-      <input type="email" name="email" id="email" required>
-      <!-- colours -->
-      <fieldset>
-        <legend>Choose Color</legend>
-        <input type="radio" name="color" id="grey">
-        <label for="grey">Grey</label>
-        <input type="radio" name="color" id="gold">
-        <label for="gold">Gold</label>
-        <input type="radio" name="color" id="black">
-        <label for="black">Black</label>
-      </fieldset>
-      <select name="size" id="size">
-        <option value="all">Select Size</option>
-        <option value="xs">XS</option>
-        <option value="s">S</option>
-        <option value="m">M</option>
-        <option value="l">L</option>
-        <option value="xl">XL</option>
-        <option value="xxl">XXL</option>
-      </select>
-      <label for="date">Delivery Date</label>
-      <input type="date" name="date" id="date" min="2022-07-01">  
+      <!-- write your html here-->
+      <form>
+        <!-- Name -->
+        <label for="name" class="d-block">Name</label>
+        <input type="text" id="name" minlength="2" maxlength="100" required>
+        <!-- Email -->
+        <label for="email" class="d-block">Email</label>
+        <input type="email" name="email" id="email" required>
+        <!-- colours -->
+        <fieldset>
+          <legend>Choose Color</legend>
+          <input type="radio" name="color" id="grey">
+          <label for="grey">Grey</label>
+          <input type="radio" name="color" id="gold">
+          <label for="gold">Gold</label>
+          <input type="radio" name="color" id="black">
+          <label for="black">Black</label>
+        </fieldset>
+        <select name="size" id="size">
+          <option value="all">Select Size</option>
+          <option value="xs">XS</option>
+          <option value="s">S</option>
+          <option value="m">M</option>
+          <option value="l">L</option>
+          <option value="xl">XL</option>
+          <option value="xxl">XXL</option>
+        </select>
+        <label for="date" class="d-block">Delivery Date</label>
+        <input type="date" name="date" id="date" min="2022-07-01">
+        <br>
 
-
-      <input type="submit" name="submit" id="submit">
+        <input type="submit" name="submit" id="submit">
+      </form>
+      <!-- try writing out the requirements first-->
     </form>
-    <!-- try writing out the requirements first-->
-  </form>
-
   </main>
   <footer>
     <!-- change to your name-->

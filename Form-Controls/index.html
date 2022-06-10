@@ -6,7 +6,7 @@
   <title>My form exercise</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.csss">
 </head>
 <body>
   <header>
@@ -14,14 +14,45 @@
   </header>
   <main>
   <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
+   <p>Complete the info required:</p>
+   <label for="fullname">First Name:</label>
+    <input class="full-name" type="text" id="fullname" name="fullname" required minlength="2"><br>
+    <br>
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required><br>
+    <br>
+    <label for="tcolor">Choose A T-Shirt Color:</label>
+    <select id="tcolor" name="tcolor" required>
+      <option value="white">White</option>
+      <option value="black">Black</option>
+      <option value="grey">Grey</option>
+      <option value="brown">Brown</option><br>
+      <br>
+      <p>Select Size:</p><br>
+      <input type="radio" id="xs" name="size" value="xs">
+      <label for="xs">XS</label><br>
+      <input type="radio" id="s" name="size" value="s">
+      <label for="s">S</label><br>
+      <input type="radio" id="m" name="size" value="m">
+      <label for="m">M</label><br>
+      <input type="radio" id="l" name="size" value="l">
+      <label for="l">L</label><br>
+      <input type="radio" id="xl" name="size" value="xl">
+      <label for="xl">XL</label><br>
+      <input type="radio" id="xxl" name="size" value="xxl">
+      <label for="xxl">XXL</label>
+      <br>
+      <br>
+      <label for="datemin">Select Delivery Date:</label>
+      <input type="date" id="datemin" name="datemin" min="2022-06-15" required><br>
+      <br>
+      <input type="submit">
+
   </form>
 
   </main>
   <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Ele Mashige</h2>
   </footer>
 </body>
 

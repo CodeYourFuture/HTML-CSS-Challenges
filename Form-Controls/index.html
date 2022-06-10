@@ -1,28 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>PRODUCT PICK</h1>
+    </header>
+    <main>
+      <form method="get" id="form-style">
+        <!-- 1. What is the customer's name? I must collect this data, and validate it. But what is a valid name? I must decide something. -->
+        <div id="name-cont">
+          <label id="name" for="name">Full Name</label>
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+          <input
+            id="name-inp"
+            type="text"
+            name="name"
+            placeholder="2 - 15 Characters"
+            minlength="2"
+            maxlength="15"
+            required
+          />
+        </div>
 
+        <br />
+
+        <!-- 2. What is the customer's email? I must make sure the email is valid. Email addresses have a consistent pattern. -->
+        <div id="email-cont">
+          <label id="email" for="email">Email</label>
+          <input
+            id="email-inp"
+            type="email"
+            name="email"
+            placeholder="Enter email"
+            required
+          />
+        </div>
+
+        <br />
+
+        <!-- 3. What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours? -->
+        <div id="color-cont">
+          <label id="color" for="color">Colour</label>
+          <select id="color-inp" name="color" required>
+            <option value="" disabled selected hidden>Choose color</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="black">Black</option></select
+          ><br />
+        </div>
+
+        <!-- 4. What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL -->
+        <div id="size-cont">
+          <label id="size" for="size">Size</label>
+          <select id="size-inp" name="size" required>
+            <option value="" disabled selected hidden>Choose Size</option>
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+          </select>
+
+          <!-- 
+            
+            ----UNABLE TO SELECT ONLY ONE OPTION IN RADIO INPUT---
+            
+            <p id="size-text">Size</p>
+          <label for="xs">XS</label>
+          <input id="xs" type="checkbox" name="size" value="xs" />
+          <label for="s">S</label>
+          <input id="s" type="checkbox" name="size" value="s" />
+          <label for="m">M</label>
+          <input id="m" type="checkbox" name="size" value="m" />
+          <label for="l">L</label>
+          <input id="l" type="checkbox" name="size" value="l" />
+          <label for="xl">XL</label>
+          <input id="xl" type="checkbox" name="size" value="xl" />
+          <label for="xxl">XXL</label>
+          <input id="xxl" type="checkbox" name="size" value="xxl" /> -->
+        </div>
+        <br />
+
+        <!-- 5. When do they want the t-shirt to be delivered? I must collect a date
+        and make sure that date is in the next four weeks. How will I do this?
+        How will I make sure there are no mistakes about the date? -->
+
+        <div id="date-cont">
+          <label id="date" for="date-inp">When would you like delivery</label>
+          <input
+            id="date-inp"
+            type="date"
+            name="date"
+            min="2022-06-04"
+            max="2022-07-02"
+            required
+          />
+        </div>
+
+        <br />
+        <button id="submit">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <h2>By Marvin Marshall</h2>
+    </footer>
+  </body>
 </html>

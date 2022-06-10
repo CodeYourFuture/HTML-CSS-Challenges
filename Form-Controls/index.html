@@ -13,8 +13,58 @@
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
+  <form method="Get">
     <!-- write your html here-->
+        <div class="form-control">
+          <label for="fName">name:</label>
+          <input type="text" id="fName" name="fName" value="" placeholder="enter your name" minlength="0" maxlength="17"
+            autofocus required>
+        </div>
+        <div class="form-control">
+          <label for="email">email:</label>
+          <input type="email" id="email" name="email" placeholder="your email address" value="" required>
+        </div>
+        <div class="form-control">
+          <label for="yellow">yellow</label>
+          <input type="radio" id="yellow" name="t-color" value="Yellow">
+        </div>
+        <div class="form-control">
+          <label for="blue">blue</label>
+          <input type="radio" id="blue" name="t-color" value="Blue">
+        </div>
+        <div class="form-control">
+          <label for="Red">red</label>
+          <input type="radio" id="red" name="t-color" value="Red">
+        </div>
+        <div class="form-control">
+          <label for="date">date</label>
+          <input type="date" id="date" name="date" min="2022-06-10" max="2022-07-08" required>
+        </div>
+        <div class="form-control">
+          <label for="xs">x-small</label>
+          <input type="checkbox" id="xs" name="xs" value="xs">
+        </div>
+        <div class="form-control">
+          <label for="small">small</label>
+          <input type="checkbox" id="small" name="small" value="small">
+        </div>
+        <div class="form-control">
+          <label for="medium">medium</label>
+          <input type="checkbox" id="medium" name="medium" value="medium">
+        </div>
+        <div class="form-control">
+          <label for="large">large</label>
+          <input type="checkbox" id="large" name="large" value="large">
+        </div>
+        <div class="form-control">
+          <label for="x-large">x-large</label>
+          <input type="checkbox" id="x-large" name="x-large" value="x-large">
+        </div>
+        <div class="form-control">
+          <label for="xx-large">xx-large</label>
+          <input type="checkbox" id="xx-large" name="xx-large" value="xx-large">
+        </div>
+        <input type="submit" id="send" value="submit" />
     <!-- try writing out the requirements first-->
   </form>
 

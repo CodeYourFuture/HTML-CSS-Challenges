@@ -1,0 +1,72 @@
+
+body {
+display: flex;
+justify-content: center;
+flex-direction: column;
+color: #f5feffbe;
+background-color: #465050;
+}
+
+header, footer {
+  width: 100%;
+  text-align: center;
+  background-color: #95b897;
+}
+
+
+form{
+  max-width: 95vw;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  background-color: #4e6b5d;
+ }
+
+ form .form-control {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ form .form-control label {
+  font-weight: 300;
+  font-size: 1.3rem;
+  margin-right: 5px;
+ }
+ input[type="text"], input[type="email"] {
+   width: 70%;
+   margin: 3px;
+  outline: none;
+   border-radius: 5px;
+   padding: .48rem;
+ }
+
+input[type="radio"]{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+   border: 1px solid red;
+ }
+ input[type="date"]{
+display: flex;
+justify-content: flex-start;
+padding: .45rem;
+width: 25%;
+font-size: .92rem;
+ }
+
+ input[type="submit"] {
+  flex: 1;
+   padding: 5px;
+   max-width: 95vw;
+   width: 75%;
+   margin: 2px auto;
+   font-size: 20px;
+   cursor: pointer;
+ }
+
+ footer {
+
+ }

@@ -16,10 +16,10 @@ header, footer {
 
 form{
   max-width: 95vw;
-  width: 75%;
+  width: 70%;
   display: flex;
-  flex-direction: column;
   margin: 0 auto;
+  flex-direction: column;
   padding: 2rem 1rem;
   background-color: #4e6b5d;
  }
@@ -28,6 +28,8 @@ form{
    display: flex;
    justify-content: center;
    align-items: center;
+   margin: 5px;
+
  }
 
  form .form-control label {
@@ -43,18 +45,55 @@ form{
    padding: .48rem;
  }
 
-input[type="radio"]{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-   border: 1px solid red;
+ .form-radio {
+   padding: 15px;
+   margin-left: 5rem;
  }
- input[type="date"]{
-display: flex;
-justify-content: flex-start;
-padding: .45rem;
-width: 25%;
+
+ .form-radio label {
+   display: inline;
+   font-size: 1.3rem;
+   margin-left: 10px;
+ }
+ 
+ .form-radio input[name="t-color"]{
+  margin: 10px;
+  text-align: center;
+ }
+
+ .form-date {
+  display: flex;
+  padding: 15px;
+  margin-left: 5rem;
+ }
+
+ .form-date label {
+
+  font-size: 1.3rem;
+  margin-right: 8px;
+ }
+
+ .form-date input[type="date"]{
+width: 55%;
+padding: .38rem;
+outline: none;
 font-size: .92rem;
+ }
+
+ .form-check {
+   display: flex;
+   justify-content: center;
+   padding: 15px;
+ }
+
+ .form-check label{
+   font-size: 1.3rem;
+   margin-right: 5px;
+ }
+
+ .form-check input{
+  cursor: pointer;
+  font-size: 10px;
  }
 
  input[type="submit"] {
@@ -65,8 +104,4 @@ font-size: .92rem;
    margin: 2px auto;
    font-size: 20px;
    cursor: pointer;
- }
-
- footer {
-
  }

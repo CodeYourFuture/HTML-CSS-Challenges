@@ -3,25 +3,101 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
+  <title>My HTML Form Exercise</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Product Pick</h1>
+    <h1>Order your T-Shirt here</h1>
   </header>
   <main>
-  <form>
+  <form class="form-excercise">
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
-  </form>
 
+    <p><h2>Biographical Data</h2></p>
+    <div>
+      <label for="name">Name-Surname</label>
+      <input type="text" name="name" id="name" required minlength="2" maxlength="20" placeholder="username">
+    </div>
+      
+    <div>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="mail" required placeholder="email">
+    </div>
+
+    <div>
+      <label for="phone">Enter phone number</label>
+      <input type="tel" name="phone" id="phone" required placeholder="phone">
+    </div>
+
+    <p><h2>Choose T-Shirt Size</h2></p>
+    <div>
+      <label for="t-shirt">T-Shirt</label>
+      <select id="t-shirt" name="t-shirt">
+        <option value="" label="">Please select</option> 
+        <option value="xs" label="xs" selected>XS</option>
+        <option value="s" label="s" selected>S</option>
+        <option value="m" label="m" selected>M</option>
+        <option value="l" label="l" selected>LRG</option>
+        <option value="xl" label="xl" selected>XL</option>
+        <option value="xxl" label="xxl" selected>XXL</option>
+      </select>
+    </div>
+
+    <p><h2>Choose T-shirt Colour</h2></p>
+
+    <fieldset>
+      <legend>My favourite colour</legend>
+
+        <div>
+        <input type="radio" name="t-shirt" id="black" placeholder="black">
+        <label for="black">Black</label>
+      </div>
+
+    <div>
+      <input type="radio" name="t-shirt" id="grey" placeholder="grey">
+      <label for="grey">Grey</label>
+      </div>
+
+    <div>
+      <input type="radio" name="t-shirt" id="white" placeholder="white">
+      <label for="white">White</label>
+    </div>
+  </fieldset>
+
+  <p><h2>Choose Delivery Date</h2></p>
+    <div>
+      <label for="date">Delivery Date</label>
+      <input type="date" name="date" id="date" required placeholder="date" min="2022-06-10" max="2022-07-09">
+    </div>
+
+    <label for="read-only">Read-only input</label>
+    <input id="read-only" type="text" value="Delivery, 4 weeks notice" readonly/>
+       
+  <p><h2>Gender</h2></p>
+  <div>
+    <input type="radio" name="gender" id="male" placeholder="male" value="male">
+    <label for="male">Male</label>
+  </div>
+
+  <div>
+    <input type="radio" name="gender" id="female" placeholder="female" value="female">
+    <label for="female">Female</label>
+  </div>
+    
+<br>
+    <button type="button">Submit</button>
+    <button type="button" onclick="focusMethod()">Click me to focus on the text field!</button>
+    
+  </form>
+  
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h3>Created by<em>BERENICE OGUNDELE</em></h3>
   </footer>
 </body>
 

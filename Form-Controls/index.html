@@ -19,13 +19,16 @@
 
         <fieldset>
           <legend>Your details:</legend>
-          <label for="first_name">Enter your first name</label>
+          <label for="first_name">Enter your first name:</label>
+          <br>
           <input id="first_name" type="text" minlength="2" required />
           <hr>
-          <label for="surname">Enter your surname</label>
+          <label for="surname">Enter your surname:</label>
+          <br>
           <input id="surname" type="text" minlength="2" required />
           <hr>
-          <label for="email">Enter your email</label>
+          <label for="email">Enter your email:</label>
+          <br>
           <input id="email" type="email" required />
         </fieldset>
         <br>
@@ -47,28 +50,40 @@
 
           <label for="size">Which size:</label>
           <br>
-        <select name="size" id="size" required>
-          <option value="" disabled selected>Select your option</option>
-          <option value="XS">XSmall</option>
-          <option value="S">Small</option>
-          <option value="M">Medium</option>
-          <option value="L">Large</option>
-          <option value="XL">XLarge</option>
-          <option value="XXL">XXLarge</option>
-        </select>
-        <hr>
-
-        <label for="delivery">Delivery date:</label>
-        <br>
-        <input
-          type="date"
-          id="delivery"
-          name="delivery"
-          min="2022-06-13"
-          max="2022-07-10"
+          <input type="radio" id="xsmall" name="size" value="xsmall"  required/>
+          <label for="xsmall" class="radio_label">XS</label>
           
-        />
+          <input type="radio" id="small" name="size" value="small" />
+          <label for="small" class="radio_label">S</label>
+
+          <input type="radio" id="medium" name="size" value="medium" />
+          <label for="medium" class="radio_label">M</label>
+
+          <input type="radio" id="large" name="size" value="large" />
+          <label for="large" class="radio_label">L</label>
+
+          <input type="radio" id="xlarge" name="size" value="xlarge" />
+          <label for="xlarge" class="radio_label">XL</label>
+
+          <input type="radio" id="xxlarge" name="size" value="xxlarge" />
+          <label for="xxlarge" class="radio_label">XXL</label>
+          <hr>
+
+          <label for="delivery">Delivery date:</label>
+          <br>
+          <input
+            type="date"
+            id="delivery"
+            name="delivery"
+            min="2022-06-13"
+            max="2022-07-10"
+            required
+            
+          />
         </fieldset>
+        <br>
+        <br>
+        <input type="submit">
 
         
       </form>

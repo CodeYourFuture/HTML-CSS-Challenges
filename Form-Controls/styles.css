@@ -12,8 +12,17 @@
 	src: url(/Form-Controls/fonts/a-alloy-ink-font/AlloyInk-nRLyO.ttf);
 }
 
+input[type="radio"]:focus{
+	height: 2.5rem;
+	width: 2.5rem;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="date"]:focus, input[type="submit"]:focus {	
+	border: black 0.3em solid;
+}
+
 h1, h2{
-	font-family: a Alloy Ink;
+	font-family: a Alloy Ink;	
 	font-size: 7rem;
 	text-align: center;
 	padding: 0.2em;
@@ -33,7 +42,7 @@ h1, h2, fieldset{
 	border: 1rem solid #880085 ;
 }
 
-legend{
+legend, input[type="submit"]{
 	font-family: WHOA SAUCE;
 	font-size: 5rem;
 	text-align: center;
@@ -42,18 +51,36 @@ legend{
 	/* margin: 0.2em; */
 	color: white;
 	border-radius: 2em;
+	display: flex;
+	border: 0.05em solid black;
+	
 }
+
 label{
 	font-family: Scholarly Ambition;
 	font-size: 3rem;
-	text-align: center;
-	
+	padding: 0.5rem;
+}
+
+fieldset, input[type="submit"]{
+	text-align: center; 
+	margin: 0 auto;
+	display: flexbox;
+}
+
+input[type="text"], input[type="email"]{
+	height: 3rem;
+	width: 60%;
+	font-size: 1.7rem;
+	text-align: center; 
+	border-radius: 2em;
 }
 
 .radio_label{
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 }
+
 
 #colour1 {
 	display:inline-block;
@@ -64,7 +91,7 @@ label{
 	height: 1.3rem;
 	box-shadow: 0.2rem 0.2rem  #888888;
   }
-  #colour2 {
+#colour2 {
 	display:inline-block;
 	background-color: #D8BFD8 ;
 	/* padding: 10px ; */
@@ -73,7 +100,7 @@ label{
 	height: 1.3rem;
 	box-shadow: 0.2rem 0.2rem  #888888;
   }
-  #colour3 {
+#colour3 {
 	display:inline-block;
 	background-color: #880085 ;
 	/* padding: 10px ; */
@@ -82,3 +109,16 @@ label{
 	height: 1.3rem;
 	box-shadow: 0.2rem 0.2rem  #888888;
   }
+
+input[type="radio"]{
+	height: 1.5rem;
+	width: 1.5rem;
+}
+
+input[type="date"]{
+	font-size: 1.7rem;
+	color: white;
+	background-color: #6A0DAD;
+	padding: 0.2em;
+	border-radius: 2em;
+}

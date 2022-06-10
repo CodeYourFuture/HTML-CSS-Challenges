@@ -1,0 +1,37 @@
+body{
+    color: black;
+    background-color:lightblue;
+    background-size: cover;
+    margin: 10px
+}
+#name{
+    margin:10px;
+    border-color: black;
+}
+#email{
+    margin:10px;
+    border-color: black;
+}
+#phone{
+    margin:10px;
+    border-color: black;
+}
+#date{
+    margin:10px;
+    border-color: black;
+}
+#read-only{
+    margin:10px;
+    border-color: black;
+}
+#t-shirt{
+    margin:10px;
+    border-color: black;
+}
+#submit{
+    margin:10px;
+    border-color: black;
+}
+
+
+

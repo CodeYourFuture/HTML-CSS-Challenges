@@ -2,6 +2,7 @@ body {
 	background-color: #153643;
 	font-family: Verdana;
 	text-align: center;
+    color: aquamarine;
 }
 
 input:focus {
@@ -10,6 +11,7 @@ input:focus {
 
 form {
 	background-color: #cccccc;
+    color:black;
 	max-width: 500px;
 	margin: 50px auto;
 	padding: 30px 20px;
@@ -53,4 +55,5 @@ button {
 	width: 100%;
 	margin-top: 50px;
 	margin-bottom: 20px;
+    color: aquamarine;
 }

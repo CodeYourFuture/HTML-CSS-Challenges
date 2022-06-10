@@ -9,19 +9,81 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <fieldset>
+   <legend "text-align: center">
+   T-shirt Product Pick
+   </legend>
 
+   <form style="text-align: center">
+     <label for="name" id="name">Customer Name</label>
+     <input
+     type="text" required
+     minlength="2"
+     maxlength="15"
+     required
+     placeholder="Please enter name here"
+     />
+     <br />
+     <br />
+
+     <label for="email" id="email">Email Address</label>
+      <input 
+      type="email" required 
+      placeholder="Please enter email here" 
+      />
+      <br />
+      <br />
+      <label for="shirt-color">Select your prefered T-shirt Color</label>
+      <br />
+      <input name="shirt-color" type="radio" required />
+
+      <label for="shirt-color" id="shirt-color">Green</label>
+
+      <br />
+
+      <input name="shirt-color" type="radio" required />
+
+      <label for="shirt-color" id="shirt-color">Blue</label>
+
+      <br />
+
+      <input name="shirt-color" type="radio" required />
+      <label for="shirt-color" id="shirt-color">Pink</label>
+
+      <br />
+      <br />
+      <label for="shirt-size">Select T-shirt Size</label> <br />
+      <select required name="shirt-size" id="shirt-size">
+      <br />
+      <option for="shirt-size">XS</option>
+      <br />
+      <option for="shirt-size">S</option>
+      <br />
+      <option for="shirt-size">M</option>
+      <br />
+      <option for="shirt-size">L</option>
+      <br />
+      <option for="shirt-size">XL</option>
+      <br />
+      <option for="shirt-size">XXL</option>
+      <br />
+      </select>
+      <br />
+      <br />
+      <label for="delivery-date">Select delivery date</label> <br />
+      <input type="date" id="delivery-date" name="select date"
+      min="2022-06-11" max="2022-07-01">
+      <br />
+      <br />
+      <button class="submit">Submit</button>
+
+  </form>
+</fieldset>
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2 style="text-align: center">By Gelson Celestino</h2>
   </footer>
 </body>
 

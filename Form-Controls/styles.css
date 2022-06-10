@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Italiana&family=Roboto:wght@300;400;700&family=Tiro+Gurmukhi&display=swap');
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color:#d13b05;
+    font-weight: 400;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 10px 10px;
+  border:none;
+  border-radius: 5px;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.15);
+  padding: 5px;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+form {
+    margin: 0 300;
+    
+}
+
+h1, h2 {
+    margin: 10px;
+    font-family: Italiana, serif;
+    color: #212121;
+}
+
+h1 {
+    font-size: 50px;
+    padding-left: 20px;
+}
+
+h2{
+    text-align: end;
+    padding-right:80px;
+}
+
+fieldset {
+    border: none;
+}
+
+ fieldset , legend {
+     padding:0px; 
+     margin:0px;
+}
+
+ img {
+     
+     width: 200px;
+     height:auto;
+     border-radius: 5px; 
+     box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.15);    
+ }
+
+ input[type=text], input[type=email]  {
+ width: 300px;
+ }
+
+input[type=text]:focus, input[type=email]:focus {
+    background-color: rgb(126, 159, 170);
+  }
+
+input[type="submit"] {
+     color: white;
+     background-color:  rgb(12 79 102 / 81%);
+     padding: 10px 15px;
+     margin-left: 20px;
+}
+
+ input[type=radio] { 
+    filter: grayscale(1);
+}
+
+.decoration {
+    background-image: url(geometric.jpg);
+    background-size: cover;
+    height: 500px;
+}

@@ -13,16 +13,62 @@
     <h1>Product Pick</h1>
   </header>
   <main>
+
+ 
   <form>
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
-  </form>
+    <!-- Requirements 
+         Customer's name? and validate it. - input text - text string of two characters or more. required
+         Customer's email? make sure the email is valid. Email addresses have a consistent pattern. input type email required
+         What colour should this t-shirt be? I must give 3 options.make sure they don't pick other colours? radio button required
+         What size?I must give the following 6 options: XS, S, M, L, XL, XXL select required
+         When do they want the t-shirt to be delivered? I must collect a date and make sure that date is in the next four weeks.How make sure no mistakes about the date?
+         https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date 
+    -->
 
+    <label for="custname">Customer Name</label>
+    <input id="custname" type="text" minlength="2" value="" required>
+    <br>
+     
+    <label for="custemail"> E-Mail</label>
+    <input id="custemail" type="email" required value="">
+
+    <fieldset required>
+      <legend>Choose your colour t-shirt </legend> 
+      <input id="salmon" type="radio" name="colours" value="salmon" required> 
+      <label for="salmon"> salmon</label>
+      <input id="charcoal" type="radio" name="colours" value="charcoal" required> 
+      <label for="charcoal">charcoal</label>
+      <input id="white" type="radio" name="colours" value="white" required> 
+      <label for="white">white</label>
+    </fieldset>
+
+    <label for="custsize">Select Size required:</label>
+    <select id="custsize" name="custsize" required>
+      <option value="">Please select</option>
+      <option value="XS">XS</option>
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
+      <option value="XXL">XXL</option>
+    </select>
+ <br>
+    <label for="delivery">Select Delivery Date:</label>
+    <input type="date" id="delivery" name="delivery" value=""
+      min="2022-06-11" max="2022-07-09" required>
+
+    <input type="submit" value="Submit">
+  </form>
+  <img src="tshirt.jpg" alt="lady with tshirt touching hair">
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Chandre De Wet</h2>
+    <div class="decoration"></div>
   </footer>
 </body>
 
 </html>
+

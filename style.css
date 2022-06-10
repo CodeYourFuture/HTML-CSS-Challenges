@@ -1,0 +1,51 @@
+
+header {
+    overflow: hidden;
+    background-color: black; 
+    position: initial;
+    margin-top: 20px;
+    
+    }
+    body { 
+    margin:0;
+    padding:0;
+    background-image: url(jpg);
+    background-color: rgb(212, 189, 235);
+    margin-left: 30px;
+    
+    }
+    video{
+    width: 700px;
+    height: 800px;
+    }
+    
+    ul { 
+    display: flex;
+    list-style: none;
+    float: right;
+    padding: 0px;
+    
+    }
+    li a { 
+    color: rgb(245, 239, 239);
+    text-decoration: none;
+    padding: 10px;
+    overflow: hidden;
+    
+    }
+    
+    li a:hover { 
+    color: rgb(14, 14, 15);
+    background-color: rgb(119, 198, 247);
+    padding: 27px;        
+    }
+    .logo{ 
+    font-size: 50px; 
+    margin-top: -10px;
+    }
+    h1 {
+    background-color: black;
+    color: blanchedalmond; 
+    width: 200px;  
+    
+    }

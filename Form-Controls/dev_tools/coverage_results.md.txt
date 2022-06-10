@@ -1,0 +1,5 @@
+# Coverage Results
+
+I got 26.9% unused CSS, but that was the 3 fonts and the focus elements CSS, everything else was used.
+
+(Screenshots included for coverage results and 2 pages to show which css was unused)

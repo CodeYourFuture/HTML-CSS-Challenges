@@ -6,7 +6,7 @@
   <title>My form exercise</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.csss">
 </head>
 <body>
   <header>
@@ -15,8 +15,8 @@
   <main>
   <form>
    <p>Complete the info required:</p>
-   <label class="fullname" for="fullname">First Name:</label>
-    <input type="text" id="fullname" name="fullname" required minlength="2"><br>
+   <label for="fullname">First Name:</label>
+    <input class="full-name" type="text" id="fullname" name="fullname" required minlength="2"><br>
     <br>
     <label for="email">Email Address:</label>
     <input type="email" id="email" name="email" required><br>
@@ -28,7 +28,7 @@
       <option value="grey">Grey</option>
       <option value="brown">Brown</option><br>
       <br>
-<p>Select Size</p><br>
+      <p>Select Size:</p>
       <input type="radio" id="xs" name="size" value="xs">
       <label for="xs">XS</label><br>
       <input type="radio" id="s" name="size" value="s">
@@ -44,15 +44,14 @@
       <br>
       <br>
       <label for="datemin">Select Delivery Date:</label>
-      <input type="date" id="datemin" name="datemin" min="2022-06-01" required><br>
+      <input type="date" id="datemin" name="datemin" min="2022-06-15" required><br>
       <br>
       <input type="submit">
-   
+
   </form>
 
   </main>
   <footer>
-    <!-- change to your name-->
     <h2>By Ele Mashige</h2>
   </footer>
 </body>

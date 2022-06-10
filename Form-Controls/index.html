@@ -16,15 +16,15 @@
   <form>
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
-    <p><strong><h2>Biographical Data</h2></strong></p>
+    <p><h2>Biographical Data</h2></p>
     <div>
       <label for="name">First Name</label>
-      <input type="text" name="name" id="name" required minlength="2" maxlength="10" placeholder="username">
+      <input type="text" name="name" id="name" required minlength="2" maxlength="20" placeholder="username">
     </div>
   
     <div>
       <label for="name">Last Name</label>
-      <input type="text" name="name" id="name" required minlength="2" maxlength="10" placeholder="lastname">
+      <input type="text" name="name" id="name" required minlength="2" maxlength="20" placeholder="lastname">
     </div>
 
     <div>
@@ -37,13 +37,13 @@
       <input type="tel" name="phone" id="phone" required placeholder="phone">
     </div>
 
-    <p><strong><h2>Choose Your Delivery Date</h2></strong></p>
+    <p><strong><h2>Choose Delivery Date</h2></strong></p>
     <div>
       <label for="date">Delivery Date</label>
-      <input type="date" name="date" id="date" required placeholder="date">
+      <input type="date" name="date" id="date" required placeholder="date" min="2022-06-10" max="2022-07-09">
     </div>
 
-    <p><strong><h2>Choose Your T-shirt Colour</h2></strong></p>
+    <p><h2>Choose T-shirt Colour</h2></p>
 
     <fieldset>
       <legend>My t-shirt choice</legend>
@@ -64,7 +64,7 @@
           </div>
   </fieldset>
 
-    <p><strong><h2>Choose Your T-shirt Size</h2></strong></p>
+    <p><h2>Choose T-shirt Size</h2></p>
     <div>
       <label for="t-shirt">Size Picker</label>
       <select id="t-shirt" name="t-shirt">

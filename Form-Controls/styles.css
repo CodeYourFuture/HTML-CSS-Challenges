@@ -1,0 +1,116 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    background-color: #edede9;
+}
+
+header {
+    background: #d6ccc2;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+header>h1 {
+    font-size: 1.5em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+    height: 100%;
+    gap: 1em;
+}
+
+form {
+    background: #e3d5ca;
+    padding: 1em;
+    border-radius: .5em;
+}
+
+label,
+legend,
+select {
+    font-size: 0.8em;
+    margin-top: 1em;
+}
+
+input {
+    border-radius: 0.25em;
+    border: none;
+    height: 20px;
+}
+
+#name,
+#email {
+    width: 100%;
+}
+
+fieldset {
+    padding: 0 5px;
+    border-radius: 0.25em;
+    margin-top: .7em;
+}
+
+select {
+    border: none;
+    border-radius: .25em;
+}
+
+.d-block {
+    display: block;
+}
+
+.mt-1 {
+    margin-top: 1em;
+}
+
+#submit {
+    background: green;
+    color: #fff;
+    height: 25px;
+    padding: 0 5px;
+    font-weight: 600;
+    margin-top: 1em;
+}
+
+#submit:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+footer {
+    position: absolute;
+    background-color: #d6ccc2;
+    padding: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+footer h2 {
+    font-size: 1.1em;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 760px) {
+
+    main {
+        padding: 2em;
+    }
+
+    main {
+        display: block;
+    }
+}

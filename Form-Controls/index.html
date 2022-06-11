@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,20 +9,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
-    <h1>Product Pick</h1>
+    <h1>Product Pick Form</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+    <form>
+      <!-- write your html here-->
+      <!-- try writing out the requirements first-->
+      <h2>T-Shirt order form</h2>
+      <div class="container">
+        <div class="photo">
+          <img src="https://i.pinimg.com/564x/97/91/24/979124090c9fb43bc4e2cf9c40d2a33b.jpg" alt="photo">
+        </div>
+
+        <div class="clientform">
+          <label for="name">Name</label><br>
+          <input type="text" id="name" placeholder="Enter your name" required><br>
+
+          <label for="name">Email</label><br>
+          <input type="text" id="email" placeholder="Enter your email" required><br>
+
+          <label for="name">Address</label><br>
+          <input type="text" id="address" placeholder="Enter your Address" required><br>
+
+          <label for="contact">Contact</label><br>
+          <input type="text" id="contact" placeholder="Enter your phone number"><br>
+
+          <label for="color">Color</label><br>
+          <select name="select-color" id="color" required>
+            <option class="option" value="color">Please pick your T-shirt color</option>
+            <option value="color">White</option>
+            <option value="color">Black</option>
+            <option value="color">Red</option>
+          </select><br>
+
+          <label for="size">Size</label><br>
+          <select name="select-size" id="size" required>
+            <option value="">Please pick your T-shirt size</option>
+            <option value="e-small">Extra-small (XS)</option>
+            <option value="small">Small (S)</option>
+            <option value="medium">Medium(M)</option>
+            <option value="large">Large (L)</option>
+            <option value="extra-large">Extra-Large (XL)</option>
+            <option value="de-large">Double Extra-Large (XXL)</option>
+          </select><br>
+
+          <label for="date">Delivery Date</label><br>
+          <input type="date" name="delivery" id="pickdate" min="2022-06-08" max="2022-07-06" required><br>
+
+          <button>Submit</button>
+        </div>
+      </div>
+    </form>
 
   </main>
+
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <div class="footer-content">
+      <ul class="socials">
+        <li><a href="#"><img src="https://img.icons8.com/ios-glyphs/30/undefined/github.png" alt="icon" /></a></li>
+        <li><a href="#"><img src="https://img.icons8.com/ios-glyphs/30/undefined/facebook-circled--v1.png" alt="icon" /></a></li>
+        <li><a href="#"><img src="https://img.icons8.com/ios-glyphs/30/undefined/linkedin-circled--v1.png" alt="icon" /></a></li>
+      </ul>
+      <h3>Copyright &copy;2022, HOMEWORK SOLUTION by <span>Patou Mabando</span></h3>
+    </div>
+
   </footer>
 </body>
 

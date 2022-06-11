@@ -4,6 +4,7 @@ display: flex;
 justify-content: center;
 flex-direction: column;
 color: #f5feffbe;
+font-family: 'Times New Roman', Times, serif;
 background-color: #465050;
 }
 
@@ -64,7 +65,7 @@ form{
  .form-date {
   display: flex;
   padding: 15px;
-  margin-left: 5rem;
+  margin-left: 6rem;
  }
 
  .form-date label {
@@ -74,10 +75,11 @@ form{
  }
 
  .form-date input[type="date"]{
-width: 55%;
-padding: .38rem;
-outline: none;
-font-size: .92rem;
+  width: 55%;
+  padding: .38rem;
+  outline: none;
+  border-radius: 5px;
+  font-size: .92rem;
  }
 
  .form-check {
@@ -97,11 +99,22 @@ font-size: .92rem;
  }
 
  input[type="submit"] {
-  flex: 1;
-   padding: 5px;
+   flex: 1;
+   padding: 7px;
    max-width: 95vw;
    width: 75%;
-   margin: 2px auto;
+   margin: 3px auto;
+   display: flex;
+   justify-content: center;
    font-size: 20px;
+   outline: none;
+   border: 0;
    cursor: pointer;
+   border-radius: 5px;
+   transition: all .2s linear;
+ }
+
+ input[type="submit"]:hover {
+  color: white;
+  background-color: #465050;
  }

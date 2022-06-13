@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Spectral:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  background-color: rgba(11, 67, 219, 0.918);
+  padding: 30px;
+}
+
+body {
+  font-family: "Spectral", sans-serif;
+  background-color: hsl(240, 22%, 90%);
+  box-sizing: border-box;
+  width: 100%;
+}
+
+h1 {
+  color: hsl(228, 7%, 87%);
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+h2{
+  font-weight: 600;
+}
+
+main {
+  padding: 40px;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 40px;
+  background-color: rgb(199, 201, 221);
+}
+
+h2 {
+  color: rgb(245, 13, 13);
+
+}
+
+.photo {
+  display: flex;
+  justify-content: left;
+  width: 95%;
+}
+
+.photo img {
+  width: 95%;
+  height: 102vh;
+  display: block;
+  position: relative;
+}
+
+/* client form */
+.clientform {
+  display: inline-block;
+  flex-direction: column;
+  align-items: start;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+select {
+  padding: 5px;
+  width: 32.8vw;
+  border: solid 1px rgba(11, 67, 219, 0.918);
+  font-size: 15px;
+}
+
+input {
+  width: 32vw;
+  padding: 5px;
+  border: solid 1px rgba(11, 67, 219, 0.918);
+  font-size: 15px;
+}
+
+input[type="date"] {
+  width: 97%;
+  border: solid 1px rgba(11, 67, 219, 0.918);
+  font-size: 15px;
+}
+
+/* button */
+input[type='button'] {
+  border: solid 1px rgb(245, 13, 13);
+  width: 100%;
+}
+
+input[type='button']:hover {
+  background-color: rgba(11, 67, 219, 0.918);
+  color: #fff;
+  box-shadow: blue;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: rgba(11, 67, 219, 0.918);
+  color: hsl(228, 7%, 87%);
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.footer-content p {
+  max-width: 500;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.socials li {
+  margin: 0 10px;
+}
+
+.socials a {
+  text-decoration: none;
+}
+
+span {
+  text-transform: uppercase;
+  color: rgb(245, 13, 13);
+  font-weight: 500;
+}
+
+/* Media */
+@media screen and (max-width: 760px) {
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+  }
+  
+  main {
+    font-weight: 600; 
+    font-size: 20px;
+    margin: 30px auto;
+    justify-content: center;
+    color: #000;
+  }
+
+  h2{
+    font-size: 1.5em;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+    background-color: rgb(199, 201, 221);
+  }
+
+  .photo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .photo img {
+    width: 95%;
+    height: 70vh;
+    display: block;
+    position: relative;
+  }
+
+  .clientform{
+    line-height: 1;
+  }
+
+  label{
+    font-size: large;
+  }
+
+  input {
+    width: 300px;
+    border: solid 1px rgba(11, 67, 219, 0.918);
+  }
+  select {
+    width: 310px;
+    border: solid 1px rgba(11, 67, 219, 0.918);
+  }
+
+  input[type="date"] {
+    width: 300px;
+    border: solid 1px rgba(11, 67, 219, 0.918);
+  }
+
+  input[type='button'] {
+    border: solid 1px rgb(245, 13, 13);
+    width: 100%;
+  }
+
+  .footer-content h3{
+    font-size: medium;
+  }
+}

@@ -16,12 +16,54 @@
   <form>
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
+    <h1>T-Shirt Order</h1>
+    <p>Submit your details below to complete your t-shirt order</p>
+    <br>
+    <form action="">
+        <label for="firstName">Enter your name:</label>
+        <input type="text" name="firstName" id="firstName" minlength="2" required>
+<br>
+<br>
+        <label for="lastName">Enter your last name:</label>
+        <input type="text" name="lastName" id="lastName" minlength="2" required>
+<br>
+<br>
+        <label for="email">Enter your email address:</label>
+        <input type="email" name="email" id="email" required>
+<br>
+<br>
+        <p>Select your Color:</p>
+        <input type="radio" value="black" name="color" id="black" required>
+        <label for="black">Black</label>
+        <input type="radio" value="pink" name="color" id="pink">
+        <label for="pink">Pink</label>
+        <input type="radio" value="blue" name="color" id="blue">
+        <label for="blue">Blue</label>
+<br>
+<br>
+        <label for="size">Select your Size:</label>
+        <select name="size" id="size" required>
+            <option value="extraSmall">XS</option>
+            <option value="small">S</option>
+            <option value="medium">M</option>
+            <option value="large">L</option>
+            <option value="extraLarge">XL</option>
+            <option value="xxlarge">XXL</option>
+        </select>
+<br>
+<br>
+        <label for="delivery">Delivery Date</label>
+        <input type="date" name="delivery" id="delivery" max="2022-07-12" required>
+<br>
+<br>
+        <button>Submit</button>
+    </form>
   </form>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Lihle Naphakade</h2>
   </footer>
 </body>
 

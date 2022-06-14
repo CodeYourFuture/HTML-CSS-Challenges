@@ -1,0 +1,23 @@
+body{
+    padding-left: 50px;
+    padding-bottom: 50px;
+    width: 500px;
+    margin-top: 100px;
+    margin-left: 500px;
+    border: 1px solid;
+    font-family: fantasy;
+}
+
+h1{
+    font-family: fantasy;
+    color: palevioletred;
+}
+button{
+    background-color: palevioletred;
+}
+h2{
+    padding-top: 50px;
+    font-style: italic;
+    font-size: small;
+    text-align: center;
+}

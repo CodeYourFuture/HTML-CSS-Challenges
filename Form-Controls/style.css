@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #000;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+}
+header {
+  width: 50%;
+  margin: 100px auto;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+h2 {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+main {
+  width: 100%;
+}
+
+form {
+  width: 450px;
+  margin: 0 auto;
+  padding: 50px;
+  border-radius: 20px;
+  border: 2px solid #000;
+}
+
+form .form-input {
+  width: 100%;
+}
+
+form .form-input label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+form .form-input input {
+  width: 100%;
+  height: 50px;
+  border: 2px solid #000;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+form .color-picker input {
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+form .color-picker label {
+  font-weight: 700;
+}
+
+form .size-picker input {
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+form .size-picker label {
+  font-weight: 700;
+}
+
+form .form-date label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+form .form-date input {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.form-cta-btn input {
+  width: 100%;
+  height: 50px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  cursor: pointer;
+}

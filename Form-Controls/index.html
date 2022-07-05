@@ -1,28 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Christian Mfuke | My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <form>
+        <div class="form-input">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            placeholder="Enter your name"
+          />
+        </div>
+        <div class="form-input">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="Enter Your Email"
+          />
+        </div>
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+        <div class="color-picker">
+          <input type="radio" id="red" name="color" value="red" />
+          <label for="red">Red</label>
+          <input type="radio" id="blue" name="color" value="blue" />
+          <label for="blue">Blue</label>
+          <input type="radio" id="yellow" name="color" value="yellow" />
+          <label for="yellow">Yellow</label>
+        </div>
 
+        <div class="size-picker">
+          <input type="radio" id="xs" name="size" value="xs" />
+          <label for="xs">XS</label>
+          <input type="radio" id="s" name="size" value="s" />
+          <label for="s">S</label>
+          <input type="radio" id="m" name="size" value="m" />
+          <label for="m">M</label>
+          <input type="radio" id="l" name="size" value="l" />
+          <label for="l">L</label>
+          <input type="radio" id="xl" name="size" value="xl" />
+          <label for="xl">XL</label>
+          <input type="radio" id="xxl" name="size" value="xxl" />
+          <label for="xxl">XXL</label>
+        </div>
+        <div class="form-date">
+          <label for="delivrery-date">Delivrery date:</label>
+          <input
+            type="date"
+            id="delivrery"
+            name="delivrery-date"
+            value="2022-06-17"
+            min="2022-06-20"
+            max="2022-07-08"
+          />
+        </div>
+        <div class="form-cta-btn">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <h2>By Christian Mfuke</h2>
+    </footer>
+  </body>
 </html>

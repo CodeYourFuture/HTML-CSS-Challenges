@@ -153,6 +153,10 @@ footer {
   font-size: 200%;
 }
 
+.news h2 {
+  text-align: center;
+}
+
 .card {
   display: inline-block;
   background-color: white;

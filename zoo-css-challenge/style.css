@@ -115,8 +115,12 @@ footer {
   border: 5px solid #747c92;
 }
 
-.image-container img:first-of-type {
-  vertical-align: bottom;
+.image-container img:first-child {
+  border-color: rgb(233, 141, 141);
+}
+
+.image-container img:last-child {
+  border-color: rgb(153, 153, 238);
 }
 
 .tigers {

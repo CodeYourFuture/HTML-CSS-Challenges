@@ -241,3 +241,24 @@ footer {
 .programs .card {
   display: block;
 }
+
+.favorite_animal {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  background-color: grey;
+}
+
+.favorite_animal h3 {
+  color: #f5f1f1;
+  text-align: left;
+  font-size: 300%;
+}
+
+.favorite_animal a {
+ color: rgb(226, 225, 225);
+}
+
+.favorite_animal img {
+  border: none;
+}

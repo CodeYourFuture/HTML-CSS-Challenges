@@ -133,12 +133,24 @@ footer {
 }
 
 .giraffe {
-  background-color: #465775;
+  background-color: #483C46;
   color: #56e39f;
 }
 
 .giraffe h2 {
-  color: #ef6f6c;
+  color: #F4743B;
+}
+
+.giraffe h3 {
+  color: #eac3c3;
+}
+
+.giraffe p {
+  color: #BEEE62;
+}
+
+.giraffe_paragraph {
+  font-size: 200%;
 }
 
 .card {

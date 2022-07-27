@@ -1,5 +1,7 @@
 * {
   font-family: sans-serif;
+  letter-spacing: .1rem;
+
 }
 
 header {
@@ -31,6 +33,10 @@ section {
 
 img {
   border: 5px solid #8075ff;
+}
+
+#logo {
+  border: none;
 }
 
 h1,
@@ -76,6 +82,7 @@ footer {
 }
 
 .introduction {
+  background-color: white;
 }
 
 #badge {
@@ -85,7 +92,7 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 
   display: flex;
@@ -96,6 +103,7 @@ footer {
 
 #badge:hover {
   background-color: yellow;
+  transition: 3s;
 }
 
 #badge p {
@@ -108,8 +116,16 @@ footer {
   border: 5px solid #747c92;
 }
 
-.image-container img:first-of-type {
-  vertical-align: bottom;
+.image-container img:first-child {
+  border-color: rgb(233, 141, 141);
+}
+
+.image-container img:last-child {
+  border-color: rgb(153, 153, 238);
+}
+
+.tigers h2 {
+  color: #eac3c3;
 }
 
 .tigers {
@@ -118,12 +134,28 @@ footer {
 }
 
 .giraffe {
-  background-color: #465775;
+  background-color: #483C46;
   color: #56e39f;
 }
 
 .giraffe h2 {
-  color: #ef6f6c;
+  color: #F4743B;
+}
+
+.giraffe h3 {
+  color: #eac3c3;
+}
+
+.giraffe p {
+  color: #BEEE62;
+}
+
+.giraffe_paragraph {
+  font-size: 200%;
+}
+
+.news h2 {
+  text-align: center;
 }
 
 .card {
@@ -166,6 +198,7 @@ footer {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  border-radius: 2em;
 }
 
 .education-container h3,
@@ -173,11 +206,23 @@ footer {
   margin-bottom: 1em;
 }
 
+.education_button {
+  font-size: 2em;
+  border-radius: .5em;
+}
+
+.education_button:hover,
+.education_button:focus {
+  background-color: #8075ff;
+}
+
 /*Membership*/
 
 .membership {
   text-align: center;
   background-color: #fffffc;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .membership h2 {
@@ -189,7 +234,31 @@ footer {
 }
 
 /*Programs*/
+.programs_container {
+  display: flex;
+}
 
 .programs .card {
   display: block;
+}
+
+.favorite_animal {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  background-color: grey;
+}
+
+.favorite_animal h3 {
+  color: #f5f1f1;
+  text-align: left;
+  font-size: 300%;
+}
+
+.favorite_animal a {
+ color: rgb(226, 225, 225);
+}
+
+.favorite_animal img {
+  border: none;
 }

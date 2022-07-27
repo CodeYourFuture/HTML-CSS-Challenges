@@ -233,6 +233,9 @@ footer {
 }
 
 /*Programs*/
+.programs_container {
+  display: flex;
+}
 
 .programs .card {
   display: block;

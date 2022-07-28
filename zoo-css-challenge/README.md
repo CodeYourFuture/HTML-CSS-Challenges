@@ -2,7 +2,7 @@
 
 You have been hired by a zoo to build a website.
 
-I’ve done the first part but it is full of mistakes. It’s your job to fix them. The client has sent over a list of alterations and recommendations that they want to fix the site with. 
+I’ve done the first part but it is full of mistakes. It’s your job to fix them. The client has sent over a list of alterations and recommendations that they want to fix the site with.
 
 You are encouraged to use Google to help you find the answers to these problems.
 
@@ -16,7 +16,7 @@ The first section has a class name of ‘introduction’. Give this section a wh
 
 Most of the text on the page is very close together. Increase the amount of space of the text so that there's more breathing space.
 
-## 2) Bears:
+## 2) Bears
 
 All the images of bears have the same border colour, can all these images be given a different border colour?
 
@@ -24,7 +24,7 @@ The images of the bears are also misaligned. Can all these images be vertically 
 
 ## 3) Tigers
 
-The purple headings are hard to read on dark backgrounds, change them to a lighter colour. Make sure it passes the WCAG AA standards for contrast. You can use this tool to help: https://webaim.org/resources/contrastchecker/
+The purple headings are hard to read on dark backgrounds, change them to a lighter colour. Make sure it passes the WCAG AA standards for contrast. You can use this tool to help: <https://webaim.org/resources/contrastchecker/>
 
 Change the heading of this section to ‘Tiger Facts’, remove the subheading, and change the ordered list to an unordered list.
 

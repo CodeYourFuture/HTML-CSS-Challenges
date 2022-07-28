@@ -30,7 +30,7 @@ section {
 }
 
 img {
-  border: 5px solid #8075ff;
+  border: 5px solid transparent;
 }
 
 h1,
@@ -66,6 +66,11 @@ button {
   color: #fff;
 }
 
+button:hover,
+button:focus {
+  background-color: #F4743B;
+}
+
 footer {
   background-color: #211a1d;
   color: #ffffff;
@@ -76,6 +81,8 @@ footer {
 }
 
 .introduction {
+  background: white;
+  line-height: 29px;
 }
 
 #badge {
@@ -85,8 +92,9 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
+  transition: 2s;
 
   display: flex;
   justify-content: center;
@@ -95,7 +103,7 @@ footer {
 }
 
 #badge:hover {
-  background-color: yellow;
+  background-color: rgba(248, 248, 3, 0.936);
 }
 
 #badge p {
@@ -108,22 +116,47 @@ footer {
   border: 5px solid #747c92;
 }
 
+#bear1 {
+  border: 5px solid red;
+}
+
+#bear2 {
+  border: 5px solid rgb(100, 42, 176);
+}
+
+#bear3 {
+  border: 5px solid rgb(90, 225, 69);
+}
+
+/*
 .image-container img:first-of-type {
   vertical-align: bottom;
-}
+}*/
 
 .tigers {
   background-color: #0b3c49;
   color: #f0e100;
 }
 
-.giraffe {
-  background-color: #465775;
-  color: #56e39f;
+.tigers h2 {
+color:rgba(255, 255, 255, 0.75)
 }
 
-.giraffe h2 {
-  color: #ef6f6c;
+.giraffe {
+  background-color: #483C46;
+  color: #BEEE62;
+}
+
+#parag1 {
+  font-size: large;
+}
+
+.giraffe h2,h3 {
+  color: #F4743B;
+}
+
+.news h2 {
+  text-align: center;
 }
 
 .card {
@@ -166,6 +199,8 @@ footer {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  border-radius: 15px;
+  
 }
 
 .education-container h3,
@@ -174,10 +209,15 @@ footer {
 }
 
 /*Membership*/
-
 .membership {
   text-align: center;
   background-color: #fffffc;
+}
+
+.membership p {
+  max-width: 700px;
+  margin-left: 13rem;
+
 }
 
 .membership h2 {
@@ -190,6 +230,18 @@ footer {
 
 /*Programs*/
 
+.align-cards {
+  display:flex;
+}
+
 .programs .card {
   display: block;
+}
+
+.macaw-box {
+  display: flex;
+}
+
+.macaw-box p {
+  margin-left: 18px;
 }

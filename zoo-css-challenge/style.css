@@ -1,5 +1,6 @@
 * {
   font-family: sans-serif;
+  letter-spacing: 0.8px;
 }
 
 header {
@@ -64,6 +65,14 @@ button {
   background-color: #372772;
   border: 2px solid black;
   color: #fff;
+  font-size: x-large;
+  border-radius: 8px;
+}
+
+button:hover{
+  background-color: black;
+  color: white;
+  border-radius: 10px;
 }
 
 footer {
@@ -76,6 +85,7 @@ footer {
 }
 
 .introduction {
+  background-color: white;
 }
 
 #badge {
@@ -85,7 +95,7 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 
   display: flex;
@@ -96,6 +106,10 @@ footer {
 
 #badge:hover {
   background-color: yellow;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
 }
 
 #badge p {
@@ -108,8 +122,20 @@ footer {
   border: 5px solid #747c92;
 }
 
+#logo{
+  border: none;
+}
+
 .image-container img:first-of-type {
-  vertical-align: bottom;
+  border-color: red;
+}
+
+.image-container img:nth-of-type(2){
+  border-color: blue;
+}
+
+.image-container img:last-of-type{
+  border-color: #56e39f;
 }
 
 .tigers {
@@ -118,12 +144,21 @@ footer {
 }
 
 .giraffe {
-  background-color: #465775;
-  color: #56e39f;
+  background-color: #483C46;
+  color: #BEEE62;
 }
 
-.giraffe h2 {
-  color: #ef6f6c;
+.giraffe h2{
+  color: #F4743B;
+  text-align: center;
+}
+
+.giraffe h3 {
+  color: #F4743B;
+}
+
+#giraffe-paragraph{
+  font-size: large;
 }
 
 .card {
@@ -160,6 +195,7 @@ footer {
   background-size: cover;
   background-position: center;
   padding: 100px 5%;
+  border-radius: 15px;
 }
 
 .education-container {
@@ -188,8 +224,17 @@ footer {
   color: #ff7f11;
 }
 
+.membership p{
+  width: 700px;
+  margin: 350px;
+}
+
 /*Programs*/
 
 .programs .card {
   display: block;
+}
+
+.programs{
+  display:inline-flex;
 }

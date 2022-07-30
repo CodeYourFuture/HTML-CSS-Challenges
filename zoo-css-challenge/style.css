@@ -1,5 +1,6 @@
 * {
   font-family: sans-serif;
+  line-height: 1.5;
 }
 
 header {
@@ -29,10 +30,6 @@ section {
   background-color: #f8f0fb;
 }
 
-img {
-  border: 5px solid #8075ff;
-}
-
 h1,
 h2,
 h3,
@@ -40,6 +37,16 @@ h4,
 h5 {
   /*Purple*/
   color: #6320ee;
+  margin-bottom: 1em;
+}
+
+.tigers > h2 {
+  color: #D3FAFD;
+  margin-bottom: 1em;
+}
+
+.giraffe > h2,h3 {
+  color: #F4743B;
   margin-bottom: 1em;
 }
 
@@ -64,6 +71,11 @@ button {
   background-color: #372772;
   border: 2px solid black;
   color: #fff;
+  font-size: large;
+}
+
+button:hover,:focus {
+  background-color: #483C46;
 }
 
 footer {
@@ -76,6 +88,11 @@ footer {
 }
 
 .introduction {
+  background-color: white;
+}
+
+.introduction > h1 {
+  color: red;
 }
 
 #badge {
@@ -85,17 +102,17 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 14px;
   right: 20px;
-
   display: flex;
+  transition: all 1s ease;
   justify-content: center;
   align-content: center;
   flex-direction: column;
 }
 
 #badge:hover {
-  background-color: yellow;
+  background-color: #747c92;
 }
 
 #badge p {
@@ -108,9 +125,18 @@ footer {
   border: 5px solid #747c92;
 }
 
-.image-container img:first-of-type {
-  vertical-align: bottom;
+#orso1 {
+  border: 5px solid #3baa50;
 }
+
+#orso2 {
+  border: 5px solid #d3663b;
+}
+
+#orso3 {
+  border: 5px solid #34c5e2;
+}
+
 
 .tigers {
   background-color: #0b3c49;
@@ -118,7 +144,7 @@ footer {
 }
 
 .giraffe {
-  background-color: #465775;
+  background-color: #483C46;
   color: #56e39f;
 }
 
@@ -126,8 +152,11 @@ footer {
   color: #ef6f6c;
 }
 
+.news > h2 {
+  text-align: center;
+}
+
 .card {
-  display: inline-block;
   background-color: white;
   padding: 20px;
   margin: 10px;
@@ -166,6 +195,7 @@ footer {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  border-radius: 10px;
 }
 
 .education-container h3,
@@ -178,6 +208,8 @@ footer {
 .membership {
   text-align: center;
   background-color: #fffffc;
+  max-width: 700px;
+  margin-inline: auto;
 }
 
 .membership h2 {
@@ -191,5 +223,7 @@ footer {
 /*Programs*/
 
 .programs .card {
-  display: block;
+  display: inline-block;
+  vertical-align: top;
+  height: 14vh;
 }

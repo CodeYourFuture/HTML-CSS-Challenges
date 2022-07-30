@@ -91,6 +91,9 @@ footer {
   background-color: white;
 }
 
+.introduction > h1 {
+  color: red;
+}
 
 #badge {
   height: 120px;

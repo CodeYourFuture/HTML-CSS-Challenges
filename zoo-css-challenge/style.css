@@ -91,6 +91,7 @@ footer {
   background-color: white;
 }
 
+
 #badge {
   height: 120px;
   width: 120px;
@@ -98,17 +99,17 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 14px;
   right: 20px;
-
   display: flex;
+  transition: all 1s ease;
   justify-content: center;
   align-content: center;
   flex-direction: column;
 }
 
 #badge:hover {
-  background-color: yellow;
+  background-color: #747c92;
 }
 
 #badge p {

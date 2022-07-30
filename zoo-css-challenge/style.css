@@ -153,7 +153,6 @@ footer {
 }
 
 .card {
-  display: inline-block;
   background-color: white;
   padding: 20px;
   margin: 10px;
@@ -205,6 +204,8 @@ footer {
 .membership {
   text-align: center;
   background-color: #fffffc;
+  max-width: 700px;
+  margin-inline: auto;
 }
 
 .membership h2 {
@@ -218,5 +219,7 @@ footer {
 /*Programs*/
 
 .programs .card {
-  display: block;
+  display: inline-block;
+  vertical-align: top;
+  height: 14vh;
 }

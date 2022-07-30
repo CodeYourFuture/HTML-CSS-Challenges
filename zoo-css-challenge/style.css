@@ -1,5 +1,6 @@
 * {
   font-family: sans-serif;
+  line-height: 1.5;
 }
 
 header {
@@ -29,10 +30,6 @@ section {
   background-color: #f8f0fb;
 }
 
-img {
-  border: 5px solid #8075ff;
-}
-
 h1,
 h2,
 h3,
@@ -40,6 +37,16 @@ h4,
 h5 {
   /*Purple*/
   color: #6320ee;
+  margin-bottom: 1em;
+}
+
+.tigers > h2 {
+  color: #D3FAFD;
+  margin-bottom: 1em;
+}
+
+.giraffe > h2,h3 {
+  color: #F4743B;
   margin-bottom: 1em;
 }
 
@@ -76,6 +83,7 @@ footer {
 }
 
 .introduction {
+  background-color: white;
 }
 
 #badge {
@@ -108,9 +116,18 @@ footer {
   border: 5px solid #747c92;
 }
 
-.image-container img:first-of-type {
-  vertical-align: bottom;
+#orso1 {
+  border: 5px solid #3baa50;
 }
+
+#orso2 {
+  border: 5px solid #d3663b;
+}
+
+#orso3 {
+  border: 5px solid #34c5e2;
+}
+
 
 .tigers {
   background-color: #0b3c49;
@@ -118,7 +135,7 @@ footer {
 }
 
 .giraffe {
-  background-color: #465775;
+  background-color: #483C46;
   color: #56e39f;
 }
 

@@ -64,17 +64,13 @@ button {
   cursor: pointer;
   padding: 10px 20px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
-  /*background-color: #372772*/
-  background-image:linear-gradient(to right, blue 50%, Purple 50%);
-  background-size: 200%;
-  background-repeat: no-repeat;
-  background-position: left;
+  background-color: #80318a;
   border: 2px solid black;
-  color: #fff;
+  color: #ffffff;
 }
 
 button:hover {
-  background-position: right;
+  background-color: #6320ee;
 }
 
 
@@ -198,10 +194,12 @@ footer {
   background-size: cover;
   background-position: center;
   padding: 100px 5%;
+
 }
 
 .education-container {
   background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 20px;
   padding: 50px;
   max-width: 400px;
 }
@@ -215,7 +213,7 @@ footer {
 }
 
 .education-container button {
-  font-size: 20px;
+  font-size: large;
 }
 
 
@@ -237,7 +235,7 @@ footer {
 }
 
 .membership button {
-  font-size: 20px;
+  font-size: large;
 }
 
 /*Programs*/

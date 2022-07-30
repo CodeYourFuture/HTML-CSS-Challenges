@@ -143,6 +143,10 @@ footer {
   color: #ef6f6c;
 }
 
+.news > h2 {
+  text-align: center;
+}
+
 .card {
   display: inline-block;
   background-color: white;

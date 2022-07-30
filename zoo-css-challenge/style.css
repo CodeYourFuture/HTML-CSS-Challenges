@@ -152,7 +152,7 @@ footer {
   color: #BEEE62;
 }
 
-.giraffe h2, h3 {
+.giraffe > h2, h3 {
   color: #F4743B;
 }
 
@@ -160,7 +160,7 @@ footer {
   font-size: 20px;
 }
 
-.news h2 {
+.news > h2 {
   text-align: center;
 }
 

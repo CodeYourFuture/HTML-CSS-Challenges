@@ -90,24 +90,23 @@ footer {
 #badge {
   height: 120px;
   width: 120px;
-  background-image: linear-gradient(to right, #bbb 50%, yellow 50%);
-  background-size: 200%;
-  background-repeat: no-repeat;
-  background-position: left;
+  background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 590px;
+  top: 20px;
   right: 20px;
-  transition: all .1s;
   display: flex;
+  transition: all .1s ease;
   justify-content: center;
   align-content: center;
   flex-direction: column;
 }
 
 #badge:hover {
-  background-position: right;
+  background-color: purple;
+  opacity: 1;
+  transition: 0.3s;
 }
 
 #badge p {

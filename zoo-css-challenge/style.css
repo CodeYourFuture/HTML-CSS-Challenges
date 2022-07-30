@@ -1,5 +1,6 @@
 * {
   font-family: sans-serif;
+  line-height: 30px;
 }
 
 header {
@@ -29,9 +30,6 @@ section {
   background-color: #f8f0fb;
 }
 
-body{
-  line-height: 30px;
-}
 
 h1,
 h2,
@@ -51,7 +49,7 @@ h2{
   font-size: 175%;
 }
 
-.tigers h2  {
+.tigers > h2  {
   font-size: 175%;
   color: lightblue
 }
@@ -105,7 +103,7 @@ footer {
   position: fixed;
   bottom: 590px;
   right: 20px;
-  transition: all .5s;
+  transition: all .1s;
   display: flex;
   justify-content: center;
   align-content: center;

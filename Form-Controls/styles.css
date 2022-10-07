@@ -125,16 +125,8 @@ li {
   border-radius: 0.15rem;
 }
 
-.white {
-  background-color: white;
-}
-
-.black {
-  background-color: black;
-}
-
-.red {
-  background-color: red;
+.tshirt-image {
+  width: 2rem;
 }
 
 .form-tshirt-size-container > ul > li {

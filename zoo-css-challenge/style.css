@@ -1,5 +1,10 @@
 * {
+  box-sizing: border-box;
   font-family: sans-serif;
+}
+
+body {
+  margin: 0;
 }
 
 header {
@@ -7,6 +12,12 @@ header {
   color: #ffffff;
   width: 100%;
   padding: 20px;
+}
+
+/* We don’t want the logo to have a purple border. 
+The logo has an ID of logo, make sure this has no border. */
+#logo {
+  border: none;
 }
 
 nav {
@@ -55,6 +66,11 @@ h3 {
   font-size: 150%;
 }
 
+/* Most of the text on the page is very close together. Increase the amount of space of the text so that there's more breathing space. */
+p {
+  line-height: 1.6rem;
+}
+
 button {
   display: inline-block;
   border-radius: 3px;
@@ -75,9 +91,12 @@ footer {
   justify-content: space-between;
 }
 
+/* The first section has a class name of ‘introduction’. Give this section a white background. */
 .introduction {
+  background-color: hsl(0, 0%, 100%);
 }
 
+/* The badge that says ‘Opening 2021’ we’d like to be on the top right instead of the bottom right. */
 #badge {
   height: 120px;
   width: 120px;
@@ -85,16 +104,19 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
-
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
+  cursor: pointer;
 }
 
+/* When a user hovers over the badge,
+add a transition so the change in colour is smoother. */
 #badge:hover {
+  transition: background-color 1s ease;
   background-color: yellow;
 }
 
@@ -108,8 +130,23 @@ footer {
   border: 5px solid #747c92;
 }
 
-.image-container img:first-of-type {
-  vertical-align: bottom;
+/* The images of the bears are also misaligned. Can all these images be vertically aligned to the top of the container. */
+.image-container img {
+  vertical-align: top;
+}
+
+/* All the images of bears have the same border colour,
+can all these images be given a different border colour? */
+.image-container img:nth-child(1) {
+  border: 0.3rem solid hsl(43, 26%, 71%);
+}
+
+.image-container img:nth-child(2) {
+  border: 0.3rem solid hsl(84, 3%, 72%);
+}
+
+.image-container img:nth-child(3) {
+  border: 0.3rem solid hsl(211, 29%, 65%);
 }
 
 .tigers {
@@ -117,13 +154,64 @@ footer {
   color: #f0e100;
 }
 
+.tigers h2 {
+  color: #f0e100;
+}
+
+.tigers ul {
+  line-height: 2rem;
+}
+
+/* Change the background colour to #483C46 */
 .giraffe {
-  background-color: #465775;
+  background-color: #483C46;
   color: #56e39f;
 }
 
-.giraffe h2 {
-  color: #ef6f6c;
+/* the section titles to #F4743B */
+.giraffe h3 {
+ color: #F4743B;
+}
+
+/* and the paragraph color to #BEEE62 */
+.giraffe p {
+  color: #BEEE62;
+}
+
+/* Make the first paragraph have a larger font size. */
+.giraffe p:first-of-type {
+  font-size: 1.2rem;
+}
+
+
+.wombat  {
+  background-color: hsl(174, 72%, 70%);
+}
+.wombat h2,
+.wombat h3 {
+  color: hsl(300, 100%, 50%);
+  color: hsl(300, 100%, 50%);
+}
+.wombat-gallery {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.wombat-gallery img {
+  max-width: 20rem;
+  border: 0.3rem solid hsl(300, 100%, 50%);
+  border-radius: 0.5rem;
+}
+
+/* Can the title of this section be centred in the middle of this page? */
+.news h2 {
+  text-align: center;
+}
+
+/* added a div flexbox for the cards */
+.news-cards {
+  display: flex;
 }
 
 .card {
@@ -162,10 +250,13 @@ footer {
   padding: 100px 5%;
 }
 
+/* We don’t like the hard corners here. 
+Can you give the container in the section some rounded corners? */
 .education-container {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  border-radius: 0.5rem;
 }
 
 .education-container h3,
@@ -173,8 +264,19 @@ footer {
   margin-bottom: 1em;
 }
 
-/*Membership*/
+/* The buttons are a little hard to read. 
+We’d like the buttons to have larger text */
+.education-container button {
+  font-size: 1.4rem;
+}
 
+/* and also to change colour when you hover and focus on them. */
+.education-container button:hover,
+.education-container button:focus {
+  background-color: hsl(250, 46%, 60%);
+}
+
+/*Membership*/
 .membership {
   text-align: center;
   background-color: #fffffc;
@@ -184,12 +286,24 @@ footer {
   color: #ff3f00;
 }
 
+/* Give the paragraph a maximum width of 700 pixels,
+and keep in the middle by adjusting the margin. */
+.membership p {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 .membership strong {
   color: #ff7f11;
 }
 
 /*Programs*/
 
-.programs .card {
-  display: block;
+/* The cards are stacked on top of each other which looks like a poor use of space. Change these so that they display horizontally across the screen. */
+.programs-cards {
+  display: flex;
+}
+
+.programs .card a {
+  color: inherit;
 }

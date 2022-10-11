@@ -208,12 +208,14 @@ can all these images be given a different border colour? */
 
 .wombat-gallery {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
 .wombat-gallery img {
-  display: block;
+  /* this doesn't work... why? */
+  /* flex-basis: 20rem; */
   max-width: 20rem;
   border: 0.3rem solid hsl(300, 100%, 50%);
   border-radius: 0.5rem;

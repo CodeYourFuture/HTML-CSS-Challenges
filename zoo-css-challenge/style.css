@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 * {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -40,10 +42,6 @@ section {
   background-color: #f8f0fb;
 }
 
-img {
-  border: 5px solid #8075ff;
-}
-
 h1,
 h2,
 h3,
@@ -71,6 +69,8 @@ p {
   line-height: 1.6rem;
 }
 
+/* The buttons are a little hard to read. 
+We’d like the buttons to have larger text */
 button {
   display: inline-block;
   border-radius: 3px;
@@ -80,7 +80,15 @@ button {
   background-color: #372772;
   border: 2px solid black;
   color: #fff;
+  font-size: 1.4rem;
 }
+
+/* and also to change colour when you hover and focus on them. */
+button:hover,
+button:focus {
+  background-color: hsl(250, 46%, 60%);
+}
+
 
 footer {
   background-color: #211a1d;
@@ -168,6 +176,11 @@ can all these images be given a different border colour? */
   color: #56e39f;
 }
 
+/* (I want the h2 colour to match the h3 colour) */
+.giraffe h2 {
+  color: #F4743B;
+}
+
 /* the section titles to #F4743B */
 .giraffe h3 {
  color: #F4743B;
@@ -183,22 +196,24 @@ can all these images be given a different border colour? */
   font-size: 1.2rem;
 }
 
-
+/* Baz Favourite Animal: Wombat! Section ^_^ */
 .wombat  {
   background-color: hsl(174, 72%, 70%);
 }
+
 .wombat h2,
 .wombat h3 {
   color: hsl(300, 100%, 50%);
-  color: hsl(300, 100%, 50%);
 }
+
 .wombat-gallery {
-  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
 .wombat-gallery img {
+  display: block;
   max-width: 20rem;
   border: 0.3rem solid hsl(300, 100%, 50%);
   border-radius: 0.5rem;
@@ -212,31 +227,27 @@ can all these images be given a different border colour? */
 /* added a div flexbox for the cards */
 .news-cards {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .card {
-  display: inline-block;
+  flex-basis: 30%;
   background-color: white;
   padding: 20px;
-  margin: 10px;
-  width: 30%;
   border: 1px solid black;
   border-radius: 10px;
-}
-
-.card h4 {
-  margin-bottom: 1em;
 }
 
 .card a {
   text-decoration: underline;
   font-weight: bold;
+  color: inherit;
 }
 
 .card time {
   opacity: 0.5;
-  display: inline-block;
-  margin-bottom: 10px;
 }
 
 /*Education*/
@@ -264,18 +275,6 @@ Can you give the container in the section some rounded corners? */
   margin-bottom: 1em;
 }
 
-/* The buttons are a little hard to read. 
-We’d like the buttons to have larger text */
-.education-container button {
-  font-size: 1.4rem;
-}
-
-/* and also to change colour when you hover and focus on them. */
-.education-container button:hover,
-.education-container button:focus {
-  background-color: hsl(250, 46%, 60%);
-}
-
 /*Membership*/
 .membership {
   text-align: center;
@@ -291,6 +290,7 @@ and keep in the middle by adjusting the margin. */
 .membership p {
   max-width: 700px;
   margin: 0 auto;
+  padding-bottom: 1rem;
 }
 
 .membership strong {
@@ -302,8 +302,7 @@ and keep in the middle by adjusting the margin. */
 /* The cards are stacked on top of each other which looks like a poor use of space. Change these so that they display horizontally across the screen. */
 .programs-cards {
   display: flex;
-}
-
-.programs .card a {
-  color: inherit;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }

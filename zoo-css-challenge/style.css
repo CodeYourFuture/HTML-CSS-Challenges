@@ -146,6 +146,11 @@ footer {
   color: #F4743B;
 }
 
+.news h2 {
+  display: flex;
+  justify-content: center;
+}
+
 .card {
   display: inline-block;
   background-color: white;

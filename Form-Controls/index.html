@@ -18,15 +18,34 @@
         <!-- try writing out the requirements first-->
         <!--We are selling t-shirts. Write a form to collect the following data:
 
-Our customers already have accounts, so we know their addresses and charging details already. We don't need to collect that data. We want to confirm they are the right person, then get them to choose a colour and then pick a delivery date.
+        Our customers already have accounts, so we know their addresses and charging details already. We don't need to collect that data. We want to confirm they are the right person, then get them to choose a colour and then pick a delivery date.
 
-Writing that out as a series of questions to ask yourself:
+        Writing that out as a series of questions to ask yourself:
 
-What is the customer's name? I must collect this data, and validate it. But what is a valid name? I must decide something.
-What is the customer's email? I must make sure the email is valid. Email addresses have a consistent pattern.
-What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours?
-What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL
-When do they want the t-shirt to be delivered? I must collect a date and make sure that date is in the next four weeks. How will I do this? How will I make sure there are no mistakes about the date?-->
+        What is the customer's name? I must collect this data, and validate it. But what is a valid name? I must decide something.
+        What is the customer's email? I must make sure the email is valid. Email addresses have a consistent pattern.
+        What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours?
+        What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL
+        When do they want the t-shirt to be delivered? I must collect a date and make sure that date is in the next four weeks. How will I do this? How will I make sure there are no mistakes about the date?-->
+
+        <label for="first">Please enter your name</label>
+        <input
+          type="text"
+          name="first-name"
+          id="first"
+          placeholder="Enter your first name"
+        />
+
+        <label for="last">Please enter your last name</label>
+        <input
+          type="text"
+          name="last-name"
+          id="last"
+          placeholder="Enter your last name"
+        />
+
+        <label for="email">Please enter your email</label>
+        <input type="email" id="email" />
       </form>
     </main>
     <footer>

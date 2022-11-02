@@ -222,6 +222,10 @@ footer {
   display: block;
 }
 
+.card-position {
+  display: flex;
+  flex-wrap: wrap;
+}
 /* buttons */
 
 button {

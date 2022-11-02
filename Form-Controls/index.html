@@ -3,26 +3,176 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
+  <meta name="description" content="Product Pick Form">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="styles.css">
+  <title>Product Pick Form</title>
 </head>
 <body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <!-- this has been deliberately over-spaced for readability -->
+  <div id="app-container">
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+
+    <main>
+
+      <form>
+
+        <div class="form-name-container">
+          <label for="name">Name</label>
+          <input 
+            type="text"
+            id="name"
+            value = ""
+            placeholder="Please provide your name"
+            pattern="^(\w\w+)\s(\w\w+)$"
+            title="A valid name has two words of 2+ characters separated by a space"
+            required
+          />
+        </div>
+
+        <div class="form-email-container">
+          <label for="email">Email</label>
+          <input 
+            type="email"
+            id="email"
+            value = ""
+            placeholder="Please provide your email" 
+            required
+          />
+        </div>
+
+        <fieldset class="form-tshirt-colour-container">
+          <legend>Choose a T-Shirt Colour</legend>
+          <ul>
+            <li>
+              <img class="tshirt-image" src="tshirt-white.png" alt="White T Shirt">
+              <label for="white">White</label>
+              <input 
+                type="radio"
+                id="white"
+                name="colour"
+                value="white" 
+              />
+            </li>
+            <li>
+              <img class="tshirt-image" src="tshirt-black.png" alt="Black T Shirt">
+              <label for="black">Black</label>
+              <input 
+                type="radio"
+                id="black"
+                name="colour"
+                value="black"
+                checked 
+              />
+            </li>
+            <li>
+              <img class="tshirt-image" src="tshirt-red.png" alt="Red T Shirt">
+              <label for="red">Red</label>
+              <input 
+                type="radio"
+                id="red"
+                name="colour"
+                value="red"
+              />
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form-tshirt-size-container">
+          <legend>Choose a T-Shirt Size</legend>
+          <ul>
+            <li>
+              <label for="extra-small">XS</label>
+              <input 
+                type="radio"
+                id="extra-small"
+                name="size"
+                value="extrasmall"
+              />
+            </li>
+            <li>
+              <label for="small">S</label>
+              <input 
+                type="radio"
+                id="small"
+                name="size"
+                value="small"
+              />
+            </li>
+            <li>
+              <label for="medium">M</label>
+              <input 
+                type="radio"
+                id="medium"
+                name="size"
+                value="medium"
+                checked 
+              />
+            </li>
+            <li>
+              <label for="large">L</label>
+              <input 
+                type="radio"
+                id="large"
+                name="size"
+                value="large"
+              />
+            </li>
+            <li>
+              <label for="extralarge">XL</label>
+              <input 
+                type="radio"
+                id="extralarge"
+                name="size"
+                value="extralarge"
+              />
+            </li>
+            <li>
+              <label for="extraextralarge">XXL</label>
+              <input 
+                type="radio"
+                id="extraextralarge"
+                name="size"
+                value="extraextralarge"
+              />
+            </li>
+          </ul>
+        </fieldset>
+
+        <div class="form-deliverydate-container">
+          <label for="deliverydate">Select a Delivery Date</label>
+          <input 
+            type="date"
+            id="deliverydate"
+            name="deliverydate"
+            min="2022-11-01"
+            max="2022-11-30"
+            required
+            />
+        </div>
+        
+        <input type="hidden" id="ordertime" name="ordertime" value="order-time-to-send-to-the-backend" />
+        
+        <div class="form-submit-container">
+          <input 
+            type="submit"
+            id="submit"
+            value="Place Your Order"
+          />
+        </div>
+
+      </form>
+
+    </main>
+
+    <footer>
+      <h2>By <a href="https://github.com/bazmurphy/html-css-challenges/tree/main/Form-Controls" target="_blank">Baz Murphy</a></h2>
+    </footer>
+
+  </div>
 </body>
-
 </html>

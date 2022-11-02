@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  background-color: hsl(0, 0%, 15%);
+}
+
+#app-container {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  color:hsl(0, 0%, 10%);
+  font-family: "Lato", serif;
+  text-shadow: 0 0 0.1rem hsla(0, 0%, 50%);
+}
+
+header, footer {
+  padding: 0.5rem 1rem;
+  background-color: hsl(180, 80%, 60%);
+  background-image: url("background.png");
+}
+
+header {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  border-top-left-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
+  border-bottom: 0.15rem solid hsl(180, 90%, 40%);
+}
+
+header > h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
+main {
+  padding: 1rem;
+  background-color: hsl(180, 80%, 90%);
+  background-image: url("background.png");
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-name-container,
+.form-email-container,
+.form-deliverydate-container,
+.form-submit-container {
+  display: flex;
+  flex-direction: column;
+}
+
+legend,
+.form-name-container,
+.form-email-container,
+.form-deliverydate-container {
+  font-weight: 600;
+  font-style: italic;
+}
+
+input {
+  padding: 0.4rem 0.8rem;
+  border: 0.15rem solid hsl(180, 60%, 55%);
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
+}
+
+input:focus {
+  background-color: hsl(0, 0%, 85%);
+}
+
+input:valid {
+  border: 0.15rem solid hsla(125, 100%, 40%, 0.7);
+}
+
+input:invalid {
+  border: 0.15rem solid hsla(0, 100%, 40%, 0.7);
+}
+
+fieldset {
+  padding: 1rem;
+  border: 0.15rem solid hsl(180, 60%, 55%);
+  border-radius: 0.25rem;
+  background-color: hsla(0, 0%, 100%, 0.6);
+}
+
+legend {
+  padding: 0 0.25rem;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 0.5rem 0;
+}
+
+.form-tshirt-colour-container > ul > li {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.tshirt-colour {
+  width: 1rem;
+  height: 1rem;
+  border: 0.1rem solid hsl(0, 0%, 15%);
+  border-radius: 0.15rem;
+}
+
+.tshirt-image {
+  width: 2rem;
+}
+
+.form-tshirt-size-container > ul > li {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+
+#submit {
+  padding: 0.5rem 1rem;
+  border: 0.15rem solid hsl(180, 60%, 55%);
+  border-radius: 0.4rem;
+  background-color: hsl(180, 90%, 50%);
+  font-size: 1.05rem;
+  font-style: italic;
+  font-family: "Lato", serif;
+  text-shadow: 0 0 0.1rem hsla(0, 0%, 50%);
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: hsl(180, 100%, 50%);
+  border: 0.15rem solid hsl(180, 60%, 35%);
+}
+
+footer {
+  border-top: 0.15rem solid hsl(180, 90%, 40%);
+  border-bottom-left-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+}
+
+footer > h2 {
+  font-size: 0.9rem;
+  font-weight: 300;
+  text-align: right;
+}
+
+footer > h2 > a {
+  color: inherit;
+}

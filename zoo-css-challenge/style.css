@@ -84,9 +84,9 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
-
+  transition: all .5s ease-in-out;
   display: flex;
   justify-content: center;
   align-content: center;

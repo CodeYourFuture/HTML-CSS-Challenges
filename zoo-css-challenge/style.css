@@ -203,6 +203,11 @@ footer {
   background-color: #fffffc;
 }
 
+.membership p {
+  width: 700px;
+  margin: 10px auto;
+}
+
 .membership h2 {
   color: #ff3f00;
 }

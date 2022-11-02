@@ -1,0 +1,17 @@
+.shirtform {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+label {
+  margin-top: 5px;
+}
+
+input {
+  margin-top: 2px;
+}
+
+button {
+  margin-top: 10px;
+}

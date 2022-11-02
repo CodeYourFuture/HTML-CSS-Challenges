@@ -13,7 +13,7 @@
       <h1>Product Pick</h1>
     </header>
     <main>
-      <form>
+      <form class="shirtform">
         <!-- write your html here-->
         <!-- try writing out the requirements first-->
         <!--We are selling t-shirts. Write a form to collect the following data:
@@ -28,24 +28,65 @@
         What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL
         When do they want the t-shirt to be delivered? I must collect a date and make sure that date is in the next four weeks. How will I do this? How will I make sure there are no mistakes about the date?-->
 
-        <label for="first">Please enter your name</label>
+        <label for="first">Please enter your first name*</label>
         <input
           type="text"
           name="first-name"
           id="first"
           placeholder="Enter your first name"
+          minlength="2"
+          maxlength="20"
+          required
         />
 
-        <label for="last">Please enter your last name</label>
+        <label for="last">Please enter your last name*</label>
         <input
           type="text"
           name="last-name"
           id="last"
           placeholder="Enter your last name"
+          minlength="2"
+          maxlength="20"
+          required
         />
 
-        <label for="email">Please enter your email</label>
-        <input type="email" id="email" />
+        <label for="email">Please enter your email*</label>
+        <input type="email" id="email" required />
+
+        <fieldset>
+          <legend>Choose a shirt colour</legend>
+
+          <label for="black">Black</label>
+          <input
+            type="radio"
+            id="black"
+            value="black"
+            name="shirt colour"
+            checked
+          />
+
+          <label for="white">White</label>
+          <input type="radio" id="white" value="white" name="shirt colour" />
+
+          <label for="grey">Grey</label>
+          <input type="radio" id="grey" value="grey" name="shirt colour" />
+        </fieldset>
+
+        <label for="shirt-size">Choose a shirt size</label>
+        <select id="shirt-size" name="shirt size" required>
+          <option value="default" selected>Pick a size</option>
+          <option value="xs">X-Small</option>
+          <option value="s">Small</option>
+          <option value="m">Medium</option>
+          <option value="l">Large</option>
+          <option value="xl">X-Large</option>
+          <option value="xxl">XX-Large</option>
+        </select>
+
+        <label for="date">Choose a delivery date</label>
+        <input id="date" type="date" name="delivery date" />
+
+        <button>Submit</button>
       </form>
     </main>
     <footer>

@@ -215,3 +215,15 @@ footer {
 .programs .card {
   display: block;
 }
+
+/* buttons */
+
+button {
+  font-size: 24px;
+  transition: all .3s ease-in-out;
+}
+
+button:hover {
+  background-color: yellow;
+  color: #211a1d;
+}

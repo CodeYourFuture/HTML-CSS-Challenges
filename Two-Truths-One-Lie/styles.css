@@ -41,7 +41,7 @@ body {
 /* header */
 header {
   text-align: center;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 /* main */
@@ -73,9 +73,9 @@ main p {
   height: 280px;
   padding: 1rem 1.5rem;
   background-color: #d1d9a9;
-  border: 1px solid 
-#6d6e6b;
-  box-shadow: 1px 1px 0px 1px rgba(0,0,0,0.19);
+  border: 1px solid #6d6e6b;
+  border-radius: 5px;
+  box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.39);
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -107,13 +107,16 @@ ol{
 
 /* Mana changes */
 .container-right {
-  
   width: 400px;
   height: 280px;
+  padding: 1rem 1.5rem;
   background-color: #d1d9a9;
-  border: 1px solid 
-#6d6e6b;
-  box-shadow: 1px 1px 0px 1px rgba(0,0,0,0.19);
+  border: 1px solid #6d6e6b;
+  border-radius: 5px;
+  box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.39);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 
@@ -153,5 +156,9 @@ footer {
 }
 main {
   gap: 1rem;
+}
+
+footer {
+  margin-top: 45px;
 }
 }

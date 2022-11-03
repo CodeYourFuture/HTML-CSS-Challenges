@@ -54,7 +54,7 @@
         <input type="email" id="email" required />
 
         <fieldset>
-          <legend>Choose a shirt colour</legend>
+          <legend>Choose a shirt colour*</legend>
 
           <label for="black">Black</label>
           <input
@@ -72,10 +72,9 @@
           <input type="radio" id="grey" value="grey" name="shirt colour" />
         </fieldset>
 
-        <label for="shirt-size">Choose a shirt size</label>
+        <label for="shirt-size">Choose a shirt size*</label>
         <select id="shirt-size" name="shirt size" required>
-          <option value="default" selected>Pick a size</option>
-          <option value="xs">X-Small</option>
+          <option value="xs" selected>X-Small</option>
           <option value="s">Small</option>
           <option value="m">Medium</option>
           <option value="l">Large</option>
@@ -83,8 +82,14 @@
           <option value="xxl">XX-Large</option>
         </select>
 
-        <label for="date">Choose a delivery date</label>
-        <input id="date" type="date" name="delivery date" />
+        <label for="date">Choose a delivery date*</label>
+        <input
+          id="date"
+          type="date"
+          name="delivery date"
+          max="2022-12-01"
+          required
+        />
 
         <button>Submit</button>
       </form>

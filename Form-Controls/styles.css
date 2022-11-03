@@ -4,14 +4,32 @@
   width: 500px;
 }
 
-label {
-  margin-top: 5px;
+label,
+fieldset {
+  margin-top: 10px;
+  accent-color: green;
 }
 
 input {
   margin-top: 2px;
+  padding: 5px;
 }
 
 button {
-  margin-top: 10px;
+  margin-top: 20px;
+  font-size: 15px;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+button:hover,
+button:focus {
+  color: aqua;
+  background-color: green;
+}
+
+input:hover,
+input:focus {
+  border: 3px solid green;
 }

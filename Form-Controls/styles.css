@@ -1,8 +1,25 @@
+body {
+  /* margin-left: 500px; */
+  margin-top: 50px;
+  background-image: linear-gradient(pink, white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
 .shirtform {
   display: flex;
   flex-direction: column;
   width: 500px;
   font-size: 25px;
+}
+
+.shirtform button {
+  align-self: center;
 }
 
 label,
@@ -11,7 +28,8 @@ fieldset {
   accent-color: green;
 }
 
-input {
+input,
+select {
   margin-top: 2px;
   padding: 5px;
 }
@@ -35,7 +53,14 @@ button:focus {
 }
 
 input:hover,
-input:focus {
+input:focus,
+select:hover,
+select:focus {
   border: 7px solid green;
   border-radius: 10px;
+}
+
+fieldset {
+  display: flex;
+  justify-content: space-evenly;
 }

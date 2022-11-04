@@ -1,0 +1,53 @@
+* {
+  padding: 0rem;
+  font-family: Raleway;
+  box-sizing: border-box;
+}
+html {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+body {
+  color: #878787;
+  background-color: #fff;
+  padding: 2rem 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75;
+  font-size: 14px;
+}
+/* ------Header------  */
+header h1 {
+  text-align: center;
+}
+
+/* ------Nav Button------  */
+
+.nav_list {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+.nav_item {
+  padding: 0.8rem 0.1rem;
+}
+.nav_link {
+  color: #989898;
+  text-decoration: none;
+  border: 1px dotted red;
+}
+
+.nav_list a:hover {
+  color: #c05326;
+  font-weight: 500;
+}
+/* ------Footer------ */
+footer h2 {
+  border-top: 1px solid #878787;
+  margin: 30px 10px;
+  font-size: 0.7rem;
+  font-weight: 100;
+  text-align: center;
+}

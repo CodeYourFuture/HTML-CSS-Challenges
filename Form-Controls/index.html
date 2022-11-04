@@ -1,28 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <form>
+        <div>
+          <label for="name" class="lable">Name</label>
+          <input id="name" type="text" name="name" required minlength="2" />
+        </div>
+        <div>
+          <label for="email" class="lable">Email</label>
+          <input id="email" type="email" name="email" required />
+        </div>
+        <div>
+          <span class="lable">Colour</span>
+          <div>
+            <label for="black">Black</label>
+            <input
+              type="radio"
+              name="colour"
+              id="black"
+              value="black"
+              required
+            />
+            <label for="red">Red</label>
+            <input type="radio" name="colour" id="red" value="red" />
+            <label for="blue">Blue</label>
+            <input type="radio" name="colour" id="blue" value="blue" />
+          </div>
+        </div>
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
-
+        <div class="content-size">
+          <span class="lable">Size</span>
+          <div>
+            <ul class="items-size">
+              <li>
+                <!-- <input
+                      type="radio"
+                      id="xs"
+                      name="item-size"
+                      required
+                    /> -->
+                <input
+                  type="radio"
+                  id="xs"
+                  value="xs"
+                  name="item-size"
+                  required
+                />
+                <label class="custom-checkbox" for="xs"></label>
+                <a href="#" aria-label="xs size">XS</a>
+              </li>
+              <li>
+                <input type="radio" id="s" value="s" name="item-size" />
+                <label class="custom-checkbox" for="s"></label>
+                <a href="#" aria-label="s size">S</a>
+              </li>
+              <li>
+                <input type="radio" id="m" value="m" name="item-size" />
+                <label class="custom-checkbox" for="m"></label>
+                <a href="#" aria-label="m size">M</a>
+              </li>
+              <li>
+                <input type="radio" id="l" value="l" name="item-size" />
+                <label class="custom-checkbox" for="l"></label>
+                <a href="#" aria-label="l size">L</a>
+              </li>
+              <li>
+                <input type="radio" id="xl" value="xl" name="item-size" />
+                <label class="custom-checkbox" for="xl"></label>
+                <a href="#" aria-label="xl size">XL</a>
+              </li>
+              <li>
+                <input type="radio" id="xxl" value="xl" name="itxem-size" />
+                <label class="custom-checkbox" for="xxl"></label>
+                <a href="#" aria-label="xxl size">XXL</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <lable for="date" class="lable">Delivery Date</lable>
+          <div>
+            <input
+              type="date"
+              id="date"
+              name="delivery-date"
+              min="2021-09-01"
+              max="2021-09-30"
+              required
+            />
+            <span class="validity"></span>
+          </div>
+        </div>
+        <div>
+          <button>Submit</button>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <h2>By Mo Mahboobian</h2>
+    </footer>
+  </body>
 </html>

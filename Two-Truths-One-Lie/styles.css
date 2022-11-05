@@ -71,7 +71,7 @@ main p {
 
 .container-left {
   width: 400px;
-  height: 280px;
+  height: 300px;
   padding: 1rem 1.5rem;
   background-color: #d1d9a9;
   border: 1px solid #6d6e6b;
@@ -109,7 +109,7 @@ ol{
 /* Mana changes */
 .container-right {
   width: 400px;
-  height: 280px;
+  height: 300px;
   padding: 1rem 1.5rem;
   background-color: #d1d9a9;
   border: 1px solid #6d6e6b;

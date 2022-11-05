@@ -147,6 +147,7 @@ h1 {
 .popup .content {
   max-height: 30%;
   overflow: auto;
+  padding: 0;
 }
 
 /* styling inside form */

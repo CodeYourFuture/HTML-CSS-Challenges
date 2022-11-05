@@ -1,28 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+<html lang="en" class="fxdc-jcc-aic">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="My form exercise" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <form class="fxdc-jcc-aic">
+        <!-- write your html here-->
+        <!-- try writing out the requirements first-->
+        <div class="name">
+          <label for="Name">Name</label
+          ><input
+            id="Name"
+            type="text"
+            placeholder="Please fill your name"
+            required
+            pattern="[a-zA-Z]+.{2,}"
+          />
+        </div>
+        <div class="email">
+          <label for="Email">Email</label>
+          <input
+            id="Email"
+            type="text"
+            required
+            placeholder="Please fill your email"
+          />
+        </div>
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+        <fieldset class="fx-jcc" id="colour" required>
+          <legend>Colour</legend>
+          <div class="fxdc-jcc-aic">
+            <label for="blue">blue</label>
+            <i class="fa-solid fa-shirt"></i>
+            <input type="radio" name="colour" id="blue" />
+          </div>
+          <div class="fxdc-jcc-aic">
+            <label for="red">red</label>
+            <i class="fa-solid fa-shirt"></i>
+            <input type="radio" name="colour" id="red" required />
+          </div>
+          <div class="fxdc-jcc-aic">
+            <label for="grey">grey</label>
+            <i class="fa-solid fa-shirt"></i>
+            <input type="radio" name="colour" id="grey" />
+          </div>
+        </fieldset>
+        <fieldset class="fx-jcc" id="size">
+          <legend>Size</legend>
+          <div class="fxdc-jcc-aic">
+            <label for="XS">XS</label><input type="radio" name="size" id="XS" />
+          </div>
+          <div class="fxdc-jcc-aic">
+            <label for="S">S</label><input type="radio" name="size" id="S" />
+          </div>
+          <div class="fxdc-jcc-aic">
+            <label for="M">M</label
+            ><input type="radio" name="size" id="M" required />
+          </div>
+          <div class="fxdc-jcc-aic">
+            <label for="L">L</label><input type="radio" name="size" id="L" />
+          </div>
+          <div class="fxdc-jcc-aic">
+            <label for="XL">XL</label><input type="radio" name="size" id="XL" />
+          </div>
+          <div class="fxdc-jcc-aic">
+            <label for="XXL">XXL</label
+            ><input type="radio" name="size" id="XXL" />
+          </div>
+        </fieldset>
+        <div class="date">
+          <label for="deliveredDate">Delivered Date</label
+          ><input
+            required
+            type="date"
+            id="deliveredDate"
+            min="2022-11-01"
+            max="2022-11-30"
+          />
+        </div>
 
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <h2>By SUSAN</h2>
+    </footer>
+  </body>
 </html>

@@ -5,11 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>My form exercise</title>
+
   <link href=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
   <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
     type='text/css'>
   <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;1,400;1,500&display=swap"
+    rel="stylesheet">
+
   <script src="https://kit.fontawesome.com/e8c9266318.js" crossorigin="anonymous"></script>
 </head>
 
@@ -74,119 +80,116 @@
 
     <div id="popup1" class="overlay">
       <div class="popup">
-        <p>Order details</p>
+        <h2>Order details</h2>
         <a class="close" href="#">&times;</a>
 
         <div class="container-fluid content">
-          <div class="row">
-            <div class="col-xl form-box no-padding">
-              <form>
-                <div class="row">
-                  <div class="form-group col-6">
-                    <label for="first_name">First name *</label>
-                    <input type="text" class="form-control input-text" id="first_name" name="first_name" minlength="3"
-                      required />
-                  </div>
-                  <div class="form-group col-6">
-                    <label for="last_name">Last name *</label>
-                    <input type="text" class="form-control input-text" id="last_name" name="last_name" minlength="3"
-                      required />
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="form-group">
-                    <label for="email">Email *</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
-                  </div>
-                </div>
-
-                <fieldset>
-                  <legend>Select a colour *</legend>
-                  <div class="checkbox-group">
-                    <div class="form-check form-check-inline">
-                      <input type="radio" name="colour" id="green" checked>
-                      <label class="form-check-label" for="green">
-                        Green
-                      </label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input type="radio" name="colour" id="brown">
-                      <label class="form-check-label" for="brown">
-                        Brown
-                      </label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input type="radio" name="colour" id="white">
-                      <label class="form-check-label" for="white">
-                        Brown
-                      </label>
-                    </div>
-                  </div>
-                </fieldset>
-
-                <fieldset>
-                  <legend>Select a size *</legend>
-                  <div class="checkbox-group">
-                    <div class="form-check form-check-inline">
-                      <input type="radio" name="size" id="xs" checked>
-                      <label class="form-check-label" for="xs">
-                        XS
-                      </label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input type="radio" name="size" id="s">
-                      <label class="form-check-label" for="s">
-                        S
-                      </label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input type="radio" name="size" id="m">
-                      <label class="form-check-label" for="m">
-                        M
-                      </label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input type="radio" name="size" id="l">
-                      <label class="form-check-label" for="l">
-                        L
-                      </label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input type="radio" name="size" id="xl">
-                      <label class="form-check-label" for="xl">
-                        XL
-                      </label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input type="radio" name="size" id="xxl">
-                      <label class="form-check-label" for="xxl">
-                        XXL
-                      </label>
-                    </div>
-                  </div>
-                </fieldset>
-
-                <div class="row">
-                  <div class="col">
-                    <div class="form-group">
-                      <label class="form-check-label" for="date" name="date">Choose delivery date *</label>
-                      <input id="date" type='date' min='1899-01-01' max='2000-13-13' required></input>
-                    </div>
-                  </div>
-                </div>
-                <button type="submit" class="submit-button">Place my order</button>
-              </form>
+          <form>
+            <div class="row">
+              <div class="form-group col-6">
+                <label for="first_name">First name *</label>
+                <input type="text" class="form-control input-text" id="first_name" name="first_name" minlength="3"
+                  required />
+              </div>
+              <div class="form-group col-6">
+                <label for="last_name">Last name *</label>
+                <input type="text" class="form-control input-text" id="last_name" name="last_name" minlength="3"
+                  required />
+              </div>
             </div>
-          </div>
+
+            <div class="row">
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+            </div>
+
+            <fieldset>
+              <legend>Select a colour *</legend>
+              <div class="checkbox-group">
+                <div class="form-check form-check-inline colour-radio">
+                  <input type="radio" name="colour" id="green" checked>
+                  <label class="form-check-label" for="green">
+                    <img src="media/green-small.png" alt="green t-shirt">
+                  </label>
+                </div>
+                <div class="form-check form-check-inline colour-radio">
+                  <input type="radio" name="colour" id="brown">
+                  <label class="form-check-label" for="brown">
+                    <img src="media/brown-small.png" alt="brown t-shirt">
+                  </label>
+                </div>
+                <div class="form-check form-check-inline colour-radio">
+                  <input type="radio" name="colour" id="white">
+                  <label class="form-check-label" for="white">
+                    <img src="media/white-small.png" alt="white t-shirt">
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Select a size *</legend>
+              <div class="checkbox-group ">
+                <div class="form-check form-check-inline size-radio">
+                  <input type="radio" name="size" id="xs" checked>
+                  <label class="form-check-label" for="xs">
+                    XS
+                  </label>
+                </div>
+                <div class="form-check form-check-inline size-radio">
+                  <input type="radio" name="size" id="s">
+                  <label class="form-check-label" for="s">
+                    S
+                  </label>
+                </div>
+                <div class="form-check form-check-inline size-radio">
+                  <input type="radio" name="size" id="m">
+                  <label class="form-check-label" for="m">
+                    M
+                  </label>
+                </div>
+                <div class="form-check form-check-inline size-radio">
+                  <input type="radio" name="size" id="l">
+                  <label class="form-check-label" for="l">
+                    L
+                  </label>
+                </div>
+                <div class="form-check form-check-inline size-radio">
+                  <input type="radio" name="size" id="xl">
+                  <label class="form-check-label" for="xl">
+                    XL
+                  </label>
+                </div>
+                <div class="form-check form-check-inline size-radio">
+                  <input type="radio" name="size" id="xxl">
+                  <label class="form-check-label" for="xxl">
+                    XXL
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+
+            <div class="row">
+              <div class="col">
+                <div class="form-group date-box">
+                  <label class="form-check-label" for="date" name="date">Choose delivery date *</label>
+                  <input id="date" type='date' min='1899-01-01' max='2000-13-13' required></input>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="button">Place my order</button>
+          </form>
         </div>
       </div>
     </div>
   </main>
+
   <footer>
+    <hr>
     <p>By Vitalina Kuzmenko</p>
   </footer>
-
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"

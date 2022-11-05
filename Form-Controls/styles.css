@@ -86,6 +86,7 @@ h1 {
   cursor: pointer;
   transition: all 0.2s ease-out;
 }
+
 .button:hover {
   background: white;
   color: black;
@@ -102,6 +103,7 @@ h1 {
   visibility: hidden;
   opacity: 0;
 }
+
 .overlay:target {
   visibility: visible;
   opacity: 1;
@@ -109,12 +111,12 @@ h1 {
 
 .popup {
   margin: 70px auto;
-  padding: 20px;
+  padding: 40px;
   background: #fff;
   border-radius: 5px;
-  width: 30%;
+  width: 40rem;
   position: relative;
-  transition: all 5s ease-in-out;
+  transition: all 2s ease-in-out;
 }
 
 .popup h2 {
@@ -122,6 +124,7 @@ h1 {
   color: #333;
   font-family: Tahoma, Arial, sans-serif;
 }
+
 .popup .close {
   position: absolute;
   top: 20px;
@@ -130,11 +133,13 @@ h1 {
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
-  color: #333;
+  color: black;
 }
+
 .popup .close:hover {
-  color: #06d85f;
+  color: rgba(32, 21, 21, 0.4);
 }
+
 .popup .content {
   max-height: 30%;
   overflow: auto;
@@ -144,6 +149,7 @@ h1 {
   .box {
     width: 70%;
   }
+
   .popup {
     width: 70%;
   }

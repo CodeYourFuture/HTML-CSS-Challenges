@@ -65,16 +65,7 @@
         </div>
       </div>
     </div>
-    <!-- <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h1>TEXTURED T-SHIRT WITH LONG SLEEVES</h1>
-        </div>
-        <div class="col-md-6">
-          <a class="button" href="#popup1">Buy now</a>
-        </div>
-      </div>
-    </div> -->
+
 
     <div class="text-box">
       <h1>TEXTURED T-SHIRT WITH LONG SLEEVES</h1>
@@ -83,23 +74,116 @@
 
     <div id="popup1" class="overlay">
       <div class="popup">
-        <p>something</p>
+        <p>Order details</p>
         <a class="close" href="#">&times;</a>
-        <div class="content">
-          Thank to pop me out of that button, but now i'm done so you can close this window.
+
+        <div class="container-fluid content">
+          <div class="row">
+            <div class="col-xl form-box no-padding">
+              <form>
+                <div class="row">
+                  <div class="form-group col-6">
+                    <label for="first_name">First name *</label>
+                    <input type="text" class="form-control input-text" id="first_name" name="first_name" minlength="3"
+                      required />
+                  </div>
+                  <div class="form-group col-6">
+                    <label for="last_name">Last name *</label>
+                    <input type="text" class="form-control input-text" id="last_name" name="last_name" minlength="3"
+                      required />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                  </div>
+                </div>
+
+                <fieldset>
+                  <legend>Select a colour *</legend>
+                  <div class="checkbox-group">
+                    <div class="form-check form-check-inline">
+                      <input type="radio" name="colour" id="green" checked>
+                      <label class="form-check-label" for="green">
+                        Green
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input type="radio" name="colour" id="brown">
+                      <label class="form-check-label" for="brown">
+                        Brown
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input type="radio" name="colour" id="white">
+                      <label class="form-check-label" for="white">
+                        Brown
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset>
+                  <legend>Select a size *</legend>
+                  <div class="checkbox-group">
+                    <div class="form-check form-check-inline">
+                      <input type="radio" name="size" id="xs" checked>
+                      <label class="form-check-label" for="xs">
+                        XS
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input type="radio" name="size" id="s">
+                      <label class="form-check-label" for="s">
+                        S
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input type="radio" name="size" id="m">
+                      <label class="form-check-label" for="m">
+                        M
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input type="radio" name="size" id="l">
+                      <label class="form-check-label" for="l">
+                        L
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input type="radio" name="size" id="xl">
+                      <label class="form-check-label" for="xl">
+                        XL
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input type="radio" name="size" id="xxl">
+                      <label class="form-check-label" for="xxl">
+                        XXL
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <div class="row">
+                  <div class="col">
+                    <div class="form-group">
+                      <label class="form-check-label" for="date" name="date">Choose delivery date *</label>
+                      <input id="date" type='date' min='1899-01-01' max='2000-13-13' required></input>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="submit-button">Place my order</button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
-
-    <form>
-      <!-- write your html here-->
-      <!-- try writing out the requirements first-->
-    </form>
-
   </main>
   <footer>
-    <!-- change to your name-->
     <p>By Vitalina Kuzmenko</p>
   </footer>
 

@@ -84,3 +84,38 @@ brownColor.addEventListener("click", changeIntoBrown);
 
 let whiteColor = document.getElementById("white-t-shirt");
 whiteColor.addEventListener("click", changeIntoWhite);
+
+//SETTING MIN AND MAX DATE FOR THE DATE INPUT
+//formatting date
+function formatDate(date) {
+  let now = date;
+  let year = now.getFullYear();
+  let month = now.getMonth() + 1;
+  let day = now.getDate();
+  //adding 0 to day if the number is less than 10
+  let newDay = ("0" + day).slice(-2);
+  let myDate = `${year}-${month}-${newDay}`;
+
+  return myDate;
+}
+
+//adding weeks into current date
+function addWeeks(numOfWeeks, date = new Date()) {
+  date.setDate(date.getDate() + numOfWeeks * 7);
+
+  return date;
+}
+
+//setting min date
+function setMinDate() {
+  document.getElementById("date").min = formatDate(new Date());
+}
+
+//setting max date
+function setMaxDate() {
+  let maxDate = addWeeks(4);
+  document.getElementById("date").max = formatDate(maxDate);
+}
+
+setMinDate();
+setMaxDate();

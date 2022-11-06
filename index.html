@@ -99,15 +99,15 @@
         <h2>Order details</h2>
         <a class="close" href="#">&times;</a>
         <!-- form -->
-        <div class="container-fluid content">
-          <form class="order-form">
+        <form class="order-form">
+          <div class="container-fluid content">
             <div class="row">
-              <div class="form-group col-6">
+              <div class="col-md-6 form-group name">
                 <label for="first_name">First name *</label>
                 <input type="text" class="form-control input-text" id="first_name" name="first_name" minlength="3"
                   required />
               </div>
-              <div class="form-group col-6">
+              <div class="col-md-6 form-group">
                 <label for="last_name">Last name *</label>
                 <input type="text" class="form-control input-text" id="last_name" name="last_name" minlength="3"
                   required />
@@ -196,14 +196,14 @@
               </div>
             </div>
             <button type="submit" class="button" id="order-button">Place my order</button>
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
     </div>
   </main>
 
   <footer>
-    <hr>
+    <div class="horizontal_line"></div>
     <a target="_blank" href="https://github.com/VitalinaKuzmenko/Stradivarius-order-form">Open-source code</a>
     , by Vitalina Kuzmenko
   </footer>

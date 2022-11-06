@@ -71,7 +71,7 @@ body {
 
 h1 {
   text-align: center;
-  margin: 40px 0;
+  margin: 40px 0 10px 0;
 }
 
 .container {
@@ -84,9 +84,16 @@ h1 {
   height: auto;
 }
 
+.container img:hover {
+  cursor: pointer;
+}
+
 .container .clicked {
-  color: black;
-  padding: 20px 20px;
+  border-bottom: 3px solid black;
+  padding-top: 15px;
+  width: 70%;
+  display: block;
+  margin: 0 auto;
 }
 
 .text-box {

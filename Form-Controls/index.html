@@ -10,13 +10,49 @@
 </head>
 <body>
   <header>
-    <h1>Product Pick</h1>
+    <h1>t-shirt</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+
+    <form>
+      <label for="username">user name</label><br>
+      <input id="username" type="text" minlength="2" maxlength="8" required placeholder="Username that must be between 3 and 8 characters" /><br>
+    
+      <label for="email">Email</label><br>
+      <input id="email" type="email" required /><br>
+  
+      <label for="size">size</label>
+      <select id="size" name="size">
+        <option value="xs" selected>xs</option>
+        <option value="s">s</option>
+        <option value="m">m</option>
+        <option value="l">l</option>
+        <option value="xl">xl</option>
+        <option value="xxl">xxl</option>
+      </select>
+
+      <fieldset>
+        <legend>Color</legend>
+      
+        <input id="gray" type="radio" name="color" value="gray" />
+        <label for="color">gray</label>
+      
+        <input id="black" type="radio" name="color" value="black" />
+        <label for="color">black</label>
+      
+        <input id="white" type="radio" name="color" value="white" />
+        <label for="color">white</label>
+      </fieldset>
+
+      <label for="start">date range:</label>
+
+<input type="date" id="start" name="trip-start"
+       value="2022-01-01"
+       min="2022-01-01" max="2022-12-31"><br>
+
+      <button>Submit</button>
+    </form>
+
 
   </main>
   <footer>

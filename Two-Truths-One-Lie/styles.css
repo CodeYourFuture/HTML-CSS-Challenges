@@ -33,6 +33,8 @@ body {
   max-width: 360px;
 }
 
+/* STYLING FOR HEADER */
+
 .title {
   text-align: center;
 }
@@ -42,10 +44,28 @@ body {
   font-size: 12px;
 }
 
+/* STYLING FOR ARTICLES */
+
+.img-text {
+  border: 2px pink solid;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.img-name {
+  display: flex;
+  justify-content: center;
+}
+
 .image {
   border: 1px solid black;
   width: 100px;
   height: 100px;
+  text-align: center;
+}
+
+.name {
+  margin: 20px;
 }
 
 .truth-lie {

@@ -19,15 +19,15 @@
   <form>
     <div>
         <label for="username">Username</label>
-        <input id="username" type="text" name="username" placeholder="Please enter First and Last name" pattern="[a-zA-Z\s]+" minlength="3" maxlength="25" title="Username should only contain lowercase letters, minimum 2 alphabets, maximum 25. e.g. john doe" required /> 
+        <input id="username" type="text" name="username" placeholder="Please enter First and Last name" pattern="[A-za-z\s]{3,}" maxlength="25" title="Username should only contain lowercase letters, minimum 3 alphabets, maximum 25. e.g. john doe" required /> 
         <label for="email">E-mail Address</label>
-        <input id="email" type="text" name="email" />
+        <input id="email" type="text" name="email" placeholder="Please enter your email address in format someone@someone.com" required />
     </div>
     <div>
         <fieldset>
-        <legend>Color Options</legend>
+        <legend>Color Options [Please choose one]</legend>
 
-        <input id="green" type="radio" name="color" value="green" />
+        <input id="green" type="radio" name="color" value="green" checked />
         <label for="green">Green</label>
 
         <input id="grey" type="radio" name="color" value="grey" />
@@ -39,9 +39,9 @@
     </div>  <br>
     <div>
         <fieldset>
-        <legend>Size Options </legend>
+        <legend>Size Options [Please choose One] </legend>
 
-        <input id="xsmall" type="radio" name="size" value="xsmall" />
+        <input id="xsmall" type="radio" name="size" value="xsmall" checked />
         <label for="xsmall">X-Small</label>
 
         <input id="small" type="radio" name="size" value="small" />
@@ -68,7 +68,7 @@
     </label>
     <input type="date" name="begin" 
         placeholder="dd-mm-yyyy" value=""
-        min="2022-11-06" max="2022-12-05">
+        min="2022-11-06" max="2022-12-05" required />
       
     <button>Submit</button>
 

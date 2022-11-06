@@ -7,6 +7,9 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
+
+  <!--name, email, color, size, delivery-->
+
 </head>
 <body>
   <header>
@@ -14,14 +17,62 @@
   </header>
   <main>
   <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
+      <label for="username">Username</label>
+      <input id="username" type="text" name="username" /> 
+      <label for="email">E-mail Address</label>
+      <input id="email" type="text" name="email" />
+      <fieldset>
+        <legend>Color Options</legend>
+
+        <input id="green" type="radio" name="color" value="green" />
+        <label for="green">Green</label>
+
+        <input id="grey" type="radio" name="color" value="grey" />
+        <label for="grey">Grey</label>
+
+        <input id="red" type="radio" name="color" value="red" />
+        <label for="red">Red</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Size Options </legend>
+
+        <input id="xsmall" type="radio" name="size" value="xsmall" />
+        <label for="xsmall">X-Small</label>
+
+        <input id="small" type="radio" name="size" value="small" />
+        <label for="small">Small</label>
+
+        <input id="medium" type="radio" name="size" value="medium" />
+        <label for="medium">Medium</label>
+
+        <input id="large" type="radio" name="size" value="large" />
+        <label for="large">Large</label>
+
+        <input id="xlarge" type="radio" name="size" value="xlarge" />
+        <label for="xlarge">X-Large</label>
+
+        <input id="xxlarge" type="radio" name="size" value="xxlarge" />
+        <label for="xxlarge">XX-Large</label>
+
+        
+      </fieldset>
+
+      <label for="start">
+       Delivery Date
+    </label>
+    <input type="date" name="begin" 
+        placeholder="dd-mm-yyyy" value=""
+        min="2022-11-06" max="2022-12-05">
+      
+    <button>Submit</button>
+
   </form>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Tony Arora</h2>
   </footer>
 </body>
 

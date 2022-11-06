@@ -21,37 +21,48 @@ h1, p {
 }
 
 input[type="radio"] {
-    accent-color: blue;
-    height: 30px;
-    width: 30px;
-    
-}
+accent-color: red;
+height: 17px;
+width: 17px;
+border: 1px solid grey;
+padding: 3px;
+background-clip: content-box;
+
+} 
+
 form {
   width: 60vw;
 	max-width: 700px;
 	min-width: 300px;
-	margin: 0 auto;
+	margin: 1rem auto;
   padding-bottom: 2em;
+ 
+}
+form>div{
+    margin: 1rem auto;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid #3b3b4f;
 }
 
 fieldset {
-  border: none;
-  padding: 2rem 0;
-  border-bottom: 3px solid #3b3b4f;
+border: none;
+padding: 2rem 2rem;
+display: flex;
 }
 
 
 label {
-  display: block;
-	margin: 0.5rem 0;
+display: block;
+margin: 0.5rem 0.5rem;
+font-size: 1rem;
 }
 
 input,
 textarea,
 select {
-  margin: 10px 0 0 0;
-	width: 100%;
-  min-height: 2em;
+margin: 10px 0 0 0;
+width: 100%;
+min-height: 2em;
 }
 
 input, textarea {
@@ -77,3 +88,7 @@ button {
   min-width: 300px;
   color: #ffffff;
 }
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    margin: 0px;
+    margin-right: 20px !important; }

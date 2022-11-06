@@ -268,3 +268,9 @@ footer .horizontal_line {
     width: 80%;
   }
 }
+
+@media screen and (max-width: 460px) {
+  .bottom-left-text {
+    visibility: hidden;
+  }
+}

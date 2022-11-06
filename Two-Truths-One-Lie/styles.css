@@ -30,4 +30,24 @@
 
 body {
   font: 100% "Poppins", sans-serif;
+  max-width: 360px;
+}
+
+.title {
+  text-align: center;
+}
+
+.title2 {
+  text-align: center;
+  font-size: 12px;
+}
+
+.image {
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+}
+
+.truth-lie {
+  border: 1px solid blue;
 }

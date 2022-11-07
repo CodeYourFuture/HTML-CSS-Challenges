@@ -1,17 +1,13 @@
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
-  /* width: 100vw; */
-  /* max-width: 80%;
-  margin: 0 auto; */
   background-image: url(/Form-Controls/cristofer-maximilian-AqLIkOzWDAk-unsplash.jpg);
- background-position: center;
- background-size: cover;
- background-repeat: no-repeat;
- height: 100vh;
- /* color: rgb(8, 18, 150); */
- padding: 0 10%;   
- background-color: #e4e3e3;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 0 10%;
+  background-color: #e4e3e3;
 }
 
 * {
@@ -19,16 +15,13 @@ body {
 }
 
 header {
-  padding:1rem 0;
+  padding: 1rem 0;
 }
 /* main */
 h1 {
   font-size: 900;
 }
-/* main {
-  display: flex;
-  justify-content: center;
-} */
+
 form {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -38,9 +31,6 @@ form {
   gap: 20px;
   font-size: 1.5rem;
   font-weight: 500;
-}
-label {
-    /* display: block; */
 }
 
 div {
@@ -53,12 +43,12 @@ input {
 }
 
 fieldset {
-    border: none;
-    display: flex;
-        grid-column: 1/-1;
-          gap: 40px;
-          padding: 0;
-          margin: 2rem 0;
+  border: none;
+  display: flex;
+  grid-column: 1/-1;
+  gap: 40px;
+  padding: 0;
+  margin: 2rem 0;
 }
 
 #black {
@@ -86,7 +76,7 @@ fieldset label {
 }
 
 form :last-child {
-grid-area: 5;
+  grid-area: 5;
 }
 
 input:not([type="radio"]),
@@ -98,17 +88,17 @@ select {
   padding: 2px 4px;
 }
 
-input[type='radio'] {
-    -webkit-appearance:none;
-    width:40px;
-    height:40px;
-    border:1px solid rgb(23, 23, 23);
-    /* border-radius:50%; */
-    outline:none;
-  }
-  
-input[type='radio']:checked {
-border:3px solid rgb(22, 180, 141);  
+input[type="radio"] {
+  -webkit-appearance: none;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgb(23, 23, 23);
+  /* border-radius:50%; */
+  outline: none;
+}
+
+input[type="radio"]:checked {
+  border: 3px solid rgb(22, 180, 141);
 }
 
 button {
@@ -119,27 +109,30 @@ button {
   font-size: 22px;
   margin-top: 20px;
 }
+
 /* footer */
 
 footer {
-  font-weight: 400;
+  font-weight: 200;
   color: hsl(220, 3%, 23%);
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   margin-top: 10%;
+  border-top: 0.15rem solid;
 }
 
-@media screen and (max-width: 650px){
+/* media query */
+
+@media screen and (max-width: 650px) {
   form {
     display: flex;
     flex-direction: column;
   }
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 320px) {
   fieldset {
     display: flex;
     flex-direction: column;
     gap: 0;
   }
-  
 }

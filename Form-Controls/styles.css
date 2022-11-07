@@ -1,0 +1,70 @@
+button,
+input,
+text,
+radio,
+label {
+  font-family: inherit;
+  font-size: 100%;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: blanchedalmond;
+    height: 80px;
+    padding-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: blue;
+    
+}
+
+form {
+    margin: 80px 50px 50px 110px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid gray;
+    
+    
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 30px;
+    
+}
+
+legend {
+    font-weight: 200;
+    font-size: 1.2em;  
+    margin-bottom: 10px;  
+}
+
+.colour {
+    margin-left: 15px;
+}
+
+.size {
+    margin-left: 15px;
+}
+
+footer {
+    text-align: center;
+    background-color: blanchedalmond;
+    height: 80px;
+    padding-top: 30px;
+}
+
+button {
+    margin-left: 350px;
+    padding: 10px 20px;
+    background-color: brown;
+    border: none;
+    border-radius: 5%;
+}

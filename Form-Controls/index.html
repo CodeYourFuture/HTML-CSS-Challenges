@@ -16,9 +16,61 @@
   <form>
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
+   
     <!--1.ask customer to fill full name-->
-    <label for="fullname">fullname *</label>
-    <input id="fullname" type="text" name="fullname" minlength="3" maxlength="35" required>
+     <fieldset>
+      <legend>* Enter Your Useranme</legend>
+       <label for="useranme">useranme between 3 and 15 characters:</label>
+       <input id="useranme" type="text" name="useranme" minlength="3" maxlength="15" required><br>
+     </fieldset>
+
+    <!--2.ask customer to fill email address-->
+    <fieldset>
+      <legend>* Enter Your Email Address:</legend>
+     <label for="email">Valid Email is required:</label>
+     <input id="email" type="email" required>
+     <br>
+    </fieldset>
+    <!--3.ask customer to choose a T-shirt colour -->
+    <fieldset>
+     <legend>* select a colour</legend>
+     <input class="colour" id="red" type="radio" name="colour" >
+     <label for="red">Red</label>
+     <input class="colour" id="yellow" type="radio" name="colour">
+     <label for="yellow">yellow</label>
+     <input class="colour" id="blue" type="radio" name="colour">
+     <label for="blue">blue</label>
+    </fieldset>
+
+    <!--4.ask customer to choose a T-shirt size-->
+    <fieldset>
+      <legend>* select a size</legend>
+      <input class="size" id="xs" type="radio" name="size">
+      <label for="xs">XS</label>
+      <input class="size" id="s" type="radio" name="size">
+      <label for="s">S</label>
+      <input class="size" id="m" type="radio" name="size">
+      <label for="m">M</label>
+      <input class="size" id="l" type="radio" name="size">
+      <label for="l">L</label>
+      <input class="size" id="xl" type="radio" name="size">
+      <label for="xl">XL</label>
+      <input class="size" id="xxl" type="radio" name="size">
+      <label for="xxl">XXL</label>
+    </fieldset>
+  
+   <!-- 5.ask customer to choose delivery date -->
+     <fieldset>
+      <legend>* Select a delivery date</legend>
+      <label for="date">valid date only within next four weeks:</label>
+      <input id="date" type="date" required>
+      
+     </fieldset>
+    
+     <br>
+    <button>Submit</button>
+
+
   </form>
 
   </main>

@@ -14,14 +14,59 @@
   </header>
   <main>
   <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+
+   <fieldset>
+    <legend>Customer Information</legend>
+    <div>
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="" ><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value=""><br><br>
+    </div>
+    <div>
+     <label for="mail">
+      E-mail address:
+     </label><br>
+     <input type="email" id="mail" name="mail" /><br>
+    </div>
+   </fieldset>
+  
+   
+   
+      <p>Please choose a colour:*</p>
+      <input type="radio" id="Green" name="color" value="Green"  required>
+      <label for="Green">Green</label><br>
+      <input type="radio" id="Blue" name="color" value="Blue">
+      <label for="Blue">Blue</label><br>
+      <input type="radio" id="Yellow" name="color" value="Yellow">
+      <label for="Yellow">Yellow</label>
+      
+      
+      
+     <p>
+      <label for="t1">What's your size?<span aria-label="required">*</span></label>
+      <input type="text" id="t1" name="size" list="l1" required>
+      <datalist id="l1">
+        <option>XS</option>
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+      </datalist>
+      <p>
+      
+      <label for="meeting-time">Choose delivery time:</label>
+      <input type="datetime-local" id="meeting-time"
+         name="meeting-time" value="2022-11-07T00:00"
+         min="2022-11-07T00:00" max="2022-12-07T00:00"  required>
+         
+    </form>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>Marziyeh Azhdari</h2>
   </footer>
 </body>
 

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Meysam T-shirt Shop</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link 
+    rel="stylesheet"
+    href="CSS/t-shirt-form.css"
+    />
+  </head>
+
+  <!---------- Body Start Here ---------->
+  <body>
+
+    <header>
+      <h1>Please complete your order...</h1>
+    </header>
+<hr />
+    <main>
+
+      <!---------- Form Start Here ---------->
+      <form class="form">
+
+        <!---------- First/Last Name Start Here ---------->
+        <div class="first-name">
+          <label for="firstname">First name<span class="req"> *</span></label>
+          <input id="firstname" type="text" inputmode="latin-name" required></input>
+        </div>
+
+        <div class="last-name">
+          <label for="lastname">Last name<span class="req"> *</span></label>
+          <input id="lastname" type="text" inputmode="latin-name" required></input>
+        </div>
+
+        <!---------- Email Start Here ---------->
+        <div class="email">
+          <label for="email">Enter your email:</label>
+          <input type="email" id="email" name="email">
+        </div>
+
+        <!---------- Color Options Start Here ---------->
+        <div class="radio-btn-color">
+          <p>Choose a color:</p>
+          <input type="radio" id="color" name="t-shirt-color" value="black">
+          <label for="black"> Black</label><br>
+          <input type="radio" id="color" name="t-shirt-color" value="white">
+          <label for="white"> White</label><br>
+          <input type="radio" id="color" name="t-shirt-color" value="green">
+          <label for="green"> Green</label><br>
+        </div>
+        
+        <!---------- Size Options Start Here ---------->
+        <div class="radio-btn-size">
+          <p>Choose a size:</p>
+          <input type="radio" id="size" name="t-shirt-size" value="size">
+          <label for="xs-size"> XS</label><br>
+          <input type="radio" id="size" name="t-shirt-size" value="size">
+          <label for="s-size"> S</label><br>
+          <input type="radio" id="size" name="t-shirt-size" value="size">
+          <label for="m-size"> M</label><br>
+          <input type="radio" id="size" name="t-shirt-size" value="size">
+          <label for="l-size"> L</label><br>
+          <input type="radio" id="size" name="t-shirt-size" value="size">
+          <label for="xl-size"> XL</label><br>
+          <input type="radio" id="size" name="t-shirt-size" value="size">
+          <label for="xxl-size"> XXL</label><br>
+        </div>
+
+        <!---------- Delivery Address Start Here ---------->
+        <div class="delivery-address">Delivery Address</div>
+
+        <!---------- Submit Button Start Here ---------->
+        <div class="delivery-date">
+          <label for="delivery-date">Choose a delivery date within the next 4 weeks:</label>
+          <input type="date" id="start" name="trip-start" value="2022-11-01" min="2022-11-01" max="2022-11-29">
+        </div>
+      </form>
+    </main>
+
+    <!---------- Footer Start Here ---------->
+    <footer>
+      <hr />
+      <h4>By Meysam Arshadi</h4>
+    </footer>
+  </body>
+</html>

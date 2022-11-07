@@ -1,0 +1,100 @@
+/*
+/*
+/*
+--------- General Style ----------
+*/
+
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: black;
+}
+
+h1,
+h4 {
+  text-align: center;
+}
+form {
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 20px 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 60px 60px 60px 60px 60px 60px;
+}
+
+.header {
+}
+
+.first-name {
+  background-color: aqua;
+  grid-column: 2 / span 2;
+  grid-row: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.last-name {
+  background-color: blueviolet;
+  grid-column: 4 / span 2;
+  grid-row: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.email {
+  background-color: yellow;
+  grid-column: 2 / span 3;
+  grid-row: 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.radio-btn-color {
+  background-color: gray;
+  grid-column: 2 / span 3;
+  grid-row: 3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.radio-btn-size {
+  background-color: orange;
+  grid-column: 2 / span 3;
+  grid-row: 4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.delivery-address {
+  background-color: blue;
+  grid-column: 2 / span 3;
+  grid-row: 5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.delivery-date {
+  background-color: red;
+  grid-column: 2 / span 3;
+  grid-row: 6;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer {
+  display: block;
+  margin-top: 10%;
+}

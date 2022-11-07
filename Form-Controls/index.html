@@ -10,10 +10,45 @@
 </head>
 <body>
   <header>
-    <h1>Product Pick</h1>
+    <h1>Order our T-Shirt here ! </h1>
   </header>
   <main>
-  <form>
+  <form >
+    <fieldset>
+      <legend>T-Shirt Form</legend>
+      <label for="name">Customer name:</label><br>
+      <input type="text" id="name" name="name"  autofocus><br>
+      <label for="emailaddress">Email address:</label><br>
+      <input type="email" id="emailaddress" name="email" required><br><br>
+      <p>   Choose the colour for your T-shirt:</p>
+      <input type="radio" id="red" name="tshirt-colour" value="red">
+      <label for="red">Red</label><br>
+      <input type="radio" id="blue" name="tshirt-colour" value="blue">
+      <label for="blue">Blue</label><br>
+      <input type="radio" id="green" name="tshirt-colour" value="green">
+      <label for="green">Green</label><br><br>
+
+  
+
+  <label for="size">Choose a size</label>
+  <select id="size" name="size">
+    <option value="xs">Extra small</option>
+    <option value="s">Small</option>
+    <option value="m">Medium</option>
+    <option value="l">Large</option>
+    <option value="xl">Extra Large</option>
+    <option value="xxl">XX Large</option>
+  </select><br><br>
+  <input type="datetime-local" min="datetime-local" max="2023-03-08">
+      
+      <input type="submit" value="Submit">
+    </form> 
+
+
+
+
+
+  </fieldset>
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
   </form>
@@ -21,7 +56,7 @@
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Sana Asaf</h2>
   </footer>
 </body>
 

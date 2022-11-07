@@ -10,7 +10,7 @@ body {
  background-repeat: no-repeat;
  height: 100vh;
  /* color: rgb(8, 18, 150); */
- padding: 5% 10%;   
+ padding: 0 10%;   
  background-color: #e4e3e3;
 }
 
@@ -18,9 +18,9 @@ body {
   box-sizing: border-box;
 }
 
-/* header {
-  height: 20%;
-} */
+header {
+  padding:1rem 0;
+}
 /* main */
 h1 {
   font-size: 900;

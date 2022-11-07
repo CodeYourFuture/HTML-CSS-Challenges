@@ -39,17 +39,17 @@
         <fieldset>
           <legend>Select shirt colour</legend>
           <div>
-            <input id="black" type="radio" name="t-shirt colour" value="Black" />
+            <input id="black" type="radio" name="t-shirt colour" value="Black" required/>
             <label for="black">Black</label>
           </div>
 
           <div>
-            <input id="white" type="radio" name="t-shirt colour" value="White" />
+            <input id="white" type="radio" name="t-shirt colour" value="White" required/>
             <label for="white">White</label>
           </div>
 
           <div>         
-            <input id="blue" type="radio" name="t-shirt colour" value="Blue" />
+            <input id="blue" type="radio" name="t-shirt colour" value="Blue" required/>
             <label for="blue">Blue</label>
           </div>
         </fieldset>
@@ -69,7 +69,7 @@
 
         <div>
           <label for="delivery-date">Delivery date *</label>
-          <input id="delivery-date" type="date" name="Delivery date" max="2022-12-06" required/>
+          <input id="delivery-date" type="date" name="Delivery date" min="2022-11-06" max="2022-12-06" required/>
         </div>
         <button>Order</button>
       </form>

@@ -10,19 +10,96 @@
 </head>
 <body>
   <header>
-    <h1>Product Pick</h1>
+    <nav>
+    
+      <p class="logo">Tshirt Junkies</p>
+      <ul class="navigation-list">
+        <li class="list-item"><a class="nav-item" href="#">Home</a></li>
+        <li class="list-item"><a class="nav-item" href="#">Shop</a></li>
+        <li class="list-item"><a class="nav-item" href="#">News</a></li>
+      </ul>
+    </nav>
+    
   </header>
-  <main>
-  <form>
+  
+  <div class="main-container">
+      
+    <div class="image-wrapper">
+      <img alt="" src="https://images.unsplash.com/photo-1597576000003-2e6487e67d20?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHRzaGlydHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60">
+    </div> 
+    <form class="form">
+      <h1>Product Pick</h1>
+      
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
-  </form>
+      <div class="info">
+        <label class="padding-bottom" for="email" id="email">EMAIL*</label>
+        <input id="email" type="email" required/>
+        <label class="padding-bottom" for="password" id="password">PASSWORD*</label>
+        <input id="password" type="password" required/>
+      </div>
 
-  </main>
+      <div class="container">
+        <fieldset class="fieldset">
+          <legend><h2>Select a size</h2></legend>
+
+            <div>
+              <input id="x-small" type="radio" name="size" value="x-small" />
+              <label for="small">X-Small</label>
+            </div>
+
+            <div>
+              <input id="small" type="radio" name="size" value="small" />
+              <label for="small">Small</label>
+            </div>
+
+            <div>
+              <input id="medium" type="radio" name="size" value="medium" />
+              <label for="medium">Medium</label>
+            </div>
+        
+            <div>
+              <input id="large" type="radio" name="size" value="large" />
+              <label for="large">Large</label>
+            </div>
+        
+            <div>
+              <input id="x-large" type="radio" name="size" value="x-large" />
+              <label for="large">X-Large</label>
+            </div>
+        
+        </fieldset>
+
+        <hr>
+
+        <fieldset>
+          <legend><h3>Delivery options</h3></legend>
+            <div>
+              <input id="next-day" type="checkbox" name="delivery" value="next-day" />
+              <label for="delivery">Next Day Delivery £7.99 or free with yearly subscription</label>
+            </div>
+
+            <div>
+                <input id="express-delivery" type="checkbox" name="delivery" value="express-delivery" />
+                <label for="delivery">3 days Express Delievery £6.99</label>
+            </div>
+      
+            <div>
+              <input id="regular-delivery" type="checkbox" name="delivery" value="regular-delivery" />
+              <label for="regular-delivery">Regular Delivery up to 7 working days £4.99</label>
+            </div>
+      
+          </fieldset>
+      </div>
+    
+    </form>
+    
+  </div>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Karleen Richards</h2>
   </footer>
+
 </body>
 
 </html>

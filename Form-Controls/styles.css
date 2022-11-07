@@ -105,7 +105,7 @@ button {
   width: 150px;
   height: 50px;
   background: rgb(166, 221, 207);
-  border-radius: 4px;
+  border-radius: 6px;
   font-size: 22px;
   margin-top: 20px;
 }
@@ -117,7 +117,7 @@ footer {
   color: hsl(220, 3%, 23%);
   font-size: 0.6rem;
   margin-top: 10%;
-  border-top: 0.15rem solid;
+  border-top: 0.13rem solid hsl(220, 3%, 23%);
 }
 
 /* media query */

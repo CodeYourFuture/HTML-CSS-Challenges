@@ -1,0 +1,48 @@
+body{
+    text-align: center;
+    background-color: rgb(190, 223, 212);
+}
+fieldset{
+ max-width: 400px; 
+   display: grid;
+   grid-template-columns:1fr;
+    grid-template-rows: 100px 100px -1px ;
+margin-left: auto;
+margin-right: auto;}
+
+
+form{
+    display: inline-block;
+    background-color: rgb(224, 212, 235);
+    border:2px solid rgb(96, 96, 112) ;
+    padding-left:100px ;
+    padding-right:100px ;
+    font-size:1.5rem ;
+   
+} 
+form:hover{
+ background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsy-miwJsrfbdengB8WxgmjlmjxgaRsz3Thg&usqp=CAU) ;
+ background-repeat:no-repeat ;
+ background-size: cover;
+ border:5px solid rgb(87, 87, 143) ;
+ border-radius:10px ;
+ 
+}
+
+
+input:focus {
+    background-color: rgb(122, 135, 139);
+    color: rgb(46, 18, 58);
+    font-size: larger;
+    font-weight: 100;
+}
+h1 ,h2 {
+    display: inline-block;
+    background-color: rgb(139, 165, 165);
+    padding-left:100px ;
+    padding-right:100px ;
+ border-radius:3px ;
+   }
+   
+
+ 

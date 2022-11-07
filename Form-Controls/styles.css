@@ -1,0 +1,138 @@
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-image: url(/Form-Controls/cristofer-maximilian-AqLIkOzWDAk-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 0 10%;
+  background-color: #e4e3e3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  padding: 1rem 0;
+}
+/* main */
+h1 {
+  font-size: 900;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+  grid-template-areas: ;
+  max-width: 800px;
+  gap: 20px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 100%;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  grid-column: 1/-1;
+  gap: 40px;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+#black {
+  background-color: black;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#white {
+  background-color: white;
+}
+
+fieldset select {
+  width: 100%;
+}
+
+legend {
+  padding: 1rem 0;
+}
+fieldset label {
+  font-size: 300;
+  padding: 1rem 0;
+}
+
+form :last-child {
+  grid-area: 5;
+}
+
+input:not([type="radio"]),
+select {
+  border: 1px solid #666666;
+  border-radius: 8px;
+  width: 100%;
+  height: 43px;
+  padding: 2px 4px;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgb(23, 23, 23);
+  /* border-radius:50%; */
+  outline: none;
+}
+
+input[type="radio"]:checked {
+  border: 3px solid rgb(22, 180, 141);
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  background: rgb(166, 221, 207);
+  border-radius: 6px;
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+/* footer */
+
+footer {
+  font-weight: 200;
+  color: hsl(220, 3%, 23%);
+  font-size: 0.6rem;
+  margin-top: 10%;
+  border-top: 0.13rem solid hsl(220, 3%, 23%);
+}
+
+/* media query */
+
+@media screen and (max-width: 650px) {
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+}

@@ -1,28 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+    rel="stylesheet"
+    type="text/css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <form>
+        <!-- write your html here-->
+        <!-- try writing out the requirements first-->
+        <div>
+          <label for="first-name">First name *</label>
+          <input id="first-name" type="text" name="User First name" required minlength="2"/>
+        </div>
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+        <div>
+          <label for="Last-name">Last name *</label>
+          <input id="Last-name" type="text" name="User Last name" required minlength="2"/>
+        </div>
 
+        <div>
+          <label for="Email">Email *</label>
+          <input id="Email" type="email" name="User Email" required/>
+        </div>
+
+        <fieldset>
+          <legend>Select shirt colour</legend>
+          <div>
+            <input id="black" type="radio" name="t-shirt colour" value="Black" required/>
+            <label for="black">Black</label>
+          </div>
+
+          <div>
+            <input id="white" type="radio" name="t-shirt colour" value="White" required/>
+            <label for="white">White</label>
+          </div>
+
+          <div>         
+            <input id="blue" type="radio" name="t-shirt colour" value="Blue" required/>
+            <label for="blue">Blue</label>
+          </div>
+        </fieldset>
+
+        <div>
+          <label for="shirt-size">Size *</label>
+          <select id="shirt-size" name="Shirt size" required>
+              <option value="" selected disabled hidden>Select shirt size...</option>
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="XXL">XXL</option>
+            </select>
+        </div>
+
+        <div>
+          <label for="delivery-date">Delivery date *</label>
+          <input id="delivery-date" type="date" name="Delivery date" min="2022-11-06" max="2022-12-06" required/>
+        </div>
+        <button>Order</button>
+      </form>
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <h2>By Mohamed</h2>
+    </footer>
+  </body>
 </html>

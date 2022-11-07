@@ -1,0 +1,28 @@
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* main */
+
+main {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+label {
+    /* display: block; */
+}
+
+fieldset {
+    border: none;
+    /* display: inline; */
+}
+
+fieldset div {
+  /* display: flex;
+  flex-direction: column; */
+}
+
+input {
+  width: 100%;
+}

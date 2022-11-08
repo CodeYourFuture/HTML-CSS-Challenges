@@ -1,0 +1,69 @@
+body {
+  margin-top: 50px;
+  background-image: linear-gradient(pink, white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+.shirtform {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  font-size: 25px;
+}
+
+.shirtform button {
+  align-self: center;
+}
+
+label,
+fieldset {
+  margin-top: 10px;
+  accent-color: green;
+}
+
+input,
+select {
+  margin-top: 2px;
+  padding: 5px;
+}
+
+button {
+  margin-top: 20px;
+  font-size: 20px;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: blue;
+  color: white;
+}
+
+button:hover,
+button:focus {
+  color: aqua;
+  background-color: green;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+input:hover,
+input:focus,
+select:hover,
+select:focus {
+  border: 7px solid green;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+fieldset {
+  display: flex;
+  justify-content: space-evenly;
+  border: none;
+  padding: 0;
+  margin-left: 0;
+}

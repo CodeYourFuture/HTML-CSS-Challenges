@@ -22,24 +22,29 @@
     <main>
 
       <!---------- Form Start Here ---------->
+
       <form class="form">
+        <fieldset class="fname">
+          <!---------- First Name Start Here ---------->
+          
+          <legend></legend>
+          <label for="fname">First Name<span class="req"> *</span></label>
+          <input type="text" id="fname" name="fname" type="text" inputmode="latin-name"><br><br>
+        </fieldset>
+          
+          <!---------- Last Name Start Here ---------->
+        <fieldset class="lname">
+          <legend></legend>
+          <label for="lname">Last name:<span class="req"> *</span></label>
+          <input type="text" id="lname" name="lname" type="text" inputmode="latin-name"></input><br><br>
+        </fieldset>
 
-        <!---------- First/Last Name Start Here ---------->
-        <div class="first-name">
-          <label for="firstname">First name<span class="req"> *</span></label>
-          <input id="firstname" type="text" inputmode="latin-name" required></input>
-        </div>
-
-        <div class="last-name">
-          <label for="lastname">Last name<span class="req"> *</span></label>
-          <input id="lastname" type="text" inputmode="latin-name" required></input>
-        </div>
-
-        <!---------- Email Start Here ---------->
-        <div class="email">
-          <label for="email">Enter your email:</label>
-          <input type="email" id="email" name="email">
-        </div>
+          <!---------- Email Start Here ---------->
+        <fieldset class="email">
+          <legend></legend>
+          <label for="email">Email:<span class="req"> *</span></label>
+          <input type="email" id="email" name="email"><br><br>
+        </fieldset>
 
         <!---------- Color Options Start Here ---------->
         <div class="radio-btn-color">
@@ -69,14 +74,14 @@
           <label for="xxl-size"> XXL</label><br>
         </div>
 
-        <!---------- Delivery Address Start Here ---------->
-        <div class="delivery-address">Delivery Address</div>
-
         <!---------- Submit Button Start Here ---------->
         <div class="delivery-date">
           <label for="delivery-date">Choose a delivery date within the next 4 weeks:</label>
           <input type="date" id="start" name="trip-start" value="2022-11-01" min="2022-11-01" max="2022-11-29">
         </div>
+        <!--<div class="t-shirt-img">
+          <img src="img/t-shirt-png-shirt-png-transparent-image-pngpix-1.png" alt="t-shirt-img">
+        </div>-->
       </form>
     </main>
 

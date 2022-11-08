@@ -5,6 +5,10 @@
   font-family: sans-serif;
 }
 
+header {
+  display: flex;
+}
+
 body {
   display: flex;
   height: 100vh;

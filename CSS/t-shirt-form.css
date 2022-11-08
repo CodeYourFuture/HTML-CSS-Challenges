@@ -8,6 +8,7 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   color: black;
+  background: hwb(168 0% 26% / 0.302)
 }
 
 

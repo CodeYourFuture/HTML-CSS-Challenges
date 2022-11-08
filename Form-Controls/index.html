@@ -1,28 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <form>
+        <img class="form-image" src="https://ae01.alicdn.com/kf/HTB1YjcPat.LL1JjSZFEq6AVmXXaO/TOP-QUALITY-Summer-Solid-Blank-T-Shirt-Short-Sleeve-Cotton-T-shirt-Women-2017-Fashion-Tshirt.jpg">
+        <fieldset>
+          <legend>Customer Details</legend>
+          <div class="details">
+            <label for="full-name">Full Name *:</label>
+            <input type="text" id="full-name" name="full-name" required minlength="2"/>
+          <div class="details">
+            <label for="email"> Email *: </label>
+            <input type="email" id="email" name="email" required />
+          </div>
+        </fieldset>
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+      <div>
+         <span> Colour <span>
+      </div>
+      <div>
+          <label for="blue">Blue</label>
+          <input 
+          type="radio" 
+          name="colour" 
+          id="blue" 
+          value="blue" />
 
+         <label for="black">Black</label>
+         <input
+           type="radio"
+           name="colour"
+           id="black"
+           value="black"
+           required
+         />
+         <label for="Yellow">Yellow</label>
+         <input 
+         type="radio" 
+         id="Yellow" 
+         name="color" 
+         value="Yellow" />
+      
+      </div>
+
+        <div>
+          <label for="size">Size<span aria-label="required"></span></label
+          >
+        </div>
+        <div>
+          <input type="text" id="size" name="size" list="size" required />
+          <datalist id="size">
+            <option>XS</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>XXL</option>
+          </datalist>
+        </div>
+       
+
+        <div>
+          <label for="date">Delivery Date:</label>
+          <input
+            type="date"
+            id="delivery-date"
+            name="delivery-date"
+            min="2022-11-01"
+            max="2022-11-07"
+            required
+          />
+        </div>
+      </form>
+    </main>
+    <footer>
+      <h2>Leila Farsani</h2>
+    </footer>
+  </body>
 </html>

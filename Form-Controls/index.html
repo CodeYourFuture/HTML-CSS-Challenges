@@ -14,14 +14,67 @@
   </header>
   <main>
   <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
+    <label for="name">Name:</label>
+    <input maxlength="32" pattern="[A-Za-z]{1,32}" type="text" id="name" name="name" required. placeholder="Name"
+    title="Please provide a name no longer than 32 characters long,not including numbers or special characters">
+
+    <label for="sirname">Sirname:</label>
+    <input maxlength="32" pattern="[A-Za-z]{1,32}" type="text" id="sirname" name="sirname" required. placeholder="Sirname"
+    title="Please provide a sirname no longer than 32 characters long,,not including numbers or special characters">
+
+    <label for="emailAddress">Your e-mail address</label><br />
+    <input
+      id="emailAddress"
+      type="email"
+      maxlength="64"
+      required
+      placeholder="me@example.org"
+      pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+      title="Please provide only a valid e-mail address" />
+
+    <fieldset>
+      <legend>Select a T-shirt colour:</legend>
+      <div>
+        <input type="radio" id="green" name="colour" value="green"
+                checked>
+        <label for="green">Green</label>
+      </div>
+  
+      <div>
+        <input type="radio" id="blue" name="colour" value="blue">
+        <label for="blue">Blue</label>
+      </div>
+  
+      <div>
+        <input type="radio" id="pink" name="colour" value="pink">
+        <label for="pink">Pink</label>
+      </div>
+  </fieldset>
+
+  <label for="size">Choose a size:</label>
+
+<select id="size">
+    <option value="">--Please choose a size--</option>
+    <option value="XS">XS</option>
+    <option value="S">S</option>
+    <option value="M">M</option>
+    <option value="L">L</option>
+    <option value="XL">XL</option>
+    <option value="XXL">XXL</option>
+</select>
+    
+  <label>
+    Choose your preferred delivery date:
+    <input type="date" name="delivert" min="2022-11-11" max="2022-12-12" />
+  </label>
+
+  
+	  <input type="submit" value="Submit Now!">
   </form>
 
   </main>
   <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Khadija Haji</h2>
   </footer>
 </body>
 

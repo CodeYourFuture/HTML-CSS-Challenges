@@ -52,7 +52,7 @@ hr {
   height: max-content;
 }
 
-.fname {
+.first-name {
   grid-column: 2;
   display: flex;
   align-items: center;
@@ -61,7 +61,7 @@ hr {
   gap: 10px;
 }
 
-.lname {
+.last-name {
   grid-column: 2;
   grid-row: 2;
   display: flex;
@@ -74,7 +74,7 @@ hr {
   gap: 10px;
 }
 
-.email {
+.email-box {
   grid-column: 2;
   grid-row: 3;
   display: flex;
@@ -123,3 +123,7 @@ hr {
   height: 50%;
 }
 
+.submit-btn {
+  grid-column: 2 / 3;
+  grid-row: 7;
+}

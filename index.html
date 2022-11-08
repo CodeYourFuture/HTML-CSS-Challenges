@@ -6,82 +6,150 @@
     <title>Meysam T-shirt Shop</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link 
-    rel="stylesheet"
-    href="CSS/t-shirt-form.css"
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
     />
+    <link rel="stylesheet" href="CSS/t-shirt-form.css" />
   </head>
 
   <!---------- Body Start Here ---------->
   <body>
-
     <header>
       <h1>Please complete your order...</h1>
     </header>
-<hr />
+    <hr />
     <main>
-
       <!---------- Form Start Here ---------->
 
       <form class="form">
-        <fieldset class="fname">
-          <!---------- First Name Start Here ---------->
-          
-          <legend></legend>
-          <label for="fname">First Name<span class="req"> *</span></label>
-          <input type="text" id="fname" name="fname" type="text" inputmode="latin-name"><br><br>
-        </fieldset>
-          
-          <!---------- Last Name Start Here ---------->
-        <fieldset class="lname">
-          <legend></legend>
-          <label for="lname">Last name:<span class="req"> *</span></label>
-          <input type="text" id="lname" name="lname" type="text" inputmode="latin-name"></input><br><br>
+        <!---------- First Name Start Here ---------->
+        <fieldset class="first-name">
+          <label for="fname">First Name *</label>
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            minlength="2"
+            required
+            title="Must be at least 2 characters."
+          /><br /><br />
         </fieldset>
 
-          <!---------- Email Start Here ---------->
-        <fieldset class="email">
-          <legend></legend>
-          <label for="email">Email:<span class="req"> *</span></label>
-          <input type="email" id="email" name="email"><br><br>
+        <!---------- Last Name Start Here ---------->
+        <fieldset class="last-name">
+          <label for="lname">Last name *</label>
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            minlength="2"
+            required
+            title="Must be at least 2 characters."
+          /><br /><br />
+        </fieldset>
+
+        <!---------- Email Start Here ---------->
+        <fieldset class="email-box">
+          <label for="email">Your e-mail address *</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+          /><br /><br />
         </fieldset>
 
         <!---------- Color Options Start Here ---------->
         <div class="radio-btn-color">
-          <p>Choose a color:</p>
-          <input type="radio" id="color" name="t-shirt-color" value="black">
-          <label for="black"> Black</label><br>
-          <input type="radio" id="color" name="t-shirt-color" value="white">
-          <label for="white"> White</label><br>
-          <input type="radio" id="color" name="t-shirt-color" value="green">
-          <label for="green"> Green</label><br>
+          <p>Choose a color *</p>
+          <label for="color"> Black</label><br />
+          <input type="radio" id="color" name="color" required />
+
+          <label for="color"> White</label><br />
+          <input type="radio" id="color" name="color" required />
+
+          <label for="color"> Green</label><br />
+          <input type="radio" id="color" name="color" required />
         </div>
-        
+
         <!---------- Size Options Start Here ---------->
         <div class="radio-btn-size">
-          <p>Choose a size:</p>
-          <input type="radio" id="size" name="t-shirt-size" value="size">
-          <label for="xs-size"> XS</label><br>
-          <input type="radio" id="size" name="t-shirt-size" value="size">
-          <label for="s-size"> S</label><br>
-          <input type="radio" id="size" name="t-shirt-size" value="size">
-          <label for="m-size"> M</label><br>
-          <input type="radio" id="size" name="t-shirt-size" value="size">
-          <label for="l-size"> L</label><br>
-          <input type="radio" id="size" name="t-shirt-size" value="size">
-          <label for="xl-size"> XL</label><br>
-          <input type="radio" id="size" name="t-shirt-size" value="size">
-          <label for="xxl-size"> XXL</label><br>
+          <p>Choose a size *</p>
+          <label for="size"> XS</label><br />
+          <input
+            type="radio"
+            id="size"
+            name="t-shirt-size"
+            value="size"
+            required
+          />
+
+          <label for="size"> S</label><br />
+          <input
+            type="radio"
+            id="size"
+            name="t-shirt-size"
+            value="size"
+            required
+          />
+
+          <label for="size"> M</label><br />
+          <input
+            type="radio"
+            id="size"
+            name="t-shirt-size"
+            value="size"
+            required
+          />
+
+          <label for="size"> L</label><br />
+          <input
+            type="radio"
+            id="size"
+            name="t-shirt-size"
+            value="size"
+            required
+          />
+
+          <label for="size"> XL</label><br />
+          <input
+            type="radio"
+            id="size"
+            name="t-shirt-size"
+            value="xl-size"
+            required
+          />
+
+          <label for="size"> XXL</label><br />
+          <input
+            type="radio"
+            id="size"
+            name="t-shirt-size"
+            value="size"
+            required
+          />
         </div>
 
         <!---------- Submit Button Start Here ---------->
         <div class="delivery-date">
-          <label for="delivery-date">Choose a delivery date within the next 4 weeks:</label>
-          <input type="date" id="start" name="trip-start" value="2022-11-01" min="2022-11-01" max="2022-11-29">
+          <label for="start"
+            >Choose a delivery date within the next 4 weeks: *</label
+          >
+          <input
+            type="date"
+            id="start"
+            required
+            name="trip-start"
+            value="2022-11-01"
+            min="2022-11-01"
+            max="2022-11-29"
+          />
         </div>
-        <!--<div class="t-shirt-img">
-          <img src="img/t-shirt-png-shirt-png-transparent-image-pngpix-1.png" alt="t-shirt-img">
-        </div>-->
+        <div class="submit-btn">
+          <button type="submit">Submit</button>
+        </div>
       </form>
     </main>
 

@@ -13,10 +13,74 @@
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+    <form>
+      <!-- <p>
+        <fieldset>
+          <legend>Do you have a driver's license?<span aria-label="required">*</span></legend>
+          <input type="radio" required name="driver" id="r1" value="yes"><label for="r1">Yes</label>
+          <input type="radio" required name="driver" id="r2" value="no"><label for="r2">No</label>
+        </fieldset>
+      </p> -->
+
+      <!-- <p>
+        <label for="n1">How old are you?</label>
+        <input type="number" min="12" max="120" step="1" id="n1" name="age"
+               pattern="\d+">
+      </p> -->
+
+      <p>
+        <label for="n1">What is your name?</label>
+        <input type="text" required pattern="[A-Za-z]+" name="name">
+      </p>
+
+      <p>
+        <label for="n2">What's your e-mail address?</label>
+        <input type="email" id="n2" name="email">
+      </p>
+      
+      <p>
+        <label for="t1">Choose your T-shirt color<span aria-label="required">*</span></label>
+        <!-- <input type="text" id="t1" name="fruit" list="l1" required > -->
+        <select id="l1" required>
+          <option value="" disabled selected></option>
+          <option value="yellow" disabled>yellow</option>
+          <option value="blue">blue</option>
+          <option value="red">red</option>
+          <option value="black" disabled>black</option>
+          <option value="yellow">yellow</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="t2">Choose your size<span aria-label="required">*</span></label>
+        <!-- <input type="text" id="t1" name="fruit" list="l1" required > -->
+        <select id="l2" required>
+          <option value="xs">XS</option>
+          <option value="s">S</option>
+          <option value="m">M</option>
+          <option value="l">L</option>
+          <option value="xl">XL</option>
+          <option value="xxl">XXL</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="t3">Choose your delivery date</label>
+       
+        <input type="date" id="t3" min="2022-11-09" max="2022-12-09" /> 
+        <small>Slot should be in next four weeks</small>
+      </p>
+      
+
+      <!-- <p>
+        <label for="t3">Leave a short message</label>
+        <textarea id="t3" name="msg" maxlength="140" rows="5"></textarea>
+      </p> -->
+      <p>
+        <button>Submit</button>
+      </p>
+    </form>
+    
 
   </main>
   <footer>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My T-shirt Shop</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="CSS/t-shirt-form.css" />
+  </head>
+
+  <!---------- Body Start Here --------->
+  <body>
+    <header>
+      <h1>Please complete your order...</h1>
+    </header>
+    <hr />
+    <main>
+      <!---------- Form Start Here --------->
+
+      <form class="form">
+        <!---------- First Name Start Here --------->
+        <fieldset class="first-name">
+          <label for="fname">First Name *</label>
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            minlength="2"
+            required
+            title="Must be at least 2 characters."
+          /><br /><br />
+        </fieldset>
+
+        <!---------- Last Name Start Here ---------->
+        <fieldset class="last-name">
+          <label for="lname">Last name *</label>
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            minlength="2"
+            required
+            title="Must be at least 2 characters."
+          /><br /><br />
+        </fieldset>
+
+        <!---------- Email Start Here ---------->
+        <fieldset class="email-box">
+          <label for="email">Your e-mail address *</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+          /><br /><br />
+        </fieldset>
+
+        <!---------- Color Options Start Here ---------->
+        <div class="radio-btn-color">
+          <p>Choose a color *</p>
+          <label for="color"> Black</label><br />
+          <input type="radio" id="color" name="color" required />
+
+          <label for="color"> White</label><br />
+          <input type="radio" id="color" name="color" required />
+
+          <label for="color"> Green</label><br />
+          <input type="radio" id="color" name="color" required />
+        </div>
+
+        <!---------- Size Options Start Here ---------->
+        <div class="radio-btn-size">
+          <p>Choose a size *</p>
+          <label for="size"> XS</label><br />
+          <input
+            type="radio"
+            id="size"
+            name="t-shirt-size"
+            value="size"
+            required
+          />
+
+          <label for="size"> S</label><br />
+          <input
+            type="radio"
+            id="size"
+            name="t-shirt-size"
+            value="size"
+            required
+          />
+
+          <label for="size"> M</label><br />
+          <input
+            type="radio"
+            id="size"
+            name="t-shirt-size"
+            value="size"
+            required
+          />
+
+          <label for="size"> L</label><br />
+          <input
+            type="radio"
+            id="size"
+            name="t-shirt-size"
+            value="size"
+            required
+          />
+
+          <label for="size"> XL</label><br />
+          <input
+            type="radio"
+            id="size"
+            name="t-shirt-size"
+            value="xl-size"
+            required
+          />
+
+          <label for="size"> XXL</label><br />
+          <input
+            type="radio"
+            id="size"
+            name="t-shirt-size"
+            value="size"
+            required
+          />
+        </div>
+
+        <!---------- Submit Button Start Here ---------->
+        <div class="delivery-date">
+          <label for="start"
+            >Choose a delivery date within the next 4 weeks: *</label
+          >
+          <input
+            type="date"
+            id="start"
+            required
+            name="trip-start"
+            value="2022-11-01"
+            min="2022-11-01"
+            max="2022-11-29"
+          />
+        </div>
+        <div class="submit-btn">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+
+    <!---------- Footer Start Here ---------->
+    <footer>
+      <hr />
+      <h4>By Meysam Arshadi</h4>
+    </footer>
+  </body>
+</html>

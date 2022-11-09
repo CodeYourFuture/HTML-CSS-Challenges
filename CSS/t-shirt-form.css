@@ -1,0 +1,128 @@
+/*
+/*
+/*
+--------- General Style ----------
+*/
+
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: black;
+  background: hwb(168 0% 26% / 0.302)
+}
+
+
+header > h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: 2rem;
+  color: orangered;
+  margin-top: 1%;
+  margin-left: 25px;
+  marg
+}
+
+footer > h4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 100;
+  marg
+}
+
+hr {
+  margin: 1%;
+}
+/*
+/*
+/* ------------ Style Starts Here ------------
+*/
+
+.form {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 25px repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: 100px 100px;
+  background-image: url(../img/blank-yellow-t-shirt-with-space-print-blue-background_185193-70239.webp);
+  background-position: center; 
+  background-repeat: no-repeat;
+  height: max-content;
+}
+
+.first-name {
+  grid-column: 2;
+  display: flex;
+  align-items: center;
+  margin-top: 1%;
+  border: none;
+  gap: 10px;
+}
+
+.last-name {
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  border: none;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  gap: 10px;
+}
+
+.email-box {
+  grid-column: 2;
+  grid-row: 3;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 1%;
+  border: none;
+  gap: 10px;
+}
+
+.radio-btn-color {
+  grid-column: 2 / 3;
+  grid-row: 4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.radio-btn-size {
+  grid-column: 2 / 4;
+  grid-row: 5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.delivery-date {
+  grid-column: 2 / 4;
+  grid-row: 6;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 1%;
+  margin-bottom: 3%;
+}
+
+.t-shirt-img {
+  border-radius: 4px;
+  width: 50%;
+  height: 50%;
+}
+
+.submit-btn {
+  grid-column: 2 / 3;
+  grid-row: 7;
+}

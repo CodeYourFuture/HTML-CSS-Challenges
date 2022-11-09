@@ -14,23 +14,9 @@
   </header>
   <main>
     <form>
-      <!-- <p>
-        <fieldset>
-          <legend>Do you have a driver's license?<span aria-label="required">*</span></legend>
-          <input type="radio" required name="driver" id="r1" value="yes"><label for="r1">Yes</label>
-          <input type="radio" required name="driver" id="r2" value="no"><label for="r2">No</label>
-        </fieldset>
-      </p> -->
-
-      <!-- <p>
-        <label for="n1">How old are you?</label>
-        <input type="number" min="12" max="120" step="1" id="n1" name="age"
-               pattern="\d+">
-      </p> -->
-
       <p>
         <label for="n1">What is your name?</label>
-        <input type="text" required pattern="[A-Za-z]+" name="name">
+        <input type="text" required pattern="[A-Za-z]+" id="n1" name="name">
       </p>
 
       <p>
@@ -40,7 +26,6 @@
       
       <p>
         <label for="t1">Choose your T-shirt color<span aria-label="required">*</span></label>
-        <!-- <input type="text" id="t1" name="fruit" list="l1" required > -->
         <select id="l1" required>
           <option value="" disabled selected></option>
           <option value="yellow" disabled>yellow</option>
@@ -53,7 +38,6 @@
 
       <p>
         <label for="t2">Choose your size<span aria-label="required">*</span></label>
-        <!-- <input type="text" id="t1" name="fruit" list="l1" required > -->
         <select id="l2" required>
           <option value="xs">XS</option>
           <option value="s">S</option>
@@ -67,25 +51,19 @@
       <p>
         <label for="t3">Choose your delivery date</label>
        
-        <input type="date" id="t3" min="2022-11-09" max="2022-12-09" /> 
-        <small>Slot should be in next four weeks</small>
+        <input type="date" id="t3" min="2022-11-09" max="2022-12-09" required/> *
+        <br>
+        <small>*in next four weeks from 09.11.2022</small>
       </p>
-      
 
-      <!-- <p>
-        <label for="t3">Leave a short message</label>
-        <textarea id="t3" name="msg" maxlength="140" rows="5"></textarea>
-      </p> -->
       <p>
         <button>Submit</button>
       </p>
     </form>
-    
-
+  
   </main>
   <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Yigit Senoglu</h2>
   </footer>
 </body>
 

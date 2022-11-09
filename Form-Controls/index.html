@@ -16,12 +16,64 @@
   <form>
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
-  </form>
+   
+    <fieldset class="name-container"> 
+      <legend>Full Name*</legend> 
+      <input id="name" type="text" name="name" placeholder="John Smith" required> 
+    </fieldset>
 
+    <fieldset class="email-container">
+      <legend>Email*</legend>
+      <input id="email" type="email" name="email"   placeholder="j@yahoo.com " required >
+    </fieldset>
+
+    <fieldset class="color-container">
+      <legend>Please choose a color:*</legend>
+      <input type="radio" id="col1" name="colour" value="green" checked>
+      <label for="col1">Green</label>
+      <input type="radio" id="col2" name="colour" value="blue">
+      <label for="col2">Blue</label>
+      <input type="radio" id="col3" name="colour" value="white">
+      <label for="col3">White</label>
+  
+    </fieldset>
+
+    <fieldset  class="size-container">
+        <legend>Please choose size*</legend>     
+        <select id="size-tshirt" name="size-tshirt" required>
+          <option>XS</option>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+          <option>XXL</option>
+        </select>
+    </fieldset>
+
+    <fieldset class="delivery-container">
+        <legend>Please choose delivery date*</legend>
+          
+        <input 
+           type="date"
+           id="delivery-date"
+           name="delivery-date"
+           min="2022-11-07"
+           max="2022-12-04"
+           required>                 
+    </fieldset>
+
+    <div class="submit-container">
+      <button type="submit">Place your order</button>
+      
+    </div>    
+
+  </form>
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Bahare Bahreinian</h2>
+    
+
   </footer>
 </body>
 

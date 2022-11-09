@@ -1,28 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <form>
+        <fieldset>
+          <label for="first-name" class="label">First Name</label>
+          <input
+            type="text"
+            name="first-name"
+            required
+            minlength="2"
+            class="input"
+          />
+        </fieldset>
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+        <fieldset>
+          <label for="last-name" class="label">Last Name</label>
+          <input
+            type="text"
+            name="last-name"
+            required
+            minlength="2"
+            class="input"
+          />
+        </fieldset>
 
+        <fieldset>
+          <label for="email" class="label">Email Address</label>
+          <input type="text" name="user-email" required class="input" />
+        </fieldset>
+
+        <fieldset>
+          <p>Color</p>
+          <div class="color">
+            <label for="red">Red</label>
+            <input type="radio" name="color" required />
+            <label for="blue">Blue</label>
+            <input type="radio" name="color" />
+            <label for="green">Green</label>
+            <input type="radio" name="color" />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <p>Size</p>
+          <div class="color">
+            <label for="xs">XS</label>
+            <input type="radio" name="color" required />
+            <label for="s">S</label>
+            <input type="radio" name="color" />
+            <label for="m">M</label>
+            <input type="radio" name="color" />
+            <label for="l">L</label>
+            <input type="radio" name="color" />
+            <label for="xl">XL</label>
+            <input type="radio" name="color" />
+            <label for="xxl">XXL</label>
+            <input type="radio" name="color" />
+          </div>
+        </fieldset>
+
+        <fieldset class="date">
+          <label for="date">Date to be delivered</label>
+          <input
+            type="date"
+            name="date"
+            required
+            value="2022-11-01"
+            min="2022-11-01"
+            max="2022-11-29"
+            class="input"
+          />
+        </fieldset>
+        <div class="submit">
+          <button>Submit</button>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <h2>By Saghar Hosseinmardi</h2>
+    </footer>
+  </body>
 </html>

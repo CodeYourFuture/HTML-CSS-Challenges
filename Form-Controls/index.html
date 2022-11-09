@@ -16,18 +16,19 @@
   <form>
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
-    <div class="name-container"> 
-      <label for="name">Name*</label>
+   
+    <fieldset class="name-container"> 
+      <legend>Full Name*</legend> 
       <input id="name" type="text" name="name" placeholder="John Smith" required> 
-    </div>
+    </fieldset>
 
-    <div class="email-container">
-      <label for="email" class="lable">Email*</label>
+    <fieldset class="email-container">
+      <legend>Email*</legend>
       <input id="email" type="email" name="email"   placeholder="j@yahoo.com " required >
-    </div>
+    </fieldset>
 
-    <div class="color-container">
-      <p>Please choose a color:*</p>
+    <fieldset class="color-container">
+      <legend>Please choose a color:*</legend>
       <input type="radio" id="col1" name="colour" value="green" checked>
       <label for="col1">Green</label>
       <input type="radio" id="col2" name="colour" value="blue">
@@ -35,11 +36,11 @@
       <input type="radio" id="col3" name="colour" value="white">
       <label for="col3">White</label>
   
-    </div>
+    </fieldset>
 
-    <div  class="size-container">
-        <label for="size-tshirt">Select size*</label>        
-        <select id="size-tshirt" name="size-tshirt"required>
+    <fieldset  class="size-container">
+        <legend>Please choose size*</legend>     
+        <select id="size-tshirt" name="size-tshirt" required>
           <option>XS</option>
           <option>S</option>
           <option>M</option>
@@ -47,10 +48,10 @@
           <option>XL</option>
           <option>XXL</option>
         </select>
-    </div>
+    </fieldset>
 
-    <div class="delivery-container">
-        <label for="delivery-date">Please choose delivery date :</label>
+    <fieldset class="delivery-container">
+        <legend>Please choose delivery date*</legend>
           
         <input 
            type="date"
@@ -59,22 +60,19 @@
            min="2022-11-07"
            max="2022-12-04"
            required>                 
-    </div>
+    </fieldset>
 
     <div class="submit-container">
-      <input 
-        type="submit"
-        id="submit"
-        value="Place Your Order"
-      />
+      <button type="submit">Place your order</button>
+      
     </div>    
 
   </form>
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-    <h3>Bahare</h3>
+    <h2>By Bahare Bahreinian</h2>
+    
 
   </footer>
 </body>

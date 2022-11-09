@@ -30,4 +30,157 @@
 
 body {
   font: 100% "Poppins", sans-serif;
+  background-color: #f5ebe0;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+
+
+header {
+  justify-content: center;
+  text-align: center;
+  margin: 100px 0;
+}
+
+
+/* main */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+main p {
+  font-weight: 100;
+}
+
+/* containers */
+.playground {
+  display: grid;
+  grid-template-columns: repeat(2 ,1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 95px;
+}
+  
+
+
+.container-left {
+  width: 400px;
+  height: 300px;
+  padding: 1rem 1.5rem;
+  background-color: #d5bdaf;
+  border: 1px solid #6d6e6b;
+  border-radius: 5px;
+  box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.39);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.left-img {
+  margin-left: -119px;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.right-img{
+  margin-left: -59px;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.title h2 {
+  font-weight: 300;
+}
+.title img {
+  width: 120px;
+  height: 120px;
+}
+
+ol{
+  margin: 5px 15px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+/* Mana changes */
+.container-right {
+  width: 400px;
+  height: 300px;
+  padding: 1rem 1.5rem;
+  background-color: #d5bdaf;
+  border: 1px solid #6d6e6b;
+  border-radius: 5px;
+  box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.39);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+
+
+
+
+/* footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 125px;
+  margin-bottom: 20px;
+}
+
+
+/* screens */
+
+@media (max-width: 820px) {
+  header {
+    margin-top: 20px;
+  }
+
+  .playground {
+    grid-template-columns: repeat(1 ,1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 15px;
+  }
+  .container-left {
+    width: 280px;
+    height: 300px;
+  }
+  .container-right {
+    width: 280px;
+    height: 300px;
+  }
+  .title img {
+  width: 90px;
+  height: 90px;
+}
+main {
+  gap: 1rem;
+}
+
+footer {
+  margin-top: 45px;
+}
 }

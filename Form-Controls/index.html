@@ -10,18 +10,74 @@
 </head>
 <body>
   <header>
-    <h1>Product Pick</h1>
+    <h1>Selling t-shirts</h1>
   </header>
-  <main>
-  <form>
+
+  
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
-  </form>
+    <fieldset>
+    <form>
+ 
+      
+      <label for="choose">Your name</label>
+      <input id="choose" name="your name" required pattern="[Jj]ohn|[Ss]mith" />
+      <br>
+      
 
-  </main>
-  <footer>
+    <div class="contact">
+      
+      <label for="email">Enter your email</label>
+       <input type="text" name="email"  id="email">
+
+</div>
+<br>
+<label for="size">Choose your size </label>
+<select name="size" id="size">
+ <option value="">Choose your size</option>
+ <option value="xs">Xs</option>
+ <option value="s">S</option>
+ <option value="m">M</option>
+ <option value="l">L</option>
+ <option value="xl">XL</option>
+ <option value="xxl">XXL</option>
+</select>
+
+
+      
+ <br>
+   <label for="choose">Pick a delivery date</label>  
+    <input id="date" name="delivery"
+          type="date"
+          name="delivery"
+          min="2022-10-07"
+          max="2022-10-15"
+          required />
+          <br>
+       
+    
+        <label for="choose">Choose your colour </label>
+         <select name="colour" id="colour">
+          <option value="">Choose your colour</option>
+          <option value="black">Black</option>
+          <option value="grey">Grey</option>
+          <option value="blue">Blue</option>
+        <br>
+        <br>
+        
+        
+
+        <input type="submit" id="submit" 
+        value="submit">
+
+       </form>
+    </div>
+
+    </fieldset>
+  
+    <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Mohamed Abdi</h2>
   </footer>
 </body>
 

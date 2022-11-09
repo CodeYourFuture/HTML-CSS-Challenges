@@ -9,19 +9,125 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
+  <header class="h-style">
     <h1>Product Pick</h1>
+    
+    <div class="nav-style">
+
+      <div>
+          <img class="logo" src="/Form-Controls/img/logo.png" alt="logo">
+      </div>
+
+      <div>
+        <ul>
+          <li>Woman</li>
+          <li>Man</li>
+          <li>Kids & Baby</li>
+        </ul>
+      </div>
+
+    </div>
   </header>
   <main>
   <form>
     <!-- write your html here-->
+    <main class="hero">
+
+      <div class="left-hero">
+        <div>
+        <img src="/Form-Controls/img/t-shirt-orange-hi.png" alt="T-shirt">
+        </div>
+      </div>
+
+      <div class="right-hero">
+        
+        <div class="container">
+ 
+          <section>
+
+            <h2>Please fill your details</h2>
+
+            <div class="name-d input-space">
+              <div>
+                <label  class="label-style" for="firstName">First name:</label>
+                <input class="full-w-input" id="firstName" type="text" required>
+              </div>
+
+              <div>
+                <label  class="label-style" for="lastName">Last name:</label>
+                <input class="full-w-input" id="lastName" type="text" required>
+              </div>
+            </div>
+
+            <div class="input-space">
+              <label class="label-style" for="email">Email:</label>
+              <input class="full-w-input" id="email" type="text" required>
+            </div>
+
+              <div class="input-space">
+                <fieldset>
+
+                  <legend  class="label-style legend-style">choose your facorite color:</legend>
+
+                  <div class="radio-wrapper">
+                    <input id="orange" type="radio" name="color" value="orange" required>
+                    <label for="orange">Orange</label><br>
+                  </div>
+
+                  <div class="radio-wrapper">
+                    <input id="blue" type="radio" name="color" value="blue" required>
+                    <label for="blue">Blue</label><br>
+                  </div>
+
+                  <div class="radio-wrapper">
+                    <input id="red" type="radio" name="color" value="red" required>
+                    <label for="red">Red</label><br>
+                  </div>
+
+                </fieldset>
+              </div>
+              
+              <div class="input-space">
+                <h5  class="label-style">Select your size:</h5>
+                <select name="size" id="size" required>
+
+                  <option selected="" disabled="" id="size" value="">Select your size</option>
+                  <option id="size" value="XS">XS</option>
+                  <option id="size" value="S">S</option>
+                  <option id="size" value="M">M</option>
+                  <option id="size" value="L">L</option>
+                  <option id="size" value="XL">XL</option>
+                  <option id="size" value="XXL">XXL</option>
+
+                </select>
+              </div>
+
+              <div class="input-space">
+
+                <label class="label-style" for="date">Select your date for deliver your parcel</label>
+                <input class="full-w-input" id="date" type="date" min="2022-11-10" max="2022-12-30" required>
+
+              </div>
+
+              <div>
+                <button class="button">Submit your order</button>
+              </div>
+
+          </section>
+
+        </div>
+
+      </div>
+
+    </main>
+    
     <!-- try writing out the requirements first-->
   </form>
 
   </main>
-  <footer>
+  <footer class="footer-style">
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By HADi A.P</h2>
   </footer>
 </body>
 

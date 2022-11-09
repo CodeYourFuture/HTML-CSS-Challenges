@@ -1,0 +1,94 @@
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+	color: #f5f6f7;
+  font-family: Tahoma;
+	font-size: 16px;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+input[type="radio"] {
+accent-color: red;
+height: 17px;
+width: 17px;
+border: 1px solid grey;
+padding: 3px;
+background-clip: content-box;
+
+} 
+
+form {
+  width: 60vw;
+	max-width: 700px;
+	min-width: 300px;
+	margin: 1rem auto;
+  padding-bottom: 2em;
+ 
+}
+form>div{
+    margin: 1rem auto;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset {
+border: none;
+padding: 2rem 2rem;
+display: flex;
+}
+
+
+label {
+display: block;
+margin: 0.5rem 0.5rem;
+font-size: 1rem;
+}
+
+input,
+textarea,
+select {
+margin: 10px 0 0 0;
+width: 100%;
+min-height: 2em;
+}
+
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+
+/* .inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+} */
+
+button {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+  color: #ffffff;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    margin: 0px;
+    margin-right: 20px !important; }

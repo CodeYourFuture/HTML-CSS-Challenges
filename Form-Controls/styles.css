@@ -1,32 +1,61 @@
 * {
-  padding: 0rem;
+  padding: 0;
+  margin: 0;
   font-family: Raleway;
   box-sizing: border-box;
 }
 html {
-  width: 100%;
-  height: 100%;
-  display: flex;
+  display: grid;
   justify-content: center;
   background-color: #dfdfdf;
 }
 body {
-  color: #878787;
+  margin: 0;
+  display: grid;
+  justify-items: center;
   background-color: #fff;
-  padding: 2rem 3rem;
+
   font-style: normal;
   font-weight: 400;
   line-height: 1.75;
   font-size: 14px;
+  color: #4e4e4e;
 }
-main > form {
+
+/* ----Header---- */
+header {
+  display: grid;
+  justify-content: center;
+}
+
+.header-img img {
+  display: grid;
+  object-fit: cover;
+  width: 300px;
+  border-radius: 10%;
+}
+header h1 {
+  justify-self: center;
+  border-bottom: 2px solid #034625;
+
+  padding: 5px;
+  border-radius: 10%;
+}
+
+/* ----form---- */
+form {
   display: grid;
   grid-template-columns: repeat (6 1fr);
+  padding: 20px;
 }
 
 form > div {
   display: block;
   padding: 0.5rem;
+}
+input:focus-visible {
+  outline: 2px solid #034625;
+  border-radius: 3px;
 }
 
 /* ------Item Size------  */
@@ -34,7 +63,17 @@ form > div {
   font-weight: bold;
   padding: 0 1rem 0 0;
 }
+.colour {
+  display: flex;
+  align-items: center;
+}
+.colour label {
+  padding: 0 10px 0 2px;
+}
 
+input[type="radio"] {
+  accent-color: #034625;
+}
 .content-size ul li a {
   text-decoration: none;
   list-style: none;
@@ -43,12 +82,13 @@ form > div {
 }
 .content-size ul {
   display: flex;
+  gap: 10px;
 }
 .content-size ul li {
   display: flex;
-  justify-content: flex-start;
+  align-items: center;
   flex-wrap: wrap;
-  margin: -8px 0;
+  gap: 1px;
 }
 .items-size {
   position: relative;
@@ -77,12 +117,35 @@ input:focus {
 select:focus {
   background-color: ivory;
 }
-/* button:focus {
-  background-color: ivory;
-} */
+/* ------Fieldset------ */
+fieldset {
+  border: 0 none;
+  padding: 1em;
+  float: left;
+  font-family: Arial;
+}
+
+/* ------button------ */
+button {
+  display: flex;
+  justify-content: center;
+  color: red;
+  padding: 3px 20px;
+  font-size: 15px;
+}
+button:hover {
+  border-radius: 3px;
+  color: white;
+  background-color: #034625;
+  cursor: pointer;
+}
 /* ------Footer------ */
+footer {
+  justify-self: end;
+  padding: 20px;
+}
 footer h2 {
-  font-size: 0.7rem;
-  font-weight: 100;
+  font-size: 10px;
+  font-weight: 300;
   text-align: right;
 }

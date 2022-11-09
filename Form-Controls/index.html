@@ -10,22 +10,27 @@
   </head>
   <body>
     <header>
+      <div class="header-img">
+        <img
+          src="/Form-Controls/img/t-shirt-header.png"
+          alt="t-shirt header image"
+        />
+      </div>
       <h1>Product Pick</h1>
     </header>
     <main>
       <form>
-        <div>
+        <fieldset>
           <label for="name" class="lable">Name</label>
           <input id="name" type="text" name="name" required minlength="2" />
-        </div>
-        <div>
+        </fieldset>
+        <fieldset>
           <label for="email" class="lable">Email</label>
           <input id="email" type="email" name="email" required />
-        </div>
-        <div>
+        </fieldset>
+        <fieldset>
           <span class="lable">Colour</span>
-          <div>
-            <label for="black">Black</label>
+          <div class="colour">
             <input
               type="radio"
               name="colour"
@@ -33,14 +38,16 @@
               value="black"
               required
             />
-            <label for="red">Red</label>
-            <input type="radio" name="colour" id="red" value="red" />
-            <label for="blue">Blue</label>
-            <input type="radio" name="colour" id="blue" value="blue" />
-          </div>
-        </div>
+            <label for="black">Black</label>
 
-        <div class="content-size">
+            <input type="radio" name="colour" id="red" value="red" />
+            <label for="red">Red</label>
+            <input type="radio" name="colour" id="blue" value="blue" />
+            <label for="blue">Blue</label>
+          </div>
+        </fieldset>
+
+        <fieldset class="content-size">
           <span class="lable">Size</span>
           <div>
             <ul class="items-size">
@@ -88,8 +95,8 @@
               </li>
             </ul>
           </div>
-        </div>
-        <div>
+        </fieldset>
+        <fieldset>
           <lable for="date" class="lable">Delivery Date</lable>
           <div>
             <input
@@ -103,10 +110,10 @@
             />
             <span class="validity"></span>
           </div>
-        </div>
-        <div>
+        </fieldset>
+        <fieldset class="button">
           <button>Submit</button>
-        </div>
+        </fieldset>
       </form>
     </main>
     <footer>

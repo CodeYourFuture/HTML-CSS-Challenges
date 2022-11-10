@@ -1,0 +1,117 @@
+/* root */
+:root {
+
+    --orange: #dbbe53;
+    --light-gray :#cfcbc0;
+    --light-green:#c2cc91;
+    --red:#f06748;
+    --green:#72a12d;
+    --purpel:#751a72;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/* header */
+header {
+    background-color: #f06748;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 1rem;
+}
+main {
+    background-color: #dbbe53;
+    padding: 1rem;
+
+}
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+        }
+.Data-container {
+    display: flex;
+    grid-area: 1 /1 /2/ 2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+    gap: 5px;
+    background-color: #751a72;
+    border-radius: 10px;
+    border: none;
+
+        }
+.name-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2px;
+    margin: 0 1rem;
+
+    }
+        
+.Eamil-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0 1rem;
+    gap: 2px;
+
+}
+
+
+.color-container {
+    display: flex;
+    grid-area: 1 / 2 / 2 / 3;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 1rem;
+    flex-wrap: wrap;
+    background-color: var(--green);
+    border-radius: 10px;
+    border: none;
+
+}
+.shirtsize {
+    width: 100px;
+    height: 100px;
+}
+
+.Black-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+
+
+}
+.B-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+
+}
+.G-container {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+ 
+
+        
+

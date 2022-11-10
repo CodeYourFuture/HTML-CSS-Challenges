@@ -1,0 +1,12 @@
+body {
+  background-color: #ecd8e0;
+  width: 70%;
+  margin: 0 auto;
+}
+form {
+  background-color: #ffd5b6;
+  border: 1px solid white;
+}
+input {
+  background-color: #bad8e0;
+}

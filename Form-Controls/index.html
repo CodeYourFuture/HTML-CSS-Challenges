@@ -12,36 +12,50 @@
     <header>
       <h1>Product Pick</h1>
     </header>
-      <main>
-        <h2>Please confirm your details to order the T-shirt</h1>
+    <main>
+      <h2>Please confirm your details to order the T-shirt</h1>
         <form>
-        <div class="name"><label for="fname">Enter your full name:</label><br />
-          <input required type="text" id="fname" name="fname" /><br /></div>
+          <div class="name"><label for="fname">Enter your full name:</label><br />
+            <input required type="text" id="fname" name="fname" /><br />
+          </div>
           <div class="e-mail"><label for="email">Enter your email:</label><br />
-          <input required type="email" id="email" name="email"
+            <input required type="email" id="email" name="email"
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br />
-        </div>
-        <div class="size-6">
-          <label for="size">Choose your T-shirt size:</label><br />
-        <input required list="sizes" name="size" id="size"><br />
-          <datalist id="sizes">
-          <option value="XS">
+          </div>
+          <div class="clr">
+            <fieldset required>
+                <legend>Please select your preferred color for the T-shirt:</legend>
+                <div>
+                  <input checked type="radio" id="colorChoice1" name="color" value="Blue" />
+                  <label for="colorChoice1">Blue</label>
+
+                  <input type="radio" id="colorChoice2" name="color" value="green" />
+                  <label for="colorChoice2">Green</label>
+
+                  <input type="radio" id="colorChoice3" name="color" value="red" />
+                  <label for="colorChoice3">Red</label>
+                </div>
+              </fieldset>
+          </div>
+          <div class="size-6">
+            <label for="size">Choose your T-shirt size:</label><br />
+            <input required list="sizes" name="size" id="size"><br />
+            <datalist id="sizes">
+            <option value="XS">
             <option value="S">
-          <option value="M">
-          <option value="L">
-          <option value="XL">
-          <option value="XXL"></option>
+            <option checked value="M">
+            <option value="L">
+            <option value="XL">
+            <option value="XXL"></option>
             </datalist>
-        </div>
-        <div class="date">
-  <label for="start">When do you want the t-shirt to be delivered?</label><br />
-  <input required type="date" id="start" name="trip-start"
-        value="2022-10-15"
-        min="2022-10-11" max="2022-11-12"><br />
-        </div>
-        <div>
-          <input type="submit"><br />
-        </div>
+          </div>
+          <div class="date">
+            <label for="start">When do you want the t-shirt to be delivered?</label><br />
+            <input required type="date" id="start" name="trip-start" value="2022-10-15" min="2022-10-11" max="2022-11-12"><br />
+          </div>
+          <div>
+            <input type="submit"><br />
+          </div>
         </form>
       </main>
     <footer>

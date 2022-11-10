@@ -14,24 +14,25 @@
     </header>
     <main>
       <form>
-        <fieldset>
-          <legend><h2>Purchase Form</h2></legend>
-          <!-- write your html here-->
-          <!-- try writing out the requirements first-->
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="name" minlength="2" required />
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="name" minlength="2" required />
-          <label for="email">Email</label>
-          <input type="email" id="email" minlength="5" required />
-          <label for="colour">Choose a colour:</label>
-          <select name="colour" id="colour" required>
-            <option value="olive">Olive</option>
-            <option value="lavander">Lavander</option>
-            <option value="violet">Violet</option>
-            <option value="ruby">Ruby</option>
-          </select>
-          <p>Select a T-shirt size:</p>
+        <legend><h3>Purchase Form</h3></legend>
+        <!-- write your html here-->
+        <!-- try writing out the requirements first-->
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="name" minlength="2" required />
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="name" minlength="2" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" minlength="5" required />
+
+        <label for="colour">Choose a colour</label>
+        <select name="colour" id="colour" required>
+          <option value="olive">Olive</option>
+          <option value="lavander">Lavander</option>
+          <option value="violet">Violet</option>
+          <option value="ruby">Ruby</option>
+        </select>
+        <div class="sizes">
+          <label for="size">Select a T-shirt size</label>
           <input type="radio" id="sizeXS" name="size" required />
           <label for="sizeXS">XS</label>
           <input type="radio" id="sizeS" name="size" />
@@ -44,7 +45,9 @@
           <label for="sizeXL">XL</label>
           <input type="radio" id="sizeXXL" name="size" />
           <label for="sizeXXL">XXL</label>
-          <label for="date">Select delivery date:</label>
+        </div>
+        <div>
+          <label for="date">Delivery date</label>
           <input
             type="date"
             id="date"
@@ -54,13 +57,13 @@
             max="2022-11-14"
             required
           />
-          <button>Submit</button>
-        </fieldset>
+        </div>
+        <input type="submit" value="Submit" />
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2><i> By Lorena Capraru</i></h2>
+      <h3><i> By Lorena Capraru</i></h3>
     </footer>
   </body>
 </html>

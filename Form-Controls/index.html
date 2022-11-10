@@ -13,15 +13,72 @@
     <h1>Product Pick</h1>
   </header>
   <main>
+    
   <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+    <fieldset class="data-container">
+      <legend>Your Details</legend>
+      <div class="name-container">
+        <label for="first-name">Full Name</label>
+        <input type="text" name="full-name" id="full-name" placeholder="Please type your full name" pattern="[A-Za-z\s]+"  required>
+      </div>
+      <div class="email-container">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Please type your email" required>
+      </div>
+    </fieldset>
 
+    <fieldset class="color-container">
+      <legend>Pick a color</legend>
+
+      <div class="w-container">
+        <img class="shirtsize" src="whiteshirt.png" alt="whiteshirtcyf">
+        <label for="white">White</label>
+        <input type="radio" name="color" id="white" checked>
+      </div>
+
+      <div class="b-container">
+        <img class="shirtsize" src="blackshirt.png" alt="blackshirtcyf">
+        <label for="black">Black</label>
+        <input type="radio" name="color" id="black">
+      </div>
+
+      <div class="g-container">
+        <img class="shirtsizeg" src="GreenShirt.png" alt="greenshirtcyf">
+      <label for="green">Green</label>
+      <input type="radio" name="color" id="green">
+      </div>
+    </fieldset>
+
+    <fieldset class="size-container">
+      <legend>Sizes</legend>
+      <label for="xs">XS</label>
+      <input type="radio" name="size" id="xs">
+      <label for="s">S</label>
+      <input type="radio" name="size" id="s" checked>
+      <label for="m">M</label>
+      <input type="radio" name="size" id="m">
+      <label for="l">L</label>
+      <input type="radio" name="size" id="l">
+      <label for="xl">XL</label>
+      <input type="radio" name="size" id="xl">
+      <label for="xxl">XXL</label>
+      <input type="radio" name="size" id="xxl">
+    </fieldset>
+
+    <fieldset class="date-container">
+      
+      <legend>Choose Delivery Date</legend>
+      <label for="d">any day you want :)</label>
+      <input type="date" name="deliveryTime" id="d" min="2022-11-10" max="2022-12-30" required>
+
+      <button type="submit">Place my order</button>
+    </fieldset>
+
+  </form>
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Shayan Mahanm</h2>
   </footer>
 </body>
 

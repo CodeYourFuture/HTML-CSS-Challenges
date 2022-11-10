@@ -78,6 +78,9 @@ form {
     gap: 2px;
     margin: 0 1rem;
 }
+.name-container input {
+    text-transform: capitalize;
+}
 .email-container {
     display: flex;
     flex-direction: column;

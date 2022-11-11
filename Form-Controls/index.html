@@ -10,18 +10,73 @@
 </head>
 <body>
   <header>
-    <h1>Product Pick</h1>
+    <h1 class="head">Product Pick</h1>
   </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <main>  
+   <div class="form">
+    <form action="###" method="get" >
+      <!-- write your html here-->
+      <!-- try writing out the requirements first-->
+      <fieldset>
+        <legend>Customer info</legend>
+        <div class="name">
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname"><br><br>
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname"><br><br>
+        </div>
+    
+        <div class="email">
+          <label for="email">Enter your email:</label >
+          <input type="email" id="email" name="email" required>
+        </div>
+      </fieldset>
+      
+  
+        <div class="choosecolour">
+          <p class="colour">Please choose a colour:</p>
+          <div class="select">
+            <input type="radio" id="blue" name="colour" value="blue" checked >
+            <label for="blue">Blue</label>
+  
+            <input type="radio" id="red" name="colour" value="red" checked>
+            <label for="red">Red</label>
+  
+            <input type="radio" id="green" name="colour" value="green" checked >
+            <label for="green">Green</label>
+          </div>
+        </div>
+    
+        <div class="size">
+          <label for="size">Please select your size:</label>
+    
+          <select id="size" name="size">
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xli">XLL</option>
+          </select>
+        </div>
+
+      <div class="delivery">
+        <label for="delivery">Enter a date and time for your delivery:</label>
+        <input
+          id="delivery"
+          type="datetime-local"
+          name="deliverydate"
+          min="2022-06-01T08:30"
+          max="2022-07-30T16:30" />
+      </div>
+      <input type="submit" value="Submit">
+    </form>
+   </div>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2 class="head">By Mo Nahvi</h2>
   </footer>
 </body>
 

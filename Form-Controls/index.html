@@ -1,28 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <div class="container">
+        <h2 class="form-title">customer Details</h2>
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+        <form  action="#">
+          <div class="main-customer-details">
+            <div class="customer-input-box">
+              <label for="fullName">Full Name</label>
+              <input type="text" 
+                     id="fullName" 
+                     name="fullName" 
+                     placeholder="Enter Full Name"
+                     required minlength="2"/>
+            </div>
 
+            <div class="customer-input-box">
+              <label for="email"> Email</label>
+              <input type="email" 
+                     id="email" 
+                     name="email" 
+                     placeholder="Enter Email"
+                     value="default@example.com"
+                     required />
+            </div>
+          </div>
+        <fieldset class="color-details">
+          <span class="color-title"> Colour <span>
+          <div class="color-category">
+            <label for="blue">Blue</label>
+            <input type="radio" name="colour" id="blue">
+            <label for="black">Black</label>
+            <input type="radio" name="colour" id="black">
+            <label for="Yellow">Yellow</label>
+            <input type="radio" id="Yellow" name="color">
+          </div>
+        </fieldset>
+
+        <div class="customer-input-box">
+           <label for="size"> Size <span aria-label="required"></span></label>
+           <input type="text" id="size" name="size" list="s1" required>
+           <datalist id="s1">
+            <option>XS</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>XXL</option>
+          </datalist>
+        </div>
+     
+       
+
+        <div class="customer-input-box">
+          <label for="delivery-date">Delivery Date:</label>
+          <input
+            type="date"
+            id="delivery-date"
+            name="delivery-date"
+            min="2022-11-01"
+            max="2022-12-29"
+            required
+          />
+        </div>
+      </form>
+    </main>
+    <footer>
+      <p>Leila Farsani</p>
+    </footer>
+  </body>
 </html>

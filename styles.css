@@ -1,0 +1,97 @@
+
+/*header style*/
+header{
+    margin: 0;
+    padding: 1rem;
+    background-color: rgb(144, 44, 174);
+}
+/*html and body style*/
+html, body{
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    font-size: larger;
+    font-style: normal;
+    border-radius: 10px;
+    border: outset;
+}
+/*form style*/
+form{
+    display: grid;
+    background-color: rgba(red, green, blue, alpha);
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}       
+/*containers style*/
+.name-container{
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(red, green, blue, alpha);
+    box-shadow: rgb(red, green, blue);
+}
+
+.email-container{
+    margin: 10px;
+    box-shadow: rgb;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(red, green, blue, alpha);
+}
+.color-container{
+    margin: 10px;
+    box-shadow: rgb;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(red, green, blue, alpha);
+}
+.size-container{
+    margin: 10px;
+    box-shadow: rgb;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(red, green, blue, alpha);
+}
+.deliver-container{
+    margin: 10px 10px 30px 10px;
+    box-shadow: rgb;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(red, green, blue, alpha);
+}
+/*inputs style*/
+input[type="text"],
+input[type="email"],
+input[type="date"]{
+    width: 250px;
+    border-radius: 10px
+}
+
+/*button style*/
+.submit-container button{
+    padding: rem 2rem;
+    border: none;
+    background-color: blue;
+    border-radius: 10px;
+    color: rgb(255, 127, 232);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    margin-bottom: 10px; 
+}
+/*footer*/
+footer{
+    display: flex;
+    justify-content: right;
+    background-color: rgba(rgb(129, 65, 65), green, blue, alpha);
+    padding: 1rem;
+
+}
+footer h2{
+    margin: 0;
+    font-weight: 100;
+    font-size: 70%;
+    background-color: rgb(112, 112, 205);
+}
+
+
+

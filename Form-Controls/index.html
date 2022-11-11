@@ -14,14 +14,85 @@
   </header>
   <main>
   <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
+    <fieldset class="Data-container">
+      <legend>your details</legend>
+      <div class="name-container">
+    <label for="First Name">Full Name</label>
+    <input type="text" name="Full Name "id="full-name" placeholder="Please type your full name " required>
+      </div>
+
+      <div class="email-container">
+    <label for="Email">Email</label>
+    <input type="text" name="Email" id="Email" placeholder="Please type your Email address here" required>
+      </div>
+
+    </fieldset>
+
+    <fieldset class="color-container">
+      <legend>Picke a color</legend>
+
+      <div class="Black-container">
+        <img class="shirtsize" src="/wlf img.jpg" alt="blackshirtcyf">
+      <label for="black">black</label>
+      <input type="radio" name="color" id="black">
+      </div>
+
+      <div class="B-container">
+        <img class="shirtsize"   src="/wlf 2.jpg" alt="blueshirtcyf">
+      <label for="blue">Blue</label>
+      <input type="radio" name="color" id="blue">
+      </div>
+
+      <div class="G-container">
+        <img class="shirtsize"  src="/wlf 3.jpg" alt="grayshirtcyf">
+      <label for="gray">gray</label>
+      <input type="radio" name="color" id="gray" checked>
+      </div>
+    </fieldset>
+
+      <fieldset class="size-container">
+        <legend>sizes</legend>
+
+        <label for="xs">XS</label>
+        <input type="radio" name="xs" id="XS">
+        <legend>sizes</legend>
+        <label for="s">S</label>
+        <input type="radio" name="s" id="S">
+        <legend>sizes</legend>
+        <label for="M">M</label>
+        <input type="radio" name="M" id="M">
+        <legend>sizes</legend>
+        <label for="L">L</label>
+        <input type="radio" name="L" id="L">
+        <legend>sizes</legend>
+        <label for="xl">XL</label>
+        <input type="radio" name="xL" id="XL" checked>
+        <legend>sizes</legend>
+        <label for="xxL">XXL</label>
+        <input type="radio" name="xxl" id="XXL">
+    </fieldset>
+
+    <fieldset class="data-container">
+      <legend>Delivery Date</legend>
+
+      <label for="d">from next day</label>
+      <input type="Date" name="deliveryTime" id="d" min="11/11/2022" max="12/12/2022" required>
+      
+      <button type="submit">Place my order</button>
+    </fieldset>
+
+    
+
+
+
+
   </form>
 
   </main>
+
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Hengameh</h2>
   </footer>
 </body>
 

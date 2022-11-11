@@ -14,8 +14,60 @@
   </header>
   <main>
   <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
+    <div class="div-a">
+      <label for="Fname" >Enter your name please*</label>
+      <div class="firstName"><input type="text" name="firstName" id="Fname" class="input FNinput"required maxlength="15" minlength="3"></div>
+    </div>
+    <div class="div-b">
+      <label for="lname">Enter your lastname plaese*</label>
+      <div class="lastName"><input type="text" name="lastName" id="lname" class="input LNinput" required maxlength="15" minlength="3"></div>
+    </div>
+    <div class="dic-c">
+      <label for="email">Entert your E-mail address please*</label>
+      <input type="email" name="email" id="email" class="input input email" required placeholder="email address..">
+    </div>
+    <div class="color-div">
+      <fieldset  class="fieldset">
+        <legend class="legend" required>Confirm Color of the T-shirt </legend>
+      
+        <input required class="input input-black" id="Black" type="radio" name="color" value="small" />
+        <label class="label-black" for="small">Black</label>
+      
+        <input class="input input-white" id="white" type="radio" name="color" value="white" />
+        <label class="label-white" for="white">White</label>
+      
+        <input class="input input-blue" id="blue" type="radio" name="color" value="blue" />
+        <label class="label-blue" for="blue">Blue</label>
+      </fieldset>
+    </div>
+    <div class="size-div">
+     <label required class="size-label" for="sizes">confirm the size of your T-shirt</label>
+     <select id="sizes" required>
+        <option selected disabled  >Size</option>
+        <option required value="xs" >XS</option>
+        <option value="s" >S</option>
+        <option value="m" >M</option>
+        <option value="l" >L</option>
+        <option value="xl" >XL</option>
+        <option value="xxl" >XXL</option>
+
+     </select>
+    </div>
+    <div class="date-div">
+      <label class="delivery-label" for="start">Delivery date:</label>
+
+      <input class="date-input" type="date" id="start" name="trip-start"
+       value="2018-07-22"
+       min="2022-11-21" max="2022-12-15">
+
+    </div>
+    <div class="submit-div">
+      <label class="submit" for="submit">Submit</label>
+      <input class="input input-submit" id="submit" type="submit" name="q" />
+    </div>
+
+    
+
   </form>
 
   </main>

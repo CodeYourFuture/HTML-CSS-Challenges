@@ -295,6 +295,18 @@ fieldset {
     width: 200px;
 }
 
+/* Button styles*/
+
+.submit-button {
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    background-color: #0a0c97;
+    color: white;
+    font-weight: 700;
+    border-radius: 18px;
+}
+
 /* Footer styles */
 
 footer {

@@ -13,15 +13,56 @@
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
+  <form class="form">
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
+    <!-- 
+      1. What is the customer's name? I must collect this data, and validate it. But what is a valid name? I must decide something.
+      2. What is the customer's email? I must make sure the email is valid. Email addresses have a consistent pattern.
+      3. What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours?
+      4. What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL
+      5. When do they want the t-shirt to be delivered? I must collect a date and make sure that date is in the next four weeks. How will I do this? How will I make sure there are no mistakes about the date?
+
+      All fields are required.
+
+    -->
+    <label for="full-name">Full name:</label>
+    <input id="full-name" type="text" required />
+
+    <label for="email">E-mail:</label>
+    <input id="email" type="email" required />
+
+    <label for="colour">T-shirt colour:
+      <select id="colour">
+          <option id="placeholder" value="">Choose colour...</option>
+          <option value="1">Red</option>
+          <option value="2">Green</option>
+          <option value="3">Blue</option>
+      </select>
+    </label>
+
+    <label for="size">T-shirt size:
+      <select id="size">
+          <option id="placeholder" value="">Choose size...</option>
+          <option value="1">XS</option>
+          <option value="2">S</option>
+          <option value="3">M</option>
+          <option value="4">L</option>
+          <option value="5">XL</option>
+      </select>
+    </label>
+
+    <label for="date">Delivery date:</label>
+    <input id="date" type="date" required/>
+
+    <input id="submit" type="submit" />
+
   </form>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By George Primentas</h2>
   </footer>
 </body>
 

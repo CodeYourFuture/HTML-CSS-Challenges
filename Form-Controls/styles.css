@@ -1,0 +1,21 @@
+input[type=text], input[type=email], input[type=date], select {
+    width: 15rem;
+    padding: 12px 20px;
+    margin: 5px 0px 20px 0px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=submit] {
+    width: 15rem;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: orange;
+    font-weight: bold
+  }

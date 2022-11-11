@@ -1,28 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <h2>Please confirm your details to order the T-shirt</h1>
+        <form>
+          <div class="frm">
+          <div class="name row"><label for="fname">Enter your full name:</label><br />
+            <input required type="text" id="fname" name="fname" minlength="2"/><br />
+          </div>
+          <div class="e-mail row"><label for="email">Enter your email:</label><br />
+            <input required type="email" id="email" name="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br />
+          </div>
+          <div class="clr row">
+            <fieldset required>
+                <legend>Please select your preferred color for the T-shirt:</legend>
+                <div>
+                  <input checked type="radio" id="colorChoice1" name="color" value="Blue" />
+                  <label for="colorChoice1">Blue</label>
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+                  <input type="radio" id="colorChoice2" name="color" value="green" />
+                  <label for="colorChoice2">Green</label>
 
+                  <input type="radio" id="colorChoice3" name="color" value="red" />
+                  <label for="colorChoice3">Red</label>
+                </div>
+              </fieldset>
+          </div>
+          <div class="size-6 row">
+            <label for="size">Choose your T-shirt size:</label><br />
+            <input required list="sizes" name="size" id="size"><br />
+            <datalist id="sizes">
+            <option value="XS">
+            <option value="S">
+            <option value="M">
+            <option value="L">
+            <option value="XL">
+            <option value="XXL"></option>
+            </datalist>
+          </div>
+          <div class="date row">
+            <label for="start">When do you want the t-shirt to be delivered?</label><br />
+            <input required type="date" id="start" name="trip-start" value="2022-10-15" min="2022-10-13" max="2022-11-15"><br />
+          </div>
+          <div id="sbm">
+            <button class="button-33" role="button">Submit</button>
+          </div>
+          </div>
+          </div>
+        </form>
+      </main>
+    <footer>
+      <!-- change to your name-->
+      <h2>By Natalie Zablotska</h2>
+    </footer>
+  </body>
 </html>

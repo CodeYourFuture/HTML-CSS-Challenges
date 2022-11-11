@@ -1,28 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Dress store</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">   
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+  </head>
 
+  <!--Body Start-->
+  <body>
+    
+    <aside class="right">
+      <img src="https://images.pexels.com/photos/1375736/pexels-photo-1375736.jpeg?auto=compress&cs=tinysrgb&w=600" alt="dress"/>
+      </aside>
+    <div class="left">
+
+    <main>
+      <h1>Confirm your order</h1>
+      <hr />
+
+      <!--Form Start-->
+    
+      <form class="form">
+        <!--First Name Start-->
+        <fieldset class="first-name">
+          <label for="fname">First Name *</label>
+          <input type="text" id="fname" name="fname" minlength="2" required
+            title="Should be at least 2 letters."
+          /><br /><br />
+        </fieldset>
+
+        <!--Last Name Start-->
+        <fieldset class="last-name">
+          <label for="lname">Last name *</label>
+          <input type="text" id="lname" name="lname" minlength="2" required
+            title="Should be at least 2 letters."
+          /><br /><br />
+        </fieldset>
+
+        <!--Email Start-->
+        <fieldset class="email-box">
+          <label for="email">Your e-mail address *</label>
+          <input type="email" id="email" name="email"
+            title="Your email should contain at least one  number and one lowercase letter, and at least 8 or more characters within @ "
+          /><br /><br />
+        </fieldset>
+
+        <!--Color Options Start-->
+        <div class="radio-btn-color">
+          <p>Choose a color *</p>
+          <label for="color"> Yellow</label><br />
+          <input type="radio" id="color" name="color" required />
+
+          <label for="color"> Violet</label><br />
+          <input type="radio" id="color" name="color" required />
+
+          <label for="color"> Blue</label><br />
+          <input type="radio" id="color" name="color" required />
+        </div>
+
+        <!--Size Start-->
+        <div class="radio-btn-size">
+          <p>Choose a size *</p>
+          <label for="size"> XS</label><br />
+          <input type="radio" id="size" name="t-shirt-size" value="size" required/>
+
+          <label for="size"> S</label><br />
+          <input type="radio" id="size" name="t-shirt-size" value="size" required/>
+
+          <label for="size"> M</label><br />
+          <input type="radio" id="size" name="t-shirt-size" value="size" required/>
+
+          <label for="size"> L</label><br />
+          <input type="radio" id="size" name="t-shirt-size" value="size" required
+          />
+
+          <label for="size"> XL</label><br />
+          <input type="radio" id="size" name="t-shirt-size" value="xl-size" required/>
+
+          <label for="size"> XXL</label><br />
+          <input type="radio" id="size" name="t-shirt-size" value="size" required/>
+        </div>
+
+        <!--Button Start-->
+        <div class="delivery-date">
+          <label for="start"
+            >Choose a delivery date within the next 4 weeks: *
+            </label>
+          <input
+            type="date" id="start"required name="trip-start" value="2022-11-01"
+             value="2022-11-01" min="2022-11-01" max="2022-11-29"/>
+        </div>
+        <div class="submit-btn">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+  </div>
+
+    <!--Footer Start-->
+    <div class="buttom">
+    <footer>
+      <hr />
+      <h4>By Kristina Dudnyk</h4>
+    </footer>
+     </div>
+  </body>
 </html>

@@ -14,7 +14,7 @@
     </header>
     <main>
       <div class="container">
-        <h1 class="form-title">customer Details</h1>
+        <h2 class="form-title">customer Details</h2>
 
         <form  action="#">
           <div class="main-customer-details">
@@ -33,10 +33,11 @@
                      id="email" 
                      name="email" 
                      placeholder="Enter Email"
+                     value="default@example.com"
                      required />
             </div>
           </div>
-        <div class="color-details">
+        <fieldset class="color-details">
           <span class="color-title"> Colour <span>
           <div class="color-category">
             <label for="blue">Blue</label>
@@ -46,7 +47,7 @@
             <label for="Yellow">Yellow</label>
             <input type="radio" id="Yellow" name="color">
           </div>
-        </div>
+        </fieldset>
 
         <div class="customer-input-box">
            <label for="size"> Size <span aria-label="required"></span></label>
@@ -64,20 +65,20 @@
        
 
         <div class="customer-input-box">
-          <label for="date">Delivery Date:</label>
+          <label for="delivery-date">Delivery Date:</label>
           <input
             type="date"
             id="delivery-date"
             name="delivery-date"
             min="2022-11-01"
-            max="2022-11-07"
+            max="2022-12-29"
             required
           />
         </div>
       </form>
     </main>
     <footer>
-      <h2>Leila Farsani</h2>
+      <p>Leila Farsani</p>
     </footer>
   </body>
 </html>

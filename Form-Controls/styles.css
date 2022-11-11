@@ -5,13 +5,9 @@
   font-family: sans-serif;
 }
 
-header {
-  display: flex;
-}
-
 body {
   display: flex;
-  height: 100vh;
+  min-width: 100vh;
   justify-content: center;
   align-items: center;
   background: url(https://ae01.alicdn.com/kf/HTB1YjcPat.LL1JjSZFEq6AVmXXaO/TOP-QUALITY-Summer-Solid-Blank-T-Shirt-Short-Sleeve-Cotton-T-shirt-Women-2017-Fashion-Tshirt.jpg);
@@ -23,7 +19,7 @@ body {
   max-width: 800px;
   background: rgba(114, 80, 80, 0.5);
   padding: 28px;
-  margin: 0 28;
+  margin: 0 28px;
   border-radius: 10px;
   box-shadow: inset -2px 2px 2px white;
 }
@@ -38,7 +34,7 @@ body {
   border-bottom: solid 1px white;
 }
 
-.main-costumer-details {
+.main-customer-details {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -68,7 +64,6 @@ body {
   height: 40px;
   width: 95%;
   border-radius: 7px;
-  outline: none;
   border: 1px solid grey;
   padding: 0 10px;
 }
@@ -105,11 +100,11 @@ body {
     justify-content: space-between;
     width: 100%;
   }
-  .main-costumer-details {
+  .main-customer-details {
     max-height: 380px;
     overflow: auto;
   }
-  .main-costumer-details::-webkit-scrollbar {
+  .main-customer-details::-webkit-scrollbar {
     width: 0;
   }
 }

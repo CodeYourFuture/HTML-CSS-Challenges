@@ -1,0 +1,41 @@
+body{
+    margin: 2em;
+    width: 30em;
+    border: 1px black solid;
+    background-color: rgb(206, 160, 160);
+    border-radius: 1em;
+}
+
+form{
+    display:flex;
+    margin: 1em;
+    flex-direction: column;
+    width: 25rem;
+    font-size: large;
+    background-color: rgb(218, 192, 192);
+    padding: 1em;
+    border-radius: 1em;
+}
+div{
+    display: flex;
+    margin-bottom: 1em;
+}
+input{
+    margin: 1em;
+    margin-top: 0;
+
+}
+input:focus{
+    background-color: antiquewhite;
+    border-radius: .5em;
+}
+input:hover{
+    background-color: antiquewhite;
+    border-radius: .5em;
+}
+header{
+    margin:1em;
+}
+footer{
+    margin: 1em;
+}

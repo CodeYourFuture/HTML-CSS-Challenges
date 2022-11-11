@@ -170,3 +170,19 @@ h2:hover {
 input:focus {
     background-color: rgb(249, 249, 202);
 }
+/* @media (max-width:900px){
+    body{
+        padding: 50px;
+    }
+    .white-sh, .beige-sh, .black-sh {
+        width: 150px;
+        height: 150px;
+        
+    }
+    .container {
+        width: 100%;
+    }
+} */
+        
+        
+

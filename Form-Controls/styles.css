@@ -6,19 +6,29 @@
 h1 {
     font-size: 2em;
     padding-top: 10px;
+    margin-left: 30px;
 }
 
-h3 {
+h2 {
     padding-bottom: 20px;
 }
+
+/* Header styles */
 
 .logo-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px 30px;
-    font-size: 1.3rem;
-    font-weight: bold;
+    padding: 30px 30px;
+}
+
+.find-store {
+    display: flex;
+    flex-direction: row;
+}
+
+.location-icon {
+    width: 25%;
 }
 
 .logo {
@@ -26,14 +36,23 @@ h3 {
     color: #2b329b;
 }
 
+.account-img {
+    width: 25%;
+}
+
+.account {
+    text-align: right;
+}
+
+/* Naviation Styles */
+
 .nav-wrapper {
     display: flex;
-    border: 2px dotted red;
     padding: 20px 0;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: #202427;
+    background-color: #4b5053;
 }
 
 .nav-ul {
@@ -44,20 +63,36 @@ h3 {
     flex-direction: row;
 }
 
-.nav-ul .nav-list #red-item {
-    color: red;
-}
-
 .nav-item {
     text-decoration: none;
-    padding-left: 5em;
     color: white;
     text-transform: uppercase;
-    font-weight: bold;  
+    font-weight: bold; 
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+.nav-item:hover {
+    background-color:#5457d8;
+    text-decoration: underline;
+    transition: all 1s;
+}
+
+/* General styles */
+
+.top-left-section {
+    padding: 20px;
 }
 
 .site-links-wrapper {
-    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    margin-left: 30px;
+}
+
+.site-links {
+    color: black;
 }
 
 .main-container {
@@ -72,16 +107,11 @@ h3 {
     padding: 40px 0;
 }
 
-fieldset {
-    border: none;
-}
-
 .s-images-wrapper {
     display: flex;
     flex-direction: column;
     height: fit-content;
     margin: 10px 30px 0 70px;
-    border: 2px solid red;
     padding: 20px;
 }
 
@@ -90,11 +120,16 @@ fieldset {
 }
 
 .main-image-wrapper {
-    margin: 0 30px 0 0;
-    border: 2px solid blue;
+    margin: 0 20px 0 0;
     display: flex;
     justify-content: center;
     height: 495px;
+}
+
+/* Form 1 styles */
+
+fieldset {
+    border: none;
 }
 
 .container {
@@ -105,19 +140,12 @@ fieldset {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    border: 2px dotted red;
     gap: 50px;
 }
 
 .colour-section{
     display: flex;
     flex-direction: row;
-    border: 2px dotted #054103;
-}
-
-.colour-padding-bottom {
-    padding-bottom: 10px;
-    border: 2px dotted red;
 }
 
 #blue {
@@ -215,9 +243,7 @@ fieldset {
     border: 2px solid black;
 }
 
-
-
-
+/* Form 2 styles */
 
 .form-2 {
     display: flex;
@@ -267,8 +293,9 @@ fieldset {
     margin-bottom: 10px;
     border-radius: 4px;
     width: 200px;
-    color: red;
 }
+
+/* Footer styles */
 
 footer {
     margin-top: 50px;

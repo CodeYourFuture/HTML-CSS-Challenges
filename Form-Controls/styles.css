@@ -1,12 +1,100 @@
+html {
+  font-family: "Fira Sans", sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+}
+header {
+  margin-top: 2rem;
+  color: beige;
+}
 body {
-  background-color: #ecd8e0;
+  background-color: #584b9b;
   width: 70%;
   margin: 0 auto;
 }
 form {
-  background-color: #ffd5b6;
-  border: 1px solid white;
+  background-color: #bcb7d7;
+  border: 3px solid #685da5;
+  border-radius: 5px;
+  max-width: 700px;
+}
+
+.frm {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
 }
 input {
-  background-color: #bad8e0;
+  background-color: bisque;
+  color: #584b9b;
+  border-radius: 3px;
+  width: 300px;
+  height: 20px;
+}
+
+.row {
+  margin: 0.5rem 2rem;
+}
+
+footer h2 {
+  font-size: small;
+  color: antiquewhite;
+  text-align: right;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* create custom radiobutton appearance */
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  padding: 6px;
+  /* background-color only for content */
+  background-clip: content-box;
+  border: 2px solid white;
+  background-color: #584b9b;
+  border-radius: 50%;
+}
+
+/* appearance for checked radiobutton */
+input[type="radio"]:checked {
+  background-color: rgba(224, 90, 41, 0.93);
+}
+
+/* CSS */
+.button-33 {
+  background-color: rgba(224, 90, 41, 0.93);
+  border-radius: 100px;
+  box-shadow: rgba(60, 31, 13, 0.2) 0 -25px 18px -14px inset,
+    rgba(30, 16, 7, 0.2) 0 1px 2px, rgba(30, 16, 7, 0.2) 0 2px 4px,
+    rgba(30, 16, 7, 0.2) 0 4px 8px, rgba (30, 16, 7, 0.2) 0 8px 16px,
+    rgba(30, 16, 7, 0.2) 0 16px 32px;
+  color: white;
+  cursor: pointer;
+  padding: 7px 20px;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  text-align: center;
+}
+
+.button-33:hover {
+  box-shadow: rgba(224, 90, 41, 0.93) 0 -13px 9px -7px inset,
+    rgba(221, 211, 207, 0.73) 0 1px 1px, rgba(221, 211, 207, 0.73) 0 1px 2px,
+    rgba(221, 211, 207, 0.73) 0 2px 4px, rgba(221, 211, 207, 0.73) 0 4px 8px,
+    rgba(221, 211, 207, 0.73) 0 16px 16px;
+  transform: scale(1.05);
+}
+
+#sbm {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px 0;
 }

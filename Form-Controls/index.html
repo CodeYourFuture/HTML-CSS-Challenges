@@ -7,6 +7,9 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -15,14 +18,15 @@
     <main>
       <h2>Please confirm your details to order the T-shirt</h1>
         <form>
-          <div class="name"><label for="fname">Enter your full name:</label><br />
+          <div class="frm">
+          <div class="name row"><label for="fname">Enter your full name:</label><br />
             <input required type="text" id="fname" name="fname" minlength="2"/><br />
           </div>
-          <div class="e-mail"><label for="email">Enter your email:</label><br />
+          <div class="e-mail row"><label for="email">Enter your email:</label><br />
             <input required type="email" id="email" name="email"
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br />
           </div>
-          <div class="clr">
+          <div class="clr row">
             <fieldset required>
                 <legend>Please select your preferred color for the T-shirt:</legend>
                 <div>
@@ -37,7 +41,7 @@
                 </div>
               </fieldset>
           </div>
-          <div class="size-6">
+          <div class="size-6 row">
             <label for="size">Choose your T-shirt size:</label><br />
             <input required list="sizes" name="size" id="size"><br />
             <datalist id="sizes">
@@ -49,12 +53,14 @@
             <option value="XXL"></option>
             </datalist>
           </div>
-          <div class="date">
+          <div class="date row">
             <label for="start">When do you want the t-shirt to be delivered?</label><br />
-            <input required type="date" id="start" name="trip-start" value="2022-10-15" min="2022-10-11" max="2022-11-12"><br />
+            <input required type="date" id="start" name="trip-start" value="2022-10-15" min="2022-10-13" max="2022-11-15"><br />
           </div>
-          <div>
-            <input type="submit"><br />
+          <div id="sbm">
+            <button class="button-33" role="button">Submit</button>
+          </div>
+          </div>
           </div>
         </form>
       </main>

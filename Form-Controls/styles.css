@@ -1,6 +1,6 @@
 body{
-    margin: 2em;
-    width: 30em;
+   
+    width: 25em;
     border: 1px black solid;
     background-color: rgb(206, 160, 160);
     border-radius: 1em;
@@ -10,7 +10,7 @@ form{
     display:flex;
     margin: 1em;
     flex-direction: column;
-    width: 25rem;
+    width: 18em;
     font-size: large;
     background-color: rgb(218, 192, 192);
     padding: 1em;
@@ -21,7 +21,7 @@ div{
     margin-bottom: 1em;
 }
 input{
-    margin: 1em;
+    margin: 0;
     margin-top: 0;
 
 }

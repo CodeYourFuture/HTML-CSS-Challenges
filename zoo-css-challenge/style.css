@@ -1,5 +1,6 @@
 * {
   font-family: sans-serif;
+  word-spacing: .1em;
 }
 
 header {
@@ -24,14 +25,11 @@ header ul li {
   margin-right: 10px;
 }
 
-section {
+.introduction {
   padding: 5%;
-  background-color: #f8f0fb;
 }
 
-img {
-  border: 5px solid #8075ff;
-}
+
 
 h1,
 h2,
@@ -75,9 +73,6 @@ footer {
   justify-content: space-between;
 }
 
-.introduction {
-}
-
 #badge {
   height: 120px;
   width: 120px;
@@ -103,13 +98,20 @@ footer {
   font-size: 125%;
 }
 
-.image-container img {
+.image-container img:nth-child(1) {
   vertical-align: top;
-  border: 5px solid #747c92;
+  border: 6px solid #3a1580;
 }
 
-.image-container img:first-of-type {
-  vertical-align: bottom;
+.image-container img:nth-child(2) {
+  vertical-align: top;
+  border: 6px solid #dbcf1d;
+}
+
+.image-container img:nth-child(3) {
+  vertical-align: top;
+  border: 6px solid #700b8f;
+  height: 300px;
 }
 
 .tigers {
@@ -117,13 +119,25 @@ footer {
   color: #f0e100;
 }
 
+.tigers h2 {
+  color: #f0e100;
+}
+
 .giraffe {
-  background-color: #465775;
-  color: #56e39f;
+  background-color: #483C46;
+  color: #BEEE62;
 }
 
 .giraffe h2 {
   color: #ef6f6c;
+}
+
+.giraffe h3 {
+  color: #F4743B;
+}
+
+.giraffe p:nth-child(2) {
+  font-size: 20px;
 }
 
 .card {

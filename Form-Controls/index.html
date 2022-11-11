@@ -9,20 +9,149 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
+ 
+      
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
-  </form>
+
+  <header>
+
+    <div class="logo-wrapper">
+      
+      <div>
+        <a href="data:image/png;base64,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">
+          <img alt="Find a store icon" class="location-icon" src="data:image/png;base64,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">
+        </a>
+        <p>Find a store</p>
+      </div>
+      <span class="logo">Lee-Lee</span>
+      <div class="account">
+        <a href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJwAAACcCAMAAAC9ZjJ/AAAAbFBMVEX///8AAAD8/Px2dnbk5OQ1NTWioqK1tbXn5+fy8vL5+fnX19eoqKjb29vS0tKXl5ctLS3Dw8NNTU1/f3/JyckcHBxISEhbW1tSUlIYGBiHh4cLCwu7u7tra2sSEhKvr688PDxjY2MmJiaPj49W8x8MAAAEPklEQVR4nO2a3YKyIBCGFfxDRTMtSzOt7v8evwHbbStT8wvoYJ6jSot3BxhmXteyEARBEARBEARBEARBEARBEARBAPL04rsggGkNQ4T8kDbldls26YGHptXcEMFqm5X9y6ppra+ZXeYdr7Lq+vri6DHTqnr4qRdGPT/LfC/vBZ64aV0wd6SVM5n/0cJzV3zWEuNT6wkd9CFMnIpPPTOKbqQg4lw8xAjeFme4kJpS1eODhPXz6gKpfA2XfAOSfokggayC4WuBuBbp1XPHFsZ3rKFjAT5zQN1Wv6YfMrEnrRfiiCX28UG/qh4Gy4qO3QB7dm0qGYvAjabayGDomonAydA1erQ8MR2XA9yiR8sdIpPZdueM3+V0ExOvjBhO94nKLYSaINaj5oGLbVdT91S2fdGh5Qk642iHsqAxUZyQZoa4WIrTjxA3uZ48Q+KsfEZNBBVVrkPLooHn/AFKgFqunDg5WWmmpoOSaLpe41A1OWY6iaPYEa97fLgARVOtU9EfIMOW40msnJGnFZFsbDsbuwFqqk2iS80DBE7OHRs2HsRss9306asOqEvg6BxcdaJMv0wVoyohIo29KumILOaosaafWAFM3L4YvlrsoYN40TbqIYI9sRdp9m5uxWsftO1N7YYrmfCULve7QuwFsd7q0a2sHmJJU8T1784x5q+khWLcZbK49LvWlx+zNeQXYZPYrnmDDgjTjbQLNztaVXR3fZN+hzFMrITaD9DE/JT+4qSlezWGj26ZTnSM+uFZ7KWpF2dfsdZ+eDF/3zKtLHjCrNPfBybkLV1vO/eJbrum7TW7aI+hLImKyn3cpve4VcGGzUXFhPH2OC5N7t1trD/hsXbfx+aUexl3nuCZl5/6uO5bbQuwnyNeynEbn48MHHL/JG8r+e2bytWRWAYtldXa+JBBKsMHc6tFmyX9JWiruHwzOqa4yCsZY/XKJExo696oI5NOqNOz8ETj0ATzsxdU84096W1/BrHeaGiFc9URuDUUwdbgvxaQ3Ch7L+sTuRTqF53Qp4AoiBwyO2q37xFbNthqd2wsHYa3xyDSu1A8sWG3yKoUfwzso07tSQZdfL2wUQ5qxUYiyUU6XbhwIJ/kKtdc0E2YXmNkMK8q7YnoKJ5ML0I+ua5VPlY/9IbcMoRdp/Lpqy8Ph4WIY6L9pJoH4v965lGpzXQQuXMi/03uveNLfiE5q80lDlSOq4UDCOdp6W6ah7BS7bPvvLnwQscXTpna/0YgVj/ImcbJ7F3Lkpj23/KVHvzw2w7tG8KNW1Zt5DAWhiEZAD5mzInaqnR7U+xIHdX9Nfx6kna3vrTu1qeGDtCc1n877i5NLA29PwwQJNV5up++ca6KoP+mpt6fFXHe7NzRpv/o7po8LrSbOjLRhYETJcXBj70nYv9QJJETmDJfZybib/HpEARBEARBEARBEARBEARBEARBkA/wD0IVKRmO+4v6AAAAAElFTkSuQmCC">
+          <img alt="Account icon" class="account-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJwAAACcCAMAAAC9ZjJ/AAAAbFBMVEX///8AAAD8/Px2dnbk5OQ1NTWioqK1tbXn5+fy8vL5+fnX19eoqKjb29vS0tKXl5ctLS3Dw8NNTU1/f3/JyckcHBxISEhbW1tSUlIYGBiHh4cLCwu7u7tra2sSEhKvr688PDxjY2MmJiaPj49W8x8MAAAEPklEQVR4nO2a3YKyIBCGFfxDRTMtSzOt7v8evwHbbStT8wvoYJ6jSot3BxhmXteyEARBEARBEARBEARBEARBEARBAPL04rsggGkNQ4T8kDbldls26YGHptXcEMFqm5X9y6ppra+ZXeYdr7Lq+vri6DHTqnr4qRdGPT/LfC/vBZ64aV0wd6SVM5n/0cJzV3zWEuNT6wkd9CFMnIpPPTOKbqQg4lw8xAjeFme4kJpS1eODhPXz6gKpfA2XfAOSfokggayC4WuBuBbp1XPHFsZ3rKFjAT5zQN1Wv6YfMrEnrRfiiCX28UG/qh4Gy4qO3QB7dm0qGYvAjabayGDomonAydA1erQ8MR2XA9yiR8sdIpPZdueM3+V0ExOvjBhO94nKLYSaINaj5oGLbVdT91S2fdGh5Qk642iHsqAxUZyQZoa4WIrTjxA3uZ48Q+KsfEZNBBVVrkPLooHn/AFKgFqunDg5WWmmpoOSaLpe41A1OWY6iaPYEa97fLgARVOtU9EfIMOW40msnJGnFZFsbDsbuwFqqk2iS80DBE7OHRs2HsRss9306asOqEvg6BxcdaJMv0wVoyohIo29KumILOaosaafWAFM3L4YvlrsoYN40TbqIYI9sRdp9m5uxWsftO1N7YYrmfCULve7QuwFsd7q0a2sHmJJU8T1784x5q+khWLcZbK49LvWlx+zNeQXYZPYrnmDDgjTjbQLNztaVXR3fZN+hzFMrITaD9DE/JT+4qSlezWGj26ZTnSM+uFZ7KWpF2dfsdZ+eDF/3zKtLHjCrNPfBybkLV1vO/eJbrum7TW7aI+hLImKyn3cpve4VcGGzUXFhPH2OC5N7t1trD/hsXbfx+aUexl3nuCZl5/6uO5bbQuwnyNeynEbn48MHHL/JG8r+e2bytWRWAYtldXa+JBBKsMHc6tFmyX9JWiruHwzOqa4yCsZY/XKJExo696oI5NOqNOz8ETj0ATzsxdU84096W1/BrHeaGiFc9URuDUUwdbgvxaQ3Ch7L+sTuRTqF53Qp4AoiBwyO2q37xFbNthqd2wsHYa3xyDSu1A8sWG3yKoUfwzso07tSQZdfL2wUQ5qxUYiyUU6XbhwIJ/kKtdc0E2YXmNkMK8q7YnoKJ5ML0I+ua5VPlY/9IbcMoRdp/Lpqy8Ph4WIY6L9pJoH4v965lGpzXQQuXMi/03uveNLfiE5q80lDlSOq4UDCOdp6W6ah7BS7bPvvLnwQscXTpna/0YgVj/ImcbJ7F3Lkpj23/KVHvzw2w7tG8KNW1Zt5DAWhiEZAD5mzInaqnR7U+xIHdX9Nfx6kna3vrTu1qeGDtCc1n877i5NLA29PwwQJNV5up++ca6KoP+mpt6fFXHe7NzRpv/o7po8LrSbOjLRhYETJcXBj70nYv9QJJETmDJfZybib/HpEARBEARBEARBEARBEARBEARBkA/wD0IVKRmO+4v6AAAAAElFTkSuQmCC">
+        </a>
+        <p>Account</p>
+      </div>
+
+    </div>
+     
+    <nav class="nav-wrapper">
+      <ul class="nav-ul">
+        <li class="nav-list"><a class="nav-item" href="#">Womens</a></li>
+        <li class="nav-list"><a class="nav-item" href="#">Mens</a></li>
+        <li class="nav-list"><a class="nav-item" href="#">Kids</a></li>
+        <li class="nav-list"><a class="nav-item" href="#">Brands</a></li>
+        <li class="nav-list"><a class="nav-item" href="#">Christmas</a></li>
+        <li class="nav-list"><a id="red-item" class="nav-item" href="#">Sale</a></li>
+        
+      </ul>
+    </nav>
+      
+  </header>
+  <main>
+    
+    <div class="site-links-wrapper">
+      <a class="site-links" href="#">Home</a>/
+      <a class="site-links" href="#">Mens</a>/
+      <a class="site-links" href="#">Mens clothing</a>/
+      <a class="site-links" href="#">Thsirts</a>
+    </div>
+    <h1>Round Neck T-shirts</h1>
+    
+    <section class="main-container">
+      
+      <div class="s-images-wrapper">
+        <img class="s-images" alt="Royal blue round neck t-shirt" src="https://cdn.pixabay.com/photo/2016/12/06/09/30/blank-1886007__480.png" width="100%" heigtht="100%">
+        <img class="s-images" alt="Florescent green round neck t-shirt" src="https://cdn.pixabay.com/photo/2017/01/13/04/28/blank-1976317__480.png" width="100%" heigtht="100%">
+        <img class="s-images" alt="Dark grey round neck t-shirt" src="https://cdn.pixabay.com/photo/2016/12/06/09/30/blank-1886001__340.png" width="100%" heigtht="100%">
+      </div>
+    
+      <div class="main-image-wrapper">
+        <img class="main-image" alt="" src="https://images.pexels.com/photos/1656684/pexels-photo-1656684.jpeg?auto=compress&cs=tinysrgb&w=600">
+      </div>
+
+      <form class="form">
+
+        <div class="container">
+          <fieldset class="fieldset">
+            <legend><h2>Select a colour*</h2></legend>
+            
+              <section class="colour-section">
+
+                <div class="blue">
+                  <div>
+                    <input id="blue" type="radio" name="colour" required/>
+                  </div>
+                  <label for="blue">Blues Blue</label>
+                </div>
+
+
+                <div class="green">
+                  <input id="green" type="radio" name="colour" required/>
+                  <label for="green">Jazzy Green</label>
+                </div>
+
+                <div class="black">
+                  <input id="black" type="radio" name="colour" required/>
+                 <label for="black">Eagle Grey</label>
+                </div>
+              </section>
+        
+          </fieldset>
+
+
+          <fieldset class="fieldset">
+            <legend><h2>Select a size*</h2></legend>
+
+              <div class="size-container">
+                
+                <label>What's your size?</label>
+                <select id="size" type="text" name="size" class="custom-select" required>
+                  <option value="">Choose size</option>
+                  <option value="xx-small">XX-Small</option>
+                  <option value="x-small">X-Small</option>
+                  <option value="small">Small</option>
+                  <option value="medium">Medium</option>
+                  <option value="large">Large</option>
+                  <option value="x-large">X-Large</option>
+                </select>
+        
+              </div>
+            
+          </fieldset>
+          
+          
+        </div> 
+    
+      </form>
+    
+    </section>
+
+    <form class="form-2">
+      
+      <h2 class="details">Confirm Details</h2>
+      <div class="info">
+        
+        <label  for="name">NAME*</label>
+        <input id="name" type="text" minlength = "2" required/>
+        <label for="email">EMAIL*</label>
+        <input id="email" required/>
+        <label for="password">PASSWORD*</label>
+        <input id="password" type="password" required/>
+        <label for="date">Choose Delivery Date*</label>
+        <input id="date" type="date" value="2022-11-11" min="2022-11-16" max="2022-12-16" required/>
+        <button type="button" class="submit-button">Place Order</button>
+      </div>
+    </form>
+    
+
 
   </main>
+
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By: Karleen Richards</h2>
   </footer>
+
 </body>
 
 </html>

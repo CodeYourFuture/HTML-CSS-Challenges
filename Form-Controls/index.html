@@ -9,19 +9,97 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
+  <header class="header">
     <h1>Product Pick</h1>
+  
   </header>
+
   <main>
   <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
+    <fieldset class="container">
+      <legend>select your favorite color: </legend>
+      <div class="white">
+        <img class="white-sh" src="/image/force-majeure-00tlC0Clfrs-unsplash.jpg" alt="white-shirt">
+        <div class="">
+        <label for="white">White</label>
+        <input type="radio" name="tshirt" id="white">
+        </div>
+      </div>
+
+      <div class="beige">
+        <img class="beige-sh" src="/image/force-majeure-a5-_X8IktJg-unsplash.jpg" alt="beige-shirt">
+        <div class="">
+        <label for="beige">Beige</label>
+        <input type="radio" name="tshirt" id="beige">
+        </div>
+      </div>
+
+      <div class="black">
+        <img class="black-sh" src="/image/force-majeure-SmIlY2uAHo8-unsplash.jpg" alt="black-shirt">
+        <div class="">
+        <label for="black">Black</label>
+        <input type="radio" name="tshirt" id="black">
+        </div>
+      </div>
+
+
+    </fieldset>
+
+    <fieldset class="data">
+      <legend>Please enter your details: </legend>
+      <div class="name-details">
+        <label for="name">Name</label>
+        <input type="text" name="full-name" id="full-name" placeholder="Enter your full name" pattern="[A-Za-z\s]+"  required>
+      </div>
+      <div class="email-details">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+      </div>
+    </fieldset>
+
+    <fieldset class="delivery">
+      
+      <legend>please choose delivery date</legend>
+      <label for="datex"></label>
+      <input type="date" name="delivery-date" id="datex" min="2022-11-12" max="2022-12-12" required>
+
+    </fieldset>
+
+
+    <fieldset class="size-guide">
+      <legend>Please choose your size</legend>
+      <div class="sizem">
+      <input type="radio" name="size" id="xs">
+      <label for="xs">XS</label>
+      
+      <input type="radio" name="size" id="s">
+      <label for="s">S</label>
+      
+      <input type="radio" name="size" id="m">
+      <label for="m">M</label>
+      
+      <input type="radio" name="size" id="l">
+      <label for="l">L</label>
+      
+      <input type="radio" name="size" id="xl">
+      <label for="xl">XL</label>
+      
+      <input type="radio" name="size" id="xxl">
+      <label for="xxl">XXL</label>
+      </div>
+
+    </fieldset>
+
+   
   </form>
 
   </main>
-  <footer>
+  <div class="but">
+    <button class="btn">Place order</button>
+  </div>
+  <footer class="footer">
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Elahe Mortazavi</h2>
   </footer>
 </body>
 

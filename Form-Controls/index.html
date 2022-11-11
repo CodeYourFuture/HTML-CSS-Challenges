@@ -13,10 +13,62 @@
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+   <form class="form">
+
+    <div>
+      <label for="Fname">First name</label>
+      <input type="text" id="fname" name="Fname" maxlength="20" placeholder="name"  required >
+    </div>
+
+    <div>
+      <label for="lname">last name</label>
+      <input type="text" id="lname" name="lname" maxlength="15" placeholder="last name">
+    </div>
+      <div>
+          <label for="email">Email is nesessery</label>
+          <input type="email" name="email" id="email" placeholder="enter your name" required pattern="[a-z]{0,9}">
+      </div>
+    <div>
+      <h2>Please Select the color </h2>
+
+      <input type="radio" name="color" id="black" value="black"> 
+      <label for="color">black</label>
+    
+      <input type="radio" name="color" id="red" value="red"> 
+      <label for="color">red</label>
+    
+      <input type="radio" name="color" id="white" value="white"> 
+      <label for="color">white</label>
+    </div>
+
+    <div>
+      <h2>What is your T-shirt size ? </h2>
+
+      <select name="size" id="size" required>
+
+      <option value="Xs">X</option>
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">l</option>
+      <option value="XL">XL</option>
+      <option value="XXL">XXL</option>
+
+      </select>
+    </div>
+    <div>
+        <h2>choose the day which you want to deliver it </h2>
+        <input type="date" name="delivery-date" id="delivery-date" min="2022-11-12" max="2022-12-12" required>
+      </div>
+      
+      <div>
+         <input type="submit">
+    </div>
+
+
+
+
+
+   </form>
 
   </main>
   <footer>

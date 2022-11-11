@@ -1,0 +1,143 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  background: #fffffb ;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  font-weight: bold;
+}
+
+
+
+ h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: 2rem;
+  color: rgb(106, 0, 255);
+  margin-top: 1%;
+  margin-left: 25px;
+  marg
+}
+
+footer > h4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 100;
+  marg
+}
+
+hr {
+  margin: 1%;
+}
+
+
+.form {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 25px repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: 100px 100px;
+  height: max-content;
+}
+
+.first-name {
+  grid-column: 2;
+  display: flex;
+  align-items: center;
+  margin-top: 1%;
+  border: none;
+  gap: 10px;
+}
+
+.last-name {
+  grid-column: 3;
+  grid-row: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  border: none;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  gap: 10px;
+}
+
+.email-box {
+  grid-column: 2/4;
+  grid-row: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 1%;
+  border: none;
+  gap: 10px;
+}
+
+.radio-btn-color {
+  grid-column: 2 / 3;
+  grid-row: 4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.radio-btn-size {
+  grid-column: 2 / 4;
+  grid-row: 5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.delivery-date {
+  grid-column: 2 / 4;
+  grid-row: 6;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 1%;
+  margin-bottom: 3%;
+}
+
+
+.submit-btn {
+  grid-column: 2 / 3;
+  grid-row: 7;
+  
+}
+button {
+  padding: 0.9rem;
+    background-color: rgb(136, 66, 250);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: medium;
+}
+.buttom {
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+aside {
+  grid-column: 2/3;
+  grid-row: 1/2;
+
+}
+
+.left {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+img {
+  border: 40px solid rgb(205, 203, 203);
+  height: 800px;
+  width: 600px;
+}

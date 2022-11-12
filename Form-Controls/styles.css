@@ -14,7 +14,7 @@ h1 {
 .header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 120px 100px;
+  grid-template-rows: 120px 80px;
   margin: 10px;
 }
 
@@ -42,6 +42,10 @@ h1 {
 }
 
 /* form */
+
+input:focus {
+  background-color: #ffc60b;
+}
 
 .form_text {
   font-size: medium;
@@ -107,6 +111,6 @@ h1 {
 } */
 .footer {
   text-align: center;
-  font-size: 0.5em;
-  font-weight: lighter;
+  font-size: 6px;
+  font-weight: light;
 }

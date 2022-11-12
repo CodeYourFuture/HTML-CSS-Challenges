@@ -16,12 +16,87 @@
     </header>
 
     <section class="main">
-      <form>
+      <h2 class="form_text">
+        To order your T-shirt, please fill out the form!
+      </h2>
+      <form class="order_form">
+        <div class="fname">
+          <label for="fname"><div>First Name *</div></label>
+          <input id="fname" type="text" name="fname" minlength="2" required />
+        </div>
+        <div class="lname">
+          <label for="lname"><div>Last Name *</div></label>
+          <input id="lname" type="text" name="lname" minlength="3" required />
+        </div>
+        <div class="email">
+          <label for="email"><div>Email *</div></label>
+          <input id="input" type="email" pattern=".+@globex\.com" required />
+        </div>
+
+        <fieldset class="shirt_color">
+          <legend>Choose a color for your T-Shirt:*</legend>
+
+          <input
+            class="black"
+            id="black"
+            type="radio"
+            name="color"
+            value="black"
+          />
+          <label for="black">Black</label>
+
+          <input
+            class="white"
+            id="white"
+            type="radio"
+            name="color"
+            value="white"
+          />
+          <label for="white">White</label>
+
+          <input
+            class="yellow"
+            id="yellow"
+            type="radio"
+            name="color"
+            value="yellow"
+          />
+          <label for="yellow">Yellow</label>
+        </fieldset>
+
+        <div class="shirt_size">
+          <label for="size"> Choose T-shirt size:*</label>
+          <select id="size" name="size">
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+          </select>
+        </div>
+
+        <div class="wrapper">
+          <div class="delivery_date">
+            <label for="delivery"><div>Delivery date:</div></label>
+            <input
+              type="date"
+              id="delivery"
+              name="delivery-date"
+              value="2022-12-11"
+              min="2022-11-11"
+              max="2023-12-11"
+              required
+            />
+          </div>
+
+          <button class="btn_order">Order</button>
+        </div>
         <!-- write your html here-->
         <!-- try writing out the requirements first-->
       </form>
     </section>
-
+    <!-- <span></span> -->
     <footer class="footer">
       <!-- change to your name-->
       <h2>By Farnoosh Moayeri</h2>

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+body {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+}
+
+label {
+    display: block;
+    margin-top: 1em;
+}
+
+input {
+    width: 12em;
+    height: 1.4em;
+}
+
+select {
+    width: 12em;
+    height: 1.4em;
+}
+
+button {
+    font: 1em sans-serif;
+    background-color:rgb(56, 243, 39);
+    border: none;
+    border-radius: 5px;
+    color: rgb(12, 11, 11);
+    padding: 16px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

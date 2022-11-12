@@ -1,28 +1,109 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <form>
+        <fieldset class="data-container">
+          <legend>Your Details</legend>
+          <div class="name-container">
+            <label for="firstname">Family Name</label>
+            <input
+              type="text"
+              name="full-name"
+              placeholder="please type your full name"
+              pattern="[A-Za-z]+"
+              required
+            />
+          </div>
+          <div class="emailcontainer">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Please type your email"
+              required
+            />
+          </div>
+        </fieldset>
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+        <fieldset class="colorcontainer">
+          <legend>Pick a color</legend>
+          <div class="b-container">
+            <img
+              class="dress-size"
+              src="/Form-Controls/black.jpg"
+              alt="Blackdress"
+            />
+            <label for="Black">Black</label>
+            <input type="radio" name="color" id="Black" checked />
+          </div>
+          <div class="bl-container">
+            <img
+              class="dress-size"
+              src="/Form-Controls/blue.jpg"
+              alt="Bluedress"
+            />
+            <label for="Blue">Blue</label>
+            <input type="radio" name="color" id="Blue" checked />
+          </div>
 
+          <div class="r-container">
+            <img
+              class="dress-size"
+              src="/Form-Controls/red.jpg"
+              alt="Reddress"
+            />
+            <label for="Red">Red</label>
+            <input type="radio" name="color" id="Red" checked />
+          </div>
+        </fieldset>
+
+        <fieldset class="sizecontainer">
+          <legend>Sizes</legend>
+          <label for="xs">XS</label>
+          <input type="radio" name="Size" id="xs" />
+          <label for="s">S</label>
+          <input type="radio" name="size" id="s" checked />
+          <label for="m">M</label>
+          <input type="radio" name="size" id="m" />
+          <label for="l">L</label>
+          <input type="radio" name="size" id="l" />
+          <label for="xl">XL</label>
+          <input type="radio" name="size" id="xl" />
+          <label for="xxl">XXL</label>
+          <input type="radio" name="size" id="xxl" />
+        </fieldset>
+
+        <fieldset class="datecontainer">
+          <legend>Pleas Choose Delivery Date</legend>
+          <label for="d">any day you want</label>
+          <input
+            type="date"
+            name="deliveryTime"
+            id="d"
+            min="2022-11-10"
+            max="2023-12-30"
+            required
+          />
+          <button type="submit">Order</button>
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <h2>By Mana Ghabraei</h2>
+    </footer>
+  </body>
 </html>

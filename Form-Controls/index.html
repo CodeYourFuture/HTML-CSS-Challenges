@@ -14,6 +14,44 @@
   </header>
   <main>
   <form>
+    <div class="section">
+    <div class="name">
+      <label for="name">Enter your Name* (2 to 8 characters):</label>
+    
+      <input type="text" id="name" name="name" required minlength="2" maxlength="8" size="10" />
+    </div>
+    <div class="email">
+      <label for="email">Enter your e-mail*</label>
+      <input type="email" id="email" name="email" required size="30" />
+    </div>
+    <div class="select-color">
+      <label for="color">Choose your T-shirt color*</label>
+      <select name="color" id="color" required>
+        <option value="red">Red</option>
+       <option value="green">Green</option>
+        <option value="blue">Blue</option>
+      </select>
+    </div>
+    
+    <div class="select-size">
+      <label for="size">Choose your T-shirt size*</label>
+      <select name="size" id="size" required>
+        <option value="xs">XS</option>
+        <option value="s">S</option>
+        <option value="m">M</option>
+        <option value="l">L</option>
+        <option value="xl">XL</option>
+        <option value="xxl">XXL</option>
+      </select>
+    </div>
+    <div>
+      <label for="delivery-date">Choose delivery date*</label>
+    
+      <input type="date" id="delivery-date" name="delivery-date" value="2022-11-10" min="2022-11-10" max="2022-12-01"
+        step="1" required />
+    </div>
+    <p><button>Submit</button></p>
+    </div>
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
   </form>
@@ -21,7 +59,7 @@
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Oleksii Chepurnyi</h2>
   </footer>
 </body>
 

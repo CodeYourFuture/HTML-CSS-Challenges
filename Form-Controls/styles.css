@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body {
-    padding: 10px;
+    padding: 50px;
     
 }
 .header {
@@ -55,7 +55,7 @@ fieldset img {
 .container {
     border-radius: 10px;
     padding: 10px;
-    display: flex;
+    display: grid;
     border: 1px solid rgb(218, 213, 213);
     
 }
@@ -183,6 +183,16 @@ input:focus {
         width: 100%;
     }
 } */
+@media (min-width: 900px) {
+    .container {
+        display: flex;
+        padding: 20px;
+    }
+
+
+}
+    
+
         
         
 

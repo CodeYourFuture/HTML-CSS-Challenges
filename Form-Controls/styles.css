@@ -30,7 +30,7 @@ form {
   border-bottom: 18px solid #d8cefe;
 }
 
-#details1 {
+.details1 {
   background-color: #ddebf8;
   display: flex;
   flex-direction: column;
@@ -61,7 +61,7 @@ legend {
   font-weight: bold;
 }
 
-#details3 {
+.details2 {
   display: flex;
   flex-direction: column;
   background-color: #ddebf8;
@@ -108,17 +108,26 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
-  form {
+  body {
+    display: flex;
     flex-direction: column;
-    margin-top: 1em;
-    font-size: 1em;
-  }
-  fieldset {
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    background-color: aliceblue;
   }
   main {
-    margin: 1em;
+    width: 100%;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    width: 100%;
+  }
+
+  .details1 {
+    width: 80%;
+  }
+
+  .details2 {
+    width: 80%;
   }
 }

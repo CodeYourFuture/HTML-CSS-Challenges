@@ -273,4 +273,24 @@ footer .horizontal_line {
   .bottom-left-text {
     visibility: hidden;
   }
+
+  .logo {
+    height: 40px;
+    width: auto;
+  }
+
+  form .row,
+  form fieldset {
+    margin: 0;
+  }
+
+  form fieldset .colorbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  form .button {
+    margin-top: 20px;
+  }
 }

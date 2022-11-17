@@ -1,0 +1,57 @@
+header h1 {
+    margin: 0;
+    padding-top: 1em;
+    text-align: center;
+  }
+  body {
+    background: rgb(198, 157, 207);
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  footer h3 {
+    text-align: center;
+  }
+
+  form{
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    font-size: 1.5em;
+    font-style: normal;
+    border: 5px;
+    border-radius: 5px;
+  }
+
+  input, select {
+    display: inline-block;
+    border: solid 1px whitesmoke;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 5px 0;
+    transition: 0.2s;
+  }
+
+  input:focus,
+  select:focus {
+    outline: none;
+  }
+
+  
+  input {
+    margin-bottom: 1em;
+  }
+  .sizes {
+    display: inline-block;
+    margin-top: 1em;
+  }
+
+  
+
+footer {
+    display: flex;
+    justify-content: center;
+}

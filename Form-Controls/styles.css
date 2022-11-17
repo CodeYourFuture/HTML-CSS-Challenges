@@ -38,9 +38,31 @@ header h1 {
   input:focus,
   select:focus {
     outline: none;
+    box-shadow: 0 0 0 2px rgb(239, 236, 7);
+    transition: 0.2s;
   }
 
-  
+  input[type="submit"]{
+    outline: none;
+    background: yellow;
+    color: rgb(116, 0, 116);
+  }
+  input[type="submit"]:hover{
+   border: outset 1px blue;
+  }
+  input[type="submit"]:active{
+    border: inset 1px blue;
+   }
+
+   input[type="radio"]{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 10px;
+   }
+
+
+
   input {
     margin-bottom: 1em;
   }

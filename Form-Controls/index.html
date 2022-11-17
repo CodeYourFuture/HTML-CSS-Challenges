@@ -7,6 +7,9 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Inconsolata&family=Odibee+Sans&family=Open+Sans:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -16,12 +19,54 @@
   <form>
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
+    <legend><h3>Customer Information Form</h3></legend>
+        <label for="fname">First Name</label>
+        <input type="text" id="firstname" name="name" minlength="3" required />
+        <label for="lname">Last Name</label>
+        <input type="text" id="lastname" name="name" minlength="3" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" minlength="8" required />
+        <label for="colour">Choose a colour</label>
+        <select name="colour" id="colour" required>
+          <option value="forest green">Forest Green</option>
+          <option value="mauve">Mauve</option>
+          <option value="tumeric">Tumeric</option>
+          <option value="prussian blue">Prussian Blue</option>
+        </select>
+        <div class="sizes">
+            <label for="size">Select your size</label>
+            <input type="radio" id="sizeXS" name="size" required />
+            <label for="sizeXS">XS</label>
+            <input type="radio" id="sizeS" name="size" />
+            <label for="sizeS">S</label>
+            <input type="radio" id="sizeM" name="size" />
+            <label for="sizeM">M</label>
+            <input type="radio" id="sizeL" name="size" />
+            <label for="sizeL">L</label>
+            <input type="radio" id="sizeXL" name="size" />
+            <label for="sizeXL">XL</label>
+            <input type="radio" id="sizeXXL" name="size" />
+            <label for="sizeXXL">XXL</label>
+        </div>
+        <div>
+          <label for="date">Delivery date</label>
+          <input
+            type="date"
+            id="date"
+            name="date"
+            value="2022-11-01"
+            min="2022-11-01"
+            max="2022-11-30"
+            required
+          />
+        </div>
+        <input type="submit" value="Submit" />
   </form>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>&#169; YING XING</h2>
   </footer>
 </body>
 

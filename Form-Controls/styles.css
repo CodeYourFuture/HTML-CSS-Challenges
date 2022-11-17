@@ -1,0 +1,64 @@
+header h1 {
+  margin: 0;
+  padding-top: 1em;
+  text-align: center;
+}
+body {
+  background: white;
+  color: #1c2022;
+}
+
+footer h3 {
+  text-align: center;
+}
+
+form {
+  border-left: 0.7em solid #ff01ff;
+  font-size: 1.3em;
+  text-decoration: solid;
+  border-width: 5px;
+  padding: 20px 80px 20px 80px;
+}
+form {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+form label {
+  margin-bottom: 10%;
+}
+
+#lname,
+#fname,
+#email,
+#date,
+#colour {
+  width: 100%;
+  background: white;
+}
+input {
+  margin-bottom: 2em;
+}
+.sizes {
+  margin-top: 1em;
+}
+
+input[type="submit"] {
+  background-color: #ff01ff;
+  width: 8em;
+  height: 2em;
+  border-radius: 20px;
+  padding: 0;
+  border: none;
+  margin: 0;
+  font-size: 1em;
+  color: white;
+}
+
+input,
+select {
+  background: white;
+  border: none;
+  border-bottom: 1px solid #ff01ff;
+  color: #2b3337;
+}

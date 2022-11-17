@@ -1,28 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <form>
+        <legend><h3>Purchase Form</h3></legend>
+        <!-- write your html here-->
+        <!-- try writing out the requirements first-->
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="name" minlength="2" required />
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="name" minlength="2" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" minlength="5" required />
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
-
+        <label for="colour">Choose a colour</label>
+        <select name="colour" id="colour" required>
+          <option value="olive">Olive</option>
+          <option value="lavander">Lavander</option>
+          <option value="violet">Violet</option>
+          <option value="ruby">Ruby</option>
+        </select>
+        <div class="sizes">
+          <label for="size">Select a T-shirt size</label>
+          <input type="radio" id="sizeXS" name="size" required />
+          <label for="sizeXS">XS</label>
+          <input type="radio" id="sizeS" name="size" />
+          <label for="sizeS">S</label>
+          <input type="radio" id="sizeM" name="size" />
+          <label for="sizeM">M</label>
+          <input type="radio" id="sizeL" name="size" />
+          <label for="sizeL">L</label>
+          <input type="radio" id="sizeXL" name="size" />
+          <label for="sizeXL">XL</label>
+          <input type="radio" id="sizeXXL" name="size" />
+          <label for="sizeXXL">XXL</label>
+        </div>
+        <div>
+          <label for="date">Delivery date</label>
+          <input
+            type="date"
+            id="date"
+            name="date"
+            value="2022-11-10"
+            min="2022-11-10"
+            max="2022-11-14"
+            required
+          />
+        </div>
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <h3><i>© By Lorena Capraru</i></h3>
+    </footer>
+  </body>
 </html>

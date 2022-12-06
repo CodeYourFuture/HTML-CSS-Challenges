@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <style>
+    body {
+      text-align: center;
+    }
+    
+  </style>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>My form exercise</title>
@@ -9,20 +15,98 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <Body background="/tshirts.images.jpeg">
   <header>
-    <h1>Product Pick</h1>
+    <div class="header">
+    <h1>CYF SUMMER T-SHIRTS</h1>
+    </div>
   </header>
   <main>
   <form>
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
+    <!-- <body background="https://t4.ftcdn.net/jpg/05/22/67/43/360_F_522674359_NJMwyFsdu2B6w2E6HppimJsSBluYo6Ez.jpg"> -->
+    
+      <form class="orderform">
+        <input type="hidden" value="credit details" name="SUMMER-T-SHIRTs" />
+
+        <div class="logo">
+          <img src="/cyf_brandlogo.png" alt="CYF-logo" style="height: 50px; width: 155px;">
+        </div>
+    
+        <header>
+          <h3>Online Order Form</h3>
+        </header>
+
+          <div class="details">
+        <label for="first_name">FIRST NAME </label>
+        <input required minLength="2" maxLength="25" type="text" name="First_name" id="first_name" />
+        <br>
+        <label for="last_name">LAST NAME</label>
+        <input required minLength="2" maxLength="25" type="text" name="last_name" id="last_name" /> <br>
+    
+        <label>EMAIL</label>
+        <input required type="email" name="customers_email" id="email" />
+        </div>
+          
+        <div class="pick-colour">
+           <div class="colours"> <img src="/red-tshirt.png" alt="red-tshirt" style="height: 100px; width: 90px;"/>
+        <label for="colour">RED<p>(Polo & Crew style)</p></label>
+        <input required type="radio" value="red" name="colour"  
+         id="colour-selector"/> </div>
+
+            <div class="colours"> <img src="/black-tshirt.jpeg" alt="black-tshirt" style="height: 100px; width: 90px;" />
+              <label for="colour">BLACK<p>(Polo & Crew style)</p></label>
+              <input required type="radio" value="black" name="colour" id="colour-selector" /> </div>
+
+              <div class="colours"> <img src="/whte-tshirt.png" alt="white-tshirt" style="height: 100px; width: 90px;" />
+                <label for="colour">WHITE<p>(Crew neck only)</p></label>
+                <input required type="radio" value="white" name="colour" id="colour-selector" /> </div>
+
+                <div class="colours"> <img src="/green.poloshirt.png" alt="green-tshirt" style="height: 100px; width: 90px;" />
+                  <label for="colour">GREEN<p>(Polo style only)</p></label>
+                  <input required type="radio" value="green" name="colour" id="colour-selector" />
+                  
+                </div>
+           </div>
+        
+    
+        <label for="size">CHOOSE YOUR SIZE.</label>
+        <select required id="size" name="tshirt-size">
+          <option value="Extra_Large">Extra Large</option>
+          <option value="Large">Large</option>
+          <option value="Medium">Medium</option>
+          <option value="Small">Small</option>
+          <option value="Extra small">Extra Small</option>
+    
+        </select>
+    
+        <br><br>
+
+      <!-- <h4>Pick a DELIVERY DATE:
+        <input type="datetime-local" id="dateTime">
+      </h4> -->
+
+      <label for="start">Pick a DELIVERY date:</label>
+      
+      <input type="date" id="start" name="trip-start" value="2022-11-10" min="2022-12-10" max="2023-01-30">
+    
+        <label for="special_requests">Please write any special instructions for your parcel delivery.  </label>
+        <textarea name="special_requests" id="requests" columns="15" rows="10">
+      </textarea>
+        <br> <br>
+        <button class="button"><strong>Submit</strong></submit>
+    
+      </form>
+    </body>
   </form>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By GAYLE NGOZEE</h2>
   </footer>
+  </Body>
 </body>
 
 </html>

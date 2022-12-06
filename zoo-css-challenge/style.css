@@ -2,6 +2,14 @@
   font-family: sans-serif;
 }
 
+#logo{
+  border: none;
+}
+
+.introduction{
+  background-color: #fffffc;
+}
+
 header {
   background-color: #211a1d;
   color: #ffffff;

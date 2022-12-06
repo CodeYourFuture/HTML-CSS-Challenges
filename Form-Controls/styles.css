@@ -1,8 +1,10 @@
 
 body{
-    background-color: #ED4343;
-
-    
+    background-color: #ED4343;   
+}
+main{
+display: flex;
+justify-content: center;
 }
 
 form{  
@@ -12,10 +14,8 @@ form{
         display: flex;
         flex-direction: column;
         max-width: 860px;
-        margin-left: 380px;
-        margin-right: 10px;
-        text-indent: 30px;
         font-size: 1rem;
+        background-image: ;
 }
 
 .input {
@@ -29,26 +29,30 @@ input:focus {
 }
 
 .button {
-    width: 80px;
+    width: 100px;
     padding: 15px;
-    margin-left: 350px;
-    background-color: #ED4343;
-    margin-bottom: 20px;
+    margin-left: 280px;
+    background-color: #0af358;
+    margin-bottom: 40px;
+    border-radius: 40%;
+    font-style: oblique;
+    font-size: large;
 }
 
 .header{
-    background-color: #ED4343;
+    background-color:;
     width: fit-content;
-    align: center;
     margin-top: 4rem;
+    text-shadow: 2px 2px #0f0101;
 }
 
 header {
-    color: #070101;
-    text-indent: 250px;
+    color: #035910;
     text-transform: uppercase; 
-    text-align: center;
-    font-size: 1.2rem;  
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem; 
+    
 }
 
 
@@ -66,6 +70,7 @@ header {
 }
 h3{
     text-align: justify;
+    text-decoration-color: #0f0101;
 }
 
 .details{

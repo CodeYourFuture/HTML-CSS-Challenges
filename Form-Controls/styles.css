@@ -8,7 +8,7 @@ justify-content: center;
 }
 
 form{  
-    border: purple solid 5px;
+    border: #f5f2f2 solid 5px;
        border-radius: 5%;
         background-color: rgb(228, 225, 225);
         display: flex;
@@ -40,37 +40,19 @@ input:focus {
 }
 
 .header{
-    background-color:;
+    background-color:#f8f3f3;
     width: fit-content;
     margin-top: 4rem;
     text-shadow: 2px 2px #0f0101;
+    border-radius: 10%;
 }
 
 header {
-    color: #035910;
+    color: #ED4343;
     text-transform: uppercase; 
     display: flex;
     justify-content: center;
-    font-size: 1.2rem; 
-    
-}
-
-
-/* fieldset {
-    margin-top: 60px;
-    height: 60px;
-    background-color: #f1a587;
-    text-transform: uppercase;
-    text-indent: 15px;
-    gap: 20px;
-} */
-
-#blue {
-    text-decoration-color: #e80b0b;
-}
-h3{
-    text-align: justify;
-    text-decoration-color: #0f0101;
+    font-size: 1.2rem;   
 }
 
 .details{
@@ -93,4 +75,13 @@ size{
 
 .special-requests{
     margin-top: 4rem;
+}
+.footer-icons img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+footer{
+    margin-top: 40px;
+    background-color: #fff;
 }

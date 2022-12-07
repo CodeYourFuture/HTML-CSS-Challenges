@@ -73,6 +73,11 @@ button {
   background-color: #372772;
   border: 2px solid black;
   color: #fff;
+  font-size: 1.2rem;
+  border-radius: 25px;
+}
+button:hover {
+  background-color: #10ca42;
 }
 
 footer {

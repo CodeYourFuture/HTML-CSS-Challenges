@@ -141,6 +141,10 @@ text-decoration-color: #454545;
   color: #F4743B;
 }
 
+.news{
+  text-align: center;
+}
+
 .card {
   display: inline-block;
   background-color: white;

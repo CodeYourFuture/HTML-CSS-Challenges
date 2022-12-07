@@ -8,6 +8,7 @@
 
 .introduction{
   background-color: #fffffc;
+  letter-spacing: 1px;
 }
 
 header {
@@ -83,9 +84,6 @@ footer {
   justify-content: space-between;
 }
 
-.introduction {
-}
-
 #badge {
   height: 120px;
   width: 120px;
@@ -111,14 +109,21 @@ footer {
   font-size: 125%;
 }
 
-.image-container img {
+.bear1{
   vertical-align: top;
-  border: 5px solid #747c92;
+  border: 5px solid #0de847;
 }
 
-.image-container img:first-of-type {
-  vertical-align: bottom;
+.bear2{
+  vertical-align: top;
+  border: 5px solid #088aab;
 }
+
+.bear3{
+  vertical-align: top;
+  border: 5px solid #e8a60d;
+}
+
 
 .tigers {
   background-color: #0b3c49;

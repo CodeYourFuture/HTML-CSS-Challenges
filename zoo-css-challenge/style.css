@@ -96,7 +96,7 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 
   display: flex;
@@ -202,18 +202,38 @@ text-decoration-color: #454545;
 .membership {
   text-align: center;
   background-color: #fffffc;
+  margin-left: 300px;
+  max-width: 700px;
 }
 
 .membership h2 {
   color: #ff3f00;
+  display: center;
 }
 
 .membership strong {
   color: #ff7f11;
 }
+.membership p{
+  max-width: 700px;
+  text-align: justify;
+}
 
 /*Programs*/
 
-.programs .card {
-  display: block;
+.programs card{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  width: 100%;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+}
+.links{
+  display: flex;
+}
+.programs h2{
+  display: center;
 }

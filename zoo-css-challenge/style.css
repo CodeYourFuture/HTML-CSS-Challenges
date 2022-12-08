@@ -2,6 +2,15 @@
   font-family: sans-serif;
 }
 
+#logo{
+  border: none;
+}
+
+.introduction{
+  background-color: #fffffc;
+  letter-spacing: 1px;
+}
+
 header {
   background-color: #211a1d;
   color: #ffffff;
@@ -64,6 +73,11 @@ button {
   background-color: #372772;
   border: 2px solid black;
   color: #fff;
+  font-size: 1.2rem;
+  border-radius: 25px;
+}
+button:hover {
+  background-color: #10ca42;
 }
 
 footer {
@@ -75,9 +89,6 @@ footer {
   justify-content: space-between;
 }
 
-.introduction {
-}
-
 #badge {
   height: 120px;
   width: 120px;
@@ -85,7 +96,7 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 
   display: flex;
@@ -103,27 +114,40 @@ footer {
   font-size: 125%;
 }
 
-.image-container img {
+.bear1{
   vertical-align: top;
-  border: 5px solid #747c92;
+  border: 5px solid #0de847;
 }
 
-.image-container img:first-of-type {
-  vertical-align: bottom;
+.bear2{
+  vertical-align: top;
+  border: 5px solid #088aab;
 }
+
+.bear3{
+  vertical-align: top;
+  border: 5px solid #e8a60d;
+}
+
 
 .tigers {
-  background-color: #0b3c49;
-  color: #f0e100;
+  background-color: #EFE8FD;
+text-decoration-color: #454545;
 }
 
 .giraffe {
-  background-color: #465775;
-  color: #56e39f;
+  background-color: #483C46;
+}
+.giraffe p{
+  color: #BEEE62;
 }
 
 .giraffe h2 {
-  color: #ef6f6c;
+  color: #F4743B;
+}
+
+.news{
+  text-align: center;
 }
 
 .card {
@@ -178,18 +202,38 @@ footer {
 .membership {
   text-align: center;
   background-color: #fffffc;
+  margin-left: 300px;
+  max-width: 700px;
 }
 
 .membership h2 {
   color: #ff3f00;
+  display: center;
 }
 
 .membership strong {
   color: #ff7f11;
 }
+.membership p{
+  max-width: 700px;
+  text-align: justify;
+}
 
 /*Programs*/
 
-.programs .card {
-  display: block;
+.programs card{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  width: 100%;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+}
+.links{
+  display: flex;
+}
+.programs h2{
+  display: center;
 }

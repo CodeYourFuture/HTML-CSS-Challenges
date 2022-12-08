@@ -1,0 +1,87 @@
+
+body{
+    background-color: #ED4343;   
+}
+main{
+display: flex;
+justify-content: center;
+}
+
+form{  
+    border: #0e70e9 solid 5px;
+       border-radius: 5%;
+        background-color: rgb(228, 225, 225);
+        display: flex;
+        flex-direction: column;
+        max-width: 860px;
+        font-size: 1rem;
+        background-image: ;
+}
+
+.input {
+    margin-top: 6px;
+    margin-bottom: 5px;
+
+}
+
+input:focus {
+    border: 10px solid red;
+}
+
+.button {
+    width: 100px;
+    padding: 15px;
+    margin-left: 280px;
+    background-color: #0af358;
+    margin-bottom: 40px;
+    border-radius: 40%;
+    font-style: oblique;
+    font-size: large;
+}
+
+.header{
+    background-color:#f8f3f3;
+    width: fit-content;
+    margin-top: 4rem;
+    text-shadow: 2px 2px #0f0101;
+    border-radius: 10%;
+}
+
+header {
+    color: #ED4343;
+    text-transform: uppercase; 
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;   
+}
+
+.details{
+    padding: 8px 8px;
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    height: 50px;
+    width: 155px;
+}
+.pick-colour{
+    display: flex;
+    padding: 1rem;
+    margin: 20px;
+}
+size{
+    padding: 15px;
+}
+
+.special-requests{
+    margin-top: 4rem;
+}
+.footer-icons img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+footer{
+    margin-top: 40px;
+    background-color: #fff;
+}

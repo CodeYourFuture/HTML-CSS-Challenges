@@ -27,19 +27,18 @@ main {
 }
 
 h1 {
-  margin-top: 4rem;
+  margin: 3rem;
   text-align: center;
 }
 
 h2 {
-  margin-bottom: 4rem;
+  margin: 3rem;
   text-align: center;
 }
 
 form {
   display: flex;
   flex-direction: column;
-
   padding: 2rem 4rem;
 }
 
@@ -51,6 +50,7 @@ select {
 }
 
 fieldset {
+  width: 50%;
   padding: 20px;
   background-color: white;
 }
@@ -66,14 +66,17 @@ input:focus {
 
 /* Media Query */
 
-@media screen and (max-width: 950px) {
-  body {
+@media screen and (max-width: 1200px) {
+  main {
     margin: 5rem 10rem;
   }
 }
 
-@media screen and (max-width: 550px) {
-  body {
-    margin: 5rem;
+@media screen and (max-width: 850px) {
+  main {
+    margin: 1rem;
+  }
+  form {
+    padding: 0px;
   }
 }

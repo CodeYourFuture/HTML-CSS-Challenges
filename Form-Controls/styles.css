@@ -1,0 +1,18 @@
+form {
+    font: 1em sans-serif;
+    max-width: 320px;
+}
+
+body {
+    padding-left: 10%;
+}
+  
+p > label {
+    display: block;
+}
+  
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+}

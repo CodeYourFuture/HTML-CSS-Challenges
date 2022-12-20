@@ -13,15 +13,57 @@
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+    <form>
+      <p>
+        <label for="n1">What is your name?</label>
+        <input type="text" required pattern="[A-Za-z]+" id="n1" name="name">
+      </p>
 
+      <p>
+        <label for="n2">What's your e-mail address?</label>
+        <input type="email" id="n2" name="email">
+      </p>
+      
+      <p>
+        <label for="t1">Choose your T-shirt color<span aria-label="required">*</span></label>
+        <select id="l1" required>
+          <option value="" disabled selected></option>
+          <option value="yellow" disabled>yellow</option>
+          <option value="blue">blue</option>
+          <option value="red">red</option>
+          <option value="black" disabled>black</option>
+          <option value="yellow">yellow</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="t2">Choose your size<span aria-label="required">*</span></label>
+        <select id="l2" required>
+          <option value="xs">XS</option>
+          <option value="s">S</option>
+          <option value="m">M</option>
+          <option value="l">L</option>
+          <option value="xl">XL</option>
+          <option value="xxl">XXL</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="t3">Choose your delivery date</label>
+       
+        <input type="date" id="t3" min="2022-11-09" max="2022-12-09" required/> *
+        <br>
+        <small>*in next four weeks from 09.11.2022</small>
+      </p>
+
+      <p>
+        <button>Submit</button>
+      </p>
+    </form>
+  
   </main>
   <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Yigit Senoglu</h2>
   </footer>
 </body>
 

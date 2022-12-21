@@ -63,8 +63,9 @@ h3 {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   grid-template-areas: "myState partnerState";
-  justify-content: space-around;
-  margin: 4rem 8rem;
+  justify-content: center;
+  align-content: center;
+  margin: 4rem;
   gap: 4rem;
 }
 
@@ -89,8 +90,9 @@ img {
 }
 
 ol {
-  padding: 2rem 2rem 0rem 2rem;
+  padding: 1rem 1.5rem 0rem 1.5rem;
 }
+
 .partnerStatement {
   grid-area: partnerState;
 }
@@ -102,5 +104,16 @@ ol {
     grid-template-areas:
       "myState"
       "partnerState";
+    gap: 2rem;
+  }
+
+  .style {
+    padding: 1rem;
+  }
+
+  h1,
+  h2,
+  h3 {
+    margin: 1rem;
   }
 }

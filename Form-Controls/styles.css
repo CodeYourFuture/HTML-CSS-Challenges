@@ -23,6 +23,7 @@ main {
   height: 100%;
   line-height: 2rem;
   border: 2px double darkblue;
+  border-radius: 3ch;
   background-color: aliceblue;
 }
 

@@ -1,5 +1,6 @@
 * {
   font-family: sans-serif;
+  box-sizing: border-box;
 }
 
 header {
@@ -29,9 +30,9 @@ section {
   background-color: #f8f0fb;
 }
 
-img {
+/* img {
   border: 5px solid #8075ff;
-}
+} */
 
 h1,
 h2,
@@ -39,12 +40,14 @@ h3,
 h4,
 h5 {
   /*Purple*/
-  color: #6320ee;
+  color: #948f8f;
+  text-shadow:white;
   margin-bottom: 1em;
 }
 
 h1 {
   font-size: 250%;
+  margin-bottom: 0%;
 }
 
 h2 {
@@ -76,6 +79,8 @@ footer {
 }
 
 .introduction {
+  text-align: center;
+  font-size: 1rem;
 }
 
 #badge {
@@ -103,14 +108,54 @@ footer {
   font-size: 125%;
 }
 
-.image-container img {
+.bears {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.bears-text {
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  
+}
+
+.image-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: auto;
+  margin-top: 0%;
+  width: 50%;
+}    
+
+.bear1 {
+  border: 0.5rem solid #045f86;
+}
+
+.bear2 {
+  border: 0.5rem solid #93f7f3;
+}
+
+.bear3 {
+  border: .5rem solid #2f9fcf;
+}
+
+
+/* .image-container img {
   vertical-align: top;
   border: 5px solid #747c92;
 }
 
 .image-container img:first-of-type {
   vertical-align: bottom;
-}
+} */
 
 .tigers {
   background-color: #0b3c49;
@@ -118,12 +163,22 @@ footer {
 }
 
 .giraffe {
-  background-color: #465775;
-  color: #56e39f;
+  background-color: #483C46;
+  color:#BEEE62;
 }
 
 .giraffe h2 {
-  color: #ef6f6c;
+  color:#F4743B;
+}
+
+.giraffe  .first-text{
+  font-size: larger;
+}
+
+/* ------section news-------- */
+
+.news h2{
+  text-align: center;
 }
 
 .card {
@@ -154,11 +209,11 @@ footer {
 /*Education*/
 
 .education {
-  height: 500px;
+  height: 100%;
   background-image: url("https://source.unsplash.com/1200x900/?tiger");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  /* background-position: center; */
   padding: 100px 5%;
 }
 
@@ -166,6 +221,7 @@ footer {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  border-radius: 6%;
 }
 
 .education-container h3,
@@ -173,11 +229,25 @@ footer {
   margin-bottom: 1em;
 }
 
+.education button{
+  font-size: larger;
+}
+
+
+
+.education button:hover:focus{
+  font-size: larger;
+  background-color: #84e1e6;
+  color: rgb(4, 4, 119);
+}
+
 /*Membership*/
 
 .membership {
   text-align: center;
+  margin: auto;
   background-color: #fffffc;
+  gap: 0.05rem;
 }
 
 .membership h2 {
@@ -188,8 +258,15 @@ footer {
   color: #ff7f11;
 }
 
+.membership p {
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
 /*Programs*/
 
 .programs .card {
-  display: block;
+  display: inline-block;
+
 }

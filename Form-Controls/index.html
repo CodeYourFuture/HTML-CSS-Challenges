@@ -1,28 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <form action="" method="">
+        <section>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            required
+            minlength="2"
+            pattern="[a-zA-Z]{2,}"
+          />
+        </section>
 
+        <section>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            required
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+          />
+        </section>
+
+        <section>
+          <fieldset>
+            <legend>Colour:</legend>
+            <div>
+              <input type="radio" name="colour" id="blue" required />
+              <label for="blue">Blue</label>
+            </div>
+            <div>
+              <input type="radio" name="colour" id="green" />
+              <label for="green">Green</label>
+            </div>
+            <div>
+              <input type="radio" name="colour" id="black" />
+              <label for="black">Black</label>
+            </div>
+          </fieldset>
+        </section>
+
+        <section>
+          <label for="size">Size:</label>
+        </section>
+        <section>
+          <select id="size" required>
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+          </select>
+        </section>
+        <section>
+          <label for="delivery">Delivery Date:</label>
+          <input
+            type="date"
+            name="delivery"
+            id="delivery"
+            min="2023-01-16"
+            required
+          />
+        </section>
+
+        <section>
+          <input type="submit" value="Submit" />
+        </section>
+      </form>
+    </main>
+    <footer>
+      <h2>By Farzaneh Haghani</h2>
+    </footer>
+  </body>
 </html>

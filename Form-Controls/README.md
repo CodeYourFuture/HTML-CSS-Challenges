@@ -35,19 +35,19 @@ Let's write out our testable criteria:
 
 ### HTML
 
-- [ * ] My form is semantic html.
-- [ * ] All inputs have associated labels.
-- [ * ] My Lighthouse Accessibility score is 100.
-- [ * ] I require a valid name. I have defined a valid name as a text string of two characters or more.
-- [ * ] I require a valid email.
-- [ * ] I require one colour from a defined set of 3 colours.
-- [ * ] I require one size from a defined set of 6 sizes.
-- [ * ] I require one date from a constrained date range.
+- [x] My form is semantic html.
+- [x] All inputs have associated labels.
+- [x] My Lighthouse Accessibility score is 100.
+- [x] I require a valid name. I have defined a valid name as a text string of two characters or more.
+- [x] I require a valid email.
+- [x] I require one colour from a defined set of 3 colours.
+- [x] I require one size from a defined set of 6 sizes.
+- [x] I require one date from a constrained date range.
 
 ### CSS
 
-- [ * ] I show which element is focused.
-- [ * ] My Lighthouse Accessibility score is 100.
+- [x] I show which element is focused.
+- [x] My Lighthouse Accessibility score is 100.
 
 ## Extension Task
 

@@ -39,9 +39,10 @@
                 required
               /><br />
             </div>
-
+            
+            <fieldset>
+            <legend>Choose your favourite color:</legend>
             <div>
-              <label>Choose your favourite color:</label><br />
               <input
                 type="radio"
                 id="red"
@@ -55,17 +56,18 @@
               <input type="radio" id="green" name="fav_color" value="green" />
               <label for="green">Green</label><br />
             </div>
+            </fieldset>
 
-            <div>
+            <div class="dropdown">
               <label for="size">Choose the size:</label>
-              <select id="size" name="size">
+              <select class="size" name="size">
                 <option value="xs">XS</option>
                 <option value="s">S</option>
                 <option value="m">M</option>
                 <option value="l">L</option>
                 <option value="xl">XL</option>
-                <option value="xxl">XL</option></select
-              ><br />
+                <option value="xxl">XXL</option>
+              </select>
             </div>
 
             <div>
@@ -77,10 +79,12 @@
                 value="2023-01-13T12:30"
                 min="2023-01-10T00:00"
                 max="2023-02-10T00:00"
-              /><br />
+              />
             </div>
-
-            <input type="submit" value="Submit" />
+             
+            <div>
+              <button class="submit">Submit</button>
+            </div>
           </form>
         </div>
       </section>

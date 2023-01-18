@@ -1,3 +1,6 @@
+html {
+  font-size: calc(0.75rem + 1.5vw);
+}
 
 h1{
     text-align: center;
@@ -7,7 +10,7 @@ h1{
 h2{ 
     text-align: center;
     color: #354f52;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 div{
@@ -16,9 +19,10 @@ div{
 
 .product-form{
     background-color: #588157;
+    min-width: 300px;
     margin: 0px 10em;
     padding: 20px;
-    min-width: 300px;
+    align-items: center;
 }
 
 label{
@@ -32,16 +36,23 @@ input{
     border-radius: 5px;
 }
 
-input[type="submit"]{
-   background-color: #344e41;
-   color: aliceblue;
-   padding: 10px 20px;
+.dropdown{
+    margin-top: 20px;
 }
 
-#size{
+.size{
     padding: 5px 15px;
     border: 2px solid #dad7cd;
     border-radius: 5px;
 }
 
+.submit{
+   background-color: #344e41;
+   color: aliceblue;
+   margin-left: 20px;
+   padding: 10px 20px;
+   font-size: 18px;
+   border: 2px solid #dad7cd;
+   border-radius: 5px;
+}
 

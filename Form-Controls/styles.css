@@ -1,0 +1,58 @@
+html {
+  font-size: calc(0.75rem + 1.5vw);
+}
+
+h1{
+    text-align: center;
+    color: #354f52;
+}
+
+h2{ 
+    text-align: center;
+    color: #354f52;
+    font-size: 16px;
+}
+
+div{
+    margin-bottom: 20px;
+}
+
+.product-form{
+    background-color: #588157;
+    min-width: 300px;
+    margin: 0px 10em;
+    padding: 20px;
+    align-items: center;
+}
+
+label{
+    padding:20px;
+}
+
+input{
+    margin: 10px 20px;
+    padding: 10px 30px;
+    border: 2px solid #dad7cd;
+    border-radius: 5px;
+}
+
+.dropdown{
+    margin-top: 20px;
+}
+
+.size{
+    padding: 5px 15px;
+    border: 2px solid #dad7cd;
+    border-radius: 5px;
+}
+
+.submit{
+   background-color: #344e41;
+   color: aliceblue;
+   margin-left: 20px;
+   padding: 10px 20px;
+   font-size: 18px;
+   border: 2px solid #dad7cd;
+   border-radius: 5px;
+}
+

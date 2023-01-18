@@ -1,28 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+    <main>
+      <section>
+        <div class="product-form">
+          <form>
+            <!-- write your html here-->
+            <!-- try writing out the requirements first-->
+            <div>
+              <label for="name">Enter Name:</label><br />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                pattern="[a-zA-Z\s]+"
+                minlength="2"
+                maxlength="15" 
+                required
+              /><br />
+              <label for="email">Enter Email:</label><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                required
+              /><br />
+            </div>
+            
+            <fieldset>
+            <legend>Choose your favourite color:</legend>
+            <div>
+              <input
+                type="radio"
+                id="red"
+                name="fav_color"
+                value="red"
+                checked
+              />
+              <label for="red">Red</label><br />
+              <input type="radio" id="yellow" name="fav_color" value="yellow" />
+              <label for="yellow">Yellow</label><br />
+              <input type="radio" id="green" name="fav_color" value="green" />
+              <label for="green">Green</label><br />
+            </div>
+            </fieldset>
 
+            <div class="dropdown">
+              <label for="size">Choose the size:</label>
+              <select class="size" name="size">
+                <option value="xs">XS</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+                <option value="xxl">XXL</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="collection-time">Choose collection time:</label>
+              <input
+                type="datetime-local"
+                id="collection-time"
+                name="collection-time"
+                value="2023-01-13T12:30"
+                min="2023-01-10T00:00"
+                max="2023-02-10T00:00"
+              />
+            </div>
+             
+            <div>
+              <button class="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <!-- change to your name-->
+      <h2>Created by Zaw Khing</h2>
+    </footer>
+  </body>
 </html>

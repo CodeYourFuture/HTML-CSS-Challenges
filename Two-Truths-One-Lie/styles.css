@@ -30,4 +30,39 @@
 
 body {
   font: 100% "Poppins", sans-serif;
+  background-color: #219ebc;
+}
+
+header,footer{
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  justify-content: space-around;
+  margin:5em 0;
+}
+
+.card{
+  display: grid;
+  grid-template-columns: 150px 150px;
+  grid-template-rows: 100px 100px;
+  background-color: aliceblue;
+  width: 300px;
+  height: auto;
+  margin: 30px;
+  padding: 20px;
+}
+
+.grid-card{
+  grid-column: 1/-1;
+  grid-row: 2/2;
+}
+
+
+@media screen and (max-width: 500px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
 }

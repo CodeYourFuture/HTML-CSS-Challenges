@@ -153,12 +153,18 @@ h6{
 }
 
 .giraffe {
-  background-color: #465775;
+  background-color: #483C46;
   color: #56e39f;
+  font-size: larger;
 }
 
+
 .giraffe h2 {
-  color: #ef6f6c;
+  color: #F4743B;
+}
+
+p{
+  color: #BEEE62;
 }
 
 .card {

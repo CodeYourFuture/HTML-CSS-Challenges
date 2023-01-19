@@ -12,9 +12,11 @@ header {
 
 .introduction {
   background-color: white;
+  text-align: center;
 }
 
 body {
+  text-align: center;
   line-height: 1.5;
   letter-spacing: 1px;
 }
@@ -30,6 +32,11 @@ body {
   border-color: rgb(251, 255, 0);
 }
 
+
+.image-pic {
+  display: flex;
+  align-items: flex-start;
+}
 
 
 

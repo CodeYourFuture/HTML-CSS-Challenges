@@ -12,7 +12,7 @@ header {
 
 .introduction {
   background-color: white;
-  text-align: center;
+ 
 }
 
 body {
@@ -67,16 +67,18 @@ h3,
 h4,
 h5 {
   /*Purple*/
-  color: #6320ee;
+  color: #C9C1F1;
   margin-bottom: 1em;
 }
 
 h1 {
   font-size: 250%;
+  color: black;
 }
 
 h2 {
   font-size: 175%;
+  color: #C9C1F1;
 }
 
 h3 {
@@ -140,9 +142,14 @@ footer {
   vertical-align: bottom;
 }
 
-.tigers {
+.tigers{
   background-color: #0b3c49;
   color: #f0e100;
+}
+
+
+h6{
+  color: white;
 }
 
 .giraffe {

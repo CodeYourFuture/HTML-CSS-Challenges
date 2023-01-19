@@ -20,9 +20,16 @@ body {
 }
 
 
-.image-container {
-  border: ;
+.bearpic:nth-child(1){
+  border-color: rgb(0, 255, 145);
 }
+.bearpic:nth-child(2){
+  border-color: rgb(2, 0, 128);
+}
+.bearpic:nth-child(3){
+  border-color: rgb(251, 255, 0);
+}
+
 
 
 

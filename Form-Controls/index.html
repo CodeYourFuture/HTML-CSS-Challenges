@@ -13,16 +13,40 @@
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
-
+    <form>
+      <label for="Fullname">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="Email">Email:</label>
+      <input type="text" id="Email" name="Email" required>
+      
+      <label for="color">T-Shirt Color:</label>
+      <select id="color" name="color" required>
+        <option value="">Select a color</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+      </select>
+      
+      <label for="size">T-Shirt Size:</label>
+      <select id="size" name="size" required>
+        <option value="">Select a size</option>
+        <option value="xs">XS</option>
+        <option value="s">S</option>
+        <option value="m">M</option>
+        <option value="l">L</option>
+        <option value="xl">XL</option>
+        <option value="xxl">XXL</option>
+      </select>
+      
+      <label for="date">Collection Date:</label>
+      <input type="date" id="date" name="date" min="<?php echo date('Y-m-d', strtotime('+4 weeks')); ?>" required>
+      <input type="submit" value="Submit">
+    </form>    
+    
   </main>
   <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>Emeka</h2>
   </footer>
 </body>
-
 </html>

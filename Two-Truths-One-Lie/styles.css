@@ -28,6 +28,51 @@
 * take a screenshot at laptop and Moto G4 device sizes in Devtools
 */
 
+
+
+html {
+  background-color: #a0b484;
+}
+
+@media (max-width: 600px) {
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 body {
   font: 100% "Poppins", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; 
+}
+
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 16px;
+  background-color: #a0b484;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  background-color: #f0fcdc;
+  border: 1px solid #f0fcdc; 
+}
+
+
+header {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
 }

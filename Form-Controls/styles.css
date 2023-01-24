@@ -1,0 +1,87 @@
+body{
+    font-family: 'Poppins', sans-sherif;
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(
+        115deg,
+        rgba(58, 58, 158, 0.8),
+        rgba(136, 136, 206, 0.7)
+      ),
+      url(https://cdn.pixabay.com/photo/2017/09/09/11/52/t-shirts-2731768_960_720.jpg);
+       background-position: center;
+       width: 100vw;
+       color: white;
+       margin: 0;
+  }
+  
+  #title{
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: 400;
+  }
+  
+  #description{
+    margin-top: 0;
+    text-align: center;
+    font-style: italic;
+  }
+  
+  #survey-form{
+    background-color: rgba(27, 27, 50, 0.8);
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  
+  .form-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+  }
+  
+  label{
+    margin-bottom: 10px;
+    width: 90%;
+    font-size: 18px;
+    padding-top: 8px;
+   }
+  
+  input, select{
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+  
+  textarea{
+    width: 90%;
+    font-size: 16px;
+    height: 100px;
+  }
+  
+  input[type="radio"], input[type="checkbox"]{
+    height: 20px;
+    margin-left: 80px;
+    width: 10px;
+    
+  }
+  
+  .form-radio, .div-checkbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 5px;
+  }
+  
+  input[type="submit"]{
+    width: 100%;
+    color: white;
+    background-color: green;
+    border: 1px solid green;
+    margin-bottom: 50px;
+  }
+  

@@ -1,28 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
-
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
-
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <form>
+        <div id="form">
+          <div class="name_label">
+            <label for="first_name">First name:</label>
+            <label for="last_name">Last name:</label>
+          </div>
+        <div id="name">
+          <input
+            type="text"
+            name="first_name"
+            id="first_name"
+            minlength="2"
+            maxlength="20"
+            required
+          />
+          <input
+            type="text"
+            name="last_name"
+            id="last_name"
+            minlength="2"
+            maxlength="20"
+            required
+          />
+        </div>
+        <div id="email_label"class="name_label">
+          <label for="email">Email:</label>
+        </div>
+          <div id="email_box">
+            <!-- <label for="email">Email:</label> -->
+            <input
+              type="email"
+              name="email"
+              id="email_address"
+              pattern="[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*"
+              required
+            />
+          </div>
+        
+        <div id="tshirt_parameters">
+          <div id="size_div" class="tshirt_divs">
+            <label for="size">T-shirt Size:</label>
+          <select name="size" id="size" required>
+            <option value="">None</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+          </div>
+          <div id="color_div" class="tshirt_divs">
+            <label for="color">Choose color:</label>
+            <select name="color" id="color" required>
+            <option value="">None</option>
+            <option value="Blue">Blue</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Black">Black</option>
+          </select>
+          </div>
+        </div>
+        <div id="date">
+          <label for="delivery_date">Desired delivery date:</label>
+          <input
+            type="date"
+            name="delivery_date"
+            id="delivery_date"
+            min="2023-02-07"
+            max="2023-06-10"
+            required
+          />
+        </div>
+        <input id="submit_btn"type="submit" value="Confirm Order" />
+      </form>
+    </div>
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <h2>By Artem Filkovskyi</h2>
+    </footer>
+  </body>
 </html>

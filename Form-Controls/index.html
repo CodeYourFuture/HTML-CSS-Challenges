@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>My form exercise</title>
-  <meta name="description" content="">
+  <meta name="description" content="A form for ordering T-Shirt in three color and 6 size
+  Author: Delnia Alipour">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -12,16 +13,81 @@
   <header>
     <h1>Product Pick</h1>
   </header>
-  <main>
-  <form>
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
-  </form>
+    <main class="store-content">
+      <section class="form-section">
+         
+          <form class="form-store" method="">
+             <fieldset class="fieldset-store">
+                <div class="full-name">
+                 <div class="first-name">
+                     <label for="firstname">First name</label>
+                     <input class="form-input" type="text" name="fisrtname" id="firstname" pattern="[a-zA-Z]+.{2,}" placeholder="Enter your first name" required>
+                 </div>
+                 <div class="last-name">
+                     <label for="lastname">Last name</label>
+                     <input  class="form-input" type="text" name="lastname" id="lastname" pattern="[a-zA-Z]+.{2,}"
+                    required
+                    placeholder="Enter your last name">
+                 </div>
+                </div>
+                
+                 <div class="email">
+                     <label for="email">Email</label>
+                     <input  class="form-input" type="email" name="email" id="email"  pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" title="Enter a valid Email" required
+                     placeholder="Enter your email address">
+                 </div>
+            
+                     <div class="tshirt-size">
+                         <label for="size">T-Shirt Size </label>
+                          <select name="city" id="city" required>
+                             <option value="" disabled selected> Select your size... </option>
+                             <option value="xs">XS</option>
+                             <option value="s">S</option>
+                             <option value="m">M</option>
+                             <option value="l">L</option>
+                             <option value="xl">XL</option>
+                             <option value="xxl">XXL</option>
+                         </select>
+                     </div>
+            
+                <div class="select-color">
+                 <p>Choose a color</p>
+                  <div class="color-choice">
+                     <input  class="form-input" type="radio" name="color" id="black" checked>
+                     <label class="radio-label" for="black">Black</label>
+                  
+                     <input class="form-input"  type="radio" name="color" id="white" required>
+                     <label  class="radio-label" for="white">White</label>
 
-  </main>
+                     
+                     <input class="form-input"  type="radio" name="color" id="green" required>
+                     <label  class="radio-label" for="green">Green</label>
+                  </div>
+                    
+                </div>
+                <div class="date">
+                  <label for="dlvdDate">Delivered Date</label
+                  ><input class="form-input"
+                    required
+                    type="date"
+                    id="dlvdDate"
+                    min="2023-01-31"
+                    max="2022-02-30"
+                  />
+                </div>
+                <div class="btn">
+                    <button class="order-btn" type="submit">Place my order</button>
+                </div>
+             </fieldset>
+          </form>
+      </section>     
+     </main>
+  
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Delnia Alipour</h2>
   </footer>
 </body>
 

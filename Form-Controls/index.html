@@ -19,68 +19,82 @@
       <section class="form-section">
          
           <form class="form-store" method="">
-             <fieldset class="fieldset-store">
-                <div class="full-name">
+             <div class="fieldset-store">
+              <fieldset>   
+                
                  <div class="first-name">
                      <label for="firstname">First name</label>
-                     <input class="form-input" type="text" name="fisrtname" id="firstname" pattern="[a-zA-Z]+.{2,}" placeholder="Enter your first name" required>
+                     <input class="form-input" type="text" name="first-name" id="firstname" pattern="[a-zA-Z]+.{2,}" placeholder="Enter your first name" required>
                  </div>
+              </fieldset>
+              <fieldset>
                  <div class="last-name">
                      <label for="lastname">Last name</label>
-                     <input  class="form-input" type="text" name="lastname" id="lastname" pattern="[a-zA-Z]+.{2,}"
+                     <input  class="form-input" type="text" name="last-name" id="lastname" pattern="[a-zA-Z]+.{2,}"
                     required
                     placeholder="Enter your last name">
                  </div>
-                </div>
                 
-                 <div class="email">
-                     <label for="email">Email</label>
-                     <input  class="form-input" type="email" name="email" id="email"  pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" title="Enter a valid Email" required
-                     placeholder="Enter your email address">
-                 </div>
-            
-                     <div class="tshirt-size">
-                         <label for="size">T-Shirt Size </label>
-                          <select name="city" id="city" required>
-                             <option value="" disabled selected> Select your size... </option>
-                             <option value="xs">XS</option>
-                             <option value="s">S</option>
-                             <option value="m">M</option>
-                             <option value="l">L</option>
-                             <option value="xl">XL</option>
-                             <option value="xxl">XXL</option>
-                         </select>
-                     </div>
-            
-                <div class="select-color">
-                 <p>Choose a color</p>
-                  <div class="color-choice">
-                     <input  class="form-input" type="radio" name="color" id="black" checked>
-                     <label class="radio-label" for="black">Black</label>
-                  
-                     <input class="form-input"  type="radio" name="color" id="white" required>
-                     <label  class="radio-label" for="white">White</label>
-
-                     
-                     <input class="form-input"  type="radio" name="color" id="green" required>
-                     <label  class="radio-label" for="green">Green</label>
-                  </div>
-                    
+              </fieldset>
+             
+                <fieldset>
+                  <div class="email">
+                    <label for="email">Email</label>
+                    <input  class="form-input" type="email" name="email" id="email"  pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" title="Enter a valid Email" required
+                    placeholder="Enter your email address">
                 </div>
-                <div class="date">
-                  <label for="dlvdDate">Delivered Date</label
+                </fieldset>
+               
+            <fieldset>
+              <div class="tshirt-size">
+                <label for="size" aria-label="size">T-Shirt Size </label>
+                 <select name="size" id="size" required>
+                  <optgroup>
+                    <option value="" disabled selected> Select your size... </option>
+                    <option value="xs">XS</option>
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                    <option value="xxl">XXL</option>
+                  </optgroup>
+                   
+                </select>
+            </div>
+            </fieldset>
+          
+            <fieldset class="select-color">
+                      <legend>Choose a color</legend>
+                       <div class="color-choice">
+                          <input  class="form-input" type="radio" name="color" id="black" checked>
+                          <label class="radio-label" for="black">Black</label>
+                       
+                          <input class="form-input"  type="radio" name="color" id="white" required>
+                          <label  class="radio-label" for="white">White</label>
+     
+                          
+                          <input class="form-input"  type="radio" name="color" id="green" required>
+                          <label  class="radio-label" for="green">Green</label>
+                       </div>
+                         
+            </fieldset>
+             
+            
+                
+                <fieldset class="date">
+                  <label for="delivered-date">Delivered Date</label
                   ><input class="form-input"
                     required
                     type="date"
-                    id="dlvdDate"
+                    id="delivered-date"
                     min="2023-01-31"
-                    max="2022-02-30"
-                  />
-                </div>
+                    max="2023-02-30"
+                    />
+                </fieldset>
                 <div class="btn">
                     <button class="order-btn" type="submit">Place my order</button>
                 </div>
-             </fieldset>
+             </div>
           </form>
       </section>     
      </main>

@@ -1,0 +1,49 @@
+body {
+  background-image: linear-gradient(
+    to right,
+    rgb(223, 210, 210),
+    rgb(211, 180, 180)
+  );
+  font-family: "EB Garamond", serif;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+  padding-top: 20px;
+}
+label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+h2 {
+  text-align: center;
+}
+input[type="text"],
+select {
+  width: 300px;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  width: 150px;
+  height: 40px;
+  background-color: #050505;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 20px;
+}

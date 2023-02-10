@@ -32,6 +32,9 @@ section {
 img {
   border: 5px solid #8075ff;
 }
+#logo {
+  border: 0px;
+}
 
 h1,
 h2,
@@ -57,13 +60,17 @@ h3 {
 
 button {
   display: inline-block;
-  border-radius: 3px;
+  border-radius: 30px;
   cursor: pointer;
   padding: 10px 20px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
   background-color: #372772;
   border: 2px solid black;
   color: #fff;
+  font-size: larger;
+}
+button:hover {
+  background-color: royalblue;
 }
 
 footer {
@@ -76,6 +83,8 @@ footer {
 }
 
 .introduction {
+  background-color: white;
+  letter-spacing: 2.4px;
 }
 
 #badge {
@@ -85,17 +94,19 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  /* bottom: 20px; */
   right: 20px;
-
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
+  float: right;
+  top: 9px;
 }
 
 #badge:hover {
   background-color: yellow;
+  transition: 1s;
 }
 
 #badge p {
@@ -109,23 +120,34 @@ footer {
 }
 
 .image-container img:first-of-type {
-  vertical-align: bottom;
+  border: 3px solid red;
 }
-
+.image-container img:last-of-type {
+  background-color: royalblue;
+}
 .tigers {
-  background-color: #0b3c49;
+  background-color: #f8f0fb;
   color: #f0e100;
 }
 
 .giraffe {
-  background-color: #465775;
+  background-color: #483c46;
   color: #56e39f;
 }
 
 .giraffe h2 {
-  color: #ef6f6c;
+  color: #f4743b;
+}
+.giraffe p {
+  color: #beee62;
 }
 
+.giraffe p:first-of-type {
+  font-size: large;
+}
+.news {
+  text-align: center;
+}
 .card {
   display: inline-block;
   background-color: white;
@@ -166,6 +188,7 @@ footer {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  border-radius: 10px;
 }
 
 .education-container h3,
@@ -187,9 +210,24 @@ footer {
 .membership strong {
   color: #ff7f11;
 }
+.membership p {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /*Programs*/
 
+/* .programs .card {
+  width: 25%;
+} */
+
+.programs-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .programs .card {
-  display: block;
+ text-align: center;
 }

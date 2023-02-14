@@ -39,10 +39,75 @@ section {
 .section__container {
     display: flex;
     justify-content: center;
-    height: 750px;
+    height: 800px;
     width: 60%;
     background: var(--white);
     box-shadow: -15px 15px 15px grey;
+}
+
+form {
+    width: 80%;
+    padding-top: 3rem;
+}
+
+form input {
+    border: transparent;
+    border-bottom: 2px solid;
+    height: 40px;
+}
+
+form select {
+    height: 40px;
+}
+
+form label {
+    font-family: var(--header-font);
+}
+
+.form__btn {
+    text-align: center;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+    height: 670px;
+    border: none;
+}
+
+.name__wrapper {
+    display: flex;
+    column-gap: 10%;
+ }
+ 
+.name__wrapper div {
+     display: flex;
+     flex-direction: column;
+     width: 45%;
+}
+
+.form__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.contact__btn {
+    height: 2rem;
+    width: 8rem;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    background: var(--rb);
+    color: var(--white);
+}
+
+.contact__btn:hover {
+    background: var(--white) ;
+    color: var(--black);
+    border: 1px solid var(--rb);
+    transition: 0.4s ease 0s;
 }
 
 .footer {

@@ -19,8 +19,51 @@
     <div class="section__container">
       <form action="">
         <fieldset>
-          
+          <div class="name__wrapper">
+            <div>
+                <label for="firstName">First Name *</label>
+                <input type="text" name="" id="firstName" required pattern="[A-Za-z]{3}" title="Must contain at least 3 letters">
+            </div>
+            <div>
+                <label for="lasttName">Last Name *</label>
+                <input type="text" name="" id="lasttName" required pattern="[A-Za-z]{3}" title="Must contain at least 3 letters">
+            </div>
+        </div>
+        <div>
+            <div class="form__wrapper">
+                <label for="email">Email *</label>
+                <input type="email" id="email" required title="Email must be valid example@mail.com">
+            </div>
+        </div>
+        <div class="form__wrapper">
+            <label for="color">Choose colour</label>
+            <select name="color" id="color">
+              <option value="" disabled selected>Choose colour</option>
+              <option value="black">Black</option>
+              <option value="white">White</option>
+              <option value="violet">Violet</option>
+            </select>
+        </div>
+        <div class="form__wrapper">
+            <label for="size">Choose size</label>
+            <select name="size" id="size">
+              <option value="" disabled selected>Choose size</option>
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="XXL">XXL</option>
+            </select>
+        </div>
+        <div class="form__wrapper">
+          <label for="delivery">Choose delivery date</label>
+          <input type="date" id="delivery" required>
+        </div>
         </fieldset>
+        <div class="form__btn">
+          <button class="contact__btn" type="submit">SEND</button>
+      </div>
       </form>
     </div>
   </section>

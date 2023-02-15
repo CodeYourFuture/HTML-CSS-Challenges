@@ -36,8 +36,8 @@ body{
 
  
 .form-div{
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 justify-content: center;
 align-items: center;
 margin: 0 auto 1.25rem auto;
@@ -49,13 +49,23 @@ label{
   width: 90%;
   font-size: 18px;
   padding-top: 8px;
+  margin-right: auto;
  }
 
-input, select{
+ input{
+  width: 25%;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 15px;
+  margin-right: auto;
+ } 
+ 
+ select{
   width: 90%;
   height: 40px;
   border-radius: 5px;
   font-size: 15px;
+  margin-right: auto;
 }
 
 textarea{

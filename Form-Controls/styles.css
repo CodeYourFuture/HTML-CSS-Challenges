@@ -79,18 +79,13 @@ input[type="radio"], input[type="checkbox"]{
 }
   
   input[type="date"]{
-      background-color: #0080ff;
-      padding: 5px;
-      position: absolute;
-      transform: translate(-50%,-50%);
       
-      left: 50%;
-      font-family: "Roboto Mono",monospace;
-      color: #ffffff;
-      font-size: 18px;
-      border: none;
-      outline: none;
-      border-radius: 5px;
+
+      width: 100%;
+  color: white;
+  background-color: #0080ff;
+  border: 1px solid #0080ff;
+  margin-bottom: 50px;
   }
   ::-webkit-calendar-picker-indicator{
       background-color: #ffffff;

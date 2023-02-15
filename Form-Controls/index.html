@@ -13,15 +13,61 @@
     <h1>Product Pick</h1>
   </header>
   <main>
+
   <form>
+
     <!-- write your html here-->
+    
+      <label for="firstname">First name:</label>
+      <input type="text" name="firstname" id="firstname" placeholder="Enter your name" required>
+<br>
+      <label for="lastname">Last name:</label>
+      <input type="text" name="lastname" id="lastname" placeholder="Enter your lastname" required>
+<br>
+      <label for="Email">Email:</label>
+      <input type="email" name="Email" id="Email" required placeholder="Enter your Email">
+<br>
+      <p>Select a colour:</p>
+
+      <select name="colour" id="colour" required>
+
+        <option selected value="">Select a colour</option>
+        <option value="Blue">Blue</option>
+        <option value="Black">Black</option>
+        <option value="White">White</option>
+
+      </select>
+
+      <br>
+
+      <p>Select a size:</p>
+
+      <select name="size" id="size" required>
+        <option selected value="">Select a size</option>
+        <option value="x">X</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+
+</select>
+       <br>
+
+<label for="datetime">Select a time & date:</label>
+
+<input type="datetime-local" name="datetime" id="datetime" required>
+
+<br>
+<br>
+   <button type="submit">submit</button>
     <!-- try writing out the requirements first-->
   </form>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By DAMILOLA ODUMOSU</h2>
   </footer>
 </body>
 

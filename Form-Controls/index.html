@@ -10,15 +10,68 @@
 </head>
 <body>
   <header>
-    <h1>Product Pick</h1>
+    <h1>Pick Your Product</h1>
   </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <div class="contact_form">
 
-  </main>
+		<div class="formulario">			
+      <h1>Contacta-nos</h1>
+				<h3>Envia-nos a tua mensagem e respondemos em breve.</h3>
+
+
+					<form action="submeter-formulario.php" method="post">				
+
+						
+								<p>
+									<label for="nome" class="colocar_nome">Nome
+										<span class="obrigatorio">*</span>
+									</label>
+										<input type="text" name="introduzir_nome" id="nome" required="obrigatorio" placeholder="O teu nome">
+								</p>
+							
+								<p>
+									<label for="email" class="colocar_email">Email
+										<span class="obrigatorio">*</span>
+									</label>
+										<input type="email" name="introduzir_email" id="email" required="obrigatorio" placeholder="O teu email">
+								</p>
+						
+								<p>
+									<label for="telefone" class="colocar_telefone">Telefone
+									</label>
+										<input type="tel" name="introduzir_telefone" id="telefone" placeholder="O teu telefone">
+								</p>		
+							
+								<p>
+									<label for="website" class="colocar_website">Website
+									</label>
+										<input type="url" name="introduzir_website" id="website" placeholder="O teu website">
+								</p>		
+							
+								<p>
+									<label for="assunto" class="colocar_asunto">Assunto
+										<span class="obrigatorio">*</span>
+									</label>
+										<input type="text" name="introduzir_assunto" id="assunto" required="obrigatorio" placeholder="O que queres falar?">
+								</p>		
+							
+								<p>
+									<label for="mensagem" class="colocar_mensagem">Mensagem
+										<span class="obrigatorio">*</span>
+									</label>                     
+                               		  <textarea name="introduzir_mensagem" class="texto_mensagem" id="mensagem" required="obrigatorio" placeholder="Escreve a tua mensagem aqui..."></textarea> 
+                               	</p>	  								
+							
+								<button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+
+								<p class="aviso">
+									<span class="obrigatorio"> * </span>Precisas mesmo de preencher estes campos.
+								</p>					
+						
+					</form>
+		</div>	
+	</div>
+
   <footer>
     <!-- change to your name-->
     <h2>By HOMEWORK SOLUTION</h2>

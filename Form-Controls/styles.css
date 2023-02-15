@@ -1,0 +1,63 @@
+body {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+/* Main */
+/* Header */
+header h1 {
+margin-top: 3rem;
+}
+/* Form section */
+form {
+  background-color: #f5f3f4;
+  color: #333;
+  max-width: 500px;
+  margin: 2rem auto;
+  text-align: left;
+  padding: 2rem;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+form  input{
+  height:20px;
+}
+form select,
+form button {
+  height: 25px;
+}
+form label{
+  margin-bottom: 0.5rem;
+}
+form fieldset div {
+  display: inline-block;
+  margin-right: 1rem;
+}
+form fieldset div label,
+form fieldset div input{
+  vertical-align: middle;
+}
+form button{
+  display:block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0.25rem 1.5rem;
+  background-color: #42a5f5;;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+form input:focus,
+form select:focus {
+  outline: none !important;
+  border: none;
+  border-bottom: 3px solid #42a5f5;
+}
+form input:first-child:focus,
+form input:nth-child(2):focus{
+  padding-left: 1rem;
+}

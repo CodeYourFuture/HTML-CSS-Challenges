@@ -1,11 +1,12 @@
 :root {
-    --white:#FFF;
-    --black:#000;
-    --db:#E6DACD;
-    --lb:#F4ECE6;
-    --rb:#0150FD;
-    --header-font: 'Poppins', sans-serif;
-    --gen-font: 'Quicksand', sans-serif;
+    --paper:#FFF;
+    --ink:#000;
+    --grey: grey;
+    --color-dark-beige:#E6DACD;
+    --color-light-beige:#F4ECE6;
+    --color-blue:#0150FD;
+    --heading-font: 'Poppins', sans-serif;
+    --body-font: 'Quicksand', sans-serif;
 }
 
 body {
@@ -13,23 +14,18 @@ body {
 }
 
 header {
-    background: var(--white);
-    height: 100px;
-}
-
-header div {
+    background: var(--paper);
     text-align: center;
-    padding-top: 1rem;
 }
 
 h1 {
-    font-family: var(--header-font);
+    font-family: var(--heading-font);
     margin: 0;
+    padding: 1.2rem;
 }
 
 section {
-    background: var(--db);
-    height: 1000px;
+    background: var(--color-dark-beige);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,15 +35,18 @@ section {
 .section__container {
     display: flex;
     justify-content: center;
-    height: 800px;
-    width: 60%;
-    background: var(--white);
-    box-shadow: -15px 15px 15px grey;
+    margin: 4rem 0;
+    width: max(60%, 320px);
+    background: var(--paper);
+    box-shadow: -15px 15px 15px var(--grey);
 }
 
 form {
-    width: 80%;
+    width: max(80%, 260px);
     padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
 }
 
 form input {
@@ -61,32 +60,14 @@ form select {
 }
 
 form label {
-    font-family: var(--header-font);
+    font-family: var(--heading-font);
 }
 
 .form__btn {
     text-align: center;
+    margin: 1rem 0;
 }
-
-fieldset {
-    display: flex;
-    flex-direction: column;
-    row-gap: 4rem;
-    height: 670px;
-    border: none;
-}
-
-.name__wrapper {
-    display: flex;
-    column-gap: 10%;
- }
  
-.name__wrapper div {
-     display: flex;
-     flex-direction: column;
-     width: 45%;
-}
-
 .form__wrapper {
     display: flex;
     flex-direction: column;
@@ -99,14 +80,14 @@ fieldset {
     border-radius: 20px;
     cursor: pointer;
     border: none;
-    background: var(--rb);
-    color: var(--white);
+    background: var(--color-blue);
+    color: var(--paper);
 }
 
 .contact__btn:hover {
-    background: var(--white) ;
-    color: var(--black);
-    border: 1px solid var(--rb);
+    background: var(--paper) ;
+    color: var(--ink);
+    border: 1px solid var(--color-blue);
     transition: 0.4s ease 0s;
 }
 
@@ -119,9 +100,12 @@ fieldset {
     height: 150px;
     border-top: #b2b2b2 solid 1px;
     row-gap: 1rem;
+    text-align: center;
 }
 
 .footer__img {
-    width: 140px;
-    height: 100%;
+    max-width: 10%;
+    max-height: 320px;
+    object-fit: cover;
+    
 }

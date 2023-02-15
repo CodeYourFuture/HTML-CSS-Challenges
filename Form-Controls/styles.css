@@ -1,0 +1,83 @@
+/* General */
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* main */
+
+main {
+  font-size: 20px;
+  margin: 3rem 20rem;
+  padding: 1.5rem;
+  height: 100%;
+  line-height: 2rem;
+  border: 2px double darkblue;
+  border-radius: 3ch;
+  background-color: aliceblue;
+}
+
+h1 {
+  margin: 3rem;
+  text-align: center;
+}
+
+h2 {
+  margin: 3rem;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 4rem;
+}
+
+input,
+select {
+  margin: 5px;
+  padding: 5px;
+  width: 100%;
+}
+
+fieldset {
+  width: 50%;
+  padding: 20px;
+  background-color: white;
+}
+
+fieldset input {
+  width: auto;
+}
+
+select:focus,
+input:focus {
+  background-color: lightblue;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 1200px) {
+  main {
+    margin: 5rem 10rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  main {
+    margin: 1rem;
+  }
+  form {
+    padding: 0px;
+  }
+}

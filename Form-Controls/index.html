@@ -10,18 +10,83 @@
 </head>
 <body>
   <header>
-    <h1>Product Pick</h1>
   </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <div class="contact_form">
 
-  </main>
+		<div class="formulario">			
+      <h1><b>London T-shirt Shop</b></h1>
+				<h3>Choose Your Type of T-shirt. Please don't forget to give details on mandetory field.</h3>
+
+
+					<form action="submeter-formulario.php" method="post">				
+
+						
+								<p>
+									<label for="nome" class="colocar_nome">Nome
+										<span class="obrigatorio">*</span>
+									</label>
+										<input type="text" name="introduzir_nome" id="nome" required="obrigatorio" placeholder="Yours name">
+								</p>
+							
+								<p>
+									<label for="email" class="colocar_email">Email
+										<span class="obrigatorio">*</span>
+									</label>
+										<input type="email" name="introduzir_email" id="email" required="obrigatorio" placeholder="Yours e-mail">
+								</p>
+						
+								<p>
+									<label for="telefone" class="colocar_telefone">Phone Number:
+									</label>
+										<input type="tel" name="introduzir_telefone" id="telefone" placeholder="Yours Phone/mobile No.">
+								</p>	
+                
+                <p>
+                  <label for="color" class="color_tshirt">Choose your T-shirt:</label>
+                  <select name="color" id="color">
+                    <option value="Black">Black</option>
+                    <option value="White">White</option>
+                    <option value="Green">Green</option>
+                  </select>
+                </p>
+                
+                <p>
+                  <label for="size" class="size_tshirt">Choose your T-shirt color:</label>
+                  <select name="color" id="color">
+                    <option value="XS">Extra-Small</option>
+                    <option value="S">Small</Small></option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                    <option value="XL">E-Large</option>
+                    <option value="XXL">XX-Large</option>
+                  </select>
+                </p>
+
+                <p>
+                  <label for="date" class="date_tshirt">Choose the date to deliver T-shirt:</label>
+                  <select name="date" id="date">
+                    <option value="1stweek">Within 1st Week</option>
+                    <option value="2ndweek">Within 2nd Week</option>
+                    <option value="3rdWeek">Within 3rd Week</option>
+                    <option value="4thweek">Within 4th Week</option>
+                  </select>
+                </p>
+								<p>
+									<label for="mensagem" class="colocar_mensagem">Message/feedback
+										<span class="obrigatorio">*</span>
+									</label>                     
+                               		  <textarea name="introduzir_mensagem" class="texto_mensagem" id="mensagem" required="obrigatorio" placeholder="Please white here if you have any specific message."></textarea> 
+                               	</p>	  								
+							
+								<button type="submit" name="enviar_formulario" id="enviar"><p>Submit</p></button>
+					
+						
+					</form>
+		</div>	
+	</div>
+
   <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    
   </footer>
 </body>
 

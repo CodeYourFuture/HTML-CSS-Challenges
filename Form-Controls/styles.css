@@ -1,0 +1,61 @@
+{
+    margin:0;
+    padding:0
+}
+.body{
+    background-position: center;
+      background-size: cover;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      margin-top: 30px;
+      font-size: 15px;
+  }
+  
+   main{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    padding: 15px;
+    background-color: blueviolet;
+    text-transform: uppercase;
+   }
+
+ 
+ h1{
+    background-color: blueviolet ;
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+ }
+ #name{
+    padding: 10px;
+ }
+#email{
+    padding: 10px;
+}
+#colors{
+padding: 10px;
+}
+#sizes{
+padding: 10px;
+}
+ #date{
+    padding: 10px;
+
+}
+#submit{
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+
+    
+ 
+footer{
+    text-align: center;
+    background-color: blueviolet;
+    
+}
+ 

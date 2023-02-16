@@ -18,7 +18,7 @@
     padding: 15px;
     background-color: blueviolet;
     text-transform: uppercase;
-    column-gap: 5px;
+    float: inline-start;
    }
 
  
@@ -50,11 +50,12 @@ width: 300px;
     width: 300px;
 
 }
-#submit{
+button{
     margin-left: 200px;
     text-align: center;
     padding: 10px;
     font-weight: bold;
+    color: brown;
 }
 
 

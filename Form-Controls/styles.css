@@ -20,8 +20,30 @@ body{
   background-color: #fbfbfb; 
   padding-left: 30px; 
 }
-
-
+#color {
+    background-color: #fbfbfb; 
+	width: 408px; 
+	height: 40px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #050505; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+}
+#date {
+    background-color: #fbfbfb; 
+	width: 408px; 
+	height: 40px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #050505; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+}
 input{
 	background-color: #fbfbfb; 
 	width: 408px; 
@@ -29,7 +51,7 @@ input{
 	border-radius: 5px;  
 	border-style: solid; 
 	border-width: 1px; 
-	border-color: #ec576b; 
+	border-color: #050505; 
 	margin-top: 10px;  
 	padding-left: 10px;
   margin-bottom: 20px; 
@@ -43,7 +65,7 @@ textarea{
 	border-radius: 5px;  
 	border-style: solid; 
 	border-width: 1px; 
-	border-color: #ec576b; 
+	border-color: #060505; 
 	margin-top: 10px;  
 	padding-left: 10px;
   margin-bottom: 20px; 
@@ -64,8 +86,8 @@ button{
 	margin-bottom: 20px; 
 	margin-top: 10px; 	
 	text-transform: uppercase;
-	background-color: #ec576b; 
-	border-color: #ec576b; 
+	background-color: #0f0d0d; 
+	border-color: #131212; 
 	border-style: solid; 
 	border-radius: 10px;	
 	width: 420px;   

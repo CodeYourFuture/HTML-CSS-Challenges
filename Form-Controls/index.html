@@ -7,6 +7,9 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -15,11 +18,11 @@
   <main>
   <form>
     <section>
-      <label for="name">name that must be between 3 and 8 characters</label>
+      <label for="name">Name</label>
       <input id="name" type="text" minlength="3" maxlength="8" required />
     </section>
     <section>
-    <label for="email">Email that is required</label>
+    <label for="email">Email</label>
     <input id="email" type="email" required/>
     </section>
     <section>
@@ -28,9 +31,11 @@
       
         <input id="purple" type="checkbox" name="color" value="purple" />
         <label for="purple">purple</label>
+        <br>
       
         <input id="green" type="checkbox" name="color" value="green" />
         <label for="green">green</label>
+        <br>
       
         <input id="pink" type="checkbox" name="color" value="pink" />
         <label for="pink">pink</label>
@@ -49,11 +54,17 @@
 </section>
 
 <section>
-  <label for="date">Date</label>
-  <input id="date" type="date" min="12/02/2023" max="10/02/2023" required>
+  <label for="date">Delivery Date</label>
+  <input id="date" type="date" min="12/02/2023" max="10/03/2023" required>
 </section>
 
-<button>Buy Now</button>
+<section>
+<label for="description"> your comment here:</label>
+<br>
+<textarea id="description" cols="30" rows="5"></textarea>
+</section>
+
+<button>Submit</button>
   
   
      

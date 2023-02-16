@@ -14,14 +14,55 @@
   </header>
   <main>
   <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
+    <section>
+      <label for="name">name that must be between 3 and 8 characters</label>
+      <input id="name" type="text" minlength="3" maxlength="8" required />
+    </section>
+    <section>
+    <label for="email">Email that is required</label>
+    <input id="email" type="email" required/>
+    </section>
+    <section>
+      <fieldset>
+        <legend>colors</legend>
+      
+        <input id="purple" type="checkbox" name="color" value="purple" />
+        <label for="purple">purple</label>
+      
+        <input id="green" type="checkbox" name="color" value="green" />
+        <label for="green">green</label>
+      
+        <input id="pink" type="checkbox" name="color" value="pink" />
+        <label for="pink">pink</label>
+      </fieldset>
+    </section>
+    <section>
+      <label for="size">Select Size</label>
+<select id="size" name="size">
+  <option value="16" selected>16</option>
+  <option value="14">14</option>
+  <option value="12">12</option>
+  <option value="10">10</option>
+  <option value="8">8</option>
+  <option value="6">6</option>
+</select>
+</section>
+
+<section>
+  <label for="date">Date</label>
+  <input id="date" type="date" min="12/02/2023" max="10/02/2023" required>
+</section>
+
+<button>Buy Now</button>
+  
+  
+     
   </form>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Junita Lama</h2>
   </footer>
 </body>
 

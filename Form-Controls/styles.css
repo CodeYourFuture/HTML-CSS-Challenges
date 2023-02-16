@@ -18,6 +18,7 @@
     padding: 15px;
     background-color: blueviolet;
     text-transform: uppercase;
+    column-gap: 5px;
    }
 
  
@@ -29,21 +30,28 @@
  }
  #name{
     padding: 10px;
+    width: 300px;
+
  }
 #email{
     padding: 10px;
+    width: 300px;
 }
 #colors{
 padding: 10px;
+width: 300px;
 }
 #sizes{
 padding: 10px;
+width: 300px;
 }
  #date{
     padding: 10px;
+    width: 300px;
 
 }
 #submit{
+    margin-left: 200px;
     text-align: center;
     padding: 10px;
     font-weight: bold;

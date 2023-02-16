@@ -1,0 +1,41 @@
+:root{
+    --blue:#54ADB6;
+    --black:#000000;
+    --brown:#641E16;
+    --yellow:#CC99FF;
+
+}
+
+body{color: var(--brown);
+font-family:'Raleway',sans-serif;
+font-size: 20px;}
+
+h1{text-align: center;
+color: var(--brown);}
+
+main{display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 20px;
+background-color: var(--blue);
+}
+
+#name{margin-bottom: 10px;}
+
+#email{margin-bottom: 20px;}
+
+#size{margin-top: 20px;
+margin-bottom: 20px;;}
+
+button{padding:10px;
+background-color:var(--yellow);
+margin-top: 20px;
+}
+
+#date{margin-bottom: 30px;}
+
+
+footer{color:var(--dark-pink);
+text-align: center;
+font-size: 10px;}

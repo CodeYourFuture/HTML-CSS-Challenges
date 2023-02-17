@@ -1,0 +1,93 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #222;
+}
+
+header {
+    padding: 16px;
+}
+
+main{
+    flex-grow: 1;
+    padding: 16px;
+}
+
+.form {
+    width: 700px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.form-fieldset {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    column-gap: 8px;
+    padding: 24px 16px;
+    max-width: 100%;
+    flex: 1 1 auto;
+}
+
+.form-fieldset legend{
+    font-weight: 600;
+}
+
+.form input, .form select {
+    outline: none;
+    padding: 6px 12px 6px 6px;
+    border: 1px solid #222;
+    background-color: white;
+}
+
+.form input:hover,
+.form input:focus-within,
+.form select:hover,
+.form select:focus-within {
+    outline: none;
+    border: 1px solid orange;
+}
+
+.radio-group{
+    display: flex;
+    column-gap: 16px;
+    row-gap: 8px;
+}
+
+.button-group {
+    display: flex;
+    column-gap: 16px;
+}
+
+.button-group button{
+    background-color: #222;
+    color: white;
+    text-transform: uppercase;
+    outline: none;
+    padding: 8px 30px;
+    border: 1px solid #222;
+}
+
+button:hover{
+    background-color: orange;
+    color: #222;
+    cursor: pointer;
+    border: 1px solid orange;
+}
+
+footer{
+    background-color: #ccc;
+    color: black;
+    padding: 16px;
+}

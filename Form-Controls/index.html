@@ -9,19 +9,57 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
   <header>
     <h1>Product Pick</h1>
+    <h2>T-shirts</h2>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+    <form>
+
+      <div class="form-box">
+        <label id="name">Name </label><input type="text" id="name" name="name" placeholder="Enter your Name" required>
+        <label id="email">Email </label><input type="email=" name="email" placeholder="Enter your Email" required>
+      </div>
+
+      <div class="t-shirt">
+        <h3>T-shirt details</h3>
+        <label id="regular" for="regular"><input type="radio" name="details" id="regular">Regular T-shirt</label>
+        <label id="long" for="long"><input type="radio" name="details" id="long-sleeve">Long sleeve T-shirt</label>
+      </div>
+
+      <div class="color">
+        <h3>T-shirt Color</h3>
+        <label id="red"><input type="radio" value="red" name="choose">Red</label>
+        <label id="yellow"><input type="radio" value="yellow" name="choose">Yellow</label>
+        <label id="blue"><input type="radio" value="blue" name="choose">Blue</label>
+        <label id="black"><input type="radio" value="black" name="choose">Black</label>
+      </div>
+
+      <div class="size">
+        <h3>T-shirt Size</h3>
+        <select name="choose-dropdown" id="dropdown">
+          <option value="">Select an option</option>
+          <option value="XS">XS</option>
+          <option value="s">S</option>
+          <option value="m">M</option>
+          <option value="l">L</option>
+          <option value="xl">XL</option>
+          <option value="xxl">XXL</option>
+        </select>
+      </div>
+      <div class="hero">
+        <h3>Deliver Option</h3>
+        <label id="delivery" for="delivery"><input type="radio" name="delivery" id="delivery">Delivery</label>
+        <label id="collect" for="collect"><input type="radio" name="delivery" id="collect">Collected from the
+          store</label>
+      </div>
+    </form>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2> &copy; By Abubakar-Meigag </h2>
   </footer>
 </body>
 

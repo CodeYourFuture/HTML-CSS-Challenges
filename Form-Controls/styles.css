@@ -1,0 +1,105 @@
+:root{
+    --dark : #293241;
+    --orang: #ee6c4d;
+    --sky: #e0fbfc;
+    --light: #98c1d9;
+    --gray: #3d5a80;
+    --white: #fff;
+    --balck: #000;
+}
+
+body{
+    background-color: var(--gray);
+}
+h1{
+    color: var(--orang);
+}
+h3{
+    color: var(--light);
+}
+h2{
+    color: var(--white);
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+header h2{
+    padding-top: 3px;
+}
+
+.form-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--sky);
+}
+
+.form-box label{
+    padding: 8px;
+}
+.t-shirt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    flex-direction: column;
+    color: var(--sky);
+}
+.t-shirt > label{
+    padding-top: 5px;
+}
+.t-shirt > label > input{
+    padding: 8px;
+}
+.color > h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+}
+.color > label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    color: var(--sky);
+}
+.size{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    flex-direction: column;
+    color: var(--sky);
+}
+.hero{
+    margin: 0;
+    padding: 0;
+}
+.hero h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero > label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    flex-direction: row;
+    color: var(--sky);
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer > h2{
+    color:var(--orang);
+}

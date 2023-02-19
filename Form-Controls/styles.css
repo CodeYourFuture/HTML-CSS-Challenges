@@ -99,7 +99,9 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 50px;
 }
-footer > h2{
+footer > em{
+    font-size: 1.4rem;
     color:var(--orang);
 }

@@ -1,0 +1,66 @@
+/* Style the form label */
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+      
+}
+
+/* Style the form input and select elements */
+input,
+select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+/* Style the submit button */
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0069d9;
+}
+
+/* Style the form elements when they are in focus */
+input:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Style the error message */
+input:invalid,
+select:invalid {
+    border-color: #070707;
+}
+
+input:invalid:focus,
+select:invalid:focus {
+    border-color: #201e1e;
+    outline: none;
+}
+
+/* Style the error message text */
+input:invalid+span,
+select:invalid+span {
+    color: #1c1a1a;
+    font-size: 0.8rem;
+    display: block;
+    margin-top: 0.25rem;
+}
+
+/* Hide the error message by default */
+input+span,
+select+span {
+    display: none;
+}

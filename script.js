@@ -33,7 +33,6 @@ function changeIntoGreen(event) {
   } else {
     greenLine.classList.add("clicked");
   }
-  //   greenColor.classList.add("clicked");
 }
 
 function changeIntoBrown(event) {
@@ -94,7 +93,8 @@ function formatDate(date) {
   let day = now.getDate();
   //adding 0 to day if the number is less than 10
   let newDay = ("0" + day).slice(-2);
-  let myDate = `${year}-${month}-${newDay}`;
+  let newMonth = ("0" + month).slice(-2);
+  let myDate = `${year}-${newMonth}-${newDay}`;
 
   return myDate;
 }

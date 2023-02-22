@@ -14,14 +14,54 @@
   </header>
   <main>
   <form>
+    Enter order details below
+    <div id="customerName">
+      <label for="name">Your name</label>
+      <input name="name" type="text" id="name" required />
+    </div>
+    <div id="email">
+      <label for="email">Email</label>
+      <input name="email" type="email" id="email" required/>
+    </div>
+    <div id="color">
+      Choose the colour
+      <div class="green">
+        <label for="green">green</label>
+        <input name="color" type="radio" id="green" value="green" />
+      </div>
+      <div class="blue">
+        <label for="blue">blue</label>
+        <input name="color" type="radio" id="blue" value="blue" />
+      </div>
+      <div class="yellow">
+        <label for="yellow">yellow</label>
+        <input name="color" type="radio" id="yellow" value="yellow" />
+      </div>
+      </div>
+    <div id="size">
+      <label for="size">Select your size</label>
+      <select id="size" required>
+        <option value="xs">XS</option>
+        <option value="s">S</option>
+        <option value="m">M</option>
+        <option value="l">L</option>
+        <option value="xl">XL</option>
+        <option value="xxl">XXL</option>
+      </select> 
+    </div>
+    <div id="date">
+      <label for="date">When would you like your t-shirt to be delivered?</label>
+      <input name="date" type="date" id="date" min="2023-03-01" max="2023-03-28" required/>
+    </div>
+
+
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
   </form>
 
   </main>
   <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Anna</h2>
   </footer>
 </body>
 

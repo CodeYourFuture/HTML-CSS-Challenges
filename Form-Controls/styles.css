@@ -1,0 +1,77 @@
+header {
+    text-align: center;
+}
+
+footer {
+    font-style: italic;
+    position: fixed;
+    bottom: 0;
+    left: 4rem;
+   
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 24px;
+}
+
+h3 {
+    text-align: center;
+}
+
+div {
+    padding: 10px;
+}
+
+input, label {
+    display: inline-block;
+}
+
+label {
+    width: 200px;
+}
+
+#color {
+    display: flex;
+    flex-direction: column;
+}
+
+h4 {
+    font-weight: 200;
+    margin-bottom: 0;
+    margin-top: 0;
+    min-width: fit-content;
+}
+
+.colors {
+    display: inline-flex;
+}
+
+.colors label {
+    margin-left: 5px;
+}
+
+select {
+    width: 170px;
+    font-size: 16px;
+}
+
+#dateSection {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#dateSection label {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#date {
+    width: 40%;
+    align-self: end;
+    font-size: 16px;
+    margin-right: 4rem;
+}

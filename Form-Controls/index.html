@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>My form exercise</title>
-  <meta name="description" content="">
+  <meta name="description" content="T-shirt order form">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -14,31 +14,27 @@
   </header>
   <main>
   <form>
-    Enter order details below
+    <h3>Enter order details below</h3>
     <div id="customerName">
       <label for="name">Your name</label>
-      <input name="name" type="text" id="name" required />
+      <input name="name" type="text" id="name" pattern="\w{2,16}" required />
     </div>
-    <div id="email">
+    <div id="emailSection">
       <label for="email">Email</label>
       <input name="email" type="email" id="email" required/>
     </div>
     <div id="color">
-      Choose the colour
-      <div class="green">
+      <h4>Choose the colour</h4>
+      <div class="colors">
+        <input name="color" type="radio" id="green" value="green" required/>
         <label for="green">green</label>
-        <input name="color" type="radio" id="green" value="green" />
-      </div>
-      <div class="blue">
-        <label for="blue">blue</label>
         <input name="color" type="radio" id="blue" value="blue" />
-      </div>
-      <div class="yellow">
-        <label for="yellow">yellow</label>
+        <label for="blue">blue</label>
         <input name="color" type="radio" id="yellow" value="yellow" />
-      </div>
-      </div>
-    <div id="size">
+        <label for="yellow">yellow</label>
+      </div> 
+    </div>
+    <div id="sizeSection">
       <label for="size">Select your size</label>
       <select id="size" required>
         <option value="xs">XS</option>
@@ -49,14 +45,10 @@
         <option value="xxl">XXL</option>
       </select> 
     </div>
-    <div id="date">
+    <div id="dateSection">
       <label for="date">When would you like your t-shirt to be delivered?</label>
       <input name="date" type="date" id="date" min="2023-03-01" max="2023-03-28" required/>
     </div>
-
-
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
   </form>
 
   </main>

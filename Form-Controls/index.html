@@ -1,80 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <section>
-      <label for="name">Name</label>
-      <input id="name" type="text" minlength="3" maxlength="8" required />
-    </section>
-    <section>
-    <label for="email">Email</label>
-    <input id="email" type="email" required/>
-    </section>
-    <section>
-      <fieldset>
-        <legend>colors</legend>
-      
-        <input id="purple" type="checkbox" name="color" value="purple" />
-        <label for="purple">Purple</label>
-        <br>
-      
-        <input id="green" type="checkbox" name="color" value="green" />
-        <label for="green">Green</label>
-        <br>
-      
-        <input id="pink" type="checkbox" name="color" value="pink" />
-        <label for="pink">Pink</label>
-      </fieldset>
-    </section>
-    <section>
-      <label for="size">Select Size</label>
-<select id="size" name="size">
-  <option value="16" selected>16</option>
-  <option value="14">14</option>
-  <option value="12">12</option>
-  <option value="10">10</option>
-  <option value="8">8</option>
-  <option value="6">6</option>
-</select>
-</section>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <form>
+        <div>
+          <label for="name">Name</label>
+          <input id="name" type="text"  required />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" type="email" required />
+        </div>
+        <div>
+          <fieldset>
+          <legend>colors</legend>
+          <div>
+          <input id="purple" type="radio" name="color" value="purple"  checked/>
+          <label for="purple">Purple</label>
+          </div>
+          <div>
+          <input id="green" type="radio" name="color" value="green" />
+          <label for="green">Green</label>
+          </div>
+          <div>
+          <input id="pink" type="radio" name="color" value="pink" />
+          <label for="pink">Pink</label>
+          </div>
+        </fieldset>
+        </div>
+        <div>
+          <label for="size">Select Size</label>
+          <select id="size" name="size">
+            <option value="16" selected>16</option>
+            <option value="14">14</option>
+            <option value="12">12</option>
+            <option value="10">10</option>
+            <option value="8">8</option>
+            <option value="6">6</option>
+          </select>
+        </div>
+        <div>
+          <label for="date">Delivery Date</label>
+          <input id="date" type="date" min="12/02/2023" max="10/03/2023" required/>
+        </div>
 
-<section>
-  <label for="date">Delivery Date</label>
-  <input id="date" type="date" min="12/02/2023" max="10/03/2023" required>
-</section>
+        <div>
+          <label for="description"> your comment here:</label>
+        </div>
+          <textarea id="description" cols="30" rows="5"></textarea>
+        </section>
 
-<section>
-<label for="description"> your comment here:</label>
-<br>
-<textarea id="description" cols="30" rows="5"></textarea>
-</section>
-
-<button>Submit</button>
-  
-  
-     
-  </form>
-
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By Junita Lama</h2>
-  </footer>
-</body>
-
+        <button>Submit</button>
+      </form>
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <h2>By Junita Lama</h2>
+    </footer>
+  </body>
 </html>

@@ -16,14 +16,14 @@
     grid-template-rows: auto;
     justify-content: center;
     padding: 15px;
-    background-color: blueviolet;
+    background-color: lightbrown;
     text-transform: uppercase;
     float: inline-start;
    }
 
  
  h1{
-    background-color: blueviolet ;
+    background-color: lightbrown;
     text-align: center;
     font-weight: bolder;
     color: black;
@@ -55,7 +55,7 @@ button{
     text-align: center;
     padding: 10px;
     font-weight: bold;
-    color: brown;
+    color: black;
 }
 
 
@@ -64,7 +64,7 @@ button{
  
 footer{
     text-align: center;
-    background-color: blueviolet;
+    background-color: lightbrown;
     
 }
  

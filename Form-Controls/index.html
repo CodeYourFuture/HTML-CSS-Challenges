@@ -13,35 +13,35 @@
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
+  <form action="Product_Pick_form" method="post">
     
 
-  <section>
+  <div>
         
-<label for="name">enter your name</label>
-<input type="text" id="name" name="name"><br>
- </section>
+<label for="name">Name:</label>
+<input type="text" id="name" name="user_name" />
+  </div>
+
     <br>
-    <section>
-  <label for="email">enter your email</label>
-<input type="email" id="email" name="email">
- </section>
+    <div>
+  <label for="email">Email:</label>
+<input type="email" id="mail" name="user_email"/>
+    </div>
       <br>
       <br>
-      <section>
-     <label for="colors">Choose your colors:</label>
+      <div>
+     <label for="colors">colors:</label>
     <input type="colors" name="colors" id="colors">
      <select id="colors">
         <option value="red">red</option>
         <option value="black">black</option>
         <option value="white">white</option>
       </select>
-    </section>
+      </div>
       <br>
       <br>
-      <section>
-     <label for="sizes">Choose your size:</label>
-    
+      <div>
+     <label for="sizes">Size:</label>
     <select id="sizes">
       <option value="xs">xs</option>
       <option value="s">s</option>
@@ -50,31 +50,28 @@
       <option value="XL">XL</option>
       <option value="XXL">XXL</option>
     </select>
-    </section>
-    
-    
+      </div>
+     <br>
     <br>
-    <br>
-    <section>
-    <label for="delivery date">Choose your delivery date:</label>
+    <div>
+    <label for="delivery date">delivery date:</label>
     
     <input id="date" type="date" min="14/02/2023" max="14/03/2023" required>
-    </section>
+    </div>
     <br>
     <br>
-    <button>Submit</button>
+    <div class="button">
+      <button type="submit">Send your message</button>
+    </div>
     
      </form>
     
         
     </body>
     </html>
-  
-
   </main>
   <footer>
-    <!-- change to your name-->
-    <h2>By Anu Thapaliya</h2>
+   <h2>By Anu _Thapaliya</h2>
   </footer>
 </body>
 

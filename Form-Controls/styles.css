@@ -20,31 +20,30 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   padding: 20px;
   background-color: var(--blue);
 }
 
-#name {
+.name {
   margin-bottom: 10px;
 }
 
-#email {
+.email {
   margin-bottom: 20px;
 }
 
-#size {
+.size {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-button {align-items: center;
+button {
   padding: 10px;
   background-color: var(--yellow);
   margin-top: 20px;
 }
 
-#date {
+.date {
   margin-bottom: 30px;
 }
 

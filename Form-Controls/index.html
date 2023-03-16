@@ -16,6 +16,59 @@
   <form>
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
+    <fieldset class="validate-account">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" required><br><br>
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname" required><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+    </fieldset>
+
+    <section class="select-colour">
+      <label for="color-picker">Choose your t-shirt colour from the three available colours</label>
+      <input type="color" list="presets" id="color-picker">
+      <datalist id="presets">
+        <option value="#FF0000">Red</option>
+        <option value="#FFFF00">Yellow</option>
+        <option value="#6699cc">Blue</option>
+      </datalist>
+    </section>
+
+    <section class="select-size">
+      <div>
+          <p>Choose your t-shirt size:</p>
+          <input type="radio" id="XS" name="size" value="XS">
+          <label for="XS">XS</label>
+      </div>
+      <div>
+          <input type="radio" id="S" name="size" value="S">
+          <label for="S">S</label>
+      </div>
+      <div>
+          <input type="radio" id="M" name="size" value="M">
+          <label for="M">M</label>
+      </div>
+      <div>
+          <input type="radio" id="L" name="size" value="L">
+          <label for="L">L</label>
+      </div>
+      <div>
+          <input type="radio" id="XL" name="size" value="XL">
+          <label for="XL">XL</label>
+      </div>
+      <div>
+          <input type="radio" id="XXL" name="size" value="XXL">
+          <label for="XXL">XXL</label>
+      </div>
+    </section>
+
+    <section class="select-delivery-date">
+      <label for="date">Date of Delivery</label>
+      <input type="date" name="date" id="date" min="2023-03-16" max="2023-04-13">
+    </section>
+
+    
   </form>
 
   </main>

@@ -10,18 +10,59 @@
 </head>
 <body>
   <header>
-    <h1>Product Pick</h1>
+    <h1>T-shirts</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
+    
+      <div class="form-div">
+      <label id="name-label">Name</label><input type="text" id="name" name="name" placeholder="Enter your Name" required>
+        </div>
+      <div class="form-div">
+        <label id="email-label">Email</label><input type="email" id="email" name="email" placeholder="Enter your Email" required>
+        </div>
+
+        <div class="form-div">
+          <label id="label-radio">Choose color of T-shirt</label>
+          </div>
+          <div class="form-radio">
+    <label id="blue"><input type="radio" value="blue" name="choose">Blue</label>
+    </div>
+        <div class="form-radio">
+    <label id="green"><input type="radio" value="green" name="choose">Green</label>
+    </div>  
+    <div class="form-radio">
+    <label id="pink"><input type="radio" value="pink" name="choose">Pink</label>
+    </div>
+    <div class="form-div">
+
+      <div class="form-div">
+        <label id="dropdown-label-feature">T-shirt size</label>
+        <select id="dropdown-feature" name="dropdown-feature">
+        <option value="">Select an option</option>
+        <option value="1">XS</option>
+        <option value="2">Small</option>
+        <option value="3">Medium</option>
+        <option value="4">Large</option>
+        <option value="5">XL</option>
+        <option value="6">XXL</option>
+          </select>
+      </div>
+      <div class="form-div"> 
+
+    <div class="form-div">
+      <label for="del-date">D.O.D.<span class="sr-only">(Date of Delivery)</span></label>
+      <input type="date" name="del-date" id="del-date" />
+    </div>
+    <div class="form-div"> 
+      <label>
+        <input id="submit" type="submit" value="submit">
+    </div>
   </form>
 
   </main>
   <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    
+    <h2>By Jan Softa</h2>
   </footer>
 </body>
 

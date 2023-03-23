@@ -1,28 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <form>
+        <!-- write your html here-->
+        <div class="form">
+          <div>
+            <label for="fullname"> full name:</label><br />
+            <input required type="text" id="fullname" name="fullname" minlength="3" /><br />
+          </div>
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+          <div>
+            <label for="email">email:</label>
+            <br />
+            <input
+              required
+              type="email"
+              id="email"
+              name="email"
+              pattern=" /^\\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;"
+            />
+            <br />
+          </div>
 
+          <div>
+            <fieldset required>
+              <legend>Pick you colour:</legend>
+              <div>
+                <input checked type="radio" id="blue" name="color" value="Blue" />
+                <label for="blue">Blue</label>
+
+                <input type="radio" id="green" name="color" value="green" />
+                <label for="green">Green</label>
+
+                <input type="radio" id="red" name="color" value="red" />
+                <label for="red">Red</label>
+              </div>
+            </fieldset>
+          </div>
+
+          <div>
+            <label for="size">Choose your T-shirt size:</label><br />
+
+            <select name="size" id="size">
+              <option value="XS">extra small</option>
+              <option value="S">small</option>
+              <option value="M">medium</option>
+              <option value="L">large</option>
+              <option value="XL">x-large</option>
+              <option value="XXL">2XL</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="start">pick your delevery date</label><br />
+            <input
+              required
+              type="date"
+              id="start"
+              name="calendar"
+              value="2023-03-23"
+              min="2023-03-13"
+              max="2024-03-13"
+            /><br />
+          </div>
+
+          <button class="button" role="button">Submit</button>
+        </div>
+
+        <!-- try writing out the requirements first-->
+      </form>
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <h2>By HOMEWORK SOLUTION</h2>
+    </footer>
+  </body>
 </html>

@@ -18,22 +18,34 @@
     <form>
 
       <div class="form-box">
-        <label id="name">Name </label><input type="text" id="name" name="name" placeholder="Enter your Name" required>
-        <label id="email">Email </label><input type="email=" name="email" placeholder="Enter your Email" required>
+        <label id="name-lebel">Name </label><input type="text" id="name" name="name" placeholder="Enter your Name" required>
+        <label id="email-lebel">Email </label><input type="email=" name="email" placeholder="Enter your Email" required>
       </div>
 
       <div class="t-shirt">
         <h3>T-shirt details</h3>
-        <label id="regular" for="regular"><input type="radio" name="details" id="regular">Regular T-shirt</label>
-        <label id="long" for="long"><input type="radio" name="details" id="long-sleeve">Long sleeve T-shirt</label>
+        <label id="regular-lebel" for="regular"><input type="radio" name="details" id="regular">Regular T-shirt</label>
+        <label id="long-lebel" for="long"><input type="radio" name="details" id="long-sleeve">Long sleeve T-shirt</label>
       </div>
 
       <div class="color">
         <h3>T-shirt Color</h3>
-        <label id="red"><input type="radio" value="red" name="choose">Red</label>
-        <label id="yellow"><input type="radio" value="yellow" name="choose">Yellow</label>
-        <label id="blue"><input type="radio" value="blue" name="choose">Blue</label>
-        <label id="black"><input type="radio" value="black" name="choose">Black</label>
+        <div>
+          <label>
+            <input type="radio" value="red" name="choose"> Red</label>
+        </div>
+        <div>
+          <label id="yellow">
+            <input type="radio" value="yellow" name="choose">Yellow</label>
+        </div>
+        <div>
+          <label id="blue">
+            <input type="radio" value="blue" name="choose">Blue</label>
+        </div>
+        <div>
+          <label id="black">
+            <input type="radio" value="black" name="choose">Black</label>
+        </div>
       </div>
 
       <div class="size">
@@ -50,8 +62,8 @@
       </div>
       <div class="hero">
         <h3>Deliver Option</h3>
-        <label id="delivery" for="delivery"><input type="radio" name="delivery" id="delivery">Delivery</label>
-        <label id="collect" for="collect"><input type="radio" name="delivery" id="collect">Collected from the
+        <label id="delivery-lebel" for="delivery"><input type="radio" name="delivery" id="delivery">Delivery</label>
+        <label id="collect-lebel" for="collect"><input type="radio" name="delivery" id="collect">Collected from the
           store</label>
       </div>
     </form>

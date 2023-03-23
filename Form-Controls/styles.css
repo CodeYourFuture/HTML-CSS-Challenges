@@ -1,6 +1,6 @@
 :root{
     --dark : #293241;
-    --orang: #ee6c4d;
+    --orang: #eb9681;
     --sky: #e0fbfc;
     --light: #98c1d9;
     --gray: #143764;
@@ -62,10 +62,15 @@ header h2{
     justify-content: center;
     padding-top: 5px;
 }
-.color > label{
+.color {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 10px;
+}
+
+.color>div>label {
     padding-top: 5px;
     color: var(--sky);
 }
@@ -100,6 +105,7 @@ footer{
     align-items: center;
     justify-content: center;
     margin: 50px;
+    margin-top: 25px;
 }
 footer > em{
     font-size: 1.4rem;

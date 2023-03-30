@@ -1,195 +1,149 @@
-* {
-  font-family: sans-serif;
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
 }
 
+/* Header */
 header {
-  background-color: #211a1d;
-  color: #ffffff;
-  width: 100%;
+  background-color: #1c1c1c;
+  color: #fff;
+  display: inline-flexbox;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px;
 }
 
-nav {
-  display: inline-block;
-  width: 100%;
+header img {
+  max-width: 100%;
+  height: auto;
 }
 
-header ul {
-  margin: 20px 0 0 0;
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
   padding: 0;
 }
 
-header ul li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-section {
-  padding: 5%;
-  background-color: #f8f0fb;
-}
-
-img {
-  border: 5px solid #8075ff;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  /*Purple*/
-  color: #6320ee;
-  margin-bottom: 1em;
-}
-
-h1 {
-  font-size: 250%;
-}
-
-h2 {
-  font-size: 175%;
-}
-
-h3 {
-  font-size: 150%;
-}
-
-button {
-  display: inline-block;
-  border-radius: 3px;
-  cursor: pointer;
-  padding: 10px 20px;
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
-  background-color: #372772;
-  border: 2px solid black;
+nav a {
   color: #fff;
+  text-decoration: none;
 }
 
-footer {
-  background-color: #211a1d;
-  color: #ffffff;
-  width: 100%;
+/* Main */
+main {
   padding: 20px;
-  display: flex;
-  justify-content: space-between;
 }
 
-.introduction {
-}
-
-#badge {
-  height: 120px;
-  width: 120px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-}
-
-#badge:hover {
-  background-color: yellow;
-}
-
-#badge p {
+section.introduction {
+  padding: 20px;
   text-align: center;
-  font-size: 125%;
 }
 
-.image-container img {
-  vertical-align: top;
-  border: 5px solid #747c92;
-}
-
-.image-container img:first-of-type {
-  vertical-align: bottom;
-}
-
-.tigers {
-  background-color: #0b3c49;
-  color: #f0e100;
-}
-
-.giraffe {
-  background-color: #465775;
-  color: #56e39f;
-}
-
-.giraffe h2 {
-  color: #ef6f6c;
-}
-
-.card {
-  display: inline-block;
-  background-color: white;
+section.bears {
   padding: 20px;
+  text-align: center;
+}
+
+section.bears .image-container {
+  margin-top: 20px;
+}
+
+section.tigers {
+  padding: 20px;
+}
+
+section.giraffe-facts,
+section.giraffe-behavior,
+section.giraffe-diet {
+  padding: 20px;
+}
+
+section.giraffe-behavior,
+section.giraffe-diet {
+  background-color: #f5f5f5;
+}
+
+section.news {
+  padding: 20px;
+}
+
+section.news .card {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  padding: 10px;
   margin: 10px;
-  width: 30%;
-  border: 1px solid black;
-  border-radius: 10px;
 }
 
-.card h4 {
-  margin-bottom: 1em;
+section.news .card time {
+  display: inline-flexbox;
+  font-size: 0.8em;
+  color: #666;
 }
 
-.card a {
-  text-decoration: underline;
-  font-weight: bold;
+section.news .card h4 {
+  margin: 0;
+  font-size: 1.2em;
 }
 
-.card time {
-  opacity: 0.5;
-  display: inline-block;
-  margin-bottom: 10px;
+section.news .card a {
+  color: #1c1c1c;
+  text-decoration: none;
 }
 
-/*Education*/
-
-.education {
-  height: 500px;
-  background-image: url("https://source.unsplash.com/1200x900/?tiger");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 100px 5%;
+section.education {
+  background-color: #1c1c1c;
+  color: #fff;
+  padding: 20px;
 }
 
-.education-container {
-  background-color: rgba(255, 255, 255, 0.75);
-  padding: 50px;
-  max-width: 400px;
+section.education button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
 }
 
-.education-container h3,
-.education-container p {
-  margin-bottom: 1em;
+section.education button:hover {
+  background-color: #fff;
+  color: #1c1c1c;
+}
+section.programs {
+  padding: 20px;
 }
 
-/*Membership*/
-
-.membership {
-  text-align: center;
-  background-color: #fffffc;
+section.programs .card {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
 }
 
-.membership h2 {
-  color: #ff3f00;
+section.programs .card time {
+  display: inline-flexbox;
+  font-size: 0.8em;
+  color: #666;
 }
 
-.membership strong {
-  color: #ff7f11;
+section.programs .card h4 {
+  margin: 0;
+  font-size: 1.2em;
 }
 
-/*Programs*/
-
-.programs .card {
-  display: block;
+section.programs .card a {
+  color: #1c1c1c;
+  text-decoration: none;
+}
+.links{
+  justify-content: space-between;
+  align-items: center;
+  display: flexbox
+}
+.footer{
+  justify-content: space-between;
+  align-items: center;
 }

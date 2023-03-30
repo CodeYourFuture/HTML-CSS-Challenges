@@ -13,15 +13,43 @@
     <h1>Product Pick</h1>
   </header>
   <main>
+  
   <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="color">T-shirt color:</label>
+  <select id="color" name="color" required>
+    <option value="">Choose a color</option>
+    <option value="red">Red</option>
+    <option value="blue">Blue</option>
+    <option value="green">Green</option>
+  </select>
+
+  <label for="size">T-shirt size:</label>
+  <select id="size" name="size" required>
+    <option value="">Choose a size</option>
+    <option value="XS">XS</option>
+    <option value="S">S</option>
+    <option value="M">M</option>
+    <option value="L">L</option>
+    <option value="XL">XL</option>
+    <option value="XXL">XXL</option>
+  </select>
+
+  <label for="deliveryDate">Delivery date:</label>
+  <input type="date" id="deliveryDate" name="deliveryDate" min="<?php echo date('Y-m-d'); ?>" max="<?php echo date('Y-m-d', strtotime('+4 weeks')); ?>" required>
+
+  <button type="submit">Submit</button>
+</form>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By  Ebrahim Beiati-Asl</h2>
   </footer>
 </body>
 

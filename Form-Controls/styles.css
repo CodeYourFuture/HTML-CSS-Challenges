@@ -1,0 +1,13 @@
+#name:focus {
+    background: rgb(224, 224, 224);
+    color: rgb(0, 0, 0);
+}
+#email:focus {
+    background: rgb(201, 201, 201);
+    color: rgb(0, 0, 0);
+}
+
+#date:focus, #colour:focus, #size:focus {
+    background: rgb(201, 201, 201);
+    color: rgb(0, 0, 0);
+}

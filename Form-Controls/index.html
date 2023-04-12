@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,20 +9,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+    <form>
+      <!-- write your html here-->
+      <!-- try writing out the requirements first-->
+      <label for="customer-name">Name:</label>
+      <input type="text" id="customer-name" name="customer-name" minlength="2" required>
+      <br>
+
+      <label for="customer-email">Email:</label>
+      <input type="email" id="customer-email" name="customer-email" required>
+      <br>
+
+      <label for="shirt-color">Color:</label>
+      <select id="shirt-color" name="shirt-color" required>
+        <option value="">Choose a color</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+      </select>
+      <br>
+
+      <label for="shirt-size">Size:</label>
+      <select id="shirt-size" name="shirt-size" required>
+        <option value="">Choose a size</option>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+      </select>
+      <br>
+
+      <label for="delivery-date">Delivery Date:</label>
+      <input type="date" id="delivery-date" name="delivery-date" min="2023-04-13" max="2023-05-10" required>
+      <br>
+
+      <input type="submit" value="Submit">
+    </form>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By HERISH TURKI & GLASGOW _ CLASS 6</h2>
   </footer>
 </body>
 

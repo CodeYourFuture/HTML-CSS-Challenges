@@ -25,7 +25,36 @@
             pattern="[A-Za-z]{2,}"
           />
         </div>
-        <!-- try writing out the requirements first-->
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div>
+          <label for="color">Choose a color:</label>
+          <select name="color" id="color" required>
+            <option value="">Please choose a color--</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+          </select>
+        </div>
+        <div>
+          <label for="size">Choose a size:</label>
+          <select name="size" id="size" required>
+            <option value=""></option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </div>
+        <div>
+          <label for="date">Delivery Date</label>
+          <input type="date" name="date" required min="<?php echo date('Y-m-d');?>" max="<?php echo date('Y-m-d', strtotime('+4 weeks'));?>">
+        </div>
+        <button type="submit">Submit</button>
       </form>
     </main>
     <footer>

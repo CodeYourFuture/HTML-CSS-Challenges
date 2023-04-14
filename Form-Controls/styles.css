@@ -25,8 +25,8 @@ button[type="submit"] {
     padding: 0.5rem;
     border:none;
     border-radius: 3px;
-    background-color: rgb(152, 152, 152);
-    color: rgb(67, 68, 68);
+    background-color: rgb(0, 7, 15);
+    color: rgb(243, 242, 242);
     font-size: 1rem;
     cursor: pointer;
 }

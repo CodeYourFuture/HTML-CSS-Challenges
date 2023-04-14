@@ -52,7 +52,8 @@
         </div>
         <div>
           <label for="date">Delivery Date</label>
-          <input type="date" name="date" required min="<?php echo date('Y-m-d');?>" max="<?php echo date('Y-m-d', strtotime('+4 weeks'));?>">
+          <input type="date" name="date" required aria-required="true" min="<?php echo date('Y-m-d');?>
+          "max="<?php echo date('Y-m-d', strtotime('+4 weeks'));?>"step="1"title="Please enter a date in the format DD-MM-YYYY."/>
         </div>
         <button type="submit">Submit</button>
       </form>

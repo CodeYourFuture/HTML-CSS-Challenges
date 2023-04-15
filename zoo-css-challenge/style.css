@@ -9,6 +9,10 @@ header {
   padding: 20px;
 }
 
+header > .logo {
+  background-color: ;
+}
+
 nav {
   display: inline-block;
   width: 100%;

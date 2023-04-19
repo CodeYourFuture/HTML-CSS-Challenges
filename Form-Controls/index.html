@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,20 +9,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+    <form>
+      <label for="First-name">
+        First Name
+      </label>
+      <input type="text">
+      <label for="Last-name">
+        Last Name
+      </label>
+      <input type="text">
+      <label for="email">Email</label>
+      <input type="email">
+      <label for="tel-number">Tel Number</label>
+      <input type="tel">
+
+      <label for="size">Size</label>
+      <div class="options">
+        <div>
+          <input type="radio" name="size" value="XS">
+          <label for="size">Extra Small</label>
+        </div>
+        <div>
+          <input type="radio" name="size" value="S">
+          <label for="size">Small</label>
+        </div>
+        <div>
+          <input type="radio" name="size" value="M">
+          <label for="size">Medium</label>
+        </div>
+        <div>
+          <input type="radio" name="size" value="L">
+          <label for="size">Large</label>
+        </div>
+        <div>
+          <input type="radio" name="size" value="XL">
+          <label for="size">Extra Large</label>
+        </div>
+      </div>
+      <label for="colour">Colour</label>
+      <div class="options">
+        <div>
+          <input type="radio" name="colour" value="red">
+          <label for="colour">Red</label>
+        </div>
+        <div>
+          <input type="radio" name="colour" value="Blue">
+          <label for="colour">Blue</label>
+        </div>
+        <div>
+          <input type="radio" name="colour" value="White">
+          <label for="colour">White</label>
+        </div>
+
+      </div>
+      <label for="date">Delivery Date</label>
+      <input type="date" name="date" min="14-02-2023" max="14-03-2023">
+      <button>Submit</button>
+    </form>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By BAKI TUNCER</h2>
   </footer>
 </body>
 

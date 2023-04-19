@@ -27,7 +27,50 @@
 * write your names at the bottom
 * take a screenshot at laptop and Moto G4 device sizes in Devtools
 */
+html{
+  background-color: rgb(71, 206, 71);
+  
+}
+
+header, footer{
+  text-align: center;
+}
+
 
 body {
   font: 100% "Poppins", sans-serif;
+}
+
+.container{
+  background-color: rgb(183, 240, 183);
+  padding: 30px;
+  margin: 20px;
+  height: 350px;
+}
+
+.details{
+  display: flex;
+  width: 200px;
+  height: 200px;
+  object-fit:fill;
+}
+
+.details img{
+  width: 100%;
+  margin-right: 30px;
+}
+
+.details p{
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width:600px) {
+  
+  main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+  }
 }

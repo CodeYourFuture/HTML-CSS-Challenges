@@ -1,5 +1,6 @@
 * {
   font-family: sans-serif;
+  line-height: 2;
 }
 
 header {
@@ -75,9 +76,6 @@ footer {
   justify-content: space-between;
 }
 
-.introduction {
-}
-
 #badge {
   height: 120px;
   width: 120px;
@@ -85,7 +83,7 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 
   display: flex;
@@ -108,9 +106,9 @@ footer {
   border: 5px solid #747c92;
 }
 
-.image-container img:first-of-type {
+/* .image-container img:first-of-type {
   vertical-align: bottom;
-}
+} */
 
 .tigers {
   background-color: #0b3c49;
@@ -118,13 +116,13 @@ footer {
 }
 
 .giraffe {
-  background-color: #465775;
-  color: #56e39f;
+  background-color: #483c46;
+  color: #beee62;
 }
 
-.giraffe h2 {
+/* .giraffe h2 {
   color: #ef6f6c;
-}
+} */
 
 .card {
   display: inline-block;
@@ -187,9 +185,61 @@ footer {
 .membership strong {
   color: #ff7f11;
 }
+.membership p{
+  width: 700px;
+  margin: auto;
+}
 
 /*Programs*/
 
 .programs .card {
-  display: block;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;  
+}
+
+/* my cahnges */
+
+#logo {
+  border: none;
+}
+
+#bear-1 {
+  border: 5px solid green;
+}
+#bear-2 {
+  border: 5px solid red;
+}
+#bear-3 {
+  border: 5px solid yellow;
+  height: 300px;
+}
+
+#tiger-h2 {
+  color: #fbff00;
+}
+
+.giraffe-h {
+  color: #f4743b;
+}
+
+#giraffe-first-p{
+  font-size: 24px;
+}
+
+.news h2{
+  text-align: center;
+}
+button{
+  font-size: 24px;
+  border-radius: 20px;
+}
+button:hover{
+  background-color: #f0e100;
+}
+
+.membership p{
+
+  max-width: 700px;
+  margin: 0 auto;
 }

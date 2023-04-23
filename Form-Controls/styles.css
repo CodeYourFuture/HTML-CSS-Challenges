@@ -1,0 +1,48 @@
+* {
+  padding: 5px;
+  margin: 10px;
+  background-color: rgb(228, 232, 237);
+}
+
+header {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.p {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.color {
+  display: flex;
+  justify-content: center;
+}
+
+.size {
+  display: flex;
+  justify-content: center;
+}
+
+.delivery {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  display: block;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  color: whitesmoke;
+  background-color: orange;
+}
+
+footer h2 {
+  font-size: 0.75rem;
+  text-align: center;
+}

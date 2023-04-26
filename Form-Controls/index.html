@@ -14,14 +14,41 @@
   </header>
   <main>
   <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  
+    <label for="color">Color:</label>
+    <select id="color" name="color" required>
+      <option value="">-- Please select --</option>
+      <option value="red">Red</option>
+      <option value="blue">Blue</option>
+      <option value="green">Green</option>
+    </select>
+  
+    <label for="size">Size:</label>
+    <select id="size" name="size" required>
+      <option value="">-- Please select --</option>
+      <option value="XS">XS</option>
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
+      <option value="XXL">XXL</option>
+    </select>
+  
+    <label for="delivery-date">Delivery Date:</label>
+    <input type="date" id="delivery-date" name="delivery-date" min="<?php echo date('Y-m-d'); ?>" max="<?php echo date('Y-m-d', strtotime('+4 weeks')); ?>" required>
+  
+    <button type="submit">Submit</button>
   </form>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Onur Atas</h2>
   </footer>
 </body>
 

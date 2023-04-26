@@ -1,4 +1,5 @@
 * {
+  letter-spacing: 0.2em;
   font-family: sans-serif;
 }
 
@@ -80,6 +81,7 @@ footer {
 }
 
 .introduction {
+  background-color: white;
 }
 
 #badge {

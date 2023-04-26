@@ -1,72 +1,89 @@
-/* Global styles */
-* {
-  box-sizing: border-box;
+/* HTML/CSS W2 Project
+* Work in pairs
+* Mark up your content with semantic html
+* Lay out your page using flexbox and grid
+* Test your work with Devtools.
+* You can get pictures and choose custom size in the download at
+* https://www.pexels.com/ 
+* If you want to use a different font, get them from
+* https://fonts.google.com/
+*/
+
+/* Testing your work 
+== check your CSS
+* uses grid
+* uses flexbox
+* uses at least one media query
+
+== check your HTML
+* uses semantic HTML
+* has a Lighthouse Access score of 100 <-- 
+* works on desktop and mobile
+* works when you size the text up by 200%
+
+== check your design
+* follows the example
+* you can choose your own colours and fonts if you like
+* write your names at the bottom
+* take a screenshot at laptop and Moto G4 device sizes in Devtools
+*/
+
+body {
+  font: 100% "Poppins", sans-serif;
   margin: 0;
   padding: 0;
 }
 
-body {
-  font-family: 'Poppins', sans-serif;
-  color: #333;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem;
-}
-
 /* Header styles */
 header {
-  background-color: #f2f2f2;
-  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
 }
 
 h1 {
-  font-size: 2rem;
+  margin: 0;
 }
 
 /* Main styles */
 main {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-}
-
-.card {
   display: flex;
-  flex-direction: column;
-  background-color: #fff;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  margin-bottom: 2em;
+}
+
+.grid-article {
+  background-color: #f0f0f0;
   border: 1px solid #ccc;
-  padding: 1rem;
+  padding: 1em;
 }
 
-.card img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 1rem;
-}
-
-.card h2 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-
-.card p {
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
+.grid-article h3 {
+  margin-top: 0;
 }
 
 /* Footer styles */
 footer {
-  background-color: #f2f2f2;
-  padding: 1rem;
-  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
 }
 
-/* Media query */
-@media (max-width: 768px) {
+/* Media query styles */
+@media screen and (max-width: 768px) {
   main {
-    grid-template-columns: 1fr;
+      display: block;
+  }
+
+  .grid-section {
+      grid-template-columns: repeat(2, 1fr);
   }
 }

@@ -2,6 +2,10 @@
   font-family: sans-serif;
 }
 
+#logo {
+  border: none;
+}
+
 header {
   background-color: #211a1d;
   color: #ffffff;

@@ -30,7 +30,7 @@ section {
 }
 
 img {
-  border: 5px solid #8075ff;
+  border-radius: 5px;
 }
 
 h1,
@@ -76,6 +76,13 @@ footer {
 }
 
 .introduction {
+  background-color: white;
+  line-height: 1.5;
+  padding: 5%;
+}
+
+.introduction p {
+  margin-bottom: 1.5em;
 }
 
 #badge {
@@ -109,7 +116,8 @@ footer {
 }
 
 .image-container img:first-of-type {
-  vertical-align: bottom;
+  vertical-align: top;
+  border-color: #8075ff;
 }
 
 .tigers {
@@ -117,13 +125,28 @@ footer {
   color: #f0e100;
 }
 
-.giraffe {
-  background-color: #465775;
-  color: #56e39f;
+.tigers h2 {
+  color: #ffffff;
 }
 
-.giraffe h2 {
-  color: #ef6f6c;
+.tigers ul {
+  list-style-type: disc;
+  padding-left: 1.5em;
+  margin-bottom: 1em;
+}
+
+.giraffe {
+  background-color: #483c46;
+  color: #beee62;
+}
+
+.giraffe h2,
+.giraffe h3 {
+  color: #f4743b;
+}
+
+.giraffe p {
+  color: #beee62;
 }
 
 .card {
@@ -148,48 +171,4 @@ footer {
 .card time {
   opacity: 0.5;
   display: inline-block;
-  margin-bottom: 10px;
-}
-
-/*Education*/
-
-.education {
-  height: 500px;
-  background-image: url("https://source.unsplash.com/1200x900/?tiger");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 100px 5%;
-}
-
-.education-container {
-  background-color: rgba(255, 255, 255, 0.75);
-  padding: 50px;
-  max-width: 400px;
-}
-
-.education-container h3,
-.education-container p {
-  margin-bottom: 1em;
-}
-
-/*Membership*/
-
-.membership {
-  text-align: center;
-  background-color: #fffffc;
-}
-
-.membership h2 {
-  color: #ff3f00;
-}
-
-.membership strong {
-  color: #ff7f11;
-}
-
-/*Programs*/
-
-.programs .card {
-  display: block;
-}
+  margin-bottom: 10

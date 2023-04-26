@@ -1,5 +1,10 @@
 * {
+  letter-spacing: 0.2em;
   font-family: sans-serif;
+}
+
+#logo {
+  border: none;
 }
 
 header {
@@ -76,6 +81,7 @@ footer {
 }
 
 .introduction {
+  background-color: white;
 }
 
 #badge {

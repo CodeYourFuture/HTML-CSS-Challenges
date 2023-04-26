@@ -14,14 +14,43 @@
   </header>
   <main>
   <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
+    <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required pattern="[a-zA-Z\s]+">
+  <br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+  <br>
+
+  <label for="color">T-shirt color:</label>
+  <select id="color" name="color" required>
+    <option value="red">Red</option>
+    <option value="blue">Blue</option>
+    <option value="green">Green</option>
+  </select>
+  <br>
+
+  <label for="size">T-shirt size:</label>
+  <select id="size" name="size" required>
+    <option value="XS">XS</option>
+    <option value="S">S</option>
+    <option value="M">M</option>
+    <option value="L">L</option>
+    <option value="XL">XL</option>
+    <option value="XXL">XXL</option>
+  </select>
+  <br>
+
+  <label for="delivery-date">Delivery date:</label>
+  <input type="date" id="delivery-date" name="delivery-date" required min="<?= date('Y-m-d') ?>" max="<?= date('Y-m-d', strtotime('+4 weeks')) ?>">
+  <br>
+
+  <button type="submit">Submit</button>
   </form>
 
   </main>
   <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Bekir Kuscu</h2>
   </footer>
 </body>
 

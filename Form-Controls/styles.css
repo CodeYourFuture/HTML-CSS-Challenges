@@ -1,0 +1,41 @@
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  /* Style the form input elements */
+  input,
+  select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  /* Style the submit button */
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Style the form inputs when focused */
+  input:focus,
+  select:focus {
+    outline: none;
+    border-color: #4CAF50;
+  }
+  
+  /* Style the form input labels when focused */
+  input:focus + label,
+  select:focus + label {
+    color: #4CAF50;
+  }

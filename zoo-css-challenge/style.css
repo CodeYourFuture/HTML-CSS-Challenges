@@ -22,6 +22,7 @@ header ul {
 header ul li {
   display: inline-block;
   margin-right: 10px;
+
 }
 
 section {
@@ -29,8 +30,12 @@ section {
   background-color: #f8f0fb;
 }
 
+section > .introduction {
+  background-color: white;
+}
+
 img {
-  border: 5px solid #8075ff;
+  border: none;
 }
 
 h1,
@@ -55,6 +60,10 @@ h3 {
   font-size: 150%;
 }
 
+p {
+  line-height: 1.5;
+}
+
 button {
   display: inline-block;
   border-radius: 3px;
@@ -64,7 +73,15 @@ button {
   background-color: #372772;
   border: 2px solid black;
   color: #fff;
+  font-weight: 700;
+  font-size: larger;
 }
+
+button:hover {
+  background-color: #747c92;
+}
+
+
 
 footer {
   background-color: #211a1d;
@@ -106,6 +123,15 @@ footer {
 .image-container img {
   vertical-align: top;
   border: 5px solid #747c92;
+  vertical-align: top;
+}
+
+.image-container img:first-of-type {
+  border-color: #372772;
+}
+
+.image-container img:last-of-type {
+  border-color: #6320ee;
 }
 
 .image-container img:first-of-type {
@@ -117,13 +143,29 @@ footer {
   color: #f0e100;
 }
 
-.giraffe {
-  background-color: #465775;
-  color: #56e39f;
+.tigers h2, h3 {
+  color: #f8f0fb;
 }
 
-.giraffe h2 {
-  color: #ef6f6c;
+.tigers > ul > li {
+  margin-bottom: 10px;
+}
+
+.giraffe {
+  background-color: #483C46;
+  color: #BEEE62;
+}
+
+.giraffe h2, h3 {
+  color: #F4743B;
+}
+
+.giraffe p:first-of-type {
+  font-size: larger ;
+}
+
+.news h2 {
+  text-align: center;
 }
 
 .card {
@@ -166,6 +208,7 @@ footer {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  border-radius: 10px;
 }
 
 .education-container h3,

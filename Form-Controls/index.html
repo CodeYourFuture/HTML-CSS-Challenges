@@ -1,28 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <form>
+       
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full-name" required pattern="[A-Za-z\s]{2,}"/>
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
 
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+
+
+        <label for="t-shirt-color">T-shirt Color:</label>
+        <select id="t-shirt-color" name="t-shirt-color" required>
+          <option value="">Choose a color</option>
+          <option value="black">Black</option>
+          <option value="white">White</option>
+          <option value="grey">Grey</option>
+        </select>
+     
+
+        <label for="t-shirt-size">T-shirt Size:</label>
+        <select id="t-shirt-size" name="t-shirt-size" required>
+          <option value="">Choose a Size</option>
+          <option value="xs">XS</option>
+          <option value="s">S</option>
+          <option value="m">M</option>
+          <option value="l">L</option>
+          <option value="xl">XL</option>
+          <option value="xxl">XXL</option>
+        </select>
+<p>
+        <label for="delivery-date">Delivery Date:</label>
+    
+        <input
+          type="date"
+          id="delivery-date"
+          name="delivery-date"
+          min="<?php echo date('Y-m-d'); ?>"
+          max="<?php echo date('Y-m-d', strtotime('+4 weeks')); ?>"
+          required
+        />
+        </p>
+
+        <input type="submit" value="Submit" />
+       
+        <!-- write your html here-->
+        <!-- try writing out the requirements first-->
+      </form>
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <h2>By HOMEWORK SOLUTION</h2>
+    </footer>
+  </body>
 </html>

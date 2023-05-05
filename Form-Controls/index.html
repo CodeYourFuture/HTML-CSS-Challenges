@@ -10,19 +10,215 @@
 </head>
 <body>
   <header>
+    <h1>Selling T-Shirt</h1>
+    <br>
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
+    <hr>
+    <form action="" method="Git" enctype="multipart/form-data">
+          
+      <div>
+        Customer Full Details:
+      </div>
+      <br>
+      <div>
+      <label for="name">Full_Name*
+      </label>
+      <input type="name" name="name" id="name" placeholder="Full-Name" required="true">
+      <br><br>
+  
+      <div>
+      <label for="phone-number">Phone_Number*</label> 
+      <input type="text"
+      name="text" id="phone-number" placeholder="Phone Number" required>
+      </div>
+      <br>
+  
+      <div>
+      <label for="email">Email_Address</label>
+      <input type="email" name="email" id="email" placeholder="example@example.com" required> 
+    </div>
+    <br>
+    <hr>
+    <br>
+        <div>
+          <div>
+            Delivery Address:
+          </div>
+          <br>
+            <div>
+              <label for="delivery address">Street Address</label>
+              <input type="text" name="delivery address" id="delivery address" placeholder="Street Address" required>
+          </div>
+               
+          <br>
+          <div>
+            <label for="delivery address2">Street Address Line2</label>
+            <input type="text" name="Street Address Line2" id="delivery address2" placeholder="Street Address Line2" required>   
+        </div>
+        <br>
+  
+          <div>
+            <label for="City">City</label>
+            <input type="text" name="City" id="City" placeholder="city" required>                       
+          </div>
+          <br>
+          <div>
+            <label for="State / Province">State / Province</label>
+            <input type="text" name="State / Province" id="State / Province" placeholder="State / Province" required> 
+          </div>
+        <br>
+        <div>
+          <label for="Postal/Zip Code">Postal / Zip Code</label>
+          <input type="text" name="Postal / Zip Code" id="Postal/Zip Code" placeholder="Postal / Zip Code" required> 
+        <div>
+          
+        <br>
+        <hr>
+        <br>
+        <div>
+          Order Date:
+          </div>
+          <br>
+          <div>
+            <label for="Date"> Date</label>
+            <input type="Date" name=" Date" id="Date" placeholder="Date" required>
+          </div>
+       
+        <br>
+        <hr>
+        <br>
+        <div>
+          Delivery Types:
+        </div>
+            <br>
+            <div>
+            <input type="Radio" name="Delivery Type1" id="H-D" value="H-D" required>    
+         <label for="H-D">Home Delivery*</label>       
+        </div>
+  
+        <div>
+          <input type="Radio" name="Delivery Type2" id="Pick-up" value="pick-up" required>
+          <label for="Pick-up">Pick-up*</label>      
+        </div>
+      
+        <hr> <br>
+  
+        <div>
+          Pre Order T-Shirt:
+          <div>
+            <br>
+            <div class="white">
+              <img src="./white T-shirt.jpeg" alt="white T-Shirt">
+            </div>
+            <div>
+            <input type="checkbox" name="White£9.99" id="White£9.99">
+          <label for="White£9.99">White £9.99</label>
+          </div>
+          <div>
+        <label for="Quantity1">Quantity </label>         
+          <input type="Number" name="Quantity" id="Quantity1" min="1" max="100" step="1">
+          </div>
+          <div>
+          <label for="Size1">Size</label>
+          <select name="Size1" id="Size1">
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="LX">LX</option>
+          <option value="XXL">XXL</option>
+          </select>
+        </div>
+        <br>
+        <br>
+        <div class="black">
+          <img src="./black T-shirt.jpeg" alt="Black T-Shirt">
+        </div>
+        <div>
+          <input type="checkbox" name="Black £9.99" id="Black£9.99">            
+          <label for="Black£9.99"> Black £9.99</label>
+        </div>
+        <div>
+          <label for="Quantity2">Quantity</label>
+          <input type="Number" name="Quantity" id="Quantity2" min="1" max="100" step="1">
+        </div>
+        <div>
+          <label for="T-Shirt">T-Shirt</label>
+          <select name="T-Shirt" id="T-Shirt">
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="LX">LX</option>
+          <option value="XXL">XXL</option>
+          </select>
+        </div>
+        <br>
+        <br>
+        <div class="blue">
+          <img src="./blue T-shirt.jpeg" alt="Blue T-Shirt">
+        </div>
+        <div>
+          <input type="checkbox" name="2B Blue £9.99" id="Blue£9.99">            
+          <label for="Blue£9.99"> blue £9.99</label>
+        </div>
+        <div>
+          <label for="Quantity3">Quantity</label>
+          <input type="Number" name="Quantity" id="Quantity3" min="1" max="100" step="1">
+        </div>
+        <div>
+          <label for="T-Shirt2">T-Shirt</label>
+          <select name="T-Shirt2" id="T-Shirt2">
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="LX">LX</option>
+          <option value="XXL">XXL</option>
+          </select>
+        </div>
+      </div>
+        <hr><br>
+      <div>
+        Payment Method:
+      </div>
+        <div>
+          <input type="radio" name="Credit Card" id="Credit Card" required>
+          <label for="Credit Card">Credit Card</label>
+        </div>
+  
+        <div>
+        <input type="radio" name="PayPal" id="PayPal" required>
+        <label for="PayPal">PayPal</label>
+        </div>
+  
+      <br>
+      <div>
+        <label for="bio">Note/ Special instruction</label>
+        <div>
+          <textarea name="bio" id="bio" cols="30" rows="10"> 
+          </textarea>
+        </div>
+      </div>
+      <br>
+      <div id="button">
+        <button class="btn1">Submit</button>
+        <button class="btn2">Reset</button>
+      </div>
   </form>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By SALIHA POPAL</h2>
   </footer>
+  <br>
+  <br>
+  <br>
 </body>
-
 </html>
+

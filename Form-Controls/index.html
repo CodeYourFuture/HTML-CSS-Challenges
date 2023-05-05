@@ -13,15 +13,46 @@
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
+  <form id="TShirtForm" class="contianer">
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
+    <label for="firstName">First Name</label>
+    <input type="text" id="firstName" placeholder="Full name" required>
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" placeholder="Last name" required><br><br>
+    <label for="email">Email address</label>
+    <input type="email" id="email" placeholder="Insert your email address" required><br><br>
+    
+    <label for="deliveryDate">Select the delivery date</label>
+    <input type="date" id="deliveryDate" min="5/5/2023" max="5/6/2023" required> 
+
+    <label for="colors">Select your colour</label>
+    <select id="colors" form="TShirtForm">
+      <option value="green">Green</option>
+      <option value="black">Black</option>
+      <option value="red">Red</option>
+    </select>
+    
+    <label for="size">Select your size</label>
+    <select id="size" form="TShirtForm">
+      <option value="xs">XS</option>
+      <option value="s">S</option>
+      <option value="m">M</option>
+      <option value="l">L</option>
+      <option value="xl">XL</option>
+      <option value="xxl">XXL</option>
+    
+    </select><br><br>
+
+    <input type="submit">
+
   </form>
+  
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Khalil Alhaydr</h2>
   </footer>
 </body>
 

@@ -1,0 +1,46 @@
+html, body{
+  background-color: #ffeeea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#button{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-right: 1.5rem;
+  
+}
+.btn1{
+  background-color: teal;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border-style: none;
+  color: white;
+}
+.btn2{
+  background-color: teal;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border-style: none;
+  color: white;
+}
+
+.btn1:hover{
+  background-color: cadetblue;
+}
+
+.btn2:hover{
+  background-color: cadetblue;
+}
+
+
+h1{
+  color: teal;
+  font-weight: lighter;
+}
+

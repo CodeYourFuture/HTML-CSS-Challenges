@@ -13,15 +13,49 @@
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
-
+<form>
+  <div>
+    <label for="name">Name</label>
+    <input id="name" type="text" name="name" placeholder="Please enter full name"
+      pattern="[A-za-z\s]{1,}"
+       required />
+    <label for="email">E-mail</label>
+    <input id="email" type="text" name="email"
+      placeholder="Please enter your email address" required />
+  </div>
+  <div>
+    <fieldset>
+      <legend>Choose colour</legend>
+      <input id="red" type="radio" name="color" value="red" checked />
+      <label for="red">Red</label>
+      <input id="white" type="radio" name="color" value="white" />
+      <label for="white">White</label>
+      <input id="blue" type="radio" name="color" value="blue" />
+      <label for="blue">Blue</label>
+    </fieldset>
+  </div> 
+  <div>
+    <fieldset>
+      <legend>Choose  size</label>
+    <select id="size" name="size" required>
+      <option value="xs">XS</option>
+      <option value="s">S</option>
+      <option value="m">M</option>
+      <option value="l">L</option>
+      <option value="xl">XL</option>
+      <option value="xxl">XXL</option>
+    </select>
+    </fieldset>
+  </div>
+  <fieldset class="delivery_box"> 
+  <legend>Choose Delivery Date</legend>
+  <label for="delivery">Delivery</label>
+  <input type="date" id="delivery" name="delivery" placeholder="DD-MM-YYYY" value="" min="2023-05-05" max="2023-06-02" required />
+  <button>Submit</button>
+</form>
   </main>
   <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Andrius Isin</h2>
   </footer>
 </body>
 

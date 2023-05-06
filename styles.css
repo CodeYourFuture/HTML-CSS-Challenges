@@ -1,0 +1,296 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* navigation bar */
+.navbar-nav .icon {
+  color: black;
+}
+
+.navbar-nav .icon:hover {
+  color: rgba(32, 21, 21, 0.4);
+}
+
+/* image-slider */
+.image-slider {
+  width: 60%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.image-slider .frame {
+  width: 100%;
+  height: 550px;
+  margin-top: 50px;
+}
+
+.image-slider .boxes {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.image-slider .box {
+  position: relative;
+  flex: 1 1 auto;
+  width: 20%;
+  background: grey;
+  transition: all 0.8s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-slider .box:hover {
+  width: 100%;
+}
+
+.image-slider .box-1 {
+  background-image: url("media/green_1.jpg");
+}
+.image-slider .box-2 {
+  background-image: url("media/green_2.jpg");
+}
+.image-slider .box-3 {
+  background-image: url("media/green_3.jpg");
+}
+.image-slider .box-4 {
+  background-image: url("media/green_4.jpg");
+}
+
+.bottom-left-text {
+  position: absolute;
+  margin: 510px 20px;
+  padding: 2px 5px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 2px;
+}
+
+h1 {
+  text-align: center;
+  margin: 40px 0 10px 0;
+}
+
+.container {
+  margin-bottom: 30px;
+  max-width: 300px;
+}
+
+.container img {
+  width: 3rem;
+  height: auto;
+}
+
+.container img:hover {
+  cursor: pointer;
+}
+
+.container .clicked {
+  border-bottom: 3px solid black;
+  padding-top: 15px;
+  width: 2rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.text-box {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: 12px 50px;
+  color: white;
+  background-color: black;
+  border: 1.5px solid black;
+  border-radius: 50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.button:hover {
+  background: white;
+  color: black;
+}
+
+/* popup form */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 40px;
+  background: #fff;
+  border-radius: 5px;
+  width: 40rem;
+  position: relative;
+  transition: all 2s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.popup .close:hover {
+  color: rgba(32, 21, 21, 0.4);
+}
+
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+  padding: 0;
+}
+
+/* styling inside form */
+form .row,
+form fieldset {
+  margin: 30px 0;
+}
+
+form label,
+form legend {
+  font-size: 18px;
+}
+
+/* styling colour radio buttons */
+.colour-radio,
+.size-radio {
+  display: inline-flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.colour-radio input[type="radio"] {
+  appearance: none;
+  width: 70px;
+  height: 2px;
+}
+
+.colour-radio input[type="radio"]:checked {
+  background-color: black;
+}
+
+/* styling size radio buttons */
+fieldset .size-radio input[type="radio"] {
+  appearance: none;
+  width: 25px;
+  height: 2px;
+}
+
+fieldset .size-radio input[type="radio"]:checked {
+  background-color: black;
+}
+
+fieldset .size-radio input[type="radio"]:checked + .form-check-label {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+fieldset .size-radio label:hover {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+form .button {
+  display: block;
+  margin: 0 auto;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  margin: 40px 0;
+}
+
+footer .horizontal_line {
+  border-top: 0.2px solid rgba(57, 54, 54, 0.488);
+  padding-bottom: 15px;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .image-slider .frame {
+    width: 100%;
+    height: 350px;
+    margin-top: 10px;
+  }
+
+  .bottom-left-text {
+    font-size: 15px;
+    margin: 300px 20px;
+    padding: 2px 5px;
+  }
+
+  form .row,
+  form fieldset {
+    margin: 15px;
+  }
+
+  form .row .name {
+    margin-bottom: 10px;
+  }
+
+  .popup {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .bottom-left-text {
+    visibility: hidden;
+  }
+
+  .logo {
+    height: 40px;
+    width: auto;
+  }
+
+  form .row,
+  form fieldset {
+    margin: 0;
+  }
+
+  form fieldset .colorbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  form .button {
+    margin-top: 20px;
+  }
+}

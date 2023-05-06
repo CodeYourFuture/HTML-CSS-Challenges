@@ -13,15 +13,49 @@
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
+<form>
+    <div class="name">
+      <label for="name">Full Name</label>
+      <input type="text" name="name" id="name" placeholder="Full name" pattern="[A-Za-z\s]+"
+        required>
+    </div>
+    <div class="email">
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="Email address" required>
+    </div>
+  </fieldset>
+  <fieldset class="colour">
+    <legend> Colour</legend>
+    <label for="colour">Select the colour</label>
+    <select id="colour" name="colour" required>
+      <option value="green">Green</option>
+      <option value="black">Black</option>
+      <option value="red">Red</option>
+    </select>
+  </fieldset>
+  <fieldset class="size">
+    <legend>Size</legend>
+  <label for="size">Select the size</label>
+  <select id="size" name="size" required>
+    <option value="xs">XS</option>
+    <option value="s">S</option>
+    <option value="m">M</option>
+    <option value="l">L</option>
+    <option value="xl">XL</option>
+    <option value="xxl">XXL</option>
+  </select>
+  </fieldset>
+  <fieldset class="date">
+    <legend>Delivery Date</legend>
+    <label for="date">Pick any date within the next four weeks</label>
+    <input type="date" name="date" id="date" min="2023-05-06" max="2022-06-03" required>
+  </fieldset>
   </form>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Paulina Wywrot</h2>
   </footer>
 </body>
 

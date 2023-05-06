@@ -1,0 +1,13 @@
+:root {
+    --blue: #d2f8fd;
+    --light-blue: #0995a8;
+  
+}
+#name:focus,
+#email:focus,
+#date:focus,
+#colour:focus,
+#size:focus {
+    background-color: var(--blue);
+    color: var(--light-blue);
+}

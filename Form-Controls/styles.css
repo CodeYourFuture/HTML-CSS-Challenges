@@ -1,9 +1,46 @@
 body {
-    background-image: url("");
+    height: 100vh;
+    width: 500px;
+    background-image: url('/Form-Controls/T-shirts.webp');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+    
 }
 
 fieldset {
     background-color: #E3F2C1;
     border: 2px solid;
-    align-self: center;
+    width: 500px;
+    height: 400px;
+    padding: 10px 10px;
+    margin-left: 100px;
+   
+}
+
+legend {
+    font-size: larger;
+    font-weight: 400;
+}
+
+input {
+    margin: 5px;
+}
+
+#button {
+    font-size: larger;
+    padding: 10px;
+    background-color: bisque;
+    border: 2px solid burlywood;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+
+}
+
+#button:hover {
+    background-color: white;
+    
 }

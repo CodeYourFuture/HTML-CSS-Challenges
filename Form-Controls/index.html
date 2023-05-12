@@ -16,19 +16,24 @@
   <fieldset>
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
-    <legend>Choose your best T-shirt</legend>
-    <label for="firstname">First name</label>
-    <input type="text" id="firstname" placeholder="Your name..">
+    <legend><b>Choose your best T-shirt</b></legend>
+    <label for="firstname">First name: </label>
+    <input type="text" id="firstname">
+    <br>
+    <br>
+
+    <label for="lastname">Last name: </label>
+    <input type="text" id="lastname">
     <br>
     <br>
      
 
-    <label for="email">Email</label>
-    <input type="email" id="email" placeholder="Your email..">
+    <label for="email">Email: </label>
+    <input type="email" id="email">
     <br>
     <br>
 
-    <label for="colour">Colour</label>
+    <label for="colour">Colour: </label>
     <select type="colour" id="colour" name="colour">
       <option value="yellow">Yellow</option>
       <option value="blue">Blue</option>
@@ -37,7 +42,7 @@
     <br>
     <br>
 
-    <label for="size">Size</label>
+    <label for="size">Size: </label>
     <select type="size" id="size" name="size">
       <option value="xs">XS</option>
       <option value="s">S</option>
@@ -49,12 +54,12 @@
     <br>
     <br>
 
-    <label for="deliverydate">Delivery Date</label>
+    <label for="deliverydate">Delivery Date: </label>
     <input type="date" id="date" max="2023-06-09" required="true">
     <br>
     <br>
 
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" id="button">
 
   </fieldset>
 

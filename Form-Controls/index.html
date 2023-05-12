@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
+  <title>My form exercise by Saqib Javed</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
@@ -13,15 +13,65 @@
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+    <P class="para">Please fill in the order form to complete your order</P>
 
+     <div class="form">
+  <form>
+
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" required/>
+  <br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" required/>
+  <br>
+  <label for="email">Email:</label><br>
+  <input id="email" type="email" required/>
+  </div>
+  
+
+<div class="color">
+  <fieldset>
+    <legend>Colors:</legend>
+  
+    <input id="white" type="radio" name="colour" value="white"/>
+    <label for="white">White</label>
+  
+    <input id="red" type="radio" name="red" value="red"/>
+    <label for="red">Red</label>
+  
+    <input id="black" type="radio" name="black" value="black"/>
+    <label for="black">Black</label>
+  </fieldset>
+</div>
+
+<div class="size">
+  <label for="t-shirt size">T-shirt size</label><br>
+  <select id="size" name="size">
+    <option value="x-small">x-small</option>
+    <option value="small">small</option>
+    <option value="medium">medium</option>
+    <option value="large">large</option>
+    <option value="x-large">x-large</option>
+    <option value="xx-large">xx-large</option>
+  </select>
+</div>
+
+<div class="delivery">
+  <label for="delivery">
+    Chose your delivery date:
+    <input type="date" name="delivery" min="" max="" required/>
+  </label>
+</div>
+
+<div>
+<button class="btn">submit</button>
+</div>
+  </form>
+  
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Saqib Javed - London 10 - Doves</h2>
   </footer>
 </body>
 

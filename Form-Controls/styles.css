@@ -1,0 +1,9 @@
+body {
+    background-image: url("");
+}
+
+fieldset {
+    background-color: #E3F2C1;
+    border: 2px solid;
+    align-self: center;
+}

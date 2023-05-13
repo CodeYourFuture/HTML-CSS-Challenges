@@ -1,28 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Order you T-shirt here!</h1>
+    </header>
+    <main>
+      <form>
+        <div class="form-container">
+          <form>
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              pattern="[a-zA-Z ]{3,}"
+              title="Name must contain only letters and at least 3 characters"
+            />
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              title="Email must be in valid format (example@domain.com)"
+            />
 
+            <label for="color">Choose the Color:</label>
+            <select id="color" name="color" required>
+              <option value="" disabled selected>Choose a color</option>
+              <option value="black">Black</option>
+              <option value="white">White</option>
+              <option value="beinge">Beinge</option>
+            </select>
+
+            <label for="size"> Choose your Size:</label>
+            <select id="size" name="size" required>
+              <option value="" disabled selected>Choose a size</option>
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="XXL">XXL</option>
+            </select>
+
+            <label for="delivery-date">When do you want it Delivered:</label>
+            <input type="date" id="delivery-date" name="delivery-date" required
+            min="{{ today | date: "%Y-%m-%d" }}" max="{{ fourWeeksLater | date:
+            "%Y-%m-%d" }}" />
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <h2>By Bedrije Omuri</h2>
+    </footer>
+  </body>
 </html>

@@ -1,0 +1,11 @@
+:focus {
+    outline: none;
+    border: 2px solid blue;
+    box-shadow: 0 0 5px blue;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+}
+  

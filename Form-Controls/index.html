@@ -8,14 +8,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
   <header>
     <h1>Product Pick</h1>
   </header>
   <main>
   <form>
+    <p id="description">Chosee your clothes</p>
+  <form id="survey-form">
+    <div class="form-control">
+      <label id="name-label">Name:
+        <input id="name" type="text" placeholder="enter your name" required />
+      </label>
+    </div>
+    <div class="form-control">
+      <label id="email-label">Email:
+        <input id="email" type="email" placeholder="your email adress" required />
+      </label>
+    </div>
+    <form id="survey-form"></form>
+    <p>What is your favorite color for T-Shirt?</p>
+      <div class="form-control">
+        <label class="blue">Blue
+          <input type="radio" name="redio-group" value="Blue" />
+        </label>
+        <label class="yellow">Yellow
+          <input type="radio" name="redio-group" value="Yellow" />
+        </label>
+        <label class="orange">Orange
+          <input type="radio" name="redio-group" value="Orange" />
+        </label>
+      </div>
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
+    <p>What size would you like?</p>
+      <div class="form-size">
+        <label>XS
+          <input type="radio" name="color" value="Blue" />
+        </label>
+        <label>S
+          <input type="radio" name="color" value="Yellow" />
+        </label>
+        <label>M
+          <input type="radio" name="color" value="Orange" />
+        </label>
+        <label>L
+          <input type="radio" name="color" value="Yellow" />
+        </label>
+        <label>XL
+          <input type="radio" name="color" value="Orange" />
+        </label>
+        <label>XXL
+          <input type="radio" name="color" value="Orange" />
+        </label>
+      </div>
+      <div class="date">
+      <label id="date">Email:
+        <input id="date" type="date" placeholder="delivery date" required value="2023-01-24" min="2023-01-25" max="2023-02-09"/>
+      </label>
+    </div>
   </form>
 
   </main>

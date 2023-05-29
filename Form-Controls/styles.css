@@ -1,0 +1,61 @@
+
+
+p.description{
+	color: #da9137;
+}	
+
+h1{
+	text-align: center;
+	font-family: fantasy;
+	font-size: 50px;
+}
+
+
+.form-control ,p{
+	font-family: fantasy;
+	font-size: 20px;
+	
+}
+
+body{
+	background-image: url("https://images.pexels.com/photos/1884584/pexels-photo-1884584.jpeg");
+background-size: cover;
+background-repeat: no-repeat;}
+
+.yellow{
+	background-color:#f9e507;
+	color: rgb(72, 64, 64);
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 10px 30px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+
+.blue{
+	background-color:#404adb;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 10px 30px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+
+.orange{
+	background-color:#da9137;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 10px 30px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+
+.date ,.form-size ,.form-control, p{
+	text-align: center;
+}
+

@@ -29,5 +29,44 @@
 */
 
 body {
-  font: 100% "Poppins", sans-serif;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
 }

@@ -1,0 +1,33 @@
+form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }

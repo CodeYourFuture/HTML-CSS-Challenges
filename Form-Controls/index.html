@@ -6,69 +6,97 @@
   <title>My form exercise</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+
+  <div class="container">
+
   <header>
     <h1>Product Pick</h1>
   </header>
-  <main>
 
-  <form>
+  
+
+  <form class="form-style" action="">
 
     <!-- write your html here-->
+
+    <div class="form-group">
+
+          <label for="firstname">First name:</label>
+          <input type="text" name="firstname" id="firstname"          placeholder="Enter your name" required>
+
+    </div>
+
+    <div class="form-group">
+            <label for="lastname">Last name:</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Enter your lastname" required>
+
+    </div>
+
+    <div class="form-group">
+            <label for="Email">Email:</label>
+            <input type="email" name="Email" id="Email" required      placeholder="Enter your Email">
+
+    </div>
     
-      <label for="firstname">First name:</label>
-      <input type="text" name="firstname" id="firstname" placeholder="Enter your name" required>
-<br>
-      <label for="lastname">Last name:</label>
-      <input type="text" name="lastname" id="lastname" placeholder="Enter your lastname" required>
-<br>
-      <label for="Email">Email:</label>
-      <input type="email" name="Email" id="Email" required placeholder="Enter your Email">
-<br>
-      <p>Select a colour:</p>
+    <div class="form-group">
 
-      <select name="colour" id="colour" required>
+          <label for="colour">Select a colour:</label>
+          <select name="colour" id="colour" required>
 
-        <option selected value="">Select a colour</option>
-        <option value="Blue">Blue</option>
-        <option value="Black">Black</option>
-        <option value="White">White</option>
+              <option selected value="">Select a colour</option>
+              <option value="Blue">Blue</option>
+              <option value="Black">Black</option>
+              <option value="White">White</option>
 
-      </select>
+          </select>
 
-      <br>
+    </div>  
+      
+    <div class="form-group">
+          <label for="size">Select a size:</label>
+          <select name="size" id="size" required>
+              <option selected value="">Select a size</option>
+              <option value="x">X</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="XXL">XXL</option>
 
-      <p>Select a size:</p>
+          </select>
+    </div>
 
-      <select name="size" id="size" required>
-        <option selected value="">Select a size</option>
-        <option value="x">X</option>
-        <option value="S">S</option>
-        <option value="M">M</option>
-        <option value="L">L</option>
-        <option value="XL">XL</option>
-        <option value="XXL">XXL</option>
+    <div class="form-group">
 
-</select>
-       <br>
+            <label for="datetime">Select a time & date:</label>
+            <input type="datetime-local" name="datetime" id="datetime" required>
+    </div>
+       
 
-<label for="datetime">Select a time & date:</label>
 
-<input type="datetime-local" name="datetime" id="datetime" required>
 
-<br>
-<br>
+
    <button type="submit">submit</button>
     <!-- try writing out the requirements first-->
   </form>
 
-  </main>
+ 
+
+    
+
   <footer>
     <!-- change to your name-->
     <h2>By DAMILOLA ODUMOSU</h2>
   </footer>
+
+  </div>
 </body>
 
 </html>
